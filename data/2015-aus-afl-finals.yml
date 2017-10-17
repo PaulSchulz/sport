@@ -1,0 +1,305 @@
+---
+title:    AFL Finals
+location: Australia
+code:     afl
+date: {from: "11 Sep 2015", to: "03 Oct 2015"}
+
+teams:
+  fre:
+    name: "Fremantle"
+    position:   1
+    played:    22
+    won:       17
+    lost:       5
+    drew:       0
+    for:     1857
+    against: 1564
+    percent:  118.7
+    points:    68
+  wce:
+    name: "West Coast Eagles"
+    position: 2
+    played: 22
+    won: 16
+    lost:  5
+    drew: 1
+    for: 2330
+    against: 1572
+    percent: 148.2
+    points: 66
+  haw:
+    name: "Hawthorn"
+    position: 3
+    played: 22
+    won: 16
+    lost:  6
+    drew: 0
+    for: 2452
+    against: 1548
+    percent: 158.4
+    points: 64
+  syd:
+    name: "Sydney Swans"
+    position: 4
+    played: 22
+    won: 16
+    lost:  6
+    drew: 0
+    for: 2006
+    against: 1578
+    percent: 127.1
+    points: 64
+  rich:
+    name: "Richmond"
+    position: 5
+    played: 22
+    won: 15
+    lost:  7
+    drew: 0
+    for: 1930
+    against: 1568
+    percent: 123.1
+    points: 60
+  wb:
+    name: "Western Bulldogs"
+    position: 6
+    played: 22
+    won: 14
+    lost:  8
+    drew: 0
+    for: 2101
+    against: 1825
+    percent: 115.1
+    points: 56
+  adel:
+    name: "Adelaide Crows"
+    position: 7
+    played: 21
+    won: 13
+    lost:  8
+    drew: 0
+    for: 2107
+    against: 1821
+    percent: 115.7
+    points: 54
+  nmfc:
+    name: "North Melbourne"
+    position: 8
+    played: 22
+    won: 13
+    lost:  9
+    drew: 0
+    for: 2062
+    against: 1937
+    percent: 106.5
+    points: 52
+  port:
+    name: "Port Adelaide"
+    position: 9
+    played: 22
+    won: 12
+    lost: 10
+    drew: 0
+    for: 2002
+    against: 1874
+    percent: 106.8
+    points: 48
+  geel:
+    name: "Geelong Cats"
+    position: 10
+    played: 21
+    won: 11
+    lost: 9
+    drew: 1
+    for: 1853
+    against: 1833
+    percent: 101.1
+    points: 48
+  gws:
+    name: "GWS Giants"
+    position: 11
+    played: 22
+    won: 11
+    lost: 11
+    drew: 0
+    for: 1872
+    against: 1891
+    percent: 99.0
+    points: 44
+  coll:
+    name: "Collingwood"
+    position: 12
+    played: 22
+    won: 10
+    lost: 12
+    drew: 0
+    for: 1972
+    against: 1856
+    percent: 106.3
+    points: 40
+  melb:
+    name: "Melbourne"
+    position: 13
+    played: 22
+    won:  7
+    lost: 15
+    drew: 0
+    for: 1573
+    against: 2044
+    percent:  77.0
+    points: 28
+  stk:
+    name: "St Kilda"
+    position: 14
+    played: 22
+    won:  6
+    lost: 15
+    drew: 1
+    for: 1695
+    against: 2162
+    percent:  78.4
+    points: 26
+  ess:
+    name: "Essendon"
+    position: 15
+    played: 22
+    won:  6
+    lost: 16
+    drew: 0
+    for: 1580
+    against: 2134
+    percent:  74.0
+    points: 24
+  gcfc:
+    name: "Gold Coast Suns"
+    position: 16
+    played: 22
+    won:  4
+    lost: 17
+    drew: 1
+    for: 1633
+    against: 2240
+    percent:  72.9
+    points: 18
+  bl:
+    name: "Brisbane Lions"
+    position: 17
+    played: 22
+    won:  4
+    lost: 18
+    drew: 0
+    for: 1557
+    against: 2306
+    percent:  67.5
+    points: 16
+  carl:
+    name: "Carlton"
+    position: 18
+    played: 22
+    won:  4
+    lost: 18
+    drew: 0
+    for: 1525
+    against: 2354
+    percent:  64.8
+    points: 16
+
+#groups:
+#group-details:
+
+venues:
+  ds:  {name: "Domain Stadium",           tz: "+0800"}
+  mcg: {name: "Melbourne Cricket Ground", tz: "+1000"}
+  anz: {name: "ANZ Stadium",              tz: "+1000"}
+
+#games:
+
+finals:
+  # Fri, Sep 11
+  - id:     qf-2
+    name:   "Second Qualifying Final"
+    place:  [position-2, position-3]
+    result: [winner-qf-1, loser-qf-1]
+    v:      [wce, haw]
+    venue:  ds
+    time:   "Fri, 11 Sep 2015 18:30 +1000"
+    score:  {wce: [14, 12], haw: [9, 10]}
+
+  # Sat, Sep 12
+  - id:     qf-1
+    name:   "First Qualifying Final"
+    place:  [position-1, position-4]
+    result: [winner-qf-1, loser-qf-1]
+    v:      [fre, syd]
+    venue:  ds
+    time:   "Sat, 12 Sep 2015 13:20 +0800"
+    score:  {fre: [10, 9], syd: [7, 18]}
+
+  - id:     ef-2
+    name:   "Second Elimination Final"
+    place:  [position-6, position-7]
+    result: [winner-ef-2,loser-ef-2]
+    v:      [wb, adel]
+    venue:  mcg
+    time:   "Sat, 12 Sep 2015 13:20 +1000"
+    score:  {wb: [14, 18], adel: [16, 13]}
+
+  # Sun, Sep 13
+  - id:     ef-1
+    name:   "First Elimination Final"
+    place:  [position-5, position-8]
+    result: [winner-ef-1, loser-ef-1]
+    v:      [rich, nmfc]
+    venue:  mcg
+    time:   "Sun, 13 Sep 2015 15:20 +1000"
+    score:  {rich: [14, 4], nmfc: [15, 15]}
+   
+  # Sep 18
+  # Sep 19
+  - id:     sf-1
+    name:   "First Semi-Final"
+    place:  [loser-qf-1, winner-ef-1]
+    result: [winner-sf-1, loser-sf-1]
+    v:      [haw, adel]
+    venue:  mcg
+    time:   "Fri, 18 Sep 2015 19:50 +1000"
+    score:  {haw: [21, 9], adel: [8, 13]}
+
+  - id:     sf-2
+    name:   "Second Semi-Final"
+    place:  [loser-qf-2, winner-ef-2]
+    result: [winner-sf-2, loser-sf-2]
+    v:      [syd, nmfc]
+    venue:  anz
+    time:   "Sat, 19 Sep 2015 19:20 +1000"
+    score:  {syd: [7, 9], nmfc: [11, 11]}
+
+  # Sep 25
+  # Sep 26
+  - id:     pf-1
+    name:   "First Preliminary Final"
+    place:  [winner-qf-1, winner-sf-1]
+    result: [winner-pf-1, loser-pf-1]
+    v:      [fre, haw]
+    venue:  ds
+    time:   "Fri, 25 Sep 2015 18:20 +0800"
+    score:  {fre: [10, 7], haw: [15, 4]}
+
+  - id:     pf-2
+    name:   "Second Preliminary Final"
+    place:  [winner-qf-2, winner-sf-2]
+    result: [winner-pf-2, loser-pf-2]
+    v:      [wce, nmfc]
+    venue:  ds
+    time:   "Sat, 26 Sep 2015 17:45 +0800"
+    score:  {wce: [10, 20], nmfc: [7, 13]}
+
+  # Oct 3
+  - id:     gf
+    name:   "Grand Final"
+    place:  [winner-pf-1, winner-pf-2]
+    result: [winner-gf, loser-gf]
+    v:      [haw, wce]
+    venue:  mcg
+    time:   "Sat, 03 Oct 2015 14:30 +1000"
+    score:  {haw: [16, 11], wce: [8, 13]}

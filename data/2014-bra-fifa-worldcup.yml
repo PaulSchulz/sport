@@ -1,0 +1,160 @@
+---
+title:    "FIFA World Cup"
+location: "Brazil"
+code:     football
+date:     {from: "12 June 2014", to: "13 July 2014"}
+teams:
+  bra: {name: "Brazil",         place: "team-a-1", group: "group-a"}
+  cro: {name: "Croatia",        place: "team-a-2", group: "group-a"}
+  mex: {name: "Mexico",         place: "team-a-3", group: "group-a"}
+  cam: {name: "Cameroon",       place: "team-a-4", group: "group-a"}
+  esp: {name: "Spain",          place: "team-b-1", group: "group-b"}
+  ned: {name: "Netherlands",    place: "team-b-2", group: "group-b"}
+  aus: {name: "Australia",      place: "team-b-3", group: "group-b"}
+  chi: {name: "Chile",          place: "team-b-4", group: "group-b"}
+  col: {name: "Columbia",       place: "team-c-1", group: "group-c"}
+  gre: {name: "Greece",         place: "team-c-2", group: "group-c"}
+  civ: {name: "Ivory Coast",    place: "team-c-3", group: "group-c"}
+  jpn: {name: "Japan",          place: "team-c-4", group: "group-c"}
+  ura: {name: "Uruguay",        place: "team-d-1", group: "group-d"}
+  cos: {name: "Costa Rico",     place: "team-d-2", group: "group-d"}
+  eng: {name: "England",        place: "team-d-3", group: "group-d"}
+  ita: {name: "Italy",          place: "team-d-4", group: "group-d"}
+  swi: {name: "Switzerland",    place: "team-e-1", group: "group-e"}
+  ecu: {name: "Ecuador",        place: "team-e-2", group: "group-e"}
+  fra: {name: "France",         place: "team-e-3", group: "group-e"}
+  hon: {name: "Honduras",       place: "team-e-4", group: "group-e"}
+  arg: {name: "Argentina",      place: "team-f-1", group: "group-f"}
+  bih: {name: "Bosnia & Herz.", place: "team-f-2", group: "group-f"}
+  irn: {name: "Iran",           place: "team-f-3", group: "group-f"}
+  nga: {name: "Nigeria",        place: "team-f-4", group: "group-f"}
+  ger: {name: "Germany",        place: "team-g-1", group: "group-g"}
+  por: {name: "Portugal",       place: "team-g-2", group: "group-g"}
+  gha: {name: "Ghana",          place: "team-g-3", group: "group-g"}
+  usa: {name: "USA",            place: "team-g-4", group: "group-g"}
+  bel: {name: "Belgium",        place: "team-h-1", group: "group-h"}
+  alg: {name: "Algeria",        place: "team-h-2", group: "group-h"}
+  rus: {name: "Russia",         place: "team-h-3", group: "group-h"}
+  kor: {name: "Korea Republic", place: "team-h-4", group: "group-h"}
+
+# See: http://en.wikipedia.org/wiki/List_of_IOC_country_codes
+groups:
+  group-a: ["bra", "cro", "mex", "cam"]
+  group-b: ["esp", "aus", "ned", "chi"]
+  group-c: ["col", "gre", "civ", "jpn"]
+  group-d: ["ura", "cos", "eng", "ita"]
+  group-e: ["swi", "ecu", "fra", "hon"]
+  group-f: ["arg", "bih", "irn", "nga"]
+  group-g: ["ger", "por", "gha", "usa"]
+  group-h: ["bel", "alg", "rus", "kor"]
+
+group-details:
+  group-a: {name: "Group A", short: "A"}
+  group-b: {name: "Group B", short: "B"}
+  group-c: {name: "Group C", short: "C"}
+  group-d: {name: "Group D", short: "D"}
+  group-e: {name: "Group E", short: "E"}
+  group-f: {name: "Group F", short: "F"}
+  group-g: {name: "Group G", short: "G"}
+  group-h: {name: "Group H", short: "H"}
+
+venues:
+
+games:
+  # Thu 12
+  - {place: ["team-a-1", "team-a-2"], v: ["bra", "cro"], time: "Fri, 13 Jun 2014 05:30 +0930", score: {bra: 3, cro: 1}}
+  # Fri 13
+  - {place: ["team-a-3", "team-a-4"], v: ["mex", "cam"], time: "Sat, 14 Jun 2014 01:30 +0930", score: {mex: 1, cam: 0}}
+  - {place: ["team-b-1", "team-b-2"], v: ["esp", "ned"], time: "Sat, 14 Jun 2014 04:30 +0930", score: {esp: 1, ned: 5}}
+  - {place: ["team-b-3", "team-b-4"], v: ["aus", "chi"], time: "Sat, 14 Jun 2014 07:30 +0930", score: {aus: 1, chi: 3}}
+  # Sat 14
+  - {place: ["team-c-1", "team-c-2"], v: ["col", "gre"], time: "Sun, 15 Jun 2014 01:30 +0930", score: {col: 3, gre: 0}}
+  - {place: ["team-d-1", "team-d-2"], v: ["ura", "cos"], time: "Sun, 15 Jun 2014 04:30 +0930", score: {ura: 1, cos: 3}}
+  - {place: ["team-d-3", "team-d-4"], v: ["eng", "ita"], time: "Sun, 15 Jun 2014 07:30 +0930", score: {eng: 1, ita: 2}}
+  - {place: ["team-c-3", "team-c-4"], v: ["civ", "jpn"], time: "Sun, 15 Jun 2014 10:30 +0930", score: {civ: 2, jpn: 1}}
+  # Sun 15
+  - {place: ["team-e-1", "team-e-2"], v: ["swi", "ecu"], time: "Mon, 16 Jun 2014 01:30 +0930", score: {swi: 2, ecu: 1}}
+  - {place: ["team-e-3", "team-e-4"], v: ["fra", "hon"], time: "Mon, 16 Jun 2014 04:30 +0930", score: {fra: 3, hon: 0}}
+  - {place: ["team-f-1", "team-f-2"], v: ["arg", "bih"], time: "Mon, 16 Jun 2014 07:30 +0930", score: {arg: 2, bih: 1}}
+  # Mon 16
+  - {place: ["team-g-1", "team-g-2"], v: ["ger", "por"], time: "Tue, 17 Jun 2014 01:30 +0930", score: {ger: 4, por: 0}}
+  - {place: ["team-f-3", "team-f-4"], v: ["irn", "nga"], time: "Tue, 17 Jun 2014 04:30 +0930", score: {irn: 0, nga: 0}}
+  - {place: ["team-g-3", "team-g-4"], v: ["gha", "usa"], time: "Tue, 17 Jun 2014 07:30 +0930", score: {gha: 1, usa: 2}}
+  # Tue 17
+  - {place: ["team-h-1", "team-h-2"], v: ["bel", "alg"], time: "Wed, 18 Jun 2014 01:30 +0930", score: {bel: 2, alg: 1}}
+  - {place: ["team-a-1", "team-a-3"], v: ["bra", "mex"], time: "Wed, 18 Jun 2014 04:30 +0930", score: {bra: 0, mex: 0}}
+  - {place: ["team-h-3", "team-h-4"], v: ["rus", "kor"], time: "Wed, 18 Jun 2014 07:30 +0930", score: {rus: 1, kor: 1}}
+  # Wed 18
+  - {place: ["team-b-2", "team-b-3"], v: ["aus", "ned"], time: "Thu, 19 Jun 2014 01:30 +0930", score: {aus: 2, ned: 3}}
+  - {place: ["team-b-1", "team-b-4"], v: ["esp", "chi"], time: "Thu, 19 Jun 2014 04:30 +0930", score: {esp: 0, chi: 2}}
+  - {place: ["team-a-2", "team-a-4"], v: ["cam", "cro"], time: "Thu, 19 Jun 2014 07:30 +0930", score: {cam: 0, cro: 4}}
+  # Thu 19
+  - {place: ["team-c-1", "team-c-3"], v: ["col", "civ"], time: "Fri, 20 Jun 2014 01:30 +0930", score: {col: 2, civ: 1}}
+  - {place: ["team-d-1", "team-d-3"], v: ["ura", "eng"], time: "Fri, 20 Jun 2014 04:30 +0930", score: {ura: 2, eng: 1}}
+  - {place: ["team-c-2", "team-c-4"], v: ["jpn", "gre"], time: "Fri, 20 Jun 2014 07:30 +0930", score: {jpn: 0, gre: 0}}
+  # Fri 20
+  - {place: ["team-d-2", "team-d-4"], v: ["ita", "cos"], time: "Sat, 21 Jun 2014 01:30 +0930", score: {ita: 0, cos: 1}}
+  - {place: ["team-e-1", "team-e-3"], v: ["swi", "fra"], time: "Sat, 21 Jun 2014 04:30 +0930", score: {swi: 2, fra: 5}}
+  - {place: ["team-e-2", "team-e-4"], v: ["hon", "ecu"], time: "Sat, 21 Jun 2014 07:30 +0930", score: {hon: 1, ecu: 2}}
+  # Sat 21
+  - {place: ["team-f-1", "team-f-3"], v: ["arg", "irn"], time: "Sun, 22 Jun 2014 01:30 +0930", score: {arg: 1, irn: 0}}
+  - {place: ["team-g-1", "team-g-3"], v: ["ger", "gha"], time: "Sun, 22 Jun 2014 04:30 +0930", score: {ger: 2, gha: 2}}
+  - {place: ["team-f-2", "team-f-4"], v: ["nga", "bih"], time: "Sun, 22 Jun 2014 07:30 +0930", score: {nga: 1, bih: 0}}
+  # Sun 22
+  - {place: ["team-h-1", "team-h-3"], v: ["bel", "rus"], time: "Mon, 23 Jun 2014 01:30 +0930", score: {bel: 1, rus: 0}}
+  - {place: ["team-h-2", "team-h-4"], v: ["kor", "alg"], time: "Mon, 23 Jun 2014 04:30 +0930", score: {kor: 2, alg: 4}}
+  - {place: ["team-g-2", "team-g-4"], v: ["usa", "por"], time: "Mon, 23 Jun 2014 07:30 +0930", score: {usa: 2, por: 2}}
+  # Mon 23
+  - {place: ["team-b-1", "team-b-3"], v: ["aus", "esp"], time: "Tue, 24 Jun 2014 01:30 +0930", score: {aus: 0, esp: 3}}
+  - {place: ["team-b-2", "team-b-4"], v: ["ned", "chi"], time: "Tue, 24 Jun 2014 01:30 +0930", score: {ned: 2, chi: 0}}
+  - {place: ["team-a-1", "team-a-4"], v: ["cam", "bra"], time: "Tue, 24 Jun 2014 05:30 +0930", score: {cam: 1, bra: 4}}
+  - {place: ["team-a-2", "team-a-3"], v: ["cro", "mex"], time: "Tue, 24 Jun 2014 05:30 +0930", score: {cro: 1, mex: 3}}
+  # Tue 24
+  - {place: ["team-d-2", "team-d-3"], v: ["cos", "eng"], time: "Wed, 25 Jun 2014 01:30 +0930", score: {cos: 0, eng: 0}}
+  - {place: ["team-d-1", "team-d-4"], v: ["ita", "ura"], time: "Wed, 25 Jun 2014 01:30 +0930", score: {ita: 0, ura: 1}}
+  - {place: ["team-c-2", "team-c-3"], v: ["gre", "civ"], time: "Wed, 25 Jun 2014 05:30 +0930", score: {gre: 2, civ: 1}}
+  - {place: ["team-c-1", "team-c-4"], v: ["jpn", "col"], time: "Wed, 25 Jun 2014 05:30 +0930", score: {jpn: 1, col: 4}}
+  # Wed 25
+  - {place: ["team-f-1", "team-f-4"], v: ["nga", "arg"], time: "Thu, 26 Jun 2014 01:30 +0930", score: {nga: 2, arg: 2}}
+  - {place: ["team-f-2", "team-f-3"], v: ["bih", "irn"], time: "Thu, 26 Jun 2014 01:30 +0930", score: {bih: 3, irn: 1}}
+  - {place: ["team-e-1", "team-e-4"], v: ["hon", "swi"], time: "Thu, 26 Jun 2014 05:30 +0930", score: {hon: 0, swi: 3}}
+  - {place: ["team-e-2", "team-e-3"], v: ["ecu", "fra"], time: "Thu, 26 Jun 2014 05:30 +0930", score: {ecu: 0, fra: 0}}
+  # Thu 26
+  - {place: ["team-g-1", "team-g-4"], v: ["usa", "ger"], time: "Fri, 27 Jun 2014 01:30 +0930", score: {usa: 0, ger: 1}}
+  - {place: ["team-g-2", "team-g-3"], v: ["por", "gha"], time: "Fri, 27 Jun 2014 01:30 +0930", score: {por: 2, gha: 1}}
+  - {place: ["team-h-2", "team-h-3"], v: ["alg", "rus"], time: "Fri, 27 Jun 2014 05:30 +0930", score: {alg: 1, rus: 1}}
+  - {place: ["team-h-1", "team-h-4"], v: ["kor", "bel"], time: "Fri, 27 Jun 2014 05:30 +0930", score: {kor: 0, bel: 1}}
+  
+finals:
+  # Round of 16
+  # Sat 28
+  - {place: ["group-a-1", "group-b-2"], result: ["winner-49", "loser-49"], v: ["bra", "chi"], time: "Sun, 29 Jun 2014 01:30 +0930", score: {bra: 1, chi: 1}, penalties: {bra: 3, chi: 2}} # 49
+  - {place: ["group-c-1", "group-d-2"], result: ["winner-50", "loser-50"], v: ["ura", "col"], time: "Sun, 29 Jun 2014 05:30 +0930", score: {ura: 0, col: 2}} # 50
+  # Sun 29
+  - {place: ["group-b-1", "group-a-2"], result: ["winner-51", "loser-51"], v: ["ned", "mex"], time: "Mon, 30 Jun 2014 01:30 +0930", score: {ned: 2, mex: 1}} # 51
+  - {place: ["group-c-1", "group-d-2"], result: ["winner-52", "loser-52"], v: ["cos", "gre"], time: "Mon, 30 Jun 2014 05:30 +0930", score: {cos: 1, gre: 1}, penalties: {cos: 5, gre: 3}} # 52
+  # Mon 30
+  - {place: ["group-e-1", "group-f-2"], result: ["winner-53", "loser-53"], v: ["fra", "nga"], time: "Tue,  1 Jul 2014 01:30 +0930", score: {fra: 2, nga: 0}} # 53
+  - {place: ["group-g-1", "group-h-2"], result: ["winner-54", "loser-54"], v: ["ger", "alg"], time: "Tue,  1 Jul 2014 05:30 +0930", score: {ger: 2, alg: 1}} # 54
+  # Tue 1
+  - {place: ["group-f-1", "group-e-2"], result: ["winner-55", "loser-55"], v: ["arg", "swi"], time: "Wed,  2 Jul 2014 01:30 +0930", score: {arg: 1, swi: 0}} # 55
+  - {place: ["group-h-1", "group-g-2"], result: ["winner-56", "loser-56"], v: ["bel", "usa"], time: "Wed,  2 Jul 2014 05:30 +0930", score: {bel: 2, usa: 1}} # 56
+  # Quarter Finals
+  # Fri 4
+  - {place: ["winner-49", "winner-50"], result: ["winner-57", "loser-57"], v: ["bra", "col"], time: "Sat,  5 Jul 2014 05:30 +0930", score: {bra: 2, col: 1}} # 57
+  - {place: ["winner-53", "winner-54"], result: ["winner-58", "loser-58"], v: ["fra", "ger"], time: "Sat,  5 Jul 2014 01:30 +0930", score: {fra: 0, ger: 1}} # 58
+  # Sat 5
+  - {place: ["winner-51", "winner-52"], result: ["winner-59", "loser-59"], v: ["ned", "cos"], time: "Sun,  6 Jul 2014 05:30 +0930", score: {ned: 0, cos: 0}, penalties: {ned: 4, cos: 3}} # 59
+  - {place: ["winner-55", "winner-56"], result: ["winner-60", "loser-60"], v: ["arg", "bel"], time: "Sun,  6 Jul 2014 01:30 +0930", score: {arg: 1, bel: 0}} # 60
+  # Semi Finals
+  # Tue 8
+  - {place: ["winner-57", "winner-58"], result: ["winner-61", "loser-61"], v: ["bra", "ger"], time: "Wed,  9 Jul 2014 05:30 +0930", score: {ger: 7, bra: 1}} # 61
+  # Wed 9
+  - {place: ["winner-59", "winner-60"], result: ["winner-62", "loser-62"], v: ["ned", "arg"], time: "Thu, 10 Jul 2014 05:30 +0930", score: {ned: 0, arg: 0}, penalties: {ned: 2, arg: 4}} # 62
+  # Third Place Play-Off 
+  # Sat 12
+  - {place: ["loser-61", "loser-62"],   result: ["winner-63", "loser-63"], v: ["bra", "ned"], time: "Sun, 13 Jul 2014 05:30 +0930", score: {bra: 0, ned: 3}} # 63
+  # Final
+  # Sun 13
+  - {place: ["winner-61", "winner-62"], result: ["winner-64", "loser-64"], v: ["ger", "arg"], time: "Mon, 14 Jul 2014 04:30 +0930", score: {ger: 1, arg: 0}} # 64
+

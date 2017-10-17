@@ -1,0 +1,1045 @@
+---
+name: AFL Draw & Fixtures 2016
+version: 1.0
+format: 1.0
+fields:
+  - Date
+  - Home v Away
+  - Venue
+  - Time
+rounds:
+  round-1:
+    game-1:
+      - Thursday March 24
+      - Richmond v Carlton
+      - MCG
+      - 7.20pm
+    game-2:
+      - Saturday March 26
+      - Melbourne v GWS Giants
+      - MCG
+      - 1.40pm
+    game-3:
+      - Saturday March 26
+      - Gold Coast Suns v Essendon
+      - Metricon Stadium
+      - 4.35pm
+    game-4:
+      - Saturday March 26
+      - Sydney Swans v Collingwood
+      - ANZ Stadium
+      - 7.25pm
+    game-5:
+      - Saturday March 26
+      - North Melbourne v Adelaide
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Sunday March 27
+      - Western Bulldogs v Fremantle
+      - Etihad Stadium
+      - 1.10pm
+    game-7:
+      - Sunday March 27
+      - Port Adelaide v St Kilda
+      - Adelaide Oval
+      - 3.20pm
+    game-8:
+      - Sunday March 27
+      - West Coast Eagles v Brisbane Lions
+      - Subiaco Oval
+      - 7.40pm
+    game-9:
+      - Monday March 28
+      - Geelong v Hawthorn
+      - MCG
+      - 3.20pm
+  round-2:
+    game-1:
+      - Friday April 1
+      - Collingwood v Richmond
+      - MCG
+      - 7.50pm
+    game-2:
+      - Saturday April 2
+      - Adelaide v Port Adelaide
+      - Adelaide Oval
+      - 1.45pm
+    game-3:
+      - Saturday April 2
+      - Essendon v Melbourne
+      - MCG
+      - 2.10pm
+    game-4:
+      - Saturday April 2
+      - Brisbane Lions v North Melbourne
+      - Gabba
+      - 4.35pm
+    game-5:
+      - Saturday April 2
+      - St Kilda v Western Bulldogs
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Saturday April 2
+      - Fremantle v Gold Coast Suns
+      - Subiaco Oval
+      - 7.40pm
+    game-7:
+      - Sunday April 3
+      - GWS Giants v Geelong
+      - StarTrack Oval
+      - 1.10pm
+    game-8:
+      - Sunday April 3
+      - Hawthorn v West Coast Eagles
+      - MCG
+      - 3.20pm
+    game-9:
+      - Sunday April 3
+      - Carlton v Sydney Swans
+      - Etihad Stadium
+      - 4.40pm
+  round-3:
+    game-1:
+      - Friday April 8
+      - Port Adelaide v Essendon
+      - Adelaide Oval
+      - 7.50pm
+    game-2:
+      - Saturday April 9
+      - St Kilda v Collingwood
+      - MCG
+      - 1.45pm
+    game-3:
+      - Saturday April 9
+      - Richmond v Adelaide
+      - Etihad Stadium
+      - 2.10pm
+    game-4:
+      - Saturday April 9
+      - Sydney Swans v GWS Giants
+      - SCG
+      - 4.35pm
+    game-5:
+      - Saturday April 9
+      - Gold Coast Suns v Carlton
+      - Metricon Stadium
+      - 7.25pm
+    game-6:
+      - Saturday April 9
+      - West Coast Eagles v Fremantle
+      - Subiaco Oval
+      - 7.40pm
+    game-7:
+      - Sunday April 10
+      - North Melbourne v Melbourne
+      - Blundstone Arena
+      - 1.10pm
+    game-8:
+      - Sunday April 10
+      - Western Bulldogs v Hawthorn
+      - Etihad Stadium
+      - 3.20pm
+    game-9:
+      - Sunday April 10
+      - Geelong v Brisbane Lions
+      - Simonds Stadium
+      - 4.40pm
+  round-4:
+    game-1:
+      - Friday April 15
+      - West Coast Eagles v Richmond
+      - Subiaco Oval
+      - 8.10pm
+    game-2:
+      - Friday April 15
+      - Essendon v Geelong
+      - MCG
+      - 1.45pm
+      - </tr>
+    game-3:
+      - Friday April 15
+      - Hawthorn v St Kilda
+      - Aurora Stadium
+      - 2.10pm
+    game-4:
+      - Friday April 15
+      - Brisbane Lions v Gold Coast Suns
+      - Gabba
+      - 4.35pm
+    game-5:
+      - Friday April 15
+      - Carlton v Western Bulldogs
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Friday April 15
+      - Adelaide v Sydney Swans
+      - Adelaide Oval
+      - 7.40pm
+    game-7:
+      - Sunday April 17
+      - GWS Giants v Port Adelaide
+      - StarTrack Oval
+      - 1.10pm
+    game-8:
+      - Sunday April 17
+      - Collingwood v Melbourne
+      - MCG
+      - 3.20pm
+    game-9:
+      - Sunday April 17
+      - North Melbourne v Fremantle
+      - Etihad Stadium
+      - 4.40pm
+  round-9:
+    game-1:
+      - Friday April 22
+      - Hawthorn v Adelaide
+      - MCG
+      - 7.50pm
+    game-2:
+      - Saturday April 23
+      - Sydney Swans v West Coast Eagles
+      - SCG
+      - 1.40pm
+    game-3:
+      - Saturday April 23
+      - Gold Coast Suns v North Melbourne
+      - Metricon Stadium
+      - 4.35pm
+    game-4:
+      - Saturday April 23
+      - Western Bulldogs v Brisbane Lions
+      - Etihad Stadium
+      - 7.25pm
+    game-5:
+      - Saturday April 23
+      - Port Adelaide v Geelong
+      - Adelaide Oval
+      - 7.40pm
+    game-6:
+      - Sunday April 24
+      - St Kilda v GWS Giants
+      - Etihad Stadium
+      - 1.10pm
+    game-7:
+      - Sunday April 24
+      - Fremantle v Carlton
+      - Subiaco Oval
+      - 4.10pm
+    game-8:
+      - Sunday April 24
+      - Melbourne v Richmond
+      - MCG
+      - 7.10pm
+    game-9:
+      - Monday April 25
+      - Collingwood v Essendon
+      - MCG
+      - 3.20pm
+  round-6:
+    game-1:
+      - Friday April 29
+      - North Melbourne v Western Bulldogs
+      - Etihad Stadium
+      - 7.50pm
+    game-2:
+      - Saturday April 30
+      - Melbourne v St Kilda
+      - Etihad Stadium
+      - 1.45pm
+    game-3:
+      - Saturday April 30
+      - Adelaide v Fremantle
+      - Adelaide Oval
+      - 2.10pm
+    game-4:
+      - Saturday April 30
+      - GWS Giants v Hawthorn
+      - Spotless Stadium
+      - 4.35pm
+    game-5:
+      - Saturday April 30
+      - Richmond v Port Adelaide
+      - MCG
+      - 7.25pm
+    game-6: 
+      - Saturday April 30
+      - Geelong v Gold Coast Suns
+      - Simonds Stadium
+      - 7.25pm
+    game-7:
+      - Sunday May 1
+      - Brisbane Lions v Sydney Swans
+      - Gabba
+      - 1.10pm
+    game-8:
+      - Sunday May 1
+      - Carlton v Essendon
+      - MCG
+      - 3.20pm
+    game-9:
+      - Sunday May 1
+      - West Coast Eagles v Collingwood
+      - Subiaco Oval
+      - 4.40pm
+  round-7:
+    game-1:
+      - Friday May 6
+      - Richmond v Hawthorn
+      - MCG
+      - 7.50pm
+    game-2:
+      - Saturday May 7
+      - Collingwood v Carlton
+      - MCG
+      - 1.45pm
+    game-3:
+      - Saturday May 7
+      - Geelong v West Coast Eagles
+      - Simonds Stadium
+      - 2.10pm
+    game-4:
+      - Saturday May 7
+      - Sydney Swans v Essendon
+      - ANZ Stadium
+      - 4.35pm
+    game-5:
+      - Saturday May 7
+      - Gold Coast Suns v Melbourne
+      - Metricon Stadium
+      - 5.10pm
+    game-6:
+      - Saturday May 7
+      - Western Bulldogs v Adelaide
+      - Etihad Stadium
+      - 7.40pm
+    game-7:
+      - Saturday May 7
+      - Fremantle v GWS Giants
+      - Subiaco Oval
+      - 8.40pm
+    game-8:
+      - Sunday May 8
+      - St Kilda v North Melbourne
+      - Etihad Stadium
+      - 3.20pm
+    game-9:
+      - Sunday May 8
+      - Port Adelaide v Brisbane Lions
+      - Adelaide Oval
+      - 4.40pm
+  round-8:
+    game-1:
+      - Friday May 13
+      - Adelaide v Geelong
+      - Adelaide Oval
+      - 7.50pm
+    game-2:
+      - Saturday May 14
+      - Essendon v North Melbourne
+      - Etihad Stadium
+      - 1.45pm
+    game-3:
+      - Saturday May 14
+      - Hawthorn v Fremantle
+      - Aurora Stadium
+      - 2.10pm
+    game-4:
+      - Saturday May 14
+      - GWS Giants v Gold Coast Suns
+      - Spotless Stadium
+      - 4.35pm
+    game-5:
+      - Saturday May 14
+      - Brisbane Lions v Collingwood
+      - Gabba
+      - 7.25pm
+    game-6:
+      - Saturday May 14
+      - Richmond v Sydney Swans
+      - MCG
+      - 7.25pm
+    game-7:
+      - Sunday May 15
+      - Carlton v Port Adelaide
+      - Etihad Stadium
+      - 1.10pm
+    game-8:
+      - Sunday May 15
+      - Melbourne v Western Bulldogs
+      - MCG
+      - 3.20pm
+    game-9:
+      - Sunday May 15
+      - West Coast Eagles v St Kilda
+      - Subiaco Oval
+      - 4.40pm
+  round-9:
+    game-1:
+      - Friday May 20
+      - Hawthorn v Sydney Swans
+      - MCG
+      - 7.50pm
+    game-2:
+      - Saturday May 21
+      - Collingwood v Geelong
+      - MCG
+      - 1.45pm
+    game-3:
+      - Saturday May 21
+      - Gold Coast Suns v Adelaide
+      - Metricon Stadium
+      - 2.10pm
+    game-4:
+      - Saturday May 21
+      - Port Adelaide v West Coast Eagles
+      - Adelaide Oval
+      - 4.35pm
+    game-5:
+      - Saturday May 21
+      - North Melbourne v Carlton
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Saturday May 21
+      - Fremantle v Richmond
+      - Subiaco Oval
+      - 7.40pm
+    game-7:
+      - Sunday May 22
+      - Melbourne v Brisbane Lions
+      - MCG
+      - 1.10pm
+    game-8:
+      - Sunday May 22
+      - GWS Giants v Western Bulldogs
+      - Spotless Stadium
+      - 3.20pm
+    game-9:
+      - Sunday May 22
+      - St Kilda v Essendon
+      - Etihad Stadium
+      - 4.40pm
+  round-10:
+    game-1:
+      - Friday May 27
+      - Sydney Swans v North Melbourne
+      - SCG
+      - 7.50pm
+    game-2:
+      - Saturday May 28
+      - Brisbane Lions v Hawthorn
+      - Gabba
+      - 1.45pm
+    game-3:
+      - Saturday May 28
+      - Melbourne v Port Adelaide
+      - TIO Traeger Park, Alice Springs
+      - 2.10pm
+    game-4:
+      - Saturday May 28
+      - St Kilda v Fremantle
+      - Etihad Stadium
+      - 4.35pm
+    game-5:
+      - Saturday May 28
+      - Essendon v Richmond
+      - MCG
+      - 7.25pm
+    game-6:
+      - Saturday May 28
+      - Adelaide v GWS Giants
+      - Adelaide Oval
+      - 7.40pm
+    game-7:
+      - Sunday May 29
+      - Carlton v Geelong
+      - Etihad Stadium
+      - 1.10pm
+    game-8:
+      - Sunday May 29
+      - Collingwood v Western Bulldogs
+      - MCG
+      - 3.20pm
+    game-9:
+      - Sunday May 29
+      - West Coast Eagles v Gold Coast Suns
+      - Subiaco Oval
+      - 4.40pm
+  round-11:
+    game-1:
+      - Friday June 3
+      - North Melbourne v Richmond
+      - Blundstone Arena
+      - 7.50pm
+    game-2:
+      - Saturday June 4
+      - Hawthorn v Melbourne
+      - MCG
+      - 1.45pm
+    game-3:
+      - Saturday June 4
+      - Carlton v Brisbane Lions
+      - Etihad Stadium
+      - 2.10pm
+    game-4:
+      - Saturday June 4
+      - Geelong v GWS Giants
+      - Simonds Stadium
+      - 4.35pm
+    game-5:
+      - Saturday June 4
+      - Gold Coast Suns v Sydney Swans
+      - Metricon Stadium
+      - 7.25pm
+    game-6:
+      - Saturday June 4
+      - Fremantle v Essendon
+      - Subiaco Oval
+      - 7.40pm
+    game-7:
+      - Sunday June 5
+      - Collingwood v Port Adelaide
+      - MCG
+      - 1.10pm
+    game-8:
+      - Sunday June 5
+      - Western Bulldogs v West Coast Eagles
+      - Etihad Stadium
+      - 3.20pm
+    game-9:
+      - Sunday June 5
+      - Adelaide v St Kilda
+      - Adelaide Oval
+      - 4.40pm
+  round-12:
+    game-1:
+      - Friday June 10
+      - Essendon v Hawthorn
+      - Etihad Stadium
+      - 7.50pm
+    game-2:
+      - Saturday June 11
+      - Port Adelaide v Western Bulldogs
+      - Adelaide Oval
+      - 1.40pm
+    game-3:
+      - Saturday June 11
+      - Brisbane Lions v Fremantle
+      - Gabba
+      - 4.35pm
+    game-4:
+      - Saturday June 11
+      - Geelong v North Melbourne
+      - Etihad Stadium
+      - 7.25pm
+    game-5:
+      - Saturday June 11
+      - West Coast Eagles v Adelaide
+      - Subiaco Oval
+      - 7.40pm
+    game-6:
+      - Sunday June 12
+      - St Kilda v Carlton
+      - Etihad Stadium
+      - 1.10pm
+    game-7:
+      - Sunday June 12
+      - Richmond v Gold Coast Suns
+      - MCG
+      - 3.20pm
+    game-8:
+      - Sunday June 12
+      - GWS Giants v Sydney Swans
+      - Spotless Stadium
+      - 4.40pm
+    game-9:
+      - Monday June 13
+      - Melbourne v Collingwood
+      - MCG
+      - 3.20pm
+  round-13:
+    game-1:
+      - Friday June 17
+      - North Melbourne v Hawthorn
+      - Etihad Stadium
+      - 7.50pm
+    game-2:
+      - Saturday June 18
+      - Brisbane Lions v West Coast Eagles
+      - Gabba
+      - 1.40pm
+    game-3:
+      - Saturday June 18
+      - Fremantle v Port Adelaide
+      - Subiaco Oval
+      - 4.35pm
+    game-4:
+      - Saturday June 18
+      - Western Bulldogs v Geelong
+      - Etihad Stadium
+      - 7.25pm
+    game-5:
+      - Sunday June 19
+      - Sydney Swans v Melbourne
+      - SCG
+      - 1.10pm
+    game-6:
+      - Sunday June 19
+      - Essendon v GWS Giants
+      - Etihad Stadium
+      - 4.40pm
+    byes:
+        - Adelaide
+        - Carlton
+        - Collingwood
+        - Gold Coast Suns
+        - Richmond
+        - St Kilda
+  round-14:
+    game-1:
+      - Thursday June 23
+      - Adelaide v North Melbourne
+      - Adelaide Oval
+      - 7.50pm
+    game-2:
+      - Friday June 24
+      - Collingwood v Fremantle
+      - MCG
+      - 7.50pm
+    game-3:
+      - Saturday June 25
+      - Richmond v Brisbane Lions
+      - MCG
+      - 1.40pm
+    game-4:
+      - Saturday June 25
+      - GWS Giants v Carlton
+      - Spotless Stadium
+      - 4.35pm
+    game-5:
+      - Saturday June 25
+      - St Kilda v Geelong
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Sunday June 26
+      - Hawthorn v Gold Coast Suns
+      - Aurora Stadium
+      - 3.20pm
+    byes:
+      - Essendon
+      - Melbourne
+      - Port Adelaide
+      - Sydney Swans
+      - West Coast Eagles
+      - Western Bulldogs
+  round-15:
+    game-1:
+      - Thursday June 30
+      - West Coast Eagles v Essendon
+      - Subiaco Oval
+      - 8.10pm
+    game-2:
+      - Friday July 1
+      - Port Adelaide v Richmond
+      - Adelaide Oval
+      - 7.50pm
+    game-3:
+      - Saturday July 2
+      - Gold Coast Suns v St Kilda
+      - Metricon Stadium
+      - 1.40pm
+    game-4:
+      - Saturday July 2
+      - Sydney Swans v Western Bulldogs
+      - SCG
+      - 4.35pm
+    game-5:
+      - Saturday July 2
+      - Carlton v Collingwood
+      - MCG
+      - 7.25pm
+    game-6:
+      - Sunday July 3
+      - Melbourne v Adelaide
+      - MCG
+      - 3.20pm
+    byes:
+      - Brisbane Lions
+      - Fremantle
+      - Geelong-
+      - GWS Giants
+      - Hawthorn
+      - North Melbourne
+  round-16:
+    game-1:
+      - Thursday July 7
+      - Port Adelaide v Hawthorn
+      - Adelaide Oval
+      - 7.50pm
+    game-2:
+      - Friday July 8
+      - Geelong v Sydney Swans
+      - Simonds Stadium
+      - 7.50pm
+    game-3:
+      - Saturday July 9
+      - GWS Giants v Collingwood
+      - Spotless Stadium
+      - 1.40pm
+    game-4:
+      - Saturday July 9
+      - Gold Coast Suns v Brisbane Lions
+      - Metricon Stadium
+      - 4.35pm
+    game-5:
+      - Saturday July 9
+      - Western Bulldogs v Richmond
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Saturday July 9
+      - Melbourne v Fremantle
+      - TIO Stadium, Darwin
+      - 7.40pm
+    game-7:
+      - Sunday July 10
+      - Carlton v Adelaide
+      - MCG
+      - 1.10pm
+    game-8:
+      - Sunday July 01
+      - West Coast Eagles v North Melbourne
+      - Subiaco Oval
+      - 3.20pm
+    game-9:
+      - Sunday July 01
+      - Essendon v St Kilda
+      - Etihad Stadium
+      - 4.40pm
+  round-17:
+    game-1:
+      - Thursday July 14
+      - Sydney Swans v Hawthorn
+      - SCG
+      - 7.20pm
+    game-2:
+      - Friday July 15
+      - Fremantle v Geelong
+      - Subiaco Oval
+      - 8.10pm
+    game-3:
+      - Saturday July 16
+      - Richmond v Essendon
+      - MCG
+      - 1.40pm
+    game-4:
+      - Saturday July 16
+      - North Melbourne v Port Adelaide
+      - Etihad Stadium
+      - 4.35pm
+    game-5:
+      - Saturday July 16
+      - Western Bulldogs v Gold Coast Suns
+      - Cazalys Stadium, Cairns
+      - 7.25pm
+    game-6:
+      - Saturday July 16
+      - Adelaide v Collingwood
+      - Adelaide Oval
+      - 7.40pm
+    game-7:
+      - Sunday July 17
+      - Carlton v West Coast Eagles
+      - MCG
+      - 1.10pm
+    game-8:
+      - Sunday July 17
+      - St Kilda v Melbourne
+      - Etihad Stadium
+      - 3.20pm
+    game-9:
+      - Sunday July 17
+      - Brisbane Lions v GWS Giants
+      - Gabba
+      - 4.40pm
+  round-18:
+    game-1:
+      - Friday July 22
+      - Collingwood v North Melbourne
+      - Etihad Stadium
+      - 7.50pm
+    game-2:
+      - Saturday July 23
+      - Sydney Swans v Carlton
+      - ANZ Stadium
+      - 1.45pm
+    game-3:
+      - Saturday July 23
+      - Gold Coast Suns v Fremantle
+      - Metricon Stadium
+      - 2.10pm
+    game-4:
+      - Saturday July 23
+      - West Coast Eagles v Melbourne
+      - Subiaco Oval
+      - 4.35pm
+    game-5:
+      - Saturday July 23
+      - Western Bulldogs v St Kilda
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Saturday July 23
+      - Geelong v Adelaide
+      - Simonds Stadium
+      - 7.25pm
+    game-7:
+      - Sunday July 24
+      - Essendon v Brisbane Lions
+      - Etihad Stadium
+      - 1.10pm
+    game-8:
+      - Sunday July 24
+      - Hawthorn v Richmond
+      - MCG
+      - 3.20pm
+    game-9:
+      - Sunday July 24
+      - Port Adelaide v GWS Giants
+      - Adelaide Oval
+      - 4.40pm
+  round-19:
+    game-1:
+      - Friday July 29
+      - Geelong v Western Bulldogs
+      - Simonds Stadium
+      - 7.50pm
+    game-2:
+      - Saturday July 30
+      - GWS Giants v Richmond
+      - StarTrack Oval
+      - 1.45pm
+    game-3:
+      - Saturday July 30
+      - Hawthorn v Carlton
+      - Aurora Stadium
+      - 2.10pm
+    game-4:
+      - Saturday July 30
+      - Collingwood v West Coast Eagles
+      - MCG
+      - 4.35pm
+    game-5:
+      - Saturday July 30
+      - Brisbane Lions v Port Adelaide
+      - Gabba
+      - 7.25pm
+    game-6:
+      - Saturday July 30
+      - North Melbourne v St Kilda
+      - Etihad Stadium
+      - 7.25pm
+    game-7:
+      - Sunday July 31
+      - Melbourne v Gold Coast Suns
+      - MCG
+      - 1.10pm
+    game-8:
+      - Sunday July 31
+      - Fremantle v Sydney Swans
+      - Subiaco Oval
+      - 3.20pm
+    game-9:
+      - Sunday July 31
+      - Adelaide v Essendon
+      - Adelaide Oval
+      - 4.40pm
+  round-20:
+    game-1:
+      - Friday August 5
+      - Richmond v Collingwood
+      - MCG
+      - 7.50pm
+    game-2:
+      - Saturday August 6
+      - Sydney Swans v Port Adelaide
+      - SCG
+      - 1.45pm
+    game-3:
+      - Saturday August 6
+      - Melbourne v Hawthorn
+      - MCG
+      - 2.10pm
+    game-4:
+      - Saturday August 6
+      - Gold Coast Suns v GWS Giants
+      - Metricon Stadium
+      - 4.35pm
+    game-5:
+      - Saturday August 6
+      - Western Bulldogs v North Melbourne
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Saturday August 6
+      - Adelaide v Brisbane Lions
+      - Adelaide Oval
+      - 7.40pm
+    game-7:
+      - Sunday August 7
+      - Carlton v St Kilda
+      - MCG
+      - 1.10pm
+    game-8:
+      - Sunday August 7
+      - Geelong v Essendon
+      - Etihad Stadium
+      - 3.20pm
+    game-9:
+      - Sunday August 7
+      - Fremantle v West Coast Eagles
+      - Subiaco Oval
+      - 4.40pm
+  round-21:
+    game-1:
+      - Friday August 12
+      - Western Bulldogs v Collingwood
+      - Etihad Stadium
+      - 7.50pm
+    game-2:
+      - Saturday August 13
+      - Brisbane Lions v Carlton
+      - Gabba
+      - 1.45pm
+    game-3:
+      - Saturday August 13
+      - Hawthorn v North Melbourne
+      - MCG
+      - 2.10pm
+    game-4:
+      - Saturday August 13
+      - GWS Giants v West Coast Eagles
+      - Spotless Stadium
+      - 4.35pm
+    game-5:
+      - Saturday August 13
+      - St Kilda v Sydney Swans
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Saturday August 13
+      - Port Adelaide v Melbourne
+      - Adelaide Oval
+      - 7.40pm
+    game-7:
+      - Sunday August 14
+      - Essendon v Gold Coast Suns
+      - Etihad Stadium
+      - 1.10pm
+    game-8:
+      - Sunday August 14
+      - Richmond v Geelong
+      - MCG
+      - 3.20pm
+    game-9:
+      - Sunday August 14
+      - Fremantle v Adelaide
+      - Subiaco Oval
+      - 4.40pm
+  round-22:
+    game-1:
+      - Friday August 19
+      - West Coast Eagles v Hawthorn
+      - Subiaco Oval
+      - 8.10pm
+    game-2:
+      - Saturday August 20
+      - North Melbourne v Sydney Swans
+      - Blundstone Arena
+      - 1.45pm
+    game-3:
+      - Saturday August 20
+      - Richmond v St Kilda
+      - MCG
+      - 2.10pm
+    game-4:
+      - Saturday August 20
+      - GWS Giants v Fremantle
+      - Spotless Stadium
+      - 4.35pm
+    game-5:
+      - Saturday August 20
+      - Collingwood v Gold Coast Suns
+      - Etihad Stadium
+      - 7.25pm
+    game-6:
+      - Saturday August 20
+      - Port Adelaide v Adelaide
+      - Adelaide Oval
+      - 7.40pm
+    game-7:
+      - Sunday August 21
+      - Carlton v Melbourne
+      - MCG
+      - 1.10pm
+    game-8:
+      - Sunday August 21
+      - Brisbane Lions v Geelong
+      - Gabba
+      - 3.20pm
+    game-9:
+      - Sunday August 21
+      - Essendon v Western Bulldogs
+      - Etihad Stadium
+      - 4.40pm
+  round-23:
+    game-1:
+      - TBC
+      - Hawthorn v Collingwood
+      - MCG
+      - TBC
+    game-2:
+      - TBC
+      - Essendon v Carlton
+      - MCG
+      - TBC
+    game-3:
+      - TBC
+      - Adelaide v West Coast Eagles
+      - Adelaide Oval
+      - TBC
+    game-4:
+      - TBC
+      - St Kilda v Brisbane Lions
+      - Etihad Stadium
+      - TBC
+    game-5:
+      - TBC 
+      - Sydney Swans v Richmond
+      - SCG
+      - TBC
+    game-6:
+      - TBC
+      - Gold Coast Suns v Port Adelaide
+      - Metricon Stadium
+      - TBC
+    game-7:
+      - TBC
+      - Geelong v Melbourne
+      - Simonds Stadium
+      - TBC
+    game-8:
+      - TBC 
+      - North Melbourne v GWS Giants
+      - Etihad Stadium
+      - TBC
+    game-9:
+      - TBC 
+      - Fremantle v Western Bulldogs
+      - Subiaco Oval
+      - TBC
