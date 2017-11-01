@@ -1,0 +1,196 @@
+---
+title:    Hyundai A League
+location: Australia
+code:     football
+date:     {from: "Fri, 08 Oct 2015", to: "Sun, 10 Apr 2016"}
+url:      "http://www.a-league.com.au/results"
+teams:
+  bri: {name: "Brisbane Roar FC"}
+  adl: {name: "Adelaide United"}
+  mv:  {name: "Melbourne Victory"}
+  ccm: {name: "Central Coast Mariners"}
+  mc:  {name: "Melbourne City FC"}
+  new: {name: "Newcastle Jets"}
+  per: {name: "Perth Glory"}
+  syd: {name: "Sydney FC"}
+  wel: {name: "Wellington Phoenix"}
+  wsw: {name: "Western Sydney Wanderers" 
+
+venues:
+   pir:  {:name "Pirtek Stadium"}
+   adl:  {:name "Adelaide Oval", tz: "+1030"}
+   coop: {:name "Coopers Stadium"}
+   eti:  {:name "Etihad Stadium"}
+   sun:  {:name "Suncorp Stadium"}
+   cen:  {:name "Central Coast Stadium"}
+   hun:  {:name "Hunter Stadium"}
+   wes:  {:name "Westpac Stadium"}
+   all:  {:name "Allianz Stadium"}
+   aami: {:name "AAMI Park"}
+   nib:  {:name "NIB Stadium"}
+
+games:
+  - {id: game-1-1,  v: [wsw, bri], score: {wsw: 1, bri: 3}}
+  - {id: game-1-2,  v: [adl, mv ], score: {adl: 0, mv:  0}}
+  - {id: game-1-3,  v: [ccm, per], score: {ccm: 3, per: 2}}
+  - {id: game-1-4,  v: [syd, mc ], score: {syd: 1, mc:  1}}
+  - {id: game-1-5,  v: [wel, new], score: {wel: 1, new: 2}}
+ 
+  - {id: game-2-1,  v: [adl, wsw], score: {adl: 1, wsw: 1}}
+  - {id: game-2-2,  v: [new, syd], score: {new: 0, syd: 1}}
+  - {id: game-2-3,  v: [mv,  mc ], score: {mv:  3, mc:  2}}
+  - {id: game-2-4,  v: [bri, ccm], score: {bri: 2, ccm: 1}}
+  - {id: game-2-5,  v: [per, wel], score: {per: 1, wel: 2}}
+
+  - {id: game-3-1,  v: [new, mv ], score: {new: 1, mv:  0}}
+  - {id: game-3-2,  v: [wel, bri], score: {wel: 3, bri: 2}}
+  - {id: game-3-3,  v: [syd, wsw], score: {syd: 1, wsw: 0}}
+  - {id: game-3-4,  v: [mc,  ccm], score: {mc:  3, ccm: 1}}
+  - {id: game-3-5,  v: [per, adl], score: {per: 3, adl: 1}}
+
+  - {id: game-4-1,  v: [mc,  new], score: {mc:  2, new: 3}}
+  - {id: game-4-2,  v: [ccm, syd], score: {ccm: 1, syd: 3}}
+  - {id: game-4-3,  v: [bri, adl], score: {bri: 3, adl: 0}}
+  - {id: game-4-4,  v: [wsw, per], score: {wsw: 1, per: 0}}
+  - {id: game-4-5,  v: [mv,  wel], score: {mv:  3, wel: 0}}
+
+  - {id: game-5-1,  v: [adl, mc ], score: {adl: 2, mc:  4}}
+  - {id: game-5-2,  v: [syd, bri], score: {syd: 0, bri: 0}}
+  - {id: game-5-3,  v: [new, wsw], score: {new: 1, wsw: 2}}
+  - {id: game-5-4,  v: [ccm, wel], score: {ccm: 1, wel: 1}}
+  - {id: game-5-5,  v: [per, mv ], score: {per: 1, mv:  0} time: "16 Dec 2015 2030" }
+
+  - {id: game-6-1,  v: [wel, adl], score: {wel: 4, adl: 2}}
+  - {id: game-6-2,  v: [mc,  wsw], score: {mc:  0, wsw: 3}}
+  - {id: game-6-3,  v: [new, ccm], score: {new: 1, ccm: 1}}
+  - {id: game-6-4,  v: [syd, mv ], score: {syd: 2, mv:  4}}
+  - {id: game-6-5,  v: [bri, per], score: {bri: 1, per: 0}}
+
+  - {id: game-7-1,  v: [mv,  ccm], score: {mv:  2, ccm: 1}}
+  - {id: game-7-2,  v: [bri, mc ], score: {bri: 1, mc:  1}}
+  - {id: game-7-3,  v: [wsw, wel], score: {wsw: 2, wel: 1}}
+  - {id: game-7-4,  v: [per, syd], score: {per: 0, syd: 0}}
+  - {id: game-7-5,  v: [adl, new], score: {adl: 0, new: 0}}
+
+  - {id: game-8-1,  v: [syd, wel], score: {syd: 0, wel: 0}}
+  - {id: game-8-2,  v: [mc,  per], score: {mc:  5, per: 1}}
+  - {id: game-8-3,  v: [new, bri], score: {new: 1, bri: 1}}
+  - {id: game-8-4,  v: [mv,  adl], score: {mv:  2, adl: 1}}
+  - {id: game-8-5,  v: [ccm, wsw], score: {ccm: 0, wsw: 2}}
+
+  - {id: game-9-1,  v: [ccm, mc ], score: {ccm: 1, mc:  5}}
+  - {id: game-9-2,  v: [syd, new], score: {syd: 1, new: 0}}
+  - {id: game-9-3,  v: [wel, mv ], score: {wel: 2, mv:  0}}
+  - {id: game-9-4,  v: [wsw, bri], score: {wsw: 2, bri: 1}}
+  - {id: game-9-5,  v: [adl, per], score: {adl: 1, per: 0}}
+
+  - {id: game-10-1, v: [adl, syd], score: {adl: 2, syd: 1}}
+  - {id: game-10-2, v: [bri, wel], score: {bri: 2, wel: 1}}
+  - {id: game-10-3, v: [wsw, mv ], score: {wsw: 2, mv:  0}}
+  - {id: game-10-4, v: [per, ccm], score: {per: 2, ccm: 1}}
+  - {id: game-10-5, v: [new, mc ], score: {new: 0, mc:  4}}
+
+  - {id: game-11-1, v: [new, adl], score: {new: 0, adl: 0}}
+  - {id: game-11-2, v: [wel, syd], score: {wel: 1, syd: 1}}
+  - {id: game-11-3, v: [mc,  mv ], score: {mc:  2, mv:  1}}
+  - {id: game-11-4, v: [per, wsw], score: {per: 2, wsw: 2}}
+  - {id: game-11-5, v: [ccm, bri], score: {ccm: 0, bri: 1}}
+
+  - {id: game-12-1, v: [wsw, new], score: {wsw: 2, new: 0}}
+  - {id: game-12-2, v: [adl, wel], score: {adl: 3, wel: 0}}
+  - {id: game-12-3, v: [syd, ccm], score: {syd: 4, ccm: 1}}
+  - {id: game-12-4, v: [mv,  per], score: {mv:  1, per: 1}}
+  - {id: game-12-5, v: [bri, mc ], score: {bri: 3, mc:  1}}
+  
+  - {id: game-13-1, v: [ccm, wel], score: {ccm: 3, wel: 1}}
+  - {id: game-13-2, v: [wsw, adl], score: {wsw: 0, adl: 0}}
+  - {id: game-13-3, v: [bri, per], score: {bri: 2, per: 1}}
+  - {id: game-13-4, v: [mc,  syd], score: {mc:  2, syd: 2}}
+  - {id: game-13-5, v: [new, mv ], score: {new: 0, mv:  1}}
+
+  - {id: game-14-1, v: [ccm, mv] , score: {ccm: 3, mv:  3}}
+  - {id: game-14-2, v: [syd, new], score: {syd: 2, new: 0}}
+  - {id: game-14-3, v: [mc,  wsw], score: {mc:  3, wsw: 2}}
+  - {id: game-14-4, v: [per, adl], score: {per: 1, adl: 3}}
+  - {id: game-14-5, v: [wel, bri], score: {wel: 0, bri: 0}}
+
+  - {id: game-15-1, v: [mv,  bri], score: {mv:  4, bri: 0}}
+  - {id: game-15-2, v: [adl, ccm], score: {adl: 3, ccm: 1}}
+  - {id: game-15-3, v: [wsw, syd], score: {wsw: 1, syd: 2}}
+  - {id: game-15-4, v: [per, mc ], score: {per: 2, mc:  2}}
+  - {id: game-15-5, v: [new, wel], score: {new: 3, wel: 1}}
+
+  - {id: game-16-1, v: [bri, adl], score: {bri: 1, adl: 4}}
+  - {id: game-16-2, v: [ccm, wsw], score: {ccm: 1, wsw: 2}}
+  - {id: game-16-3, v: [new, per], score: {new: 1, per: 6}}
+  - {id: game-16-4, v: [mc,  wel], score: {mc:  3, wel: 1}}
+  - {id: game-16-5, v: [adl, new], score: {mv:  1, syd: 0}}
+
+  - {id: game-17-1, v: [wsw, mc ], score: {wsw: 4, mc:  3}}
+  - {id: game-17-2, v: [wel, ccm], score: {wel: 1, ccm: 3}}
+  - {id: game-17-3, v: [syd, bri], score: {syd: 1, bri: 3}}
+  - {id: game-17-4, v: [per, mv ], score: {per: 3, mv:  2}}
+  - {id: game-17-5, v: [adl, new], score: {adl: 1, new: 0}}
+
+  - {id: game-18-1, v: [adl, syd], score: {adl: 2, syd: 2}}
+  - {id: game-18-2, v: [bri, ccm], score: {bri: 4, ccm: 0}}
+  - {id: game-18-3, v: [mv,  wsw], score: {mv:  1, wsw: 1}}
+  - {id: game-18-4, v: [wel, per], score: {wel: 0, per: 1}}
+  - {id: game-18-5, v: [new, mc ], score: {new: 2, mc:  1}}
+
+  - {id: game-19-1, v: [bri, new], score: {bri: 2, new: 2}}
+  - {id: game-19-2, v: [syd, per], score: {syd: 1, per: 2}}
+  - {id: game-19-3, v: [mc,  mv ], score: {mc:  2, mv:  2}}
+  - {id: game-19-4, v: [ccm, adl], score: {ccm: 2, adl: 3}}
+  - {id: game-19-5, v: [wsw, wel], score: {wsw: 2, wel: 5}}
+
+  - {id: game-20-1, v: [mv, adl]}
+  - {id: game-20-2, v: [new, wel]}
+  - {id: game-20-3, v: [syd, wsw]}
+  - {id: game-20-4, v: [per, bri]}
+  - {id: game-20-5, v: [mc, ccm]}
+
+  - {id: game-21-1, v: [wel, mc]}
+  - {id: game-21-2, v: [wsw, per]}
+  - {id: game-21-3, v: [adl, bri]}
+  - {id: game-21-4, v: [mv, syd]}
+  - {id: game-21-5, v: [ccm, new]}
+
+  - {id: game-22-1, v: [bri, wsw]}
+  - {id: game-22-2, v: [wel, adl]}
+  - {id: game-22-3, v: [mc, syd]}
+  - {id: game-22-4, v: [ccm, mv]}
+  - {id: game-22-5, v: [per, new]}
+
+  - {id: game-23-1, v: [adl, mc]}
+  - {id: game-23-2, v: [syd, wel]}
+  - {id: game-23-3, v: [bri, mv]}
+  - {id: game-23-4, v: [per, ccm]}
+  - {id: game-23-5, v: [new, wsw]}
+
+  - {id: game-24-1, v: [mc, bri]}
+  - {id: game-24-2, v: [ccm, syd]}
+  - {id: game-24-3, v: [wsw, adl]}
+  - {id: game-24-4, v: [wel, per]}
+  - {id: game-24-5, v: [mv, new]}
+
+  - {id: game-25-1, v: [mv, wsw]}
+  - {id: game-25-2, v: [new, per]}
+  - {id: game-25-3, v: [bri, syd]}
+  - {id: game-25-4, v: [adl, ccm]}
+  - {id: game-25-5, v: [mc, wel]}
+
+  - {id: game-26-1, v: [wsw, ccm]}
+  - {id: game-26-2, v: [wel, mv]}
+  - {id: game-26-3, v: [syd, adl]}
+  - {id: game-26-4, v: [bri, new]}
+  - {id: game-26-5, v: [per, mc]}
+    
+  - {id: game-27-1, v: [mc, adl]}
+  - {id: game-27-2, v: [ccm, new]}
+  - {id: game-27-3, v: [mv, bri]}
+  - {id: game-27-4, v: [wel, wsw]}
+  - {id: game-27-5, v: [syd, per]}
+
+finals:
+  
