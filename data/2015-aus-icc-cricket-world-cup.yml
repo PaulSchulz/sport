@@ -1,0 +1,147 @@
+---
+title:    "ICC Cricket World Cup"
+location: "Australia and New Zealand"
+code:     cricket-50over
+date:     {from: "Sat, 14 Feb 2015",  to: "Sun, 29 Mar 2015"}
+url:      "http://www.icc-cricket.com/cricket-world-cup"
+
+# See:
+#   http://en.wikipedia.org/wiki/List_of_IOC_country_codes
+#   http://en.wikipedia.org/wiki/List_of_CGF_country_codes
+teams:
+  aus: {name: "Australia",             place: team-a-1, group: group-a}
+  nzl: {name: "New Zealand",           place: team-a-2, group: group-a}
+  afg: {name: "Afghanistan",           place: team-a-3, group: group-a}
+  ban: {name: "Bangladesh",            place: team-a-4, group: group-a}
+  eng: {name: "England",               place: team-a-5, group: group-a}
+  sco: {name: "Scotland",              place: team-a-6, group: group-a}
+  sri: {name: "Sri Lanka",             place: team-a-7, group: group-a}
+
+  ind: {name: "India",                 place: team-b-1, group: group-b}
+  irl: {name: "Ireland",               place: team-b-2, group: group-b}
+  pak: {name: "Pakistan",              place: team-b-3, group: group-b}
+  rsa: {name: "South Africa",          place: team-b-4, group: group-b}
+  uae: {name: "United Arab Emerates",  place: team-b-5, group: group-b}
+  win: {name: "West Indies",           place: team-b-6, group: group-b}
+  zim: {name: "Zimbabwe",              place: team-b-7, group: group-b}
+
+groups:
+  group-a: {name: "Pool A", short: "A", color: green}
+  group-b: {name: "Pool B", short: "B", color: red}
+
+venues:
+  hag: "Hagley Oval, Christchurch"
+  mcg: "Melbourne Cricket Ground, Melbourne"
+  sed: "Seddon Park, Hamilton"
+  adl: "Adelaide Oval, Adelaide"
+  sax: "Saxtom Oval, Nelson"
+  dun: "University Oval, Dunedin"
+  man: "Manuka Oval, Canberra"
+  wel: "Wellington Regional Stadium, Wellington"
+  gab: "The Gabba, Brisbane"
+  scg: "Sydney Cricket Ground, Sydney"
+  edn: "Eden Park, Auckland"
+  wac: "WACA, Perth"
+  nap: "McLean Park, Napier"
+  bel: "Bellerive Oval, Hobart"
+
+games:
+  - {game:  1, type: group, group: group-a, teams: [nzl, sri], time: "Sat, 14 Feb 2015", venue: hag}
+  - {game:  2, type: group, group: group-a, teams: [aus, eng], time: "Sat, 14 Feb 2015", venue: mcg}
+  - {game:  3, type: group, group: group-b, teams: [rsa, zim], time: "Sun, 15 Feb 2015", venue: sed}
+  - {game:  4, type: group, group: group-b, teams: [ind, pak], time: "Sun, 15 Feb 2015", venue: adl}
+  - {game:  5, type: group, group: group-b, teams: [win, ire], time: "Mon, 16 Feb 2015", venue: sax}
+  - {game:  6, type: group, group: group-a, teams: [nzl, sco], time: "Tue, 17 Feb 2015", venue: dun}
+  - {game:  7, type: group, group: group-a, teams: [ban, afg], time: "Wed, 18 Feb 2015", venue: man}
+  - {game:  8, type: group, group: group-b, teams: [zin, uae], time: "Thu, 19 Feb 2015", venue: sax}
+  - {game:  9, type: group, group: group-a, teams: [eng, win], time: "Fri, 20 Feb 2015", venue: wel}
+  - {game: 10, type: group, group: group-b, teams: [pak, win], time: "Sat, 21 Feb 2015", venue: hag}
+  - {game: 11, type: group, group: group-a, teams: [aus, bag], time: "Sat, 21 Feb 2015", venue: gab}
+  - {game: 12, type: group, group: group-a, teams: [sri, afg], time: "Sun, 22 Feb 2015", venue: dun}
+  - {game: 13, type: group, group: group-b, teams: [rsa, afg], time: "Sun, 22 Feb 2015", venue: mgc}
+  - {game: 14, type: group, group: group-a, teams: [eng, sco], time: "Mon, 23 Feb 2015", venue: hag}
+  - {game: 15, type: group, group: group-b, teams: [win, zim], time: "Tue, 24 Feb 2015", venue: man}
+  - {game: 16, type: group, group: group-b, teams: [ire, uae], time: "Wed, 25 Feb 2015", venue: gab}
+  - {game: 17, type: group, group: group-a, teams: [afg, sco], time: "Thu, 26 Feb 2015", venue: dun}
+  - {game: 18, type: group, group: group-a, teams: [sri, ban], time: "Thu, 26 Feb 2015", venue: msg}
+  - {game: 19, type: group, group: group-b, teams: [rsa, win], time: "Fri, 27 Feb 2015", venue: scg}
+  - {game: 20, type: group, group: group-a, teams: [aus, nzl], time: "Sat, 28 Feb 2015", venue: edn}
+  - {game: 21, type: group, group: group-b, teams: [ind, uae], time: "Sat, 28 Feb 2015", venue: wac}
+  - {game: 22, type: group, group: group-a, teams: [eng, sri], time: "Sun,  1 Mar 2015", venue: wel}
+  - {game: 23, type: group, group: group-b, teams: [pak, zim], time: "Sun,  1 Mar 2015", venue: gab}
+  - {game: 24, type: group, group: group-b, teams: [rsa, ire], time: "Tue,  3 Mar 2015", venue: man}
+  - {game: 25, type: group, group: group-b, teams: [pak, uae], time: "Wed,  4 Mar 2015", venue: nap}
+  - {game: 26, type: group, group: group-a, teams: [aus, afg], time: "Wed,  4 Mar 2015", venue: wac}
+  - {game: 27, type: group, group: group-a, teams: [ban, sco], time: "Thu,  5 Mar 2015", venue: sax}
+  - {game: 28, type: group, group: group-b, teams: [ind, win], time: "Fri,  6 Mar 2015", venue: wac}
+  - {game: 29, type: group, group: group-b, teams: [rsa, pak], time: "Sat,  7 Mar 2015", venue: edn}
+  - {game: 30, type: group, group: group-b, teams: [zin, afg], time: "Sat,  7 Mar 2015", venue: bel}
+  - {game: 31, type: group, group: group-a, teams: [nzl, afg], time: "Sun,  8 Mar 2015", venue: nap}
+  - {game: 32, type: group, group: group-a, teams: [aus, sri], time: "Sun,  8 Mar 2015", venue: scg}
+  - {game: 33, type: group, group: group-a, teams: [eng, ban], time: "Mon,  9 Mar 2015", venue: adl}
+  - {game: 34, type: group, group: group-b, teams: [ind, ire], time: "Tue, 10 Mar 2015", venue: sed}
+  - {game: 35, type: group, group: group-a, teams: [sri, sco], time: "Wed, 11 Mar 2015", venue: bel}
+  - {game: 36, type: group, group: group-b, teams: [rsa, uae], time: "The, 12 Mar 2015", venue: wel}
+  - {game: 37, type: group, group: group-a, teams: [ban, nzl], time: "Fri, 13 Mar 2015", venue: sed}
+  - {game: 38, type: group, group: group-a, teams: [eng, afg], time: "Fri, 13 Mar 2015", venue: scg}
+  - {game: 39, type: group, group: group-b, teams: [ind, zim], time: "Sat, 14 Mar 2015", venue: edn}
+  - {game: 40, type: group, group: group-a, teams: [aus, sco], time: "Sat, 14 Mar 2015", venue: bel}
+  - {game: 41, type: group, group: group-b, teams: [win, uae], time: "Sun, 15 Mar 2015", venue: nap}
+  - {game: 42, type: group, group: group-b, teams: [pak, ire], time: "Sun, 15 Mar 2015", venue: adl}
+
+  - {game: 43, type: final, final: quarter-final-1, time: "Wed, 18 Mar 2015", venue: scg}
+  - {game: 44, type: final, final: quarter-final-2, time: "Thu, 19 Mar 2015", venue: mcg}
+  - {game: 45, type: final, final: quarter-final-3, time: "Fri, 20 Mar 2015", venue: adl}
+  - {game: 46, type: final, final: quarter-final-4, time: "Sat, 21 Mar 2015", venue: wel}
+
+  - {game: 47, type: final, final: semi-final-1, time: "Tue, 24 Mar 2015", venue: edn}
+  - {game: 48, type: final, final: semi-final-2, time: "Thu, 26 Mar 2015", venue: scg}
+  - {game: 49, type: final, final: final, time: "Sun, 29 Mar 2015", venue: mcg}
+
+# Reseults are shown as "runs/wickets:overs-used/total-overs"
+# - If wickets arn't shown then taken to be '10'.
+# - regexp \d+(|/\d+):\d+(|\.[1-6])/\d+
+# - Partial overs are shown as "complete-overs.balls"
+results:
+  - {game:  1, score: {nzl: "331/6:50/50",   sri: "233:46.1/50"},     summary: "New Zealand won by 98 runs"}
+  - {game:  2, score: {adl: "342/9:50/50",   eng: "231:41.5/50"},     summary: "Australia beat England by 111 runs"}
+  - {game:  3, score: {rsa: "339/4:50/50",   zim: "277:48.2/50"},     summary: "South Africa won by 111 runs"}
+  - {game:  4, score: {ind: "300/7:50/50",   pak: "224:47/50"},       summary: "India won by 76 runs"}
+  - {game:  5, score: {win: "304/7:50/50",   irl: "307/6:45.5/50"},   summary: "Ireland won by 4 wickets"}
+  - {game:  6, score: {nzl: "146/7:24.5/50", sco: "142:36.2/50"},     summary: "New Zealand won by 3 wickets"}
+  - {game:  7, score: {ban: "267:50/50",     afg: "162:42.5/50"},     summary: "Bangladesh won by 105 runs"}
+  - {game:  8, score: {zim: "286/6:48/50",   uae: "285/7:50/50"},     summary: "Zimababwe won by 4 wickets"}
+  - {game:  9, score: {nzl: "125/2:12.2/50", eng: "123:33.2/50"},     summary: "New Zealand won by 4 wickets"}
+  - {game: 10, score: {pak: "160:39/50",     win: "310/6:50/50"},     summary: "West Indies won by 150 runs"}
+  - {game: 11, score: {aus: "", ban: ""},                             summary: "Match abandoned without a ball bauled"}
+  - {game: 12, score: {sri: "236/6:48.2/50", afg: "232:49.4/50"},     summary: "Sri Lanka won by 4 wickets"}
+  - {game: 13, score: {rsa: "177:40.2/50",   ind: "307/7:50/50"},     summary: "India won by 130 runs"}
+  - {game: 14, score: {eng: "303/8:50/50",   sco: "184:42.2/50"},     summary: "England won by 119 runs"}
+  - {game: 15, score: {win: "372/2:50/50",   zim: "289:44.3/48"},     summary: "West Indies won by 73 runs (D/L method)"}
+  - {game: 16, score: {ire: "279/8:49.2/50", uae: "278/9:50/50"},     summary: "Ireland won by 2 wickets"}
+  - {game: 17, score: {afg: "211/9:49.3/50", sco: "210:50/50"},       summary: "Afghanistan won by 1 wicket"}
+  - {game: 18, score: {sri: "332/1:50/50",   ban: "240:47/50"},       summary: "Sri Lanka won by 92 runs"}
+  - {game: 19, score: {rsa: "408/5:50/50",   win: "151:33.1/50"},     summary: "South Africa won by 257 runs"}
+  - {game: 20, score: {aus: "151:32.2/50",   nzl: "152/9:23.1/50"},   summary: "New Zealand won by 1 wicket"}
+  - {game: 21, score: {ind: "104/1:18.5/50", uae: "102:31.3/50"},     summary: "India won by 9 wickets"}
+  - {game: 22, score: {eng: "309/6:50/50",   sri: "312/1:47.2/50"},   summary: "Sri Lanka won by 9 wickets"}
+  - {game: 23, score: {pak: "235/7:50/50",   zim: "215:49.4/50"},     summary: "Pakistan won by 20 runs"}
+  - {game: 24, score: {rsa: "411/4:50/50",   ire: "210:45/50"},       summary: "South Africa won by 201 runs"}
+  - {game: 25, score: {pak: "339/6:50/50",   uae: "210/8:50/50"},     summary: "Pakistan won by 129 runs"}
+  - {game: 26, score: {aus: "417/6:50/50",   afg: "142:37.3/50"},     summary: "Australia won by 275 runs"}
+  - {game: 27, score: {ban: "322/4:48.1/50", sco: "318/8:50/50"},     summary: "Bangladesh won by 6 wickets"}
+  - {game: 28, score: {ind: "185/6:39.1/50", win: "182:44.2/50"},     summary: "India won bny 4 wickets"}
+  - {game: 29, score: {rsa: "202:33.3/47",   pak: "222:46.4/47"},     summary: "Pakistan won by 29 runs (D/L method)"}
+  - {game: 30, score: {zim: "326:49.3/50",   ire: "331/8:50/50"},     summary: "Ireland won by 5 runs"}
+  - {game: 31, score: {nzl: "188/4:36.1/50", afg: "186:47.4/50"},     summary: "New Zealand won by 6 wickets"}
+  - {game: 32, score: {aus: "376/9:50/50",   sri: "312:46.2/50"},     summary: "Australia won by 64 runs"}
+  - {game: 33, score: {eng: "260:48.3/50",   ban: "275/7:50/50"},     summary: "Bangladesh won by 15 runs"}
+  - {game: 34, score: {ind: "260/2:36.5/50", ire: "259:49/50"},       summary: "India won by 8 wickets"}
+  - {game: 35, score: {sri: "363/9:50/50",   sco: "215:43.1/50"},     summary: "Sri Lanka won by 148 runs"}
+  - {game: 36, score: {rsa: "341/6:50/50",   uae: "195:47.3/50"},     summary: "South Africa won by 146 runs"}
+  - {game: 37, score: {ban: "288/7:50/50",   nzl: "290/7:48.5/50"},   summary: "New Zealand won by 3 wickets"}
+  - {game: 38, score: {eng: "101/1:18.1/25", afg: "111/736.2/36.2"},  summary: "England won by 9 wickets (D/L method)"}
+  - {game: 39, score: {ind: "288/4:48.4/50", zim: "287:48.5/50"},     summary: "India won by 6 wickets"}
+  - {game: 40, score: {aus: "133/3:15.2/50", sco: "130:25.4/50"},     summary: "Australia won by 7 wickets"}
+  - {game: 41, score: {win: "176/4:30.5/50", uae: "175:47.4/50"},     summary: "West Indies won by 6 wickets"}
+  - {game: 42, score: {pak: "241/3:46.1/50", ire: "237:50/50"},       summary: "Pakistan won by 7 wickets"}
