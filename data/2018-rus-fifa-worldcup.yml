@@ -1,0 +1,157 @@
+---
+title:    2018 FIFA World Cup Russia
+location: Russia
+code:     football
+date:     {from: "14 June 2018", to: "15 July 2018"}
+version:  1.0
+confederations:
+  africa:
+  asia:
+  europe:
+  north-americas:
+  oceania:
+  south-america:
+
+teams:
+  # Country codes: https://simple.wikipedia.org/wiki/List_of_IOC_country_codes
+  # Africa
+  egy: {name: "Egypt",          confederation: africa}
+  mar: {name: "Morocco",        confederation: africa}
+  nig: {name: "Nigeria",        confederation: africa}
+  sen: {name: "Senegal",        confederation: africa}
+  tun: {name: "Tunisia",        confederation: africa}
+
+  # Asia
+  aus: {name: "Australia",      confederation: asia}
+  irn: {name: "Iran",           confederation: asia}
+  jpn: {name: "Japan",          confederation: asia}
+  kor: {name: "South Korea",    confederation: asia}
+  ksa: {name: "Saudi Arabia",   confederation: asia}
+
+  # Europe
+  bel: {name: "Belgium",        confederation: europe}
+  cro: {name: "Croatia",        confederation: europe}
+  den: {name: "Denmark",        confederation: europe}
+  eng: {name: "England",        confederation: europe}
+  fra: {name: "France",         confederation: europe}
+  ger: {name: "Germany",        confederation: europe}
+  isl: {name: "Iceland",        confederation: europe}
+  pol: {name: "Poland",         confederation: europe}
+  por: {name: "Portugal",       confederation: europe}
+  rus: {name: "Russia",         confederation: europe}
+  srb: {name: "Serbia",         confederation: europe}
+  esp: {name: "Spain",          confederation: europe}
+  swe: {name: "Sweden",         confederation: europe}
+  swi: {name: "Switzerland",    confederation: europe}
+
+  # North America, Central America and Caribbean
+  crc: {name: "Costa Rica",     confederation: north-americas}
+  mex: {name: "Mexico",         confederation: north-americas}
+  pan: {name: "Panama",         confederation: north-americas}
+
+  # South America
+  arg: {name: "Argentina",      confederation: south-america}
+  bra: {name: "Brazil",         confederation: south-america}
+  col: {name: "Columbia",       confederation: south-america}
+  per: {name: "Peru",           confederation: south-america}
+  uru: {name: "Uruguay",        confederation: south-america}
+  
+  
+# See: http://en.wikipedia.org/wiki/List_of_IOC_country_codes
+groups:
+  group-a: ["rus", "ksa", "egy", "uru"]
+  group-b: ["por", "esp", "mar", "irn"]
+  group-c: ["fra", "aus", "per", "den"]
+  group-d: ["arg", "isl", "cro", "nig"]
+  group-e: ["bra", "swi", "crc", "srb"]
+  group-f: ["ger", "mex", "swe", "kor"]
+  group-g: ["bel", "pan", "tun", "eng"]
+  group-h: ["pol", "sen", "col", "jap"]
+
+group-details:
+  group-a: {name: "Group A", short: "A"}
+  group-b: {name: "Group B", short: "B"}
+  group-c: {name: "Group C", short: "C"}
+  group-d: {name: "Group D", short: "D"}
+  group-e: {name: "Group E", short: "E"}
+  group-f: {name: "Group F", short: "F"}
+  group-g: {name: "Group G", short: "G"}
+  group-h: {name: "Group H", short: "H"}
+
+venues:
+
+games:
+  - {place: ["team-a-1", "team-a-2"]}
+  - {place: ["team-a-3", "team-a-4"]}
+  - {place: ["team-b-1", "team-b-2"]}
+  - {place: ["team-b-3", "team-b-4"]}
+  - {place: ["team-c-1", "team-c-2"]}
+  - {place: ["team-c-3", "team-c-4"]}
+  - {place: ["team-d-1", "team-d-2"]}
+  - {place: ["team-d-3", "team-d-4"]}
+  - {place: ["team-e-1", "team-e-2"]}
+  - {place: ["team-e-3", "team-e-4"]}
+  - {place: ["team-f-1", "team-f-2"]}
+  - {place: ["team-f-3", "team-f-4"]}
+  - {place: ["team-g-1", "team-g-2"]}
+  - {place: ["team-g-3", "team-g-4"]}
+  - {place: ["team-h-1", "team-h-2"]}
+  - {place: ["team-h-3", "team-h-4"]}
+
+  - {place: ["team-a-1", "team-a-3"]}
+  - {place: ["team-a-2", "team-a-4"]}
+  - {place: ["team-b-1", "team-b-4"]}
+  - {place: ["team-b-2", "team-b-3"]}
+  - {place: ["team-c-1", "team-c-3"]}
+  - {place: ["team-c-2", "team-c-4"]}
+  - {place: ["team-d-1", "team-d-3"]}
+  - {place: ["team-d-2", "team-d-4"]}
+  - {place: ["team-e-1", "team-e-3"]}
+  - {place: ["team-e-2", "team-e-4"]}
+  - {place: ["team-f-1", "team-f-3"]}
+  - {place: ["team-f-2", "team-f-4"]}
+  - {place: ["team-g-1", "team-g-3"]}
+  - {place: ["team-g-2", "team-g-4"]}
+  - {place: ["team-h-1", "team-h-3"]}
+  - {place: ["team-h-2", "team-h-4"]}
+
+  - {place: ["team-a-1", "team-a-4"]}
+  - {place: ["team-a-2", "team-a-3"]}
+  - {place: ["team-b-1", "team-b-3"]}
+  - {place: ["team-b-2", "team-b-4"]}
+  - {place: ["team-c-1", "team-c-4"]}
+  - {place: ["team-c-2", "team-c-3"]}
+  - {place: ["team-d-1", "team-d-4"]}
+  - {place: ["team-d-2", "team-d-3"]}
+  - {place: ["team-e-1", "team-e-4"]}
+  - {place: ["team-e-2", "team-e-3"]}
+  - {place: ["team-f-1", "team-f-4"]}
+  - {place: ["team-f-2", "team-f-3"]}
+  - {place: ["team-g-1", "team-g-4"]}
+  - {place: ["team-g-2", "team-g-3"]}
+  - {place: ["team-h-1", "team-h-4"]}
+  - {place: ["team-h-2", "team-h-3"]}
+  
+finals:
+  # Round of 16
+  - {place: ["group-a-1", "group-b-2"], result: ["winner-49", "loser-49"]} # 49
+  - {place: ["group-c-1", "group-d-2"], result: ["winner-50", "loser-50"]} # 50
+  - {place: ["group-b-1", "group-a-2"], result: ["winner-51", "loser-51"]} # 51
+  - {place: ["group-c-1", "group-d-2"], result: ["winner-52", "loser-52"]} # 52
+  - {place: ["group-e-1", "group-f-2"], result: ["winner-53", "loser-53"]} # 53
+  - {place: ["group-g-1", "group-h-2"], result: ["winner-54", "loser-54"]} # 54
+  - {place: ["group-f-1", "group-e-2"], result: ["winner-55", "loser-55"]} # 55
+  - {place: ["group-h-1", "group-g-2"], result: ["winner-56", "loser-56"]} # 56
+  # Quarter Finals
+  - {place: ["winner-49", "winner-50"], result: ["winner-57", "loser-57"]} # 57
+  - {place: ["winner-53", "winner-54"], result: ["winner-58", "loser-58"]} # 58
+  - {place: ["winner-51", "winner-52"], result: ["winner-59", "loser-59"]} # 59
+  - {place: ["winner-55", "winner-56"], result: ["winner-60", "loser-60"]} # 60
+  # Semi Finals
+  - {place: ["winner-57", "winner-58"], result: ["winner-61", "loser-61"]} # 61
+  - {place: ["winner-59", "winner-60"], result: ["winner-62", "loser-62"]} # 62
+  # Third Place Play-Off 
+  - {place: ["loser-61", "loser-62"],   result: ["winner-63", "loser-63"]} # 63
+  # Final
+  - {place: ["winner-61", "winner-62"], result: ["winner-64", "loser-64"]} # 64
+
