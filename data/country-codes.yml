@@ -1,0 +1,50 @@
+---
+# This list is not complete yet. It just contains the countries
+# participating in the 2014 and 2018 FIFA World Cups.
+countries:
+  alg: {name: "Algeria"}
+  arg: {name: "Argentina"}
+  aus: {name: "Australia"}
+  bel: {name: "Belgium"}
+  bih: {name: "Bosnia & Herz."}
+  bra: {name: "Brazil"}
+  cam: {name: "Cameroon"}
+  chi: {name: "Chile"}
+  civ: {name: "Ivory Coast"}
+  col: {name: "Columbia"}
+  cos: {name: "Costa Rico"}
+  crc: {name: "Costa Rica"}
+  cro: {name: "Croatia"}
+  den: {name: "Denmark"}
+  ecu: {name: "Ecuador"}
+  egy: {name: "Egypt"}
+  eng: {name: "England"}
+  esp: {name: "Spain"}
+  fra: {name: "France"}
+  ger: {name: "Germany"}
+  gha: {name: "Ghana"}
+  gre: {name: "Greece"}
+  hon: {name: "Honduras"}
+  irn: {name: "Iran"}
+  isl: {name: "Iceland"}
+  ita: {name: "Italy"}
+  jpn: {name: "Japan"}
+  kor: {name: "Korea Republic"}
+  ksa: {name: "Saudi Arabia"}
+  mar: {name: "Morocco"}
+  mex: {name: "Mexico"}
+  ned: {name: "Netherlands"}
+  nga: {name: "Nigeria"}
+  nig: {name: "Nigeria"}
+  pan: {name: "Panama"}
+  per: {name: "Peru"}
+  pol: {name: "Poland"}
+  por: {name: "Portugal"}
+  rus: {name: "Russia"}
+  sen: {name: "Senegal"}
+  srb: {name: "Serbia"}
+  swe: {name: "Sweden"}
+  swi: {name: "Switzerland"}
+  tun: {name: "Tunisia"}
+  uru: {name: "Uruguay"}
+  usa: {name: "USA"}

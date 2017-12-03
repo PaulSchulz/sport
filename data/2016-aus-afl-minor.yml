@@ -1,7 +1,11 @@
 ---
-name: AFL Draw & Fixtures 2016
-version: 1.0
-format: 1.0
+title:    "2016 AFL Draw & Fixtures"
+location: "Australia"
+code:     afl
+date:     {from: "24 Mar 2016", to: "28 Aug 2016"}
+version:  0.1
+format:   0.1
+
 fields:
   - Date
   - Home v Away

@@ -1,9 +1,11 @@
 ---
-title:    Hyundai A League
+title:    2015/6 Hyundai A League
 location: Australia
-code:     football
-date:     {from: "Fri, 08 Oct 2015", to: "Sun, 10 Apr 2016"}
+date:     {from: "08 Oct 2015", to: "10 Apr 2016"}
 url:      "http://www.a-league.com.au/results"
+code:     football
+version:  1.0
+
 teams:
   bri: {name: "Brisbane Roar FC"}
   adl: {name: "Adelaide United"}
@@ -14,20 +16,20 @@ teams:
   per: {name: "Perth Glory"}
   syd: {name: "Sydney FC"}
   wel: {name: "Wellington Phoenix"}
-  wsw: {name: "Western Sydney Wanderers" 
+  wsw: {name: "Western Sydney Wanderers"}
 
 venues:
-   pir:  {:name "Pirtek Stadium"}
-   adl:  {:name "Adelaide Oval", tz: "+1030"}
-   coop: {:name "Coopers Stadium"}
-   eti:  {:name "Etihad Stadium"}
-   sun:  {:name "Suncorp Stadium"}
-   cen:  {:name "Central Coast Stadium"}
-   hun:  {:name "Hunter Stadium"}
-   wes:  {:name "Westpac Stadium"}
-   all:  {:name "Allianz Stadium"}
-   aami: {:name "AAMI Park"}
-   nib:  {:name "NIB Stadium"}
+   pir:  {name: "Pirtek Stadium"}
+   adl:  {name: "Adelaide Oval", tz: "+1030"}
+   coop: {name: "Coopers Stadium"}
+   eti:  {name: "Etihad Stadium"}
+   sun:  {name: "Suncorp Stadium"}
+   cen:  {name: "Central Coast Stadium"}
+   hun:  {name: "Hunter Stadium"}
+   wes:  {name: "Westpac Stadium"}
+   all:  {name: "Allianz Stadium"}
+   aami: {name: "AAMI Park"}
+   nib:  {name: "NIB Stadium"}
 
 games:
   - {id: game-1-1,  v: [wsw, bri], score: {wsw: 1, bri: 3}}
@@ -58,7 +60,7 @@ games:
   - {id: game-5-2,  v: [syd, bri], score: {syd: 0, bri: 0}}
   - {id: game-5-3,  v: [new, wsw], score: {new: 1, wsw: 2}}
   - {id: game-5-4,  v: [ccm, wel], score: {ccm: 1, wel: 1}}
-  - {id: game-5-5,  v: [per, mv ], score: {per: 1, mv:  0} time: "16 Dec 2015 2030" }
+  - {id: game-5-5,  v: [per, mv ], score: {per: 1, mv:  0}, time: "16 Dec 2015 2030" }
 
   - {id: game-6-1,  v: [wel, adl], score: {wel: 4, adl: 2}}
   - {id: game-6-2,  v: [mc,  wsw], score: {mc:  0, wsw: 3}}
@@ -192,5 +194,5 @@ games:
   - {id: game-27-4, v: [wel, wsw]}
   - {id: game-27-5, v: [syd, per]}
 
-finals:
+#finals:
   

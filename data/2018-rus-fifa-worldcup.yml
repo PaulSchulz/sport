@@ -2,7 +2,7 @@
 title:    2018 FIFA World Cup Russia
 location: Russia
 code:     football
-date:     {from: "14 June 2018", to: "15 July 2018"}
+date:     {from: "14 Jun 2018", to: "15 Jul 2018"}
 version:  1.0
 confederations:
   africa:

@@ -1,8 +1,9 @@
 ---
-title:    AFL Finals
+title:    2015 AFL Finals
 location: Australia
+date:     {from: "11 Sep 2015", to: "03 Oct 2015"}
 code:     afl
-date: {from: "11 Sep 2015", to: "03 Oct 2015"}
+version:  1.0
 
 teams:
   fre:

@@ -1,9 +1,10 @@
 ---
-title:    "ICC Cricket World Cup"
-location: "Australia and New Zealand"
+title:    "2015 ICC Cricket World Cup"
+location: "Australia, New Zealand"
 code:     cricket-50over
-date:     {from: "Sat, 14 Feb 2015",  to: "Sun, 29 Mar 2015"}
+date:     {from: "14 Feb 2015",  to: "29 Mar 2015"}
 url:      "http://www.icc-cricket.com/cricket-world-cup"
+version: 1.0
 
 # See:
 #   http://en.wikipedia.org/wiki/List_of_IOC_country_codes

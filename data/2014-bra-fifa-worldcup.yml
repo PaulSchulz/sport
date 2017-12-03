@@ -1,8 +1,10 @@
 ---
-title:    "FIFA World Cup"
+title:    "2014 FIFA World Cup"
 location: "Brazil"
+date:     {from: "12 Jun 2014", to: "13 Jul 2014"}
 code:     football
-date:     {from: "12 June 2014", to: "13 July 2014"}
+version:  1.0
+
 teams:
   bra: {name: "Brazil",         place: "team-a-1", group: "group-a"}
   cro: {name: "Croatia",        place: "team-a-2", group: "group-a"}
