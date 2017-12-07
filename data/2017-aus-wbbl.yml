@@ -1,0 +1,110 @@
+---
+title:    "2017-8 Women's Big Bash League"
+location: "Australia"
+code:     cricket-bbl
+date:     {from: "09 Dec 2017",  to: "04 Feb 2018"}
+url:      "http://www.bigbash.com.au/fixtures?gender=women"
+version:  1.0
+
+teams:
+  str: {name: "Adelaide Strikers"}
+  hea: {name: "Brisbane Heat"}
+  hur: {name: "Hobart Hurricanes"}
+  ren: {name: "Melbourne Renegades"}
+  sta: {name: "Melbourne Stars"}
+  sco: {name: "Perth Scorchers"}
+  six: {name: "Sydney Sixers"}
+  thu: {name: "Sydney Thunder"}
+
+venues:
+  adl: {name: "Adelaide Oval, Adelaide"}
+  alb: {name: "Lavington Sports Ground, Albury"}
+  ali: {name: "Traeger Park, Alice Springs"}
+  bri: {name: "Allan Border Field, Brisbane"}
+  cam: {name: "Camberwell Sports Ground, Camberwell"}
+  cas: {name: "Casey Fields, Cranbourne East"}
+  gab: {name: "Gabba, Brisbane"}
+  gee: {name: "GMHBA Stadium, Geelong"}
+  glg: {name: "Gliderol Stadium, Glenelg"}
+  hob: {name: "Blundstone Arena, Hobart"}
+  hur: {name: "Hurstville Oval, Hurstville"}
+  lil: {name: "Lilac Hill, Perth"}
+  mac: {name: "Harrup Park, Mackay"}
+  man: {name: "Manuka Oval, Canberra"}
+  mcg: {name: "MCG, Melbourne"}
+  mel: {name: "Etihad Stadium, Melbourn"}
+  pen: {name: "Howell Oval, Penrith"}
+  per: {name: "WACA, Perth"}
+  scg: {name: "SCG, Sydney"}
+  spo: {name: "Spotless Stadium, Sydney"}
+  syd: {name: "North Sydney Oval No.1, North Sydney"}
+  uta: {name: "University of Tasmania Stadium, Launceston"}
+  wag: {name: "Robertson Oval, Wagga Wagga"}
+  wol: {name: "North Dalton Park, Wollongong"}
+  
+games:
+  - {v: [ren, thu], venue: syd, time: "09 Dec 2017 13:15 ACDT"}
+  - {v: [hur, six], venue: glg, time: "09 Dec 2017 14:00 ACDT"}
+  - {v: [six, sta], venue: syd, time: "09 Dec 2017 17:45 ACDT"}
+  - {v: [sco, hea], venue: syd, time: "10 Dec 2017 22:15 ACDT"}
+  - {v: [str, hur], venue: glg, time: "10 Dec 2017 12:00 ACDT"}
+  - {v: [thu, six], venue: syd, time: "10 Dec 2017 13:30 ACDT"}
+  - {v: [sco, six], venue: wol, time: "12 Dec 2017 11:30 ACDT"}
+  - {v: [sta, thu], venue: alb, time: "12 Dec 2017 13:30 ACDT"}
+  - {v: [hea, sco], venue: bri, time: "15 Dec 2017 14:30 ACDT"}
+  - {v: [thu, sta], venue: pen, time: "16 Dec 2017 12:30 ACDT"}
+  - {v: [ren, str], venue: glg, time: "16 Dec 2017 14:00 ACDT"}
+  - {v: [str, ren], venue: glg, time: "17 Dec 2017 12:30 ACDT"}
+  - {v: [hur, six], venue: hob, time: "17 Dec 2017 13:30 ACDT"}
+  - {v: [thu, six], venue: spo, time: "19 Dec 2017 19:15 ACDT"}
+  - {v: [hea, sta], venue: gab, time: "20 Dec 2017 19:10 ACDT"}
+  - {v: [hur, ren], venue: hob, time: "21 Dec 2017 19:10 ACDT"}
+  - {v: [hea, ren], venue: cam, time: "22 Dec 2017 13:30 ACDT"}
+  - {v: [str, thu], venue: adl, time: "22 Dec 2017 19:10 ACDT"}  
+  - {v: [six, hur], venue: scg, time: "23 Dec 2017 11:50 ACDT"}
+  - {v: [ren, hea], venue: mel, time: "23 Dec 2017 14:00 ACDT"}
+  - {v: [sco, sta], venue: per, time: "23 Dec 2017 13:50 ACDT"}
+  - {v: [sta, sco], venue: per, time: "27 Dec 2017 14:00 ACDT"}
+  - {v: [hea, str], venue: adl, time: "29 Dec 2017 14:00 ACDT"}
+  - {v: [sco, six], venue: lil, time: "30 Dec 2017 12:30 ACDT"}
+  - {v: [hur, thu], venue: uta, time: "30 Dec 2017 13:50 ACDT"}
+  - {v: [thu, hur], venue: uta, time: "31 Dec 2017 10:30 ACDT"}
+  - {v: [str, hea], venue: adl, time: "31 Dec 2017 13:15 ACDT"}
+  - {v: [ren, six], venue: cam, time: "02 Jan 2018 13:30 ACDT"}
+  - {v: [ren, six], venue: gee, time: "03 Jan 2018 13:50 ACDT"}
+  - {v: [sta, str], venue: cas, time: "05 Jan 2018 13:30 ACDT"}
+  - {v: [ren, sta], venue: mcg, time: "06 Jan 2018 13:50 ACDT"}
+  - {v: [hea, hur], venue: hob, time: "07 Jan 2018 09:30 ACDT"}
+  - {v: [thu, sco], venue: lil, time: "07 Jan 2018 12:30 ACDT"}
+  - {v: [hur, hea], venue: hob, time: "08 Jan 2018 12:50 ACDT"}
+  - {v: [sco, thu], venue: per, time: "08 Jan 2018 16:00 ACDT"}
+  - {v: [str, sta], venue: adl, time: "09 Jan 2018 14:20 ACDT"}
+  - {v: [hea, sta], venue: mac, time: "12 Jan 2018 19:00 ACDT"}
+  - {v: [str, sco], venue: ali, time: "13 Jan 2018 11:50 ACDT"}
+  - {v: [six, thu], venue: scg, time: "13 Jan 2018 14:00 ACDT"}
+  - {v: [sta, hea], venue: mac, time: "13 Jan 2018 19:00 ACDT"}
+  - {v: [ren, hur], venue: hob, time: "14 Jan 2018 09:30 ACDT"}
+  - {v: [sco, str], venue: ali, time: "14 Jan 2018 17:30 ACDT"}
+  - {v: [hur, ren], venue: hob, time: "15 Jan 2018 14:20 ACDT"}
+  - {v: [six, hea], venue: scg, time: "18 Jan 2018 14:20 ACDT"}
+  - {v: [hea, six], venue: hur, time: "19 Jan 2018 13:30 ACDT"}
+  - {v: [sta, ren], venue: mcg, time: "20 Jan 2018 13:15 ACDT"}
+  - {v: [thu, str], venue: wag, time: "20 Jan 2018 13:30 ACDT"}
+  - {v: [sco, hur], venue: per, time: "20 Jan 2018 16:00 ACDT"}
+  - {v: [sta, six], venue: cas, time: "21 Jan 2018 13:30 ACDT"}
+  - {v: [str, thu], venue: wag, time: "21 Jan 2018 13:30 ACDT"}
+  - {v: [hur, sco], venue: lil, time: "21 Jan 2018 13:30 ACDT"}
+  - {v: [thu, ren], venue: man, time: "24 Jan 2018 14:20 ACDT"}
+  - {v: [sta, hur], venue: mcg, time: "27 Jan 2018 11:50 ACDT"}
+  - {v: [str, six], venue: hur, time: "27 Jan 2018 13:30 ACDT"}
+  - {v: [ren, sco], venue: cam, time: "27 Jan 2018 13:30 ACDT"}
+  - {v: [hea, thu], venue: gab, time: "27 Jan 2018 14:00 ACDT"}
+  - {v: [hur, sta], venue: mcg, time: "28 Jan 2018 11:30 ACDT"}
+  - {v: [sco, ren], venue: cam, time: "28 Jan 2018 13:30 ACDT"}
+  - {v: [six, str], venue: hur, time: "28 Jan 2018 13:30 ACDT"}
+  - {v: [thu, hea], venue: bri, time: "28 Jan 2018 14:30 ACDT"}
+
+finals:
+  - {v: [], time: "01 Feb 2018"}
+  - {v: [], time: "02 Feb 2018"}
+  - {v: [], time: "04 Feb 2018"}
