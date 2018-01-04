@@ -43,35 +43,151 @@ venues:
   wol: {name: "North Dalton Park, Wollongong"}
   
 games:
-  - {v: [ren, thu], venue: syd, time: "09 Dec 2017 13:15 ACDT"}
-  - {v: [hur, six], venue: glg, time: "09 Dec 2017 14:00 ACDT"}
-  - {v: [six, sta], venue: syd, time: "09 Dec 2017 17:45 ACDT"}
-  - {v: [sco, hea], venue: syd, time: "10 Dec 2017 22:15 ACDT"}
-  - {v: [str, hur], venue: glg, time: "10 Dec 2017 12:00 ACDT"}
-  - {v: [thu, six], venue: syd, time: "10 Dec 2017 13:30 ACDT"}
-  - {v: [sco, six], venue: wol, time: "12 Dec 2017 11:30 ACDT"}
-  - {v: [sta, thu], venue: alb, time: "12 Dec 2017 13:30 ACDT"}
-  - {v: [hea, sco], venue: bri, time: "15 Dec 2017 14:30 ACDT"}
-  - {v: [thu, sta], venue: pen, time: "16 Dec 2017 12:30 ACDT"}
-  - {v: [ren, str], venue: glg, time: "16 Dec 2017 14:00 ACDT"}
-  - {v: [str, ren], venue: glg, time: "17 Dec 2017 12:30 ACDT"}
-  - {v: [hur, six], venue: hob, time: "17 Dec 2017 13:30 ACDT"}
-  - {v: [thu, six], venue: spo, time: "19 Dec 2017 19:15 ACDT"}
-  - {v: [hea, sta], venue: gab, time: "20 Dec 2017 19:10 ACDT"}
-  - {v: [hur, ren], venue: hob, time: "21 Dec 2017 19:10 ACDT"}
-  - {v: [hea, ren], venue: cam, time: "22 Dec 2017 13:30 ACDT"}
-  - {v: [str, thu], venue: adl, time: "22 Dec 2017 19:10 ACDT"}  
-  - {v: [six, hur], venue: scg, time: "23 Dec 2017 11:50 ACDT"}
-  - {v: [ren, hea], venue: mel, time: "23 Dec 2017 14:00 ACDT"}
-  - {v: [sco, sta], venue: per, time: "23 Dec 2017 13:50 ACDT"}
-  - {v: [sta, sco], venue: per, time: "27 Dec 2017 14:00 ACDT"}
-  - {v: [hea, str], venue: adl, time: "29 Dec 2017 14:00 ACDT"}
-  - {v: [sco, six], venue: lil, time: "30 Dec 2017 12:30 ACDT"}
-  - {v: [hur, thu], venue: uta, time: "30 Dec 2017 13:50 ACDT"}
-  - {v: [thu, hur], venue: uta, time: "31 Dec 2017 10:30 ACDT"}
-  - {v: [str, hea], venue: adl, time: "31 Dec 2017 13:15 ACDT"}
-  - {v: [ren, six], venue: cam, time: "02 Jan 2018 13:30 ACDT"}
-  - {v: [ren, six], venue: gee, time: "03 Jan 2018 13:50 ACDT"}
+  - v:       [ren, thu],
+    venue:   syd
+    time:    "09 Dec 2017 13:15 ACDT"
+    score:   {ren: "6-189", thu: "6-200"}
+    summary: "Sydney Thunder won by 11 runs"
+  - v:       [hur, six]
+    venue:   glg,
+    time:    "09 Dec 2017 14:00 ACDT"
+    score:   {hur: "9-138", str: "3-183"}
+    summary: "Adelaide Strikers won by 45 runs"
+  - v:       [six, sta]
+    venue:   syd
+    time:    "09 Dec 2017 17:45 ACDT"
+    score:   {six: "4-242", sta: "7-156"}
+    summary: "Sydney Sixers won by 86 runs"
+  - v:       [sco, hea]
+    venue:   syd
+    time:    "10 Dec 2017 22:15 ACDT"
+    score:   {sco: "6-188", hea: "9-170"}
+    summary: "Perth Scorchers won by 18 runs"
+  - v:       [str, hur]
+    venue:   glg
+    time:    "10 Dec 2017 12:00 ACDT"
+    score:   {str: "6-176", hur: "93"}
+    summary: "Adelaide Strikers won by 83 runs"
+  - v:       [thu, six]
+    venue:   syd
+    time:    "10 Dec 2017 13:30 ACDT"
+    score:   {thu: "6-142", six: "4-156"}
+    summary: "Sydney Sixers won by 6 wickets"
+  - v:       [sco, six]
+    venue:   wol
+    time:    "12 Dec 2017 11:30 ACDT"
+    score:   {sco: "1-123", six: "8-122"}
+    summary: "Perth Scorchers win by 9 wickets"
+  - v:       [sta, thu]
+    venue:   alb
+    time:    "12 Dec 2017 13:30 ACDT"
+    score:   {sta: "8-144", thu: "2-15"}
+    summary: "Sydney Thunder won by 8 wickets"
+  - v:       [hea, sco]
+    venue:   bri
+    time:    "15 Dec 2017 14:30 ACDT"
+    score:   {hea: "4-116", sco: "7-112"}
+    summary: "Brisbane Heat won by 6 wickets"
+  - v:       [thu, sta]
+    venue:   pen
+    time:    "16 Dec 2017 12:30 ACDT"
+    score:   {thu: "1-135", sta: "4-132"}
+    summary: "Sydney Thunder win by 9 wickets"
+  - v:       [ren, str]
+    venue:   glg
+    time:    "16 Dec 2017 14:00 ACDT"
+    score:   {ren: "8-138", str: "6-139"}
+    summary: "Adelaide Strikers won by 1 run"
+  - v:       [str,ren]
+    venue:   glg
+    time:    "17 Dec 2017 12:30 ACDT"
+    score:   {str: "6-139", ren: "5-160"}
+    summary: "Melbourne Renegades won by 9 runs"
+  - v:       [hur, six]
+    venue:   hob
+    time:    "17 Dec 2017 13:30 ACDT"
+    score:   {hur: "8-119", six: "8-152"}
+    summary: "Sydney Sixers won by 33 runs"
+  - v:       [thu, six]
+    venue:   spo
+    time:    "19 Dec 2017 19:15 ACDT"
+    score:   {thu: "5-150", six: "9-149"}
+    summary: "Sydney Thunder won by 5 wickets"
+  - v:       [hea, sta]
+    venue:   gab
+    time:    "20 Dec 2017 19:10 ACDT"
+    score:   {hea: "7-206", sta: "6-191"}
+    summary: "Brisbane Heat won by 15 runs"
+  - v:       [hur, ren]
+    venue:   hob
+    time:    "21 Dec 2017 19:10 ACDT"
+    score:   {hur: "8-164", ren: "3-165"}
+    summary: "Melbourne Renegades won by 7 wickets"
+  - v:       [hea, ren],
+    venue:   cam
+    time:    "22 Dec 2017 13:30 ACDT"
+    score:   {hea: 125, ren: "6-133"}
+    summary: "Melbourne Renegades won by 8 runs"
+  - v:       [str, thu]
+    venue:   adl
+    time:    "22 Dec 2017 19:10 ACDT"
+    score:   {str: "6-163", thu: "110"}
+    summary: "Adelaide Strikers won by 53 runs"
+  - v:       [six, hur]
+    venue:   scg
+    time:    "23 Dec 2017 11:50 ACDT"
+    score:   {six: "1-99", hur: "98"}
+    summary: "Sydney Sixers win by 9 wickets"
+  - v:       [ren, hea]
+    venue:   mel
+    time:    "23 Dec 2017 14:00 ACDT"
+    score:   {ren: "0-67", hea: "66"}
+    summary: "Melbourne Renegades win by 10 wickets"
+  - v:       [sco, sta]
+    venue:   per
+    time:    "23 Dec 2017 13:50 ACDT"
+    score:   {sco: "1-164", sta: "4-163"}
+    summary: "Perth Scorchers win by 9 wickets"
+  - v:       [sco, sco]
+    venue:   per
+    time:    "27 Dec 2017 14:00 ACDT"
+    score:   {sco: "4-137", sta: "6-149"}
+    summary: "Melbourne Stars won by 12 runs"
+  - v:       [hea, str]
+    venue:   adl
+    time:    "29 Dec 2017 14:00 ACDT"
+    score:   {str: "6-113", hea: "1-114"}
+    summary: "Brisbane Heat won by 9 wickets"
+  - v:       [sco, six]
+    venue:   lil
+    time:    "30 Dec 2017 12:30 ACDT"
+    score:   {sco: "4-139", six: "138"}
+    summary: "Perth Scorchers win by 6 wickets"
+  - v:       [hur, thu]
+    venue:   uta
+    time:    "30 Dec 2017 13:50 ACDT"
+    score:   {hur: "8-112", thu: "3-116"}
+    summary: "Sydney Thunder won by 7 wickets"
+  - v:       [thu, hur]
+    venue:   uta
+    time:    "31 Dec 2017 10:30 ACDT"
+    score:   {hur: "97", thu: "2-99"}
+    summary: "Sydney Thunder won by 8 wickets"
+  - v:       [str, hea]
+    venue:   adl
+    time:    "31 Dec 2017 13:15 ACDT"
+    score:   {str: "7-119", hea: "2-122"}
+    summary: "Brisbane Heat won by 8 wickets"
+  - v:       [ren, six]
+    venue:   cam
+    time:    "02 Jan 2018 13:30 ACDT"
+    score:   {ren: "92", six: "7-128"}
+    summary: "Sydney Sixers won by 36 runs"
+  - v:       [ren, six]
+    venue:   gee
+    time:    "03 Jan 2018 13:50 ACDT"
+    score:   {ren: "7-120", six: 7-120"}
+    summary: "Melbourne Renegades won by 1 run in super over"
   - {v: [sta, str], venue: cas, time: "05 Jan 2018 13:30 ACDT"}
   - {v: [ren, sta], venue: mcg, time: "06 Jan 2018 13:50 ACDT"}
   - {v: [hea, hur], venue: hob, time: "07 Jan 2018 09:30 ACDT"}
