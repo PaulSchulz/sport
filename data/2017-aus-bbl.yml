@@ -128,8 +128,16 @@ games:
     time:    "04 Jan 2018 18:40 ACDT"
     score:   {hur: "5-183", str: "6-176"}
     summary: "Hobart Hurricanes win by 7 runs"
-  - {v: [hea, sco], venue: gab, time: "05 Jan 2018 18:40 ACDT"}
-  - {v: [sta, ren], venue: mcg, time: "06 Jan 2018 18:40 ACDT"}
+  - v:       [hea, sco]
+    venue:   gab
+    time:    "05 Jan 2018 18:40 ACDT"
+    score:   {hea: "6-191", sco: "142"}
+    summary: "Brisbane Heat won by 49 runs"
+  - v:       [sta, ren]
+    venue:   mcg
+    time:    "06 Jan 2018 18:40 ACDT"
+    score:   {sta: "4-157", ren: "4-159"}
+    summary: "Melbourne Renegades won by 6 wickets"
   - {v: [thu, str], venue: spo, time: "07 Jan 2018 18:40 ACDT"}
   - {v: [hur, six], venue: hob, time: "08 Jan 2018 17:40 ACDT"}
   - {v: [sco, ren], venue: per, time: "08 Jan 2018 20:50 ACDT"}

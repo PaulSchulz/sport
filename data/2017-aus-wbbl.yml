@@ -188,10 +188,26 @@ games:
     time:    "03 Jan 2018 13:50 ACDT"
     score:   {ren: "7-120", six: 7-120"}
     summary: "Melbourne Renegades won by 1 run in super over"
-  - {v: [sta, str], venue: cas, time: "05 Jan 2018 13:30 ACDT"}
-  - {v: [ren, sta], venue: mcg, time: "06 Jan 2018 13:50 ACDT"}
-  - {v: [hea, hur], venue: hob, time: "07 Jan 2018 09:30 ACDT"}
-  - {v: [thu, sco], venue: lil, time: "07 Jan 2018 12:30 ACDT"}
+  - v:       [sta, str]
+    venue:   cas
+    time:    "05 Jan 2018 13:30 ACDT"
+    score:   {sta: "9-122", str: "5-144"}
+    summary: "Adelaide Strikers won by 22 runs"
+  - v:       [ren, sta]
+    venue:   mcg
+    time:    "06 Jan 2018 13:50 ACDT"
+    score:   {sta: "3-145", ren: :"6-142"}
+    summary: "Melbourne Stars won by 7 wickets"
+  - v:       [hea, hur]
+    venue:   hob
+    time:    "07 Jan 2018 09:30 ACDT"
+    score:   {hea: "2-114", hur: "4-111"}
+    summary: "Brisbane Heat won by 8 wickets"
+  - v:       [thu, sco]
+    venue:   lil
+    time:    "07 Jan 2018 12:30 ACDT"
+    score:   {thu: "6-145", sco: 6-144"}
+    summary: "Sydney Thunder won by 1 run"
   - {v: [hur, hea], venue: hob, time: "08 Jan 2018 12:50 ACDT"}
   - {v: [sco, thu], venue: per, time: "08 Jan 2018 16:00 ACDT"}
   - {v: [str, sta], venue: adl, time: "09 Jan 2018 14:20 ACDT"}
