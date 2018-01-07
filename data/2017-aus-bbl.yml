@@ -138,7 +138,11 @@ games:
     time:    "06 Jan 2018 18:40 ACDT"
     score:   {sta: "4-157", ren: "4-159"}
     summary: "Melbourne Renegades won by 6 wickets"
-  - {v: [thu, str], venue: spo, time: "07 Jan 2018 18:40 ACDT"}
+  - v:       [thu, str]
+    venue:   spo,
+    time:    "07 Jan 2018 18:40 ACDT"
+    score:   {thu: "9-133:20.0", str: "7-158:20.0"}
+    summary: "Adelaide Strikers won by 25 runs"
   - {v: [hur, six], venue: hob, time: "08 Jan 2018 17:40 ACDT"}
   - {v: [sco, ren], venue: per, time: "08 Jan 2018 20:50 ACDT"}
   - {v: [str, sta], venue: adl, time: "09 Jan 2018 19:10 ACDT"}
