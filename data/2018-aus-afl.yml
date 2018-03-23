@@ -1,0 +1,761 @@
+---
+title:    2018 AFL
+location: Australia
+date:     {from: "22 Mar 2018", to: "29 Sep 2018"}
+code:     afl
+version:  1.0
+
+teams:
+  fre:
+    name:      "Fremantle Football Club"
+    shortname: "Freemantle"
+    nickname:  "Dockers"
+    url:       "http://www.fremantlefc.com.au"
+  wce:
+    name:      "West Coast Eagles"
+    shortname: "West Coast"
+    nickname:  "Eagles"
+    url:       "http://www.westcoasteagles.com.au"
+  haw:
+    name:      "Hawthorn Football Club"
+    shortname: "Hawthorn"
+    nickname:  "Hawkes"
+    url:       "http://www.hawthornfc.com.au"
+  syd:
+    name:      "Sydney Football Club"
+    shortname: "Sydney"
+    nickname:  "Swans"
+    url:       "http://www.sydneyswans.com.au"
+  rich:
+    name:      "Richmond Football Club"
+    shortname: "Richmond"
+    nickname:  "Tigers"
+    url:       ""  
+  wb:
+    name:      "Western Bulldogs"
+    shortname: "Western Bulldogs"
+    nickname:  "Bulldogs"
+    url:       ""
+  adel:
+    name:      "Adelaide Crows"
+    shortname: "Adelaide"
+    nickname:  "Crows"
+    url:       ""
+  nmfc:
+    name:      "North Melbourne"
+    shortname: "North Melbourne"
+    nickname:  ""
+    url:       ""
+  port:
+    name:      "Port Adelaide"
+    shortname: "Port"
+    nickname:  "Power"
+    url:       ""
+  geel:
+    name:      "Geelong Cats"
+    shortname: "Geelong"
+    nickname:  "Cats"
+    url:       ""
+  gws:
+    name:      "Greater Western Sydney"
+    shortname: "GWS"
+    nickname:  "Giants"
+    url:       ""
+  coll:
+    name:      "Collingwood"
+    shortname: "Collingwood"
+    nickname:  "Magpies"
+    url:       ""
+  melb:
+    name:      "Melbourne"
+    shortname: ""
+    nickname:  ""
+    url:       ""
+  stk:
+    name:      "St Kilda"
+    shortname: ""
+    nickname:  "Saints"
+    url:       ""
+  ess:
+    name:      "Essendon"
+    shortname: "Essendon"
+    nickname:  "Bombers"
+    url:       ""
+  gcfc:
+    name:      "Gold Coast Suns"
+    shortname: "Gold Coast"
+    nickname:  "Suns"
+    url:       ""
+  bl:
+    name:      "Brisbane Lions"
+    shortname: "Brisbane"
+    nickname:  "Lions"
+    url:       ""
+  carl:
+    name:      "Carlton"
+    shortname: "Carlton"
+    nickname:  "Blues"
+    url:       ""
+
+venues:
+  ds:  {name: "Domain Stadium",           tz: "+0800"}
+  mcg: {name: "Melbourne Cricket Ground", tz: "+1000"}
+  anz: {name: "ANZ Stadium",              tz: "+1000"}
+
+rounds:
+  round-1:
+    game-1:
+      - Thursday, March 22
+      - Richmond vs. Carlton (MCG) (N)
+      - ["17.19(121)", "15.5(95)"]
+    game-2:
+      - Friday, March 23
+      - Essendon vs. Adelaide Crows (ES) (N)
+    game-3:
+      - Saturday, March 24
+      - St Kilda vs. Brisbane Lions (ES) (T)
+    game-4:
+      - Saturday, March 24
+      - Port Adelaide vs. Fremantle (AO) (T)
+    game-5:
+      - Saturday, March 24
+      -  Gold Coast SUNS vs. North Melbourne (CS) (N)
+    game-6:
+      - Saturday, March 24
+      - Hawthorn vs. Collingwood (MCG) (N)
+    game-7:
+      - Sunday, March 25
+      - GWS GIANTS vs. Western Bulldogs (UNSW)
+    game-8:
+      -  Sunday, March 25
+      - Melbourne vs. Geelong Cats (MCG)
+    gane-9:
+      - Sunday, March 25
+      - West Coast Eagles vs. Sydney Swans (OS) (N)
+  round-2:
+    game-1:
+      - Thursday, March 29
+      - Adelaide Crows vs. Richmond (AO) (N)
+    game-2:
+      - Friday, March 30
+      - North Melbourne vs. St Kilda (ES) (T)
+    game-3:
+      - Saturday, March 31
+      - Carlton vs. Gold Coast SUNS (ES)
+    game-4:
+      - Saturday, March 31
+      - Collingwood vs. GWS GIANTS (MCG) (T)
+    game-5:
+      - Saturday, March 31
+      - Brisbane Lions vs. Melbourne (G) (N)
+    game-6:
+      - Saturday, March 31
+      - Fremantle vs. Essendon (OS) (N)
+    game-7:
+      - Sunday, April 1
+      - Western Bulldogs vs. West Coast Eagles (ES)
+    game-8:
+      - Sunday, April 1
+      - Sydney Swans vs. Port Adelaide (SCG) (T)
+    game-9:
+      - Monday, April 2
+      - Geelong Cats vs. Hawthorn (MCG)
+  round-3:
+    game-1:
+      - Friday, April 6
+      - Carlton vs. Collingwood (MCG) (N)
+    game-2:
+      - Saturday, April 7
+      - Port Adelaide vs. Brisbane Lions (AO)
+    game-3:
+      - Saturday, April 7
+      -`Melbourne vs. North Melbourne (MCG)
+    game-4:
+      - Saturday, April 7
+      - Gold Coast SUNS vs. Fremantle (OS) (T)
+    game-5:
+      - Saturday, April 7
+      - Sydney Swans vs. GWS GIANTS (SCG) (N)
+    game-6:
+      - Saturday, April 7
+      - St Kilda vs. Adelaide Crows (ES) (N)
+    game-7:
+      - Sunday, April 8
+      - Richmoand vs. Hawthorn (MCG)
+    game-8:
+      - Sunday, April 8
+      - Western Bulldogs vs. Essendon (ES)
+    game-9:
+      - Sunday, April 8
+      - West Coast Eagles vs. Geelong Cats (OS) (T)
+  round-4:
+    game-1:
+      - Friday, April 13
+      - Adelaide Crows vs. Collingwood (AO) (N)
+    game-2:
+      - Saturday, April 14
+      - GWS GIANTS vs. Fremantle (UNSW)
+    game-3:
+      - Saturday, April 14
+      - Richmond vs. Brisbane Lions (MCG)
+    game-4:
+      - Saturday, April 14
+      - Western Bulldogs vs. Sydney Swans (ES) (T)
+    game-5:
+      - Saturday, April 14
+      - North Melbourne vs. Carlton (BA) (N)
+    game-6:
+      - Saturday, April 14
+      - West Coast Eagles vs. Gold Coast SUNS (OS) (N)
+    game-7:
+      - Sunday, April 15
+      - Essendon vs. Port Adelaide (ES)
+    game-8:
+      - Sunday, April 15
+      - Hawthorn vs. Melbourne (MCG)
+    game-9:
+      - Sunday, April 15
+      - Geelong Cats vs. St Kilda (GS) (T)
+  round-5:
+    game-1:
+      - Friday, April 20
+      - Sydney Swans vs. Adelaide Crows (SCG) (N)
+    game-2:
+      - Saturday, April 21
+      - St Kilda vs. GWS GIANTS (ES)
+    game-3:
+      - Saturday, April 21
+      - Carlton vs. West Coast Eagles (MCG) (T)
+    game-4:
+      - Saturday, April 21
+      - Port Adelaide vs. Geelong Cats (AO) (N)
+    game-5:
+      - Saturday, April 21
+      - Fremantle vs. Western Bulldogs (OS) (N)
+    game-6:
+      - Sunday, April 22
+      - North Melbourne vs. Hawthorn (ES)
+    game-7:
+      - Sunday, April 22
+      - Brisbane Lions vs. Gold Coast SUNS (G) (T)
+    game-8:
+      - Tuesday, April 24
+      - Melbourne vs. Richmond (MCG) (N)
+    game-9:
+      - Wednesday, April 25
+      - Collingwood vs. Essendon (MCG)
+  round-6:
+    game-1:
+      - Friday, April 27
+      - Western Bulldogs vs. Carlton (ES) (N)
+    game-2:
+      - Saturday, April 28
+      - Geelong Cats vs. Sydney Swans (GS)
+    game-3:
+      - Saturday, April 28
+      - North Melbourne vs. Port Adelaide (ES)
+    game-4:
+      - Saturday, April 28
+      - GWS GIANTS vs. Brisbane Lions (SP) (T)
+    game-5:
+      - Saturday, April 28
+      - Hawthorn vs. St Kilda (UTAS) (N)
+    game-6:
+      - Saturday, April 28
+      - Adelaide Crows vs. Gold Coast SUNS (AO) (N)
+    game-7:
+      - Sunday, April 29
+      - Essendon vs. Melbourne (ES)
+    game-8:
+      - Sunday, April 29
+      - Collingwood vs. Richmond (MCG)
+    game-9:
+      - Sunday, April 29
+      - Fremantle vs. West Coast Eagles (OS) (T)
+  round-7:
+    game-1:
+      - Friday, May 4
+      - Geelong Cats vs. GWS GIANTS (GS) (N)
+    game-2:
+      - Saturday, May 5
+      - Western Bulldogs vs. Gold Coast SUNS (MARS)
+    game-3:
+      - Saturday, May 5
+      - Essendon vs. Hawthorn (MCG)
+    game-4:
+      - Saturday, May 5
+      - West Coast Eagles vs. Port Adelaide (OS) (T)
+    game-5:
+      - Saturday, May 5
+      - Sydney Swans vs. North Melbourne (SCG) (N)
+    game-6:
+      - Saturday, May 5
+      - Adelaide Crows vs. Carlton (AO) (N)
+    game-7:
+      - Sunday, May 6
+      - Richmond vs. Fremantle (MCG)
+    game-8:
+      - Sunday, May 6
+      - St Kilda vs. Melbourne (ES)
+    game-9:
+      - Sunday, May 6
+      - Brisbane Lions vs. Collingwood (G) (T)
+  round-8:
+    game-1:
+      - Friday, May 11
+      - Hawthorn vs. Sydney Swans (MCG) (N)
+    game-2:
+      - Saturday, May 12
+      - GWS GIANTS vs. West Coast Eagles (SP)
+    game-3:
+      - Saturday, May 12
+      - Carlton vs. Essendon (MCG)
+    game-4:
+      - Saturday, May 12
+      - Gold Coast SUNS vs. Melbourne (G) (T)
+    game-5:
+      - Saturday, May 12
+      - Port Adelaide vs. Adelaide Crows (AO) (T)
+    game-6:
+      - Saturday, May 12
+      - Western Bulldogs vs. Brisbane Lions (ES) (N)
+    game-7:
+      - Saturday, May 12
+      - Fremantle vs. St Kilda (OS) (N)
+    game-8:
+      - Sunday, May 13
+      - North Melbourne vs. Richmond (ES)
+    game-9:
+      - Sunday, May 13
+      - Collingwood vs. Geelong Cats (MCG)
+  round-9:
+    game-1:
+      - Friday, May 18
+      - Adelaide Crows vs. Western Bulldogs (AO) (N)
+    game-2:
+      - Saturday, May 19
+      - North Melbourne vs. GWS GIANTS (BA)
+    game-3:
+      - Saturday, May 19
+      - Gold Coast SUNS vs. Port Adelaide (AAJS)
+    game-4:
+      - Saturday, May 19
+      - Essendon vs. Geelong Cats (MCG) (T)
+    game-5:
+      - Saturday, May 19
+      - Sydney Swans vs. Fremantle (SCG) (N)
+    game-6:
+      - Saturday, May 19
+      - St Kilda vs. Collingwood (ES) (N)
+    game-7:
+      - Sunday, May 20
+      - Carlton vs. Melbourne (MCG)
+    game-8:
+      - Sunday, May 20
+      - Brisbane Lions vs. Hawthorn (G)
+    game-9:
+      - Sunday, May 20
+      - West Coast Eagles vs. Richmond (OS) (T)
+  round-10:
+    game-1:
+      - Friday, May 25
+      - Collingwood vs. Western Bulldogs (ES) (N)
+    game-2:
+      - Saturday, May 26
+      - Richmond vs. St Kilda (MCG)
+    game-3:
+      - Saturday, May 26
+      - Brisbane Lions vs. Sydney Swans (G) (T)
+    game-4:
+      - Saturday, May 26
+      - Geelong Cats vs. Carlton (GS) (N)
+    game-5:
+      - Saturday, May 26
+      - GWS GIANTS vs. Essendon (SP) (N)
+    game-6:
+      - Sunday, May 27
+      - Hawthorn vs. West Coast Eagles (ES)
+    game-7:
+      - Sunday, May 27
+      - Melbourne vs. Adelaide Crows (TP)
+    game-8:
+      - Sunday, May 27
+      - Fremantle vs. North Melbourne (OS) (T)
+    bye:
+      - Gold Coast SUNS
+      - Port Adelaide.
+  round-11:
+    game-1:
+      - Friday, June 1
+      - Sydney Swans vs. Carlton (SCG) (N)
+    game-2:
+      - Saturday, June 2
+      - Western Bulldogs vs. Melbourne (ES)
+    game-3:
+      - Saturday, June 2
+      - Hawthorn vs. Port Adelaide (UTAS)
+    game-4:
+      - Saturday, June 2
+      - Gold Coast SUNS vs. Geelong Cats (MS) (T)
+    game-5:
+      - Saturday, June 2
+      - Essendon vs. Richmond (MCG) (N)
+    game-6:
+      - Saturday, June 2
+      - West Coast Eagles vs. St Kilda (OS) (N)
+    game-7:
+      - Sunday, June 3
+      - North Melbourne vs. Brisbane Lions (ES)
+    game-8:
+      - Sunday, June 3
+      - Collingwood vs. Fremantle (MCG)
+    game-9:
+      - Sunday, June 3
+      - Adelaide Crows vs. GWS GIANTS (AO) (T)
+  round-12:
+    game-1:
+      - Friday, June 8
+      - Port Adelaide vs. Richmond (AO) (N)
+    game-2:
+      - Saturday, June 9
+      - Geelong Cats vs. North Melbourne (GS)
+    game-3:
+      - Saturday, June 9
+      - GWS GIANTS vs. Gold Coast SUNS (SP) (T)
+    game-4:
+      - Saturday, June 9
+      - St Kilda vs. Sydney Swans (ES) (N)
+    game-5:
+      - Sunday, June 10
+      - Brisbane Lions vs. Essendon (G)
+    game-6:
+      - Sunday, June 10
+      - Fremantle vs. Adelaide Crows (OS) (T)
+    game-7:
+      - Monday, June 11
+      - Melbourne vs. Collingwood (MCG)
+    bye:
+      - Carlton
+      - Hawthorn
+      - West Coast Eagles
+      - Western Bulldogs
+  round-13:
+    game-1:
+      - Thursday, June 14
+      - Port Adelaide vs. Western Bulldogs (AO) (N)
+    game-2:
+      - Friday, June 15
+      - Sydney Swans vs. West Coast Eagles (SCG) (N)
+    game-3:
+      - Saturday, June 16
+      - Carlton vs. Fremantle (ES)
+    game-4:
+      - Saturday, June 16
+      - Gold Coast SUNS vs. St Kilda (MS) (T)
+    game-5:
+      - Saturday, June 16
+      - Hawthorn vs. Adelaide Crows (MCG) (N)
+    game-6:
+      - Sunday, June 17
+      - Geelong Cats vs. Richmond (MCG)
+    byes:
+      - Brisbane Lions
+      - Collingwood
+      - Essendon
+      - GWS GIANTS
+      - Melbourne
+      - North Melbourne
+  round-14:
+    game-1:
+      - Thursday, June 21
+      - West Coast Eagles vs. Essendon (OS) (N)
+    game-2:
+      - Friday, June 22
+      - Port Adelaide vs. Melbourne (AO) (N)
+    game-3:
+      - Saturday, June 23
+      - Hawthorn vs. Gold Coast SUNS (UTAS)
+    game-4:
+      - Saturday, June 23
+      - Brisbane Lions vs. GWS GIANTS (G) (T)
+    game-5:
+      - Saturday, June 23
+      - Western Bulldogs vs. North Melbourne (ES) (N)
+    game-6:
+      - Sunday, June 24
+      - Collingwood vs. Carlton (MCG)
+    bye:
+      - Adelaide Crows
+      - Fremantle
+      - Geelong Cats
+      - Richmond
+      - St Kilda
+      - Sydney Swans
+  round-15:
+    game-1:
+      - Thursday, June 28
+      - Richmond vs. Sydney Swans (ES) (N)
+    game-2:
+      - Friday, June 29
+      - Western Bulldogs vs. Geelong Cats (ES) (N)
+    game-3:
+      - Saturday, June 30
+      - Carlton vs. Port Adelaide (MCG)
+    game-4:
+      - Saturday, June 30
+      - Adelaide Crows vs. West Coast Eagles (AO) (T)
+    game-5:
+      - Saturday, June 30
+      - Gold Coast SUNS vs. Collingwood (MS) (N)
+    game-6:
+      - Saturday, June 30
+      - GWS GIANTS vs. Hawthorn (SP) (N)
+    game-7:
+      - Sunday, July 1
+      - Melbourne vs. St Kilda (MCG)
+    game-8:
+      - Sunday, July 1
+      - Essendon vs. North Melbourne (ES)
+    game-9:
+      - Sunday, July 1
+      - Fremantle vs. Brisbane Lions (OS) (T)
+  round-16:
+    game-1:
+      - Thursday, July 5
+      - Sydney Swans vs. Geelong Cats (SCG) (N)
+    game-2:
+      - Friday, July 6
+      - Richmond vs. Adelaide Crows (MCG) (N)
+    game-3:
+      - Saturday, July 7
+      - Brisbane Lions vs. Carlton (G)
+    game-4:
+      - Saturday, July 7
+      - Port Adelaide vs. St Kilda (AO) (T)
+    game-5:
+      - Saturday, July 7
+      - Western Bulldogs vs. Hawthorn (ES) (N)
+    game-6:
+      - Saturday, July 7
+      - Melbourne vs. Fremantle (TIO) (N)
+    game-7:
+      - Sunday, July 8
+      - North Melbourne vs. Gold Coast SUNS (ES)
+    game-8:
+      - Sunday, July 8
+      - Essendon vs. Collingwood (MCG)
+    game-9:
+      - Sunday, July 8
+      - West Coast Eagles vs. GWS GIANTS (OS) (T)
+  round-17:
+    game-1:
+      - Thursday, July 12
+      - Adelaide Crows vs. Geelong Cats (AO) (N)
+    game-2:
+      - Friday, July 13
+      - St Kilda vs. Carlton (ES) (N)
+    game-3:
+      - Saturday, July 14
+      - Hawthorn vs. Brisbane Lions (UTAS)
+    game-4:
+      - Saturday, July 14
+      - Melbourne vs. Western Bulldogs (MCG) (T)
+    game-5:
+      - Saturday, July 14
+      - Gold Coast SUNS vs. Essendon (MS) (N)
+    game-6:
+      - Saturday, July 14
+      - GWS GIANTS vs. Richmond (SP) (N)
+    game-7:
+      - Sunday, July 15
+      - Collingwood vs. West Coast Eagles (MCG)
+    game-8:
+      - Sunday, July 15
+      - North Melbourne vs. Sydney Swans (ES)
+    game-9:
+      - Sunday, July 15
+      - Fremantle vs. Port Adelaide (OS) (T)
+  round-18:
+    game-1:
+      - Friday, July 20
+      - St Kilda vs. Richmond (ES) (N)
+    game-2:
+      - Saturday, July 21
+      - Collingwood vs. North Melbourne (MCG)
+    game-3:
+      - Saturday, July 21
+      - Sydney Swans vs. Gold Coast SUNS (SCG)
+    game-4:
+      - Saturday, July 21
+      - Essendon vs. Fremantle (ES) (T)
+    game-5:
+      - Saturday, July 21
+      - Brisbane Lions vs. Adelaide Crows (G) (N)
+    game-6:
+      - Saturday, July 21
+      - Geelong Cats vs. Melbourne (GS) (N)
+    game-7:
+      - Sunday, July 22
+      - Carlton vs. Hawthorn (ES)
+    game-8:
+      - Sunday, July 22
+      - West Coast Eagles vs. Western Bulldogs (OS)
+    game-9:
+      - Sunday, July 22
+      - Port Adelaide vs. GWS GIANTS (AO) (T)
+  round-19:
+    game-1:
+      - Friday, July 27
+      - Essendon vs. Sydney Swans (ES) (N)
+    game-2:
+      - Saturday, July 28
+      - Richmond vs. Collingwood (MCG)
+    game-3:
+      - Saturday, July 28
+      - Geelong Cats vs. Brisbane Lions (GS)
+    game-4:
+      - Saturday, July 28
+      - GWS GIANTS vs. St Kilda (SP) (T)
+    game-5:
+      - Saturday, July 28
+      - Gold Coast SUNS vs. Carlton (MS) (N)
+    game-6:
+      - Saturday, July 28
+      - Adelaide Crows vs. Melbourne (AO) (N)
+    game-7:
+      - Sunday, July 29
+      - North Melbourne vs. West Coast Eagles (BA)
+    game-8:
+      - Sunday, July 29
+      - Western Bulldogs vs. Port Adelaide (MARS)
+    game-9:
+      - Sunday, July 29
+      - Fremantle vs. Hawthorn (OS) (T)
+  round-20:
+    game-1:
+      - Friday, August 3
+      - Richmond vs. Geelong Cats (MCG) (N)
+    game-2:
+      - Saturday, August 4
+      - Hawthorn vs. Essendon (MCG)
+    game-3:
+      - Saturday, August 4
+      - Brisbane Lions vs. North Melbourne (G)
+    game-4:
+      - Saturday, August 4
+      - Adelaide Crows vs. Port Adelaide (AO) (T)
+    game-5:
+      - Saturday, August 4
+      - St Kilda vs. Western Bulldogs (ES) (N)
+    game-6:
+      - Saturday, August 4
+      - Sydney Swans vs. Collingwood (SCG) (N)
+    game-7:
+      - Sunday, August 5
+      - Carlton vs. GWS GIANTS (ES)
+    game-8:
+      - Sunday, August 5
+      - Melbourne vs. Gold Coast SUNS (MCG)
+    game-9:
+      - Sunday, August 5
+      - West Coast Eagles vs. Fremantle (OS) (T)
+  round-21:
+    game-1:
+      - Friday, August 10
+      - Essendon vs. St Kilda (ES) (N)
+    game-2:
+      - Saturday, August 11
+      - Hawthorn vs. Geelong Cats (MCG)
+    game-3:
+      - Saturday, August 11
+      - Gold Coast SUNS vs. Richmond (MS)
+    game-4:
+      - Saturday, August 11
+      - Port Adelaide vs. West Coast Eagles (AO) (T)
+    game-5:
+      - Saturday, August 11
+      - Collingwood vs. Brisbane Lions (ES) (N)
+    game-6:
+      - Saturday, August 11
+      - GWS GIANTS vs. Adelaide Crows (UNSW) (N)
+    game-7:
+      - Sunday, August 12
+      - North Melbourne vs. Western Bulldogs (ES)
+    game-8:
+      - Sunday, August 12
+      - Melbourne vs. Sydney Swans (MCG)
+    game-9:
+      - Sunday, August 12
+      - Fremantle vs. Carlton (OS) (T)
+  round-22:
+    game-1:
+      - Friday, August 17
+      - Richmond vs. Essendon (MCG) (N)
+    game-2:
+      - Saturday, August 18
+      - Collingwood vs. Port Adelaide (MCG)
+    game-3:
+      - Saturday, August 18
+      - Geelong Cats vs. Fremantle (GS)
+    game-4:
+      - Saturday, August 18
+      - GWS GIANTS vs. Sydney Swans (SP) (T)
+    game-5:
+      - Saturday, August 18
+      - Gold Coast SUNS vs. Brisbane Lions (MS) (N)
+    game-6:
+      - Saturday, August 18
+      - St Kilda vs. Hawthorn (ES) (N)
+    game-7:
+      - Sunday, August 19
+      - Carlton vs. Western Bulldogs (ES)
+    game-8:
+      - Sunday, August 19
+      - West Coast Eagles vs. Melbourne (OS)
+    game-9:
+      - Sunday, August 19
+      - Adelaide Crows vs. North Melbourne (AO) (T)
+  round-23:
+    game-1:
+      - Friday, August 24
+      - Port Adelaide vs. Essendon (AO)
+    game-2:
+      - Friday, August 24
+      - Carlton vs. Adelaide Crows (ES)
+    game-3:
+      - Friday, August 24
+      - Geelong Cats vs. Gold Coast SUNS (GS)
+    game-4:
+      - Friday, August 24
+      - Richmond vs. Western Bulldogs (MCG)
+    game-5:
+      - Friday, August 24
+      - Sydney Swans vs. Hawthorn (SCG)
+    game-6:
+      - Friday, August 24
+      - Brisbane Lions vs. West Coast Eagles (G)
+    game-7:
+      - Friday, August 24
+      - St Kilda vs. North Melbourne (ES)
+    game-8:
+      - Friday, August 24
+      - Melbourne vs. GWS GIANTS (MCG)
+    game-9:
+      - Friday, August 24
+      - Fremantle vs. Collingwood (OS)
+finals:
+  bye-round:
+    - August 31-September 2
+    - Bye Round – Final Eight clubs
+  week-1:
+    - September 6-9
+    - Week One – Qualifying & Elimination Finals (4)
+  week-2:
+    - September 14 & 15
+    - Week Two – Semi-Finals (2)
+  week-3:
+    - September 21 & 22
+    - Week Three – Preliminary Finals (2)
+  week-4:
+    - September 29
+    - Week Four – Toyota AFL Grand Final
