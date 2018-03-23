@@ -111,6 +111,7 @@ rounds:
     game-2:
       - Friday, March 23
       - Essendon vs. Adelaide Crows (ES) (N)
+      - ["14.15(99)", "12.15(87)"]
     game-3:
       - Saturday, March 24
       - St Kilda vs. Brisbane Lions (ES) (T)
@@ -169,7 +170,7 @@ rounds:
       - Port Adelaide vs. Brisbane Lions (AO)
     game-3:
       - Saturday, April 7
-      -`Melbourne vs. North Melbourne (MCG)
+      - Melbourne vs. North Melbourne (MCG)
     game-4:
       - Saturday, April 7
       - Gold Coast SUNS vs. Fremantle (OS) (T)
