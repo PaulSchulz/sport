@@ -115,21 +115,27 @@ rounds:
     game-3:
       - Saturday, March 24
       - St Kilda vs. Brisbane Lions (ES) (T)
+      - ["16.11(107)", "12.10(82)"]
     game-4:
       - Saturday, March 24
       - Port Adelaide vs. Fremantle (AO) (T)
+      - ["14.11(110)", "9.6(60)"]
     game-5:
       - Saturday, March 24
-      -  Gold Coast SUNS vs. North Melbourne (CS) (N)
+      - Gold Coast SUNS vs. North Melbourne (CS) (N)
+      - ["7.13(55)", "5.9(39)"]
     game-6:
       - Saturday, March 24
       - Hawthorn vs. Collingwood (MCG) (N)
+      - ["15.11(110)", "9.13(67)"]
     game-7:
       - Sunday, March 25
       - GWS GIANTS vs. Western Bulldogs (UNSW)
+      - ["20.13(133)", "7.9(51)"]
     game-8:
-      -  Sunday, March 25
+      - Sunday, March 25
       - Melbourne vs. Geelong Cats (MCG)
+      - ["13.16(94)", "13.13(97)"]
     gane-9:
       - Sunday, March 25
       - West Coast Eagles vs. Sydney Swans (OS) (N)
