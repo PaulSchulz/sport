@@ -8,14 +8,14 @@ Includes some example Clojure code for reading YAML data.
 The Leiningen tool for Clojure needs to be installed. Then:
 
 ```
-lein repl
+(bash)$ lein repl
 ...
 sporting-fixtures.core=> (help)
 ===============
 Useful Commands
 ===============
-(list-events)              - Show current event files
-(read-event <filename>)    - Load event details
-(display-event <filename>) - Display evenmt details
-(events-table)             - List events
+(list-events)                - Show current event files
+(read-event "<filename>")    - Load event details
+(display-event "<filename>") - Display evenmt details
+(events-table)               - List events
 ```

@@ -12,15 +12,18 @@
   (println "Hello, World!"))
 
 (defn help []
-  (println (str/join "\n" ["==============="
-                           "Useful Commands"
-                           "==============="
-                           "(list-events)              - Show current event files"
-                           "(read-event <filename>)    - Load event details" 
-                           "(display-event <filename>) - Display evenmt details"
-                           "(events-table)             - List events"
-                           ]
-         )))
+  (println
+   (str/join
+    "\n"
+    ["==============="
+     "Useful Commands"
+     "==============="
+     "(list-events)                  - Show current event files"
+     "(read-event \"<filename>\")    - Load event details" 
+     "(display-event \"<filename>\") - Display evenmt details"
+     "(events-table)                 - List events"
+     ]
+    )))
 
 (defn get-events []
   (str/split (:out (sh "bash" "-c" "ls data/20*.yml")) #"\n"))
