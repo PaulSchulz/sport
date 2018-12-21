@@ -1,0 +1,350 @@
+---
+title:    "2018-9 Big Bash League"
+location: "Australia"
+code:     cricket-bbl
+date:     {from: "19 Dec 2017",  to: "17 Feb 2019"}
+url:      "http://www.bigbash.com.au/fixtures?gender=men"
+version:  1.0
+
+teams:
+  str: {name: "Adelaide Strikers"}
+  hea: {name: "Brisbane Heat"}
+  hur: {name: "Hobart Hurricanes"}
+  ren: {name: "Melbourne Renegades"}
+  sta: {name: "Melbourne Stars"}
+  sco: {name: "Perth Scorchers"}
+  six: {name: "Sydney Sixers"}
+  thu: {name: "Sydney Thunder"}
+
+venues:
+  adl: {name: "Adelaide Oval, Adelaide"}
+  alb: {name: "Lavington Sports Ground, Albury"}
+  ali: {name: "Traeger Park, Alice Springs"}
+  bri: {name: "Allan Border Field, Brisbane"}
+  cam: {name: "Camberwell Sports Ground, Camberwell"}
+  cas: {name: "Casey Fields, Cranbourne East"}
+  gab: {name: "Gabba, Brisbane"}
+  gee: {name: "GMHBA Stadium, Geelong"}
+  glg: {name: "Gliderol Stadium, Glenelg"}
+  hob: {name: "Blundstone Arena, Hobart"}
+  hur: {name: "Hurstville Oval, Hurstville"}
+  lil: {name: "Lilac Hill, Perth"}
+  mac: {name: "Harrup Park, Mackay"}
+  man: {name: "Manuka Oval, Canberra"}
+  mcg: {name: "MCG, Melbourne"}
+  mel: {name: "Etihad Stadium, Melbourne9"}
+  pen: {name: "Howell Oval, Penrith"}
+  per: {name: "WACA, Perth"}
+  scg: {name: "SCG, Sydney"}
+  spo: {name: "Spotless Stadium, Sydney"}
+  syd: {name: "North Sydney Oval No.1, North Sydney"}
+  uta: {name: "University of Tasmania Stadium, Launceston"}
+  wag: {name: "Robertson Oval, Wagga Wagga"}
+  wol: {name: "North Dalton Park, Wollongong"}
+  mar: {name: "Marvel Stadium"}
+  met: {name: "Metricon Stadium"}
+  opt: {name: "Optus Stadium"}
+  tbc: {name: "To be confirmed"}
+  
+games:
+  - v:       [hea, str]
+    venue:   gab
+    time:    "Wed 19 Dec 2018 1915"
+    score:   {hea: "146", str: "5-147"}
+    summary: "Adelaide Strikers Win By 5 Wickets"
+  - v:       [ren, sco]
+    venue:   mar
+    time:    "Thu 20 Dec 2018 1915"
+    score:   {ren: "6-107", sco: "103"}
+    summary: "Melbourne Renegades Win By 4 Wickets"
+  - v:       [thu, sco]
+    venue:   man
+    time:    "Fri 21 Dec 2018 1915"
+    score:   {}
+    summary: ""
+  - v:       [six, sco]
+    venue:   scg
+    time:    "Sat 22 Dec 2018 1530"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [hea, hur]
+    venue:   met
+    time:    "Sat 22 Dec 2018 1900"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [str, ren]
+    venue:   adl
+    time:    "Sun 23 Dec 2017 1915"
+    score:   {}
+    summary: ""
+  - v:       [hur, sta]
+    venue:   hob
+    time:    "Mon 24 Dec 2018 1545"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [thu, six]
+    venue:   spo
+    time:    "Mon 24 Dec 2018 1915"
+    score:   {}
+    summary: ""    
+  - v:       [sco, str]
+    venue:   opt
+    time:    "Wed 26 Dec 2017 1915"
+    score:   {}
+    summary: ""
+  - v:       [six, sta]
+    venue:   scg
+    time:    "Thu 27 Dec 2018 1915"
+    score:   {}
+    summary: ""
+  - v:       [hur, thu]
+    venue:   hob
+    time:    "Fri 28 Dec 2018 1915"
+    score:   {}
+    summary: ""
+  - v:       [ren, six]
+    venue:   mar
+    time:    "Sat 29 Dec 2018 1900"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [hur, sco]
+    venue:   uta
+    time:    "Sun 30 Dec 2018 1915"
+    score:   {}
+    summary: ""
+  - v:       [str, thu]
+    venue:   adl
+    time:    "Mon 31 Dec 2018 1915"
+    score:   {}
+    summary: ""
+  - v:       [hea, six]
+    venue:   met
+    time:    "Tue 01 Jan 2019 1445"
+    score:   {}
+    summary: ""
+  - v:       [sta, ren]
+    venue:   mcg
+    time:    "01 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [thu, sco]
+    venue:   spo
+    time:    "Wed 02 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [ren, str]
+    venue:   tbc
+    time:    "Thu 03 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [hur, six]
+    venue:   hob
+    time:    "Fri 04 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [sta, thu]
+    venue:   met
+    time:    "Sat 05 Jan 2019 1815"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [sco, hea]
+    venue:   opt,
+    time:    "Sat 05 Jan 2019 2130"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [str, six]
+    venue:   adl,
+    time:    "Sun 06 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [ren, hur]
+    venue:   mar,
+    time:    "Mon 07 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [thu, hea]
+    venue:   spo,
+    time:    "Tue 08 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [sta, sco]
+    venue:   mcg,
+    time:    "Wed 09 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [hea, ren]
+    venue:   gab,
+    time:    "Thu 10 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [str, sta]
+    venue:   adl,
+    time:    "Fri 11 Jan 2019 1900"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [thu, str]
+    venue:   spo,
+    time:    "Sun 13 Jan 2019 1445"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [ren, hea]
+    venue:   tbc,
+    time:    "Sun 13 Jan 2019 1835"
+    score:   {}
+    summary: ""
+  - v:       [sco, six]
+    venue:   opt,
+    time:    "Sun 13 Jan 2019 2135"
+    score:   {}
+    summary: ""
+  - v:       [sta, hur]
+    venue:   mcg,
+    time:    "Mon 14 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [six, ren]
+    venue:   scg,
+    time:    "Wed 16 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [hea, thu]
+    venue:   gab,
+    time:    "Thu 17 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [sco, hur]
+    venue:   opt,
+    time:    "Fr1 18 Jan 2019 2130"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [ren, sta]
+    venue:   mar,
+    time:    "Sat 19 Jan 2019 1845"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [six, hea]
+    venue:   scg,
+    time:    "Sun 20 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [str, hur]
+    venue:   adl,
+    time:    "Mon 21 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [thu, ren]
+    venue:   spo,
+    time:    "Tue 22 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [sta, str]
+    venue:   tbc,
+    time:    "Wed 23 Jan 2019 1445"
+    score:   {}
+    summary: ""
+  - v:       [six, hur]
+    venue:   scg,
+    time:    "Wed 23 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [sco, thu]
+    venue:   opt,
+    time:    "Thu 24 Jan 2019 2140"
+    score:   {}
+    summary: ""
+  - v:       [sta, hea]
+    venue:   mcg,
+    time:    "Sun 27 Jan 2019 1915"
+    score:   {}
+    summary: ""
+  - v:       [sco, ren]
+    venue:   opt,
+    time:    "Mon 28 Jan 2019 2115"
+    score:   {}
+    summary: ""
+  - v:       [hur, hea]
+    venue:   hob,
+    time:    "Tue 29 Jan 2019 1600"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [six, str]
+    venue:   scg,
+    time:    "Tue 29 Jan 2019 1900"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [ren, thu]
+    venue:   scg,
+    time:    "Wed 30 Jan 2019 1915"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [hur, str]
+    venue:   uta,
+    time:    "Thu 31 Jan 2019 1940"
+    score:   {}
+    summary: ""
+  - v:       [hea, sco]
+    venue:   gab,
+    time:    "Fri 01 Feb 2019 1940"
+    score:   {}
+    summary: ""
+  - v:       [six, thu]
+    venue:   scg,
+    time:    "Sat 02 Feb 2019 1900"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [str, hea]
+    venue:   scg,
+    time:    "03 Feb 2019 1815"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [sco, sta]
+    venue:   gab,
+    time:    "Sun 03 Feb 2019 2115"
+    score:   {}
+    summary: ""
+  - v:       [hur, ren]
+    venue:   hob,
+    time:    "Thu 07 Feb 2019 1940"
+    score:   {}
+    summary: ""
+  - v:       [hea, sta]
+    venue:   gab,
+    time:    "Fri 08 Feb 2019 2040"
+    score:   {}
+    summary: ""
+  - v:       [str, sco]
+    venue:   ali,
+    time:    "Sat 09 Feb 2019 1445"
+    score:   {}
+    summary: ""
+  - v:       [thu, hur]
+    venue:   gab,
+    time:    "Sat 09 Feb 2019 1815"
+    score:   {}
+    summary: ""
+    notes:   "Foxtel Exclusive"
+  - v:       [sta, six]
+    venue:   mcg,
+    time:    "Sun 10 Feb 2019 1445"
+    score:   {}
+    summary: ""
+    
+finals:
+  - {v: [], time: "Thu 14 Feb 2018"}
+  - {v: [], time: "Fri 15 Feb 2018"}
+  - {v: [], time: "Sun 17 Feb 2018"}
