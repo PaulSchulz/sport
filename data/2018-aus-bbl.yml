@@ -51,17 +51,20 @@ games:
     venue:   gab
     time:    "Wed 19 Dec 2018 1915"
     score:   {hea: "146", str: "5-147"}
+    result:  {hea: 0, str: 2}
     summary: "Adelaide Strikers Win By 5 Wickets"
   - v:       [ren, sco]
     venue:   mar
     time:    "Thu 20 Dec 2018 1915"
     score:   {ren: "6-107", sco: "103"}
+    result:  {ren: 2, sco: 0}
     summary: "Melbourne Renegades Win By 4 Wickets"
   - v:       [thu, sco]
     venue:   man
     time:    "Fri 21 Dec 2018 1915"
-    score:   {}
-    summary: ""
+    score:   {thu: "5-181", sta: "6-74"}
+    result:  {thu: 2, sco: 0}
+    summary: "Sydney Thunder Win By 15 Runs (DLS Method)"
   - v:       [six, sco]
     venue:   scg
     time:    "Sat 22 Dec 2018 1530"
