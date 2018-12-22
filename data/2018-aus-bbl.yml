@@ -68,14 +68,16 @@ games:
   - v:       [six, sco]
     venue:   scg
     time:    "Sat 22 Dec 2018 1530"
-    score:   {}
-    summary: ""
+    score:   {six: "4-164", sco: "8-147"}
+    result:  {six: 2, sco: 0}
+    summary: "Sixers Win By 17 Runs"
     notes:   "Foxtel Exclusive"
   - v:       [hea, hur]
     venue:   met
     time:    "Sat 22 Dec 2018 1900"
-    score:   {}
-    summary: ""
+    score:   {hea: "144", hur: "6-159"}
+    result:  {hea: 0, hur: 2}
+    summary: "Hurricanes Win By 15 Runs}"
     notes:   "Foxtel Exclusive"
   - v:       [str, ren]
     venue:   adl
