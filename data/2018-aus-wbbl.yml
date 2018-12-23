@@ -1,0 +1,292 @@
+---
+title:    "2018-9 Womens Big Bash League"
+location: "Australia"
+code:     cricket-wbbl
+date:     {from: "01 Dec 2017",  to: "17 Feb 2019"}
+url:      "http://www.bigbash.com.au/fixtures?gender=women"
+version:  1.0
+
+teams:
+  str: {name: "Adelaide Strikers"}
+  hea: {name: "Brisbane Heat"}
+  hur: {name: "Hobart Hurricanes"}
+  ren: {name: "Melbourne Renegades"}
+  sta: {name: "Melbourne Stars"}
+  sco: {name: "Perth Scorchers"}
+  six: {name: "Sydney Sixers"}
+  thu: {name: "Sydney Thunder"}
+
+venues:
+  adl: {name: "Adelaide Oval, Adelaide"}
+  alb: {name: "Lavington Sports Ground, Albury"}
+  ali: {name: "Traeger Park, Alice Springs"}
+  bri: {name: "Allan Border Field, Brisbane"}
+  cam: {name: "Camberwell Sports Ground, Camberwell"}
+  cas: {name: "Casey Fields, Cranbourne East"}
+  gab: {name: "Gabba, Brisbane"}
+  gee: {name: "GMHBA Stadium, Geelong"}
+  gcg: {name: "Geelong Cricket Ground, Geelong"}
+  glg: {name: "Gliderol Stadium, Glenelg"}
+  hob: {name: "Blundstone Arena, Hobart"}
+  hur: {name: "Hurstville Oval, Hurstville"}
+  lil: {name: "Lilac Hill, Perth"}
+  mac: {name: "Harrup Park, Mackay"}
+  man: {name: "Manuka Oval, Canberra"}
+  mcg: {name: "MCG, Melbourne"}
+  mel: {name: "Etihad Stadium, Melbourne"}
+  pen: {name: "Howell Oval, Penrith"}
+  per: {name: "WACA, Perth"}
+  scg: {name: "SCG, Sydney"}
+  spo: {name: "Spotless Stadium, Sydney"}
+  syd: {name: "North Sydney Oval No.1, North Sydney"}
+  uta: {name: "University of Tasmania Stadium, Launceston"}
+  wag: {name: "Robertson Oval, Wagga Wagga"}
+  wol: {name: "North Dalton Park, Wollongong"}
+  mar: {name: "Marvel Stadium"}
+  met: {name: "Metricon Stadium"}
+  opt: {name: "Optus Stadium"}
+  cit: {name: "CitiPower Centre, St Kilda"}
+  wes: {name: "West Park, Burnie"}
+  bal: {name: "Eastern Oval, Ballarat"}
+  kar: {name: "Karen Rolton Oval, Adelaide"}
+  bla: {name: "Blacktown International Sportspark"}
+  har: {name: "Harrup Park, Mackay"}
+  tbc: {name: "To be confirmed"}
+  
+games:
+  - v:       [sco, hur]
+    venue:   cit
+    time:    "Sat 01 Dec 2018"
+    score:   {sco: "4-147", hur: "7-143"}
+    result:  {sco: 2, hur: 0}
+    summary: "Perth Scorchers Win By 6 Wickets"
+  - v:       [sta, six]
+    venue:   cit
+    time:    "Sat 01 Dec 2018"
+    score:   {sta: "3-166", six: "7-165"}
+    result:  {sta: 2, six: 0}
+    summary: "Melbourne Stars Win by 7 Wickets"
+  - v:       [str, hea]
+    venue:   cit
+    time:    "Sun 02 Dec 2018"
+    score:   {str: "7-172", hea: "2-136"}
+    result:  {str: 2, hea: 0}
+    summary: "Adelaide Strikers Win By 36 Runs"
+  - v:       [ren, thu]
+    venue:   cit
+    time:    "Sun 02 Dec 2018"
+    score:   {ren: "8-98", thu: "4-99"}
+    result:  {ren: 0, thu: 2}
+    summary: "Sydney Thunder Win By 6 Wickets"
+  - v:       [six, sco]
+    venue:   syd
+    time:    "Fri 07 Dec 2018"
+    score:   {six: "4-171", sco: "9-167"}
+    result:  {six: 2, sco: 0}
+    summary: "Sydney Sixers Win by 6 Wickets"
+  - v:       [hur, sta]
+    venue:   wes
+    time:    "Sat 08 Dec 2018"
+    score:   {hur: "6-158", sta: "5-159"}
+    result:  {hur: 0, sta: 2}
+    summary: "Melbourne Stars Win by 6 Wickets"
+  - v:       [ren, str]
+    venue:   cit
+    time:    "Sat 08 Dec 2018"
+    score:   {ren: "4-154", str: "7-153"}
+    summary: "Melbourne Renegades Win By 6 Wickets"
+  - v:       [hea, sco]
+    venue:   syd
+    time:    "Sat 08 Dec 2018"
+    score:   {hea: "3-104", sco: "8-103"}
+    result:  {hea: 2, sco: 0}
+    summary: "Brisbane Heat Win By 7 Wickets"
+  - v:       [six, thu]
+    venue:   syd
+    time:    "Sat 08 Dec 2018"
+    score:   {six: "4-168", thu: "7-132"}
+    result:  {six: 2, thu: 0}
+    summary: "Sydney Sixers Win by 36 Runs"
+  - v:       [hur, sta]
+    venue:   wes
+    time:    "Sun 09 2018"
+    score:   {hur: "6-196", sta: "124"}
+    result:  {hur: 2, sta: 0}
+    summary: "Hobart Huricanes Win By 72 Runs"
+  - v:       [ren, str]
+    venue:   bal
+    time:    "Sun 09 Dec 2018"
+    score:   {ren: "4-83", str: "2-27"}
+    result:  {ren: 1, str: 1}
+    summary: "No Result"
+  - v:       [thu, hea]
+    venue:   syd
+    time:    "Sat 09 Dec 2018"
+    score:   {thu: "4-192", hea: "164"}
+    result:  {thu: 2, hea: 0}
+    summary: "Sydney Thunder Win By 28 Runs"
+  - v:       [sta, sco]
+    venue:   cas
+    time:    "Sat 15 Dec 2018"
+    score:   {sta: "9-124", sco: "2-125"}
+    result:  {sta: 0, sco: 2}
+    summary: "Perth Scorchers Win By 8 Wickets"
+  - v:       [str, thu]
+    venue:   hob
+    time:    "Sat 15 Dec 2018"
+    score:   {str: "132", thu: "4-134"}
+    result:  {str: 0, thu: 2}
+    summary: "Sydney Thubder Win By 6 Wickets"
+  - v:       [hur, six]
+    venue:   hob
+    time:    "Sat 15 Dec 2018"
+    score:   {hur: "5-133", six: "3-155"}
+    result:  {hur: 0, six: 2}
+    summary: "Sydney Sixers Win by 7 Wickets (DLS Method)"
+  - v:       [sta, sco]
+    venue:   cas
+    time:    "Sun 16 Jan 2018"
+    score:   {sta: "6-91", sco: "7-90"}
+    result:  {sta: 2, sco: 0}
+    summary: "Melbourne Stars Win By 4 Wickets"
+  - v:       [thu, str]
+    venue:   hob
+    time:    "Sun 16 Jan 2018"
+    score:   {thu: "5-146", str: "5-145"}
+    result:  {thu: 2, str: 0}
+    summary: "Sydney Thunder Win By 5 Wickets"
+  - v:       [hur, six]
+    venue:   hob
+    time:    "Sun 16 Jan 2018"
+    score:   {hur: "141", six: "2-158"}
+    result:  {hur: 0, six: 2}
+    summary: "Sydney Sixers Win By 17 Runs"
+  - v:       [ren, hea]
+    venue:   gcg
+    time:    "Sun 16 Jan 2018"
+    score:   {ren: "7-153", hea: "8-174"}
+    result:  {ren: 0, hea: 2}
+    summary: "Brisbane Heat Win By 21 Runs"
+  - v:       [hur, sco]
+    venue:   hob
+    time:    "Tue 18 Dec 2018"
+    score:   {hur: "7-173", sco: "6-173"}
+    result:  {hur: 0, sco: 2}
+    summary: "Perth Scorchers Win In Super Over"
+  - v:       [hea, sta]
+    venue:   gab,
+    time:    "Wed 19 Dec 2018"
+    score:   {hea: "0-138", sta: "7-132"}
+    result:  {hea: 2, sta: 0}
+    summary: "Brisbane Heat Win By 10 Wickets"
+  - v:       [thu, hur]
+    venue:   man,
+    time:    "Fri 21 Dec 2018"
+    score:   {thu: "4-156", hur: "9-153"}
+    result:  {thu: 2, hur: 0}
+    summary: "Sydney Thunder Win By 6 Wickets"
+  - v:       [str, sta]
+    venue:   kar,
+    time:    "Fri 21 Dec 2018"
+    score:   {str: "7-144", sta: "6-145"}
+    result:  {str: 0, sta: 2}
+    summary: "Melbourne Stars Win By 4 Wickets"
+  - v:       [six, hea]
+    venue:   scg,
+    time:    "Sat 22 Dec 2018"
+    score:   {six: "3-166", hea: "7-155"}
+    result:  {six: 2, hea: 0
+    summary: "Sydney Sixers Win By 11 Runs"
+  - v:       [sco, ren]
+    venue:   per,
+    time:    "Sat 22 Dec 2018"
+    score:   {sco: "6-122", ren: "6-123"}
+    result:  {sco: 0, ren: 2}
+    summary: "Melbourne Renegades Win By 4 Wickets"
+  - v:       [str, sta]
+    venue:   adl,
+    time:    "Sun 23 Dec 2018"
+    score:   {str: "3-172", sta: "9-153"}
+    result:  {str: 2, sta: 0}
+    summary: "Adelaide Strikers Win By 19 Runs"
+  - v:       [six, hea]
+    venue:   hur,
+    time:    "Sun 23 dec 2018"
+    score:   {six: "88", hea: "7-154"}
+    result:  {six: 0, hea: 2}
+    summary: "Brisbane Heat Win By 66 Runs"
+  - v:       [sco, thu]
+    venue:   lil,
+    time:    "Sat 29 Dec 2018 1000"
+    score:   {}
+    summary: ""
+  - v:       [ren, sta]
+    venue:   mar,
+    time:    "Sat 29 Dec 2018 1450"
+    score:   {}
+    summary: ""
+  - v:       [sco, thu]
+    venue:   lil,
+    time:    "Sun 30 Dec 2018 1000"
+    score:   {}
+    summary: ""
+  - v:       [hur, hea]
+    venue:   uta,
+    time:    "Sun 30 Dec 2018 1350"
+    score:   {}
+    summary: ""
+  - v:       [hur, hea]
+    venue:   uta,
+    time:    "Mon 31 Dec 2019 1430"
+    score:   {}
+    summary: ""
+  - v:       [str, six]
+    venue:   adl,
+    time:    "Mon 31 Dec 2018 1320"
+    score:   {}
+    summary: ""
+  - v:       [sta, ren]
+    venue:   mcg,
+    time:    "Tue 01 Jan 2019 1450"
+    score:   {}
+    summary: ""
+  - v:       [thu, six]
+    venue:   spo,
+    time:    "Wed 02 Jan 2019 1450"
+    score:   {}
+    summary: ""
+  - v:       [ren, hur]
+    venue:   gee,
+    time:    "Thu 03 Jan 2019 1450"
+    score:   {}
+    summary: ""
+  - v:       [thu, sta]
+    venue:   bla,
+    time:    "Sat 05 Jan 2019 1400"
+    score:   {}
+    summary: ""
+  - v:       [hea, str]
+    venue:   mar,
+    time:    "Sat 05 Jan 2019 1815"
+    score:   {}
+    summary: ""
+  - v:       [sco, six]
+    venue:   lil,
+    time:    "Sun 06 Jan 2019 1000"
+    score:   {}
+    summary: ""
+  - v:       [thu, sta]
+    venue:   mcg,
+    time:    "Sun 06 Jan 2019 1400"
+    score:   {}
+    summary: ""
+  - v:       [hea, ren]
+    venue:   har,
+    time:    "Sun 06 Jan 2019 1500"
+    score:   {}
+    summary: ""
+  - v:       [thu, ren]
+    venue:   spo,
+    time:    "Tue 08 Jan 2019 1350"
+    score:   {}
+    summary: ""
