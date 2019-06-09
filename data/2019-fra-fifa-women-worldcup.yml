@@ -8,39 +8,117 @@ source:  The details were obtained from ical file.
 
 teams: 
   # Country codes: https://simple.wikipedia.org/wiki/List_of_IOC_country_codes
+  # This is a cumullative list that contains details from previous World Cups.
+  # Africa
+  egy: {name: "Egypt",          confederation: africa}
+  mar: {name: "Morocco",        confederation: africa}
+  nig: {name: "Nigeria",        confederation: africa}
+  sen: {name: "Senegal",        confederation: africa}
+  tun: {name: "Tunisia",        confederation: africa}
+  rsa: {name: "South Africa",   confederation: africa}
+  
+  # Asia
+  aus: {name: "Australia",      confederation: asia}
+  irn: {name: "Iran",           confederation: asia}
+  jpn: {name: "Japan",          confederation: asia}
+  kor: {name: "South Korea",    confederation: asia}
+  ksa: {name: "Saudi Arabia",   confederation: asia}
+  chn: {name: "China",          confederation: asia}
+  thi: {name: "Thailand",       confederation: asia}
 
+  # Europe
+  bel: {name: "Belgium",        confederation: europe}
+  cro: {name: "Croatia",        confederation: europe}
+  den: {name: "Denmark",        confederation: europe}
+  eng: {name: "England",        confederation: europe}
+  esp: {name: "Spain",          confederation: europe}
+  fra: {name: "France",         confederation: europe}
+  ger: {name: "Germany",        confederation: europe}
+  isl: {name: "Iceland",        confederation: europe}
+  ned: {name: "Netherlands",    confederation: europe}
+  nor: {name: "Norway",         confederation: europe}
+  pol: {name: "Poland",         confederation: europe}
+  por: {name: "Portugal",       confederation: europe}
+  rus: {name: "Russia",         confederation: europe}
+  sco: {name: "Scotland",       confederation: europe}
+  srb: {name: "Serbia",         confederation: europe}
+  swe: {name: "Sweden",         confederation: europe}
+  swi: {name: "Switzerland",    confederation: europe}
+  ita: {name: "Italy",          confederation: europe}
+  
+  # North America, Central America and Caribbean
+  crc: {name: "Costa Rica",     confederation: north-americas}
+  mex: {name: "Mexico",         confederation: north-americas}
+  pan: {name: "Panama",         confederation: north-americas}
+  jam: {name: "Jamaica",        confederation: north-americas}
+  can: {name: "Canada",         confederation: north-americas}
+  usa: {name: "United States",  confederation: north-americas}
+
+  # South America
+  arg: {name: "Argentina",      confederation: south-america}
+  bra: {name: "Brazil",         confederation: south-america}
+  col: {name: "Columbia",       confederation: south-america}
+  per: {name: "Peru",           confederation: south-america}
+  uru: {name: "Uruguay",        confederation: south-america}
+  chi: {name: "Chile",          confederation: south-america}
+
+  # Oceania
+  nzl: {name: "New Zealand",    confederation: oceania}
+  
 # See: http://en.wikipedia.org/wiki/List_of_IOC_country_codes
 groups:
+  group-a: ["fra", "kor", "nor", "nig"]
+  group-b: ["ger", "chn", "esp", "rsa"]
+  group-c: ["aus", "ita", "bra", "jam"]
+  group-d: ["eng", "sco", "arg", "jap"]  
+  group-e: ["can", "cam", "nzl", "ned"]
+  group-f: ["usa", "tha", "chi", "swe"]
 
 group-details:
+  group-a: {name: "Group A", short: "A"}
+  group-b: {name: "Group B", short: "B"}
+  group-c: {name: "Group C", short: "C"}
+  group-d: {name: "Group D", short: "D"}
+  group-e: {name: "Group E", short: "E"}
+  group-f: {name: "Group F", short: "F"}
 
 venues:
 
 games:
-  - time:  Fri, 07 Jun 2019 21:00:00 +0100
-    title: France vs Korea Republic
-    place: []
+  - time:   Fri, 07 Jun 2019 21:00:00 +0100
+    title:  France vs Korea Republic
+    teams:  ["fra","kor"]
+    place:  ["team-a-1", "team-a-2"]
+    goals:  [4,0]
+    result: "France wins 4-0 over Korea Republic"
     desription: 
       FIFA Women\'s World Cup 2019 France match between France and
       Korea Republic, taking place at 21:00 on Friday, 7 June.
       
-  - time:  Sat, 08 Jun 2019 15:00:00 +0100
-    title: Germany vs China
-    place: []
+  - time:   Sat, 08 Jun 2019 15:00:00 +0100
+    title:  Germany vs China
+    teams:  ["ger","chn"]
+    place:  ["team-b-1","team-b-2"]
+    goals:  [1,0]
+    result: "Germany wins 1-0 over China"
     desciption:
       FIFA Women\'s World Cup 2019 France match between Germany and China,
       taking place at 15:00 on Saturday, 8 June.
 
-  - time:  Sat, 08 Jun 2019 18:00:00 +0100
-    title: Spain vs South Africa
-    place: []
+  - time:   Sat, 08 Jun 2019 18:00:00 +0100
+    title:  Spain vs South Africa
+    place:  ["team-b-3","team-b-4"]
+    goals:  [3,1]
+    result: "Spain wins 3-1 over South Africa"
     description:
       FIFA Women\'s World Cup 2019 France match between Spain and South Africa,
       taking place at 18:00 on Saturday, 8 June.:n
 
-  - time: Sat, 08 Jun 2019 21:00:00 +0100
-    title: Norway vs Nigeria
-    place: []
+  - time:   Sat, 08 Jun 2019 21:00:00 +0100
+    title:  Norway vs Nigeria
+    place:  ["team-a-3","team-a-4"]
+    goals:  [3,1]
+    result: "Norway wins 3-1 over Nigeria"
     description:
       FIFA Women\'s World Cup 2019 France match between Norway and Nigeria,
       taking place at 21:00 on Saturday, 8 June.
