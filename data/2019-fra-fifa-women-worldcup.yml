@@ -107,6 +107,7 @@ games:
 
   - time:   Sat, 08 Jun 2019 18:00:00 +0100
     title:  Spain vs South Africa
+    teams:  ["esp","rsa"]
     place:  ["team-b-3","team-b-4"]
     goals:  [3,1]
     result: "Spain wins 3-1 over South Africa"
@@ -116,6 +117,7 @@ games:
 
   - time:   Sat, 08 Jun 2019 21:00:00 +0100
     title:  Norway vs Nigeria
+    teams:  ["nor","nig"]
     place:  ["team-a-3","team-a-4"]
     goals:  [3,1]
     result: "Norway wins 3-1 over Nigeria"
@@ -123,59 +125,83 @@ games:
       FIFA Women\'s World Cup 2019 France match between Norway and Nigeria,
       taking place at 21:00 on Saturday, 8 June.
 
-  - time:  Sun, 09 Jun 2019 13:00:00 +0100
-    title: Australia vs Italy
-    place: []
+  - time:   Sun, 09 Jun 2019 13:00:00 +0100
+    title:  Australia vs Italy
+    teams:  ["aus","ita"]
+    place:  ["team-c-1", "team-c-2"]
+    goals:  [1,2]
+    result: "Italy wins 2-1 over Australia"
     description:
       FIFA Women\'s World Cup 2019 France match between Australia and Italy,
       taking place at 13:00 on Sunday, 9 June.
 
-  - time:  Sun, 09 Jun 2019 15:30:00 +0100
-    title: Brazil vs Jamaica
-    place: []
+  - time:   Sun, 09 Jun 2019 15:30:00 +0100
+    title:  Brazil vs Jamaica
+    teams:  ["bra","jam"]
+    place:  ["teams-c-3","teams-c-4"]
+    goals:  [3,0]
+    result: "Brazil wins 3-0 over Jamaica"
     description:
       FIFA Women\'s World Cup 2019 France match between Brazil and
       Jamaica, taking place at 15:30 on Sunday, 9 June.
 
-  - time:  Sun, 09 Jun 2019 18:00:00 +0100
-    title: England vs Scotland
-    place: []
+  - time:   Sun, 09 Jun 2019 18:00:00 +0100
+    title:  England vs Scotland
+    teams:  ["eng","sco"]
+    place:  ["teams-d-1","teams-d-2"]
+    goals:  [2,1]
+    result: "England wins 2-1 over Scotland" 
     description:
       FIFA Women\'s World Cup 2019 France match between England and
       Scotland, taking place at 18:00 on Sunday, 9 June.
 
   - time:   Mon, 10 Jun 2019 18:00:00 +0100
     title:  Argentina vs Japan
-    place:  []
+    teams:  ["arg","jpn"]
+    place:  ["teams-d-3","teams-d-4"]
+    goals:  [0,0]
+    result: "Draw between Argentina and Japan"
     description:
       FIFA Women\'s World Cup 2019 France match between Argentina and
       Japan, taking place at 18:00 on Monday, 10 June.
 
-  - time:  Mon, 10 Jun 2019 21:00:00 +0100
-    title: Canada vs Cameroon
-    place: []
+  - time:   Mon, 10 Jun 2019 21:00:00 +0100
+    title:  Canada vs Cameroon
+    teams:  ["can","cam"]
+    place:  ["teams-e-1","teams-e-2"]
+    goals:  [1,0]
+    result: "Canada wins 1-0 over Cameroon"
     description:
       FIFA Women\'s World Cup 2019 France match between Canada and
       Cameroon, taking place at 21:00 on Monday, 10 June.
       
-  - time:  Tue, 11 Jun 2019 15:00:00 +0100
-    title: New Zealand vs Netherlands
-    place: []
+  - time:   Tue, 11 Jun 2019 15:00:00 +0100
+    title:  New Zealand vs Netherlands
+    teams:  ["nzl","ned"]
+    place:  ["teams-e-3","teams-e-4"]
+    goals:  [0,1]
+    result: "Netherlands wins 1-0 over New Zealand"
     description:
       FIFA Women\'s World Cup 2019 France match between New Zealand
       and Netherlands, taking place at 15:00 on Tuesday, 11
       June.
 
-  - time:  Tue, 11 Jun 2019 18:00:00 +0100
-    title: Chile vs Sweden
-    place: []
+  - time:   Tue, 11 Jun 2019 18:00:00 +0100
+    title:  Chile vs Sweden
+    teams:  ["chi","swe"]
+    place:  ["teams-f-3","teams-f-4"]
+    goals:  [0,2]
+    result: "Sweden wins 2-0 over Chile"
     description:
       FIFA Women\'s World Cup 2019 France match between Chile and
       Sweden, taking place at 18:00 on Tuesday, 11 June.
 
-  - time:  Tue, 11 Jun 2019 21:00:00 +0100
-    title: USA vs Thailand
-    place: []
+  - time:   Tue, 11 Jun 2019 21:00:00 +0100
+    title:  USA vs Thailand
+    teams:  ["usa","thi"]
+    place:  ["teams-f-1","teams-f-2"]
+    goals:  [13,0]
+    result: "USA wins 13-0 over Thailand"
     description:
       FIFA Women\'s World Cup 2019 France match between USA and
       Thailand, taking place at 21:00 on Tuesday, 11 June.
