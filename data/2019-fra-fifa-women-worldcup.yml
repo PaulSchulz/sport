@@ -381,19 +381,19 @@ games:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 17:30 on Saturday, 22 June.
 
-   - time:  Sat, 22 Jun 2019 21:00:00 +0100
-     title: TBC vs TBC
-     place: []
-     description:
-       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
-       taking place at 21:00 on Saturday, 22 June.
+  - time:  Sat, 22 Jun 2019 21:00:00 +0100
+    title: TBC vs TBC
+    place: []
+    description:
+      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      taking place at 21:00 on Saturday, 22 June.
 
-   - time:  Sun, 23 Jun 2019 17:30:00 +0100
-     title: TBC vs TBC
-     place: []
-     description:
-       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
-       taking place at 17:30 on Sunday, 23 June.
+  - time:  Sun, 23 Jun 2019 17:30:00 +0100
+    title: TBC vs TBC
+    place: []
+    description:
+      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      taking place at 17:30 on Sunday, 23 June.
 
   - time:  Sun, 23 Jun 2019 21:00:00 +0100
     title: TBC vs TBC

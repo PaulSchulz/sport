@@ -18,10 +18,10 @@
     ["==============="
      "Useful Commands"
      "==============="
-     "(list-events)                  - Show current event files"
+     "(list-events)                - Show current event files"
      "(read-event \"<filename>\")    - Load event details" 
      "(display-event \"<filename>\") - Display evenmt details"
-     "(events-table)                 - List events"
+     "(events-table)               - List events"
      ]
     )))
 
