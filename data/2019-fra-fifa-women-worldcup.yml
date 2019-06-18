@@ -3,8 +3,12 @@ title:   FIFA Women\'s World Cup 2019 France
 link:    https://wwc.joebirkin.com
 code:    football
 date:    {from: "7 Jun 2019", to: "7 Jul 2019"}
-version: 1.1
+version: fifa-world-cup-24
 source:  The details were obtained from ical file.
+format:  [[6,4],16] 
+# 6 groups of 4 teams - 24 teams, 36 matches
+# Top 2 from each group go through (12) + next best 4.
+# Knockoput round of 16.
 
 teams: 
   # Country codes: https://simple.wikipedia.org/wiki/List_of_IOC_country_codes
@@ -67,25 +71,26 @@ teams:
   
 # See: http://en.wikipedia.org/wiki/List_of_IOC_country_codes
 groups:
-  group-a: ["fra", "kor", "nor", "nig"]
-  group-b: ["ger", "chn", "esp", "rsa"]
-  group-c: ["aus", "ita", "bra", "jam"]
-  group-d: ["eng", "sco", "arg", "jap"]  
-  group-e: ["can", "cam", "nzl", "ned"]
-  group-f: ["usa", "tha", "chi", "swe"]
+  - ["fra", "kor", "nor", "nig"]
+  - ["ger", "chn", "esp", "rsa"]
+  - ["aus", "ita", "bra", "jam"]
+  - ["eng", "sco", "arg", "jpn"]  
+  - ["can", "cam", "nzl", "ned"]
+  - ["usa", "tha", "chi", "swe"]
 
 group-details:
-  group-a: {name: "Group A", short: "A"}
-  group-b: {name: "Group B", short: "B"}
-  group-c: {name: "Group C", short: "C"}
-  group-d: {name: "Group D", short: "D"}
-  group-e: {name: "Group E", short: "E"}
-  group-f: {name: "Group F", short: "F"}
+  - {name: "Group A", short: "A"}
+  - {name: "Group B", short: "B"}
+  - {name: "Group C", short: "C"}
+  - {name: "Group D", short: "D"}
+  - {name: "Group E", short: "E"}
+  - {name: "Group F", short: "F"}
 
 venues:
 
 games:
-  - time:   Fri, 07 Jun 2019 21:00:00 +0100
+  - id:     1
+    time:   Fri, 07 Jun 2019 21:00:00 +0200
     title:  France vs Korea Republic
     teams:  ["fra","kor"]
     place:  ["team-a-1", "team-a-2"]
@@ -95,7 +100,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between France and
       Korea Republic, taking place at 21:00 on Friday, 7 June.
       
-  - time:   Sat, 08 Jun 2019 15:00:00 +0100
+  - id:     2
+    time:   Sat, 08 Jun 2019 15:00:00 +0200
     title:  Germany vs China
     teams:  ["ger","chn"]
     place:  ["team-b-1","team-b-2"]
@@ -105,7 +111,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between Germany and China,
       taking place at 15:00 on Saturday, 8 June.
 
-  - time:   Sat, 08 Jun 2019 18:00:00 +0100
+  - id:     3
+    time:   Sat, 08 Jun 2019 18:00:00 +0200
     title:  Spain vs South Africa
     teams:  ["esp","rsa"]
     place:  ["team-b-3","team-b-4"]
@@ -115,7 +122,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between Spain and South Africa,
       taking place at 18:00 on Saturday, 8 June.:n
 
-  - time:   Sat, 08 Jun 2019 21:00:00 +0100
+  - id:     4
+    time:   Sat, 08 Jun 2019 21:00:00 +0200
     title:  Norway vs Nigeria
     teams:  ["nor","nig"]
     place:  ["team-a-3","team-a-4"]
@@ -125,7 +133,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between Norway and Nigeria,
       taking place at 21:00 on Saturday, 8 June.
 
-  - time:   Sun, 09 Jun 2019 13:00:00 +0100
+  - id:     5
+    time:   Sun, 09 Jun 2019 13:00:00 +0200
     title:  Australia vs Italy
     teams:  ["aus","ita"]
     place:  ["team-c-1", "team-c-2"]
@@ -135,7 +144,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between Australia and Italy,
       taking place at 13:00 on Sunday, 9 June.
 
-  - time:   Sun, 09 Jun 2019 15:30:00 +0100
+  - id:     6
+    time:   Sun, 09 Jun 2019 15:30:00 +0200
     title:  Brazil vs Jamaica
     teams:  ["bra","jam"]
     place:  ["teams-c-3","teams-c-4"]
@@ -145,7 +155,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between Brazil and
       Jamaica, taking place at 15:30 on Sunday, 9 June.
 
-  - time:   Sun, 09 Jun 2019 18:00:00 +0100
+  - id:     7
+    time:   Sun, 09 Jun 2019 18:00:00 +0200
     title:  England vs Scotland
     teams:  ["eng","sco"]
     place:  ["teams-d-1","teams-d-2"]
@@ -155,7 +166,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between England and
       Scotland, taking place at 18:00 on Sunday, 9 June.
 
-  - time:   Mon, 10 Jun 2019 18:00:00 +0100
+  - id:     8
+    time:   Mon, 10 Jun 2019 18:00:00 +0200
     title:  Argentina vs Japan
     teams:  ["arg","jpn"]
     place:  ["teams-d-3","teams-d-4"]
@@ -165,7 +177,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between Argentina and
       Japan, taking place at 18:00 on Monday, 10 June.
 
-  - time:   Mon, 10 Jun 2019 21:00:00 +0100
+  - id:     9
+    time:   Mon, 10 Jun 2019 21:00:00 +0200
     title:  Canada vs Cameroon
     teams:  ["can","cam"]
     place:  ["teams-e-1","teams-e-2"]
@@ -175,7 +188,8 @@ games:
       FIFA Women\'s World Cup 2019 France match between Canada and
       Cameroon, taking place at 21:00 on Monday, 10 June.
       
-  - time:   Tue, 11 Jun 2019 15:00:00 +0100
+  - id:     10
+    time:   Tue, 11 Jun 2019 15:00:00 +0200
     title:  New Zealand vs Netherlands
     teams:  ["nzl","ned"]
     place:  ["teams-e-3","teams-e-4"]
@@ -186,7 +200,8 @@ games:
       and Netherlands, taking place at 15:00 on Tuesday, 11
       June.
 
-  - time:   Tue, 11 Jun 2019 18:00:00 +0100
+  - id:     11
+    time:   Tue, 11 Jun 2019 18:00:00 +0200
     title:  Chile vs Sweden
     teams:  ["chi","swe"]
     place:  ["teams-f-3","teams-f-4"]
@@ -196,9 +211,10 @@ games:
       FIFA Women\'s World Cup 2019 France match between Chile and
       Sweden, taking place at 18:00 on Tuesday, 11 June.
 
-  - time:   Tue, 11 Jun 2019 21:00:00 +0100
+  - id:     12
+    time:   Tue, 11 Jun 2019 21:00:00 +0200
     title:  USA vs Thailand
-    teams:  ["usa","thi"]
+    teams:  ["usa","tha"]
     place:  ["teams-f-1","teams-f-2"]
     goals:  [13,0]
     result: "USA wins 13-0 over Thailand"
@@ -206,280 +222,377 @@ games:
       FIFA Women\'s World Cup 2019 France match between USA and
       Thailand, taking place at 21:00 on Tuesday, 11 June.
 
-  - time:  Wed, 12 Jun 2019 15:00:00 +0100
-    title: Nigeria vs Korea Republic
-    place: []
+  - id:    13
+    time:  Wed, 12 Jun 2019 15:00:00 +0200
+    title: Nigeria vs Korean Republic
+    teams: ["nig","kor"]
+    place: ["teams-a-4","teams-a-2"]
+    goals: [2,0]
+    result: "Nigeria wins 2-0 over Korean Republic"
     description:
       FIFA Women\'s World Cup 2019 France match between Nigeria and
       Korea Republic, taking place at 15:00 on Wednesday, 12 June.
 
-  - time:  Wed, 12 Jun 2019 18:00:00 +0100
-    title: Germany vs Spain
-    place: []
+  - id:     14
+    time:   Wed, 12 Jun 2019 18:00:00 +0200
+    title:  Germany vs Spain
+    teams:  ["ger","esp"]
+    place:  ["teams-b-1","teams-b-3"]
+    goals:  [1,0]
+    result: "Germany wins 1-0 over Spain"
     description:
       FIFA Women\'s World Cup 2019 France match between Germany and
       Spain, taking place at 18:00 on Wednesday, 12 June.
 
-  - time:  Wed, 12 Jun 2019 21:00:00 +0100
-    title: France vs Norway
-    place: []
+  - id:     15
+    time:   Wed, 12 Jun 2019 21:00:00 +0200
+    title:  France vs Norway
+    teams:  ["fra","nor"]
+    place:  ["teams-a-1","teams-a-3"]
+    goals:  [2,1]
+    result: "France wins 2-1 over Norway"
     description:
       FIFA Women\'s World Cup 2019 France match between France and
       Norway, taking place at 21:00 on Wednesday, 12 June.
 
-  - time:  Thu, 13 Jun 2019 18:00:00 +0100
-    title: Australia vs Brazil
-    place: []
+  - id:     16
+    time:   Thu, 13 Jun 2019 18:00:00 +0200
+    title:  Australia vs Brazil
+    teams:  ["aus","bra"]
+    place:  ["teams-c-1","teams-c-3"]
+    goals:  [3,2]
+    result: "Australia wins 3-2 over Brazil"
     description:
       FIFA Women\'s World Cup 2019 France match between Australia and
       Brazil, taking place at 18:00 on Thursday, 13 June.
 
-  - time:  Thu, 13 Jun 2019 21:00:00 +0100
-    title: South Africa vs China
-    place: []
-    description:
-      FIFA Women\'s World Cup 2019 France match between South Africa and China, taking place at 21:00 on Thursday, 13 June.
+  - id:     17
+    time:   Thu, 13 Jun 2019 21:00:00 +0200
+    title:  South Africa vs China
+    teams:  ["rsa","chn"]
+    place:  ["teams-b-4","teams-b-2"]
+    goals:  [0,1]
+    result: "China wins 1-0 over South Africa"
+    description:    
+      FIFA Women\'s World Cup 2019 France match between South Africa
+      and China, taking place at 21:00 on Thursday, 13 June.
 
-  - time:  Fri, 14 Jun 2019 15:00:00 +0100
-    title: Japan vs Scotland
-    place: []
+  - id:     18
+    time:   Fri, 14 Jun 2019 15:00:00 +0200
+    title:  Japan vs Scotland
+    teams:  ["jpn","sco"]
+    place:  ["teams-d-4","teams-d-2"]
+    goals:  [2,1]
+    result: "Japan wins 2-1 over Scotland"
     description:
       FIFA Women\'s World Cup 2019 France match between Japan and
       Scotland, taking place at 15:00 on Friday, 14 June.
 
-  - time:  Fri, 14 Jun 2019 18:00:00 +0100
-    title: Jamaica vs Italy
-    place: []
+  - id:     19
+    time:   Fri, 14 Jun 2019 18:00:00 +0200
+    title:  Jamaica vs Italy
+    teams:  ["jam","ita"]
+    place:  ["teams-c-4","teams-c-2"]
+    goals:  [0,5]
+    result: "Italy wins 5-0 over Jamaica"
     description:
       FIFA Women\'s World Cup 2019 France match between Jamaica and
       Italy, taking place at 18:00 on Friday, 14 June.
 
-  - time:  Fri, 14 Jun 2019 21:00:00 +0100
-    title: England vs Argentina
-    place: []
+  - id:     20
+    time:   Fri, 14 Jun 2019 21:00:00 +0200
+    title:  England vs Argentina
+    teams:  ["eng","arg"]
+    place:  ["teams-d-1","teams-d-3"]
+    goals:  [1,0]
+    result: "England wins 1-0 over Argentina"
     description:
       FIFA Women\'s World Cup 2019 France match between England and
       Argentina, taking place at 21:00 on Friday, 14 June.
 
-  - time:  Sat, 15 Jun 2019 15:00:00 +0100
-    title: Netherlands vs Cameroon
-    place: []
+  - id:     21
+    time:   Sat, 15 Jun 2019 15:00:00 +0200
+    title:  Netherlands vs Cameroon
+    teams:  ["ned","cam"]
+    place:  ["teams-e-4","teams-e-2"]
+    goals:  [3,1]
+    result: "Netherlands wins 3-1 over Cameroon"
     description:
       FIFA Women\'s World Cup 2019 France match between Netherlands
       and Cameroon, taking place at 15:00 on Saturday, 15 June.
 
-  - time:  Sat, 15 Jun 2019 21:00:00 +0100
-    title: Canada vs New Zealand
-    place: []
+  - id:     22
+    time:   Sat, 15 Jun 2019 21:00:00 +0200
+    title:  Canada vs New Zealand
+    teams:  ["can","nzl"]
+    place:  ["teams-e-1","teams-e-3"]
+    goals:  [2,0]
+    result: "Canada wins 2-0 over New Zealand"
     description:
       FIFA Women\'s World Cup 2019 France match between Canada and New
       Zealand, taking place at 21:00 on Saturday, 15 June.
 
-  - time:  Sun, 16 Jun 2019 15:00:00 +0100
-    title: Sweden vs Thailand
-    place: []
+  - id:     23
+    time:   Sun, 16 Jun 2019 15:00:00 +0200
+    title:  Sweden vs Thailand
+    teams:  ["swe","tha"]
+    place:  ["teams-f-4","teams-f-2"]
+    goals:  [5,1]
+    result: "Sweden wins 5-1 over Thailand"
     description:
       FIFA Women\'s World Cup 2019 France match between Sweden and
       Thailand, taking place at 15:00 on Sunday, 16 June.
 
-  - time:  Sun, 16 Jun 2019 18:00:00 +0100
-    title: USA vs Chile
-    place: []
+  - id:     24
+    time:   Sun, 16 Jun 2019 18:00:00 +0200
+    title:  USA vs Chile
+    teams:  ["usa","chi"]
+    place:  ["teams-f-1","teams-f-3"]
+    goals:  [3,0]
+    result: "USA wins 3-0 over Chile"
     description:
       FIFA Women\'s World Cup 2019 France match between USA and Chile,
       taking place at 18:00 on Sunday, 16 June.
 
-  - time:  Mon, 17 Jun 2019 18:00:00 +0100
-    title: China vs Spain
-    place: []
+  - id:     25
+    time:   Mon, 17 Jun 2019 18:00:00 +0200
+    title:  China vs Spain
+    teams:  ["chn","esp"]
+    place:  ["teams-b-2","teams-b-3"]
+    goals:  [0,0]
+    result: "Draw between China and Spain"
     description:
       FIFA Women\'s World Cup 2019 France match between China and
       Spain, taking place at 18:00 on Monday, 17 June.
 
-  - time:  Mon, 17 Jun 2019 18:00:00 +0100
-    title: South Africa vs Germany
-    place: []
+  - id:     26
+    time:   Mon, 17 Jun 2019 18:00:00 +0200
+    title:  South Africa vs Germany
+    teams:  ["rsa","ger"]
+    place:  ["teams-b-4","teams-b-1"]
+    goals:  [0,4]
+    result: "Germany wins 4-0 over South Africa"
     description:
       FIFA Women\'s World Cup 2019 France match between South Africa
       and Germany, taking place at 18:00 on Monday, 17 June.
 
-  - time:  Mon, 17 Jun 2019 21:00:00 +0100
-    title: Nigeria vs France
-    place: []
+  - id:     27
+    time:   Mon, 17 Jun 2019 21:00:00 +0200
+    title:  Nigeria vs France
+    teams:  ["nig","fra"]
+    place:  ["teams-a-4","teams-a-1"]
+    goals:  [0,1]
+    result: "France wins 1-0 over Nigeria"
     description:
       FIFA Women\'s World Cup 2019 France match between Nigeria and
       France, taking place at 21:00 on Monday, 17 June.
 
-  - time:  Mon, 17 Jun 2019 21:00:00 +0100
-    title: Korea Republic vs Norway
-    place: []
+  - id:     28
+    time:   Mon, 17 Jun 2019 21:00:00 +0200
+    title:  Korea Republic vs Norway
+    teams:  ["kor","nor"]
+    place:  ["teams-a-2","teams-a-3"]
+    goals:  [1,2]
+    result: "Norway wins 2-1 over Korean Republic"
     description:
       FIFA Women\'s World Cup 2019 France match between Korea Republic
       and Norway, taking place at 21:00 on Monday, 17 June.
 
-  - time:  Tue, 18 Jun 2019 21:00:00 +0100
+  - id:    29
+    time:  Tue, 18 Jun 2019 21:00:00 +0200
     title: Jamaica vs Australia
-    place: []
+    teams: ["jam","aus"]
+    place: ["teams-c-4","teams-c-1"]
     description:
       FIFA Women\'s World Cup 2019 France match between Jamaica and
       Australia, taking place at 21:00 on Tuesday, 18 June.
 
-  - time:  Tue, 18 Jun 2019 21:00:00 +0100
+  - id:    30
+    time:  Tue, 18 Jun 2019 21:00:00 +0200
     title: Italy vs Brazil
-    place: []
+    teams: ["ita","bra"]
+    place: ["teams-c-2","teams-c-3"]
     description:
       FIFA Women\'s World Cup 2019 France match between Italy and
       Brazil, taking place at 21:00 on Tuesday, 18 June.
 
-  - time:  Wed, 19 Jun 2019 21:00:00 +0100
+  - id:    31
+    time:  Wed, 19 Jun 2019 21:00:00 +0200
     title: Japan vs England
-    place: []
+    teams: ["jpn","eng"]
+    place: ["teams-d-4","teams-d-1"]
     description:
       FIFA Women\'s World Cup 2019 France match between Japan and
       England, taking place at 21:00 on Wednesday, 19
       June.
 
-  - time:  Wed, 19 Jun 2019 21:00:00 +0100
+  - id:    32
+    time:  Wed, 19 Jun 2019 21:00:00 +0200
     title: Scotland vs Argentina
-    place: []
+    teams: ["sco","arg"]
+    place: ["teams-d-2","teams-d-3"]
     description:
       FIFA Women\'s World Cup 2019 France match between Scotland and
       Argentina, taking place at 21:00 on Wednesday, 19 June.
 
-  - time:  Thu, 20 Jun 2019 18:00:00 +0100
+  - id:    33
+    time:  Thu, 20 Jun 2019 18:00:00 +0200
     title: Netherlands vs Canada
-    place: []
+    teams: ["ned","can"]
+    place: ["teams-e-4","teams-e-1"]
     description:
       FIFA Women\'s World Cup 2019 France match between Netherlands
       and Canada, taking place at 18:00 on Thursday, 20 June.
 
-  - time:  Thu, 20 Jun 2019 18:00:00 +0100
+  - id:    34
+    time:  Thu, 20 Jun 2019 18:00:00 +0200
     title: Cameroon vs New Zealand
-    place: []
+    teams: ["cam","nzl"]
+    place: ["teams-e-2","teams-e-3"]
     description:
       FIFA Women\'s World Cup 2019 France match between Cameroon and
       New Zealand, taking place at 18:00 on Thursday, 20 June.
 
-  - time:  Thu, 20 Jun 2019 21:00:00 +0100
+  - id:    35
+    time:  Thu, 20 Jun 2019 21:00:00 +0200
     title: Thailand vs Chile
-    place: []
+    teams: ["tha","chi"]
+    place: ["teams-f-2","teams-f-3"]
     description:
       FIFA Women\'s World Cup 2019 France match between Thailand and
       Chile, taking place at 21:00 on Thursday, 20 June.
 
-  - time:  Thu, 20 Jun 2019 21:00:00 +0100
+  - id:    36
+    time:  Thu, 20 Jun 2019 21:00:00 +0200
     title: Sweden vs USA
-    place: []
+    teams: ["swe","usa"]
+    place: ["teams-f-3","teams-f-2"]
     description:
       FIFA Women\'s World Cup 2019 France match between Sweden and
       USA, taking place at 21:00 on Thursday, 20 June.
 
-  - time:  Sat, 22 Jun 2019 17:30:00 +0100
+  - id:    37
+    time:  Sat, 22 Jun 2019 17:30:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 17:30 on Saturday, 22 June.
 
-  - time:  Sat, 22 Jun 2019 21:00:00 +0100
+  - id:    38
+    time:  Sat, 22 Jun 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Saturday, 22 June.
 
-  - time:  Sun, 23 Jun 2019 17:30:00 +0100
+  - id:    39
+    time:  Sun, 23 Jun 2019 17:30:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 17:30 on Sunday, 23 June.
 
-  - time:  Sun, 23 Jun 2019 21:00:00 +0100
+  - id:    40
+    time:  Sun, 23 Jun 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Sunday, 23 June.
 
-  - time:  Mon, 24 Jun 2019 18:00:00 +0100
+  - id:    41
+    time:  Mon, 24 Jun 2019 18:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 18:00 on Monday, 24 June.
 
-  - time:  Mon, 24 Jun 2019 21:00:00 +0100
+  - id:    42
+    time:  Mon, 24 Jun 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Monday, 24 June.
 
-  - time:  Tue, 25 Jun 2019 18:00:00 +0100
+  - id:    43
+    time:  Tue, 25 Jun 2019 18:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 18:00 on Tuesday, 25 June.
 
-  - time:  Tue, 25 Jun 2019 21:00:00 +0100
+  - id:    44
+    time:  Tue, 25 Jun 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Tuesday, 25 June.
 
-  - time:  Thu, 27 Jun 2019 21:00:00 +0100
+  - id:    45
+    time:  Thu, 27 Jun 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Thursday, 27 June.
 
-  - time:  Fri, 28 Jun 2019 21:00:00 +0100
+  - id:    46
+    time:  Fri, 28 Jun 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Friday, 28 June.
 
-  - time:  Sat, 29 Jun 2019 15:00:00 +0100
+  - id:    47
+    time:  Sat, 29 Jun 2019 15:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC.
       taking place at 15:00 on Saturday, 29 June.
 
-  - time:  Sat, 29 Jun 2019 18:30:00 +0100
+  - id:    48
+    time:  Sat, 29 Jun 2019 18:30:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 18:30 on Saturday, 29 June.
 
-  - time:  Tue, 02 Jul 2019 21:00:00 +0100
+  - id:    49
+    time:  Tue, 02 Jul 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Tuesday, 2 July.
 
-  - time:  Wed, 03 Jul 2019 21:00:00 +0100
+  - id:    50
+    time:  Wed, 03 Jul 2019 21:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Wednesday, 3 July.
 
-  - time:  Sat, 06 Jul 2019 17:00:00 +0100
+  - id:    51
+    time:  Sat, 06 Jul 2019 17:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 17:00 on Saturday, 6 July.
 
-  - time:  Sun, 07 Jul 2019 17:00:00 +0100
+  - id:    52
+    time:  Sun, 07 Jul 2019 17:00:00 +0200
     title: TBC vs TBC
     place: []
     description:
