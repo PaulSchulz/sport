@@ -10,11 +10,6 @@
         [clojure.pprint :only [pprint]])
   )
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
-
 (defn help []
   (println
    (str/join
@@ -101,7 +96,8 @@
     ))
 
 ;; Create results table 
-(defn event-games-table [games]
+(defn event-games-table [event]
+  (let [games (:games event)]
   (str/join
    "\n"
    (map
@@ -134,7 +130,7 @@
               ))
     games)
    )
-  )
+  ))
 
 ;; goals - vector containing number of goals for each team.
 ;; No need to consider penalties and points are not awarded for matches
@@ -244,19 +240,20 @@
           (reduce-statistics
            (calculate-statistics games))))
 
+(defn stats-separator []
+  "------+----+---------+------------+--------------------------\n"
+  )
+
 (defn stats-header []
   (str
-   " Team | Points | Played/Win/Lose/Draw | For/Against/Diff\n"
-   "------+--------+----------------------+-----------------\n"
+   "      |    | Games   | Goals      |\n"      
+   " Team | Pt | P/W/L/D | Fr/Ag/Diff | Results\n"
+   (stats-separator)
    )
   )
 
-(defn stats-separator []
-  "------+--------+----------------------+-----------------\n"
-  )
-
-(defn stats-string [team stats]
-  (format " %3s  |  %4d  |   %3d %3d %3d %3d    |  %3d %3d %4d"
+(defn stats-string [team stats results]
+  (format " %3s  | %2d | %1d %1d %1d %1d | %2d %2d %4d | %s"
           (str/upper-case (name team))
           (nth stats 0)
           (nth stats 1)
@@ -266,17 +263,25 @@
           (nth stats 5)
           (nth stats 6)
           (nth stats 7)
+          (format "%9s%s"
+                  (if (:group-stage results)
+                    (:group-stage results)
+                    "")
+                  (if (:qual16 results)
+                    "*"
+                    " ")
+                  )
           ))
 
-(defn event-stats-table [games]
-  (let [statistics (event-statistics games)]
+(defn event-stats-table [event]
+  (let [statistics (event-statistics (:games event))
+        results    (:results event)]
     (str
-     "\n"
      (stats-header)
      (str/join
       "\n"
       (map
-       (fn [[k v]] (stats-string k v))
+       (fn [[k v]] (stats-string k v (k results)))
        (sort (fn [el1 el2]
                (if (> (nth (nth el1 1) 0)
                       (nth (nth el2 1) 0))
@@ -302,8 +307,8 @@
 (defn event-group-table [event]
   (let [games  (:games event)
         groups (:groups event)
-        stats  (event-statistics games)]
-
+        stats  (event-statistics games)
+        results (:results event)]
     (str
      (stats-header)
      (str/join
@@ -317,11 +322,7 @@
                (map
                 (fn [x]
                   (let [team (keyword x)]
-                    (stats-string team (team stats))
-                    ;; (str team
-                    ;;      " | "
-                    ;;      (seq (team stats))
-                    ;;      "\n")
+                    (stats-string team (team stats) (team results))
                     )
                   )
                 group)))
@@ -331,4 +332,21 @@
      )
     )
   )
-  
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn -main
+  [& args]
+  (let [event (get-event)]
+    (println (:title event))
+    (println "From: " (:from (:date event)))
+    (println "To:   " (:to   (:date event)))
+    (println)
+    (println "Group Stage")
+    (println (event-group-table event))
+    (println)
+    (println "Statistics")
+    (println (event-stats-table event))
+    (println)
+    (println "Games")
+    (println (event-games-table event))
+    ))

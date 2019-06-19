@@ -1,5 +1,5 @@
 ---
-title:   FIFA Women\'s World Cup 2019 France
+title:   "FIFA Women's World Cup 2019 France"
 link:    https://wwc.joebirkin.com
 code:    football
 date:    {from: "7 Jun 2019", to: "7 Jul 2019"}
@@ -86,6 +86,32 @@ group-details:
   - {name: "Group E", short: "E"}
   - {name: "Group F", short: "F"}
 
+results:
+  fra: {group-stage: group-a-1, qual16: y}
+  kor: {group-stage: group-a-4}
+  nor: {group-stage: group-a-2, qual16: y}
+  nig: {group-stage: group-a-3}
+  ger: {group-stage: group-b-1, qual16: y}
+  chn: {group-stage: group-b-3}
+  esp: {group-stage: group-b-2, qual16: y}
+  rsa: {group-stage: group-b-4}
+  aus: {group-stage: group-c-2, qual16: y}
+  ita: {group-stage: group-c-1, qual16: y}
+  bra: {group-stage: group-c-3}
+  jam: {group-stage: group-c-4}
+  eng: {}
+  sco: {}
+  arg: {}
+  jpn: {}
+  can: {}
+  cam: {}
+  nzl: {}
+  ned: {}
+  usa: {}
+  tha: {}
+  chi: {}
+  swe: {}
+  
 venues:
 
 games:
@@ -398,20 +424,24 @@ games:
       FIFA Women\'s World Cup 2019 France match between Korea Republic
       and Norway, taking place at 21:00 on Monday, 17 June.
 
-  - id:    29
-    time:  Tue, 18 Jun 2019 21:00:00 +0200
-    title: Jamaica vs Australia
-    teams: ["jam","aus"]
-    place: ["teams-c-4","teams-c-1"]
+  - id:     29
+    time:   Tue, 18 Jun 2019 21:00:00 +0200
+    title:  Jamaica vs Australia
+    teams:  ["jam","aus"]
+    place:  ["teams-c-4","teams-c-1"]
+    goals:  [1,4]
+    result: "Australia wins 4-1 over Jamaica"
     description:
       FIFA Women\'s World Cup 2019 France match between Jamaica and
       Australia, taking place at 21:00 on Tuesday, 18 June.
 
-  - id:    30
-    time:  Tue, 18 Jun 2019 21:00:00 +0200
-    title: Italy vs Brazil
-    teams: ["ita","bra"]
-    place: ["teams-c-2","teams-c-3"]
+  - id:     30
+    time:   Tue, 18 Jun 2019 21:00:00 +0200
+    title:  Italy vs Brazil
+    teams:  ["ita","bra"]
+    place:  ["teams-c-2","teams-c-3"]
+    goals:  [0,1]
+    result: "Brazil wins 1-0 over Italy"
     description:
       FIFA Women\'s World Cup 2019 France match between Italy and
       Brazil, taking place at 21:00 on Tuesday, 18 June.
