@@ -95,42 +95,67 @@
                
     ))
 
-;; Create results table 
+;; Create results table
+(defn event-games-table-header []
+  (str
+   (format " %2s | %-15s | %-10s |  %-9s | %s"
+           "Id"
+           "Time"
+           "Teams"
+           "Score"
+           "Result")
+   "\n"
+   "--------------------------------------------------------------------------"
+   "\n"
+   )
+  )
+
 (defn event-games-table [event]
   (let [games (:games event)]
-  (str/join
-   "\n"
-   (map
-    (fn [x]
-      (format " %2d | %s | %-10s |  %4s %4s | %s"
-              (:id x)
-              (localtime (:time x))
-              (str (if (nth (:teams x) 0)
-                     (str/upper-case (nth (:teams x) 0))
-                     "---")
-                   " vs "
-                   (if (nth (:teams x) 1)
-                     (str/upper-case (nth (:teams x) 1))
-                     "---"))
-              (str
-               (if (nth (:goals x) 0)
-                 (nth (:goals x) 0)
-                 "-")
-               (if (nth (:penalties x) 0)
-                 (str "/" (nth (:penalties x) 0))
-                 "  "))
-              (str
-               (if (nth (:goals x) 1)
-                 (nth (:goals x) 1)
-                 "-")
-               (if (nth (:penalties x) 1)
-                 (str "/" (nth (:penalties x) 1))
-                 "  "))
-              (if (:result x) (:result x) "")
-              ))
-    games)
-   )
-  ))
+    (str
+     (event-games-table-header)
+     (str/join
+      "\n"
+      (map-indexed
+       (fn [i x]
+         (str
+          (if (= i 36) "----- Round of 16 -------------------------------\n" "")
+          (if (= i 44) "----- Quarter Finals ----------------------------\n" "")
+          (if (= i 48) "----- Semi Finals -------------------------------\n" "")
+          (if (= i 50) "----- Playoff -----------------------------------\n" "")
+          (if (= i 51) "----- Final -------------------------------------\n" "")
+          (format " %2d | %s | %-10s |  %4s %4s | %s"
+                  (:id x)
+                  (localtime (:time x))
+                  (str (if (nth (:teams x) 0)
+                         (str/upper-case (nth (:teams x) 0))
+                         "---")
+                       " vs "
+                       (if (nth (:teams x) 1)
+                         (str/upper-case (nth (:teams x) 1))
+                         "---"))
+                  (str
+                   (if (nth (:goals x) 0)
+                     (nth (:goals x) 0)
+                     "-")
+                   (if (nth (:penalties x) 0)
+                     (str "/" (nth (:penalties x) 0))
+                     "  "))
+                  (str
+                   (if (nth (:goals x) 1)
+                     (nth (:goals x) 1)
+                     "-")
+                   (if (nth (:penalties x) 1)
+                     (str "/" (nth (:penalties x) 1))
+                     "  "))
+                  (if (:result x) (:result x) "")
+                  )))
+       games)
+      )
+     "\n"
+     (str (str/join "" (repeat 78 "-")) "\n")
+     )
+    ))
 
 ;; goals - vector containing number of goals for each team.
 ;; No need to consider penalties and points are not awarded for matches
@@ -199,9 +224,9 @@
    (fn [x]
      (let [team-a (nth (:teams x) 0)
            team-b (nth (:teams x) 1)
-           points (calculate-points (:goals x))
+;;           points (calculate-points (:goals x))
            stats  (calculate-stats  (:goals x))
-           winner (calculate-winner (:goals x) (:penalties x))
+;;           winner (calculate-winner (:goals x) (:penalties x))
            ]
        (conj {}
              (if team-a
@@ -268,7 +293,10 @@
                     (:group-stage results)
                     "")
                   (if (:qual16 results)
-                    "*"
+                    (if (= (:qual16 results) "direct")
+                      "*"
+                      "+"
+                    )
                     " ")
                   )
           ))

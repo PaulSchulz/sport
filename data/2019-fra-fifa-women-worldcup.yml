@@ -87,16 +87,16 @@ group-details:
   - {name: "Group F", short: "F"}
 
 results:
-  fra: {group-stage: group-a-1, qual16: y}
+  fra: {group-stage: group-a-1, qual16: direct}
   kor: {group-stage: group-a-4}
-  nor: {group-stage: group-a-2, qual16: y}
+  nor: {group-stage: group-a-2, qual16: direct}
   nig: {group-stage: group-a-3}
-  ger: {group-stage: group-b-1, qual16: y}
+  ger: {group-stage: group-b-1, qual16: direct}
   chn: {group-stage: group-b-3}
-  esp: {group-stage: group-b-2, qual16: y}
+  esp: {group-stage: group-b-2, qual16: direct}
   rsa: {group-stage: group-b-4}
-  aus: {group-stage: group-c-2, qual16: y}
-  ita: {group-stage: group-c-1, qual16: y}
+  aus: {group-stage: group-c-2, qual16: direct}
+  ita: {group-stage: group-c-1, qual16: direct}
   bra: {group-stage: group-c-3}
   jam: {group-stage: group-c-4}
   eng: {}
@@ -501,18 +501,21 @@ games:
       FIFA Women\'s World Cup 2019 France match between Sweden and
       USA, taking place at 21:00 on Thursday, 20 June.
 
+# Round of 16
   - id:    37
     time:  Sat, 22 Jun 2019 17:30:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: Norway vs Australia
+    teams: ["nor","aus"]
+    place: ["group-a-2","group-c-2"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 17:30 on Saturday, 22 June.
 
   - id:    38
     time:  Sat, 22 Jun 2019 21:00:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: Germany vs TBC
+    teams: ["ger","---"]
+    place: ["group-b-1",""]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Saturday, 22 June.
@@ -527,16 +530,18 @@ games:
 
   - id:    40
     time:  Sun, 23 Jun 2019 21:00:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: France vs TBC
+    teams: ["fra","---"]
+    place: ["group-a-1","group-c-3"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Sunday, 23 June.
 
   - id:    41
     time:  Mon, 24 Jun 2019 18:00:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: Spain vs TBC
+    teams: ["asp","---"]
+    place: ["group-b-2","group-f-1"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 18:00 on Monday, 24 June.
@@ -552,7 +557,8 @@ games:
   - id:    43
     time:  Tue, 25 Jun 2019 18:00:00 +0200
     title: TBC vs TBC
-    place: []
+    teams: ["ita","---"]
+    place: ["group-c-1",""]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 18:00 on Tuesday, 25 June.
