@@ -27,8 +27,8 @@
      ""
      ";; FIFA 2019 Womens World Cup"
      "  (event-games nil)"
-     "  (println (event-games-table (event-games)))"
-     "  (println (event-stats-table (event-games)))"
+     "  (println (event-games-table (get-event)))"
+     "  (println (event-stats-table (get-event)))"
      "  (println (event-group-table (get-event)))"
      ]
     )))
