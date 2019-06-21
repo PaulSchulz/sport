@@ -362,6 +362,99 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Invert results for lookup
+(defn group-placings [event]
+  (reduce conj {}
+  (map
+   (fn [x] [(:group-stage (x 1)) (x 0)])
+   (:results event))))
+
+(defn format-placing-team [placings team]
+    (str/upper-case (name (placings team)))
+  )
+
+(defn format-game [event game-number]
+  (let [game        (nth (:games event) (dec game-number))
+        teams       (:teams     game)
+        goals       (:goals     game)
+        penalties   (:penalties game)
+        team-a      (if (nth teams 0)
+                      (str/upper-case (nth teams 0))
+                      "---")
+        team-b      (if (nth teams 1)
+                      (str/upper-case (nth teams 1))
+                      "---")
+        goals-a     (nth goals     0)
+        goals-b     (nth goals     1)
+        penalties-a (nth penalties 0)
+        penalties-b (nth penalties 1)
+        places      (:places    game)
+        place-a     (nth places 0)
+        place-b     (nth places 1)
+        results     (:results   event)
+        ]
+    (str
+     (cond
+       penalties (str team-a " (" goals-a "/" penalties-a ")"
+                      " vs "
+                      "(" goals-b "/" penalties-b ") " team-b)
+       goals     (str "  " team-a " (" goals-a ")"
+                      " vs "
+                      "(" goals-b ") " team-a)
+       teams     (str "      " team-a " vs " team-b)
+       :else     "--- vs ---"
+       )
+     " [" game-number "]"
+     )
+    ))
+
+(defn event-finals-chart [event]
+  (let [placings (group-placings event)]
+    (str/join
+     "\n"
+     [""
+      (format "  %-27s                             %-27s"
+              (format-game event 37)
+              (format-game event 42)
+              )
+      (format "  %-27s                             %-27s"
+              (format-game event 39)
+              (format-game event 38)
+              )
+      ""
+      (format "         %-27s                     %-27s"
+              (format-game event 45)
+              (format-game event 48)
+              )
+      (format "                                 %-27s"
+              (format-game event 52)              
+              )
+      (format "                %-27s       %-27s"
+              (format-game event 49)
+              (format-game event 50)
+              )
+      (format "                                 %-27s"
+              (format-game event 51)              
+              )
+      (format "         %-27s                     %-27s"
+              (format-game event 46)
+              (format-game event 47)
+              )
+      ""
+      (format "  %-27s                             %-27s"
+              (format-game event 40)
+              (format-game event 44)
+              )
+      (format "  %-27s                             %-27s"
+              (format-game event 41)
+              (format-game event 43)
+              )
+      ]
+     )
+    )
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main
   [& args]
   (let [event (get-event)]
@@ -377,4 +470,8 @@
     (println)
     (println "Games")
     (println (event-games-table event))
+    (println)
+    (println "Finals")
+    (println (event-finals-chart event))
+    (println)
     ))
