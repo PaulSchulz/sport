@@ -30,6 +30,9 @@
      "  (println (event-games-table (get-event)))"
      "  (println (event-stats-table (get-event)))"
      "  (println (event-group-table (get-event)))"
+     ""
+     ";; Event data (CSV) can be found at"
+     ";;  https://fixturedownload.com/"
      ]
     )))
 
@@ -339,6 +342,86 @@
       )
     ))
   )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Results chart
+
+(defn results-separator []
+  "------+-------------------------------------+--------+----+--+-+-\n"
+  )
+
+(defn results-header []
+  (str
+   "      | Game     111111111122222222223333333|33344444|4444|45|5|5\n"
+   " Team | 123456789012345678901234567890123456|78901234|5678|90|1|2\n"
+   (results-separator)
+   )
+  )
+
+(defn results-string [event team stats results]
+  (format "  %3s | %s"
+          (str/upper-case (name team))
+          (str/join
+           ""
+           (map-indexed
+            (fn [i x]
+              (str
+               (cond
+                 (= i 36) "|"
+                 (= i 44) "|"
+                 (= i 48) "|"
+                 (= i 50) "|"
+                 (= i 51) "|"
+                 )
+               (cond
+                 (= (nth (:teams x) 0) (name team))
+                 (cond
+                   (= (calculate-winner (:goals x) (:penalties x)) [1 0]) "W"
+                   (= (calculate-winner (:goals x) (:penalties x)) [0 1]) "L"
+                   (= (calculate-winner (:goals x) (:penalties x)) [0 0]) "d"
+                   :else "o")
+                 (= (nth (:teams x) 1) (name team))              
+                 (cond
+                   (= (calculate-winner (:goals x) (:penalties x)) [0 1]) "W"
+                   (= (calculate-winner (:goals x) (:penalties x)) [1 0]) "L"
+                   (= (calculate-winner (:goals x) (:penalties x)) [0 0]) "d"
+                   :else "o")               
+                 (not (:goals x)) " "
+                 :else
+                 (cond
+                   (<= i 35) "-"
+                   (and (<= 36 i 43) (:group results)) "-"
+                   (and (<= 44 i 47) (= (:qual16 results) "win")) "-"
+                   (and (<= 48 i 49) (= (:quarter results) "win")) "-"      
+                   :else " "))))
+              (:games event)
+              )
+           )
+          )
+  )
+
+(defn event-results-table [event]
+  (let [games      (:games event)
+        statistics (event-statistics (:games event))
+        results    (:results event)]
+    (str
+     (results-header)
+     (str/join
+      "\n"
+      (map
+       (fn [[k v]] (results-string event k v (k results)))
+       (sort (fn [el1 el2]
+               (if (> (nth (nth el1 1) 0)
+                      (nth (nth el2 1) 0))
+                 true
+                 false))
+        (map (fn [x] x) statistics))
+       )
+      )
+    ))
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Group chart
 
 (defn team-group [event team]
   (let [groups (:groups event)]        
@@ -381,7 +464,8 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Invert results for lookup
+;; Invert results for lookup, for automatic lookup in game results.
+;; (Not yet implemented.)
 (defn group-placings [event]
   (reduce conj {}
   (map
@@ -428,7 +512,7 @@
     ))
 
 (defn event-finals-chart [event]
-  (let [placings (group-placings event)]
+  (let [placings (group-placings event)] ;; Not yet used.
     (str/join
      "\n"
      [""
@@ -473,24 +557,31 @@
     )
   )
 
+(defn print-event-report [event]
+  (println (:title event))
+  (println "From: " (:from (:date event)))
+  (println "To:   " (:to   (:date event)))
+  (println)
+  (println "Games")
+  (println (event-games-table event))
+  (println)
+  (println "Group Stage")
+  (println (event-group-table event))
+  (println)
+  (println "Results")
+  (println (event-results-table event))
+  (println)
+  (println "Statistics")
+  (println (event-stats-table event))
+  (println)
+  (println "Finals")
+  (println (event-finals-chart event))
+  (println)
+  )
+  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main
   [& args]
   (let [event (get-event)]
-    (println (:title event))
-    (println "From: " (:from (:date event)))
-    (println "To:   " (:to   (:date event)))
-    (println)
-    (println "Group Stage")
-    (println (event-group-table event))
-    (println)
-    (println "Statistics")
-    (println (event-stats-table event))
-    (println)
-    (println "Games")
-    (println (event-games-table event))
-    (println)
-    (println "Finals")
-    (println (event-finals-chart event))
-    (println)
+    (print-event-report event)
     ))

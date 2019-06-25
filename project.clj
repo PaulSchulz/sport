@@ -9,6 +9,7 @@
                  [clj-time "0.15.0"]
                  [cheshire "5.8.1"]        ;; Used for formatting JSON
                  [io.forward/yaml "1.0.9"] ;; Used for formatting YAML
+                 [hickory "0.7.1"]         ;; Used for parsing HTML
                  ]
   :main ^:skip-aot sporting-fixtures.core
   :target-path "target/%s"
