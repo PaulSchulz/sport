@@ -87,30 +87,32 @@ group-details:
   - {name: "Group F", short: "F"}
 
 results:
-  fra: {group-stage: group-a-1, qual16: direct}
+  # Results from each round
+  # group-stage group qual16 quarter semi final
+  fra: {group-stage: group-a-1, group: qualified, qual16: win}
   kor: {group-stage: group-a-4}
-  nor: {group-stage: group-a-2, qual16: direct}
-  nig: {group-stage: group-a-3, qual16: indirect}
-  ger: {group-stage: group-b-1, qual16: direct}
-  chn: {group-stage: group-b-3, qual16: indirect}
-  esp: {group-stage: group-b-2, qual16: direct}
+  nor: {group-stage: group-a-2, group: qualified, qual16: win}
+  nig: {group-stage: group-a-3, group: indirect,  qual16: loss}
+  ger: {group-stage: group-b-1, group: qualified, qual16: win}
+  chn: {group-stage: group-b-3, group: indirect}
+  esp: {group-stage: group-b-2, group: qualified, qual16: loss}
   rsa: {group-stage: group-b-4}
-  aus: {group-stage: group-c-2, qual16: direct}
-  ita: {group-stage: group-c-1, qual16: direct}
-  bra: {group-stage: group-c-3, qual16: indirect}
+  aus: {group-stage: group-c-2, group: qualified, qual16: loss}
+  ita: {group-stage: group-c-1, group: qualified}
+  bra: {group-stage: group-c-3, group: indirect,  qual16: loss}
   jam: {group-stage: group-c-4}
-  eng: {group-stage: group-d-1, qual16: direct}
+  eng: {group-stage: group-d-1, group: qualified, qual16: win}
   sco: {group-stage: group-d-4}
   arg: {group-stage: group-d-3}
-  jpn: {group-stage: group-d-2, qual16: direct}
-  can: {group-stage: group-e-2, qual16: direct}
-  cam: {group-stage: group-e-3, qual16: indirect}
+  jpn: {group-stage: group-d-2, group: qualified}
+  can: {group-stage: group-e-2, group: qualified, qual16: loss}
+  cam: {group-stage: group-e-3, group: indirect,  qual16: loss}
   nzl: {group-stage: group-e-4}
-  ned: {group-stage: group-e-1, qual16: direct}
-  usa: {group-stage: group-f-1, qual16: direct}
+  ned: {group-stage: group-e-1, group: qualified}
+  usa: {group-stage: group-f-1, group: qualified, qual16: win}
   tha: {group-stage: group-f-4}
   chi: {group-stage: group-f-3}
-  swe: {group-stage: group-f-2, qual16: direct}
+  swe: {group-stage: group-f-2, group: quaified,  qual16: win}
   
 venues: []
 
@@ -514,20 +516,25 @@ games:
       USA, taking place at 21:00 on Thursday, 20 June.
 
 # Round of 16
-  - id:    37
-    time:  Sat, 22 Jun 2019 17:30:00 +0200
-    title: Norway vs Australia
-    teams: ["nor","aus"]
-    place: ["group-a-2","group-c-2"]
+  - id:        37
+    time:      Sat, 22 Jun 2019 21:00:00 +0200
+    title:     Norway vs Australia
+    teams:     ["nor","aus"]
+    place:     ["group-a-2","group-c-2"]
+    goals:     [1,1]
+    penalties: [4,1]
+    result:    "Norway wins 1(4)-1(1) on penalties over Australia"
     description:
       FIFA Women\'s World Cup 2019 France match between Norway and Australia,
       taking place at 17:30 on Saturday, 22 June.
 
-  - id:    38
-    time:  Sat, 22 Jun 2019 21:00:00 +0200
-    title: Germany vs Nigeria
-    teams: ["ger","nig"]
-    place: ["group-b-1","group-a-3"]
+  - id:     38
+    time:   Sat, 22 Jun 2019 17:30:00 +0200
+    title:  Germany vs Nigeria
+    teams:  ["ger","nig"]
+    place:  ["group-b-1","group-a-3"]
+    goals:  [3,0]
+    result: "Germany wins 3-0 over Nigeria"
     description:
       FIFA Women\'s World Cup 2019 France match between Germany and Nigeria,
       taking place at 21:00 on Saturday, 22 June.
@@ -537,33 +544,41 @@ games:
     title:  England vs Cameroon
     teams:  ["eng","cam"]
     place:  ["group-d-1","group-e-3"]
+    goals:  [3,0]
+    result: "England wins 3-0 over Cameroon"
     description:
       FIFA Women\'s World Cup 2019 France match between England and Cameroon,
       taking place at 17:30 on Sunday, 23 June.
 
-  - id:    40
-    time:  Sun, 23 Jun 2019 21:00:00 +0200
-    title: France vs Brazil
-    teams: ["fra","bra"]
-    place: ["group-a-1","group-c-3"]
+  - id:     40
+    time:   Sun, 23 Jun 2019 21:00:00 +0200
+    title:  France vs Brazil
+    teams:  ["fra","bra"]
+    place:  ["group-a-1","group-c-3"]
+    goals:  [2,1]
+    result: "France wins 2-1 over Brazil"
     description:
       FIFA Women\'s World Cup 2019 France match between France and Brazil,
       taking place at 21:00 on Sunday, 23 June.
 
-  - id:    41
-    time:  Mon, 24 Jun 2019 18:00:00 +0200
-    title: Spain vs USA
-    teams: ["esp","usa"]
-    place: ["group-b-2","group-f-1"]
+  - id:     41
+    time:   Mon, 24 Jun 2019 18:00:00 +0200
+    title:  Spain vs USA
+    teams:  ["esp","usa"]
+    place:  ["group-b-2","group-f-1"]
+    goals:  [1,2]
+    result: "USA wins 2-1 over Spain"
     description:
       FIFA Women\'s World Cup 2019 France match between Spain and USA,
       taking place at 18:00 on Monday, 24 June.
 
-  - id:    42
-    time:  Mon, 24 Jun 2019 21:00:00 +0200
-    title: Sweden vs Canada
-    teams: ["swe","can"]
-    place: ["group-f-2","group-e-2"]
+  - id:     42
+    time:   Mon, 24 Jun 2019 21:00:00 +0200
+    title:  Sweden vs Canada
+    teams:  ["swe","can"]
+    place:  ["group-f-2","group-e-2"]
+    goals:  [1,0]
+    result: "Sweden wins 1-0 over Canada"
     description:
       FIFA Women\'s World Cup 2019 France match between Sweden and Canada,
       taking place at 21:00 on Monday, 24 June.
@@ -589,16 +604,18 @@ games:
 # Quatrer Finals
   - id:    45
     time:  Thu, 27 Jun 2019 21:00:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: Norway vs England
+    place: ["qual16-37-winner","qual16-39-winner"]
+    teams: ["nor","eng"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Thursday, 27 June.
 
-  - id:    46
-    time:  Fri, 28 Jun 2019 21:00:00 +0200
-    title: TBC vs TBC
-    place: []
+  - id:     46
+    time:   Fri, 28 Jun 2019 21:00:00 +0200
+    title:  France vs USA
+    place:  ["qual16-40-winner","qual16-41-winner"]
+    teams:  ["fra","usa"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Friday, 28 June.
@@ -613,8 +630,9 @@ games:
 
   - id:    48
     time:  Sat, 29 Jun 2019 18:30:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: Sweden vs Germany
+    place:  ["qual16-42-winner","qual16-38-winner"]
+    teams:  ["swe","ger"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 18:30 on Saturday, 29 June.

@@ -1,0 +1,920 @@
+---
+title: 2016 AFL Draw & Fixtures
+location: Australia
+code: afl
+date: {from: 24 Mar 2016, to: 28 Aug 2016}
+format: afl-mens-2019
+version: 0.1
+games:
+- round-number: 1
+  date: 21/03/2019 18:50
+  location: mcg
+  teams: [car, ric]
+  result: [64, 97]
+- round-number: 1
+  date: 22/03/2019 19:20
+  location: mcg
+  teams: [col, gee]
+  result: [65, 72]
+- round-number: 1
+  date: 23/03/2019 13:15
+  location: mcg
+  teams: [mel, pta]
+  result: [61, 87]
+- round-number: 1
+  date: 23/03/2019 16:05
+  location: adl
+  teams: [adl, haw]
+  result: [55, 87]
+- round-number: 1
+  date: 23/03/2019 18:55
+  location: mrv
+  teams: [wbd, syd]
+  result: [82, 65]
+- round-number: 1
+  date: 23/03/2019 19:50
+  location: gab
+  teams: [bri, wce]
+  result: [102, 58]
+- round-number: 1
+  date: 24/03/2019 12:40
+  location: mrv
+  teams: [stk, gcs]
+  result: [85, 84]
+- round-number: 1
+  date: 24/03/2019 14:50
+  location: syd
+  teams: [gws, ess]
+  result: [112, 40]
+- round-number: 1
+  date: 24/03/2019 17:50
+  location: opt
+  teams: [fre, nmb]
+  result: [141, 59]
+- round-number: 2
+  date: 28/03/2019 18:50
+  location: mcg
+  teams: [ric, col]
+  result: [66, 110]
+- round-number: 2
+  date: 29/03/2019 19:20
+  location: scg
+  teams: [syd, adl]
+  result: [62, 88]
+- round-number: 2
+  date: 30/03/2019 16:05
+  location: mrv
+  teams: [ess, stk]
+  result: [65, 76]
+- round-number: 2
+  date: 30/03/2019 16:40
+  location: adl
+  teams: [pta, car]
+  result: [88, 72]
+- round-number: 2
+  date: 30/03/2019 18:55
+  location: gee
+  teams: [gee, mel]
+  result: [126, 46]
+- round-number: 2
+  date: 30/03/2019 19:40
+  location: opt
+  teams: [wce, gws]
+  result: [104, 52]
+- round-number: 2
+  date: 31/03/2019 12:40
+  location: mrv
+  teams: [nmb, bri]
+  result: [87, 107]
+- round-number: 2
+  date: 31/03/2019 14:50
+  location: mcg
+  teams: [haw, wbd]
+  result: [87, 106]
+- round-number: 2
+  date: 31/03/2019 16:10
+  location: met
+  teams: [gcs, fre]
+  result: [61, 58]
+- round-number: 3
+  date: 04/04/2019 19:20
+  location: adl
+  teams: [adl, gee]
+  result: [75, 99]
+- round-number: 3
+  date: 05/04/2019 19:20
+  location: mcg
+  teams: [mel, ess]
+  result: [112, 130]
+- round-number: 3
+  date: 06/04/2019 13:15
+  location: mrv
+  teams: [car, syd]
+  result: [74, 93]
+- round-number: 3
+  date: 06/04/2019 16:05
+  location: syd
+  teams: [gws, ric]
+  result: [125, 76]
+- round-number: 3
+  date: 06/04/2019 18:55
+  location: gab
+  teams: [bri, pta]
+  result: [107, 90]
+- round-number: 3
+  date: 06/04/2019 18:55
+  location: mcg
+  teams: [col, wce]
+  result: [76, 98]
+- round-number: 3
+  date: 07/04/2019 13:50
+  location: mrv
+  teams: [wbd, gcs]
+  result: [68, 73]
+- round-number: 3
+  date: 07/04/2019 14:50
+  location: mcg
+  teams: [haw, nmb]
+  result: [87, 71]
+- round-number: 3
+  date: 07/04/2019 16:50
+  location: opt
+  teams: [fre, stk]
+  result: [71, 66]
+- round-number: 4
+  date: 11/04/2019 18:50
+  location: scg
+  teams: [syd, mel]
+  result: [78, 100]
+- round-number: 4
+  date: 12/04/2019 19:20
+  location: mcg
+  teams: [col, wbd]
+  result: [78, 64]
+- round-number: 4
+  date: 13/04/2019 13:15
+  location: gee
+  teams: [gee, gws]
+  result: [75, 79]
+- round-number: 4
+  date: 13/04/2019 13:40
+  location: mcg
+  teams: [ess, bri]
+  result: [112, 65]
+- round-number: 4
+  date: 13/04/2019 16:05
+  location: adl
+  teams: [pta, ric]
+  result: [92, 99]
+- round-number: 4
+  date: 13/04/2019 18:55
+  location: mrv
+  teams: [nmb, adl]
+  result: [71, 59]
+- round-number: 4
+  date: 13/04/2019 19:40
+  location: opt
+  teams: [wce, fre]
+  result: [69, 56]
+- round-number: 4
+  date: 14/04/2019 14:10
+  location: met
+  teams: [gcs, car]
+  result: [59, 57]
+- round-number: 4
+  date: 14/04/2019 14:50
+  location: mrv
+  teams: [stk, haw]
+  result: [74, 69]
+- round-number: 5
+  date: 18/04/2019 19:05
+  location: gab
+  teams: [bri, col]
+  result: [61, 123]
+- round-number: 5
+  date: 19/04/2019 15:50
+  location: mrv
+  teams: [nmb, ess]
+  result: [58, 116]
+- round-number: 5
+  date: 19/04/2019 19:40
+  location: opt
+  teams: [wce, pta]
+  result: [53, 95]
+- round-number: 5
+  date: 20/04/2019 13:15
+  location: can
+  teams: [gws, fre]
+  result: [82, 106]
+- round-number: 5
+  date: 20/04/2019 16:05
+  location: mcg
+  teams: [mel, stk]
+  result: [55, 95]
+- round-number: 5
+  date: 20/04/2019 18:55
+  location: mrv
+  teams: [ric, syd]
+  result: [89, 67]
+- round-number: 5
+  date: 21/04/2019 12:40
+  location: mrv
+  teams: [wbd, car]
+  result: [57, 101]
+- round-number: 5
+  date: 21/04/2019 16:10
+  location: adl
+  teams: [adl, gcs]
+  result: [119, 46]
+- round-number: 5
+  date: 22/04/2019 14:50
+  location: mcg
+  teams: [haw, gee]
+  result: [90, 113]
+- round-number: 6
+  date: 24/04/2019 19:05
+  location: mcg
+  teams: [ric, mel]
+  result: [85, 42]
+- round-number: 6
+  date: 25/04/2019 14:50
+  location: mcg
+  teams: [ess, col]
+  result: [69, 73]
+- round-number: 6
+  date: 26/04/2019 19:20
+  location: adl
+  teams: [pta, nmb]
+  result: [88, 72]
+- round-number: 6
+  date: 27/04/2019 13:15
+  location: met
+  teams: [gcs, bri]
+  result: [62, 111]
+- round-number: 6
+  date: 27/04/2019 16:05
+  location: mrv
+  teams: [stk, adl]
+  result: [68, 97]
+- round-number: 6
+  date: 27/04/2019 18:55
+  location: scg
+  teams: [syd, gws]
+  result: [79, 120]
+- round-number: 6
+  date: 27/04/2019 19:40
+  location: opt
+  teams: [fre, wbd]
+  result: [88, 69]
+- round-number: 6
+  date: 28/04/2019 14:50
+  location: tas
+  teams: [haw, car]
+  result: [93, 88]
+- round-number: 6
+  date: 28/04/2019 16:10
+  location: gee
+  teams: [gee, wce]
+  result: [104, 46]
+- round-number: 7
+  date: 03/05/2019 19:20
+  location: mrv
+  teams: [col, pta]
+  result: [108, 69]
+- round-number: 7
+  date: 04/05/2019 13:15
+  location: mcg
+  teams: [mel, haw]
+  result: [79, 74]
+- round-number: 7
+  date: 04/05/2019 13:15
+  location: can
+  teams: [gws, stk]
+  result: [114, 70]
+- round-number: 7
+  date: 04/05/2019 16:05
+  location: gab
+  teams: [bri, syd]
+  result: [103, 81]
+- round-number: 7
+  date: 04/05/2019 18:55
+  location: mrv
+  teams: [wbd, ric]
+  result: [99, 52]
+- round-number: 7
+  date: 04/05/2019 19:40
+  location: opt
+  teams: [wce, gcs]
+  result: [80, 57]
+- round-number: 7
+  date: 05/05/2019 12:40
+  location: mrv
+  teams: [car, nmb]
+  result: [62, 120]
+- round-number: 7
+  date: 05/05/2019 14:50
+  location: mcg
+  teams: [gee, ess]
+  result: [86, 54]
+- round-number: 7
+  date: 05/05/2019 16:10
+  location: adl
+  teams: [adl, fre]
+  result: [51, 34]
+- round-number: 8
+  date: 10/05/2019 19:20
+  location: scg
+  teams: [syd, ess]
+  result: [77, 72]
+- round-number: 8
+  date: 11/05/2019 13:15
+  location: mar
+  teams: [wbd, bri]
+  result: [92, 76]
+- round-number: 8
+  date: 11/05/2019 13:15
+  location: mcg
+  teams: [car, col]
+  result: [87, 106]
+- round-number: 8
+  date: 11/05/2019 16:05
+  location: met
+  teams: [gcs, mel]
+  result: [60, 61]
+- round-number: 8
+  date: 11/05/2019 18:55
+  location: mrv
+  teams: [stk, wce]
+  result: [70, 88]
+- round-number: 8
+  date: 11/05/2019 19:10
+  location: adl
+  teams: [pta, adl]
+  result: [68, 88]
+- round-number: 8
+  date: 12/05/2019 12:40
+  location: mrv
+  teams: [nmb, gee]
+  result: [80, 104]
+- round-number: 8
+  date: 12/05/2019 14:50
+  location: mcg
+  teams: [haw, gws]
+  result: [71, 38]
+- round-number: 8
+  date: 12/05/2019 16:50
+  location: opt
+  teams: [fre, ric]
+  result: [86, 111]
+- round-number: 9
+  date: 17/05/2019 19:40
+  location: opt
+  teams: [wce, mel]
+  result: [85, 69]
+- round-number: 9
+  date: 18/05/2019 13:15
+  location: mcg
+  teams: [col, stk]
+  result: [112, 71]
+- round-number: 9
+  date: 18/05/2019 13:40
+  location: gab
+  teams: [bri, adl]
+  result: [93, 92]
+- round-number: 9
+  date: 18/05/2019 16:05
+  location: gee
+  teams: [gee, wbd]
+  result: [133, 89]
+- round-number: 9
+  date: 18/05/2019 18:55
+  location: mrv
+  teams: [ess, fre]
+  result: [60, 53]
+- round-number: 9
+  date: 18/05/2019 18:55
+  location: blu
+  teams: [nmb, syd]
+  result: [72, 77]
+- round-number: 9
+  date: 19/05/2019 12:40
+  location: adl
+  teams: [pta, gcs]
+  result: [89, 51]
+- round-number: 9
+  date: 19/05/2019 14:50
+  location: mcg
+  teams: [ric, haw]
+  result: [95, 59]
+- round-number: 9
+  date: 19/05/2019 16:10
+  location: syd
+  teams: [gws, car]
+  result: [138, 45]
+- round-number: 10
+  date: 24/05/2019 19:20
+  location: scg
+  teams: [syd, col]
+  result: [73, 80]
+- round-number: 10
+  date: 25/05/2019 13:15
+  location: tas
+  teams: [haw, pta]
+  result: [80, 49]
+- round-number: 10
+  date: 25/05/2019 13:40
+  location: mrv
+  teams: [wbd, nmb]
+  result: [90, 115]
+- round-number: 10
+  date: 25/05/2019 16:05
+  location: adl
+  teams: [adl, wce]
+  result: [73, 85]
+- round-number: 10
+  date: 25/05/2019 18:55
+  location: met
+  teams: [gcs, gee]
+  result: [64, 91]
+- round-number: 10
+  date: 25/05/2019 18:55
+  location: mcg
+  teams: [ric, ess]
+  result: [73, 50]
+- round-number: 10
+  date: 26/05/2019 12:40
+  location: mcg
+  teams: [mel, gws]
+  result: [68, 94]
+- round-number: 10
+  date: 26/05/2019 14:50
+  location: mrv
+  teams: [stk, car]
+  result: [68, 55]
+- round-number: 10
+  date: 26/05/2019 16:50
+  location: opt
+  teams: [fre, bri]
+  result: [73, 72]
+- round-number: 11
+  date: 31/05/2019 19:20
+  location: mrv
+  teams: [nmb, ric]
+  result: [99, 62]
+- round-number: 11
+  date: 01/06/2019 13:15
+  location: mcg
+  teams: [col, fre]
+  result: [75, 79]
+- round-number: 11
+  date: 01/06/2019 13:15
+  location: syd
+  teams: [gws, gcs]
+  result: [126, 43]
+- round-number: 11
+  date: 01/06/2019 16:05
+  location: gee
+  teams: [gee, syd]
+  result: [85, 63]
+- round-number: 11
+  date: 01/06/2019 18:55
+  location: gab
+  teams: [bri, haw]
+  result: [85, 66]
+- round-number: 11
+  date: 01/06/2019 19:10
+  location: tio
+  teams: [mel, adl]
+  result: [88, 90]
+- round-number: 11
+  date: 02/06/2019 14:10
+  location: jia
+  teams: [stk, pta]
+  result: [69, 139]
+- round-number: 11
+  date: 02/06/2019 14:50
+  location: mcg
+  teams: [ess, car]
+  result: [74, 33]
+- round-number: 11
+  date: 02/06/2019 16:50
+  location: opt
+  teams: [wce, wbd]
+  result: [133, 72]
+- round-number: 12
+  date: 07/06/2019 19:20
+  location: mcg
+  teams: [ric, gee]
+  result: [37, 104]
+- round-number: 12
+  date: 08/06/2019 13:15
+  location: mrv
+  teams: [car, bri]
+  result: [78, 63]
+- round-number: 12
+  date: 08/06/2019 16:05
+  location: met
+  teams: [gcs, nmb]
+  result: [72, 99]
+- round-number: 12
+  date: 08/06/2019 19:10
+  location: adl
+  teams: [adl, gws]
+  result: [82, 61]
+- round-number: 12
+  date: 09/06/2019 14:50
+  location: scg
+  teams: [syd, wce]
+  result: [116, 71]
+- round-number: 12
+  date: 10/06/2019 14:50
+  location: mcg
+  teams: [col, mel]
+  result: [98, 57]
+- round-number: 13
+  date: 13/06/2019 19:20
+  location: adl
+  teams: [adl, ric]
+  result: [101, 68]
+- round-number: 13
+  date: 14/06/2019 19:20
+  location: mrv
+  teams: [ess, haw]
+  result: [96, 77]
+- round-number: 13
+  date: 15/06/2019 13:15
+  location: riv
+  teams: [gcs, stk]
+  result: [76, 80]
+- round-number: 13
+  date: 15/06/2019 16:05
+  location: opt
+  teams: [fre, pta]
+  result: [100, 79]
+- round-number: 13
+  date: 15/06/2019 18:55
+  location: mrv
+  teams: [car, wbd]
+  result: [100, 103]
+- round-number: 13
+  date: 16/06/2019 14:50
+  location: blu
+  teams: [nmb, gws]
+  result: [68, 91]
+- round-number: 14
+  date: 20/06/2019 19:40
+  location: opt
+  teams: [wce, ess]
+- round-number: 14
+  date: 21/06/2019 19:20
+  location: scg
+  teams: [syd, haw]
+- round-number: 14
+  date: 22/06/2019 13:15
+  location: mcg
+  teams: [mel, fre]
+- round-number: 14
+  date: 22/06/2019 16:05
+  location: mrv
+  teams: [stk, bri]
+- round-number: 14
+  date: 22/06/2019 19:10
+  location: adl
+  teams: [pta, gee]
+- round-number: 14
+  date: 23/06/2019 14:50
+  location: mrv
+  teams: [wbd, col]
+- round-number: 15
+  date: 27/06/2019 18:50
+  location: mrv
+  teams: [ess, gws]
+- round-number: 15
+  date: 28/06/2019 19:20
+  location: gee
+  teams: [gee, adl]
+- round-number: 15
+  date: 29/06/2019 13:15
+  location: mcg
+  teams: [haw, wce]
+- round-number: 15
+  date: 29/06/2019 16:05
+  location: scg
+  teams: [syd, gcs]
+- round-number: 15
+  date: 29/06/2019 18:55
+  location: mrv
+  teams: [col, nmb]
+- round-number: 15
+  date: 29/06/2019 19:10
+  location: adl
+  teams: [pta, wbd]
+- round-number: 15
+  date: 30/06/2019 12:40
+  location: mrv
+  teams: [stk, ric]
+- round-number: 15
+  date: 30/06/2019 14:50
+  location: gab
+  teams: [bri, mel]
+- round-number: 15
+  date: 30/06/2019 16:50
+  location: opt
+  teams: [fre, car]
+- round-number: 16
+  date: 05/07/2019 19:20
+  location: mcg
+  teams: [haw, col]
+- round-number: 16
+  date: 06/07/2019 13:15
+  location: mcg
+  teams: [ess, syd]
+- round-number: 16
+  date: 06/07/2019 13:40
+  location: met
+  teams: [gcs, ric]
+- round-number: 16
+  date: 06/07/2019 16:05
+  location: adl
+  teams: [adl, pta]
+- round-number: 16
+  date: 06/07/2019 18:55
+  location: mrv
+  teams: [wbd, gee]
+- round-number: 16
+  date: 06/07/2019 19:40
+  location: opt
+  teams: [fre, wce]
+- round-number: 16
+  date: 07/07/2019 12:40
+  location: mcg
+  teams: [car, mel]
+- round-number: 16
+  date: 07/07/2019 14:50
+  location: blu
+  teams: [nmb, stk]
+- round-number: 16
+  date: 07/07/2019 16:10
+  location: syd
+  teams: [gws, bri]
+- round-number: 17
+  date: 12/07/2019 19:40
+  location: opt
+  teams: [wce, col]
+- round-number: 17
+  date: 13/07/2019 13:15
+  location: scg
+  teams: [syd, car]
+- round-number: 17
+  date: 13/07/2019 13:40
+  location: tas
+  teams: [haw, fre]
+- round-number: 17
+  date: 13/07/2019 16:05
+  location: mrv
+  teams: [ess, nmb]
+- round-number: 17
+  date: 13/07/2019 18:55
+  location: met
+  teams: [gcs, adl]
+- round-number: 17
+  date: 13/07/2019 18:55
+  location: gee
+  teams: [gee, stk]
+- round-number: 17
+  date: 14/07/2019 12:40
+  location: mcg
+  teams: [ric, gws]
+- round-number: 17
+  date: 14/07/2019 14:50
+  location: mrv
+  teams: [wbd, mel]
+- round-number: 17
+  date: 14/07/2019 16:10
+  location: adl
+  teams: [pta, bri]
+- round-number: 18
+  date: 19/07/2019 19:20
+  location: adl
+  teams: [adl, ess]
+- round-number: 18
+  date: 20/07/2019 13:15
+  location: mcg
+  teams: [ric, pta]
+- round-number: 18
+  date: 20/07/2019 13:40
+  location: mrv
+  teams: [car, gcs]
+- round-number: 18
+  date: 20/07/2019 16:05
+  location: syd
+  teams: [gws, col]
+- round-number: 18
+  date: 20/07/2019 18:55
+  location: gab
+  teams: [bri, nmb]
+- round-number: 18
+  date: 20/07/2019 19:40
+  location: opt
+  teams: [fre, syd]
+- round-number: 18
+  date: 21/07/2019 12:40
+  location: mcg
+  teams: [gee, haw]
+- round-number: 18
+  date: 21/07/2019 14:50
+  location: tra
+  teams: [mel, wce]
+- round-number: 18
+  date: 21/07/2019 16:10
+  location: mrv
+  teams: [stk, wbd]
+- round-number: 19
+  date: 26/07/2019 19:20
+  location: mcg
+  teams: [col, ric]
+- round-number: 19
+  date: 27/07/2019 13:15
+  location: tas
+  teams: [haw, bri]
+- round-number: 19
+  date: 27/07/2019 13:40
+  location: mcg
+  teams: [car, adl]
+- round-number: 19
+  date: 27/07/2019 16:05
+  location: opt
+  teams: [wce, nmb]
+- round-number: 19
+  date: 27/07/2019 18:55
+  location: mrv
+  teams: [stk, mel]
+- round-number: 19
+  date: 27/07/2019 19:10
+  location: adl
+  teams: [pta, gws]
+- round-number: 19
+  date: 28/07/2019 12:40
+  location: mrv
+  teams: [wbd, fre]
+- round-number: 19
+  date: 28/07/2019 14:50
+  location: scg
+  teams: [syd, gee]
+- round-number: 19
+  date: 28/07/2019 16:10
+  location: met
+  teams: [gcs, ess]
+- round-number: 20
+  date: 02/08/2019 19:20
+  location: mrv
+  teams: [nmb, haw]
+- round-number: 20
+  date: 03/08/2019 13:15
+  location: mrv
+  teams: [ess, pta]
+- round-number: 20
+  date: 03/08/2019 13:40
+  location: syd
+  teams: [gws, syd]
+- round-number: 20
+  date: 03/08/2019 16:05
+  location: opt
+  teams: [fre, gee]
+- round-number: 20
+  date: 03/08/2019 18:55
+  location: mcg
+  teams: [mel, ric]
+- round-number: 20
+  date: 03/08/2019 19:10
+  location: adl
+  teams: [adl, stk]
+- round-number: 20
+  date: 04/08/2019 12:40
+  location: mcg
+  teams: [col, gcs]
+- round-number: 20
+  date: 04/08/2019 14:50
+  location: mrv
+  teams: [car, wce]
+- round-number: 20
+  date: 04/08/2019 16:10
+  location: gab
+  teams: [bri, wbd]
+- round-number: 21
+  date: 09/08/2019 19:20
+  location: can
+  teams: [gws, haw]
+- round-number: 21
+  date: 10/08/2019 13:15
+  location: mcg
+  teams: [mel, col]
+- round-number: 21
+  date: 10/08/2019 13:40
+  location: adl
+  teams: [pta, syd]
+- round-number: 21
+  date: 10/08/2019 16:05
+  location: gab
+  teams: [bri, gcs]
+- round-number: 21
+  date: 10/08/2019 18:55
+  location: mrv
+  teams: [ess, wbd]
+- round-number: 21
+  date: 10/08/2019 18:55
+  location: gee
+  teams: [gee, nmb]
+- round-number: 21
+  date: 11/08/2019 12:40
+  location: mrv
+  teams: [stk, fre]
+- round-number: 21
+  date: 11/08/2019 14:50
+  location: mcg
+  teams: [ric, car]
+- round-number: 21
+  date: 11/08/2019 16:10
+  location: opt
+  teams: [wce, adl]
+- round-number: 22
+  date: 16/08/2019 19:20
+  location: mcg
+  teams: [mel, syd]
+- round-number: 22
+  date: 17/08/2019 13:15
+  location: mcg
+  teams: [car, stk]
+- round-number: 22
+  date: 17/08/2019 13:40
+  location: gab
+  teams: [bri, gee]
+- round-number: 22
+  date: 17/08/2019 16:05
+  location: adl
+  teams: [adl, col]
+- round-number: 22
+  date: 17/08/2019 18:55
+  location: mrv
+  teams: [nmb, pta]
+- round-number: 22
+  date: 17/08/2019 19:40
+  location: opt
+  teams: [fre, ess]
+- round-number: 22
+  date: 18/08/2019 12:40
+  location: mcg
+  teams: [ric, wce]
+- round-number: 22
+  date: 18/08/2019 14:50
+  location: syd
+  teams: [gws, wbd]
+- round-number: 22
+  date: 18/08/2019 16:10
+  location: mrv
+  teams: [haw, gcs]
+- round-number: 23
+  date: 23/08/2019 23:30
+  location: blu
+  teams: [nmb, mel]
+- round-number: 23
+  date: 23/08/2019 23:30
+  location: mcg
+  teams: [ric, bri]
+- round-number: 23
+  date: 23/08/2019 23:30
+  location: met
+  teams: [gcs, gws]
+- round-number: 23
+  date: 24/08/2019 00:00
+  location: adl
+  teams: [pta, fre]
+- round-number: 23
+  date: 24/08/2019 01:30
+  location: opt
+  teams: [wce, haw]
+- round-number: 23
+  date: 24/08/2019 23:30
+  location: gee
+  teams: [gee, car]
+- round-number: 23
+  date: 24/08/2019 23:30
+  location: mar
+  teams: [wbd, adl]
+- round-number: 23
+  date: 24/08/2019 23:30
+  location: mcg
+  teams: [col, ess]
+- round-number: 23
+  date: 24/08/2019 23:30
+  location: scg
+  teams: [syd, stk]
+- {round-number: Finals W1, date: '04/09/2019 23:30'}
+- {round-number: Finals W1, date: '05/09/2019 23:30'}
+- {round-number: Finals W1, date: '06/09/2019 23:30'}
+- {round-number: Finals W1, date: '07/09/2019 23:30'}
+- {round-number: Semi Finals, date: '12/09/2019 23:30'}
+- {round-number: Semi Finals, date: '13/09/2019 23:30'}
+- {round-number: Prelim Finals, date: '19/09/2019 23:30'}
+- {round-number: Prelim Finals, date: '20/09/2019 23:30'}
+- {round-number: Grand Final, date: '27/09/2019 23:30', location: mcg}

@@ -36,7 +36,6 @@
 (defn event-id-to-filename [id]
   (str "data/" id ".yml"))
 
-
 (defn get-events []
   (str/split (:out (sh "bash" "-c" "ls data/20*.yml")) #"\n"))
 
@@ -73,12 +72,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2019 FIFA Womens World Cup
 ;; fifa-2019
-(defn index-of [v i] (.indexOf v i))
-
 (def  event-name  "2019-fra-fifa-women-worldcup")
 (defn get-event   [] (read-event (event-id-to-filename event-name)))
 (defn event-games [] (:games (get-event)))
-
 
 ;; Consider changing to 'clojure-java-time'
 ;;   See: https://github.com/dm3/clojure.java-time
@@ -91,14 +87,13 @@
                        (t/default-time-zone))
         ]
     (f/unparse my-formatter
-               (f/parse formatter datetime))
-               
+               (f/parse formatter datetime))             
     ))
 
 ;; Create results table
 (defn event-games-table-header []
   (str
-   (format " %2s | %-15s | %-10s |  %-9s | %s"
+   (format " %2s | %-15s | %-10s | %-9s    | %s"
            "Id"
            "Time"
            "Teams"
@@ -119,11 +114,11 @@
       (map-indexed
        (fn [i x]
          (str
-          (if (= i 36) "----- Round of 16 -------------------------------\n" "")
-          (if (= i 44) "----- Quarter Finals ----------------------------\n" "")
-          (if (= i 48) "----- Semi Finals -------------------------------\n" "")
-          (if (= i 50) "----- Playoff -----------------------------------\n" "")
-          (if (= i 51) "----- Final -------------------------------------\n" "")
+          (if (= i 36) "----- Round of 16 ---------------------------------\n" "")
+          (if (= i 44) "----- Quarter Finals ------------------------------\n" "")
+          (if (= i 48) "----- Semi Finals ---------------------------------\n" "")
+          (if (= i 50) "----- Playoff -------------------------------------\n" "")
+          (if (= i 51) "----- Final ---------------------------------------\n" "")
           (format " %2d | %s | %-10s |  %4s %4s | %s"
                   (:id x)
                   (localtime (:time x))
@@ -134,20 +129,20 @@
                        (if (nth (:teams x) 1)
                          (str/upper-case (nth (:teams x) 1))
                          "---"))
-                  (str
-                   (if (nth (:goals x) 0)
-                     (nth (:goals x) 0)
-                     "-")
-                   (if (nth (:penalties x) 0)
-                     (str "/" (nth (:penalties x) 0))
-                     "  "))
-                  (str
-                   (if (nth (:goals x) 1)
-                     (nth (:goals x) 1)
-                     "-")
-                   (if (nth (:penalties x) 1)
-                     (str "/" (nth (:penalties x) 1))
-                     "  "))
+                  (format "%2s%-3s"
+                          (if (nth (:goals x) 0)
+                            (nth (:goals x) 0)
+                            "-")
+                          (if (nth (:penalties x) 0)
+                            (str "(" (nth (:penalties x) 0) ")")
+                            "   "))
+                  (format "%2s%-3s"
+                          (if (nth (:goals x) 1)
+                            (nth (:goals x) 1)
+                            "-")
+                          (if (nth (:penalties x) 1)
+                            (str "(" (nth (:penalties x) 1) ")")
+                            "   "))
                   (if (:result x) (:result x) "")
                   )))
        games)
@@ -271,8 +266,8 @@
 
 (defn stats-header []
   (str
-   "      |    | Games   | Goals      |\n"      
-   " Team | Pt | P/W/L/D | Fr/Ag/Diff | Results\n"
+   "      |    | Games   | Goals      | Results\n"      
+   " Team | Pt | P/W/L/D | Fr/Ag/Diff | Group    Qual 16  8  4  2\n"
    (stats-separator)
    )
   )
@@ -288,16 +283,40 @@
           (nth stats 5)
           (nth stats 6)
           (nth stats 7)
-          (format "%9s%s"
+          (format "%9s  %s%s%s%s%s"
                   (if (:group-stage results)
                     (:group-stage results)
                     "")
-                  (if (:qual16 results)
-                    (if (= (:qual16 results) "direct")
-                      "*"
-                      "+"
+                  (if (:group results)
+                    (if (= (:group results) "qualified")
+                      " *-"
+                      " +-"
                     )
-                    " ")
+                    " o ")
+                  (if (:qual16 results)
+                    (if (= (:qual16 results) "win")
+                      "-+-"
+                      "-o ")
+                    " . ")
+                  (if (:quarter results)
+                    (if (= (:quarter results) "win")
+                      "-+-"
+                      "-o ")
+                    " . ")
+                  (if (:semi results)
+                    (if (= (:semi results) "win")
+                      "-+-"
+                      "-o ")
+                    " . ")
+                  (if (:final results)
+                    (cond
+                      (= (:final results) "champion")  "-* "
+                      (= (:final results) "runnerup" ) "-o "
+                      (= (:final results) "third" )    "-3 "   
+                      (= (:final results) "fourth" )   "-4 "   
+                      :else " . "
+                      )
+                    " . ")
                   )
           ))
 
@@ -395,12 +414,12 @@
         ]
     (str
      (cond
-       penalties (str team-a " (" goals-a "/" penalties-a ")"
+       penalties (str " " team-a " " goals-a "(" penalties-a ")"
                       " vs "
-                      "(" goals-b "/" penalties-b ") " team-b)
-       goals     (str "  " team-a " (" goals-a ")"
+                      "" goals-b "(" penalties-b ") " team-b)
+       goals     (str "    " team-a " " goals-a ""
                       " vs "
-                      "(" goals-b ") " team-a)
+                      "" goals-b " " team-b)
        teams     (str "      " team-a " vs " team-b)
        :else     "--- vs ---"
        )
