@@ -200,7 +200,7 @@
 ;; Create results table
 (defn event-games-table-header []
   (str
-   (format " %3s | %3s | %-17s | %-10s | %-9s    | %s"
+   (format " %3s | %3s | %-16s | %-10s | %-9s    | %s"
            "Id"
            "Rnd"
            "Time"
@@ -209,12 +209,35 @@
            "Result")
    "\n"
    (str (str/join "" (repeat 78 "-")) "\n")
-   "\n"
    )
   )
 
 (defn event-games-table [event]
-  (let [games (:games event)]
+  (let [games (:games event)
+        rounds {0 1
+                9 2
+                18 3
+                27 4
+                36 5
+                45 6
+                54 7
+                63 8
+                72 9
+                81 10
+                90 11
+                99 12
+                105 13
+                111 14
+                117 15
+                126 16
+                135 17
+                144 18
+                153 19
+                162 20
+                171 21
+                180 22
+                189 23}
+        ]
     (str
      (event-games-table-header)
      (str/join
@@ -232,6 +255,11 @@
                              (str/join (repeat 50 "-")) "\n") "")
           (if (= i 206)  (str "----- Grand Final ------"
                              (str/join (repeat 50 "-")) "\n") "")
+          (if (contains? rounds i)
+            (str (format "----- Round %2d ------"
+                         (rounds i))
+                 (str/join (repeat 50 "-")) "\n")
+            "")
           (format " %3d | %3s | %s | %-10s |  %4s %4s "
                   (inc i)
                   (:round-number x)

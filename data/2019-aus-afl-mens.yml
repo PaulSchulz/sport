@@ -565,26 +565,32 @@ games:
   date: 20/06/2019 19:40
   location: opt
   teams: [wce, ess]
+  result: [106,71]
 - round-number: 14
   date: 21/06/2019 19:20
   location: scg
   teams: [syd, haw]
+  result: [82,63]
 - round-number: 14
   date: 22/06/2019 13:15
   location: mcg
   teams: [mel, fre]
+  result: [85,71]
 - round-number: 14
   date: 22/06/2019 16:05
   location: mrv
   teams: [stk, bri]
+  result: [59,115]
 - round-number: 14
   date: 22/06/2019 19:10
   location: adl
   teams: [pta, gee]
+  result: [67,56]
 - round-number: 14
   date: 23/06/2019 14:50
   location: mrv
   teams: [wbd, col]
+  result: [73,82]
 - round-number: 15
   date: 27/06/2019 18:50
   location: mrv
