@@ -216,15 +216,15 @@
       (< a-penalties b-penalties) [0 1]
       :else                       [0 0]
       )))
-  
+
+;; Calculate the statistics of the event, optionally up to a
+;; particular round.
 (defn calculate-statistics [games]
-  (map
-   (fn [x]
+  (map-indexed
+   (fn [i x]
      (let [team-a (nth (:teams x) 0)
            team-b (nth (:teams x) 1)
-;;           points (calculate-points (:goals x))
            stats  (calculate-stats  (:goals x))
-;;           winner (calculate-winner (:goals x) (:penalties x))
            ]
        (conj {}
              (if team-a
@@ -264,13 +264,13 @@
            (calculate-statistics games))))
 
 (defn stats-separator []
-  "------+----+---------+------------+--------------------------\n"
+  "------+----+---------+------------+---------------------------\n"
   )
 
 (defn stats-header []
   (str
-   "      |    | Games   | Goals      | Results\n"      
-   " Team | Pt | P/W/L/D | Fr/Ag/Diff | Group    Qual 16  8  4  2\n"
+   "      |    | Games   | Goals      | Group     Knockout Result\n"      
+   " Team | Pt | P/W/L/D | Fr/Ag/Diff | Result    Qual 16  8  4  2\n"
    (stats-separator)
    )
   )
@@ -286,7 +286,7 @@
           (nth stats 5)
           (nth stats 6)
           (nth stats 7)
-          (format "%9s  %s%s%s%s%s"
+          (format "%9s   %s%s%s%s%s"
                   (if (:group-stage results)
                     (:group-stage results)
                     "")
@@ -295,21 +295,21 @@
                       " *-"
                       " +-"
                     )
-                    " o ")
+                    " x ")
                   (if (:qual16 results)
                     (if (= (:qual16 results) "win")
                       "-+-"
-                      "-o ")
+                      "-x ")
                     " . ")
                   (if (:quarter results)
                     (if (= (:quarter results) "win")
                       "-+-"
-                      "-o ")
+                      "-x ")
                     " . ")
                   (if (:semi results)
                     (if (= (:semi results) "win")
                       "-+-"
-                      "-o ")
+                      "-x ")
                     " . ")
                   (if (:final results)
                     (cond
@@ -385,7 +385,11 @@
                    (= (calculate-winner (:goals x) (:penalties x)) [1 0]) "L"
                    (= (calculate-winner (:goals x) (:penalties x)) [0 0]) "d"
                    :else "o")               
-                 (not (:goals x)) " "
+                 (not (:goals x))      " "
+                 (:last results)       (if (< i (:last results))
+                                         "-"
+                                         " ")
+                   ;;(< i (:last results)) " "
                  :else
                  (cond
                    (<= i 35) "-"
@@ -437,7 +441,7 @@
 (defn event-group-table [event]
   (let [games  (:games event)
         groups (:groups event)
-        stats  (event-statistics games)
+        stats  (event-statistics (take 36 games))
         results (:results event)]
     (str
      (stats-header)
@@ -565,7 +569,7 @@
   (println "Games")
   (println (event-games-table event))
   (println)
-  (println "Group Stage")
+  (println "Group Stage Results")
   (println (event-group-table event))
   (println)
   (println "Results")

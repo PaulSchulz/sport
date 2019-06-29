@@ -89,29 +89,29 @@ group-details:
 results:
   # Results from each round
   # group-stage group qual16 quarter semi final
-  fra: {group-stage: group-a-1, group: qualified, qual16: win}
-  kor: {group-stage: group-a-4}
-  nor: {group-stage: group-a-2, group: qualified, qual16: win}
-  nig: {group-stage: group-a-3, group: indirect,  qual16: loss}
+  fra: {group-stage: group-a-1, group: qualified, qual16: win, quarter: loss, last: 46}
+  kor: {group-stage: group-a-4,                                               last: 28}
+  nor: {group-stage: group-a-2, group: qualified, qual16: win, quarter: loss, last: 45}
+  nig: {group-stage: group-a-3, group: indirect,  qual16: loss,               last: 38}
   ger: {group-stage: group-b-1, group: qualified, qual16: win}
-  chn: {group-stage: group-b-3, group: indirect}
-  esp: {group-stage: group-b-2, group: qualified, qual16: loss}
-  rsa: {group-stage: group-b-4}
-  aus: {group-stage: group-c-2, group: qualified, qual16: loss}
-  ita: {group-stage: group-c-1, group: qualified}
-  bra: {group-stage: group-c-3, group: indirect,  qual16: loss}
-  jam: {group-stage: group-c-4}
-  eng: {group-stage: group-d-1, group: qualified, qual16: win}
-  sco: {group-stage: group-d-4}
-  arg: {group-stage: group-d-3}
-  jpn: {group-stage: group-d-2, group: qualified}
-  can: {group-stage: group-e-2, group: qualified, qual16: loss}
-  cam: {group-stage: group-e-3, group: indirect,  qual16: loss}
-  nzl: {group-stage: group-e-4}
-  ned: {group-stage: group-e-1, group: qualified}
-  usa: {group-stage: group-f-1, group: qualified, qual16: win}
-  tha: {group-stage: group-f-4}
-  chi: {group-stage: group-f-3}
+  chn: {group-stage: group-b-3, group: indirect,  qual16: loss,               last: 43}
+  esp: {group-stage: group-b-2, group: qualified, qual16: loss,               last: 41}
+  rsa: {group-stage: group-b-4,                                               last: 26}
+  aus: {group-stage: group-c-2, group: qualified, qual16: loss,               last: 37}
+  ita: {group-stage: group-c-1, group: qualified, qual16: win}
+  bra: {group-stage: group-c-3, group: indirect,  qual16: loss,               last: 40}
+  jam: {group-stage: group-c-4,                                               last: 29}
+  eng: {group-stage: group-d-1, group: qualified, qual16: win, quarter: win}
+  sco: {group-stage: group-d-4,                                               last: 32}
+  arg: {group-stage: group-d-3,                                               last: 32}
+  jpn: {group-stage: group-d-2, group: qualified, qual16: loss,               last: 44}
+  can: {group-stage: group-e-2, group: qualified, qual16: loss,               last: 42}
+  cam: {group-stage: group-e-3, group: indirect,  qual16: loss,               last: 39}
+  nzl: {group-stage: group-e-4,                                               last: 34}
+  ned: {group-stage: group-e-1, group: qualified, qual16: win}
+  usa: {group-stage: group-f-1, group: qualified, qual16: win, quarter: win}
+  tha: {group-stage: group-f-4,                                               last: 35}
+  chi: {group-stage: group-f-3,                                               last: 35}
   swe: {group-stage: group-f-2, group: quaified,  qual16: win}
   
 venues: []
@@ -583,22 +583,26 @@ games:
       FIFA Women\'s World Cup 2019 France match between Sweden and Canada,
       taking place at 21:00 on Monday, 24 June.
 
-  - id:    43
-    time:  Tue, 25 Jun 2019 18:00:00 +0200
-    title: Italy vs China
-    teams: ["ita","chn"]
-    place: ["group-c-1","group-b-3"]
+  - id:     43
+    time:   Tue, 25 Jun 2019 18:00:00 +0200
+    title:  Italy vs China
+    teams:  ["ita","chn"]
+    place:  ["group-c-1","group-b-3"]
+    goals:  [2,0]
+    result:  "Italy wins 2-0 over China"
     description:
       FIFA Women\'s World Cup 2019 France match between Italy and China,
       taking place at 18:00 on Tuesday, 25 June.
 
-  - id:    44
-    time:  Tue, 25 Jun 2019 21:00:00 +0200
-    title: Netherlands vs Japan
-    teams: ["ned","jpn"]
-    place: ["group-e-1","group-d-2"]
+  - id:     44
+    time:   Tue, 25 Jun 2019 21:00:00 +0200
+    title:  Netherlands vs Japan
+    teams:  ["ned","jpn"]
+    place:  ["group-e-1","group-d-2"]
+    goals:  [2,1]
+    result: "Netherlands win 2-1 over Japan"
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      FIFA Women\'s World Cup 2019 France match between Netherlands and Japan,
       taking place at 21:00 on Tuesday, 25 June.
 
 # Quatrer Finals
@@ -607,8 +611,10 @@ games:
     title: Norway vs England
     place: ["qual16-37-winner","qual16-39-winner"]
     teams: ["nor","eng"]
+    goals:  [0,3]
+    result: "England wins 3-0 over Norway"
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      FIFA Women\'s World Cup 2019 France match between Norway and England,
       taking place at 21:00 on Thursday, 27 June.
 
   - id:     46
@@ -616,16 +622,19 @@ games:
     title:  France vs USA
     place:  ["qual16-40-winner","qual16-41-winner"]
     teams:  ["fra","usa"]
+    result: "USA wins 2-1 over France"
+    goals:  [1,2]
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      FIFA Women\'s World Cup 2019 France match between USA and France,
       taking place at 21:00 on Friday, 28 June.
 
   - id:    47
     time:  Sat, 29 Jun 2019 15:00:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: Netherlands vs Italy
+    teams: ["ned","ita"]
+    place: ["qual16-44-winner", "qual16-43-winner"]
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC.
+      FIFA Women\'s World Cup 2019 France match between Netherlands and Italy.
       taking place at 15:00 on Saturday, 29 June.
 
   - id:    48
@@ -639,8 +648,9 @@ games:
 
   - id:    49
     time:  Tue, 02 Jul 2019 21:00:00 +0200
-    title: TBC vs TBC
-    place: []
+    title: Englsnd vs TBC
+    teams: ["eng", "usa"]
+    place: ["quarter-45-winner","quarter-46-winner"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Tuesday, 2 July.
@@ -648,7 +658,7 @@ games:
   - id:    50
     time:  Wed, 03 Jul 2019 21:00:00 +0200
     title: TBC vs TBC
-    place: []
+    place: ["quarter-47-winner","quarter-48-winner"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 21:00 on Wednesday, 3 July.
@@ -656,7 +666,7 @@ games:
   - id:    51
     time:  Sat, 06 Jul 2019 17:00:00 +0200
     title: TBC vs TBC
-    place: []
+    place: ["semi-49-loser","semi-50-loser"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 17:00 on Saturday, 6 July.
@@ -664,7 +674,7 @@ games:
   - id:    52
     time:  Sun, 07 Jul 2019 17:00:00 +0200
     title: TBC vs TBC
-    place: []
+    place: ["semi-49-winner","semi-50-winner"]
     description:
       FIFA Women\'s World Cup 2019 France match between TBC and TBC,
       taking place at 17:00 on Sunday, 7 July.
