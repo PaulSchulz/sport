@@ -217,8 +217,7 @@
       :else                       [0 0]
       )))
 
-;; Calculate the statistics of the event, optionally up to a
-;; particular round.
+;; Calculate the statistics from the games of an event
 (defn calculate-statistics [games]
   (map-indexed
    (fn [i x]

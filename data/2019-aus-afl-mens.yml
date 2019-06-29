@@ -595,14 +595,17 @@ games:
   date: 27/06/2019 18:50
   location: mrv
   teams: [ess, gws]
+  result: [77,71]
 - round-number: 15
   date: 28/06/2019 19:20
   location: gee
   teams: [gee, adl]
+  result: [96,69]
 - round-number: 15
   date: 29/06/2019 13:15
   location: mcg
   teams: [haw, wce]
+  result: [71,77]
 - round-number: 15
   date: 29/06/2019 16:05
   location: scg

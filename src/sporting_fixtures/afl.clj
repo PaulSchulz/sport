@@ -187,6 +187,8 @@
 ;;   See: https://github.com/dm3/clojure.java-time
 ;; Time parsing an manipulation
 ;; Formatters can be listed with: (f/show-formatters)
+;;
+;; Not currently used
 (defn localtime [datetime]
   (let [formatter (f/formatter :rfc822)
         my-formatter (f/with-zone
@@ -200,15 +202,14 @@
 ;; Create results table
 (defn event-games-table-header []
   (str
-   (format " %3s | %3s | %-16s | %-10s | %-9s    | %s"
+   (format " %3s | %-16s | %-10s | %-9s"
            "Id"
-           "Rnd"
            "Time"
            "Teams"
            "Score"
-           "Result")
+           )
    "\n"
-   (str (str/join "" (repeat 78 "-")) "\n")
+   "-----+------------------+------------+------------------\n"
    )
   )
 
@@ -245,24 +246,27 @@
       (map-indexed
        (fn [i x]
          (str
-          (if (= i 0)   (str "----- Minor Rounds -----"
-                             (str/join (repeat 50 "-")) "\n") "")
-          (if (= i 198)  (str "----- Finals -----------"
-                             (str/join (repeat 50 "-")) "\n") "")
-          (if (= i 202)  (str "----- Semifinals -------"
-                             (str/join (repeat 50 "-")) "\n") "")
-          (if (= i 204)  (str "----- Preliminary Final "
-                             (str/join (repeat 50 "-")) "\n") "")
-          (if (= i 206)  (str "----- Grand Final ------"
-                             (str/join (repeat 50 "-")) "\n") "")
-          (if (contains? rounds i)
-            (str (format "----- Round %2d ------"
-                         (rounds i))
-                 (str/join (repeat 50 "-")) "\n")
-            "")
-          (format " %3d | %3s | %s | %-10s |  %4s %4s "
+          (cond
+            (= i 0)
+            "-----+- Minor Rounds ---+------------+------------------\n"
+            (= i 198)
+            "-----+- Finals ---------+------------+------------------\n"
+            (= i 202)
+            "-----+- Semifinals -----+------------+------------------\n"
+            (= i 204)
+            "-----+- Preliminary Final -----------+------------------\n"
+            (= i 206)
+            "-----+- Grand Final ----+------------+------------------\n"
+            :else "")
+          (cond
+            (contains? rounds i)
+            (format
+             "-----+- Round %2d -------+------------+------------------\n"
+             (rounds i))
+            :else "")
+          (format " %3d | %s | %-10s |  %4s %4s "
                   (inc i)
-                  (:round-number x)
+                  ;; (:round-number x)
                   ;;(localtime (:date x))
                   (:date x)
                   (str (if (nth (:teams x) 0)
@@ -289,18 +293,152 @@
     ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Statistics
+
+(defn calculate-stats [result]
+  (let [a-points (nth result 0)
+        b-points (nth result 1)]
+
+    (cond
+      (not a-points)       nil
+      (not b-points)       nil
+      (> a-points b-points) [[4 1 1 0 0 a-points b-points (- a-points b-points)]
+                             [0 1 0 1 0 b-points a-points (- b-points a-points)]]
+      (< a-points b-points) [[0 1 0 1 0 a-points b-points (- a-points b-points)]
+                             [4 1 1 0 0 b-points a-points (- b-points a-points)]]
+      :else                 [[2 1 0 0 1 a-points b-points (- a-points b-points)]
+                             [2 1 0 0 1 b-points a-points (- b-points a-points)]]
+      )
+    ))
+
+;; Calculate the statistics from the games of an event
+(defn calculate-statistics [games]
+  (map-indexed
+   (fn [i x]
+     (let [team-a (nth (:teams x) 0)
+           team-b (nth (:teams x) 1)
+           stats  (calculate-stats  (:result x))
+           ]
+       (conj {}
+             (if team-a
+               {(keyword team-a) (nth stats 0)}
+               nil)
+             (if team-b
+               {(keyword team-b) (nth stats 1)}
+               nil)
+             )
+      ))
+   games)
+  )
+
+;; Double reduce as the statistics returned from
+;; 'calculate-statistics' is a double array, returning the statistics
+;; of the game for each of the teams.
+(defn reduce-statistics [stats]
+  (reduce (fn [val coll]
+            (reduce conj val coll))
+          [] stats)
+  )
+
+;; statistics - Map of team statistics
+;; update     - Array with 'team id' and 'statistics update'
+(defn update-statistics [statistics update]
+  (let [team         (nth update 0)
+        stats-old    (if (team statistics)
+                       (team statistics)
+                       [0 0 0 0 0 0 0 0])
+        stats-update (if (nth update 1)
+                       (nth update 1)
+                       [0 0 0 0 0 0 0 0])
+        ]
+    ;; Update old statstics with new values and add to data
+    (conj statistics {team (map + stats-old stats-update)}))
+  )
+
+(defn event-statistics [games]
+  (reduce update-statistics {}
+          (reduce-statistics
+           (calculate-statistics games))))
+
+(defn calculate-percentage [stats]
+  (let [for     (nth stats 5)
+        against (nth stats 6)]
+  (* (/ (* 1.0 for) (* 1.0 against)) 100.0)
+  ))
+
+(defn stats-header []
+  " Pos | Team | P  | Pts      % |  P  W  L  D |   For    Ag  Diff")
+
+(defn stats-separator []
+  "-----+------+----+------------+-------------+----------------------")
+
+(defn stats-string [i team stats]
+  (format " %3d | %-4s | %2d | %2d %7.2f | %2d %2d %2d %2d | %5d %5d %5d"
+          i
+          (str/upper-case (name team))
+          (nth stats 1) ;; Played
+          (nth stats 0) ;; Points
+          ;; Calculate percentage
+          (calculate-percentage stats)
+          (nth stats 1) ;; Played
+          (nth stats 2) ;; Won
+          (nth stats 3) ;; Lose
+          (nth stats 4) ;; Draw
+          (nth stats 5) ;; Points for
+          (nth stats 6) ;; Points against
+          (nth stats 7) ;; Difference
+          ))
+
+(defn event-stats-table [event]
+  (let [statistics (event-statistics (:games event))]
+    (str
+     (stats-header)
+     "\n"
+     (stats-separator)
+     "\n"
+     (str/join
+      "\n"
+      (map-indexed
+       (fn [i [k v]]
+         (str
+          (if (= i 8)
+            (str (stats-separator) "\n")
+            "")
+          (stats-string (inc i) k v)))
+       ;; Sort the ladder - first value in statistics, then second value
+       (sort (fn [el1 el2]
+               (cond
+                 (> (nth (nth el1 1) 0) (nth (nth el2 1) 0)) true
+                 (< (nth (nth el1 1) 0) (nth (nth el2 1) 0)) false
+                 (> (calculate-percentage (nth el1 1))
+                    (calculate-percentage (nth el2 1)))      true
+                 :else false))
+        (map (fn [x] x) statistics))
+       )
+      )
+    ))
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
   (println "Event: " event-name)
   
   ;; Create YAML data file from downloaded CSV
-    (if false
+  ;; Only need to fo this once. Will erase any data added manually
+  ;; (eg. game results)
+  (if false
     (let []
       (println "Create YAML data file")
       (println "  CSV:  " event-data-csv)
       (println "  YAML: " "data/2019-aus-afl-mens.yml")
       (file-write-yaml (create-event-data event-data-csv))))
-
-  ;; (clojure.pprint/pprint (:games (get-event)))
+  
+  (println "")
+  (println "Games")
   (println (event-games-table (get-event)))
+
+  (println "")
+  (println "Statistics / Ladder")
+  (println (event-stats-table (get-event)))
   )
 
