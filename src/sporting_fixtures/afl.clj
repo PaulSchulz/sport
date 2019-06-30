@@ -13,9 +13,11 @@
   (:gen-class)
   )
 
+(defn -help []
 ;; Process downloaded file
 ;; Use from command line with:
-;;   lein run -m sporting-fixtures.afl
+  (println "lein run -m sporting-fixtures.afl")
+  )
 ;;
 ;; Development
 ;;   (ns sporting-fixtures.afl)
@@ -199,6 +201,10 @@
                (f/parse formatter datetime))             
     ))
 
+(defn event-games-table-separator []
+  "-----+------------------+------------+------------------"
+  )
+
 ;; Create results table
 (defn event-games-table-header []
   (str
@@ -209,7 +215,8 @@
            "Score"
            )
    "\n"
-   "-----+------------------+------------+------------------\n"
+   (event-games-table-separator)
+   "\n"
    )
   )
 
@@ -288,7 +295,7 @@
        games)
       )
      "\n"
-     (str (str/join "" (repeat 78 "-")) "\n")
+     (event-games-table-separator)
      )
     ))
 
@@ -416,8 +423,64 @@
         (map (fn [x] x) statistics))
        )
       )
+     "\n"
+     (stats-separator)
     ))
   )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Finals
+
+(defn format-game [event game-number]
+  (let [game   (nth (:games event) (dec game-number))
+        teams  (:teams  game)
+        result (:result game)
+        team-a (if (nth teams 0)
+                 (str/upper-case (nth teams 0))
+                 "---")
+        team-b   (if (nth teams 1)
+                   (str/upper-case (nth teams 1))
+                   "---")
+        points-a (nth result 0)
+        points-b (nth result 1)
+          ]
+    (str
+     (cond
+       result (str team-a "(" points-a ") vs " team-b "(" points-b ") [" game-number "]")
+       teams  (str "    " team-a " vs " team-b " [" game-number "]")
+       :else  (str "    --- vs --- [" game-number "]")
+     ))
+    ))
+
+(defn event-finals-chart [event]
+  (let [games (:games event)]
+    (str
+     "Knockout                    Semifinal                 Preliminary                 Grand Final\n"
+     "\n"
+     (format "%-26s                            %-26s  %-26s\n"
+             (format-game event 199)
+             (format-game event 205)
+             (format-game event 207)
+             )
+     "\n"
+     (format "%-26s  %-26s\n"
+             (format-game event 200)
+             (format-game event 203)
+             )
+     "\n"
+     (format "%-26s                            %-26s\n"
+             (format-game event 201)
+             (format-game event 206)
+             )
+     "\n"
+     (format "%-26s  %-26s\n"
+             (format-game event 202)
+             (format-game event 204)
+             )
+     "\n"
+
+            )))
+    
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
@@ -440,5 +503,9 @@
   (println "")
   (println "Statistics / Ladder")
   (println (event-stats-table (get-event)))
+
+  (println "")
+  (println "Finals")
+  (println (event-finals-chart (get-event)))
   )
 

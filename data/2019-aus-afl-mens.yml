@@ -622,17 +622,20 @@ games:
   teams:        [pta, wbd]
   result:       [41,66]
 - round-number: 15
-  date: 30/06/2019 12:40
-  location: mrv
-  teams: [stk, ric]
+  date:         30/06/2019 12:40
+  location:     mrv
+  teams:        [stk, ric]
+  result:       [70,103]
 - round-number: 15
-  date: 30/06/2019 14:50
-  location: gab
-  teams: [bri, mel]
+  date:         30/06/2019 14:50
+  location:     gab
+  teams:        [bri, mel]
+  result:       [107,74]
 - round-number: 15
-  date: 30/06/2019 16:50
-  location: opt
-  teams: [fre, car]
+  date:         30/06/2019 16:50
+  location:     opt
+  teams:        [fre, car]
+  result:       [75,79]
 - round-number: 16
   date: 05/07/2019 19:20
   location: mcg
