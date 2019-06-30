@@ -607,17 +607,20 @@ games:
   teams: [haw, wce]
   result: [71,77]
 - round-number: 15
-  date: 29/06/2019 16:05
-  location: scg
-  teams: [syd, gcs]
+  date:         29/06/2019 16:05
+  location:     scg
+  teams:        [syd, gcs]
+  result:       [93,51]
 - round-number: 15
-  date: 29/06/2019 18:55
-  location: mrv
-  teams: [col, nmb]
+  date:         29/06/2019 18:55
+  location:     mrv
+  teams:        [col, nmb]
+  result:       [37,81]
 - round-number: 15
-  date: 29/06/2019 19:10
-  location: adl
-  teams: [pta, wbd]
+  date:         29/06/2019 19:10
+  location:     adl
+  teams:        [pta, wbd]
+  result:       [41,66]
 - round-number: 15
   date: 30/06/2019 12:40
   location: mrv

@@ -93,12 +93,12 @@ results:
   kor: {group-stage: group-a-4,                                               last: 28}
   nor: {group-stage: group-a-2, group: qualified, qual16: win, quarter: loss, last: 45}
   nig: {group-stage: group-a-3, group: indirect,  qual16: loss,               last: 38}
-  ger: {group-stage: group-b-1, group: qualified, qual16: win}
+  ger: {group-stage: group-b-1, group: qualified, qual16: win, quarter: loss, last: 48}
   chn: {group-stage: group-b-3, group: indirect,  qual16: loss,               last: 43}
   esp: {group-stage: group-b-2, group: qualified, qual16: loss,               last: 41}
   rsa: {group-stage: group-b-4,                                               last: 26}
   aus: {group-stage: group-c-2, group: qualified, qual16: loss,               last: 37}
-  ita: {group-stage: group-c-1, group: qualified, qual16: win}
+  ita: {group-stage: group-c-1, group: qualified, qual16: win, quarter: loss, last: 47}
   bra: {group-stage: group-c-3, group: indirect,  qual16: loss,               last: 40}
   jam: {group-stage: group-c-4,                                               last: 29}
   eng: {group-stage: group-d-1, group: qualified, qual16: win, quarter: win}
@@ -108,11 +108,11 @@ results:
   can: {group-stage: group-e-2, group: qualified, qual16: loss,               last: 42}
   cam: {group-stage: group-e-3, group: indirect,  qual16: loss,               last: 39}
   nzl: {group-stage: group-e-4,                                               last: 34}
-  ned: {group-stage: group-e-1, group: qualified, qual16: win}
+  ned: {group-stage: group-e-1, group: qualified, qual16: win, quarter: win}
   usa: {group-stage: group-f-1, group: qualified, qual16: win, quarter: win}
   tha: {group-stage: group-f-4,                                               last: 35}
   chi: {group-stage: group-f-3,                                               last: 35}
-  swe: {group-stage: group-f-2, group: quaified,  qual16: win}
+  swe: {group-stage: group-f-2, group: quaified,  qual16: win, quarter: win}
   
 venues: []
 
@@ -633,6 +633,8 @@ games:
     title: Netherlands vs Italy
     teams: ["ned","ita"]
     place: ["qual16-44-winner", "qual16-43-winner"]
+    goals: [2,0]
+    result: "Netherlands wins 2-0 over Italy"
     description:
       FIFA Women\'s World Cup 2019 France match between Netherlands and Italy.
       taking place at 15:00 on Saturday, 29 June.
@@ -642,8 +644,10 @@ games:
     title: Sweden vs Germany
     place:  ["qual16-42-winner","qual16-38-winner"]
     teams:  ["swe","ger"]
+    goals:  [2,1]
+    result: "Sweden wins 2-1 over Germany"
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      FIFA Women\'s World Cup 2019 France match between Sweden and Germany,
       taking place at 18:30 on Saturday, 29 June.
 
   - id:    49
@@ -652,15 +656,16 @@ games:
     teams: ["eng", "usa"]
     place: ["quarter-45-winner","quarter-46-winner"]
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      FIFA Women\'s World Cup 2019 France match between England and USA,
       taking place at 21:00 on Tuesday, 2 July.
 
   - id:    50
     time:  Wed, 03 Jul 2019 21:00:00 +0200
-    title: TBC vs TBC
+    title: Sweden vs Netherlands
+    teams: ["swe","ned"]
     place: ["quarter-47-winner","quarter-48-winner"]
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      FIFA Women\'s World Cup 2019 France match between Sweden and Netherlands,
       taking place at 21:00 on Wednesday, 3 July.
 
   - id:    51
