@@ -102,18 +102,18 @@ results:
   ita: {group-stage: group-c-1, group: qualified, qual16: win, quarter: loss, last: 47}
   bra: {group-stage: group-c-3, group: indirect,  qual16: loss,               last: 40}
   jam: {group-stage: group-c-4,                                               last: 29}
-  eng: {group-stage: group-d-1, group: qualified, qual16: win, quarter: win, semi: loss, last: 51}
+  eng: {group-stage: group-d-1, group: qualified, qual16: win, quarter: win, semi: loss, final: fourth, last: 51}
   sco: {group-stage: group-d-4,                                               last: 32}
   arg: {group-stage: group-d-3,                                               last: 32}
   jpn: {group-stage: group-d-2, group: qualified, qual16: loss,               last: 44}
   can: {group-stage: group-e-2, group: qualified, qual16: loss,               last: 42}
   cam: {group-stage: group-e-3, group: indirect,  qual16: loss,               last: 39}
   nzl: {group-stage: group-e-4,                                               last: 34}
-  ned: {group-stage: group-e-1, group: qualified, qual16: win, quarter: win, semi: win, last: 52}
-  usa: {group-stage: group-f-1, group: qualified, qual16: win, quarter: win, semi: win, last: 52}
+  ned: {group-stage: group-e-1, group: qualified, qual16: win, quarter: win, semi: win, final: runnerup, last: 52}
+  usa: {group-stage: group-f-1, group: qualified, qual16: win, quarter: win, semi: win, final: champion,  last: 52}
   tha: {group-stage: group-f-4,                                               last: 35}
   chi: {group-stage: group-f-3,                                               last: 35}
-  swe: {group-stage: group-f-2, group: quaified,  qual16: win, quarter: win, semi: loss, last: 51}
+  swe: {group-stage: group-f-2, group: quaified,  qual16: win, quarter: win, semi: loss, final: third, last: 51}
   
 venues: []
 
@@ -668,25 +668,29 @@ games:
     teams: ["swe","ned"]
     place: ["quarter-47-winner","quarter-48-winner"]
     goals: [0,1]
-    result: "Netherlands win 1-0 over Sweden in extra time"
+    result: "Netherlands wins 1-0 over Sweden in extra time"
     description:
       FIFA Women\'s World Cup 2019 France match between Sweden and Netherlands,
       taking place at 21:00 on Wednesday, 3 July.
 
   - id:     51
     time:   Sat, 06 Jul 2019 17:00:00 +0200
-    title:  England vs TBC
+    title:  England vs Sweden
     teams:  ["eng","swe"]
     place:  ["semi-49-loser","semi-50-loser"]
+    goals:  [1,2]
+    result: "Sweden wins 2-1 over England"
     description:
       FIFA Women\'s World Cup 2019 France match between England and Sweden,
       taking place at 17:00 on Saturday, 6 July.
 
   - id:    52
     time:  Sun, 07 Jul 2019 17:00:00 +0200
-    title: USA vs TBC
+    title: USA vs Netherlands
     teams: ["usa","ned"]
     place: ["semi-49-winner","semi-50-winner"]
+    goals: [2,0]
+    result: "USA wins 2-0 over the Netherlands"
     description:
-      FIFA Women\'s World Cup 2019 France match between TBC and TBC,
+      FIFA Women\'s World Cup 2019 France match between USA and Netherlands,
       taking place at 17:00 on Sunday, 7 July.

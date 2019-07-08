@@ -312,7 +312,7 @@
                     " . ")
                   (if (:final results)
                     (cond
-                      (= (:final results) "champion")  "-* "
+                      (= (:final results) "champion")  "-W "
                       (= (:final results) "runnerup" ) "-o "
                       (= (:final results) "third" )    "-3 "   
                       (= (:final results) "fourth" )   "-4 "   

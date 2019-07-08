@@ -3,7 +3,7 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [cheshire.core :refer :all] ;; Pretty print JSON
-            [clj-yaml.core :as yaml]        ;; YAML output
+            [clj-yaml.core :as yaml]    ;; YAML output
             ;; Time manipulation
             [clj-time.core   :as t]
             [clj-time.format :as f]

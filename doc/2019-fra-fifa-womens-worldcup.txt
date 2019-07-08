@@ -1,0 +1,173 @@
+FIFA Women's World Cup 2019 France
+From:  7 Jun 2019
+To:    7 Jul 2019
+
+Games
+ Id | Time            | Teams      | Score        | Result
+--------------------------------------------------------------------------
+  1 | Sat 08 04:30 AM | FRA vs KOR |   4     0    | France wins 4-0 over Korea Republic
+  2 | Sat 08 10:30 PM | GER vs CHN |   1     0    | Germany wins 1-0 over China
+  3 | Sun 09 01:30 AM | ESP vs RSA |   3     1    | Spain wins 3-1 over South Africa
+  4 | Sun 09 04:30 AM | NOR vs NIG |   3     1    | Norway wins 3-1 over Nigeria
+  5 | Sun 09 08:30 PM | AUS vs ITA |   1     2    | Italy wins 2-1 over Australia
+  6 | Sun 09 11:00 PM | BRA vs JAM |   3     0    | Brazil wins 3-0 over Jamaica
+  7 | Mon 10 01:30 AM | ENG vs SCO |   2     1    | England wins 2-1 over Scotland
+  8 | Tue 11 01:30 AM | ARG vs JPN |   0     0    | Draw between Argentina and Japan
+  9 | Tue 11 04:30 AM | CAN vs CAM |   1     0    | Canada wins 1-0 over Cameroon
+ 10 | Tue 11 10:30 PM | NZL vs NED |   0     1    | Netherlands wins 1-0 over New Zealand
+ 11 | Wed 12 01:30 AM | CHI vs SWE |   0     2    | Sweden wins 2-0 over Chile
+ 12 | Wed 12 04:30 AM | USA vs THA |  13     0    | USA wins 13-0 over Thailand
+ 13 | Wed 12 10:30 PM | NIG vs KOR |   2     0    | Nigeria wins 2-0 over Korean Republic
+ 14 | Thu 13 01:30 AM | GER vs ESP |   1     0    | Germany wins 1-0 over Spain
+ 15 | Thu 13 04:30 AM | FRA vs NOR |   2     1    | France wins 2-1 over Norway
+ 16 | Fri 14 01:30 AM | AUS vs BRA |   3     2    | Australia wins 3-2 over Brazil
+ 17 | Fri 14 04:30 AM | RSA vs CHN |   0     1    | China wins 1-0 over South Africa
+ 18 | Fri 14 10:30 PM | JPN vs SCO |   2     1    | Japan wins 2-1 over Scotland
+ 19 | Sat 15 01:30 AM | JAM vs ITA |   0     5    | Italy wins 5-0 over Jamaica
+ 20 | Sat 15 04:30 AM | ENG vs ARG |   1     0    | England wins 1-0 over Argentina
+ 21 | Sat 15 10:30 PM | NED vs CAM |   3     1    | Netherlands wins 3-1 over Cameroon
+ 22 | Sun 16 04:30 AM | CAN vs NZL |   2     0    | Canada wins 2-0 over New Zealand
+ 23 | Sun 16 10:30 PM | SWE vs THA |   5     1    | Sweden wins 5-1 over Thailand
+ 24 | Mon 17 01:30 AM | USA vs CHI |   3     0    | USA wins 3-0 over Chile
+ 25 | Tue 18 01:30 AM | CHN vs ESP |   0     0    | Draw between China and Spain
+ 26 | Tue 18 01:30 AM | RSA vs GER |   0     4    | Germany wins 4-0 over South Africa
+ 27 | Tue 18 04:30 AM | NIG vs FRA |   0     1    | France wins 1-0 over Nigeria
+ 28 | Tue 18 04:30 AM | KOR vs NOR |   1     2    | Norway wins 2-1 over Korean Republic
+ 29 | Wed 19 04:30 AM | JAM vs AUS |   1     4    | Australia wins 4-1 over Jamaica
+ 30 | Wed 19 04:30 AM | ITA vs BRA |   0     1    | Brazil wins 1-0 over Italy
+ 31 | Thu 20 04:30 AM | JPN vs ENG |   0     2    | England wins 2-0 over Japan
+ 32 | Thu 20 04:30 AM | SCO vs ARG |   3     3    | Draw between Scotland and Argentina
+ 33 | Fri 21 01:30 AM | NED vs CAN |   2     1    | Netherlands win 2-1 over Canada
+ 34 | Fri 21 01:30 AM | CAM vs NZL |   2     1    | Cameroon wins 2-1 over New Zealand
+ 35 | Fri 21 04:30 AM | THA vs CHI |   0     2    | Chili wins 2-0 over Thailand
+ 36 | Fri 21 04:30 AM | SWE vs USA |   0     2    | USA wins 2-0 over Sweden
+----- Round of 16 ---------------------------------
+ 37 | Sun 23 04:30 AM | NOR vs AUS |   1(4)  1(1) | Norway wins 1(4)-1(1) on penalties over Australia
+ 38 | Sun 23 01:00 AM | GER vs NIG |   3     0    | Germany wins 3-0 over Nigeria
+ 39 | Mon 24 01:00 AM | ENG vs CAM |   3     0    | England wins 3-0 over Cameroon
+ 40 | Mon 24 04:30 AM | FRA vs BRA |   2     1    | France wins 2-1 over Brazil
+ 41 | Tue 25 01:30 AM | ESP vs USA |   1     2    | USA wins 2-1 over Spain
+ 42 | Tue 25 04:30 AM | SWE vs CAN |   1     0    | Sweden wins 1-0 over Canada
+ 43 | Wed 26 01:30 AM | ITA vs CHN |   2     0    | Italy wins 2-0 over China
+ 44 | Wed 26 04:30 AM | NED vs JPN |   2     1    | Netherlands win 2-1 over Japan
+----- Quarter Finals ------------------------------
+ 45 | Fri 28 04:30 AM | NOR vs ENG |   0     3    | England wins 3-0 over Norway
+ 46 | Sat 29 04:30 AM | FRA vs USA |   1     2    | USA wins 2-1 over France
+ 47 | Sat 29 10:30 PM | NED vs ITA |   2     0    | Netherlands wins 2-0 over Italy
+ 48 | Sun 30 02:00 AM | SWE vs GER |   2     1    | Sweden wins 2-1 over Germany
+----- Semi Finals ---------------------------------
+ 49 | Wed 03 04:30 AM | ENG vs USA |   1     2    | USA wins 2-1 over England
+ 50 | Thu 04 04:30 AM | SWE vs NED |   0     1    | Netherlands wins 1-0 over Sweden in extra time
+----- Playoff -------------------------------------
+ 51 | Sun 07 12:30 AM | ENG vs SWE |   1     2    | Sweden wins 2-1 over England
+----- Final ---------------------------------------
+ 52 | Mon 08 12:30 AM | USA vs NED |   2     0    | USA wins 2-0 over the Netherlands
+------------------------------------------------------------------------------
+
+
+Group Stage Results
+      |    | Games   | Goals      | Group     Knockout Result
+ Team | Pt | P/W/L/D | Fr/Ag/Diff | Result    Qual 16  8  4  2
+------+----+---------+------------+---------------------------
+ FRA  |  9 | 3 3 0 0 |  7  1    6 | group-a-1    *--+--x  .  . 
+ KOR  |  0 | 3 0 3 0 |  1  8   -7 | group-a-4    x  .  .  .  . 
+ NOR  |  6 | 3 2 1 0 |  6  4    2 | group-a-2    *--+--x  .  . 
+ NIG  |  3 | 3 1 2 0 |  3  4   -1 | group-a-3    +--x  .  .  . 
+------+----+---------+------------+---------------------------
+ GER  |  9 | 3 3 0 0 |  6  0    6 | group-b-1    *--+--x  .  . 
+ CHN  |  4 | 3 1 1 1 |  1  1    0 | group-b-3    +--x  .  .  . 
+ ESP  |  4 | 3 1 1 1 |  3  2    1 | group-b-2    *--x  .  .  . 
+ RSA  |  0 | 3 0 3 0 |  1  8   -7 | group-b-4    x  .  .  .  . 
+------+----+---------+------------+---------------------------
+ AUS  |  6 | 3 2 1 0 |  8  5    3 | group-c-2    *--x  .  .  . 
+ ITA  |  6 | 3 2 1 0 |  7  2    5 | group-c-1    *--+--x  .  . 
+ BRA  |  6 | 3 2 1 0 |  6  3    3 | group-c-3    +--x  .  .  . 
+ JAM  |  0 | 3 0 3 0 |  1 12  -11 | group-c-4    x  .  .  .  . 
+------+----+---------+------------+---------------------------
+ ENG  |  9 | 3 3 0 0 |  5  1    4 | group-d-1    *--+--+--x -4 
+ SCO  |  1 | 3 0 2 1 |  5  7   -2 | group-d-4    x  .  .  .  . 
+ ARG  |  2 | 3 0 1 2 |  3  4   -1 | group-d-3    x  .  .  .  . 
+ JPN  |  4 | 3 1 1 1 |  2  3   -1 | group-d-2    *--x  .  .  . 
+------+----+---------+------------+---------------------------
+ CAN  |  6 | 3 2 1 0 |  4  2    2 | group-e-2    *--x  .  .  . 
+ CAM  |  3 | 3 1 2 0 |  3  5   -2 | group-e-3    +--x  .  .  . 
+ NZL  |  0 | 3 0 3 0 |  1  5   -4 | group-e-4    x  .  .  .  . 
+ NED  |  9 | 3 3 0 0 |  6  2    4 | group-e-1    *--+--+--+--o 
+------+----+---------+------------+---------------------------
+ USA  |  9 | 3 3 0 0 | 18  0   18 | group-f-1    *--+--+--+--W 
+ THA  |  0 | 3 0 3 0 |  1 20  -19 | group-f-4    x  .  .  .  . 
+ CHI  |  3 | 3 1 2 0 |  2  5   -3 | group-f-3    x  .  .  .  . 
+ SWE  |  6 | 3 2 1 0 |  7  3    4 | group-f-2    +--+--+--x -3 
+
+Results
+      | Game     111111111122222222223333333|33344444|4444|45|5|5
+ Team | 123456789012345678901234567890123456|78901234|5678|90|1|2
+------+-------------------------------------+--------+----+--+-+-
+  USA | -----------W-----------W-----------W|----W---|-W--|W-|-|W
+  NED | ---------W----------W-----------W---|-------W|--W-|-W|-|L
+  ENG | ------W------------W----------W-----|--W-----|W---|L-|L| 
+  SWE | ----------W-----------W------------L|-----W--|---W|-L|W| 
+  FRA | W-------------W-----------W---------|---W----|-L  |  | | 
+  GER | -W-----------W-----------W----------|-W------|---L|  | | 
+  ITA | ----W-------------W----------L------|------W-|--L |  | | 
+  NOR | ---W----------L------------W--------|W-------|L   |  | | 
+  AUS | ----L----------W------------W-------|L       |    |  | | 
+  BRA | -----W---------L-------------W------|---L    |    |  | | 
+  CAN | --------W------------W----------L---|-----L  |    |  | | 
+  ESP | --W----------L----------d-----------|----L   |    |  | | 
+  JPN | -------d---------W------------L-----|-------L|    |  | | 
+  CHN | -L--------------W-------d-----------|------L |    |  | | 
+  NIG | ---L--------W-------------L---------|-L      |    |  | | 
+  CAM | --------L-----------L------------W--|--L     |    |  | | 
+  CHI | ----------L------------L----------W |        |    |  | | 
+  ARG | -------d-----------L-----------d    |        |    |  | | 
+  SCO | ------L----------L-------------d    |        |    |  | | 
+  NZL | ---------L-----------L-----------L  |        |    |  | | 
+  KOR | L-----------L--------------L        |        |    |  | | 
+  RSA | --L-------------L--------L          |        |    |  | | 
+  JAM | -----L------------L---------L       |        |    |  | | 
+  THA | -----------L----------L-----------L |        |    |  | | 
+
+Statistics
+      |    | Games   | Goals      | Group     Knockout Result
+ Team | Pt | P/W/L/D | Fr/Ag/Diff | Result    Qual 16  8  4  2
+------+----+---------+------------+---------------------------
+ USA  | 21 | 7 7 0 0 | 26  3   23 | group-f-1    *--+--+--+--W 
+ NED  | 18 | 7 6 1 0 | 11  5    6 | group-e-1    *--+--+--+--o 
+ ENG  | 15 | 7 5 2 0 | 13  5    8 | group-d-1    *--+--+--x -4 
+ SWE  | 15 | 7 5 2 0 | 12  6    6 | group-f-2    +--+--+--x -3 
+ FRA  | 12 | 5 4 1 0 | 10  4    6 | group-a-1    *--+--x  .  . 
+ GER  | 12 | 5 4 1 0 | 10  2    8 | group-b-1    *--+--x  .  . 
+ ITA  |  9 | 5 3 2 0 |  9  4    5 | group-c-1    *--+--x  .  . 
+ NOR  |  7 | 5 2 2 1 |  7  8   -1 | group-a-2    *--+--x  .  . 
+ AUS  |  7 | 4 2 1 1 |  9  6    3 | group-c-2    *--x  .  .  . 
+ BRA  |  6 | 4 2 2 0 |  7  5    2 | group-c-3    +--x  .  .  . 
+ CAN  |  6 | 4 2 2 0 |  4  3    1 | group-e-2    *--x  .  .  . 
+ ESP  |  4 | 4 1 2 1 |  4  4    0 | group-b-2    *--x  .  .  . 
+ JPN  |  4 | 4 1 2 1 |  3  5   -2 | group-d-2    *--x  .  .  . 
+ CHN  |  4 | 4 1 2 1 |  1  3   -2 | group-b-3    +--x  .  .  . 
+ NIG  |  3 | 4 1 3 0 |  3  7   -4 | group-a-3    +--x  .  .  . 
+ CAM  |  3 | 4 1 3 0 |  3  8   -5 | group-e-3    +--x  .  .  . 
+ CHI  |  3 | 3 1 2 0 |  2  5   -3 | group-f-3    x  .  .  .  . 
+ ARG  |  2 | 3 0 1 2 |  3  4   -1 | group-d-3    x  .  .  .  . 
+ SCO  |  1 | 3 0 2 1 |  5  7   -2 | group-d-4    x  .  .  .  . 
+ NZL  |  0 | 3 0 3 0 |  1  5   -4 | group-e-4    x  .  .  .  . 
+ KOR  |  0 | 3 0 3 0 |  1  8   -7 | group-a-4    x  .  .  .  . 
+ RSA  |  0 | 3 0 3 0 |  1  8   -7 | group-b-4    x  .  .  .  . 
+ JAM  |  0 | 3 0 3 0 |  1 12  -11 | group-c-4    x  .  .  .  . 
+ THA  |  0 | 3 0 3 0 |  1 20  -19 | group-f-4    x  .  .  .  . 
+
+Finals
+
+   NOR 1(4) vs 1(1) AUS [37]                                  SWE 1 vs 0 CAN [42]    
+      ENG 3 vs 0 CAM [39]                                     GER 3 vs 0 NIG [38]    
+
+             NOR 0 vs 3 ENG [45]                             SWE 2 vs 1 GER [48]    
+                                     USA 2 vs 0 NED [52]    
+                    ENG 1 vs 2 USA [49]               SWE 0 vs 1 NED [50]    
+                                     ENG 1 vs 2 SWE [51]    
+             FRA 1 vs 2 USA [46]                             NED 2 vs 0 ITA [47]    
+
+      FRA 2 vs 1 BRA [40]                                     NED 2 vs 1 JPN [44]    
+      ESP 1 vs 2 USA [41]                                     ITA 2 vs 0 CHN [43]    
+
