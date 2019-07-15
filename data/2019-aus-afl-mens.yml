@@ -682,41 +682,50 @@ games:
   teams:        [gws, bri]
   result:       [74,94]
 - round-number: 17
-  date: 12/07/2019 19:40
-  location: opt
-  teams: [wce, col]
+  date:         12/07/2019 19:40
+  location:     opt
+  teams:        [wce, col]
+  result:       [77,78]
 - round-number: 17
-  date: 13/07/2019 13:15
-  location: scg
-  teams: [syd, car]
+  date:         13/07/2019 13:15
+  location:     scg
+  teams:        [syd, car]
+  result:       [62,69]
 - round-number: 17
-  date: 13/07/2019 13:40
-  location: tas
-  teams: [haw, fre]
+  date:         13/07/2019 13:40
+  location:     tas
+  teams:        [haw, fre]
+  result:       [84,53]
 - round-number: 17
-  date: 13/07/2019 16:05
-  location: mrv
-  teams: [ess, nmb]
+  date:         13/07/2019 16:05
+  location:     mrv
+  teams:        [ess, nmb]
+  result:       [86,81]
 - round-number: 17
-  date: 13/07/2019 18:55
-  location: met
-  teams: [gcs, adl]
+  date:         13/07/2019 18:55
+  location:     met
+  teams:        [gcs, adl]
+  result:       [56,151]
 - round-number: 17
-  date: 13/07/2019 18:55
-  location: gee
-  teams: [gee, stk]
+  date:         13/07/2019 18:55
+  location:     gee
+  teams:        [gee, stk]
+  result:       [84,57]
 - round-number: 17
-  date: 14/07/2019 12:40
-  location: mcg
-  teams: [ric, gws]
+  date:         14/07/2019 12:40
+  location:     mcg
+  teams:        [ric, gws]
+  result:       [94,67]
 - round-number: 17
-  date: 14/07/2019 14:50
-  location: mrv
-  teams: [wbd, mel]
+  date:         14/07/2019 14:50
+  location:     mrv
+  teams:        [wbd, mel]
+  result:       [74,66]
 - round-number: 17
-  date: 14/07/2019 16:10
-  location: adl
-  teams: [pta, bri]
+  date:         14/07/2019 16:10
+  location:     adl
+  teams:        [pta, bri]
+  result:       [49,97]
 - round-number: 18
   date: 19/07/2019 19:20
   location: adl
