@@ -772,41 +772,50 @@ games:
   teams:        [stk, wbd]
   result:       [116,89]
 - round-number: 19
-  date: 26/07/2019 19:20
-  location: mcg
-  teams: [col, ric]
+  date:         26/07/2019 19:20
+  location:     mcg
+  teams:        [col, ric]
+  result:      [66,98]
 - round-number: 19
-  date: 27/07/2019 13:15
-  location: tas
-  teams: [haw, bri]
+  date:         27/07/2019 13:15
+  location:     tas
+  teams:        [haw, bri]
+  result:       [60,87]
 - round-number: 19
-  date: 27/07/2019 13:40
-  location: mcg
-  teams: [car, adl]
+  date:         27/07/2019 13:40
+  location:     mcg
+  teams:        [car, adl]
+  result:       [87,60]
 - round-number: 19
-  date: 27/07/2019 16:05
-  location: opt
-  teams: [wce, nmb]
+  date:         27/07/2019 16:05
+  location:     opt
+  teams:        [wce, nmb]
+  result:       [121,72]
 - round-number: 19
-  date: 27/07/2019 18:55
-  location: mrv
-  teams: [stk, mel]
+  date:         27/07/2019 18:55
+  location:     mrv
+  teams:        [stk, mel]
+  result:       [104,85]
 - round-number: 19
-  date: 27/07/2019 19:10
-  location: adl
-  teams: [pta, gws]
+  date:         27/07/2019 19:10
+  location:     adl
+  teams:        [pta, gws]
+  result:       [55,56]
 - round-number: 19
-  date: 28/07/2019 12:40
-  location: mrv
-  teams: [wbd, fre]
+  date:         28/07/2019 12:40
+  location:     mrv
+  teams:        [wbd, fre]
+  result:       [113, 66]
 - round-number: 19
-  date: 28/07/2019 14:50
-  location: scg
-  teams: [syd, gee]
+  date:         28/07/2019 14:50
+  location:     scg
+  teams:        [syd, gee]
+  result:       [80,107]
 - round-number: 19
-  date: 28/07/2019 16:10
-  location: met
-  teams: [gcs, ess]
+  date:         28/07/2019 16:10
+  location:     met
+  teams:        [gcs, ess]
+  result:       [96,106]
 - round-number: 20
   date: 02/08/2019 19:20
   location: mrv
