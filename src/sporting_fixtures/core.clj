@@ -31,6 +31,9 @@
      "  (println (event-stats-table (get-event)))"
      "  (println (event-group-table (get-event)))"
      ""
+     ";; From the command line"
+     ";;   lein run -m sporting-fixtures.afl"
+     ""
      ";; Event data (CSV) can be found at"
      ";;  https://fixturedownload.com/"
      ]
@@ -585,6 +588,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main
   [& args]
-  (let [event (get-event)]
-    (print-event-report event)
-    ))
+  ;;  (let [event (get-event)]
+  ;;    (print-event-report event)
+  ;;    )
+  (help)
+  )

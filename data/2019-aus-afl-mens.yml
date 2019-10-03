@@ -817,155 +817,220 @@ games:
   teams:        [gcs, ess]
   result:       [96,106]
 - round-number: 20
-  date: 02/08/2019 19:20
-  location: mrv
-  teams: [nmb, haw]
+  date:         02/08/2019 19:20
+  location:     mrv
+  teams:        [nmb, haw]
+  result:       [86,64]
 - round-number: 20
-  date: 03/08/2019 13:15
-  location: mrv
-  teams: [ess, pta]
+  date:         03/08/2019 13:15
+  location:     mrv
+  teams:        [ess, pta]
+  result:       [67,126]
 - round-number: 20
-  date: 03/08/2019 13:40
-  location: syd
-  teams: [gws, syd]
+  date:         03/08/2019 13:40
+  location:     syd
+  teams:        [gws, syd]
+  result:       [83,81]
 - round-number: 20
-  date: 03/08/2019 16:05
-  location: opt
-  teams: [fre, gee]
+  date:         03/08/2019 16:05
+  location:     opt
+  teams:        [fre, gee]
+  result:       [95,61]
 - round-number: 20
-  date: 03/08/2019 18:55
-  location: mcg
-  teams: [mel, ric]
+  date:         03/08/2019 18:55
+  location:     mcg
+  teams:        [mel, ric]
+  result:       [60,93]
 - round-number: 20
-  date: 03/08/2019 19:10
-  location: adl
-  teams: [adl, stk]
+  date:         03/08/2019 19:10
+  location:     adl
+  teams:        [adl, stk]
+  result:       [92,70]
 - round-number: 20
-  date: 04/08/2019 12:40
-  location: mcg
-  teams: [col, gcs]
+  date:         04/08/2019 12:40
+  location:     mcg
+  teams:        [col, gcs]
+  result:       [120,51]
 - round-number: 20
-  date: 04/08/2019 14:50
-  location: mrv
-  teams: [car, wce]
+  date:         04/08/2019 14:50
+  location:     mrv
+  teams:        [car, wce]
+  result:       [75,99]
 - round-number: 20
-  date: 04/08/2019 16:10
-  location: gab
-  teams: [bri, wbd]
+  date:         04/08/2019 16:10
+  location:     gab
+  teams:        [bri, wbd]
+  result:       [98,80]
 - round-number: 21
-  date: 09/08/2019 19:20
-  location: can
-  teams: [gws, haw]
+  date:         09/08/2019 19:20
+  location:     can
+  teams:        [gws, haw]
+  result:       [29,85]
 - round-number: 21
-  date: 10/08/2019 13:15
-  location: mcg
-  teams: [mel, col]
+  date:         10/08/2019 13:15
+  location:     mcg
+  teams:        [mel, col]
+  result:       [53,70]
 - round-number: 21
-  date: 10/08/2019 13:40
-  location: adl
-  teams: [pta, syd]
+  date:         10/08/2019 13:40
+  location:     adl
+  teams:        [pta, syd]
+  result:       [103,56]
 - round-number: 21
-  date: 10/08/2019 16:05
-  location: gab
-  teams: [bri, gcs]
+  date:         10/08/2019 16:05
+  location:     gab
+  teams:        [bri, gcs]
+  result:       [144,53]
 - round-number: 21
-  date: 10/08/2019 18:55
-  location: mrv
-  teams: [ess, wbd]
+  date:         10/08/2019 18:55
+  location:     mrv
+  teams:        [ess, wbd]
+  result:       [33,137]
 - round-number: 21
-  date: 10/08/2019 18:55
-  location: gee
-  teams: [gee, nmb]
+  date:         10/08/2019 18:55
+  location:     gee
+  teams:        [gee, nmb]
+  result:       [69,14]
 - round-number: 21
-  date: 11/08/2019 12:40
-  location: mrv
-  teams: [stk, fre]
+  date:         11/08/2019 12:40
+  location:     mrv
+  teams:        [stk, fre]
+  result:       [72,69]
 - round-number: 21
-  date: 11/08/2019 14:50
-  location: mcg
-  teams: [ric, car]
+  date:         11/08/2019 14:50
+  location:     mcg
+  teams:        [ric, car]
+  result:       [73,45]
 - round-number: 21
-  date: 11/08/2019 16:10
-  location: opt
-  teams: [wce, adl]
+  date:         11/08/2019 16:10
+  location:     opt
+  teams:        [wce, adl]
+  result:       [90,80]
 - round-number: 22
-  date: 16/08/2019 19:20
-  location: mcg
-  teams: [mel, syd]
+  date:         16/08/2019 19:20
+  location:     mcg
+  teams:        [mel, syd]
+  result:       [42,95]
 - round-number: 22
-  date: 17/08/2019 13:15
-  location: mcg
-  teams: [car, stk]
+  date:         17/08/2019 13:15
+  location:     mcg
+  teams:        [car, stk]
+  result:       [78,74]
 - round-number: 22
-  date: 17/08/2019 13:40
-  location: gab
-  teams: [bri, gee]
+  date:         17/08/2019 13:40
+  location:     gab
+  teams:        [bri, gee]
+  result:       [75,74]
 - round-number: 22
-  date: 17/08/2019 16:05
-  location: adl
-  teams: [adl, col]
+  date:         17/08/2019 16:05
+  location:     adl
+  teams:        [adl, col]
+  result:       [48,114]
 - round-number: 22
-  date: 17/08/2019 18:55
-  location: mrv
-  teams: [nmb, pta]
+  date:         17/08/2019 18:55
+  location:     mrv
+  teams:        [nmb, pta]
+  result:       [144,58]
 - round-number: 22
-  date: 17/08/2019 19:40
-  location: opt
-  teams: [fre, ess]
+  date:         17/08/2019 19:40
+  location:     opt
+  teams:        [fre, ess]
+  result:       [55,87]
 - round-number: 22
-  date: 18/08/2019 12:40
-  location: mcg
-  teams: [ric, wce]
+  date:         18/08/2019 12:40
+  location:     mcg
+  teams:        [ric, wce]
+  result:       [88,82]
 - round-number: 22
-  date: 18/08/2019 14:50
-  location: syd
-  teams: [gws, wbd]
+  date:         18/08/2019 14:50
+  location:     syd
+  teams:        [gws, wbd]
+  result:       [65,126]
 - round-number: 22
-  date: 18/08/2019 16:10
-  location: mrv
-  teams: [haw, gcs]
+  date:         18/08/2019 16:10
+  location:     mrv
+  teams:        [haw, gcs]
+  result:       [118,48]
 - round-number: 23
-  date: 23/08/2019 23:30
-  location: blu
-  teams: [nmb, mel]
+  date:         23/08/2019 --:--
+  location:     blu
+  teams:        [nmb, mel]
+  result:       [88,83]
 - round-number: 23
-  date: 23/08/2019 23:30
-  location: mcg
-  teams: [ric, bri]
+  date:         23/08/2019 --:--
+  location:     mcg
+  teams:        [ric, bri]
+  result:       [82,55]
 - round-number: 23
-  date: 23/08/2019 23:30
-  location: met
-  teams: [gcs, gws]
+  date:         23/08/2019 --:--
+  location:     met
+  teams:        [gcs, gws]
+  result:       [55,127]
 - round-number: 23
-  date: 24/08/2019 00:00
-  location: adl
-  teams: [pta, fre]
+  date:         24/08/2019 --:--
+  location:     adl
+  teams:        [pta, fre]
+  result:       [110,67]
 - round-number: 23
-  date: 24/08/2019 01:30
-  location: opt
-  teams: [wce, haw]
+  date:         24/08/2019 --:--
+  location:     opt
+  teams:        [wce, haw]
+  result:       [67,105]
 - round-number: 23
-  date: 24/08/2019 23:30
-  location: gee
-  teams: [gee, car]
+  date:         24/08/2019 --:--
+  location:     gee
+  teams:        [gee, car]
+  result:       [129,61]
 - round-number: 23
-  date: 24/08/2019 23:30
-  location: mar
-  teams: [wbd, adl]
+  date:         24/08/2019 --:--
+  location:     mar
+  teams:        [wbd, adl]
+  result:       [121,87]
 - round-number: 23
-  date: 24/08/2019 23:30
-  location: mcg
-  teams: [col, ess]
+  date:         24/08/2019 --:--
+  location:     mcg
+  teams:        [col, ess]
+  result:       [76,65]
 - round-number: 23
-  date: 24/08/2019 23:30
-  location: scg
-  teams: [syd, stk]
-- {round-number: Finals W1, date: '04/09/2019 23:30'}
-- {round-number: Finals W1, date: '05/09/2019 23:30'}
-- {round-number: Finals W1, date: '06/09/2019 23:30'}
-- {round-number: Finals W1, date: '07/09/2019 23:30'}
-- {round-number: Semi Finals, date: '12/09/2019 23:30'}
-- {round-number: Semi Finals, date: '13/09/2019 23:30'}
-- {round-number: Prelim Finals, date: '19/09/2019 23:30'}
-- {round-number: Prelim Finals, date: '20/09/2019 23:30'}
-- {round-number: Grand Final, date: '27/09/2019 23:30', location: mcg}
+  date:         24/08/2019 --:--
+  location:     scg
+  teams:        [syd, stk]
+  result:       [109,64]
+- round-number: Finals W1
+  date:         05/09/2019 --:--
+  teams:        [wce,ess]
+  result:       [116,61]
+- round-number: Finals W1
+  date:         06/09/2019 --:--
+  teams:        [gee,col]
+  result:       [51,61]
+- round-number: Finals W1
+  date:         07/09/2019 --:--
+  teams:        [gws,wbd]
+  result:       [113,55]
+- round-number: Finals W1
+  date:         07/09/2019 --:--
+  teams:        [bri,ric]
+  result:       [65,112]
+- round-number: Semi Finals
+  date:         13/09/2019 --:--
+  teams:        [gee,wce]
+  result:       [88,68]
+- round-number: Semi Finals
+  date:         14/09/2019 --:--
+  teams:        [bri,gws]
+  result:       [80,83]
+- round-number: Prelim Finals
+  date:         20/09/2019 --:--
+  teams:        [ric,gee]
+  result:       [85,66]
+- round-number: Prelim Finals
+  date:         21/09/2019 --:--
+  teams:        [col,gws]
+  result:       [52,56]
+- round-number: Grand Final
+  date:         28/09/2019 --:--
+  location:     mcg
+  teams:        [ric,gws]
+  result:       [114,25]
+
