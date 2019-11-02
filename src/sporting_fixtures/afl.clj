@@ -208,7 +208,7 @@
 ;; Create results table
 (defn event-games-table-header []
   (str
-   (format " %3s | %-16s | %-10s | %-9s"
+   (format " %3s | %-16s | %-10s | %s"
            "Id"
            "Time"
            "Teams"
@@ -271,7 +271,7 @@
              "-----+- Round %2d -------+------------+------------------\n"
              (rounds i))
             :else "")
-          (format " %3d | %s | %-10s |  %4s %4s "
+          (format " %3d | %s | %-10s |  %4s %4s"
                   (inc i)
                   ;; (:round-number x)
                   ;;(localtime (:date x))
