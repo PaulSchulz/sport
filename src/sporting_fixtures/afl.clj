@@ -456,6 +456,7 @@
   (let [games (:games event)]
     (str
      "Knockout                    Semifinal                 Preliminary                 Grand Final\n"
+     "--------                    ---------                 -----------                 -----------\n"
      "\n"
      (format "%-26s                            %-26s  %-26s\n"
              (format-game event 199)
