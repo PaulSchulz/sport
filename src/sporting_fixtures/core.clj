@@ -586,10 +586,21 @@
   )
   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn -main-event-report
+  [& args]
+  (let [event (get-event)]
+    (print-event-report event)
+    ))
+
 (defn -main
   [& args]
-  ;;  (let [event (get-event)]
-  ;;    (print-event-report event)
-  ;;    )
+  (println "Sporting Fixtures and Events")
+  (println "----------------------------")
+  (println "Past events")
+  (println "  2019-fra-fifa-women-worldcup   FIFA Women's World Cup, France, 2019")
+  (println "")
+  (println "Current events")
+  (println)
   (help)
   )
+
