@@ -21,23 +21,6 @@
 ;; https://fixturedownload.com/download/csv/afl-2020
 ;; Format "https://fixturedownload.com/download/csv/" comp
 
-(defn form-filename [competition]
-  (str competition "-UTC.csv"))
-
-(defn form-url [competition]
-  "Produce data URL from competition details."
-  (str "https://fixturedownload.com/download/"
-       (form-filename competition)
-       )
-  )
-
-(defn form-path [competition]
-  "Produce data URL from competition details."
-  (str "data/download/"
-       (form-filename competition)
-       )
-  )
-
 ;; Download index page
 (defn get-index-page []
   (-> (client/get "https://fixturedownload.com")
@@ -59,13 +42,50 @@
 (defn download-competition-index []
   (spit "data/download/00-index-competitions.txt"
         (str/join "\n" (get-comp-list))))
-  
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Down load competition fixture list
+(defn form-filename [competition]
+  (str competition "-UTC.csv"))
+
+(defn form-path [competition]
+  "Produce data path from competition details."
+  (str "data/download/"
+       (form-filename competition)
+       )
+  )
+
+(defn download-fixtures-enable [competition]
+  ;; WIP - Individial fixtures files are created on demand. Therefore
+  ;; before the download can be done, the creation of the data file
+  ;; needs to be triggered.
+  ;;
+  ;; Work in progress. Need to do a POST request and have timezome set
+  ;; to UTC via 'timezone' cookie.
+  (let [url (str "https://fixturedownload.com/download/" competition)]
+  (println url)
+  (spit (form-path competition)
+        (:body (client/post
+                url
+                {:form-params {:timezome "UTC" :cookie {:timezone "UTC"}}}
+                ))))
+  )
+
+(defn form-url [competition]
+  "Produce data URL from competition details."
+  (str "https://fixturedownload.com/download/"
+       (form-filename competition)
+       )
+  )
+
 (defn download-fixtures [comp]
   (println (form-url comp))
   (spit (form-path comp)
         (:body (client/get (form-url comp))))
   )
 
+;; (require '[sporting-fixtures.utils])
+;; (ns sporting-fixtures.utils)
 ;; Download the index file: data/download/00-index-competitions.txt
 ;; (download-competition-index)
 
