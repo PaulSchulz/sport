@@ -57,7 +57,7 @@ games:
     venue:   "The Gabba"
     home:    "Brisbane Heat"
     away:    "Sydney Thunder"
-    score:   {hea: "143/19.2", thu: "6-172/20.0"}
+    score:   {hea: "143/19.2", thu: "6-172/20"}
     result:  {hea: 0, thu: 2}
     summary: "Sydney Thunder won by 29 runs"
   - round:   1
@@ -65,7 +65,7 @@ games:
     venue:   "SCG"
     home:    "Sydney Sixers"
     away:    "Perth Scorchers"
-    score:   {six: "2-137/15.0", sco: "131/20.0"}
+    score:   {six: "2-137/15.0", sco: "131/20"}
     result:  {six: 2, sco: 0}
     summary: "Sydney Sixers won by 8 wickets"
   - round:   1
@@ -73,7 +73,7 @@ games:
     venue:   "GMHBA Stadium"
     home:    "Melbourne Renegades"
     away:    "Sydney Thunder"
-    score:   {ren: "5-169/20.0", thu: "4-171/19.4"}
+    score:   {ren: "5-169/20", thu: "4-171/19.4"}
     result:  {ren: 0, thu: 2}
     summary: "Sydney Thunder won by 6 wickets"
   - round:   1
@@ -81,7 +81,7 @@ games:
     venue:   "Traeger Park"
     home:    "Hobart Hurricanes"
     away:    "Sydney Sixers"
-    score:   {hur: "9-129/20.0", six: "104/18.5"}
+    score:   {hur: "9-129/20", six: "104/18.5"}
     result:  {hur: 2, six: 0}
     summary: "Hobart Hurricanes won by 25 runs"
   - round:   1
@@ -89,7 +89,7 @@ games:
     venue:   "Metricon Stadium"
     home:    "Brisbane Heat"
     away:    "Melbourne Stars"
-    score:   {hea: "8-129/20.0", sta: "7-167/20.0"}
+    score:   {hea: "8-129/20", sta: "7-167/20"}
     result:  {hea: 0, sta: 2}
     summary: "Melbourne Stars won by 22 runs"
   - round:   1
@@ -105,7 +105,7 @@ games:
     venue:   "Optus Stadium"
     home:    "Perth Scorchers"
     away:    "Melbourne Renegades"
-    score:   {sco: "7-196/20.0", ren: "6-185/20.0"}
+    score:   {sco: "7-196/20", ren: "6-185/20"}
     result:  {sco: 2, ren: 0}
     summary: "Perth Scorchers won by 11 runs"
   - round:   1
@@ -113,7 +113,7 @@ games:
     venue:   "Ted Summerton Reserve"
     home:    "Melbourne Stars"
     away:    "Hobart Hurricanes"
-    score:   {sta: "4-163/20.0", hur: "111/16.0"}
+    score:   {sta: "4-163/20", hur: "111/16.0"}
     result:  {sta: 2, hur: 0}
     summary: "Melbourne Stars won by 52 runs"
   - round:   1
@@ -121,7 +121,7 @@ games:
     venue:   "SCG"
     home:    "Sydney Sixers"
     away:    "Brisbane Heat"
-    score:   {six: "7-161/20.0", hea: "4-209"}
+    score:   {six: "7-161/20", hea: "4-209"}
     result:  {six: 0, hea: 1}
     summary: "Brisbane Heat won by 48 runs"    
   - round:   1
@@ -145,7 +145,7 @@ games:
     venue:   "Optus Stadium"
     home:    "Perth Scorchers"
     away:    "Sydney Sixers"
-    score:   {sco: "126/19.1", six: "7-174/20.0"}
+    score:   {sco: "126/19.1", six: "7-174/20"}
     result:  {sco: 0, six: 2}
     summary: "Sydney Sixers won by 48 runs"
   - round:   2
@@ -153,7 +153,7 @@ games:
     venue:   "Metricon Stadium"
     home:    "Melbourne Stars"
     away:    "Adelaide Strikers"
-    score:   {sta: "6-169/20.0", str: "4-174/20.0"}
+    score:   {sta: "6-169/20", str: "4-174/20"}
     result:  {sta: 0, str: 2}
     summary: "Adelaide Strikers won by 5 runs"
   - round:   2
@@ -169,7 +169,7 @@ games:
     venue:   "Marvel Stadium"
     home:    "Melbourne Renegades"
     away:    "Adelaide Strikers"
-    score:   {ren: "8-137/20.0", str: "6-155/20.0"}
+    score:   {ren: "8-137/20", str: "6-155/20"}
     result:  {ren: 0, str: 2}
     summary: "Adelaide Strikers won by 18 runs"
   - round:   2
@@ -185,7 +185,7 @@ games:
     venue:   "Adelaide Oval"
     home:    "Adelaide Strikers"
     away:    "Sydney Thunder"
-    score:   {str: "9-165/20.0", thu: "5-168/20.0"}
+    score:   {str: "9-165/20", thu: "5-168/20"}
     result:  {str: 0, thu: 2}
     summary: "Sydney Thunder won by 3 runs" 
   - round:   3
@@ -193,33 +193,41 @@ games:
     venue:   "Metricon Stadium"
     home:    "Brisbane Heat"
     away:    "Perth Scorchers"
-    score:   {hea: "109/18.4", sco: "6-149/20.0"}
+    score:   {hea: "109/18.4", sco: "6-149/20"}
     result:  {hea: 0, sco: 2}
     summary: "Perth Scorchers won by 40 runs"
-  - round:  3
-    time:   "02/01/2020 04:40"
-    venue:  "Sydney Showground Stadium"
-    home:   "Sydney Thunder"
-    away:   "Melbourne Stars"
-    result: {}
-  - round:  3
-    time:   "02/01/2020 08:10"
-    venue:  "Marvel Stadium"
-    home:   "Melbourne Renegades"
-    away:   "Sydney Sixers"
-    result: {}
-  - round:  3
-    time:   "03/01/2020 08:10"
-    venue:  "Blundstone Arena"
-    home:   "Hobart Hurricanes"
-    away:   "Brisbane Heat"
-    result: {}
-  - round:  3
-    time:   "04/01/2020 08:10"
-    venue:  "MCG"
-    home:   "Melbourne Stars"
-    away:   "Melbourne Renegades"
-    result: {}
+  - round:   3
+    time:    "02/01/2020 04:40"
+    venue:   "Sydney Showground Stadium"
+    home:    "Sydney Thunder"
+    away:    "Melbourne Stars"
+    score:   {thu: "7-142/20", sta: "7-143/19.4"}
+    result:  {thu: 0, sta: 2}
+    summary: "Sydney Thunder won by 3 wickets (2 balls left)"
+  - round:   3
+    time:    "02/01/2020 08:10"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Renegades"
+    away:    "Sydney Sixers"
+    score:   {ren: "6-153/20", six: "4-154/19.5"}
+    result:  {ren: 0, six: 2}
+    summary: "Sydney Sixers won by 6 wickets (1 ball left)"
+  - round:   3
+    time:    "03/01/2020 08:10"
+    venue:  " Blundstone Arena"
+    home:    "Hobart Hurricanes"
+    away:    "Brisbane Heat"
+    score:   {hur: "9-181/20", hea: "3-212/20"}
+    result:  {hur: 0, hea: 2}
+    summary: "Brisbane Heat won by 31 runs"
+  - round:   3
+    time:    "04/01/2020 08:10"
+    venue:   "MCG"
+    home:    "Melbourne Stars"
+    away:    "Melbourne Renegades"
+    score:   {sta: "2-143/18.5", ren: "9-142/20"}
+    result:  {sta: 2, ren: 0}
+    summary: "Melbourne Stars won by 8 wickets (7 balls remaining)"
   - round:  3
     time:   "05/01/2020 07:40"
     venue:  "Coffs International Stadium"

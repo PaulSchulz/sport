@@ -166,6 +166,7 @@
 (defn calculate-statistics [games]
   (map calculate-game-statistics games))
 
+;; 
 (defn reduce-statistics [stats]
   (reduce (fn [val coll] (reduce conj val coll))
           [] stats)
