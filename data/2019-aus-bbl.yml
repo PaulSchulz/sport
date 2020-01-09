@@ -236,42 +236,54 @@ games:
     score:   {six: "3-180/19.3", str: "9-142/20"}
     result:  {six: 2, str: 0}
     summary: "Sydney Sixers won by 7 wickets (7 balls remaining)"
-  - round:  3
-    time:   "05/01/2020 10:40"
-    venue:  "Optus Stadium"
-    home:   "Perth Scorchers"
-    away:   "Hobart Hurricanes"
-    result: {}
-  - round:  3
-    time:   "06/01/2020 08:10"
-    venue:  "Sydney Showground Stadium"
-    home:   "Sydney Thunder"
-    away:   "Brisbane Heat"
-    result: {}
-  - round:  4
-    time:   "07/01/2020 08:10"
-    venue:  "GMHBA Stadium"
-    home:   "Melbourne Renegades"
-    away:   "Perth Scorchers"
-    result: {}
-  - round:  4
-    time:   "08/01/2020 04:40"
-    venue:  "Adelaide Oval"
-    home:   "Adelaide Strikers"
-    away:   "Sydney Sixers"
-    result: {}
-  - round:  4
-    time:   "08/01/2020 08:10"
-    venue:  "MCG"
-    home:   "Melbourne Stars"
-    away:   "Sydney Thunder"
-    result: {}
-  - round:  4
-    time:   "09/01/2020 08:10"
-    venue:  "The Gabba"
-    home:   "Brisbane Heat"
-    away:   "Hobart Hurricanes"
-    result: {}
+  - round:   3
+    time:    "05/01/2020 10:40"
+    venue:   "Optus Stadium"
+    home:    "Perth Scorchers"
+    away:    "Hobart Hurricanes"
+    score:   {sco: "8-172/20", hur: "2-180/20"}
+    result:  {sco: 0, hur: 2}
+    summary: "Hobart Hurricanes won by 8 runs"
+  - round:   3
+    time:    "06/01/2020 08:10"
+    venue:   "Sydney Showground Stadium"
+    home:    "Sydney Thunder"
+    away:    "Brisbane Heat"
+    score:   {thu: "4-60/5(77)", hea: "4-119/8"}
+    result:  {thu: 0,  hea: 2}
+    summary: "Brisbane Heat won by 16 runs (DLS method)"
+  - round:   4
+    time:    "07/01/2020 08:10"
+    venue:   "GMHBA Stadium"
+    home:    "Melbourne Renegades"
+    away:    "Perth Scorchers"
+    score:   {ren: "5-175/20", sco: "4-178/19"}
+    result:  {ren: 0,  sco: 2}
+    summary: "Perth Scorchers won by 6 wickets (with 6 balls left)"
+  - round:   4
+    time:    "08/01/2020 04:40"
+    venue:   "Adelaide Oval"
+    home:    "Adelaide Strikers"
+    away:    "Sydney Sixers"
+    score:   {str: "135/19.4", six: "8-137/18.4"}
+    result:  {str: 0, six: 2}
+    summary: "Sydney Sixers won by 2 wickets (with 8 balls left)"
+  - round:   4
+    time:    "08/01/2020 08:10"
+    venue:   "MCG"
+    home:    "Melbourne Stars"
+    away:    "Sydney Thunder"
+    score:   {sta: "4-148/17.5", thu: "5-145/20"}
+    result:  {sta: 2, thu: 0}
+    summary: "Melbourne Stars won by 6 wickets (with 13 balls left)"
+  - round:   4
+    time:    "09/01/2020 08:10"
+    venue:   "The Gabba"
+    home:    "Brisbane Heat"
+    away:    "Hobart Hurricanes"
+    score:   {hea: "5-131/18.2", hur: "9-126/20"}
+    result:  {hea: 2, hur: 0}
+    summary: "Brisbane Heat won by 5 wickets (with 10 balls left)"
   - round:  4
     time:   "10/01/2020 08:10"
     venue:  "Marvel Stadium"

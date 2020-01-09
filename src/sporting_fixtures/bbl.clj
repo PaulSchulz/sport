@@ -172,6 +172,14 @@
           [] stats)
   )
 
+;; merge
+;; merge-with
+;;(reduce into [] stats)
+
+;;(defn create-statistics-updates [games]
+;;  (apply merge-with + games)
+;;  )
+
 ;; TODO - Need to fix this to use new statistics format (map)
 ;; Apply update to statistics
 ;;   statistics - is a mapped by team name
