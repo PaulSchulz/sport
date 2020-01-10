@@ -284,12 +284,14 @@ games:
     score:   {hea: "5-131/18.2", hur: "9-126/20"}
     result:  {hea: 2, hur: 0}
     summary: "Brisbane Heat won by 5 wickets (with 10 balls left)"
-  - round:  4
-    time:   "10/01/2020 08:10"
-    venue:  "Marvel Stadium"
-    home:   "Melbourne Renegades"
-    away:   "Melbourne Stars"
-    result: {}
+  - round:   4
+    time:    "10/01/2020 08:10"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Renegades"
+    away:    "Melbourne Stars"
+    result:  {ren: "7-168/20", sta: "3-169/18.4"}
+    result:  {ren: 0, sta: 2}
+    summary: "Melbourne Stars won by 7 wickets (with 8 balls left)"
   - round:  4
     time:   "11/01/2020 07:10"
     venue:  "Sydney Showground Stadium"
