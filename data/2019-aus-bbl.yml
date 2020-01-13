@@ -289,39 +289,49 @@ games:
     venue:   "Marvel Stadium"
     home:    "Melbourne Renegades"
     away:    "Melbourne Stars"
-    result:  {ren: "7-168/20", sta: "3-169/18.4"}
+    score:   {ren: "7-168/20", sta: "3-169/18.4"}
     result:  {ren: 0, sta: 2}
     summary: "Melbourne Stars won by 7 wickets (with 8 balls left)"
-  - round:  4
-    time:   "11/01/2020 07:10"
-    venue:  "Sydney Showground Stadium"
-    home:   "Sydney Thunder"
-    away:   "Hobart Hurricanes"
-    result: {}
-  - round:  4
-    time:   "11/01/2020 10:10"
-    venue:  "Optus Stadium"
-    home:   "Perth Scorchers"
-    away:   "Brisbane Heat"
-    result: {}
-  - round:  4
-    time:   "12/01/2020 04:40"
-    venue:  "Adelaide Oval"
-    home:   "Adelaide Strikers"
-    away:   "Melbourne Renegades"
-    result: {}
-  - round:  4
-    time:   "12/01/2020 08:10"
-    venue:  "MCG"
-    home:   "Melbourne Stars"
-    away:   "Sydney Sixers"
-    result: {}
-  - round:  4
-    time:   "13/01/2020 08:10"
-    venue:  "Blundstone Arena"
-    home:   "Hobart Hurricanes"
-    away:   "Perth Scorchers"
-    result: {}
+  - round:   4
+    time:    "11/01/2020 07:10"
+    venue:   "Sydney Showground Stadium"
+    home:    "Sydney Thunder"
+    away:    "Hobart Hurricanes"
+    score:   {thu: "6-166/19.4", hur: "6-162/20"}
+    result:  {thu: 2, hur: 0}
+    summary: "Sydney Thunder won by 4 wickets (with 2 balls left)"
+  - round:   4
+    time:    "11/01/2020 10:10"
+    venue:   "Optus Stadium"
+    home:    "Perth Scorchers"
+    away:    "Brisbane Heat"
+    score:   {sco: "3-213/20", hea: "8-179/20"}
+    result:  {sco: 2, hea: 0}
+    summary: "Perth Scorchers won by 34 runs"
+  - round:   4
+    time:    "12/01/2020 04:40"
+    venue:   "Adelaide Oval"
+    home:    "Adelaide Strikers"
+    away:    "Melbourne Renegades"
+    score:   {str: "6-173/20", ren: "110/17.4"}
+    result:  {str: 2, ren: 0}
+    summary: "Adelaide Strikers won by 44 runs"
+  - round:   4
+    time:    "12/01/2020 08:10"
+    venue:   "MCG"
+    home:    "Melbourne Stars"
+    away:    "Sydney Sixers"
+    score:   {sta: "1-219/20", six: "7-175/20"}
+    result:  {sta: 2, six: 0}
+    summary: "Melbourne Stars won by 44 runs"
+  - round:   4
+    time:    "13/01/2020 08:10"
+    venue:   "Blundstone Arena"
+    home:    "Hobart Hurricanes"
+    away:    "Perth Scorchers"
+    score:   {hur: "98/17.1", sco: "7-175/20"}
+    result:  {hur: 0, sco: 2}
+    summary: "Perth Scorchers won by 77 runs"
   - round:  5
     time:   "14/01/2020 04:40"
     venue:  "The Gabba"
