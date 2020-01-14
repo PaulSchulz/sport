@@ -332,12 +332,14 @@ games:
     score:   {hur: "98/17.1", sco: "7-175/20"}
     result:  {hur: 0, sco: 2}
     summary: "Perth Scorchers won by 77 runs"
-  - round:  5
-    time:   "14/01/2020 04:40"
-    venue:  "The Gabba"
-    home:   "Brisbane Heat"
-    away:   "Adelaide Strikers"
-    result: {}
+  - round:   5
+    time:    "14/01/2020 04:40"
+    venue:   "The Gabba"
+    home:    "Brisbane Heat"
+    away:    "Adelaide Strikers"
+    score:   {hea: "3-114/15.2", str: "110/19"}
+    result:  {hea: 2, str: 0}
+    summary: "Brisbane Heat won by 7 wickets (with 28 balls left)"
   - round:  5
     time:   "15/01/2020 07:10"
     venue:  "Manuka Oval"
