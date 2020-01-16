@@ -339,19 +339,23 @@ games:
     away:    "Adelaide Strikers"
     score:   {hea: "3-114/15.2", str: "110/19"}
     result:  {hea: 2, str: 0}
-    summary: "Brisbane Heat won by 7 wickets (with 28 balls left)"
-  - round:  5
-    time:   "15/01/2020 07:10"
-    venue:  "Manuka Oval"
-    home:   "Sydney Thunder"
-    away:   "Melbourne Renegades"
-    result: {}
-  - round:  5
-    time:   "15/01/2020 10:10"
-    venue:  "Optus Stadium"
-    home:   "Perth Scorchers"
-    away:   "Melbourne Stars"
-    result: {}
+    summary: "Brisbane Heat won by 7 wickets (with 28 balls remaining)"
+  - round:   5
+    time:    "15/01/2020 07:10"
+    venue:   "Manuka Oval"
+    home:    "Sydney Thunder"
+    away:    "Melbourne Renegades"
+    score:   {thu: "7-122/14(135 req)" , ren: "4-172/20"}
+    result:  {thu: 0, ren: 2}
+    summary: "Melbourne Renegades won by 12 runs, target of 135 (DLS method)"
+  - round:   5
+    time:    "15/01/2020 10:10"
+    venue:   "Optus Stadium"
+    home:    "Perth Scorchers"
+    away:    "Melbourne Stars"
+    score:   {sco: "86/13.5", sta: "2-89/12"}
+    result:  {sco: 0, sta: 2}
+    summary: "Melbourne Stars won by 8 wickets (with 48 balls remaining)"
   - round:  5
     time:   "16/01/2020 08:10"
     venue:  "SCG"
