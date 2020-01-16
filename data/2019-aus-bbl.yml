@@ -356,12 +356,14 @@ games:
     score:   {sco: "86/13.5", sta: "2-89/12"}
     result:  {sco: 0, sta: 2}
     summary: "Melbourne Stars won by 8 wickets (with 48 balls remaining)"
-  - round:  5
-    time:   "16/01/2020 08:10"
-    venue:  "SCG"
-    home:   "Sydney Sixers"
-    away:   "Hobart Hurricanes"
-    result: {}
+  - round:   5
+    time:    "16/01/2020 08:10"
+    venue:   "SCG"
+    home:    "Sydney Sixers"
+    away:    "Hobart Hurricanes"
+    score:   {six: "2-45/6.4", hur: ""}
+    result:  {six: 1, hur: 1}
+    summary: "No result"
   - round:  5
     time:   "17/01/2020 04:40"
     venue:  "Adelaide Oval"
