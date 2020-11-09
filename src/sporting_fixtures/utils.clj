@@ -94,3 +94,30 @@
 ;; (download-fixtures "wbbl-2019")
 ;; (download-fixtures "aleague-2019")
 ;; (download-fixtures "wleague-2019")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn keyword-team [team]
+  "Convert team name (string) to short keyword."
+  (case team
+    ;; AFL/AFLW
+    "West Coast Eagles"           :wce
+    "Western Bulldogs"            :wbd
+    ;; A League
+    "Melbourne Victory"           :mbv
+    "Melbourne City FC"           :mbc
+    "Western Sydney Wanderers FC" :wsw
+    "Western United FC"           :wes
+    (keyword (clojure.string/lower-case
+              (subs
+               (clojure.string/replace team #" " "") ; Remove whitespace
+               0 3)))
+    )
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn get-event [filename]
+  "Read event data from file"
+  (yaml/parse-string (slurp filename))
+  )
+
+

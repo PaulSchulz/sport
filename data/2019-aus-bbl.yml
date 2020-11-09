@@ -1,5 +1,5 @@
 ---
-title:    "2019-20 Big Bash League"
+title:    "2019-20 Big Bash League (Mens)" 
 location: "Australia"
 code:     "cricket-bbl"
 date:     {from: "17 Dec 2019", to: "7 Feb 2020"}
@@ -385,7 +385,7 @@ games:
     venue:   "Sydney Showground Stadium"
     home:    "Sydney Thunder"
     away:    "Sydney Sixers"
-    score:   {thu: "2-28/(5.3/16)", six: "76/(15.5/16"}
+    score:   {thu: "2-28/(5.3/16)", six: "76/(15.5/16)"}
     result:  {thu: 2, six: 0}
     summary: "Sydney Thunder won by 4 runs (DLS method)"
   - round:   5
@@ -404,105 +404,139 @@ games:
     score:   {hea: "120/15", ren: "6-164/20"}
     result:  {hea: 0, ren: 2}
     summary: "Melbourne Renegades won by 44 runs"
-  - round:  5
-    time:   "20/01/2020 07:40"
-    venue:  "SCG"
-    home:   "Sydney Sixers"
-    away:   "Melbourne Stars"
-    result: {}
-  - round:  5
-    time:   "20/01/2020 10:40"
-    venue:  "Optus Stadium"
-    home:   "Perth Scorchers"
-    away:   "Sydney Thunder"
-    result: {}
-  - round:  6
-    time:   "21/01/2020 08:10"
-    venue:  "Marvel Stadium"
-    home:   "Melbourne Renegades"
-    away:   "Hobart Hurricanes"
-    result: {}
-  - round:  6
-    time:   "22/01/2020 08:10"
-    venue:  "Adelaide Oval"
-    home:   "Adelaide Strikers"
-    away:   "Melbourne Stars"
-    result: {}
-  - round:  6
-    time:   "23/01/2020 08:10"
-    venue:  "The Gabba"
-    home:   "Brisbane Heat"
-    away:   "Sydney Sixers"
-    result: {}
-  - round:  6
-    time:   "24/01/2020 07:10"
-    venue:  "Blundstone Arena"
-    home:   "Hobart Hurricanes"
-    away:   "Sydney Thunder"
-    result: {}
-  - round:  6
-    time:   "24/01/2020 10:10"
-    venue:  "Optus Stadium"
-    home:   "Perth Scorchers"
-    away:   "Adelaide Strikers"
-    result: {}
-  - round:  6
-    time:   "25/01/2020 04:40"
-    venue:  "SCG"
-    home:   "Sydney Sixers"
-    away:   "Melbourne Renegades"
-    result: {}
-  - round:  6
-    time:   "25/01/2020 08:10"
-    venue:  "MCG"
-    home:   "Melbourne Stars"
-    away:   "Brisbane Heat"
-    result: {}
-  - round:  6
-    time:   "26/01/2020 03:45"
-    venue:  "Sydney Showground Stadium"
-    home:   "Sydney Thunder"
-    away:   "Perth Scorchers"
-    result: {}
-  - round:  6
-    time:   "26/01/2020 08:10"
-    venue:  "Adelaide Oval"
-    home:   "Adelaide Strikers"
-    away:   "Hobart Hurricanes"
-    result: {}
-  - round:  6
-    time:   "27/01/2020 03:45"
-    venue:  "Marvel Stadium"
-    home:   "Melbourne Renegades"
-    away:   "Brisbane Heat"
-    result: {}
-  - round:  Eliminator
-    time:   "29/01/2020 13:00"
-    venue:  ""
-    home:   "To be announced"
-    away:   "To be announced"
-    result: {}
-  - round:  Qualifier / Knockout
-    time:   "30/01/2020 13:00"
-    venue:  ""
-    home:   "To be announced"
-    away:   "To be announced"
-    result: {}
-  - round:  Qualifier / Knockout
-    time:   "31/01/2020 13:00"
-    venue:  ""
-    home:   "To be announced"
-    away:   "To be announced"
-    result: {}
-  - round:  Challenger
-    time:   "05/02/2020 13:00"
-    venue:  ""
-    home:   "To be announced"
-    away:   "To be announced"
-    result: {}
-  - round:  Final
-    time:   "07/02/2020 13:00"
-    venue:  ""
-    home:   "To be announced"
-    away:   "To be announced"
-    result: {}
+  - round:   5
+    time:    "20/01/2020 07:40"
+    venue:   "SCG"
+    home:    "Sydney Sixers"
+    away:    "Melbourne Stars"
+    score:   {six: "4-143/14", sta: "5-125/14(147 req)"}
+    result:  {six: 2, sta: 0}
+    summary: "Sydney Sixers won by 21 runs (DLS method)"
+  - round:   5
+    time:    "20/01/2020 10:40"
+    venue:   "Optus Stadium"
+    home:    "Perth Scorchers"
+    away:    "Sydney Thunder"
+    score:   {sco: "2-154/15.3", thu: "5-153/20"}
+    result:  {sco: 2, thu: 0}
+    summary: "Perth Scorchers won by 8 wickets (with 27 balls remaining)"
+  - round:   6
+    time:    "21/01/2020 08:10"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Renegades"
+    away:    "Hobart Hurricanes"
+    score:   {ren: "4-186/20", hur: "3-190/20"}
+    result:  {ren: 0, hur: 2}
+    summary: "Hobart Hurricanes won by 4 runs"
+  - round:   6
+    time:    "22/01/2020 08:10"
+    venue:   "Adelaide Oval"
+    home:    "Adelaide Strikers"
+    away:    "Melbourne Stars"
+    score:   {str: "4-162/20", sta: "8-151/20"}
+    result:  {str: 2, sta: 0}
+    summary: "Adelaide Strikers won by 11 runs"
+  - round:   6
+    time:    "23/01/2020 08:10"
+    venue:   "The Gabba"
+    home:    "Brisbane Heat"
+    away:    "Sydney Sixers"
+    score:   {hea: "8-126/20", six: "2-127/15.5"}
+    result:  {hea: 0, six: 2}
+    summary: "Sydney Sixers won by 8 wickets (with 25 balls remaining)"
+  - round:   6
+    time:    "24/01/2020 07:10"
+    venue:   "Blundstone Arena"
+    home:    "Hobart Hurricanes"
+    away:    "Sydney Thunder"
+    score:   {hur: "6-185/20", thu: "128/17.3"}
+    result:  {hur: 2, thu: 0}
+    summary: "Hobart Hurricanes won by 57 runs"
+  - round:   6
+    time:    "24/01/2020 10:10"
+    venue:   "Optus Stadium"
+    home:    "Perth Scorchers"
+    away:    "Adelaide Strikers"
+    score:   {sco: "7-165/20", str: "5-181/20"}
+    result:  {sco: 0, str: 2}
+    summary: "Adelaide Strikers won by 16 runs"
+  - round:   6
+    time:    "25/01/2020 04:40"
+    venue:   "SCG"
+    home:    "Sydney Sixers"
+    away:    "Melbourne Renegades"
+    score:   {six: "3-176/18.4", ren: "5-175/20"}
+    result:  {six: 2, ren: 0}
+    summary: "Sydney Sixers won by 7 wickets (with 8 balls remaining)"
+  - round:   6
+    time:    "25/01/2020 08:10"
+    venue:   "MCG"
+    home:    "Melbourne Stars"
+    away:    "Brisbane Heat"
+    score:   {sta: "115/17.4", hea: "5-186/20"}
+    result:  {sta: 0, hea: 2}
+    summary: "Brisbane Heat won by 71 runs"
+  - round:   6
+    time:    "26/01/2020 03:45"
+    venue:   "Sydney Showground Stadium"
+    home:    "Sydney Thunder"
+    away:    "Perth Scorchers"
+    score:   {thu: "3-97/(11.4/12)(96 req)", sco: "4-99/15"}
+    result:  {thu: 2, sco: 0}
+    summary: "Sydney Thunder won by 7 wickets (with 2 ball required) (DLS method) "
+  - round:   6
+    time:    "26/01/2020 08:10"
+    venue:   "Adelaide Oval"
+    home:    "Adelaide Strikers"
+    away:    "Hobart Hurricanes"
+    score:   {str: "8-207", hur: "1-217/20"}
+    result:  {str: 0, hur: 2}
+    summary: "Hobart Hurricanes won by 10 runs"
+  - round:   6
+    time:    "27/01/2020 03:45"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Renegades"
+    away:    "Brisbane Heat"
+    score:   {ren: "3-155/19.2", hea: "7-154/20"}
+    result:  {ren: 2, hea: 0}
+    summary: "Melbourne Renegades won by 7 wickets (with 4 balls remaining)"
+  - round:   Eliminator
+    time:    "29/01/2020 13:00"
+    venue:   ""
+    home:    "Sydney Thunder"
+    away:    "Hobart Hurricanes"
+    score:   {thu: "5-197/20", hur: "140/18.3"}
+    result:  {thu: 2, hur: 0}
+    summary: "Sydney Thunder won by 57 runs"
+  - round:   Qualifier / Knockout
+    time:    "30/01/2020 13:00"
+    venue:   ""
+    home:    "Sydney Sixers"
+    away:    "Melbourne Stars"
+    score:   {six: "7-142/20", sta: "99/18"}
+    result:  {six: 2, sta: 0}
+    summary: "Sydney Sixers won by 43 runs"
+  - round:   Qualifier / Knockout
+    time:    "31/01/2020 13:00"
+    venue:   "Adelaide Oval"
+    home:    "Adelaide Strikers"
+    away:    "Sydney Thunder"
+    score:   {str: "9-143/20", thu: "7-151/20"}
+    result:  {str: 0, thu: 2}
+    summary: "Sydney Thunder won by 8 runs"
+  - round:   Challenger
+    time:    "05/02/2020 13:00"
+    venue:   ""
+    home:    "Melbourne Stars"
+    away:    "Sydney Thunder"
+    score:   {sta: "2-194/20", thu: "8-166/20"}
+    result:  {sta: 2, thu: 0}
+    summary: "Melbourne Stars won by 28 runs" 
+  - round:   Final
+    time:    "07/02/2020 13:00"
+    venue:   ""
+    home:    "Sydney Sixers"
+    away:    "Melbourne Stars"
+    score:   {six: "5-116/12", sta: "6-97/12"}
+    result:  {six: 2, sta: 0}
+    summary: "Sydney Sixers won by 19 runs"

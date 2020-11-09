@@ -13,6 +13,7 @@
                  [hickory "0.7.1"]         ;; Used for parsing HTML
                  [enlive "1.1.6"]          ;; Used for formatting/templating HTML (another library)
                  ]
+  :test-paths ["test/src"]
   :main ^:skip-aot sporting-fixtures.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

@@ -1,0 +1,202 @@
+---
+title:    "Womens T20 World Cup"
+location: "Australia"
+code:     "cricket"
+date:     {from: "21 feb 2020", to: "08 Mar 2020"}
+url:      ""
+version:  "1.0"
+name:     womens-t20-world-cup-2020
+filename: data/download/womens-t20-world-cup-2020-UTC.csv
+
+teams:   {}
+#  aus: {name: "Australia"}
+#  ind: {name: "India"}
+#  wes: {name: "West Indies"}
+
+venues:   {}
+
+games:
+  - round:   1
+    time:    "21/02/2020 08:00"
+    venue:   "Spotless Stadium"
+    home:    "Australia"
+    away:    "India"
+    score:   {aus: "115/19.5", ind: "4-132/20"}
+    result:  {aus: 0, ind: 2}
+    summary: "India won by 17 runs"
+  - round:   1
+    time:    "22/02/2020 07:00"
+    venue:   "WACA"
+    home:    "West Indies"
+    away:    "Thailand"
+    score:   {wes: -, tha: -}
+    result:  {wes: -, tha: -}
+    summary: ""
+  - round:   1
+    time:    "22/02/2020 11:00"
+    venue:   "WACA"
+    home:    "New Zealand"
+    away:    "Sri Lanka"
+    score:   {new: -, sri: -}
+    result:  {new: -, sri: -}
+    summary: ""
+  - round:   1
+    time:    "23/02/2020 11:00"
+    venue:   "WACA"
+    home:    "England"
+    away:    "South Africa"
+    score:   {eng: -, sou: -}
+    result:  {eng: -, sou: -}
+    summary: ""
+  - round:   2
+    time:    "24/02/2020 07:00"
+    venue:   "WACA"
+    home:    "Australia"
+    away:    "Sri Lanka"
+    score:   {aus: -, sri: -}
+    result:  {aus: -, sri: -}
+    summary: ""
+  - round:   2
+    time:    "24/02/2020 11:00"
+    venue:   "WACA"
+    home:    "India"
+    away:    "Bangladesh"
+    score:   {ind: -, ban: -}
+    result:  {ind: -, ban: -}
+    summary: ""
+  - round:   2
+    time:    "26/02/2020 04:00"
+    venue:   "Manuka Oval"
+    home:    "England"
+    away:    "Thailand"
+    score:   {eng: -, tha: -}
+    result:  {eng: -, tha: -}
+    summary: ""
+  - round:   2
+    time:    "26/02/2020 08:00"
+    venue:   "Manuka Oval"
+    home:    "West Indies"
+    away:    "Pakistan"
+    score:   {wes: -, pak: -}
+    result:  {wes: -, pak: -}
+    summary: ""
+  - round:   3
+    time:    "27/02/2020 04:00"
+    venue:   "Junction Oval"
+    home:    "India"
+    away:    "New Zealand"
+    score:   {ind: -, new: -}
+    result:  {ind: -, new: -}
+    summary: ""
+  - round:   3
+    time:    "27/02/2020 08:00"
+    venue:   "Manuka Oval"
+    home:    "Australia"
+    away:    "Bangladesh"
+    score:   {aus: -, ban: -}
+    result:  {aus: -, ban: -}
+    summary: ""
+  - round:   3
+    time:    "28/02/2020 04:00"
+    venue:   "Manuka Oval"
+    home:    "South Africa"
+    away:    "Thailand"
+    score:   {sou: -, tha: -}
+    result:  {sou: -, tha: -}
+    summary: ""
+  - round:   3
+    time:    "28/02/2020 08:00"
+    venue:   "Manuka Oval"
+    home:    "England"
+    away:    "Pakistan"
+    score:   {eng: -, pak: -}
+    result:  {eng: -, pak: -}
+    summary: ""
+  - round:   4
+    time:    "29/02/2020 00:00"
+    venue:   "Junction Oval"
+    home:    "New Zealand"
+    away:    "Bangladesh"
+    score:   {new: -, ban: -}
+    result:  {new: -, ban: -}
+    summary: ""
+  - round:   4
+    time:    "29/02/2020 04:00"
+    venue:   "Junction Oval"
+    home:    "India"
+    away:    "Sri Lanka"
+    score:   {ind: -, sri: -}
+    result:  {ind: -, sri: -}
+    summary: ""
+  - round:   4
+    time:    "01/03/2020 04:00"
+    venue:   "Spotless Stadium"
+    home:    "South Africa"
+    away:    "Pakistan"
+    score:   {sou: -, pak: -}
+    result:  {sou: -, pak: -}
+    summary: ""
+  - round:   4
+    time:    "01/03/2020 08:00"
+    venue:   "Spotless Stadium"
+    home:    "England"
+    away:    "West Indies"
+    score:   {eng: -, wes: -}
+    result:  {eng: -, wes: -}
+    summary: ""
+  - round:   5
+    time:    "02/03/2020 00:00"
+    venue:   "Junction Oval"
+    home:    "Sri Lanka"
+    away:    "Bangladesh"
+    score:   {sri: -, ban: -}
+    result:  {sri: -, ban: -}
+    summary: ""
+  - round:   5
+    time:    "02/03/2020 04:00"
+    venue:   "Junction Oval"
+    home:    "Australia"
+    away:    "New Zealand"
+    score:   {aus: -, new: -}
+    result:  {aus: -, new: -}
+    summary: ""
+  - round:   5
+    time:    "03/03/2020 04:00"
+    venue:   "Spotless Stadium"
+    home:    "Pakistan"
+    away:    "Thailand"
+    score:   {pak: -, tha: -}
+    result:  {pak: -, tha: -}
+    summary: ""
+  - round:   5
+    time:    "03/03/2020 08:00"
+    venue:   "Spotless Stadium"
+    home:    "West Indies"
+    away:    "South Africa"
+    score:   {wes: -, sou: -}
+    result:  {wes: -, sou: -}
+    summary: ""
+  - round:   Semi Finals
+    time:    "05/03/2020 04:00"
+    venue:   "Sydney Cricket Ground"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Semi Finals
+    time:    "05/03/2020 08:00"
+    venue:   "Sydney Cricket Ground"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Final
+    time:    "08/03/2020 07:00"
+    venue:   "Melbourne Cricket Ground"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""

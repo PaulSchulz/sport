@@ -1,0 +1,518 @@
+---
+title:    "2020 AFL Womens"
+location: "Australia"
+code:     "afl"
+date:     {from: "7 Feb 2020", to: "7 Feb 2020"}
+url:      ""
+version:  "1.0"
+name:     aflw-2020
+filename: data/2020-aus-aflw.yml
+
+# These details had to be added by hand.
+teams:
+  ade: {name: "Adelaide Crows",    conference: a}
+  kan: {name: "Kangaroos",         conference: a}
+  gee: {name: "Geelong",           conference: a}
+  gws: {name: "GWS Giants",        conference: a}  
+  bri: {name: "Brisbane Lions",    conference: a}
+  gol: {name: "Gold Coast Suns",   conference: a}
+  ric: {name: "Richmond Tigers",   conference: a}
+  fre: {name: "Fremantle",         conference: b}
+  mel: {name: "Melbourne",         conference: b}
+  wbd: {name: "Western Bulldogs",  conference: b}  
+  car: {name: "Carlton",           conference: b}
+  col: {name: "Collingwood",       conference: b}
+  stk: {name: "St Kilda",          conference: b}
+  wce: {name: "West Coast Eagles", conference: b}
+
+venues:   {}
+
+games:
+  - round:   1
+    time:    "07/02/2020 08:45"
+    venue:   "Ikon Park"
+    home:    "Richmond"
+    away:    "Carlton"
+    score:   {ric: [2,2,14], car: [6,12,48]}
+    result:  {ric: 0, car: 4}
+    summary: ""
+  - round:   1
+    time:    "08/02/2020 02:10"
+    venue:   "Blacktown International Sportspark"
+    home:    "GWS Giants"
+    away:    "Gold Coast Suns"
+    score:   {gws: [1,3,9], gol: [1,2,8]}
+    result:  {gws: 4, gol: 0}
+    summary: ""
+  - round:   1
+    time:    "08/02/2020 04:10"
+    venue:   "Casey Fields"
+    home:    "Melbourne"
+    away:    "Kangaroos"
+    score:   {mel: [3,4,22], kan: [3,2,20]}
+    result:  {mel: 4, kan: 0}
+    summary: ""
+  - round:   1
+    time:    "08/02/2020 06:10"
+    venue:   "Hickey Park"
+    home:    "Brisbane Lions"
+    away:    "Adelaide Crows"
+    score:   {bri: [5,4,34], ade: [3,3,21]}
+    result:  {bri: 4, ade: 0}
+    summary: ""
+  - round:   1
+    time:    "09/02/2020 02:10"
+    venue:   "Victoria Park"
+    home:    "Collingwood"
+    away:    "West Coast Eagles"
+    score:   {col: [5,8,38], wce: [1,5,11]}
+    result:  {col: 4, wce: 0}
+    summary: ""
+  - round:   1
+    time:    "09/02/2020 04:10"
+    venue:   "RSEA Park"
+    home:    "St Kilda"
+    away:    "Western Bulldogs"
+    score:   {stk: [2,2,14], wbd: [6,3,39]}
+    result:  {stk: 0, wbd: 4}
+    summary: ""
+  - round:   1
+    time:    "09/02/2020 06:10"
+    venue:   "Fremantle Oval"
+    home:    "Fremantle"
+    away:    "Geelong Cats"
+    score:   {fre: [6,8,44], gee: [4,4,28]}
+    result:  {fre: 4, gee: 0}
+    summary: ""
+  - round:   2
+    time:    "14/02/2020 08:40"
+    venue:   "Victoria University Whitten Oval"
+    home:    "Western Bulldogs"
+    away:    "Melbourne"
+    score:   {wbd: [2,0,12], mel: [4,8,32]}
+    result:  {wbd: 0, mel: 4}
+    summary: ""
+  - round:   2
+    time:    "15/02/2020 04:10"
+    venue:   "University of Tasmania Stadium"
+    home:    "Kangaroos"
+    away:    "GWS Giants"
+    score:   {kan: [6,1,37], gws: [2,7,19]}
+    result:  {kan: 4, gws: 0}
+    summary: ""
+  - round:   2
+    time:    "15/02/2020 06:10"
+    venue:   "Metricon Stadium"
+    home:    "Gold Coast Suns"
+    away:    "Richmond"
+    score:   {gol: [5,3,33], ric: [2,10,22]}
+    result:  {gol: 4, ric: 0}
+    summary: ""
+  - round:   2
+    time:    "15/02/2020 08:10"
+    venue:   "Optus Stadium"
+    home:    "West Coast Eagles"
+    away:    "Fremantle"
+    score:   {wce: [2,3,15], fre: [9,6,60]}
+    result:  {wce: 0, fre: 4}
+    summary: ""
+  - round:   2
+    time:    "16/02/2020 02:10"
+    venue:   "GMHBA Stadium"
+    home:    "Geelong Cats"
+    away:    "Brisbane Lions"
+    score:   {gee: [3,2,20], bri: [6,3,39]}
+    result:  {gee: 0, bri: 4}
+    summary: ""
+  - round:   2
+    time:    "16/02/2020 04:10"
+    venue:   "Ikon Park"
+    home:    "Carlton"
+    away:    "Collingwood"
+    score:   {car: [3,6,24], col: [6,3,39]}
+    result:  {car: 0, col: 4}
+    summary: ""
+  - round:   2
+    time:    "16/02/2020 06:10"
+    venue:   "Hisense Stadium"
+    home:    "Adelaide Crows"
+    away:    "St Kilda"
+    score:   {ade: [6,4,40], stk: [4,3,27]}
+    result:  {ade: 4, stk: 0}
+    summary: ""
+  - round:   3
+    time:    "21/02/2020 08:10"
+    venue:   "RSEA Park"
+    home:    "St Kilda"
+    away:    "Melbourne"
+    score:   {stk: [3,1,19], mel: [1,8,14]}
+    result:  {stk: 4, mel: 0}
+    summary: ""
+  - round:   3
+    time:    "22/02/2020 04:10"
+    venue:   "Victoria University Whitten Oval"
+    home:    "Western Bulldogs"
+    away:    "Carlton"
+    score:   {wbd: [4,6,30], car: [8,3,51]}
+    result:  {wbd: 0, car: 4}
+    summary: ""
+  - round:   3
+    time:    "22/02/2020 06:10"
+    venue:   "Metricon Stadium"
+    home:    "Gold Coast Suns"
+    away:    "Brisbane Lions"
+    score:   {gol: [4,4,28], bri: [4,4,28]}
+    result:  {gol: 2, bri: 2}
+    summary: ""
+  - round:   3
+    time:    "22/02/2020 08:10"
+    venue:   "Fremantle Oval"
+    home:    "Fremantle"
+    away:    "Collingwood"
+    score:   {fre: [5,3,33], col: [4,6,30]}
+    result:  {fre: 4, col: 0}
+    summary: ""
+  - round:   3
+    time:    "23/02/2020 02:10"
+    venue:   "Blacktown International Sportspark"
+    home:    "GWS Giants"
+    away:    "West Coast Eagles"
+    score:   {gws: [6,6,42], wce: [2,2,14]}
+    result:  {gws: 4, wce: 0}
+    summary: ""
+  - round:   3
+    time:    "23/02/2020 04:10"
+    venue:   "Ikon Park"
+    home:    "Richmond"
+    away:    "Kangaroos"
+    score:   {ric: [2,8,20], kan: [12,4,76]}
+    result:  {ric: 0, kan: 4}
+    summary: ""
+  - round:   3
+    time:    "23/02/2020 06:10"
+    venue:   "GMHBA Stadium"
+    home:    "Geelong Cats"
+    away:    "Adelaide Crows"
+    score:   {gee: [6,2,38], ade: [8,1,49]}
+    result:  {gee: 0, ade: 4}
+    summary: ""
+  - round:   4
+    time:    "28/02/2020 06:40"
+    venue:   "Marvel Stadium"
+    home:    "Collingwood"
+    away:    "Melbourne"
+    score:   {col: -, mel: -}
+    result:  {col: -, mel: -}
+    summary: ""
+  - round:   4
+    time:    "29/02/2020 04:10"
+    venue:   "Queen Elizabeth Oval"
+    home:    "Richmond"
+    away:    "Geelong Cats"
+    score:   {ric: -, gee: -}
+    result:  {ric: -, gee: -}
+    summary: ""
+  - round:   4
+    time:    "29/02/2020 06:10"
+    venue:   "Arden Street Oval"
+    home:    "Kangaroos"
+    away:    "Gold Coast Suns"
+    score:   {kan: -, gol: -}
+    result:  {kan: -, gol: -}
+    summary: ""
+  - round:   4
+    time:    "29/02/2020 08:10"
+    venue:   "Leederville Oval"
+    home:    "West Coast Eagles"
+    away:    "Western Bulldogs"
+    score:   {wce: -, wbd: -}
+    result:  {wce: -, wbd: -}
+    summary: ""
+  - round:   4
+    time:    "01/03/2020 02:10"
+    venue:   "Hisense Stadium"
+    home:    "Adelaide Crows"
+    away:    "Carlton"
+    score:   {ade: -, car: -}
+    result:  {ade: -, car: -}
+    summary: ""
+  - round:   4
+    time:    "01/03/2020 04:10"
+    venue:   "RSEA Park"
+    home:    "St Kilda"
+    away:    "Fremantle"
+    score:   {stk: -, fre: -}
+    result:  {stk: -, fre: -}
+    summary: ""
+  - round:   4
+    time:    "01/03/2020 06:10"
+    venue:   "Hickey Park"
+    home:    "Brisbane Lions"
+    away:    "GWS Giants"
+    score:   {bri: -, gws: -}
+    result:  {bri: -, gws: -}
+    summary: ""
+  - round:   5
+    time:    "06/03/2020 08:10"
+    venue:   "Great Barrier Reef Arena"
+    home:    "Gold Coast Suns"
+    away:    "Geelong Cats"
+    score:   {gol: -, gee: -}
+    result:  {gol: -, gee: -}
+    summary: ""
+  - round:   5
+    time:    "07/03/2020 04:10"
+    venue:   "North Hobart Oval"
+    home:    "Kangaroos"
+    away:    "Adelaide Crows"
+    score:   {kan: -, ade: -}
+    result:  {kan: -, ade: -}
+    summary: ""
+  - round:   5
+    time:    "07/03/2020 06:10"
+    venue:   "Robertson Oval"
+    home:    "GWS Giants"
+    away:    "Richmond"
+    score:   {gws: -, ric: -}
+    result:  {gws: -, ric: -}
+    summary: ""
+  - round:   5
+    time:    "07/03/2020 08:10"
+    venue:   "Ikon Park"
+    home:    "Carlton"
+    away:    "St Kilda"
+    score:   {car: -, stk: -}
+    result:  {car: -, stk: -}
+    summary: ""
+  - round:   5
+    time:    "08/03/2020 02:10"
+    venue:   "Morwell Recreation Reserve"
+    home:    "Collingwood"
+    away:    "Western Bulldogs"
+    score:   {col: -, wbd: -}
+    result:  {col: -, wbd: -}
+    summary: ""
+  - round:   5
+    time:    "08/03/2020 04:10"
+    venue:   "Casey Fields"
+    home:    "Melbourne"
+    away:    "West Coast Eagles"
+    score:   {mel: -, wce: -}
+    result:  {mel: -, wce: -}
+    summary: ""
+  - round:   5
+    time:    "08/03/2020 06:10"
+    venue:   "Fremantle Oval"
+    home:    "Fremantle"
+    away:    "Brisbane Lions"
+    score:   {fre: -, bri: -}
+    result:  {fre: -, bri: -}
+    summary: ""
+  - round:   6
+    time:    "13/03/2020 08:10"
+    venue:   "GMHBA Stadium"
+    home:    "Geelong Cats"
+    away:    "Kangaroos"
+    score:   {gee: -, kan: -}
+    result:  {gee: -, kan: -}
+    summary: ""
+  - round:   6
+    time:    "14/03/2020 04:10"
+    venue:   "Hickey Park"
+    home:    "Brisbane Lions"
+    away:    "Collingwood"
+    score:   {bri: -, col: -}
+    result:  {bri: -, col: -}
+    summary: ""
+  - round:   6
+    time:    "14/03/2020 06:10"
+    venue:   "RSEA Park"
+    home:    "St Kilda"
+    away:    "Richmond"
+    score:   {stk: -, ric: -}
+    result:  {stk: -, ric: -}
+    summary: ""
+  - round:   6
+    time:    "14/03/2020 08:40"
+    venue:   "TIO Traeger Park"
+    home:    "Melbourne"
+    away:    "Carlton"
+    score:   {mel: -, car: -}
+    result:  {mel: -, car: -}
+    summary: ""
+  - round:   6
+    time:    "15/03/2020 02:10"
+    venue:   "Victoria University Whitten Oval"
+    home:    "Western Bulldogs"
+    away:    "Fremantle"
+    score:   {wbd: -, fre: -}
+    result:  {wbd: -, fre: -}
+    summary: ""
+  - round:   6
+    time:    "15/03/2020 04:10"
+    venue:   "Hisense Stadium"
+    home:    "Adelaide Crows"
+    away:    "GWS Giants"
+    score:   {ade: -, gws: -}
+    result:  {ade: -, gws: -}
+    summary: ""
+  - round:   6
+    time:    "15/03/2020 06:10"
+    venue:   "Mineral Resources Park"
+    home:    "West Coast Eagles"
+    away:    "Gold Coast Suns"
+    score:   {wce: -, gol: -}
+    result:  {wce: -, gol: -}
+    summary: ""
+  - round:   7
+    time:    "20/03/2020 06:45"
+    venue:   "Ikon Park"
+    home:    "Richmond"
+    away:    "Brisbane Lions"
+    score:   {ric: -, bri: -}
+    result:  {ric: -, bri: -}
+    summary: ""
+  - round:   7
+    time:    "21/03/2020 02:10"
+    venue:   "Ikon Park"
+    home:    "Carlton"
+    away:    "West Coast Eagles"
+    score:   {car: -, wce: -}
+    result:  {car: -, wce: -}
+    summary: ""
+  - round:   7
+    time:    "21/03/2020 04:10"
+    venue:   "Arden Street Oval"
+    home:    "Kangaroos"
+    away:    "Western Bulldogs"
+    score:   {kan: -, wbd: -}
+    result:  {kan: -, wbd: -}
+    summary: ""
+  - round:   7
+    time:    "21/03/2020 06:10"
+    venue:   "GIANTS Stadium"
+    home:    "GWS Giants"
+    away:    "Geelong Cats"
+    score:   {gws: -, gee: -}
+    result:  {gws: -, gee: -}
+    summary: ""
+  - round:   7
+    time:    "22/03/2020 02:10"
+    venue:   "Fankhauser Reserve"
+    home:    "Gold Coast Suns"
+    away:    "Adelaide Crows"
+    score:   {gol: -, ade: -}
+    result:  {gol: -, ade: -}
+    summary: ""
+  - round:   7
+    time:    "22/03/2020 05:10"
+    venue:   "Fremantle Oval"
+    home:    "Fremantle"
+    away:    "Melbourne"
+    score:   {fre: -, mel: -}
+    result:  {fre: -, mel: -}
+    summary: ""
+  - round:   7
+    time:    "22/03/2020 07:10"
+    venue:   "Victoria Park"
+    home:    "Collingwood"
+    away:    "St Kilda"
+    score:   {col: -, stk: -}
+    result:  {col: -, stk: -}
+    summary: ""
+  - round:   8
+    time:    "27/03/2020 06:45"
+    venue:   "Victoria University Whitten Oval"
+    home:    "Western Bulldogs"
+    away:    "GWS Giants"
+    score:   {wbd: -, gws: -}
+    result:  {wbd: -, gws: -}
+    summary: ""
+  - round:   8
+    time:    "28/03/2020 02:10"
+    venue:   "Marvel Stadium"
+    home:    "Carlton"
+    away:    "Fremantle"
+    score:   {car: -, fre: -}
+    result:  {car: -, fre: -}
+    summary: ""
+  - round:   8
+    time:    "28/03/2020 04:10"
+    venue:   "GMHBA Stadium"
+    home:    "Geelong Cats"
+    away:    "Collingwood"
+    score:   {gee: -, col: -}
+    result:  {gee: -, col: -}
+    summary: ""
+  - round:   8
+    time:    "28/03/2020 06:10"
+    venue:   "Gabba"
+    home:    "Brisbane Lions"
+    away:    "Kangaroos"
+    score:   {bri: -, kan: -}
+    result:  {bri: -, kan: -}
+    summary: ""
+  - round:   8
+    time:    "29/03/2020 02:10"
+    venue:   "Unley Oval"
+    home:    "Adelaide Crows"
+    away:    "Richmond"
+    score:   {ade: -, ric: -}
+    result:  {ade: -, ric: -}
+    summary: ""
+  - round:   8
+    time:    "29/03/2020 05:10"
+    venue:   "Casey Fields"
+    home:    "Melbourne"
+    away:    "Gold Coast Suns"
+    score:   {mel: -, gol: -}
+    result:  {mel: -, gol: -}
+    summary: ""
+  - round:   8
+    time:    "29/03/2020 07:10"
+    venue:   "Mineral Resources Park"
+    home:    "West Coast Eagles"
+    away:    "St Kilda"
+    score:   {wce: -, stk: -}
+    result:  {wce: -, stk: -}
+    summary: ""
+  - round:   Elimination Finals
+    time:    "03/04/2020 13:00"
+    venue:   "TBA"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Elimination Finals
+    time:    "04/04/2020 13:00"
+    venue:   "TBA"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Preliminary Finals
+    time:    "10/04/2020 14:00"
+    venue:   "TBA"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Preliminary Finals
+    time:    "11/04/2020 14:00"
+    venue:   "TBA"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Grand Final
+    time:    "17/04/2020 14:00"
+    venue:   "TBA"
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""

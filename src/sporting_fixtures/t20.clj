@@ -1,4 +1,4 @@
-(ns sporting-fixtures.bbl
+(ns sporting-fixtures.t20
   (:require [clojure.data.csv :as csv]
             [clojure.java.io  :as io]
             [clojure.string   :as str]
@@ -10,6 +10,7 @@
             [clj-time.local   :as l]
             [clojure.pprint]
             )
+  (:require [sporting-fixtures.utils :as utils])
   (:gen-class)
   )
 
@@ -17,23 +18,15 @@
 (defn -help []
 ;; Process downloaded file
 ;; Use from command line with:
-  (println "lein run -m sporting-fixtures.bbl")
+  (println "lein run -m sporting-fixtures.t20")
   )
 ;;
 ;; Development
-;;   (require '[sporting-fixtures.bbl])
-;;   (ns sporting-fixtures.bbl)
-;;
-;; or
-;;   (ns sporting-fixtures.bbl)
-;;   (load "bbl")
-;;   (use 'sporting-fixtures.afl)
-;;   (use 'clojure.core)
-;;   (clojure.pprint/pprint (read-event-data filename))
-;;   (clojure.pprint/pprint (rest (reduce conj [] (read-event-data filename)) ))
+;;   (require '[sporting-fixtures.t20])
+;;   (ns sporting-fixtures.t20)
 ;;
 
-(def event-name   "2019-aus-bbl")
+(def event-name   "2020-aus-womens-t20-worldcup")
 (def event-data   "data/")
 (def filename     (str event-data event-name ".yml"))
 
@@ -83,6 +76,7 @@
 
     (if (and home away result)
     (let [home-points (home result)
+
           away-points (away result)]
       (if (and home-points away-points)
         (cond
@@ -395,22 +389,22 @@
   )
 )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Change home and away team names to keywords.
+(defn modify-teamnames [games]
+  (map (fn [x]
+         (merge x {:home (utils/keyword-team (:home x))
+                   :away (utils/keyword-team (:away x))}))
+       games
+       ))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; The following is required to map the team names to keywords.
 ;; Need to carry through all elements of the event data structure.
 (defn remap-event [event]
   (let [games (:games event)
         teams (:teams event)
-        team-by-id    (into {} (for [[k v] teams] [k (:name v)]))
-        team-by-name  (clojure.set/map-invert team-by-id)                     
         ]
-    {:teams teams
-     :games
-     (map (fn [game]
-            (let [home-id (team-by-name (:home game))
-                  away-id (team-by-name (:away game))]
-              (conj game {:home home-id} {:away away-id})))
-          games)
-     }
+    (merge event {:games (modify-teamnames games)})
     ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -440,7 +434,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
   (-help)
-  (let [event (read-event-data filename)
+  (let [event (utils/get-event filename)
         games (:games event)
         teams (:teams event)]
     (println (create-event-report event)))

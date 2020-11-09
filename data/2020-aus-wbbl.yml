@@ -1,0 +1,344 @@
+---
+title:     "2020 WBBL - Womens Bib Bash League"
+location:  "Australia"
+code:      "cricket"
+date:      {from: "25 Oct 2020", to: "29 Nov 2020"}
+version:   "1.0"
+name:      "2020-aus-wbbl" 
+filename:  "data/2020-aus-wbbl.yml"
+url:       ""
+
+teams:
+  hur: {name: "Hobart Hurricanes Women"}
+  ren: {name: "Melbourne Renegades Women"}
+  str: {name: "Adelaide Strikers Women"}
+  sta: {name: "Melbourne Stars Women"}
+  six: {name: "Sydney Sixers Women"}
+  sco: {name: "Perth Scorchers Women"}
+  thu: {name: "Sydney Thunder Women"}
+  hea: {name: "Brisbane Heat Women"}
+
+venues:
+  - North Sydney Oval, Sydney
+  - Blacktown International Sportspark, Sydney
+  - Drummoyne Oval, Sydney
+  - Hurstville Oval, Sydney
+  - Sydney Showground Stadium
+
+games:
+  - game:     "match-25"
+    home:     "Hobart Hurricanes Women"
+    away:     "Sydney Thunder Women"
+    datetime: "07/11/2020 22:00"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {hur: "7-127", thu: "7-129"}
+    result:   {hur: 0, thu: 2}
+    summary:  "Sydney Thunder won by 1 run"
+
+  - game:     "match-26"
+    home:     "Melbourne Renegades Women"
+    away:     "Adelaide Strikers Women"
+    datetime: "07/11/2020 23:00"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {ren: "8-121", str: "9-127"}
+    result:   {ren: 0, str: 2}
+    summary:  "Adelaide Strikers won by 6 runs"
+
+  - game:     "match-27"
+    home:     "Brisbane Heat Women"
+    away:     "Melbourne Stars Women"
+    datetime: "08/11/2020 02:00"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {hea: "8-154", sta: "9-177"}
+    result:   {hea: 0, sta: 2}
+    summary:  "Melbourne Stars won by 23 runs"
+
+  - game:     "match-28"
+    home:     "Sydney Sixers Women"
+    away:     "Perth Scorchers Women"
+    datetime: "08/11/2020 03:00"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {six: "5-147", sco: "4-183"}
+    result:   {six: 0, sco: 2}
+    summary:  "Perth Scorchers won by 36 runs"
+
+  - game:     "match-29"
+    home:     "Melbourne Stars Women"
+    away:     "Adelaide Strikers Women"
+    datetime: "10/11/2020 03:00"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-30"
+    home:     "Melbourne Renegades Women"
+    away:     "Hobart Hurricanes Women"
+    datetime: "10/11/2020 08:00"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-31"
+    home:     "Perth Scorchers Women"
+    away:     "Sydney Sixers Women"
+    datetime: "11/11/2020 03:00"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-32"
+    home:     "Brisbane Heat Women"
+    away:     "Sydney Thunder Women"
+    datetime: "11/11/2020 08:00"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-33"
+    home:     "Perth Scorchers Women"
+    away:     "Melbourne Renegades Women"
+    datetime: "14/11/2020 01:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-34"
+    home:     "Adelaide Strikers Women"
+    away:     "Brisbane Heat Women"
+    datetime: "14/11/2020 03:00"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-35"
+    home:     "Hobart Hurricanes Women"
+    away:     "Sydney Sixers Women"
+    datetime: "14/11/2020 04:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-36"
+    home:     "Sydney Thunder Women"
+    away:     "Melbourne Stars Women"
+    datetime: "14/11/2020 08:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-37"
+    home:     "Adelaide Strikers Women"
+    away:     "Sydney Sixers Women"
+    datetime: "14/11/2020 22:00"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-38"
+    home:     "Sydney Thunder Women"
+    away:     "Perth Scorchers Women"
+    datetime: "14/11/2020 23:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-39"
+    home:     "Melbourne Stars Women"
+    away:     "Melbourne Renegades Women"
+    datetime: "15/11/2020 02:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-40"
+    home:     "Hobart Hurricanes Women"
+    away:     "Brisbane Heat Women"
+    datetime: "15/11/2020 03:00"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-41"
+    home:     "Hobart Hurricanes Women"
+    away:     "Adelaide Strikers Women"
+    datetime: "16/11/2020 22:00"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-43"
+    home:     "Perth Scorchers Women"
+    away:     "Melbourne Stars Women"
+    datetime: "17/11/2020 03:00"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-42"
+    home:     "Sydney Sixers Women"
+    away:     "Brisbane Heat Women"
+    datetime: "17/11/2020 03:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-44"
+    home:     "Sydney Thunder Women"
+    away:     "Melbourne Renegades Women"
+    datetime: "17/11/2020 08:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-45"
+    home:     "Brisbane Heat Women"
+    away:     "Perth Scorchers Women"
+    datetime: "17/11/2020 22:00"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-47"
+    home:     "Melbourne Stars Women"
+    away:     "Hobart Hurricanes Women"
+    datetime: "18/11/2020 03:00"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-46"
+    home:     "Adelaide Strikers Women"
+    away:     "Melbourne Renegades Women"
+    datetime: "18/11/2020 03:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-48"
+    home:     "Sydney Thunder Women"
+    away:     "Sydney Sixers Women"
+    datetime: "18/11/2020 08:00"
+    venue:    "Sydney Showground Stadium"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-49"
+    home:     "Melbourne Stars Women"
+    away:     "Brisbane Heat Women"
+    datetime: "20/11/2020 22:00"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-50"
+    home:     "Adelaide Strikers Women"
+    away:     "Sydney Thunder Women"
+    datetime: "21/11/2020 03:00"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-51"
+    home:     "Hobart Hurricanes Women"
+    away:     "Perth Scorchers Women"
+    datetime: "21/11/2020 04:00"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-52"
+    home:     "Sydney Sixers Women"
+    away:     "Melbourne Renegades Women"
+    datetime: "21/11/2020 08:00"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-53"
+    home:     "Sydney Thunder Women"
+    away:     "Hobart Hurricanes Women"
+    datetime: "21/11/2020 22:00"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-54"
+    home:     "Perth Scorchers Women"
+    away:     "Adelaide Strikers Women"
+    datetime: "21/11/2020 23:00"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-55"
+    home:     "Melbourne Stars Women"
+    away:     "Sydney Sixers Women"
+    datetime: "22/11/2020 02:00"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "match-56"
+    home:     "Melbourne Renegades Women"
+    away:     "Brisbane Heat Women"
+    datetime: "22/11/2020 03:00"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "semi-final-1"
+    home:     "TBD"
+    away:     "TBD"
+    datetime: "25/11/2020 00:00"
+    venue:    ""
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "semi-final-2"
+    home:     "TBD"
+    away:     "TBD"
+    datetime: "25/11/2020 00:00"
+    venue:    ""
+    score:    {}
+    result:   {}
+    summary:  ""
+
+  - game:     "final"
+    home:     "TBD"
+    away:     "TBD"
+    datetime: "29/11/2020 00:00"
+    venue:    ""
+    score:    {}
+    result:   {}
+    summary:  ""
+
+
