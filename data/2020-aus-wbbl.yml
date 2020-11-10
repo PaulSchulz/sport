@@ -19,19 +19,235 @@ teams:
   hea: {name: "Brisbane Heat Women"}
 
 venues:
-  - North Sydney Oval, Sydney
-  - Blacktown International Sportspark, Sydney
-  - Drummoyne Oval, Sydney
-  - Hurstville Oval, Sydney
-  - Sydney Showground Stadium
+  - "North Sydney Oval, Sydney"
+  - "Blacktown International Sportspark, Sydney"
+  - "Drummoyne Oval, Sydney"
+  - "Hurstville Oval, Sydney"
+  - "Sydney Showground Stadium"
 
 games:
+  - game:     "match-1"
+    home:     "Perth Scorchers Women"
+    away:     "Brisbane Heat Women"
+    datetime: "25/10/2020"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {sco: "7-132/20.0", hea: "3-134/17.0"}
+    result:   {sco: 0, hea: 2}
+    summary:  "Brisbane Heat won by 7 wickets"
+
+  - game:     "match-2"
+    home:     "Adelaide Strikers Women"
+    away:     "Hobart Hurricanes Women"
+    datetime: "25/10/2020"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {str: "2-85/14.0", hur: "84/16.3"}
+    result:   {str: 2, hur: 0}
+    summary:  "Adelaide Strikers won by 8 wickets"
+
+  - game:     "match-3"
+    home:     "Sydney Sixers Women"
+    away:     "Sydney Thunder Women"
+    datetime: "25/10/2020"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {six: "", thu: ""}
+    result:   {six: 1, thu: 1}
+    summary:  "Match abandoned without a ball bowled"
+
+  - game:     "match-4"
+    home:     "Melbourne Renegades Women"
+    away:     "Melbourne Stars Women"
+    datetime: "25/10/2020"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {ren: "", sta: "4-127/17.0"}
+    result:   {ren: 1, sta: 1}
+    summary:  "No result"
+
+  - game:     "match-5"
+    home:     "Brisbane Heat Women"
+    away:     "Melbourne Renegades Women"
+    datetime: "26/10/2020"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {hea: "", ren: ""}
+    result:   {hea: 1, ren: 1}
+    summary:  "Match abandoned without a ball bowled"
+
+  - game:     "match-6"
+    home:     "Melbourne Stars Women"
+    away:     "Sydney Thunder Women"
+    datetime: "26/10/2020"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {sta: "", thu: "2-13/4.0"}
+    result:   {sta: 1, thu: 1}
+    summary:  "No result"
+
+  - game:     "match-7"
+    home:     "Perth Scorchers Women"
+    away:     "Hobart Hurricanes Women"
+    datetime: "26/10/2020"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {sco: "", hur: ""}
+    result:   {sco: 1, hur: 1}
+    summary:  "Match abandoned without a ball bowled"
+
+  - game:     "match-8"
+    home:     "Sydney Thunder Women"
+    away:     "Adelaide Strikers Women"
+    datetime: "31/10/2020"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {thu: "6-190/20.0", str: "8-132/30.0"}
+    result:   {thu: 2, str: 0}
+    summary:  "Sydney Thunder won by 58 runs"
+
+  - game:     "match-9"
+    home:     "Sydney Sixers Womem"
+    away:     "Adelaide Strikers Women"
+    datetime: "26/10/2020"
+    venue:    "Sydney Showground Stadium"
+    score:    {six: "1-47/5.4", str: "7-68/9.0"}
+    result:   {six: 2, str: 0}
+    summary:  "Sydney Sixers won by 9 wickets (DLS Method)"
+
+  - game:     "match-10"
+    home:     "Melbourne Renegades Women"
+    away:     "Perth Scorchers Women"
+    datetime: "31/10/2020"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {ren: "5-105/20.0", sco: "0-62/9.5"}
+    result:   {ren: 0, sco: 2}
+    summary:  "Perth Scorchers won by 18 runs (DLS Method)"
+
+  - game:     "match-11"
+    home:     "Brisbane Heat Women"
+    away:     "Hobart Hurricanes Women"
+    datetime: "31/10/2020`"
+    venue:    "Sydney Showground Stadium"
+    score:    {hea: "2-80/11.0", hur: "0-43/4.3"}
+    result:   {hea: 1, hur: 1}
+    summary:  "No result"
+
+  - game:     "match-12"
+    home:     "Sydney Sixers Women"
+    away:     "Melbourne Stars Women"
+    datetime: "31/10/2020"
+    venue:    "Sydney Showground Stadium"
+    score:    {six: "", sta: ""}
+    result:   {six: 1, sta: 1}
+    summary:  "Match abandoned without a ball bowled"
+
+  - game:     "match-13"
+    home:     "Adelaide Striker Women"
+    away:     "Perth Scorchers Women"
+    datetime: "01/11/2020"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {str: "4-70/10.0", sco: "1-25/2.5"}
+    result:   {str: 1, sco: 1}
+    summary:  "No result"
+
+  - game:     "match-14"
+    home:     "Sydney Thunder Women"
+    away:     "Brisbane Heat Women"
+    datetime: "01/11/2020"
+    venue:    "Sydney Showground Stadium"
+    score:    {thu: "3-80/12.1", hea: "7-30/5.0"}
+    result:   {thu: 2, hea: 0}
+    summary:  "Sydney Thunder won by 14 runs (DLS Method)"
+
+  - game:     "match-15"
+    home:     "Melbourne Renegades Women"
+    away:     "Sydney Sixers Women"
+    datetime: "01/11/2020"
+    venue:    "Sydney Showground Stadium"
+    score:    {ren: "7-119/18.0", six: "2-121/13.1"}
+    result:   {ren: 0, six: 2}
+    summary:  "Sydney Sixers wom by 8 wickets (DLS Method)"
+
+  - game:     "match-16"
+    home:     "Hobart Hurricanes Women"
+    away:     "Melbourne Stars Women"
+    datetime: "01/11/2020"
+    venue:    "Drummoyne Oval, Sydney"
+    score:    {hur: "9-89/19", sta: "2-93/11.2"}
+    result:   {hur: 0, sta: 2}
+    summary:  "Melbourne Stars won by 8 wickets"
+
+  - game:     "match-17"
+    home:     "Hobart Hurricanes Women"
+    away:     "Melbourne Renegades Women"
+    datetime: "03/11/2020"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {hur: "1-82/12.3", ren: "81/19.5"}
+    result:   {hur: 2, ren: 0}
+    summary:  "Hobart Hurricanes won by 9 wickets"
+
+  - game:     "match-18"
+    home:     "Adelaide Strikers Women"
+    away:     "Melbourne Stars Women"
+    datetime: "03/11/2020"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {str: "6-154", sta: "3-159/19.4"}
+    result:   {str: 0, sta: 2}
+    summary:  "Melbourne Stars won my 7 wickets"
+
+  - game:     "match-19"
+    home:     "Perth Scorchers Women"
+    away:     "Sydney Thunder Women"
+    datetime: "04/11/2020"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {sco: "120/19.4", thu: "4-144"}
+    result:   {sco: 0, thu: 2}
+    summary:  "Sydney Thunder won by 24 runs"
+
+  - game:     "match-20"
+    home:     "Brisbane Heat Women"
+    away:     "Sydney Sixers Women"
+    datetime: "04/11/2020"
+    venue:    "Blacktown International Sportspark, Sydney"
+    score:    {hea: "105/19.0", six: "7-129"}
+    result:   {hea: 0, six: 2}
+    summary:  "Sydney Sixers won by 24 runs"
+
+  - game:     "match-21"
+    home:     "Brisbane Heat Women"
+    away:     "Adelaide Strikers Women"
+    datetime: "07/11/2020"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {hea: "8-135", str: "8-153"}
+    result:   {hea: 0, str: 2}
+    summary:  "Adelaide Strikers won by 18 runs"
+
+  - game:     "match-22"
+    home:     "Melbourne Renegades Women"
+    away:     "Sydney Thunder Women"
+    datetime: "07/11/2020"
+    venue:    "Hurstville Oval, Sydney"
+    score:    {ren: "110/20", thu: "7-108"}
+    result:   {ren: 2, thu: 0}
+    summary:  "Melbourne Renegades won by 2 runs"
+
+  - game:     "match-23"
+    home:     "Sydney Sixers Women"
+    away:     "Hobart Hurricanes Women"
+    datetime: "07/11/2020`"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {six: "6-149", hur: "8-140"}
+    result:   {six: 0, hur: 2}
+    summary:  "Sydney Sixers won by 9 runs"
+
+  - game:     "match-24"
+    home:     "Melbourne Suns Women"
+    away:     "Perth Scorchers Women"
+    datetime: "07/11/2020"
+    venue:    "North Sydney Oval, Sydney"
+    score:    {sun: "2-120/15.2", sco: "118/20.0"}
+    result:   {sun: 0, sco: 2}
+    summary:  "Melbourne Stars won by 8 wickets"
+
   - game:     "match-25"
     home:     "Hobart Hurricanes Women"
     away:     "Sydney Thunder Women"
     datetime: "07/11/2020 22:00"
     venue:    "Hurstville Oval, Sydney"
-    score:    {hur: "7-127", thu: "7-129"}
+    score:    {hur: "7-128", thu: "7-129"}
     result:   {hur: 0, thu: 2}
     summary:  "Sydney Thunder won by 1 run"
 
