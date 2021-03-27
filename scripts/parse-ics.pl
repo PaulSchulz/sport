@@ -7,20 +7,32 @@
 # This is a working script and need to be modified before use.
 # It was initially created for WBBL 2020
 
-$infile = "../data/download/Women's_Big_Bash_League.ics";
+# Special Treatments
+# ------------------
+# 2021-afl
+# - SUMMARY: Team names and round number extracted from SUMMARY
+#   also contains an extra '^M' at the end (maybe they all do?)
+# - LOCATION contains an extra '^M' at the end of the line for some reason.
+#   Fix by removing an extra character from end of the line during parsing.
+
+$debug = 0;
+
+$infile = "../data/download/afl-2021-UTC.ics";
 %header = (
-    "title" =>     "2020 WBBL",
+    "title" =>     "2021 AFL",
     "location" => "Australia",
-    "code" =>     "bbl",
+    "code" =>     "afl",
     "date" =>     "",
     "url" =>      "",
     "version" =>  "1.0",
-    "name" =>     "wbbl-2020",
-    "filename" => "data/2020-aus-wbbl.yml"
+    "name" =>     "afl-2021",
+    "filename" => "data/2021-aus-afl"
     );
 
 my %teams;
 my %venues;
+
+my $id = 0;
 
 print "---\n";
 for $key (keys(%header)) {
@@ -34,66 +46,67 @@ while($line = <DATA>){
     chomp $line;
     # print "$line";
 
+    if ($debug) { print "# $line\n"; }
+
     if ($line =~ /^BEGIN:VCALENDAR/) {
     } elsif ($line =~ /^END:VCALENDAR/) {
         print "\n";
         print "teams:\n";
         for $key (keys(%teams)) {
-            print "  - {name: \"$key\"}\n"
+            print "  - { name: \"$key\" }\n"
         }
         print "\n";
         print "venues:\n";
         for $key (keys(%venues)) {
             print "  - $key\n"
         }
-
     } elsif ($line =~ /^PRODID:/) {
     } elsif ($line =~ /^VERSION:/) {
     } elsif ($line =~ /^METHOD:/) {
     } elsif ($line =~ /^BEGIN:VEVENT/) {
     } elsif ($line =~ /^END:VEVENT/) {
-        print "    score:    {}\n";
-        print "    result:   {}\n";
-        print "    summary:  \"\"\n";
+        $id++;
+        print "  - game:        $id\n";
+        print "    datetime:    \"$datetime\"\n";
+        print "    round:       $round\n";
+        print "    home:        \"$home\"\n";
+        print "    away:        \"$away\"\n";
+        print "    score:       {}\n";
+        print "    result:      {}\n";
+        print "    venue:       \"$venue\"\n";
+        print "    description: \"$description\"\n";
+        print "    summary:     \"$summary\"\n";
         print "\n";
-    } elsif ($line =~ /^SUMMARY:(\d+).. \S+/) {
-        ($id, $match, $home, $away) =  ($line =~ /^SUMMARY:(\d+).. (\S+) (.+) v (.+)$/);
-        $match = lc($match);
-        print "  - game:     \"$match-$id\"\n";
-        print "    home:     \"$home\"\n";
-        print "    away:     \"$away\"\n";
-
+    } elsif ($line =~ /^DESCRIPTION:/) {
+        ($description) = ($line =~ /^DESCRIPTION:(.*).$/);
+    } elsif ($line =~ /^SUMMARY:/) {
+        ($summary) = ($line =~ /^SUMMARY:(.*).$/);
+        ($home, $away, $round) =  ($line =~ /^SUMMARY:(.*) vs (.*) - .* Round (\d+)/);
         $teams{$home} = "";
         $teams{$away} = "";
 
     } elsif ($line =~ /^SUMMARY:Final /) {
+        # Never get called
+        ($summary) = ($line =~ /^SUMMARY:(.*)$/);
         ($match, $home, $away) =  ($line =~ /^SUMMARY:(Final) (.+) v (.+)$/);
-        $match = lc($match);
-        print "  - game:     \"$match\"\n";
-        print "    home:     \"$home\"\n";
-        print "    away:     \"$away\"\n";
-
         $teams{$home} = "";
         $teams{$away} = "";
 
     } elsif ($line =~ s/^DTSTART://) {
         ($year, $month, $day, $hour, $min, $sec)
             = ($line =~ /(....)(..)(..)T(..)(..)(..)Z/);
-        print "    datetime: \"$day/$month/$year $hour:$sec\"\n";
+        $datetime = "$day/$month/$year $hour:$min";
     } elsif ($line =~ /DTEND:/) {
-    } elsif ($line =~ s/^LOCATION://) {
-        print "    venue:    \"$line\"\n";
-
-        $venues{$line} = "";
-
-    } elsif ($line =~ /^DESCRIPTION:/) {
+    } elsif ($line =~ /^LOCATION:/) {
+        # Location contains an extra '^M' at the end of the line for some reason.
+        # Fix by removing an extra character from end of the line.
+        ($venue) = ($line =~ /^LOCATION:(.*).$/);
+        $venues{$venue} = "";
     } elsif ($line =~ /^TRANSP:/) {
     } elsif ($line =~ /^UID:/) {
     } elsif ($line =~ /^BEGIN:VALARM/) {
     } elsif ($line =~ /^TRIGGER:/) {
     } elsif ($line =~ /^ACTION:/) {
     } elsif ($line =~ /^END:VALARM/) {
-    }  else {
-        print "# $line\n";
     }
 }
