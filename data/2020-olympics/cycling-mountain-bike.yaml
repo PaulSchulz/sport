@@ -1,0 +1,14 @@
+---
+sport: cycling-mountain-bike
+days: [26,27]
+events:
+  # Mon, 26 Jul
+  - time: 15:00
+    day: 26
+    venue: Izu MTB Course	
+    event: Men's Cross-country
+  # Tue, 27 Jul
+  - time: 15:00
+    day: 27
+    venue: Izu MTB Course	
+    event: Women's Cross-country

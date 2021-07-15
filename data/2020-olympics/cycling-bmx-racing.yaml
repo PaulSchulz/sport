@@ -1,0 +1,62 @@
+---
+sport: cycling-bmx-racing
+days: [29,30]
+events::
+  # Thu, 29 Jul
+  - time: 10:00
+    day: 29
+    venue: Ariake Urban Sports Park	
+    event: Men, Quarterfinals Run 1
+  - time: 10:21
+    day: 29
+    venue: Ariake Urban Sports Park	
+    event: Women, Quarterfinals Run 1
+  - time: 10:42
+    day: 29
+    venue: Ariake Urban Sports Park	
+    event: Men, Quarterfinals Run 2
+  - time: 11:03
+    day: 29
+    venue: Ariake Urban Sports Park	
+    event: Women, Quarterfinals Run 2
+  - time: 11:24
+    day: 29
+    venue: Ariake Urban Sports Park	
+    event: Men, Quarterfinals Run 3
+  - time: 11:45
+    day: 29
+    venue: Ariake Urban Sports Park	
+    event: Women, Quarterfinals Run 3
+  # Fri, 30 Jul
+  - time: 10:00
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Men, Semifinals Run 1
+  - time: 10:15
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Women, Semifinals Run 1
+  - time: 10:31
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Men, Semifinals Run 2
+  - time: 10:46
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Women, Semifinals Run 2
+  - time: 11:02
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Men, Semifinals Run 3
+  - time: 11:17
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Women, Semifinals Run 3
+  - time: 11:40
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Men, Final
+  - time: 11:50
+    day: 30
+    venue: Ariake Urban Sports Park	
+    event: Women, Final

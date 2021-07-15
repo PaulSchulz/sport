@@ -1,0 +1,377 @@
+---
+sport: cycling-track
+days: [2,3,4,5,6,7,8]
+venue: Izu Velodrome
+sessions:
+  # Mon, 2 Aug
+  - name: Session 1  15:30 - 18:30
+    day: 2
+    events:
+      - time: 15:30
+        event: Women's Team Sprint Qualifying
+      - time: 15:54
+        event: Women's Team Pursuit Qualifying
+      - time: 16:50
+        event: Women's Team Sprint First Round - Heat 1
+      - time: 16:53
+        event: Women's Team Sprint First Round - Heat 2
+      - time: 16:56
+        event: Women's Team Sprint First Round - Heat 3
+      - time: 16:59
+        event: Women's Team Sprint First Round - Heat 4
+      - time: 17:02
+        event: Men's Team Pursuit Qualifying
+      - time: 18:00
+        event: Women's Team Sprint Finals - Places 7-8
+      - time: 18:03
+        event: Women's Team Sprint Finals - Places 5-6
+      - time: 18:06
+        event: Women's Team Sprint Finals - Bronze
+      - time: 18:09
+        event: Women's Team Sprint Finals - Gold
+  # Tue, 3 Aug
+  - name: Session 2  15:30 - 18:10
+    day: 3
+    events:
+      - time: 15:30
+        event: Women's Team Pursuit First Round - Heat 1
+      - time: 15:37
+        event: Women's Team Pursuit First Round - Heat 2
+      - time: 15:44
+        event: Women's Team Pursuit First Round - Heat 3
+      - time: 15:51
+        event: Women's Team Pursuit First Round - Heat 4
+      - time: 15:58
+        event: Men's Team Sprint Qualifying
+      - time: 16:22
+        event: Men's Team Pursuit First Round - Heat 1
+      - time: 16:29
+        event: Men's Team Pursuit First Round - Heat 2
+      - time: 16:36
+        event: Men's Team Pursuit First Round - Heat 3
+      - time: 16:43
+        event: Men's Team Pursuit First Round - Heat 4
+      - time: 16:50
+        event: Men's Team Sprint First Round - Heat 1
+      - time: 16:53
+        event: Men's Team Sprint First Round - Heat 2
+      - time: 16:56
+        event: Men's Team Sprint First Round - Heat 3
+      - time: 16:59
+        event: Men's Team Sprint First Round - Heat 4
+      - time: 17:05
+        event: Women's Team Pursuit Finals 7-8
+      - time: 17:12
+        event: Women's Team Pursuit Finals 5-6
+      - time: 17:19
+        event: Women's Team Pursuit Finals - Bronze
+      - time: 17:26
+        event: Women's Team Pursuit Finals - Gold
+      - time: 17:35
+        event: Men's Team Sprint Finals - Places 7-8
+      - time: 17:38
+        event: Men's Team Sprint Finals - Places 5-6
+      - time: 17:41
+        event: Men's Team Sprint Finals - Bronze
+      - time: 17:44
+        event: Men's Team Sprint Finals - Gold
+  # Wed, 4 Aug
+  - name: Session 3  15:50 - 19:00
+    day: 4
+    events:
+      - time: 15:30
+        event: Men's Sprint Qualifying
+      - time: 16:10
+        event: Women's Keirin First Round - Heat 1
+      - time: 16:15
+        event: Women's Keirin First Round - Heat 2
+      - time: 16:20
+        event: Women's Keirin First Round - Heat 3
+      - time: 16:25
+        event: Women's Keirin First Round - Heat 4
+      - time: 16:30
+        event: Women's Keirin First Round - Heat 5
+      - time: 16:35
+        event: Men's Sprint 1/32 Finals - Heat 1
+      - time: 16:38
+        event: Men's Sprint 1/32 Finals - Heat 2
+      - time: 16:41
+        event: Men's Sprint 1/32 Finals - Heat 3
+      - time: 16:44
+        event: Men's Sprint 1/32 Finals - Heat 4
+      - time: 16:47
+        event: Men's Sprint 1/32 Finals - Heat 5
+      - time: 16:50
+        event: Men's Sprint 1/32 Finals - Heat 6
+      - time: 16:53
+        event: Men's Sprint 1/32 Finals - Heat 7
+      - time: 16:56
+        event: Men's Sprint 1/32 Finals - Heat 8
+      - time: 16:59
+        event: Men's Sprint 1/32 Finals - Heat 9
+      - time: 17:02
+        event: Men's Sprint 1/32 Finals - Heat 10
+      - time: 17:05
+        event: Men's Sprint 1/32 Finals - Heat 11
+      - time: 17:08
+        event: Men's Sprint 1/32 Finals - Heat 12
+      - time: 17:11
+        event: Women's Keirin Repechages - Heat 1
+      - time: 17:16
+        event: Women's Keirin Repechages - Heat 2
+      - time: 17:21
+        event: Women's Keirin Repechages - Heat 3
+      - time: 17:26
+        event: Women's Keirin Repechages - Heat 4
+      - time: 17:31
+        event: Men's Sprint 1/32 Finals Repechages - Heat 1
+      - time: 17:34
+        event: Men's Sprint 1/32 Finals Repechages - Heat 2
+      - time: 17:37
+        event: Men's Sprint 1/32 Finals Repechages - Heat 3
+      - time: 17:40
+        event: Men's Sprint 1/32 Finals Repechages - Heat 4
+      - time: 17:45
+        event: Men's Team Pursuit Finals 7-8
+      - time: 17:52
+        event: Men's Team Pursuit Finals 5-6
+      - time: 17:59
+        event: Men's Team Pursuit Finals - Bronze
+      - time: 18:06
+        event: Men's Team Pursuit Finals - Gold
+      - time: 18:13
+        event: Men's Sprint 1/16 Finals - Heat 1
+      - time: 18:16
+        event: Men's Sprint 1/16 Finals - Heat 2
+      - time: 18:19
+        event: Men's Sprint 1/16 Finals - Heat 3
+      - time: 18:22
+        event: Men's Sprint 1/16 Finals - Heat 4
+      - time: 18:25
+        event: Men's Sprint 1/16 Finals - Heat 5
+      - time: 18:28
+        event: Men's Sprint 1/16 Finals - Heat 6
+      - time: 18:31
+        event: Men's Sprint 1/16 Finals - Heat 7
+      - time: 18:34
+        event: Men's Sprint 1/16 Finals - Heat 8
+      - time: 18:47
+        event: Men's Sprint 1/16 Finals Repechages - Heat 1
+      - time: 18:50
+        event: Men's Sprint 1/16 Finals Repechages - Heat 2
+      - time: 18:53
+        event: Men's Sprint 1/16 Finals Repechages - Heat 3
+      - time: 18:56
+        event: Men's Sprint 1/16 Finals Repechages - Heat 4
+  # Thu, 5 Aug
+  - name: Session 4  15:30 - 18:50
+    day: 5
+    events:
+      - time: 15:30
+        event: Men's Omnium Scratch Race 1/4
+      - time: 15:48
+        event: Men's Sprint 1/8 Finals - Heat 1
+      - time: 15:51
+        event: Men's Sprint 1/8 Finals - Heat 2
+      - time: 15:54
+        event: Men's Sprint 1/8 Finals - Heat 3
+      - time: 15:57
+        event: Men's Sprint 1/8 Finals - Heat 4
+      - time: 16:00
+        event: Men's Sprint 1/8 Finals - Heat 5
+      - time: 16:03
+        event: Men's Sprint 1/8 Finals - Heat 6
+      - time: 16:06
+        event: Women's Keirin Quarterfinals - Heat 1
+      - time: 16:11
+        event: Women's Keirin Quarterfinals - Heat 2
+      - time: 16:16
+        event: Women's Keirin Quarterfinals - Heat 3
+      - time: 16:21
+        event: Men's Sprint 1/8 Finals Repechages - Heat 1
+      - time: 16:24
+        event: Men's Sprint 1/8 Finals Repechages - Heat 2
+      - time: 16:27
+        event: Men's Omnium Tempo Race 2/4
+      - time: 16:45
+        event: Men's Sprint Quarterfinals - Race 1
+      - time: 16:57
+        event: Women's Keirin Semifinals - Heat 1
+      - time: 17:02
+        event: Women's Keirin Semifinals - Heat 2
+      - time: 17:07
+        event: Men's Omnium Elimination Race 3/4
+      - time: 17:25
+        event: Men's Sprint Quarterfinals - Race 2
+      - time: 17:37
+        event: Women's Keirin Final 7-12
+      - time: 17:45
+        event: Women's Keirin Final 1-6
+      - time: 17:50
+        event: Men's Sprint Quarterfinals - Decider
+      - time: 17:55
+        event: Men's Omnium Points Race 4/4
+      - time: 18:27
+        event: Men's Sprint Race for 5th-8th Places
+  # Fri, 6 Aug
+  - name: Session 5  15:30 - 19:15
+    day: 6
+    events:
+      - time: 15:30
+        event: Women's Sprint Qualifying
+      - time: 16:10
+        event: Men's Sprint Semifinals - Race 1
+      - time: 16:16
+        event: Women's Sprint 1/32 Finals - Heat 1
+      - time: 16:19
+        event: Women's Sprint 1/32 Finals - Heat 2
+      - time: 16:22
+        event: Women's Sprint 1/32 Finals - Heat 3
+      - time: 16:25
+        event: Women's Sprint 1/32 Finals - Heat 4
+      - time: 16:28
+        event: Women's Sprint 1/32 Finals - Heat 5
+      - time: 16:31
+        event: Women's Sprint 1/32 Finals - Heat 6
+      - time: 16:34
+        event: Women's Sprint 1/32 Finals - Heat 7
+      - time: 16:37
+        event: Women's Sprint 1/32 Finals - Heat 8
+      - time: 16:40
+        event: Women's Sprint 1/32 Finals - Heat 9
+      - time: 16:43
+        event: Women's Sprint 1/32 Finals - Heat 10
+      - time: 16:46
+        event: Women's Sprint 1/32 Finals - Heat 11
+      - time: 16:49
+        event: Women's Sprint 1/32 Finals - Heat 12
+      - time: 16:52
+        event: Men's Sprint Semifinals - Race 2
+      - time: 16:58
+        event: Women's Sprint 1/32 Finals Repechages - Heat 1
+      - time: 17:01
+        event: Women's Sprint 1/32 Finals Repechages - Heat 2
+      - time: 17:04
+        event: Women's Sprint 1/32 Finals Repechages - Heat 3
+      - time: 17:07
+        event: Women's Sprint 1/32 Finals Repechages - Heat 4
+      - time: 17:10
+        event: Men's Sprint Semifinals - Decider
+      - time: 17:15
+        event: Women's Madison Final
+      - time: 18:00
+        event: Men's Sprint Finals - Race 1
+      - time: 18:06
+        event: Women's Sprint 1/16 Finals - Heat 1
+      - time: 18:09
+        event: Women's Sprint 1/16 Finals - Heat 2
+      - time: 18:12
+        event: Women's Sprint 1/16 Finals - Heat 3
+      - time: 18:15
+        event: Women's Sprint 1/16 Finals - Heat 4
+      - time: 18:18
+        event: Women's Sprint 1/16 Finals - Heat 5
+      - time: 18:21
+        event: Women's Sprint 1/16 Finals - Heat 6
+      - time: 18:24
+        event: Women's Sprint 1/16 Finals - Heat 7
+      - time: 18:27
+        event: Women's Sprint 1/16 Finals - Heat 8
+      - time: 18:35
+        event: Men's Sprint Finals - Race 2
+      - time: 18:50
+        event: Men's Sprint Finals - Decider
+      - time: 18:53
+        event: Women's Sprint 1/16 Finals Repechages - Heat 1
+      - time: 18:56
+        event: Women's Sprint 1/16 Finals Repechages - Heat 2
+      - time: 18:59
+        event: Women's Sprint 1/16 Finals Repechages - Heat 3
+      - time: 19:02
+        event: Women's Sprint 1/16 Finals Repechages - Heat 4
+  # Sat, 7 Aug
+  - name: Session 6  15:30 - 18:25
+    day: 7
+    events:
+    - time: 15:30
+      event: Women's Sprint 1/8 Finals - Heat 1
+    - time: 15:33
+      event: Women's Sprint 1/8 Finals - Heat 2
+    - time: 15:36
+      event: Women's Sprint 1/8 Finals - Heat 3
+    - time: 15:39
+      event: Women's Sprint 1/8 Finals - Heat 4
+    - time: 15:42
+      event: Women's Sprint 1/8 Finals - Heat 5
+    - time: 15:45
+      event: Women's Sprint 1/8 Finals - Heat 6
+    - time: 15:48
+      event: Men's Keirin First Round - Heat 1
+    - time: 15:53
+      event: Men's Keirin First Round - Heat 2
+    - time: 15:58
+      event: Men's Keirin First Round - Heat 3
+    - time: 16:03
+      event: Men's Keirin First Round - Heat 4
+    - time: 16:08
+      event: Men's Keirin First Round - Heat 5
+    - time: 16:13
+      event: Women's Sprint 1/8 Final Repechages - Heat 1
+    - time: 16:16
+      event: Women's Sprint 1/8 Final Repechages - Heat 2
+    - time: 16:19
+      event: Men's Keirin Repechages - Heat 1
+    - time: 16:24
+      event: Men's Keirin Repechages - Heat 2
+    - time: 16:29
+      event: Men's Keirin Repechages - Heat 3
+    - time: 16:34
+      event: Men's Keirin Repechages - Heat 4
+    - time: 16:39
+      event: Women's Sprint Quarterfinals - Race 1
+    - time: 16:55
+      event: Men's Madison Final
+    - time: 17:55
+      event: Women's Sprint Quarterfinals - Race 2
+    - time: 18:15
+      event: Women's Sprint Quarterfinals - Decider
+  # Sun, 8 Aug
+  - name: Session 7  10:00 - 13:15
+    day: 8
+    events:
+      - time: 10:00
+        event: Women's Omnium Scratch Race 1/4
+      - time: 10:18
+        event: Women's Sprint Semifinals - Race 1
+      - time: 10:24
+        event: Men's Keirin Quarterfinals - Heat 1
+      - time: 10:29
+        event: Men's Keirin Quarterfinals - Heat 2
+      - time: 10:34
+        event: Men's Keirin Quarterfinals - Heat 3
+      - time: 10:39
+        event: Women's Sprint Semifinals - Race 2
+      - time: 10:45
+        event: Women's Omnium Tempo Race 2/4
+      - time: 11:03
+        event: Women's Sprint Semifinals - Decider
+      - time: 11:06
+        event: Women's Sprint Race for 5th-8th Places
+      - time: 11:09
+        event: Men's Keirin Semifinals - Heat 1
+      - time: 11:14
+        event: Men's Keirin Semifinals - Heat 2
+      - time: 11:20
+        event: Women's Sprint Finals - Race 1
+      - time: 11:26
+        event: Women's Omnium Elimination Race 3/4
+      - time: 11:45
+        event: Women's Sprint Finals - Race 2
+      - time: 11:51
+        event: Men's Keirin Final 7-12
+      - time: 12:00
+        event: Men's Keirin Final 1-6
+      - time: 12:05
+        event: Women's Sprint Finals - Decider
+      - time: 12:25
+        event: Women's Omnium Points Race 4/4

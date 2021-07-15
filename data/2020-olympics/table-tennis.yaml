@@ -1,0 +1,279 @@
+---
+sport: table-tennis
+days: [24,25,26,27,28,29,30,1,2,3,4,5,6]
+sessions:
+  # Sat, 24 Jul
+  - name: Session 1  9:00 - 12:45
+    day: 24
+    events:
+      - time: 9:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Preliminary Round
+      - time: 11:15
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Mixed Doubles Round of 16
+  - name: Session 2  14:15 - 17:15
+    day: 24
+    events:
+      - time: 14:15
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round 1
+  - name: Session 3  19:30 - 22:30
+    day: 24
+    events:
+      - time: 19:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round 1
+  # Sun, 25 Jul
+  - name: Session 4  10:00 - 12:00
+    day: 25
+    events:
+      - time: 10:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Mixed Doubles Quarterfinals
+  - name: Session 5  14:00 - 17:45
+    day: 25
+    events:
+      - time: 14:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round 2
+  - name: Session 6  20:00 - 22:00
+    day: 25
+    events:
+      - time: 20:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Mixed Doubles Semifinals
+  # Mon, 26 Jul
+  - name: Session 7  10:00 - 13:00
+    day: 26
+    events:
+      - time: 10:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round 2
+  - name: Session 8  14:30 - 17:30
+    day: 26
+    events:
+      - time: 14:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round 3
+  - name: Session 9  20:00 - 22:10
+    day: 26
+    events:
+      - time: 20:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	￼
+        event: Mixed Doubles Bronze Medal Match
+        match: 15
+      - time: 21:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	￼
+        event: Mixed Doubles Gold Medal Match
+        match: 16
+  # Tue, 27 Jul
+  - name: Session 10  10:00 - 13:00
+    day: 27
+    events:
+      - time: 10:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round 3
+  - name: Session 11  14:30 - 17:30
+    day: 27
+    events:
+      - time: 14:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round 3
+      - time: 16:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round of 16
+  - name: Session 12  19:30 - 22:30
+    day: 27
+    events:
+      - time: 19:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Singles Round of 16
+  # Wed, 28 Jul
+  - name: Session 13  10:00 - 13:00
+    day: 28
+    events:
+      - time: 10:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Singles Quarterfinal
+        match: 63
+      - time: 11:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Singles Quarterfinal
+        match: 63
+      - time: 12:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Singles Quarterfinal
+        match: 64
+  - name: Session 14  15:00 - 18:00
+    day: 28
+    events:
+      - time: 15:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Singles Quarterfinal
+        match: 64
+      - time: 16:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Singles Quarterfinal
+        match: 65
+      - time: 17:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Singles Quarterfinal
+        match: 66
+  - name: Session 15  20:00 - 22:00
+    day: 28
+    events:
+      - time: 20:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Singles Quarterfinal
+        match: 65
+      - time: 20:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Singles Quarterfinal
+        match: 66
+  # Thu, 29 Jul
+  - name: Session 16  11:00 - 13:00
+    day: 29
+    events:
+      - time: 11:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Women's Singles Semifinals
+  - name: Session 17  15:00 - 17:00
+    day: 29
+    events:
+      - time: 15:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's Singles Semifinals
+  - name: Session 18  20:00 - 22:10
+    day: 29
+    events:
+      - time: 20:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	￼
+        event: Women's Singles Bronze Medal Match
+        match: 69
+      - time: 21:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Singles Gold Medal Match
+        match: 70
+  # Fri, 30 Jul
+  - name: Session 19  20:00 - 22:10
+    day: 30
+    events:
+      - time: 20:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Singles Bronze Medal Match
+        match: 69
+      - time: 21:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Singles Gold Medal Match
+        match: 70
+  # Sun, 1 Aug
+  - name: Session 20  10:00 - 13:00
+    day: 1
+    events:
+    - time: 10:00
+      venue: Tokyo Metropolitan Gymnasium	
+      event: Men's & Women's Team Round of 16
+  - name: Session 21  14:30 - 17:30
+    day: 1
+    events:
+    - time: 14:30
+      venue: Tokyo Metropolitan Gymnasium	
+      event: Men's & Women's Team Round of 16
+  - name: Session 22  19:30 - 22:30
+    day: 1
+    events:
+    - time: 19:30
+      venue: Tokyo Metropolitan Gymnasium	
+      event: Men's & Women's Team Round of 16
+  # Mon, 2 Aug
+  - name: Session 23  10:00 - 13:00
+    day: 2
+    events:
+      - time: 10:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Team Round of 16
+  - name: Session 24  14:30 - 17:30
+    day: 2
+    events:
+      - time: 14:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Team Quarterfinals
+  - name: Session 25  19:30 - 22:30
+    day: 2
+    events:
+      - time: 19:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Team Quarterfinals
+  # Tue, 3 Aug
+  - name: Session 26  10:00 - 13:00
+    day: 3
+    events:
+      - time: 10:00
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Team Quarterfinals
+  - name: Session 27  14:30 - 17:30
+    day: 3
+    events:
+      - time: 14:30
+        venue: Tokyo Metropolitan Gymnasium	
+        event: Men's & Women's Team Quarterfinals
+  - name: Session 28  19:30 - 22:30
+    day: 3
+    events:
+      - time: 19:30
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Team Semifinal
+        match: 13
+  # Wed, 4 Aug
+  - name: Session 29  10:00 - 13:00
+    day: 4
+    events:
+      - time: 10:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Team Semifinal
+        match: 14
+  - name: Session 30  14:30 - 17:30
+    day: 4
+    events:
+      - time: 14:30
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Team Semifinal
+        match: 13
+  - name: Session 31  19:30 - 22:30
+    day: 4
+    events:
+      - time: 19:30
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Team Semifinal
+        match: 14
+  # Thu, 5 Aug
+  - name: Session 32  11:00 - 14:00
+    day: 5
+    events:
+      - time: 11:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Team Bronze Medal Team Match
+        match: 15
+  - name: Session 33  19:30 - 22:40
+    day: 5
+    events:
+      - time: 19:30
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Women's Team Gold Medal Team Match
+        match: 16
+  # Fri, 6 Aug
+  - name: Session 34  11:00 - 14:00
+    day: 6
+    events:
+      - time: 11:00
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Team Bronze Medal Team Match
+        match: 15
+  - name: Session 35  19:30 - 22:40
+    day: 6
+    events:
+      - time: 19:30
+        venue: Tokyo Metropolitan Gymnasium Table 1	
+        event: Men's Team Gold Medal Team Match
+        match: 16

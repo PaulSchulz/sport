@@ -1,0 +1,559 @@
+---
+sport: swimming
+days: [24,25,26,27,28,29,30,31,1]
+location: Tokyo Aquatics Centre
+sessions:
+  - name: Session 1  19:00 - 21:30
+    day: 24
+    events:
+      - time: 19:02
+        event: Men's 400m Individual Medley - Heat 1
+      - time: 19:07
+        event: Men's 400m Individual Medley - Heat 2
+      - time: 19:12
+        event: Men's 400m Individual Medley - Heat 3
+      - time: 19:17
+        event: Men's 400m Individual Medley - Heat 4
+      - time: 19:28
+        event: Women's 100m Butterfly - Heat 1
+      - time: 19:31
+        event: Women's 100m Butterfly - Heat 2
+      - time: 19:34
+        event: Women's 100m Butterfly - Heat 3
+      - time: 19:37
+        event: Women's 100m Butterfly - Heat 4
+      - time: 19:40
+        event: Women's 100m Butterfly - Heat 5
+      - time: 19:43
+        event: Women's 100m Butterfly - Heat 6
+      - time: 19:48
+        event: Men's 400m Freestyle - Heat 1
+      - time: 19:54
+        event: Men's 400m Freestyle - Heat 2
+      - time: 20:00
+        event: Men's 400m Freestyle - Heat 3
+      - time: 20:06
+        event: Men's 400m Freestyle - Heat 4
+      - time: 20:12
+        event: Men's 400m Freestyle - Heat 5
+      - time: 20:18
+        event: Men's 400m Freestyle - Heat 6
+      - time: 20:24
+        event: Men's 400m Freestyle - Heat 7
+      - time: 20:30
+        event: Women's 400m Individual Medley - Heat 1
+      - time: 20:35
+        event: Women's 400m Individual Medley - Heat 2
+      - time: 20:40
+        event: Women's 400m Individual Medley - Heat 3
+      - time: 20:45
+        event: Women's 400m Individual Medley - Heat 4
+      - time: 20:50
+        event: Women's 400m Individual Medley - Heat 5
+      - time: 20:55
+        event: Men's 100m Breaststroke - Heat 1
+      - time: 20:58
+        event: Men's 100m Breaststroke - Heat 2
+      - time: 21:01
+        event: Men's 100m Breaststroke - Heat 3
+      - time: 21:04
+        event: Men's 100m Breaststroke - Heat 4
+      - time: 21:07
+        event: Men's 100m Breaststroke - Heat 5
+      - time: 21:10
+        event: Men's 100m Breaststroke - Heat 6
+      - time: 21:15
+        event: Women's 4 x 100m Freestyle Relay - Heat 1
+      - time: 21:25
+        event: Women's 4 x 100m Freestyle Relay - Heat 2
+  - name: Session 2  10:30 - 12:30
+    day: 25
+    events:
+      - time: 10:30￼
+        event: Men's 400m Individual Medley Final
+      - time: 10:40
+        event: Women's 100m Butterfly Semifinal 1
+      - time: 10:46
+        event: Women's 100m Butterfly Semifinal 2
+      - time: 10:52
+        event: Men's 400m Freestyle Final
+      - time: 11:12
+        event: Women's 400m Individual Medley Final
+      - time: 11:33
+        event: Men's 100m Breaststroke Semifinal 1
+      - time: 11:39
+        event: Men's 100m Breaststroke Semifinal 2
+      - time: 11:45
+        event: Women's 4 x 100m Freestyle Relay Final
+  - name: Session 3  19:00 - 21:30
+    day: 25
+    events:
+      - time: 19:02
+        event: Women's 100m Backstroke - Heat 1
+      - time: 19:05
+        event: Women's 100m Backstroke - Heat 2
+      - time: 19:08
+        event: Women's 100m Backstroke - Heat 3
+      - time: 19:11
+        event: Women's 100m Backstroke - Heat 4
+      - time: 19:14
+        event: Women's 100m Backstroke - Heat 5
+      - time: 19:22
+        event: Men's 200m Freestyle - Heat 1
+      - time: 19:28
+        event: Men's 200m Freestyle - Heat 2
+      - time: 19:34
+        event: Men's 200m Freestyle - Heat 3
+      - time: 19:40
+        event: Men's 200m Freestyle - Heat 4
+      - time: 19:46
+        event: Men's 200m Freestyle - Heat 5
+      - time: 19:52
+        event: Men's 200m Freestyle - Heat 6
+      - time: 19:59
+        event: Women's 100m Breaststroke - Heat 1
+      - time: 20:02
+        event: Women's 100m Breaststroke - Heat 2
+      - time: 20:05
+        event: Women's 100m Breaststroke - Heat 3
+      - time: 20:08
+        event: Women's 100m Breaststroke - Heat 4
+      - time: 20:11
+        event: Women's 100m Breaststroke - Heat 5
+      - time: 20:14
+        event: Women's 100m Breaststroke - Heat 6
+      - time: 20:19
+        event: Men's 100m Backstroke - Heat 1
+      - time: 20:22
+        event: Men's 100m Backstroke - Heat 2
+      - time: 20:25
+        event: Men's 100m Backstroke - Heat 3
+      - time: 20:28
+        event: Men's 100m Backstroke - Heat 4
+      - time: 20:31
+        event: Men's 100m Backstroke - Heat 5
+      - time: 20:39
+        event: Women's 400m Freestyle - Heat 1
+      - time: 20:45
+        event: Women's 400m Freestyle - Heat 2
+      - time: 20:51
+        event: Women's 400m Freestyle - Heat 3
+      - time: 20:57
+        event: Women's 400m Freestyle - Heat 4
+      - time: 21:03
+        event: Women's 400m Freestyle - Heat 5
+      - time: 21:10
+        event: Men's 4 x 100m Freestyle Relay - Heat 1
+      - time: 21:20
+        event: Men's 4 x 100m Freestyle Relay - Heat 2
+      - time: 21:30
+        event: Men's 4 x 100m Freestyle Relay - Heat 3
+# Mon, 26 Jul
+  - name: Session 4  10:30 - 12:30
+    day: 26
+    events:    
+      - time: 10:30
+        event: Women's 100m Butterfly Final
+      - time: 10:37
+        event: Men's 200m Freestyle Semifinal 1
+      - time: 10:43
+        event: Men's 200m Freestyle Semifinal 2
+      - time: 10:50
+        event: Women's 100m Breaststroke Semifinal 1
+      - time: 10:56
+        event: Women's 100m Breaststroke Semifinal 2
+      - time: 11:12
+        event: Men's 100m Breaststroke Final
+      - time: 11:20
+        event: Women's 400m Freestyle Final
+      - time: 11:31
+        event: Men's 100m Backstroke Semifinal 1
+      - time: 11:37
+        event: Men's 100m Backstroke Semifinal 2
+      - time: 11:53
+        event: Women's 100m Backstroke Semifinal 1
+      - time: 11:59
+        event: Women's 100m Backstroke Semifinal 2
+      - time: 12:05
+        event: Men's 4 x 100m Freestyle Relay Final
+ - name: Session 5  19:00 - 21:30
+   day: 26
+   events:
+     - time: 19:02
+       event: Women's 200m Freestyle - Heat 1
+      - time: 19:07
+        event: Women's 200m Freestyle - Heat 2
+      - time: 19:12
+        event: Women's 200m Freestyle - Heat 3
+      - time: 19:17
+        event: Women's 200m Freestyle - Heat 4
+      - time: 19:22
+        event: Women's 200m Freestyle - Heat 5
+      - time: 19:27
+        event: Women's 200m Freestyle - Heat 6
+      - time: 19:29
+        event: Men's 200m Butterfly - Heat 1
+      - time: 19:35
+        event: Men's 200m Butterfly - Heat 2
+      - time: 19:41
+        event: Men's 200m Butterfly - Heat 3
+      - time: 19:47
+        event: Men's 200m Butterfly - Heat 4
+      - time: 19:56
+        event: Women's 200m Individual Medley - Heat 1
+      - time: 20:02
+        event: Women's 200m Individual Medley - Heat 2
+      - time: 20:08
+        event: Women's 200m Individual Medley - Heat 3
+      - time: 20:14
+        event: Women's 200m Individual Medley - Heat 4
+      - time: 20:20
+        event: Women's 200m Individual Medley - Heat 5
+      - time: 20:26
+        event: Women's 200m Individual Medley - Heat 6
+      - time: 20:32
+        event: Women's 1500m Freestyle - Heat 1
+      - time: 20:49
+        event: Women's 1500m Freestyle - Heat 2
+      - time: 21:06
+        event: Women's 1500m Freestyle - Heat 3
+      - time: 21:23
+        event: Women's 1500m Freestyle - Heat 4
+# Tue, 27 Jul
+  - name: Session 6  10:30 - 12:30
+    day: 27
+    events:
+      - time: 10:30
+        event: Women's 200m Freestyle Semifinal 1
+      - time: 10:36
+        event: Women's 200m Freestyle Semifinal 2
+      - time: 10:43
+        event: Men's 200m Freestyle Final
+      - time: 10:51
+        event: Women's 100m Backstroke Final
+      - time: 10:59
+        event: Men's 100m Backstroke Final
+      - time: 11:17
+        event: Women's 100m Breaststroke Final
+      - time: 11:35
+        event: Men's 200m Butterfly Semifinal 1
+      - time: 11:41
+        event: Men's 200m Butterfly Semifinal 2
+      - time: 11:58
+        event: Women's 200m Individual Medley Semifinal 1
+      - time: 12:05
+        event: Women's 200m Individual Medley Semifinal 2
+  - name: Session 7  19:00 - 21:30
+    day: 27
+    events:
+      - time: 19:02
+        event: Men's 100m Freestyle - Heat 1
+      - time: 19:05
+        event: Men's 100m Freestyle - Heat 2
+      - time: 19:08
+        event: Men's 100m Freestyle - Heat 3
+      - time: 19:11
+        event: Men's 100m Freestyle - Heat 4
+      - time: 19:14
+        event: Men's 100m Freestyle - Heat 5
+      - time: 19:17
+        event: Men's 100m Freestyle - Heat 6
+      - time: 19:20
+        event: Men's 100m Freestyle - Heat 7
+      - time: 19:23
+        event: Men's 100m Freestyle - Heat 8
+      - time: 19:28
+        event: Women's 200m Butterfly - Heat 1
+      - time: 19:34
+        event: Women's 200m Butterfly - Heat 2
+      - time: 19:40
+        event: Women's 200m Butterfly - Heat 3
+      - time: 19:46
+        event: Women's 200m Butterfly - Heat 4
+      - time: 19:50
+        event: Men's 200m Breaststroke - Heat 1
+      - time: 19:56
+        event: Men's 200m Breaststroke - Heat 2
+      - time: 20:02
+        event: Men's 200m Breaststroke - Heat 3
+      - time: 20:08
+        event: Men's 200m Breaststroke - Heat 4
+      - time: 20:14
+        event: Men's 200m Breaststroke - Heat 5
+      - time: 20:17
+        event: Men's 4 x 200m Freestyle Relay - Heat 1
+      - time: 20:27
+        event: Men's 4 x 200m Freestyle Relay - Heat 2
+      - time: 20:37
+        event: Men's 800m Freestyle - Heat 1
+      - time: 20:47
+        event: Men's 800m Freestyle - Heat 2
+      - time: 20:57
+        event: Men's 800m Freestyle - Heat 3
+      - time: 21:07
+        event: Men's 800m Freestyle - Heat 4
+      - time: 21:17
+        event: Men's 800m Freestyle - Heat 5
+      - time: 21:27
+        event: Men's 800m Freestyle - Heat 6
+# Wed, 28 Jul
+  - name: Session 8  10:30 - 13:05
+    day: 28
+    events:
+      - time: 10:30
+        event: Men's 100m Freestyle Semifinal 1
+      - time: 10:35
+        event: Men's 100m Freestyle Semifinal 2
+      - time: 10:41
+        event: Women's 200m Freestyle Final
+      - time: 10:49
+        event: Men's 200m Butterfly Final
+      - time: 10:57
+        event: Women's 200m Butterfly Semifinal 1
+      - time: 11:04
+        event: Women's 200m Butterfly Semifinal 2
+      - time: 11:21
+        event: Men's 200m Breaststroke Semifinal 1
+      - time: 11:28
+        event: Men's 200m Breaststroke Semifinal 2
+      - time: 11:45
+        event: Women's 200m Individual Medley Final
+      - time: 11:54
+        event: Women's 1500m Freestyle Final
+      - time: 12:26
+        event: Men's 4 x 200m Freestyle Relay Final
+  - name: Session 9  19:00 - 21:30
+    day: 28
+    events:
+      - time: 19:02
+        event: Women's 100m Freestyle - Heat 1
+      - time: 19:05
+        event: Women's 100m Freestyle - Heat 2
+      - time: 19:08
+        event: Women's 100m Freestyle - Heat 3
+      - time: 19:11
+        event: Women's 100m Freestyle - Heat 4
+      - time: 19:14
+        event: Women's 100m Freestyle - Heat 5
+      - time: 19:17
+        event: Women's 100m Freestyle - Heat 6
+      - time: 19:20
+        event: Women's 100m Freestyle - Heat 7
+      - time: 19:25
+        event: Men's 200m Backstroke - Heat 1
+      - time: 19:31
+        event: Men's 200m Backstroke - Heat 2
+      - time: 19:37
+        event: Men's 200m Backstroke - Heat 3
+      - time: 19:43
+        event: Men's 200m Backstroke - Heat 4
+      - time: 19:52
+        event: Women's 200m Breaststroke - Heat 1
+      - time: 19:58
+        event: Women's 200m Breaststroke - Heat 2
+      - time: 20:04
+        event: Women's 200m Breaststroke - Heat 3
+      - time: 20:10
+        event: Women's 200m Breaststroke - Heat 4
+      - time: 20:15
+        event: Men's 200m Individual Medley - Heat 1
+      - time: 20:20
+        event: Men's 200m Individual Medley - Heat 2
+      - time: 20:25
+        event: Men's 200m Individual Medley - Heat 3
+      - time: 20:30
+        event: Men's 200m Individual Medley - Heat 4
+      - time: 20:34
+        event: Women's 4 x 200m Freestyle Relay - Heat 1
+      - time: 20:44
+        event: Women's 4 x 200m Freestyle Relay - Heat 2
+# Thu, 29 Jul
+ - name: Session 10  10:30 - 13:15
+   day: 29
+   events:
+     - time: 10:30
+       event: Men's 800m Freestyle Final
+      - time: 10:44
+        event: Men's 200m Breaststroke Final
+      - time: 10:53
+        event: Women's 100m Freestyle Semifinal 1
+      - time: 10:58
+        event: Women's 100m Freestyle Semifinal 2
+      - time: 11:04
+        event: Men's 200m Backstroke Semifinal 1
+      - time: 11:11
+        event: Men's 200m Backstroke Semifinal 2
+      - time: 11:28
+        event: Women's 200m Butterfly Final
+      - time: 11:37
+        event: Men's 100m Freestyle Final
+      - time: 11:54
+        event: Women's 200m Breaststroke Semifinal 1
+      - time: 12:01
+        event: Women's 200m Breaststroke Semifinal 2
+      - time: 12:08
+        event: Men's 200m Individual Medley Semifinal 1
+      - time: 12:14
+        event: Men's 200m Individual Medley Semifinal 2
+      - time: 12:31
+        event: Women's 4 x 200m Freestyle Relay Final
+ - name: Session 11  19:00 - 21:30
+   day: 29
+   events:     
+     - time: 19:02
+       event: Women's 800m Freestyle - Heat 1
+      - time: 19:14
+        event: Women's 800m Freestyle - Heat 2
+      - time: 19:26
+        event: Women's 800m Freestyle - Heat 3
+      - time: 19:38
+        event: Women's 800m Freestyle - Heat 4
+      - time: 19:50
+        event: Men's 100m Butterfly - Heat 1
+      - time: 19:53
+        event: Men's 100m Butterfly - Heat 2
+      - time: 19:56
+        event: Men's 100m Butterfly - Heat 3
+      - time: 19:59
+        event: Men's 100m Butterfly - Heat 4
+      - time: 20:02
+        event: Men's 100m Butterfly - Heat 5
+      - time: 20:05
+        event: Men's 100m Butterfly - Heat 6
+      - time: 20:08
+        event: Women's 200m Backstroke - Heat 1
+      - time: 20:13
+        event: Women's 200m Backstroke - Heat 2
+      - time: 20:18
+        event: Women's 200m Backstroke - Heat 3
+      - time: 20:23
+        event: Women's 200m Backstroke - Heat 4
+      - time: 20:28
+        event: Mixed 4 x 100m Medley Relay - Heat 1
+      - time: 20:38
+        event: Mixed 4 x 100m Medley Relay - Heat 2
+# Fri, 30 Jul
+ - name: Session 12  10:30 - 12:30
+   day: 30
+   events:
+     - time: 10:30
+       event: Men's 100m Butterfly Semifinal 1
+      - time: 10:35
+        event: Men's 100m Butterfly Semifinal 2
+      - time: 10:41
+        event: Women's 200m Breaststroke Final
+      - time: 10:50
+        event: Men's 200m Backstroke Final
+      - time: 10:59
+        event: Women's 100m Freestyle Final
+      - time: 11:16
+        event: Men's 200m Individual Medley Final
+      - time: 11:35
+        event: Women's 200m Backstroke Semifinal 1
+      - time: 11:42
+        event: Women's 200m Backstroke Semifinal 2
+ - name: Session 13  19:00 - 21:30
+   day: 30
+   events:
+     - time: 19:02
+       event: Men's 50m Freestyle - Heat 1
+      - time: 19:04
+        event: Men's 50m Freestyle - Heat 2
+      - time: 19:06
+        event: Men's 50m Freestyle - Heat 3
+      - time: 19:08
+        event: Men's 50m Freestyle - Heat 4
+      - time: 19:10
+        event: Men's 50m Freestyle - Heat 5
+      - time: 19:12
+        event: Men's 50m Freestyle - Heat 6
+      - time: 19:14
+        event: Men's 50m Freestyle - Heat 7
+      - time: 19:16
+        event: Men's 50m Freestyle - Heat 8
+      - time: 19:18
+        event: Men's 50m Freestyle - Heat 9
+      - time: 19:20
+        event: Men's 50m Freestyle - Heat 10
+      - time: 19:22
+        event: Men's 50m Freestyle - Heat 11
+      - time: 19:24
+        event: Women's 50m Freestyle - Heat 1
+      - time: 19:26
+        event: Women's 50m Freestyle - Heat 2
+      - time: 19:28
+        event: Women's 50m Freestyle - Heat 3
+      - time: 19:30
+        event: Women's 50m Freestyle - Heat 4
+      - time: 19:32
+        event: Women's 50m Freestyle - Heat 5
+      - time: 19:34
+        event: Women's 50m Freestyle - Heat 6
+      - time: 19:36
+        event: Women's 50m Freestyle - Heat 7
+      - time: 19:38
+        event: Women's 50m Freestyle - Heat 8
+      - time: 19:40
+        event: Women's 50m Freestyle - Heat 9
+      - time: 19:42
+        event: Women's 50m Freestyle - Heat 10
+      - time: 19:44
+        event: Women's 50m Freestyle - Heat 11
+      - time: 19:46
+        event: Women's 50m Freestyle - Heat 12
+      - time: 19:48
+        event: Men's 1500m Freestyle - Heat 1
+      - time: 20:06
+        event: Men's 1500m Freestyle - Heat 2
+      - time: 20:24
+        event: Men's 1500m Freestyle - Heat 3
+      - time: 20:42
+        event: Men's 1500m Freestyle - Heat 4
+      - time: 21:00
+        event: Men's 1500m Freestyle - Heat 5
+      - time: 21:18
+        event: Men's 1500m Freestyle - Heat 6
+      - time: 21:36
+        event: Women's 4 x 100m Medley Relay - Heat 1
+      - time: 21:42
+        event: Women's 4 x 100m Medley Relay - Heat 2
+      - time: 21:50
+        event: Men's 4 x 100m Medley Relay - Heat 1
+      - time: 22:00
+        event: Men's 4 x 100m Medley Relay - Heat 2
+      - time: 22:10
+        event: Men's 4 x 100m Medley Relay - Heat 3
+# Sat, 31 Jul
+  - name: Session 14  10:30 - 12:30
+    day: 31
+    events:
+      - time: 10:30
+        event: Men's 100m Butterfly Final
+      - time: 10:37
+        event: Women's 200m Backstroke Final
+      - time: 10:46
+        event: Women's 800m Freestyle Final
+      - time: 11:11
+        event: Men's 50m Freestyle Semifinal 1
+      - time: 11:16
+        event: Men's 50m Freestyle Semifinal 2
+      - time: 11:32
+        event: Women's 50m Freestyle Semifinal 1
+      - time: 11:37
+        event: Women's 50m Freestyle Semifinal 2
+      - time: 11:43
+        event: Mixed 4 x 100m Medley Relay Final
+# Sun, 1 Aug
+  - name: Session 15  10:30 - 12:30
+    day: 1
+    events:
+      - time: 10:30
+        event: Men's 50m Freestyle Final
+      - time: 10:37
+        event: Women's 50m Freestyle Final
+      - time: 10:44
+        event: Men's 1500m Freestyle Final
+      - time: 11:15
+        event: Women's 4 x 100m Medley Relay Final
+      - time: 11:36
+        event: Men's 4 x 100m Medley Relay Final

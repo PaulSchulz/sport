@@ -1,0 +1,144 @@
+---
+events:
+  - name: Opening and Closing Ceremonies
+    id:   cer
+    days: [34,8]
+    
+  - name: 3x3 Basketball
+    id:   ba3
+    days: [24,25,26,27,28]
+    
+  - name: Archery
+    days: [23,24,25,26,27,28,29,30,31]
+    
+  - name: Artistic Gymnastics
+    days: [21,22,24,25,26,27,28,29,1,2,3]
+    
+  - name: Artistic Swimming
+    days: [2,3,4,6,7]
+    
+  - name: Athletics
+    days: [30,31,1,2,3,4,5,6,7,8]
+    
+  - name: Badminton
+    days: [24,25,26,27,28,29,30,31,1,2]
+    
+  - name: Baseball/Softball
+    days: [21,22,24,25,26,27,28,29,30,31,1,2,3,4,5,7]
+    
+  - name: Basketball
+    days: [25,26,27,28,29,30,31,1,2,3,4,5,6,7,8]
+    
+  - name: Beach Volleyball
+    days: [24,25,26,27,28,29,30,31,1,2,3,4,5,6,7]
+    
+  - name: Boxing
+    days: [24,25,26,27,28,29,30.31,1,3,4,5,6,7,8]
+    
+  - name: Canoe Slalom
+    days: [25,26,27,28,29,30]
+    
+  - name: Canoe Sprint
+    days: [2,3,4,5,6,7]
+    
+  - name: Cycling BMX Freestyle
+    days: [31,1]
+    
+  - name: Cycling BMX Racing
+    days: [29,30]
+    
+  - name: Cycling Mountain Bike
+    days: [26,27]
+    
+  - name: Cycling Road
+    days: [24,25,28]
+    
+  - name: Cycling Track
+    days: [2,3,4,5,6,7,8]
+    
+  - name: Diving
+    days: [25,26,27,28,30,31,1,2,3,4,5,6,7]
+    
+  - name: Equestrian
+    days: [23,24,25,27,28,29,30,31,1,2,3,4,5,6,7]
+    
+  - name: Fencing
+    days: [24,25,26,27,28,29,30,31,1]
+    
+  - name: Football
+    days: [21,22,24,25,27,28,30,31,2,3,5,6,7]
+    
+  - name: Golf
+    days: [29,30,31,1,4,5,6,7]
+    
+  - name: Handball
+    days: [24,25,26,27,28,29,30.31,1,2,3,4,5,6,7,8]
+    
+  - name: Hockey
+    days: [24,25,26,27,28,29,30,31,1,2,3,4,5,6,7]
+    
+  - name: Judo
+    days: [24,25,26,27,28,29,30,31]
+    
+  - name: Karate
+    days: [5,6,7]
+    
+  - name: Marathon Swimming
+    days: [4,5]
+    
+  - name: Modern Pentathlon
+    days: [5,6,7]
+    
+  - name: Rhythmic Gymnastics
+    days: [6,7,8]
+    
+  - name: Rowing
+    days: [23,24,25,26,27,28,29,30]
+    
+  - name: Rugby Sevens
+    days: [26,27,28,29,30,31]
+    
+  - name: Sailing
+    days: [25,26,27,28,29,30,31,1,2,3,4]
+    
+  - name: Shooting
+    days: [23,24,25,26,27,28,29,30,31,1,2]
+    
+  - name: Skateboarding
+    days: [25,26,4,5]
+    
+  - name: Sport Climbing
+    days: [3,4,5,6]
+    
+  - name: Surfing
+    days: [25,26,27,28,29,30,31]
+    
+  - name: Swimming
+    days: [24,25,26,27,28,29,30,31,1]
+    
+  - name: Table Tennis
+    days: [24,25,26,27,28,29,30,1,2,3,4,5,6]
+    
+  - name: Taekwondo
+    days: [24,25,26,27]
+    
+  - name: Tennis
+    days: [24,25,26,27,28,29,30,31,1]
+    
+  - name: Trampoline Gymnastics
+    days: [29,30,31]
+    
+  - name: Triathlon
+    days: [26,27,31]
+    
+  - name: Volleyball
+    days: [24,25,26,27,28,29,30,31,1,2,3,4,5,6,7,8]
+    
+  - name: Water Polo
+    days: [24,25,26,27,28,29,30,31,1,2,3,4,5,6,7,8]
+    
+  - name: Weightlifting
+    days: [24,25,26,27,28,31,1,2,3,4]
+    
+  - name: Wrestling
+    days: [1,2,3,4,5,6,7]
