@@ -1,0 +1,97 @@
+---
+sport: tennis
+days: [24,25,26,27,28,29,30,31,1]
+venue: Ariake Tennis Park
+comment: Order of play available evening before
+website: https://en.wikipedia.org/wiki/Tennis_at_the_2020_Summer_Olympics
+sessions:
+  # Sat, 24 Jul
+  - name: Mens singles - Round 1
+    day: 24
+  - name: Mens doubles - Round 1
+    day: 24
+  - name: Womens singles - Round 1
+    day: 24
+  - name: Womens doubles - Round 1
+    day: 24
+    
+  # Sun, 25 Jul
+  - name: Mens singles - Round 1
+    day: 25
+  - name: Mens doubles - Round 1
+    day: 25
+  - name: Womens singles - Round 1
+    day: 25
+  - name: Womens doubles - Round 1
+    day: 25
+    
+  # Mon, 26 Jul
+  - name: Mens singles - Round 2
+    day: 26
+  - name: Mens doubles - Round 16
+    day: 26
+  - name: Womens singles - Round 2
+    day: 26
+  - name: Womens doubles - Round 16
+    day: 26
+
+  # Tue, 27 Jul
+  - name: Mens singles - Round 2
+    day: 27
+  - name: Mens doubles - Quarterfinal
+    day: 27
+  - name: Womens singles - Round 16
+    day: 27
+  - name: Womens doubles - Round 16
+    day: 27
+  - name: Womens doubles - Quarterfinal
+    day: 27
+
+  # Wed, 28 Jul
+  - name: Mens singles - Round 16
+    day: 28
+  - name: Mens doubles - Semifinal
+    day: 28
+  - name: Womens singles - Quarterfinal
+    day: 28
+  - name: Womens doubles - Quarterfinal
+    day: 28
+  - name: Mixed doubles - Round 16
+    day: 28
+    
+  # Thu, 29 Jul
+  - name: Mens singles - Quarter Final 
+    day: 29
+  - name: Womens singles - Semifinals
+    day: 29
+  - name: Womens doubles - Semifinals
+    day: 29
+  - name: Mixed doubles - Quarter Finall
+    day: 29
+  
+  # Fri, 30 Jul
+  - name: Mens singles - Semifinals
+    day: 30
+  - name: Mens doubles - Finals
+    day: 30
+  - name: Mixed doubles - Semifinals
+    day: 30
+    
+  # Sat, 31 Jul
+  - name: Mens singles - Finals 
+    day: 31
+  - name: Womens singles - Finals
+    day: 31
+  - name: Womens doubles - Finals
+    day: 31
+  - name: Mixed doubles - Finals
+    day: 31
+  
+  # Sun, 1 Aug
+  - name: Mens singles - Finals 
+    day: 1
+  - name: Womens doubles - Finals
+    day: 1
+  - name: Mixed doubles - Finals
+    day: 1
+  
