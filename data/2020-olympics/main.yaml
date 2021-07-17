@@ -1,15 +1,165 @@
 ---
+sports:
+  - name: Aquatics
+    discipline:
+      - name: Artistic swimming (2)
+      - name: Diving (8)
+      - name: Swimming (37)
+      - name: Water polo (2)
+      - name: Archery (5)
+      - name: Athletics (48)
+      - name: Badminton (5)
+  - name: Baseball
+    discipline:
+      - name: Baseball (1)
+      - name: Softball (1)
+  - name: Basketball
+    discipline:
+      - name: Basketball (2)
+      - name: 3x3 basketball (2)
+  - name: Boxing (13)
+      discipline:
+        - name: Men 52 kg
+        - name: Men 57 kg
+        - name: Men 63 kg
+        - name: Men 69 kg
+        - name: Men 75 kg
+        - name: Men 81 kg
+        - name: Men 91 kg
+        - name: Men +91 kg
+        - name: Women 51 kg
+        - name: Women 57 kg
+        - name: Women 60 kg
+        - name: Women 69 kg
+        - name: Women 75 kg
+  - name: Canoeing
+    discipline:
+      - name: Slalom (4)
+      - name:print (12)
+  - name: Cycling
+    discipline:
+      - name: BMX freestyle (2)
+      - name: BMX racing (2)
+      - name: Mountain biking (2)
+      - name: Road cycling (4)
+      - name: Track cycling (12)
+  - name:￼Equestrian
+    discipline:
+      - name: Dressage (2)
+      - name: Eventing (2)
+      - name: Jumping (2)
+  - name: Fencing (12)
+    url: https://en.wikipedia.org/wiki/Fencing_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Épée men
+      - name: Épée women
+      - name: Team épée	men
+      - name: Team épée	women
+      - name: Foil men	
+      - name: Foil women
+      - name: Team foil	men
+      - name: Team foil	women
+      - name: Sabre	men
+      - name: Sabre	women
+      - name: Team sabre men
+      - name: Team sabre women
+  - name: Field hockey (2)
+    url: https://en.wikipedia.org/wiki/Field_hockey_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Field hockey men
+      - name: Field hockey women
+￼ - name: Football (2)
+    url: https://en.wikipedia.org/wiki/Football_at_the_2020_Summer_Olympics
+    discipline:
+      - name; Football men
+      - name: Football women
+  - name: Golf (2)
+    url: https://en.wikipedia.org/wiki/Golf_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Golf men
+      - name: Gold women
+￼ - name: Gymnastics
+    url: https://en.wikipedia.org/wiki/Gymnastics_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Artistic (14)
+      - name: Rhythmic (2)
+      - name: Trampoline (2)
+  - name: Handball (2)
+    url: https://en.wikipedia.org/wiki/Handball_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Handball men
+      - name: Handball women
+  - name: Judo (15)
+    url: https://en.wikipedia.org/wiki/Judo_at_the_2020_Summer_Olympics
+    discipine:
+      - Men 60 kg
+      - Men 66 kg
+      - Men 73 kg
+      - Men 81 kg
+      - Men 90 kg
+      - Men 100 kg
+      - Men +100 kg
+      - Women 48 kg
+      - Women 57 kg
+      - Women 63 kg
+      - Women 70 kg
+      - Women 78 kg
+      - Women +78 kg
+      - Mixed team
+  - name: Karate
+    url: https://en.wikipedia.org/wiki/Karate_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Kata (2)
+      - name: Kumite (6)
+  - name: Modern pentathlon (2)
+    url: https://en.wikipedia.org/wiki/Modern_pentathlon_at_the_2020_Summer_Olympics
+  - name: Rowing (14)
+    url: https://en.wikipedia.org/wiki/Rowing_at_the_2020_Summer_Olympics
+￼ - name: Rugby sevens (2)
+    url: https://en.wikipedia.org/wiki/Rugby_sevens_at_the_2020_Summer_Olympics
+￼ - name: Sailing (10)
+    url: https://en.wikipedia.org/wiki/Sailing_at_the_2020_Summer_Olympics
+￼ - name: Shooting (15)
+    url:  https://en.wikipedia.org/wiki/Shooting_at_the_2020_Summer_Olympics
+￼ - name: Skateboarding (4)
+    url; https://en.wikipedia.org/wiki/Skateboarding_at_the_2020_Summer_Olympics
+￼ - name: Sport climbing (2)
+    url: https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics
+￼ - name: Surfing (2)
+    url: https://en.wikipedia.org/wiki/Surfing_at_the_2020_Summer_Olympics
+  - name: Table tennis (5)
+    url: https://en.wikipedia.org/wiki/Table_tennis_at_the_2020_Summer_Olympics
+￼ - name: Taekwondo (8)
+    url: https://en.wikipedia.org/wiki/Taekwondo_at_the_2020_Summer_Olympics
+￼ - name: Tennis (5)
+    url: https://en.wikipedia.org/wiki/Tennis_at_the_2020_Summer_Olympics
+￼ - name: Triathlon (3)
+    url: https://en.wikipedia.org/wiki/Triathlon_at_the_2020_Summer_Olympics
+￼ - name: Volleyball
+    url: https://en.wikipedia.org/wiki/Volleyball_at_the_2020_Summer_Olympics
+    discipline;
+      - name: Volleyball (2)
+      - name: Beach volleyball (2)
+￼ - name: Weightlifting (14)
+    url: https://en.wikipedia.org/wiki/Weightlifting_at_the_2020_Summer_Olympics
+￼ - name: Wrestling
+    url: https://en.wikipedia.org/wiki/Wrestling_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Freestyle (12)
+      - name: Greco-Roman (6)
+
 events:
   - name: Opening and Closing Ceremonies
     id:   cer
     days: [34,8]
-    
+        
   - name: 3x3 Basketball
     id:   ba3
     days: [24,25,26,27,28]
     
   - name: Archery
     days: [23,24,25,26,27,28,29,30,31]
+    
     
   - name: Artistic Gymnastics
     days: [21,22,24,25,26,27,28,29,1,2,3]
@@ -58,7 +208,8 @@ events:
     
   - name: Diving
     days: [25,26,27,28,30,31,1,2,3,4,5,6,7]
-    
+    icon: 
+      
   - name: Equestrian
     days: [23,24,25,27,28,29,30,31,1,2,3,4,5,6,7]
     
