@@ -1,0 +1,162 @@
+---
+noc:
+--- A ---
+  - code: AFG
+    name: Afghanistan
+
+  - code: ALB
+    name: Albania
+
+  - code: ALG
+    name: Algeria
+
+  - code: AND
+    name: Andora
+
+  - code: ANG
+    name: Angola
+
+  - code: ANT
+    name: Antigua and Barbuda
+
+  - code: ARG
+    name: Argentina
+
+  - code: ARM
+    name: Armenia
+
+  - code: ARU
+    name: Aruba
+
+  - code: ASA
+    name: American Somoa
+      
+  - code: AUS
+    name: Australia
+
+  - code: AUT
+    name: Austria
+
+  - code: AZE
+    name: Azerbaijan
+
+  - code: BAH
+    name: Bahamas
+
+  - code: BAN
+    name: Bangladesh
+
+  - code: BAR
+    name: Barbados
+
+  - code: BUL
+    name: Bulgaria
+
+  - code: BLR
+    name: Belarus
+
+  - code: BEL
+    name:￼Belgium
+
+  - code: BIZ
+    name: Belize
+
+  - code: Benin
+    name: BEN
+
+  - code: BER
+    name: Bermuda
+
+  - code: BHU
+    name: Bhutan
+
+  - code: BOL
+    name: Bolivia
+
+  - code: BIH
+    name: Bosnia and Herzegovina
+
+  - code: BOT
+    name: Botswana
+
+  - code: BRA
+    name: Brazil
+
+  - code: IVB
+    name: British Virgin Islands
+
+  - code: BRU
+    name: Brunei
+
+  - code: BUL
+    name: Bulgaria
+
+  - code: BUR
+    name: Burkina Faso
+
+  - code: BDI
+    name: Burundi
+--- C ---
+  - name: Cameroon
+  - name: Canada
+  - name: Chile
+  - name: China
+  - name: Chinese Taipei
+  - name: Colombia
+  - name: Croatia
+  - name: Cuba
+  - name: Czech Republic
+  - name: Denmark
+  - name: Ecuador
+  - name: Egypt
+  - name:￼Estonia
+  - name: Fiji
+  - name: France
+  - name: Georgia
+  - name: Germany
+  - name: Great Britain
+  - name: Greece
+  - name: Guyana
+  - name: Hong Kong, China
+  - name: Hungary
+  - name: India
+  - name: Islamic Republic of Iran
+  - name: Italy
+  - name: Japan
+  - name: Kazakhstan
+  - name:￼Latvia
+  - name: Luxembourg
+  - name: Monaco
+  - name: Mongolia
+  - name: Netherlands
+  - name: NewZealand
+  - name: Nigeria
+  - name: Paraguay
+  - name: People's Republic of China
+    alias:
+      - ROC
+  - name: Poland
+  - name: Portugal
+  - name: Puerto Rico
+  - name: Republic of Korea
+  - name: Romania
+  - name: Saudi Arabia
+  - name: Senegal
+  - name: Serbia
+  - name: Singapore
+  - name: Slovenia
+  - name: South Korea
+  - name: Spain
+  - name: Sweden
+  - name: Switzerland
+  - name: Syrian Arab Republic
+  - name: Thailand
+  - name: Togo
+  - name: Tunisia
+  - name: Ukraine
+  - name: United States of America
+    alias:
+      - United States
+      - UnitedStates
+  - name: Uzbekistan
+  - name: Vanuatu
