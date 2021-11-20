@@ -1,0 +1,1199 @@
+---
+title:    "A League"
+location: "Australia"
+code:     "soccer"
+date:     {from: "11 Oct 2019", to: "11 Oct 2019"}
+url:      ""
+version:  "1.0"
+name:     aleague-2019
+filename: data/download/aleague-2019-UTC.csv
+
+teams:    {}
+
+venues:   {}
+
+games:
+  - round:   1
+    time:    "11/10/2019 08:30"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Sydney FC"
+    score:   {ade: 2, syd: 3}
+    result:  {ade: 0, syd: 2}
+    summary: ""
+  - round:   1
+    time:    "12/10/2019 06:15"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Central Coast Mariners"
+    score:   {wsw: 2, cen: 1}
+    result:  {wsw: 2, cen: 0}
+    summary: ""
+  - round:   1
+    time:    "12/10/2019 08:30"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Victory"
+    away:    "Melbourne City FC"
+    score:   {mbv: 0, mbc: 0}
+    result:  {mbv: 1, mbc: 1}
+    summary: ""
+  - round:   1
+    time:    "13/10/2019 05:00"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Western United FC"
+    score:   {wel: 0, wes: 1}
+    result:  {wel: 0, wes: 2}
+    summary: ""
+  - round:   1
+    time:    "13/10/2019 07:00"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Brisbane Roar FC"
+    score:   {per: 1, bri: 1}
+    result:  {per: 1, bri: 1}
+    summary: ""
+  - round:   2
+    time:    "18/10/2019 08:30"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Victory"
+    away:    "Western Sydney Wanderers FC"
+    score:   {mbv: 1, wsw: 2}
+    result:  {mbv: 0, wsw: 2}
+    summary: ""
+  - round:   2
+    time:    "19/10/2019 06:15"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Perth Glory"
+    score:   {wes: 1, per: 1}
+    result:  {wes: 1, per: 1}
+    summary: ""
+  - round:   2
+    time:    "19/10/2019 08:30"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Newcastle Jets"
+    score:   {cen: 1, new: 1}
+    result:  {cen: 1, new: 1}
+    summary: ""
+  - round:   2
+    time:    "20/10/2019 05:00"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Adelaide United"
+    score:   {mbc: 2, ade: 1}
+    result:  {mbc: 2, ade: 0}
+    summary: ""
+  - round:   2
+    time:    "20/10/2019 07:00"
+    venue:   "Leichhardt Oval"
+    home:    "Sydney FC"
+    away:    "Wellington Phoenix"
+    score:   {syd: 2, wel: 1}
+    result:  {syd: 2, wel: 0}
+    summary: ""
+  - round:   3
+    time:    "25/10/2019 08:30"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Melbourne Victory"
+    score:   {bri: 0, mbv: 1}
+    result:  {bri: 0, mbv: 2}
+    summary: ""
+  - round:   3
+    time:    "26/10/2019 06:15"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Adelaide United"
+    score:   {new: 1, ade: 2}
+    result:  {new: 0, ade: 2}
+    summary: ""
+  - round:   3
+    time:    "26/10/2019 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Sydney FC"
+    score:   {wsw: 1, syd: 0}
+    result:  {wsw: 2, syd: 0}
+    summary: ""
+  - round:   3
+    time:    "27/10/2019 05:00"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Perth Glory"
+    score:   {wel: 1, per: 2}
+    result:  {wel: 0, per: 2}
+    summary: ""
+  - round:   3
+    time:    "27/10/2019 07:00"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Melbourne City FC"
+    score:   {wes: 1, mbc: 2}
+    result:  {wes: 0, mbc: 2}
+    summary: ""
+  - round:   4
+    time:    "01/11/2019 08:30"
+    venue:   "Leichhardt Oval"
+    home:    "Sydney FC"
+    away:    "Newcastle Jets"
+    score:   {syd: 4, new: 1}
+    result:  {syd: 2, new: 0}
+    summary: ""
+  - round:   4
+    time:    "02/11/2019 06:15"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Brisbane Roar FC"
+    score:   {wsw: 0, bri: 0}
+    result:  {wsw: 1, bri: 1}
+    summary: ""
+  - round:   4
+    time:    "02/11/2019 08:30"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Victory"
+    away:    "Western United FC"
+score:   {mbv: 2, wes: 3}
+    result:  {mbv: 0, wes: 2}
+    summary: ""
+  - round:   4
+    time:    "03/11/2019 05:00"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Wellington Phoenix"
+    score:   {mbc: 3, wel: 2}
+    result:  {mbc: 2, wel: 0}
+    summary: ""
+  - round:   4
+    time:    "03/11/2019 07:00"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Central Coast Mariners"
+    score:   {per: 1, cen: 2}
+    result:  {per: 0, cen: 2}
+    summary: ""
+  - round:   5
+    time:    "08/11/2019 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Central Coast Mariners"
+    score:   {mbc: 3, cen: 1}
+    result:  {mbc: 2, cen: 0}
+    summary: ""
+  - round:   5
+    time:    "09/11/2019 06:15"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Perth Glory"
+    score:   {new: 1, per: 1}
+    result:  {new: 1, per: 1}
+    summary: ""
+  - round:   5
+    time:    "09/11/2019 08:30"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Western Sydney Wanderers FC"
+    score:   {wes: 2, wsw: 1}
+    result:  {wes: 2, wsw: 0}
+    summary: ""
+  - round:   5
+    time:    "10/11/2019 05:00"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Wellington Phoenix"
+    score:   {mbv: 1, wel: 1}
+    result:  {mbv: 1, wel: 1}
+    summary: ""
+  - round:   5
+    time:    "10/11/2019 07:00"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Brisbane Roar FC"
+    score:   {ade: 1, bri: 0}
+    result:  {ade: 2, bri: 0}
+    summary: ""
+  - round:   6
+    time:    "15/11/2019 08:30"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Adelaide United"
+    score:   {cen: 1, ade: 3}
+    result:  {cen: 0, ade: 2}
+    summary: ""
+  - round:   6
+    time:    "16/11/2019 06:15"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Melbourne Victory"
+    score:   {syd: 2, mbv: 1}
+    result:  {syd: 2, mbv: 0}
+    summary: ""
+  - round:   6
+    time:    "16/11/2019 08:30"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Newcastle Jets"
+    score:   {wes: 0, new: 1}
+    result:  {wes: 0, new: 2}
+    summary: ""
+  - round:   6
+    time:    "17/11/2019 05:00"
+    venue:   "Dolphin Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Melbourne City FC"
+    score:   {bri: 4, mbc: 3}
+    result:  {bri: 2, mbc: 0}
+    summary: ""
+  - round:   7
+    time:    "22/11/2019 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Melbourne City FC"
+    score:   {wsw: 2, mbc: 3}
+    result:  {wsw: 0, mbc: 2}
+    summary: ""
+  - round:   7
+    time:    "23/11/2019 06:15"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Brisbane Roar FC"
+    score:   {wel: 2, bri: 1}
+    result:  {wel: 2, bri: 0}
+    summary: ""
+  - round:   7
+    time:    "23/11/2019 08:30"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Melbourne Victory"
+    score:   {ade: 3, mbv: 1}
+    result:  {ade: 2, mbv: 0}
+    summary: ""
+  - round:   7
+    time:    "23/11/2019 10:45"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Sydney FC"
+    score:   {per: 1, syd: 3}
+    result:  {per: 0, syd: 2}
+    summary: ""
+  - round:   7
+    time:    "24/11/2019 05:00"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Western United FC"
+    score:   {cen: 1, wes: 0}
+    result:  {cen: 2, wes: 0}
+    summary: ""
+  - round:   8
+    time:    "29/11/2019 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Perth Glory"
+    score:   {mbv: 1, per: 0}
+    result:  {mbv: 2, per: 0}
+    summary: ""
+  - round:   8
+    time:    "30/11/2019 06:15"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Central Coast Mariners"
+    score:   {bri: 2, cen: 0}
+    result:  {bri: 2, cen: 0}
+    summary: ""
+  - round:   8
+    time:    "30/11/2019 08:30"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Western Sydney Wanderers FC"
+    score:   {new: 2, wsw: 0}
+    result:  {new: 2, wsw: 0}
+    summary: ""
+  - round:   8
+    time:    "01/12/2019 05:00"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Sydney FC"
+    score:   {wes: 0, syd: 2}
+    result:  {wes: 0, syd: 2}
+    summary: ""
+  - round:   8
+    time:    "01/12/2019 07:00"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Wellington Phoenix"
+    score:   {ade: 1, wel: 2}
+    result:  {ade: 0, wel: 2}
+    summary: ""
+  - round:   9
+    time:    "06/12/2019 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Perth Glory"
+    score:   {mbc: 0, per: 3}
+    result:  {mbc: 0, per: 2}
+    summary: ""
+  - round:   9
+    time:    "07/12/2019 06:15"
+    venue:   "Eden Park"
+    home:    "Wellington Phoenix"
+    away:    "Western Sydney Wanderers FC"
+    score:   {wel: 2, wsw: 1}
+    result:  {wel: 2, wsw: 0}
+    summary: ""
+  - round:   9
+    time:    "07/12/2019 08:30"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Brisbane Roar FC"
+    score:   {syd: 5, bri: 1}
+    result:  {syd: 2, bri: 0}
+    summary: ""
+  - round:   9
+    time:    "08/12/2019 05:00"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Melbourne Victory"
+    score:   {wes: 3, mbv: 1}
+    result:  {wes: 2, mbv: 0}
+    summary: ""
+  - round:   9
+    time:    "08/12/2019 07:00"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Newcastle Jets"
+    score:   {ade: 2, new: 1}
+    result:  {ade: 2, new: 0}
+    summary: ""
+  - round:   10
+    time:    "13/12/2019 08:30"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Western United FC"
+    score:   {bri: 0, wes: 2}
+    result:  {bri: 0, wes: 2}
+    summary: ""
+  - round:   10
+    time:    "14/12/2019 06:15"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Wellington Phoenix"
+    score:   {mbv: 0, wel: 0}
+    result:  {mbv: 1, wel: 1}
+    summary: ""
+  - round:   10
+    time:    "14/12/2019 08:30"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Central Coast Mariners"
+    score:   {syd: 1, cen: 0}
+    result:  {syd: 2, cen: 0}
+    summary: ""
+  - round:   10
+    time:    "14/12/2019 10:45"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Western Sydney Wanderers FC"
+    score:   {per: 2, wsw: 0}
+    result:  {per: 2, wsw: 0}
+    summary: ""
+  - round:   10
+    time:    "15/12/2019 05:00"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Melbourne City FC"
+    score:   {new: 0, mbc: 4}
+    result:  {new: 0, mbc: 2}
+    summary: ""
+  - round:   11
+    time:    "20/12/2019 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Western United FC"
+    score:   {wsw: 1, wes: 1}
+    result:  {wsw: 1, wes: 1}
+    summary: ""
+  - round:   11
+    time:    "21/12/2019 06:15"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Sydney FC"
+    score:   {wel: 2, syd: 2}
+    result:  {wel: 1, syd: 1}
+    summary: ""
+  - round:   11
+    time:    "21/12/2019 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Melbourne Victory"
+    score:   {mbc: 1, mbv: 2}
+    result:  {mbc: 0, mbv: 2}
+    summary: ""
+  - round:   11
+    time:    "21/12/2019 10:45"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Newcastle Jets"
+    score:   {per: 6, new: 2}
+    result:  {per: 2, new: 0}
+    summary: ""
+  - round:   11
+    time:    "22/12/2019 05:00"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Adelaide United"
+    score:   {cen: 2, ade: 1}
+    result:  {cen: 2, ade: 0}
+    summary: ""
+  - round:   12
+    time:    "27/12/2019 08:30"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Western Sydney Wanderers FC"
+    score:   {ade: 2, wsw: 3}
+    result:  {ade: 0, wsw: 2}
+    summary: ""
+  - round:   12
+    time:    "28/12/2019 06:15"
+    venue:   "Mars Stadium"
+    home:    "Western United FC"
+    away:    "Wellington Phoenix"
+    score:   {wes: 1, wel: 3}
+    result:  {wes: 0, wel: 2}
+    summary: ""
+  - round:   12
+    time:    "28/12/2019 08:30"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Brisbane Roar FC"
+    score:   {new: 1, bri: 1}
+    result:  {new: 1, bri: 1}
+    summary: ""
+  - round:   12
+    time:    "29/12/2019 05:00"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Melbourne City FC"
+    score:   {syd: 2, mbc: 1}
+    result:  {syd: 2, mbc: 0}
+    summary: ""
+  - round:   12
+    time:    "31/12/2019 08:30"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Perth Glory"
+    score:   {cen: 0, per: 3}
+    result:  {cen: 0, per: 2}
+    summary: ""
+  - round:   13
+    time:    "01/01/2020 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Brisbane Roar FC"
+    score:   {wsw: 1, bri: 2}
+    result:  {wsw: 0, bri: 2}
+    summary: ""
+  - round:   13
+    time:    "03/01/2020 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Western United FC"
+    score:   {mbc: 3, wes: 2}
+    result:  {mbc: 2, wes: 0}
+    summary: ""
+  - round:   13
+    time:    "04/01/2020 06:15"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Central Coast Mariners"
+    score:   {wel: 2, cen: 1}
+    result:  {wel: 2, cen: 0}
+    summary: ""
+  - round:   13
+    time:    "04/01/2020 08:30"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Adelaide United"
+    score:   {syd: 2, ade: 1}
+    result:  {syd: 2, ade: 0}
+    summary: ""
+  - round:   13
+    time:    "05/01/2020 05:00"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Newcastle Jets"
+    score:   {mbv: 4, new: 0}
+    result:  {mbv: 2, new: 0}
+    summary: ""
+  - round:   14
+    time:    "10/01/2020 08:30"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Sydney FC"
+    score:   {new: 1, syd: 2}
+    result:  {new: 0, syd: 2}
+    summary: ""
+  - round:   14
+    time:    "11/01/2020 06:15"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Western Sydney Wanderers FC"
+    score:   {wel: 2, wsw: 0}
+    result:  {wel: 2, wsw: 0}
+    summary: ""
+  - round:   14
+    time:    "11/01/2020 08:30"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Melbourne City FC"
+    score:   {bri: 2, mbc: 2}
+    result:  {bri: 1, mbc: 1}
+    summary: ""
+  - round:   14
+    time:    "11/01/2020 10:45"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Adelaide United"
+    score:   {per: 3, ade: 0}
+    result:  {per: 2, ade: 0}
+    summary: ""
+  - round:   14
+    time:    "12/01/2020 05:00"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Melbourne Victory"
+    score:   {cen: 3, mbv: 2}
+    result:  {cen: 2, mbv: 0}
+    summary: ""
+  - round:   15
+    time:    "17/01/2020 08:30"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Melbourne Victory"
+    score:   {ade: 1, mbv: 0}
+    result:  {ade: 2, mbv: 0}
+    summary: ""
+  - round:   15
+    time:    "18/01/2020 06:15"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Wellington Phoenix"
+    score:   {bri: 1, wel: 0}
+    result:  {bri: 2, wel: 0}
+    summary: ""
+  - round:   15
+    time:    "18/01/2020 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Newcastle Jets"
+    score:   {mbc: 2, new: 0}
+    result:  {mbc: 2, new: 0}
+    summary: ""
+  - round:   15
+    time:    "19/01/2020 05:00"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Central Coast Mariners"
+    score:   {wes: 3, cen: 0}
+    result:  {wes: 2, cen: 0}
+    summary: ""
+  - round:   15
+    time:    "19/01/2020 07:00"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Perth Glory"
+    score:   {wsw: 0, per: 1}
+    result:  {wsw: 0, per: 2}
+    summary: ""
+  - round:   16
+    time:    "24/01/2020 06:15"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Newcastle Jets"
+    score:   {wel: 2, new: 1}
+    result:  {wel: 2, new: 0}
+    summary: ""
+  - round:   16
+    time:    "24/01/2020 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Sydney FC"
+    score:   {mbv: 0, syd: 3}
+    result:  {mbv: 0, syd: 2}
+    summary: ""
+  - round:   16
+    time:    "25/01/2020 06:15"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Brisbane Roar FC"
+    score:   {cen: 0, bri: 1}
+    result:  {cen: 0, bri: 2}
+    summary: ""
+  - round:   16
+    time:    "25/01/2020 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Perth Glory"
+    score:   {mbc: 0, per: 0}
+    result:  {mbc: 1, per: 1}
+    summary: ""
+  - round:   16
+    time:    "26/01/2020 05:00"
+    venue:   "GMHBA Stadium"
+    home:    "Western United FC"
+    away:    "Adelaide United"
+    score:   {wes: 3, ade: 4}
+    result:  {wes: 0, ade: 2}
+    summary: ""
+  - round:   17
+    time:    "31/01/2020 08:30"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Brisbane Roar FC"
+    score:   {syd: 1, bri: 0}
+    result:  {syd: 2, bri: 0}
+    summary: ""
+  - round:   17
+    time:    "01/02/2020 06:15"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Western United FC"
+    score:   {new: 0, wes: 0}
+    result:  {new: 1, wes: 1}
+    summary: ""
+  - round:   17
+    time:    "01/02/2020 08:30"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Melbourne City FC"
+    score:   {ade: 3, mbc: 1}
+    result:  {ade: 2, mbc: 0}
+    summary: ""
+  - round:   17
+    time:    "01/02/2020 10:45"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Melbourne Victory"
+    score:   {per: 2, mbv: 2}
+    result:  {per: 1, mbv: 1}
+    summary: ""
+  - round:   17
+    time:    "02/02/2020 05:00"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Western Sydney Wanderers FC"
+    score:   {cen: 1, wsw: 3}
+    result:  {cen: 0, wsw: 2}
+    summary: ""
+  - round:   18
+    time:    "07/02/2020 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Melbourne Victory"
+    score:   {mbc: 2, mbv: 1}
+    result:  {mbc: 2, mbv: 0}
+    summary: ""
+  - round:   18
+    time:    "07/02/2020 10:45"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Wellington Phoenix"
+    score:   {per: 4, wel: 2}
+    result:  {per: 2, wel: 0}
+    summary: ""
+  - round:   18
+    time:    "08/02/2020 06:15"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Western Sydney Wanderers FC"
+    score:   {syd: -, wsw: -}
+    result:  {syd: -, wsw: -}
+    summary: ""
+  - round:   18
+    time:    "08/02/2020 08:30"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Adelaide United"
+    score:   {bri: 2, ade: 1}
+    result:  {bri: 2, ade: 0}
+    summary: ""
+  - round:   18
+    time:    "09/02/2020 05:00"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Central Coast Mariners"
+    score:   {new: 4, cen: 3}
+    result:  {new: 2, cen: 0}
+    summary: ""
+  - round:   19
+    time:    "14/02/2020 08:50"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Central Coast Mariners"
+    score:   {ade: 2, cen: 0}
+    result:  {ade: 2, cen: 0}
+    summary: ""
+  - round:   19
+    time:    "15/02/2020 06:15"
+    venue:   "Eden Park"
+    home:    "Wellington Phoenix"
+    away:    "Melbourne City FC"
+    score:   {wel: -, mbc: -}
+    result:  {wel: -, mbc: -}
+    summary: ""
+  - round:   19
+    time:    "15/02/2020 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Newcastle Jets"
+    score:   {wsw: -, new: -}
+    result:  {wsw: -, new: -}
+    summary: ""
+  - round:   19
+    time:    "16/02/2020 05:00"
+    venue:   "Mars Stadium"
+    home:    "Western United FC"
+    away:    "Brisbane Roar FC"
+    score:   {wes: -, bri: -}
+    result:  {wes: -, bri: -}
+    summary: ""
+  - round:   20
+    time:    "21/02/2020 06:15"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Western United FC"
+    score:   {wel: -, wes: -}
+    result:  {wel: -, wes: -}
+    summary: ""
+  - round:   20
+    time:    "21/02/2020 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Adelaide United"
+    score:   {wsw: -, ade: -}
+    result:  {wsw: -, ade: -}
+    summary: ""
+  - round:   20
+    time:    "22/02/2020 06:15"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Melbourne Victory"
+    score:   {new: -, mbv: -}
+    result:  {new: -, mbv: -}
+    summary: ""
+  - round:   20
+    time:    "22/02/2020 08:30"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Sydney FC"
+    score:   {cen: -, syd: -}
+    result:  {cen: -, syd: -}
+    summary: ""
+  - round:   20
+    time:    "23/02/2020 05:00"
+    venue:   "Dolphin Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Perth Glory"
+    score:   {bri: -, per: -}
+    result:  {bri: -, per: -}
+    summary: ""
+  - round:   21
+    time:    "28/02/2020 08:30"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Wellington Phoenix"
+    score:   {syd: -, wel: -}
+    result:  {syd: -, wel: -}
+    summary: ""
+  - round:   21
+    time:    "29/02/2020 06:15"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Perth Glory"
+    score:   {new: -, per: -}
+    result:  {new: -, per: -}
+    summary: ""
+  - round:   21
+    time:    "29/02/2020 08:30"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Victory"
+    away:    "Adelaide United"
+    score:   {mbv: -, ade: -}
+    result:  {mbv: -, ade: -}
+    summary: ""
+  - round:   21
+    time:    "01/03/2020 05:00"
+    venue:   "TBC"
+    home:    "Western United FC"
+    away:    "Central Coast Mariners"
+    score:   {wes: -, cen: -}
+    result:  {wes: -, cen: -}
+    summary: ""
+  - round:   21
+    time:    "01/03/2020 07:00"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Brisbane Roar FC"
+    score:   {mbc: -, bri: -}
+    result:  {mbc: -, bri: -}
+    summary: ""
+  - round:   22
+    time:    "06/03/2020 08:30"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Western Sydney Wanderers FC"
+    score:   {bri: -, wsw: -}
+    result:  {bri: -, wsw: -}
+    summary: ""
+  - round:   22
+    time:    "07/03/2020 06:15"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Western United FC"
+    score:   {ade: -, wes: -}
+    result:  {ade: -, wes: -}
+    summary: ""
+  - round:   22
+    time:    "07/03/2020 08:30"
+    venue:   "Marvel Stadium"
+    home:    "Melbourne Victory"
+    away:    "Sydney FC"
+    score:   {mbv: -, syd: -}
+    result:  {mbv: -, syd: -}
+    summary: ""
+  - round:   22
+    time:    "08/03/2020 05:00"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Wellington Phoenix"
+    score:   {cen: -, wel: -}
+    result:  {cen: -, wel: -}
+    summary: ""
+  - round:   22
+    time:    "08/03/2020 07:00"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Melbourne City FC"
+    score:   {per: -, mbc: -}
+    result:  {per: -, mbc: -}
+    summary: ""
+  - round:   23
+    time:    "13/03/2020 08:30"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Central Coast Mariners"
+    score:   {bri: -, cen: -}
+    result:  {bri: -, cen: -}
+    summary: ""
+  - round:   23
+    time:    "14/03/2020 06:15"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Perth Glory"
+    score:   {syd: -, per: -}
+    result:  {syd: -, per: -}
+    summary: ""
+  - round:   23
+    time:    "14/03/2020 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Western Sydney Wanderers FC"
+    score:   {mbc: -, wsw: -}
+    result:  {mbc: -, wsw: -}
+    summary: ""
+  - round:   23
+    time:    "15/03/2020 05:00"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Melbourne Victory"
+    score:   {wel: -, mbv: -}
+    result:  {wel: -, mbv: -}
+    summary: ""
+  - round:   23
+    time:    "15/03/2020 07:00"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Newcastle Jets"
+    score:   {ade: -, new: -}
+    result:  {ade: -, new: -}
+    summary: ""
+  - round:   24
+    time:    "20/03/2020 08:30"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Melbourne City FC"
+    score:   {cen: -, mbc: -}
+    result:  {cen: -, mbc: -}
+    summary: ""
+  - round:   24
+    time:    "21/03/2020 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Sydney FC"
+    score:   {wsw: -, syd: -}
+    result:  {wsw: -, syd: -}
+    summary: ""
+  - round:   24
+    time:    "21/03/2020 10:45"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Western United FC"
+    score:   {per: -, wes: -}
+    result:  {per: -, wes: -}
+    summary: ""
+  - round:   24
+    time:    "22/03/2020 05:00"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Wellington Phoenix"
+    score:   {new: -, wel: -}
+    result:  {new: -, wel: -}
+    summary: ""
+  - round:   24
+    time:    "22/03/2020 07:00"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Brisbane Roar FC"
+    score:   {mbv: -, bri: -}
+    result:  {mbv: -, bri: -}
+    summary: ""
+  - round:   25
+    time:    "27/03/2020 08:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Adelaide United"
+    score:   {mbc: -, ade: -}
+    result:  {mbc: -, ade: -}
+    summary: ""
+  - round:   25
+    time:    "28/03/2020 06:15"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Newcastle Jets"
+    score:   {cen: -, new: -}
+    result:  {cen: -, new: -}
+    summary: ""
+  - round:   25
+    time:    "28/03/2020 08:30"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Sydney FC"
+    score:   {bri: -, syd: -}
+    result:  {bri: -, syd: -}
+    summary: ""
+  - round:   25
+    time:    "29/03/2020 05:00"
+    venue:   "Mars Stadium"
+    home:    "Western United FC"
+    away:    "Western Sydney Wanderers FC"
+    score:   {wes: -, wsw: -}
+    result:  {wes: -, wsw: -}
+    summary: ""
+  - round:   25
+    time:    "29/03/2020 07:00"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Melbourne Victory"
+    score:   {per: -, mbv: -}
+    result:  {per: -, mbv: -}
+    summary: ""
+  - round:   26
+    time:    "03/04/2020 08:30"
+    venue:   "Leichhardt Oval"
+    home:    "Sydney FC"
+    away:    "Western United FC"
+    score:   {syd: -, wes: -}
+    result:  {syd: -, wes: -}
+    summary: ""
+  - round:   26
+    time:    "04/04/2020 06:15"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Central Coast Mariners"
+    score:   {mbv: -, cen: -}
+    result:  {mbv: -, cen: -}
+    summary: ""
+  - round:   26
+    time:    "04/04/2020 08:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Perth Glory"
+    score:   {wsw: -, per: -}
+    result:  {wsw: -, per: -}
+    summary: ""
+  - round:   26
+    time:    "05/04/2020 06:00"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Adelaide United"
+    score:   {wel: -, ade: -}
+    result:  {wel: -, ade: -}
+    summary: ""
+  - round:   26
+    time:    "05/04/2020 08:00"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Melbourne City FC"
+    score:   {new: -, mbc: -}
+    result:  {new: -, mbc: -}
+    summary: ""
+  - round:   27
+    time:    "10/04/2020 06:00"
+    venue:   "Mars Stadium"
+    home:    "Western United FC"
+    away:    "Melbourne City FC"
+    score:   {wes: -, mbc: -}
+    result:  {wes: -, mbc: -}
+    summary: ""
+  - round:   27
+    time:    "11/04/2020 07:15"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Melbourne Victory"
+    score:   {wsw: -, mbv: -}
+    result:  {wsw: -, mbv: -}
+    summary: ""
+  - round:   27
+    time:    "11/04/2020 09:30"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Sydney FC"
+    score:   {ade: -, syd: -}
+    result:  {ade: -, syd: -}
+    summary: ""
+  - round:   27
+    time:    "12/04/2020 06:00"
+    venue:   "Dolphin Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Newcastle Jets"
+    score:   {bri: -, new: -}
+    result:  {bri: -, new: -}
+    summary: ""
+  - round:   27
+    time:    "12/04/2020 08:00"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Wellington Phoenix"
+    score:   {per: -, wel: -}
+    result:  {per: -, wel: -}
+    summary: ""
+  - round:   28
+    time:    "17/04/2020 09:30"
+    venue:   "Coopers Stadium"
+    home:    "Adelaide United"
+    away:    "Perth Glory"
+    score:   {ade: -, per: -}
+    result:  {ade: -, per: -}
+    summary: ""
+  - round:   28
+    time:    "18/04/2020 07:15"
+    venue:   "Netstrata Jubilee Stadium"
+    home:    "Sydney FC"
+    away:    "Newcastle Jets"
+    score:   {syd: -, new: -}
+    result:  {syd: -, new: -}
+    summary: ""
+  - round:   28
+    time:    "18/04/2020 09:30"
+    venue:   "AAMI Park"
+    home:    "Melbourne Victory"
+    away:    "Western United FC"
+    score:   {mbv: -, wes: -}
+    result:  {mbv: -, wes: -}
+    summary: ""
+  - round:   28
+    time:    "19/04/2020 06:00"
+    venue:   "Westpac Stadium"
+    home:    "Wellington Phoenix"
+    away:    "Brisbane Roar FC"
+    score:   {wel: -, bri: -}
+    result:  {wel: -, bri: -}
+    summary: ""
+  - round:   28
+    time:    "19/04/2020 08:00"
+    venue:   "Central Coast Stadium"
+    home:    "Central Coast Mariners"
+    away:    "Western Sydney Wanderers FC"
+    score:   {cen: -, wsw: -}
+    result:  {cen: -, wsw: -}
+    summary: ""
+  - round:   29
+    time:    "24/04/2020 09:30"
+    venue:   "McDonald Jones Stadium"
+    home:    "Newcastle Jets"
+    away:    "Western United FC"
+    score:   {new: -, wes: -}
+    result:  {new: -, wes: -}
+    summary: ""
+  - round:   29
+    time:    "25/04/2020 04:00"
+    venue:   "Suncorp Stadium"
+    home:    "Brisbane Roar FC"
+    away:    "Adelaide United"
+    score:   {bri: -, ade: -}
+    result:  {bri: -, ade: -}
+    summary: ""
+  - round:   29
+    time:    "25/04/2020 09:30"
+    venue:   "Bankwest Stadium"
+    home:    "Western Sydney Wanderers FC"
+    away:    "Wellington Phoenix"
+    score:   {wsw: -, wel: -}
+    result:  {wsw: -, wel: -}
+    summary: ""
+  - round:   29
+    time:    "26/04/2020 06:00"
+    venue:   "AAMI Park"
+    home:    "Melbourne City FC"
+    away:    "Sydney FC"
+    score:   {mbc: -, syd: -}
+    result:  {mbc: -, syd: -}
+    summary: ""
+  - round:   29
+    time:    "26/04/2020 08:00"
+    venue:   "HBF Park"
+    home:    "Perth Glory"
+    away:    "Central Coast Mariners"
+    score:   {per: -, cen: -}
+    result:  {per: -, cen: -}
+    summary: ""
+  - round:   Elim Finals
+    time:    "01/05/2020 00:00"
+    venue:   ""
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Elim Finals
+    time:    "01/05/2020 00:00"
+    venue:   ""
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Semi Finals
+    time:    "08/05/2020 00:00"
+    venue:   ""
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Semi Finals
+    time:    "08/05/2020 00:00"
+    venue:   ""
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""
+  - round:   Grand Final
+    time:    "16/05/2020 00:00"
+    venue:   ""
+    home:    "To be announced"
+    away:    "To be announced"
+    score:   {tob: -, tob: -}
+    result:  {tob: -, tob: -}
+    summary: ""

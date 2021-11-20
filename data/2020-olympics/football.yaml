@@ -1,0 +1,375 @@
+---
+sport: football
+days: [21,22,24,25,27,28,30,31,2,3,5,6,7]
+events:
+  # Wed, 21 Jul
+  - time: 16:30
+    venue: Sapporo Dome	
+    event: Women's Group E
+    match: 2
+    team-a:￼GBR
+    team-b:￼CHI
+    description: Great Britain vs Chile
+  - time: 17:00
+    venue: Miyagi Stadium	
+    event: Women's Group F
+    match: 3
+    team-a:￼CHN
+    team-b:￼BRA
+    description: China vs Brazil
+  - time: 17:30
+    venue: Tokyo Stadium	
+    event: Women's Group G
+    match: 5
+    team-a:￼SWE
+    team-b:￼USA
+    description: Sweden vs United States
+  - time: 19:30
+    venue: Sapporo Dome	
+    event: Women's Group E
+    match: 1
+    team-a:￼JPN
+    team-b:￼CAN
+    description: Japan vs Canada
+  - time: 20:00
+    venue: Miyagi Stadium	
+    event: Women's Group F
+    match: 4
+    team-a:￼ZAM
+    team-b:￼NED
+    description: Zambia vs Netherlands
+  - time: 20:30
+    venue: Tokyo Stadium	
+    event: Women's Group G
+    match: 6
+    team-a:￼AUS
+    team-b:￼NZL
+    description: Australia vs New Zealand
+  # Thu, 22 Jul
+  - time: 16:30
+    venue: Sapporo Dome	
+    event: Men's Group C
+    match: 5
+    team-a:￼EGY
+    team-b:￼ESP
+    description: Egypt vs Spain
+  - time: 17:00
+    venue: Tokyo Stadium	
+    event: Men's Group A
+    match: 2
+    team-a:￼MEX
+    team-b:￼FRA
+    description: Mexico vs France
+  - time: 17:00
+    venue: Ibaraki Kashima Stadium	
+    event: Men's Group B
+    match: 3
+    team-a:￼NZL
+    team-b:￼KOR
+    description: New Zealand vs Republic of Korea
+  - time: 17:30
+    venue: International Stadium Yokohama	
+    event: Men's Group D
+    match: 8
+    team-a:￼CIV
+    team-b:￼KSA
+    description: Côte d’Ivoire vs Saudi Arabia
+  - time: 19:30
+    venue: Sapporo Dome	
+    event: Men's Group C
+    match: 6
+    team-a:￼ARG
+    team-b:￼AUS
+    description: Argentina vs Australia
+  - time: 20:00
+    venue: Tokyo Stadium	
+    event: Men's Group A
+    match: 1
+    team-a:￼JPN
+    team-b:￼RSA
+    description: Japan vs South Africa
+  - time: 20:00
+    venue: Ibaraki Kashima Stadium	
+    event: Men's Group B
+    match: 4
+    team-a:￼HON
+    team-b:￼ROU
+    description: Honduras vs Romania
+  - time: 20:30
+    venue: International Stadium Yokohama	
+    event: Men's Group D
+    match: 7
+    team-a:￼BRA
+    team-b:￼GER
+    description: Brazil vs Germany
+  # Sat, 24 Jul
+  - time: 16:30
+    venue: Sapporo Dome	
+    event: Women's Group E
+    match: 8
+    team-a:￼CHI
+    team-b:￼CAN
+    description: Chile vs Canada
+  - time: 17:00
+    venue: Miyagi Stadium	
+    event: Women's Group F
+    match: 9
+    team-a:￼CHN
+    team-b:￼ZAM
+    description: China vs Zambia
+  - time: 17:30
+    venue: Saitama Stadium	
+    event: Women's Group G
+    match: 11
+    team-a:￼SWE
+    team-b:￼AUS
+    description: Sweden vs Australia
+  - time: 19:30
+    venue: Sapporo Dome	
+    event: Women's Group E
+    match: 7
+    team-a:￼JPN
+    team-b:￼GBR
+    description: Japan vs Great Britain
+  - time: 20:00
+    venue: Miyagi Stadium	
+    event: Women's Group F
+    match: 10
+    team-a:￼NED
+    team-b:￼BRA
+    description: Netherlands vs Brazil
+  - time: 20:30
+    venue: Saitama Stadium	
+    event: Women's Group G
+    match: 12
+    team-a:￼NZL
+    team-b:￼USA
+    description: New Zealand vs United States
+  # Sun, 25 Jul
+  - time: 16:30
+    venue: Sapporo Dome	
+    event: Men's Group C
+    match: 13
+    team-a:￼EGY
+    team-b:￼ARG
+    description: Egypt vs Argentina
+  - time: 17:00
+    venue: Saitama Stadium	
+    event: Men's Group A
+    match: 10
+    team-a:￼FRA
+    team-b:￼RSA
+    description: France vs South Africa
+  - time: 17:00
+    venue: Ibaraki Kashima Stadium	
+    event: Men's Group B
+    match: 11
+    team-a:￼NZL
+    team-b:￼HON
+    description: New Zealand vs Honduras
+  - time: 17:30
+    venue: International Stadium Yokohama	
+    event: Men's Group D
+    match: 15
+    team-a:￼BRA
+    team-b:￼CIV
+    description: Brazil vs Côte d’Ivoire
+  - time: 19:30
+    venue: Sapporo Dome	
+    event: Men's Group C
+    match: 14
+    team-a:￼AUS
+    team-b:￼ESP
+    description: Australia vs Spain
+  - time: 20:00
+    venue: Saitama Stadium	
+    event: Men's Group A
+    match: 9
+    team-a:￼JPN
+    team-b:￼MEX
+    description: Japan vs Mexico
+  - time: 20:00
+    venue: Ibaraki Kashima Stadium	
+    event: Men's Group B
+    match: 12
+    team-a:￼ROU
+    team-b:￼KOR
+    description: Romania vs Republic of Korea
+  - time: 20:30
+    venue: International Stadium Yokohama	
+    event: Men's Group D
+    match: 16
+    team-a:￼KSA
+    team-b:￼GER
+    description: Saudi Arabia vs Germany
+  # Tue, 27 Jul
+  - time: 17:00
+    venue: Miyagi Stadium	
+    event: Women's Group G
+    match: 17
+    team-a:￼NZL
+    team-b:￼SWE
+    description: New Zealand vs Sweden
+  - time: 17:00
+    venue: Ibaraki Kashima Stadium	
+    event: Women's Group G
+    match: 18
+    team-a:￼USA
+    team-b:￼AUS
+    description: United States vs Australia
+  - time: 20:00
+    venue: Miyagi Stadium	
+    event: Women's Group E
+    match: 13
+    team-a:￼CHI
+    team-b:￼JPN
+    description: Chile vs Japan
+  - time: 20:00
+    venue: Ibaraki Kashima Stadium	
+    event: Women's Group E
+    match: 14
+    team-a:￼CAN
+    team-b:￼GBR
+    description: Canada vs Great Britain
+  - time: 20:30
+    venue: International Stadium Yokohama	
+    event: Women's Group F
+    match: 15
+    team-a:￼NED
+    team-b:￼CHN
+    description: Netherlands vs China
+  - time: 20:30
+    venue: Saitama Stadium	
+    event: Women's Group F
+    match: 16
+    team-a:￼BRA
+    team-b:￼ZAM
+    description: Brazil vs Zambia
+  # Wed, 28 Jul
+  - time: 17:00
+    venue: Saitama Stadium	
+    event: Men's Group D
+    match: 23
+    team-a:￼KSA
+    team-b:￼BRA
+    description: Saudi Arabia vs Brazil
+  - time: 17:00
+    venue: Miyagi Stadium	
+    event: Men's Group D
+    match: 24
+    team-a:￼GER
+    team-b:￼CIV
+    description: Germany vs Côte d’Ivoire
+  - time: 17:30
+    venue: Sapporo Dome	
+    event: Men's Group B
+    match: 19
+    team-a:￼ROU
+    team-b:￼NZL
+    description: Romania vs New Zealand
+  - time: 17:30
+    venue: International Stadium Yokohama	
+    event: Men's Group B
+    match: 20
+    team-a:￼KOR
+    team-b:￼HON
+    description: Republic of Korea vs Honduras
+  - time: 20:00
+    venue: Miyagi Stadium	
+    event: Men's Group C
+    match: 21
+    team-a:￼AUS
+    team-b:￼EGY
+    description: Australia vs Egypt
+  - time: 20:00
+    venue: Saitama Stadium	
+    event: Men's Group C
+    match: 22
+    team-a:￼ESP
+    team-b:￼ARG
+    description: Spain vs Argentina
+  - time: 20:30
+    venue: International Stadium Yokohama	
+    event: Men's Group A
+    match: 17
+    team-a:￼FRA
+    team-b:￼JPN
+    description: France vs Japan
+  - time: 20:30
+    venue: Sapporo Dome	
+    event: Men's Group A
+    match: 18
+    team-a:￼RSA
+    team-b:￼MEX
+    description: South Africa vs Mexico
+  # Fri, 30 Jul
+  - time: 17:00
+    venue: Miyagi Stadium	
+    event: Women's Quarter-final
+    match: 22
+  - time: 18:00
+    venue: Ibaraki Kashima Stadium
+    event: Women's Quarter-final
+    match: 19
+  - time: 19:00
+    venue: Saitama Stadium
+    event: Women's Quarter-final
+    match: 21
+  - time: 20:00
+    venue: International Stadium Yokohama
+    event: Women's Quarter-final
+    match: 20
+  # Sat, 31 Jul
+  - time: 17:00
+    venue: Miyagi Stadium
+    event: Men's Quarter-final
+    match: 27
+  - time: 18:00
+    venue: Ibaraki Kashima Stadium
+    event: Men's Quarter-final
+    match: 25
+  - time: 19:00
+    venue: Saitama Stadium
+    event: Men's Quarter-final
+    match: 28
+  - time: 20:00
+    venue: International Stadium Yokohama
+    event: Men's Quarter-final
+    match: 26
+  # Mon, 2 Aug
+  - time: 17:00
+    venue: Ibaraki Kashima Stadium
+    event: Women's Semi-final
+    match: 24
+  - time: 20:00
+    venue: International Stadium Yokohama
+    event: Women's Semi-final
+    match: 23
+  # Tue, 3 Aug
+  - time: 17:00
+    venue: Ibaraki Kashima Stadium
+    event: Men's Semi-final
+    match: 29
+  - time: 20:00
+    venue: Saitama Stadium
+    event: Men's Semi-final
+    match: 30
+  # Thu, 5 Aug
+  - time: 17:00
+    venue: Ibaraki Kashima Stadium	
+    event: Women's Bronze Medal Match
+    match: 25
+  # Fri, 6 Aug
+  - time: 11:00
+    venue: Olympic Stadium
+    event: Women's Gold Medal Match
+    match: 26
+  - time: 20:00
+    venue: Saitama Stadium
+    event: Men's Bronze Medal Match
+    match: 31
+  # Sat, 7 Aug
+  - time: 20:30
+    venue: International Stadium Yokohama
+    event: Men's Gold Medal Match
+    match: 32

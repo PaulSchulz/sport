@@ -8,32 +8,36 @@
             [clj-time.core   :as t]
             [clj-time.format :as f]
             [clj-time.local  :as l]
-            [clojure.pprint]
-            )
+            [clojure.pprint])
+  ;; Used for coding Team names (and other things)
+  (:require [sporting-fixtures.utils :as utils])
   (:gen-class)
   )
+
+;; To use this file
+;; => (require 'sporting-fixtures.aleague)
+;; => (ns sporting-fixtures.aleague)
+
+;; To reload namespace
+;; => (use 'sporting-fixtures.aleague :reload)
 
 (defn -help []
 ;; Process downloaded file
 ;; Use from command line with:
-  (println "lein run -m sporting-fixtures.aleague")
+  (println "lein run -m sporting-fixtures.aflw")
   )
 ;;
 ;; Development
-;;   (ns sporting-fixtures.aleague)
-;;   (load "aleague")
-;;   (use 'sporting-fixtures.aleague)
-;;   (use 'clojure.core)
 ;;   (clojure.pprint/pprint (read-event-data filename))
 ;;   (clojure.pprint/pprint (rest (reduce conj [] (read-event-data filename)) ))
 
-(def event-name     "2019-aus-aleague-mens")
-(def event-data-csv "data/download/aleague-2019-CenAustraliaStandardTime.csv")
+(def event-name     "2019-aus-aleague")
+(def event-data-csv "data/download/aleague-2019-UTC.csv")
 
 (def preamble
-  {:title     "2019 A League Draw & Fixtures"
-   :location  "Australia"
-   :code      "aleague"
+  {:title    "2019 A League Draw and Fixtures"
+   :location "Australia"
+   :code      "soccer"
    :date      {:from "11 Oct 2019"
                :to "16 May 2020"}
    :format    "aleague-mens-2019"
@@ -63,6 +67,22 @@
 
 (def lookup-team-id (create-lookup-team-id teams))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Change home and away team names to keywords.
+(defn modify-teamnames [games]
+  (map (fn [x]
+         (merge x {:home (utils/keyword-team (:home x))
+                   :away (utils/keyword-team (:away x))}))
+       games
+  ))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn convert-result [result]
+  (let [string-split  (str/split result #" ")]
+    [(Integer/parseInt (string-split 0))
+     (Integer/parseInt (string-split 2))]
+    ))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn read-event-data [filename]
   ;;  (println (slurp filename))
   (reduce conj [] (rest
@@ -77,7 +97,6 @@
   (if (re-find #"^-?\d+\.?\d*$" s)
     (read-string s)
     s))
-
 
 ;; FIXME - Change this to use headers from first line in file.
 (defn parse-record [record]
@@ -132,6 +151,8 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2019 A-League Mens
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Read event data from yaml file
 ;;
 (defn event-id-to-filename [id]
   (str "data/" id ".yml"))
@@ -139,7 +160,12 @@
 (defn read-event [event]
   (yaml/parse-string (slurp event)))
 
-(defn get-event   [] (read-event (event-id-to-filename event-name)))
+;; Read in event and parse data.
+(defn get-event []
+  (let [event (read-event (event-id-to-filename event-name))]
+    (merge event {:games (modify-teamnames (:games event))})
+    )
+  )
 
 ;;(defn event-games [] (:games (get-event)))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -156,10 +182,8 @@
                        (t/default-time-zone))
         ]
     (f/unparse my-formatter
-               (f/parse formatter datetime))             
+               (f/parse formatter datetime))
     ))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn event-games-table-separator []
   "-----+------------------+------------+------------------"
@@ -168,7 +192,7 @@
 ;; Create results table
 (defn event-games-table-header []
   (str
-   (format " %3s | %-16s | %-10s | %-9s"
+   (format " %3s | %-16s | %-10s | %s"
            "Id"
            "Time"
            "Teams"
@@ -182,29 +206,36 @@
 
 (defn event-games-table [event]
   (let [games (:games event)
-        rounds {0 1
-                9 2
-                18 3
-                27 4
-                36 5
-                45 6
-                54 7
-                63 8
-                72 9
-                81 10
-                90 11
-                99 12
-                105 13
-                111 14
-                117 15
-                126 16
-                135 17
-                144 18
-                153 19
-                162 20
-                171 21
-                180 22
-                189 23}
+        rounds {  0  1
+                  5  2
+                 10  3
+                 15  4
+                 20  5
+                 25  6
+                 29  7
+                 34  8
+                 39  9
+                 44 10
+                 49 11
+                 54 12
+                 59 13
+                 64 14
+                 69 15
+                 74 16
+                 79 17
+                 84 18
+                 89 19
+                 93 20
+                 98 21
+                103 22
+                108 23
+                113 24
+                118 25
+                123 26
+                128 27
+                133 28
+                138 29
+                }
         ]
     (str
      (event-games-table-header)
@@ -231,25 +262,25 @@
              "-----+- Round %2d -------+------------+------------------\n"
              (rounds i))
             :else "")
-          (format " %3d | %s | %-10s |  %4s %4s "
+          (format " %3d | %s | %-10s |  %4s %4s"
                   (inc i)
                   ;; (:round-number x)
                   ;;(localtime (:date x))
-                  (:date x)
-                  (str (if (nth (:teams x) 0)
-                         (str/upper-case (nth (:teams x) 0))
+                  (:time x)
+                  (str (if (:home x)
+                         (str/upper-case (name (:home x)))
                          "---")
                        " vs "
-                       (if (nth (:teams x) 1)
-                         (str/upper-case (nth (:teams x) 1))
+                       (if (:away x)
+                         (str/upper-case (name (:away x)))
                          "---"))
                   (format "%3s"
-                          (if (nth (:result x) 0)
-                            (nth (:result x) 0)
+                          (if ((:home x) (:result x))
+                            ((:home x) (:result x))
                             "-"))
                   (format "%3s"
-                          (if (nth (:result x) 1)
-                            (nth (:result x) 1)
+                          (if ((:away x) (:result x))
+                            ((:away x) (:result x))
                             "-"))
                   )))
        games)
@@ -261,78 +292,166 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Statistics
+;; map [:points :played :won :lost :drawn :for :against :diff]
 
-(defn calculate-stats [result]
-  (let [a-points (nth result 0)
-        b-points (nth result 1)]
+;; Calculate the teams event points/goals from game
+(defn calculate-points [score]
+  (cond
+    ;; Different ways of calculating points from game score
+    ;; Soccer - score = goals
+    :else (if (number? score)
+            score
+            nil)
+    )
+  )
 
+(defn calculate-stats [game]
+  (let [home        (:home  game)
+        away        (:away  game)
+        score       (:score game)
+        home-points (calculate-points (home score))
+        away-points (calculate-points (away score))]
     (cond
-      (not a-points)       nil
-      (not b-points)       nil
-      (> a-points b-points) [[4 1 1 0 0 a-points b-points (- a-points b-points)]
-                             [0 1 0 1 0 b-points a-points (- b-points a-points)]]
-      (< a-points b-points) [[0 1 0 1 0 a-points b-points (- a-points b-points)]
-                             [4 1 1 0 0 b-points a-points (- b-points a-points)]]
-      :else                 [[2 1 0 0 1 a-points b-points (- a-points b-points)]
-                             [2 1 0 0 1 b-points a-points (- b-points a-points)]]
-      )
-    ))
+      (not home-points)       nil
+      (not away-points)       nil
+      (> home-points away-points)
+      {home {:points 4
+             :played 1
+             :won    1
+             :lost   0
+             :drawn  0
+             :points-for     home-points
+             :points-against away-points
+             :points-diff    (- home-points away-points)}
+       away {:points 0
+             :played 1
+             :won    0
+             :lost   1
+             :drawn  0
+             :points-for     away-points
+             :points-against home-points
+             :points-diff    (- away-points home-points)}}
+      (< home-points away-points)
+      {home {:points 0
+             :played 1
+             :won    0
+             :lost   1
+             :drawn  0
+             :points-for     home-points
+             :points-against away-points
+             :points-diff    (- home-points away-points)}
+       away {:points 4
+             :played 1
+             :won    1
+             :lost   0
+             :drawn  0
+             :points-for     away-points
+             :points-against home-points
+             :points-diff    (- away-points home-points)}}
+      :else
+      {home {:points 2
+             :played 1
+             :won    0
+             :lost   0
+             :drawn  1
+             :points-for     home-points
+             :points-against away-points
+             :points-diff    (- home-points away-points)}
+       away {:points 2
+             :played 1
+             :won    0
+             :lost   0
+             :drawn  1
+             :points-for     away-points
+             :points-against home-points
+             :points-diff    (- away-points home-points)}}
+      )))
 
+(defn event-games-statistics-table [event]
+  (str/join
+   "\n"
+   (map-indexed
+    (fn [i x]
+      (let [home (:home x)
+            away (:away x)
+            score (:score x)]
+        (format " %3d | %-10s | %s"
+                (inc i)
+                (str (if (:home x)
+                       (str/upper-case (name (:home x)))
+                       "---")
+                     " vs "
+                     (if (:away x)
+                       (str/upper-case (name (:away x)))
+                       "---"))
+                ;;(calculate-stats home away score)
+                (if (or (= (home score) "-") (= (away score) "-"))
+                  "-"
+                  (str home " " away " " score " "
+                       (calculate-stats x))
+                  )
+                )))
+    (:games event)
+    ))
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Calculate the statistics from the games of an event
 (defn calculate-statistics [games]
   (map-indexed
    (fn [i x]
-     (let [team-a (nth (:teams x) 0)
-           team-b (nth (:teams x) 1)
-           stats  (calculate-stats  (:result x))
+     (let [home  (:home x)
+           away  (:away x)
+           score (:score x)
+           stats (calculate-stats x)
            ]
        (conj {}
-             (if team-a
-               {(keyword team-a) (nth stats 0)}
+             (if home
+               {home (home stats)}
                nil)
-             (if team-b
-               {(keyword team-b) (nth stats 1)}
+             (if away
+               {away (away stats)}
                nil)
              )
       ))
    games)
   )
 
-;; Double reduce as the statistics returned from
-;; 'calculate-statistics' is a double array, returning the statistics
-;; of the game for each of the teams.
-(defn reduce-statistics [stats]
+;; Split the double statistics record per game into two records, one
+;; for each team.
+(defn split-statistics [stats]
   (reduce (fn [val coll]
             (reduce conj val coll))
           [] stats)
   )
 
 ;; statistics - Map of team statistics
-;; update     - Array with 'team id' and 'statistics update'
-(defn update-statistics [statistics update]
-  (let [team         (nth update 0)
-        stats-old    (if (team statistics)
-                       (team statistics)
-                       [0 0 0 0 0 0 0 0])
-        stats-update (if (nth update 1)
-                       (nth update 1)
-                       [0 0 0 0 0 0 0 0])
-        ]
-    ;; Update old statstics with new values and add to data
-    (conj statistics {team (map + stats-old stats-update)}))
+;; updates     - Array with 'team id' and 'statistics update' (map)
+(defn update-statistics [statistics updates]
+   (reduce (fn [stats update]
+             (let [team   (nth update 0)
+                   update (nth update 1)]
+               (conj stats {team (merge-with + (team stats) update)})))
+           statistics
+           updates)
   )
 
 (defn event-statistics [games]
-  (reduce update-statistics {}
-          (reduce-statistics
-           (calculate-statistics games))))
+  (update-statistics {}
+                     (-> games
+                         calculate-statistics
+                         split-statistics))
+  )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; TODO: Check for nil
 (defn calculate-percentage [stats]
-  (let [for     (nth stats 5)
-        against (nth stats 6)]
+  (let [for     (:points-for stats)
+        against (:points-against stats)]
   (* (/ (* 1.0 for) (* 1.0 against)) 100.0)
   ))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn stats-header []
   " Pos | Team | P  | Pts      % |  P  W  L  D |   For    Ag  Diff")
 
@@ -343,21 +462,34 @@
   (format " %3d | %-4s | %2d | %2d %7.2f | %2d %2d %2d %2d | %5d %5d %5d"
           i
           (str/upper-case (name team))
-          (nth stats 1) ;; Played
-          (nth stats 0) ;; Points
+          (:played stats)
+          (:points stats)
           ;; Calculate percentage
-          (calculate-percentage stats)
-          (nth stats 1) ;; Played
-          (nth stats 2) ;; Won
-          (nth stats 3) ;; Lose
-          (nth stats 4) ;; Draw
-          (nth stats 5) ;; Points for
-          (nth stats 6) ;; Points against
-          (nth stats 7) ;; Difference
+          0.0 ; (calculate-percentage stats)
+          (:played stats)
+          (:won    stats)
+          (:lost   stats)
+          (:drawn  stats)
+          (:points-for     stats)
+          (:points-against stats)
+          (:points-diff    stats)
           ))
 
-(defn event-stats-table [event]
-  (let [statistics (event-statistics (:games event))]
+(defn event-table-sort-fn [team-a team-b]
+  (let [points-a (:points (nth team-a 1))
+        points-b (:points (nth team-b 1))
+        percent-a 0.0
+        percent-b 0.0]
+    (cond
+      (> points-a points-b) true
+      (< points-a points-b) false
+      (> percent-a percent-b) true
+      :else false)
+    )
+  )
+
+(defn event-stats-table [statistics]
+  (let []
     (str
      (stats-header)
      "\n"
@@ -367,26 +499,110 @@
       "\n"
       (map-indexed
        (fn [i [k v]]
-         (str
-          (if (= i 8)
-            (str (stats-separator) "\n")
-            "")
-          (stats-string (inc i) k v)))
-       ;; Sort the ladder - first value in statistics, then second value
-       (sort (fn [el1 el2]
-               (cond
-                 (> (nth (nth el1 1) 0) (nth (nth el2 1) 0)) true
-                 (< (nth (nth el1 1) 0) (nth (nth el2 1) 0)) false
-                 (> (calculate-percentage (nth el1 1))
-                    (calculate-percentage (nth el2 1)))      true
-                 :else false))
-        (map (fn [x] x) statistics))
+         ; (str
+         ; (if (= i 8)
+         ;   (str (stats-separator) "\n")
+         ;   "")
+          (stats-string (inc i) k v)
+         )
+       statistics
        )
       )
      "\n"
      (stats-separator)
     ))
   )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Results chart
+
+(defn results-separator []
+  (str
+   "------+-"
+   (str/join
+    (for [i (range 1 148)]
+      "-"
+      ))
+   "\n"
+   ))
+
+(defn results-header []
+  (str
+   "      | "
+   (str/join (for [i (range 1 148)] (mod (quot i 10) 10)))
+   "\n"
+   " Team | "
+   (str/join (for [i (range 1 148)] (mod i 10)))
+   "\n"
+   )
+  )
+
+(defn results-string [event team]
+  (let [games (:games event)
+        teams (:teams event)
+        ]
+    (format "  %3s | %s"
+            (str/upper-case (name team))
+            (str/join
+             ""
+             (map-indexed
+              (fn [index game]
+                (str
+                 (let [home (:home game)
+                       away (:away game)
+                       statistics (calculate-stats game)
+                       ;; statistics nil
+                       ]
+                    (if statistics
+                      (cond
+                        (or (= team home) (= team away))
+                        (cond
+                          (= (:won   (team statistics)) 1) "W"
+                          (= (:lost  (team statistics)) 1) "L"
+                          (= (:drawn (team statistics)) 1) "d"
+                          :else "o")
+                        :else  "-"
+                        )
+                      (cond
+                        (or (= team home) (= team away))
+                        "o"
+                        :else  " "
+                        )
+                   )
+                    )
+                 ;;(cond
+                 ;;  (= (mod index 7) 6) "|"
+                 ;;  (= (inc index) 143) "|"
+                 ;;  :else        ""
+                 ;;  )
+
+                 )
+                )
+              games)
+             )
+            )
+    )
+  )
+
+(defn event-results-table [event]
+  (let [games      (:games event)
+        teams      (:teams event)
+        results    (:results event)]
+    (str
+     (results-header)
+     (results-separator)
+     (str/join
+      "\n"
+      (map
+        (fn [[key value]] (results-string event key))
+        teams
+        )
+      )
+     "\n"
+      (results-separator)
+    )
+  )
+)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Finals
@@ -416,6 +632,7 @@
   (let [games (:games event)]
     (str
      "Knockout                    Semifinal                 Preliminary                 Grand Final\n"
+     "--------                    ---------                 -----------                 -----------\n"
      "\n"
      (format "%-26s                            %-26s  %-26s\n"
              (format-game event 199)
@@ -440,32 +657,31 @@
      "\n"
 
             )))
-    
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
   (println "Event: " event-name)
-  
-  ;; Create YAML data file from downloaded CSV
-  ;; Only need to fo this once. Will erase any data added manually
-  ;; (eg. game results)
-  (if false
-    (let []
-      (println "Create YAML data file")
-      (println "  CSV:  " event-data-csv)
-      (println "  YAML: " "data/2019-aus-afl-mens.yml")
-      (file-write-yaml (create-event-data event-data-csv))))
-  
-  (println "")
+  (println)
+
   (println "Games")
   (println (event-games-table (get-event)))
+  (println)
 
-  (println "")
   (println "Statistics / Ladder")
-  (println (event-stats-table (get-event)))
+  (println (event-stats-table
+            (sort event-table-sort-fn
+                  (filter (fn [x] (not= (first x) :tob))
+                          (event-statistics (:games (get-event)))))))
+  (println)
 
-  (println "")
-  (println "Finals")
-  (println (event-finals-chart (get-event)))
+  ;; Testing
+  ;(clojure.pprint/pprint (-> (get-event) :teams))
+
+  (println "Games")
+  (println (event-results-table (get-event)))
+  (println)
+
+;  (println "Finals")
+;  (println (event-finals-chart (get-event)))
   )
-

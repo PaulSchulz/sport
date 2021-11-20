@@ -1,0 +1,495 @@
+BEGIN:VCALENDAR
+PRODID:-//ESPN Cricinfo//Series Fixtures//EN
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226929/hobart-hurricanes-women-vs-sydney-thunder-women-25th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:25th Match Hobart Hurricanes Women v Sydney Thunder Women
+DTSTART:20201107T223000Z
+DTEND:20201108T023000Z
+LOCATION:Hurstville Oval, Sydney
+TRANSP:OPAQUE
+UID:1226929_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226930/melbourne-renegades-women-vs-adelaide-strikers-women-26th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:26th Match Melbourne Renegades Women v Adelaide Strikers Women
+DTSTART:20201107T232000Z
+DTEND:20201108T032000Z
+LOCATION:North Sydney Oval, Sydney
+TRANSP:OPAQUE
+UID:1226930_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226931/brisbane-heat-women-vs-melbourne-stars-women-27th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:27th Match Brisbane Heat Women v Melbourne Stars Women
+DTSTART:20201108T024500Z
+DTEND:20201108T064500Z
+LOCATION:North Sydney Oval, Sydney
+TRANSP:OPAQUE
+UID:1226931_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226932/sydney-sixers-women-vs-perth-scorchers-women-28th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:28th Match Sydney Sixers Women v Perth Scorchers Women
+DTSTART:20201108T033000Z
+DTEND:20201108T073000Z
+LOCATION:Hurstville Oval, Sydney
+TRANSP:OPAQUE
+UID:1226932_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226933/melbourne-stars-women-vs-adelaide-strikers-women-29th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:29th Match Melbourne Stars Women v Adelaide Strikers Women
+DTSTART:20201110T033000Z
+DTEND:20201110T073000Z
+LOCATION:Blacktown International Sportspark, Sydney
+TRANSP:OPAQUE
+UID:1226933_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226934/melbourne-renegades-women-vs-hobart-hurricanes-women-30th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:30th Match Melbourne Renegades Women v Hobart Hurricanes Women
+DTSTART:20201110T080500Z
+DTEND:20201110T120500Z
+LOCATION:Blacktown International Sportspark, Sydney
+TRANSP:OPAQUE
+UID:1226934_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226935/perth-scorchers-women-vs-sydney-sixers-women-31st-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:31st Match Perth Scorchers Women v Sydney Sixers Women
+DTSTART:20201111T033000Z
+DTEND:20201111T073000Z
+LOCATION:Blacktown International Sportspark, Sydney
+TRANSP:OPAQUE
+UID:1226935_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226936/brisbane-heat-women-vs-sydney-thunder-women-32nd-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:32nd Match Brisbane Heat Women v Sydney Thunder Women
+DTSTART:20201111T080500Z
+DTEND:20201111T120500Z
+LOCATION:Blacktown International Sportspark, Sydney
+TRANSP:OPAQUE
+UID:1226936_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226937/perth-scorchers-women-vs-melbourne-renegades-women-33rd-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:33rd Match Perth Scorchers Women v Melbourne Renegades Women
+DTSTART:20201114T011500Z
+DTEND:20201114T051500Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226937_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226938/adelaide-strikers-women-vs-brisbane-heat-women-34th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:34th Match Adelaide Strikers Women v Brisbane Heat Women
+DTSTART:20201114T033000Z
+DTEND:20201114T073000Z
+LOCATION:Drummoyne Oval, Sydney
+TRANSP:OPAQUE
+UID:1226938_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226939/hobart-hurricanes-women-vs-sydney-sixers-women-35th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:35th Match Hobart Hurricanes Women v Sydney Sixers Women
+DTSTART:20201114T044000Z
+DTEND:20201114T084000Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226939_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226940/sydney-thunder-women-vs-melbourne-stars-women-36th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:36th Match Sydney Thunder Women v Melbourne Stars Women
+DTSTART:20201114T080500Z
+DTEND:20201114T120500Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226940_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226941/adelaide-strikers-women-vs-sydney-sixers-women-37th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:37th Match Adelaide Strikers Women v Sydney Sixers Women
+DTSTART:20201114T223000Z
+DTEND:20201115T023000Z
+LOCATION:Drummoyne Oval, Sydney
+TRANSP:OPAQUE
+UID:1226941_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226943/sydney-thunder-women-vs-perth-scorchers-women-38th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:38th Match Sydney Thunder Women v Perth Scorchers Women
+DTSTART:20201114T232000Z
+DTEND:20201115T032000Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226943_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226944/melbourne-stars-women-vs-melbourne-renegades-women-39th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:39th Match Melbourne Stars Women v Melbourne Renegades Women
+DTSTART:20201115T024500Z
+DTEND:20201115T064500Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226944_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226942/hobart-hurricanes-women-vs-brisbane-heat-women-40th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:40th Match Hobart Hurricanes Women v Brisbane Heat Women
+DTSTART:20201115T033000Z
+DTEND:20201115T073000Z
+LOCATION:Drummoyne Oval, Sydney
+TRANSP:OPAQUE
+UID:1226942_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226945/hobart-hurricanes-women-vs-adelaide-strikers-women-41st-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:41st Match Hobart Hurricanes Women v Adelaide Strikers Women
+DTSTART:20201116T223000Z
+DTEND:20201117T023000Z
+LOCATION:Hurstville Oval, Sydney
+TRANSP:OPAQUE
+UID:1226945_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226947/perth-scorchers-women-vs-melbourne-stars-women-43rd-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:43rd Match Perth Scorchers Women v Melbourne Stars Women
+DTSTART:20201117T033000Z
+DTEND:20201117T073000Z
+LOCATION:Hurstville Oval, Sydney
+TRANSP:OPAQUE
+UID:1226947_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226946/sydney-sixers-women-vs-brisbane-heat-women-42nd-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:42nd Match Sydney Sixers Women v Brisbane Heat Women
+DTSTART:20201117T033000Z
+DTEND:20201117T073000Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226946_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226948/sydney-thunder-women-vs-melbourne-renegades-women-44th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:44th Match Sydney Thunder Women v Melbourne Renegades Women
+DTSTART:20201117T080500Z
+DTEND:20201117T120500Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226948_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226949/brisbane-heat-women-vs-perth-scorchers-women-45th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:45th Match Brisbane Heat Women v Perth Scorchers Women
+DTSTART:20201117T223000Z
+DTEND:20201118T023000Z
+LOCATION:Hurstville Oval, Sydney
+TRANSP:OPAQUE
+UID:1226949_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226951/melbourne-stars-women-vs-hobart-hurricanes-women-47th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:47th Match Melbourne Stars Women v Hobart Hurricanes Women
+DTSTART:20201118T033000Z
+DTEND:20201118T073000Z
+LOCATION:Hurstville Oval, Sydney
+TRANSP:OPAQUE
+UID:1226951_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226950/adelaide-strikers-women-vs-melbourne-renegades-women-46th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:46th Match Adelaide Strikers Women v Melbourne Renegades Women
+DTSTART:20201118T033000Z
+DTEND:20201118T073000Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226950_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226952/sydney-thunder-women-vs-sydney-sixers-women-48th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:48th Match Sydney Thunder Women v Sydney Sixers Women
+DTSTART:20201118T080500Z
+DTEND:20201118T120500Z
+LOCATION:Sydney Showground Stadium
+TRANSP:OPAQUE
+UID:1226952_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226953/melbourne-stars-women-vs-brisbane-heat-women-49th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:49th Match Melbourne Stars Women v Brisbane Heat Women
+DTSTART:20201120T223000Z
+DTEND:20201121T023000Z
+LOCATION:Drummoyne Oval, Sydney
+TRANSP:OPAQUE
+UID:1226953_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226954/adelaide-strikers-women-vs-sydney-thunder-women-50th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:50th Match Adelaide Strikers Women v Sydney Thunder Women
+DTSTART:20201121T033000Z
+DTEND:20201121T073000Z
+LOCATION:Drummoyne Oval, Sydney
+TRANSP:OPAQUE
+UID:1226954_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226955/hobart-hurricanes-women-vs-perth-scorchers-women-51st-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:51st Match Hobart Hurricanes Women v Perth Scorchers Women
+DTSTART:20201121T044000Z
+DTEND:20201121T084000Z
+LOCATION:North Sydney Oval, Sydney
+TRANSP:OPAQUE
+UID:1226955_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226956/sydney-sixers-women-vs-melbourne-renegades-women-52nd-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:52nd Match Sydney Sixers Women v Melbourne Renegades Women
+DTSTART:20201121T080500Z
+DTEND:20201121T120500Z
+LOCATION:North Sydney Oval, Sydney
+TRANSP:OPAQUE
+UID:1226956_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226957/sydney-thunder-women-vs-hobart-hurricanes-women-53rd-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:53rd Match Sydney Thunder Women v Hobart Hurricanes Women
+DTSTART:20201121T223000Z
+DTEND:20201122T023000Z
+LOCATION:Drummoyne Oval, Sydney
+TRANSP:OPAQUE
+UID:1226957_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226958/perth-scorchers-women-vs-adelaide-strikers-women-54th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:54th Match Perth Scorchers Women v Adelaide Strikers Women
+DTSTART:20201121T232000Z
+DTEND:20201122T032000Z
+LOCATION:North Sydney Oval, Sydney
+TRANSP:OPAQUE
+UID:1226958_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226959/melbourne-stars-women-vs-sydney-sixers-women-55th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:55th Match Melbourne Stars Women v Sydney Sixers Women
+DTSTART:20201122T024500Z
+DTEND:20201122T064500Z
+LOCATION:North Sydney Oval, Sydney
+TRANSP:OPAQUE
+UID:1226959_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226960/melbourne-renegades-women-vs-brisbane-heat-women-56th-match-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:56th Match Melbourne Renegades Women v Brisbane Heat Women
+DTSTART:20201122T033000Z
+DTEND:20201122T073000Z
+LOCATION:Drummoyne Oval, Sydney
+TRANSP:OPAQUE
+UID:1226960_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226961/tbc-vs-tbc-1st-semi-final-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:1st Semi-Final TBD v TBD
+DTSTART:20201125T000000Z
+DTEND:20201125T040000Z
+LOCATION:
+TRANSP:OPAQUE
+UID:1226961_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226962/tbc-vs-tbc-2nd-semi-final-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:2nd Semi-Final TBD v TBD
+DTSTART:20201125T000000Z
+DTEND:20201125T040000Z
+LOCATION:
+TRANSP:OPAQUE
+UID:1226962_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Follow every ball of every international match live on Cricinfo.com.\n\nGet all the latest Women's Big Bash League news at: https://www.espncricinfo.com/series/18042/game/1226963/tbc-vs-tbc-final-womens-big-bash-league-2020-21 \n\n 
+SUMMARY:Final TBD v TBD
+DTSTART:20201129T000000Z
+DTEND:20201129T040000Z
+LOCATION:
+TRANSP:OPAQUE
+UID:1226963_0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

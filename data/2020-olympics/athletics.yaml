@@ -1,0 +1,851 @@
+---
+sport: athletics
+days: [30,31,1,2,3,4,5,6,7,8]
+sessions:
+  # Fri, 30 Jul
+  - name: Session 2  9:00 - 12:30
+    day: 30
+    events:
+      - time: 9:00
+        venue: Olympic Stadium - Track
+        event: Men's 3000m Steeplechase Round 1 - Heat 1
+      - time: 9:15
+        venue: Olympic Stadium - High Jump A
+        event: Men's High Jump Qualification - Group A
+      - time: 9:15
+        venue: Olympic Stadium - High Jump B
+        event: Men's High Jump Qualification - Group B
+      - time: 9:17
+        venue: Olympic Stadium - Track
+        event: Men's 3000m Steeplechase Round 1 - Heat 2
+      - time: 9:34
+        venue: Olympic Stadium - Track
+        event: Men's 3000m Steeplechase Round 1 - Heat 3
+      - time: 9:45
+        venue: Olympic Stadium - Long Throws
+        event: Men's Discus Throw Qualification - Group A
+      - time: 9:55
+        venue: Olympic Stadium - Track
+        event: Women's 800m Round 1 - Heat 1
+      - time: 10:03
+        venue: Olympic Stadium - Track
+        event: Women's 800m Round 1 - Heat 2
+      - time: 10:11
+        venue: Olympic Stadium - Track
+        event: Women's 800m Round 1 - Heat 3
+      - time: 10:19
+        venue: Olympic Stadium - Track
+        event: Women's 800m Round 1 - Heat 4
+      - time: 10:27
+        venue: Olympic Stadium - Track
+        event: Women's 800m Round 1 - Heat 5
+      - time: 10:35
+        venue: Olympic Stadium - Track
+        event: Women's 800m Round 1 - Heat 6
+      - time: 10:55
+        venue: Olympic Stadium - Track
+        event: Men's 400m Hurdles Round 1 - Heat 1
+      - time: 11:03
+        venue: Olympic Stadium - Track
+        event: Men's 400m Hurdles Round 1 - Heat 2
+      - time: 11:11
+        venue: Olympic Stadium - Track
+        event: Men's 400m Hurdles Round 1 - Heat 3
+      - time: 11:19
+        venue: Olympic Stadium - Track
+        event: Men's 400m Hurdles Round 1 - Heat 4
+      - time: 11:20
+        venue: Olympic Stadium - Long Throws
+        event: Men's Discus Throw Qualification - Group B
+      - time: 11:27
+        venue: Olympic Stadium - Track
+        event: Men's 400m Hurdles Round 1 - Heat 5
+      - time: 11:40
+        venue: Olympic Stadium - Track
+        event: Women's 100m Round 1 - Heat 1
+      - time: 11:48
+        venue: Olympic Stadium - Track
+        event: Women's 100m Round 1 - Heat 2
+      - time: 11:56
+        venue: Olympic Stadium - Track
+        event: Women's 100m Round 1 - Heat 3
+      - time: 12:04
+        venue: Olympic Stadium - Track
+        event: Women's 100m Round 1 - Heat 4
+      - time: 12:12
+        venue: Olympic Stadium - Track
+        event: Women's 100m Round 1 - Heat 5
+      - time: 12:20
+        venue: Olympic Stadium - Track
+        event: Women's 100m Round 1 - Heat 6
+      - time: 12:28
+        venue: Olympic Stadium - Track
+        event: Women's 100m Round 1 - Heat 7
+  - name: Session 3  19:00 - 21:00
+    day: 30
+    events:
+      - time: 19:00
+        venue: Olympic Stadium - Track
+        event: Women's 5000m Round 1 - Heat 1
+      - time: 19:05
+        venue: Olympic Stadium - Triple Jump A	
+        event: Women's Triple Jump Qualification - Group A
+      - time: 19:05
+        venue: Olympic Stadium - Triple Jump B
+        event: Women's Triple Jump Qualification - Group B
+      - time: 19:25
+        venue: Olympic Stadium - Shot Put A
+        event: Women's Shot Put Qualification - Group A
+      - time: 19:25
+        venue: Olympic Stadium - Shot Put B	
+        event: Women's Shot Put Qualification - Group B
+      - time: 19:26
+        venue: Olympic Stadium - Track	
+        event: Women's 5000m Round 1 - Heat 2
+      - time: 20:00
+        venue: Olympic Stadium - Track	
+        event: 4 x 400m Relay Mixed Round 1 - Heat 1
+      - time: 20:12
+        venue: Olympic Stadium - Track	
+        event: 4 x 400m Relay Mixed Round 1 - Heat 2
+      - time: 20:30
+        venue: Olympic Stadium - Track	￼
+        event: Men's 10,000m Final
+  # Sat, 31 Jul
+  - name: Session 4  9:00 - 12:30
+    day: 31
+    events:
+      - time: 9:00
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Round 1 - Heat 1
+      - time: 9:08
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Round 1 - Heat 2
+      - time: 9:16
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Round 1 - Heat 3
+      - time: 9:24
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Round 1 - Heat 4
+      - time: 9:30
+        venue: Olympic Stadium - Long Throws	
+        event: Women's Discus Throw Qualification - Group A
+      - time: 9:32
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Round 1 - Heat 5
+      - time: 9:40
+        venue: Olympic Stadium - Pole Vault A	
+        event: Men's Pole Vault Qualification - Group A
+      - time: 9:40
+        venue: Olympic Stadium - Pole Vault B	
+        event: Men's Pole Vault Qualification - Group B
+      - time: 9:50
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Round 1 - Heat 1
+      - time: 9:58
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Round 1 - Heat 2
+      - time: 10:06
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Round 1 - Heat 3
+      - time: 10:14
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Round 1 - Heat 4
+      - time: 10:22
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Round 1 - Heat 5
+      - time: 10:30
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Round 1 - Heat 6
+      - time: 10:45
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Round 1 - Heat 1
+      - time: 10:53
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Round 1 - Heat 2
+      - time: 10:55
+        venue: Olympic Stadium - Long Throws	
+        event: Women's Discus Throw Qualification - Group B
+      - time: 11:01
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Round 1 - Heat 3
+      - time: 11:09
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Round 1 - Heat 4
+      - time: 11:17
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Round 1 - Heat 5
+      - time: 11:35
+        venue: Olympic Stadium - Track	
+        event: Men's 100m Preliminary Round - Heat 1
+      - time: 11:43
+        venue: Olympic Stadium - Track	
+        event: Men's 100m Preliminary Round - Heat 2
+      - time: 11:51
+        venue: Olympic Stadium - Track	
+        event: Men's 100m Preliminary Round - Heat 3
+      - time: 11:59
+        venue: Olympic Stadium - Track	
+        event: Men's 100m Preliminary Round - Heat 4
+  - name: Session 5  19:00 - 21:55
+    day: 31
+    events:
+    - time: 19:10
+      venue: Olympic Stadium - Long Jump A	
+      event: Men's Long Jump Qualification - Group A
+    - time: 19:10
+      venue: Olympic Stadium - Long Jump B	
+      event: Men's Long Jump Qualification - Group B
+    - time: 19:15
+      venue: Olympic Stadium - Track	
+      event: Women's 100m Semi-Final 1
+    - time: 19:23
+      venue: Olympic Stadium - Track	
+      event: Women's 100m Semi-Final 2
+    - time: 19:31
+      venue: Olympic Stadium - Track	
+      event: Women's 100m Semi-Final 3
+    - time: 19:45
+      venue: Olympic Stadium - Track	
+      event: Men's 100m Round 1 - Heat 1
+    - time: 19:53
+      venue: Olympic Stadium - Track	
+      event: Men's 100m Round 1 - Heat 2
+    - time: 20:01
+      venue: Olympic Stadium - Track	
+      event: Men's 100m Round 1 - Heat 3
+    - time: 20:09
+      venue: Olympic Stadium - Track	
+      event: Men's 100m Round 1 - Heat 4
+    - time: 20:15
+      venue: Olympic Stadium - Long Throws	
+      event: Men's Discus Throw Final
+    - time: 20:17
+      venue: Olympic Stadium - Track	
+      event: Men's 100m Round 1 - Heat 5
+    - time: 20:25
+      venue: Olympic Stadium - Track	
+      event: Men's 100m Round 1 - Heat 6
+    - time: 20:33
+      venue: Olympic Stadium - Track	
+      event: Men's 100m Round 1 - Heat 7
+    - time: 20:50
+      venue: Olympic Stadium - Track	
+      event: Women's 800m Semi-Final 1
+    - time: 20:56
+      venue: Olympic Stadium - Track	
+      event: Women's 800m Semi-Final 2
+    - time: 21:02
+      venue: Olympic Stadium - Track	
+      event: Women's 800m Semi-Final 3
+    - time: 21:35
+      venue: Olympic Stadium - Track	￼
+      event: 4 x 400m Relay Mixed Final
+    - time: 21:50
+      venue: Olympic Stadium - Track	￼
+      event: Women's 100m Final
+  # Sun, 1 Aug
+  - name: Session 6  9:10 - 12:00
+    day: 1
+    events:
+      - time: 9:10
+        venue: Olympic Stadium - Long Throws	
+        event: Women's Hammer Throw Qualification - Group A
+      - time: 9:40
+        venue: Olympic Stadium - Track	
+        event: Women's 3000m Steeplechase Round 1 - Heat 1
+      - time: 9:50
+        venue: Olympic Stadium - Long Jump A	
+        event: Women's Long Jump Qualification - Group A
+      - time: 9:50
+        venue: Olympic Stadium - Long Jump B	
+        event: Women's Long Jump Qualification - Group B
+      - time: 9:55
+        venue: Olympic Stadium - Track	
+        event: Women's 3000m Steeplechase Round 1 - Heat 2
+      - time: 10:10
+        venue: Olympic Stadium - Track	
+        event: Women's 3000m Steeplechase Round 1 - Heat 3
+      - time: 10:35
+        venue: Olympic Stadium - Shot Put A	￼
+        event: Women's Shot Put Final
+      - time: 10:40
+        venue: Olympic Stadium - Long Throws	
+        event: Women's Hammer Throw Qualification - Group B
+      - time: 10:45
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Round 1 - Heat 1
+      - time: 10:53
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Round 1 - Heat 2
+      - time: 11:01
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Round 1 - Heat 3
+      - time: 11:09
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Round 1 - Heat 4
+      - time: 11:17
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Round 1 - Heat 5
+      - time: 11:25
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Round 1 - Heat 6
+  - name: Session 7  19:00 - 21:55
+    day: 31
+    events:
+      - time: 19:10
+        venue: Olympic Stadium - High Jump A	
+        event: Men's High Jump Final
+      - time: 19:15
+        venue: Olympic Stadium - Track	
+        event: Men's 100m Semi-Final 1
+      - time: 19:23
+        venue: Olympic Stadium - Track	
+        event: Men's 100m Semi-Final 2
+      - time: 19:31
+        venue: Olympic Stadium - Track	
+        event: Men's 100m Semi-Final 3
+      - time: 19:45
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Semi-Final 1
+      - time: 19:53
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Semi-Final 2
+      - time: 20:01
+        venue: Olympic Stadium - Track	
+        event: Women's 100m Hurdles Semi-Final 3
+      - time: 20:20
+        venue: Olympic Stadium - Triple Jump A	￼
+        event: Women's Triple Jump Final
+      - time: 20:25
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Semi-Final 1
+      - time: 20:35
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Semi-Final 2
+      - time: 20:45
+        venue: Olympic Stadium - Track	
+        event: Men's 800m Semi-Final 3
+      - time: 21:05
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Hurdles Semi-Final 1
+      - time: 21:15
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Hurdles Semi-Final 2
+      - time: 21:25
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Hurdles Semi-Final 3
+      - time: 21:50
+        venue: Olympic Stadium - Track	￼
+        event: Men's 100m Final
+  # Mon, 2 Aug
+  - name: Session 8  9:00 - 11:55
+    day: 2
+    events:
+      - time: 9:00
+        venue: Olympic Stadium - Long Throws	
+        event: Men's Hammer Throw Qualification - Group A
+      - time: 9:35
+        venue: Olympic Stadium - Track	
+        event: Women's 1500m Round 1 - Heat 1
+      - time: 9:43
+        venue: Olympic Stadium - Track	
+        event: Women's 1500m Round 1 - Heat 2
+      - time: 9:51
+        venue: Olympic Stadium - Track	
+        event: Women's 1500m Round 1 - Heat 3
+      - time: 10:20
+        venue: Olympic Stadium - Long Jump A	￼
+        event: Men's Long Jump Final
+      - time: 10:30
+        venue: Olympic Stadium - Long Throws	
+        event: Men's Hammer Throw Qualification - Group B
+      - time: 10:30
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Round 1 - Heat 1
+      - time: 10:38
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Round 1 - Heat 2
+      - time: 10:46
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Round 1 - Heat 3
+      - time: 10:54
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Round 1 - Heat 4
+      - time: 11:02
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Round 1 - Heat 5
+      - time: 11:10
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Round 1 - Heat 6
+      - time: 11:18
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Round 1 - Heat 7
+      - time: 11:50
+        venue: Olympic Stadium - Track	￼
+        event: Women's 100m Hurdles Final
+  - name: Session 9  19:00 - 22:00
+    day: 2
+    events:
+      - time: 19:20
+        venue: Olympic Stadium - Pole Vault A	
+        event: Women's Pole Vault Qualification - Group A
+      - time: 19:20
+        venue: Olympic Stadium - Pole Vault B	
+        event: Women's Pole Vault Qualification - Group B
+      - time: 19:25
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Semi-Final 1
+      - time: 19:32
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Semi-Final 2
+      - time: 19:39
+        venue: Olympic Stadium - Track	
+        event: Women's 200m Semi-Final 3
+      - time: 20:00
+        venue: Olympic Stadium - Long Throws	￼
+        event: Women's Discus Throw Final
+      - time: 20:05
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Semi-Final 1
+      - time: 20:13
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Semi-Final 2
+      - time: 20:21
+        venue: Olympic Stadium - Track	
+        event: Men's 400m Semi-Final 3
+      - time: 20:40
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Semi-Final 1
+      - time: 20:45
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Semi-Final 2
+      - time: 20:50
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Hurdles Semi-Final 3
+      - time: 21:15
+        venue: Olympic Stadium - Track	￼
+        event: Men's 3000m Steeplechase Final
+      - time: 21:40
+        venue: Olympic Stadium - Track	
+        event: Women's 5000m Final
+  # Tue, 3 Aug
+  - name: Session 10  9:00 - 12:35
+    day: 3
+    events:
+      - time: 9:00
+        venue: Olympic Stadium - Triple Jump A	
+        event: Men's Triple Jump Qualification - Group A
+      - time: 9:00
+        venue: Olympic Stadium - Triple Jump B	
+        event: Men's Triple Jump Qualification - Group B
+      - time: 9:05
+        venue: Olympic Stadium - Track	
+        event: Men's 1500m Round 1 - Heat 1
+      - time: 9:16
+        venue: Olympic Stadium - Track	
+        event: Men's 1500m Round 1 - Heat 2
+      - time: 9:20
+        venue: Olympic Stadium - Long Throws	
+        event: Women's Javelin Throw Qualification - Group A
+      - time: 9:27
+        venue: Olympic Stadium - Track	
+        event: Men's 1500m Round 1 - Heat 3
+      - time: 9:45
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Round 1 - Heat 1
+      - time: 9:53
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Round 1 - Heat 2
+      - time: 10:01
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Round 1 - Heat 3
+      - time: 10:09
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Round 1 - Heat 4
+      - time: 10:17
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Round 1 - Heat 5
+      - time: 10:25
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Round 1 - Heat 6
+      - time: 10:50
+        venue: Olympic Stadium - Long Throws	
+        event: Women's Javelin Throw Qualification - Group B
+      - time: 10:50
+        venue: Olympic Stadium - Long Jump A	
+        event: Women's Long Jump Final
+      - time: 11:05
+        venue: Olympic Stadium - Track	
+        event: Men's 200m Round 1 - Heat 1
+      - time: 11:13
+        venue: Olympic Stadium - Track	
+        event: Men's 200m Round 1 - Heat 2
+      - time: 11:21
+        venue: Olympic Stadium - Track	
+        event: Men's 200m Round 1 - Heat 3
+      - time: 11:29
+        venue: Olympic Stadium - Track	
+        event: Men's 200m Round 1 - Heat 4
+      - time: 11:37
+        venue: Olympic Stadium - Track	
+        event: Men's 200m Round 1 - Heat 5
+      - time: 11:45
+        venue: Olympic Stadium - Track	
+        event: Men's 200m Round 1 - Heat 6
+      - time: 11:53
+        venue: Olympic Stadium - Track	
+        event: Men's 200m Round 1 - Heat 7
+      - time: 12:20
+        venue: Olympic Stadium - Track	￼
+        event: Men's 400m Hurdles Final
+  - name: Session 11  19:00 - 21:55
+    day: 2
+    events:
+    - time: 19:10
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Round 1 - Heat 1
+    - time: 19:15
+      venue: Olympic Stadium - Shot Put A	
+      event: Men's Shot Put Qualification - Group A
+    - time: 19:18
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Round 1 - Heat 2
+    - time: 19:20
+      venue: Olympic Stadium - Pole Vault A	￼
+      event: Men's Pole Vault Final
+    - time: 19:26
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Round 1 - Heat 3
+    - time: 19:34
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Round 1 - Heat 4
+    - time: 19:42
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Round 1 - Heat 5
+    - time: 20:00
+      venue: Olympic Stadium - Track	
+      event: Men's 5000m Round 1 - Heat 1
+    - time: 20:20
+      venue: Olympic Stadium - Track	
+      event: Men's 5000m Round 1 - Heat 2
+    - time: 20:35
+      venue: Olympic Stadium - Long Throws	￼
+      event: Women's Hammer Throw Final
+    - time: 20:40
+      venue: Olympic Stadium - Shot Put B	
+      event: Men's Shot Put Qualification - Group B
+    - time: 20:50
+      venue: Olympic Stadium - Track	
+      event: Men's 200m Semi-Final 1
+    - time: 20:58
+      venue: Olympic Stadium - Track	
+      event: Men's 200m Semi-Final 2
+    - time: 21:06
+      venue: Olympic Stadium - Track	
+      event: Men's 200m Semi-Final 3
+    - time: 21:25
+      venue: Olympic Stadium - Track	￼
+      event: Women's 800m Final
+    - time: 21:50
+      venue: Olympic Stadium - Track	￼
+      event: Women's 200m Final
+  # Wed, 4 Aug
+  - name: Session 12  9:00 - 12:25
+    day: 4
+    events:
+    - time: 9:00
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 100m - Heat 1
+    - time: 9:05
+      venue: Olympic Stadium - Long Throws	
+      event: Men's Javelin Throw Qualification - Group A
+    - time: 9:08
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 100m - Heat 2
+    - time: 9:16
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 100m - Heat 3
+    - time: 9:35
+      venue: Olympic Stadium - Track	
+      event: Women's Heptathlon 100m Hurdles - Heat 1
+    - time: 9:43
+      venue: Olympic Stadium - Track	
+      event: Women's Heptathlon 100m Hurdles - Heat 2
+    - time: 9:51
+      venue: Olympic Stadium - Track	
+      event: Women's Heptathlon 100m Hurdles - Heat 3
+    - time: 9:55
+      venue: Olympic Stadium - Long Jump A	
+      event: Men's Decathlon Long Jump - Group A
+    - time: 9:55
+      venue: Olympic Stadium - Long Jump B	
+      event: Men's Decathlon Long Jump - Group B
+    - time: 10:35
+      venue: Olympic Stadium - Long Throws	
+      event: Men's Javelin Throw Qualification - Group B
+    - time: 10:35
+      venue: Olympic Stadium - High Jump A	
+      event: Women's Heptathlon High Jump - Group A
+    - time: 10:35
+      venue: Olympic Stadium - High Jump B	
+      event: Women's Heptathlon High Jump - Group B
+    - time: 11:00
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Semi-Final 1
+    - time: 11:08
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Semi-Final 2
+    - time: 11:16
+      venue: Olympic Stadium - Track	
+      event: Men's 110m Hurdles Semi-Final 3
+    - time: 11:30
+      venue: Olympic Stadium - Track	￼
+      event: Women's 400m Hurdles Final
+    - time: 11:40
+      venue: Olympic Stadium - Shot Put A	
+      event: Men's Decathlon Shot Put - Group A
+    - time: 11:40
+      venue: Olympic Stadium - Shot Put B	
+      event: Men's Decathlon Shot Put - Group B
+  - name: Session 13  18:30 - 22:00
+    day: 4
+    events:
+    - time: 18:30
+      venue: Olympic Stadium - High Jump A	
+      event: Men's Decathlon High Jump - Group A
+    - time: 18:30
+      venue: Olympic Stadium - High Jump B	
+      event: Men's Decathlon High Jump - Group B
+    - time: 19:00
+      venue: Olympic Stadium - Track	
+      event: Women's 1500m Semi-Final 1
+    - time: 19:05
+      venue: Olympic Stadium - Shot Put A	
+      event: Women's Heptathlon Shot Put - Group A
+    - time: 19:05
+      venue: Olympic Stadium - Shot Put B	
+      event: Women's Heptathlon Shot Put - Group B
+    - time: 19:12
+      venue: Olympic Stadium - Track	
+      event: Women's 1500m Semi-Final 2
+    - time: 19:30
+      venue: Olympic Stadium - Track	
+      event: Women's 400m Semi-Final 1
+    - time: 19:38
+      venue: Olympic Stadium - Track	
+      event: Women's 400m Semi-Final 2
+    - time: 19:46
+      venue: Olympic Stadium - Track	
+      event: Women's 400m Semi-Final 3
+    - time: 20:00
+      venue: Olympic Stadium - Track	￼
+      event: Women's 3000m Steeplechase Final
+    - time: 20:15
+      venue: Olympic Stadium - Long Throws	
+      event: Men's Hammer Throw Final
+    - time: 20:30
+      venue: Olympic Stadium - Track	
+      event: Women's Heptathlon 200m - Heat 1
+    - time: 20:38
+      venue: Olympic Stadium - Track	
+      event: Women's Heptathlon 200m - Heat 2
+    - time: 20:46
+      venue: Olympic Stadium - Track	
+      event: Women's Heptathlon 200m - Heat 3
+    - time: 21:05
+      venue: Olympic Stadium - Track	￼
+      event: Men's 800m Final
+    - time: 21:30
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 400m - Heat 1
+    - time: 21:38
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 400m - Heat 2
+    - time: 21:46
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 400m - Heat 3
+    - time: 21:55
+      venue: Olympic Stadium - Track	￼
+      event: Men's 200m Final
+  # Thu, 5 Aug
+  - name: Session 14  9:00 - 15:05
+    day: 5
+    events:
+    - time: 9:00
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 110m Hurdles - Heat 1
+    - time: 9:08
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 110m Hurdles - Heat 2
+    - time: 9:10
+      venue: Olympic Stadium - High Jump A	
+      event: Women's High Jump Qualification - Group A
+    - time: 9:10
+      venue: Olympic Stadium - High Jump B	
+      event: Women's High Jump Qualification - Group B
+    - time: 9:16
+      venue: Olympic Stadium - Track	
+      event: Men's Decathlon 110m Hurdles - Heat 3
+    - time: 9:40
+      venue: Olympic Stadium - Long Jump A	
+      event: Women's Heptathlon Long Jump - Group A
+    - time: 9:40
+      venue: Olympic Stadium - Long Jump B	
+      event: Women's Heptathlon Long Jump - Group B
+    - time: 9:50
+      venue: Olympic Stadium - Long Throws	
+      event: Men's Decathlon Discus Throw - Group A
+    - time: 10:00
+      venue: Olympic Stadium - Track	
+      event: Women's 4 x 100m Relay Round 1 - Heat 1
+    - time: 10:09
+      venue: Olympic Stadium - Track	
+      event: Women's 4 x 100m Relay Round 1 - Heat 2
+    - time: 10:55
+      venue: Olympic Stadium - Long Throws	
+      event: Men's Decathlon Discus Throw - Group B
+    - time: 11:00
+      venue: Olympic Stadium - Triple Jump A	￼
+      event: Men's Triple Jump Final
+    - time: 11:05
+      venue: Olympic Stadium - Shot Put A	￼
+      event: Men's Shot Put Final
+    - time: 11:30
+      venue: Olympic Stadium - Track	
+      event: Men's 4 x 100m Relay Round 1 - Heat 1
+    - time: 11:39
+      venue: Olympic Stadium - Track	
+      event: Men's 4 x 100m Relay Round 1 - Heat 2
+    - time: 11:55
+      venue: Olympic Stadium - Track	￼
+      event: Men's 110m Hurdles Final
+    - time: 12:30
+      venue: Olympic Stadium - Long Throws	
+      event: Women's Heptathlon Javelin Throw - Group A
+    - time: 12:45
+      venue: Olympic Stadium - Pole Vault A	
+      event: Men's Decathlon Pole Vault - Group A
+    - time: 12:45
+      venue: Olympic Stadium - Pole Vault B	
+      event: Men's Decathlon Pole Vault - Group B
+    - time: 13:40
+      venue: Olympic Stadium - Long Throws	
+      event: Women's Heptathlon Javelin Throw - Group B
+  - name: Session 1  16:30 - 18:05
+    day: 5
+    events:
+    - time: 16:30
+      venue: Sapporo Odori Park	
+      event: Men's 20km Race Walk Final
+  - name: Session 15  19:00 - 21:45
+    day: 5
+    events:
+      - time: 19:15
+        venue: Olympic Stadium - Long Throws	
+        event: Men's Decathlon Javelin Throw - Group A
+      - time: 19:20
+        venue: Olympic Stadium - Pole Vault A	￼
+        event: Women's Pole Vault Final
+      - time: 19:25
+        venue: Olympic Stadium - Track	
+        event: Women's 4 x 400m Relay Round 1 - Heat 1
+      - time: 19:37
+        venue: Olympic Stadium - Track	
+        event: Women's 4 x 400m Relay Round 1 - Heat 2
+      - time: 20:00
+        venue: Olympic Stadium - Track	
+        event: Men's 1500m Semi-Final 1
+      - time: 20:10
+        venue: Olympic Stadium - Track	
+        event: Men's 1500m Semi-Final 2
+      - time: 20:20
+        venue: Olympic Stadium - Long Throws	
+        event: Men's Decathlon Javelin Throw - Group B
+      - time: 21:00
+        venue: Olympic Stadium - Track	￼
+        event: Men's 400m Final
+      - time: 21:20
+        venue: Olympic Stadium - Track	
+        event: Women's Heptathlon 800m - Heat 1
+      - time: 21:30
+        venue: Olympic Stadium - Track	￼
+        event: Women's Heptathlon 800m - Heat 2
+      - time: 21:40
+        venue: Olympic Stadium - Track	￼
+        event: Men's Decathlon 1500m - Heat 1
+  # Fri, 6 Aug
+  - name: Session 18  5:30 - 10:00
+    day: 6
+    events:
+    - time: 5:30
+      venue: Sapporo Odori Park	
+      event: Men's 50km Race Walk Final
+  - name: Session 16  16:30 - 18:15
+    day: 6
+    events:
+      - time: 16:30
+        venue: Sapporo Odori Park	
+        event: Women's 20km Race Walk Final
+  - name: Session 17  19:50 - 22:55
+    day: 6
+    events:
+      - time: 20:25
+        venue: Olympic Stadium - Track	
+        event: Men's 4 x 400m Relay Round 1 - Heat 1
+      - time: 20:37
+        venue: Olympic Stadium - Track	
+        event: Men's 4 x 400m Relay Round 1 - Heat 2
+      - time: 20:50
+        venue: Olympic Stadium - Long Throws	
+        event: Women's Javelin Throw Final
+      - time: 21:00
+        venue: Olympic Stadium - Track	
+        event: Men's 5000m Final
+      - time: 21:35
+        venue: Olympic Stadium - Track	
+        event: Women's 400m Final
+      - time: 21:50
+        venue: Olympic Stadium - Track	
+        event: Women's 1500m Final
+      - time: 22:30
+        venue: Olympic Stadium - Track	
+        event: Women's 4 x 100m Relay Final
+      - time: 22:50
+        venue: Olympic Stadium - Track	
+        event: Men's 4 x 100m Relay Final
+  # Sat, 7 Aug
+  - name: Session 21  7:00 - 10:15
+    day: 7
+    events:
+      - time: 7:00
+          venue: Sapporo Odori Park	
+            event: Women's Marathon Final
+  - name: Session 19  18:50 - 22:20
+    day: 7
+    events:
+      - time: 19:35
+        venue: Olympic Stadium - High Jump A	
+        event: Women's High Jump Final
+      - time: 19:45
+        venue: Olympic Stadium - Track	
+        event: Women's 10,000m Final
+      - time: 20:00
+        venue: Olympic Stadium - Long Throws	
+        event: Men's Javelin Throw Final
+      - time: 20:40
+        venue: Olympic Stadium - Track	
+        event: Men's 1500m Final
+      - time: 21:30
+        venue: Olympic Stadium - Track	
+        event: Women's 4 x 400m Relay Final
+      - time: 21:50
+        venue: Olympic Stadium - Track	
+        event: Men's 4 x 400m Relay Final
+  # Sun, 8 Aug
+  - name: Session 20  7:00 - 9:45
+    day: 8
+    event:
+      - time: 7:00
+        venue: Sapporo Odori Park	
+        event: Men's Marathon Final

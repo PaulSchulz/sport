@@ -18,7 +18,7 @@
      ";; Useful Commands"
      ";;;;;;;;;;;;;;;;;;;"
      "(list-events)                - Show current event files"
-     "(read-event \"<filename>\")    - Load event details" 
+     "(read-event \"<filename>\")    - Load event details"
      "(display-event \"<filename>\") - Display event details"
      "(events-table)               - List events"
      ""
@@ -31,9 +31,14 @@
      "  (println (event-stats-table (get-event)))"
      "  (println (event-group-table (get-event)))"
      ""
+     ";; From the command line - AFL "
+     ";;"
      ";; From the command line"
      ";;   lein run -m sporting-fixtures.afl"
-     ";;   lein run -m sporting-fixtures.utils"
+     ";;   lein run -m sporting-fixtures.bbl"
+     ";;   lein run -m sporting-fixtures.aflw"
+     ";;   lein run -m sporting-fixtures.aleague"
+     ";;   lein run -m sporting-fixtures.t20"
      ""
      ";; Event data (CSV) can be found at"
      ";;  https://fixturedownload.com/"
@@ -94,7 +99,7 @@
                        (t/default-time-zone))
         ]
     (f/unparse my-formatter
-               (f/parse formatter datetime))             
+               (f/parse formatter datetime))
     ))
 
 ;; Create results table
@@ -272,7 +277,7 @@
 
 (defn stats-header []
   (str
-   "      |    | Games   | Goals      | Group     Knockout Result\n"      
+   "      |    | Games   | Goals      | Group     Knockout Result\n"
    " Team | Pt | P/W/L/D | Fr/Ag/Diff | Result    Qual 16  8  4  2\n"
    (stats-separator)
    )
@@ -318,8 +323,8 @@
                     (cond
                       (= (:final results) "champion")  "-W "
                       (= (:final results) "runnerup" ) "-o "
-                      (= (:final results) "third" )    "-3 "   
-                      (= (:final results) "fourth" )   "-4 "   
+                      (= (:final results) "third" )    "-3 "
+                      (= (:final results) "fourth" )   "-4 "
                       :else " . "
                       )
                     " . ")
@@ -382,12 +387,12 @@
                    (= (calculate-winner (:goals x) (:penalties x)) [0 1]) "L"
                    (= (calculate-winner (:goals x) (:penalties x)) [0 0]) "d"
                    :else "o")
-                 (= (nth (:teams x) 1) (name team))              
+                 (= (nth (:teams x) 1) (name team))
                  (cond
                    (= (calculate-winner (:goals x) (:penalties x)) [0 1]) "W"
                    (= (calculate-winner (:goals x) (:penalties x)) [1 0]) "L"
                    (= (calculate-winner (:goals x) (:penalties x)) [0 0]) "d"
-                   :else "o")               
+                   :else "o")
                  (not (:goals x))      " "
                  (:last results)       (if (< i (:last results))
                                          "-"
@@ -398,7 +403,7 @@
                    (<= i 35) "-"
                    (and (<= 36 i 43) (:group results)) "-"
                    (and (<= 44 i 47) (= (:qual16 results) "win")) "-"
-                   (and (<= 48 i 49) (= (:quarter results) "win")) "-"      
+                   (and (<= 48 i 49) (= (:quarter results) "win")) "-"
                    :else " "))))
               (:games event)
               )
@@ -431,7 +436,7 @@
 ;; Group chart
 
 (defn team-group [event team]
-  (let [groups (:groups event)]        
+  (let [groups (:groups event)]
     (str team
          (seq
           groups
@@ -440,7 +445,7 @@
          )
     )
   )
-  
+
 (defn event-group-table [event]
   (let [games  (:games event)
         groups (:groups event)
@@ -537,14 +542,14 @@
               (format-game event 48)
               )
       (format "                                 %-27s"
-              (format-game event 52)              
+              (format-game event 52)
               )
       (format "                %-27s       %-27s"
               (format-game event 49)
               (format-game event 50)
               )
       (format "                                 %-27s"
-              (format-game event 51)              
+              (format-game event 51)
               )
       (format "         %-27s                     %-27s"
               (format-game event 46)
@@ -585,12 +590,22 @@
   (println (event-finals-chart event))
   (println)
   )
-  
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn -main-event-report
+  [& args]
+  (let [event (get-event)]
+    (print-event-report event)
+    ))
+
 (defn -main
   [& args]
-  ;;  (let [event (get-event)]
-  ;;    (print-event-report event)
-  ;;    )
+  (println "Sporting Fixtures and Events")
+  (println "----------------------------")
+  (println "Past events")
+  (println "  2019-fra-fifa-women-worldcup   FIFA Women's World Cup, France, 2019")
+  (println "")
+  (println "Current events")
+  (println)
   (help)
   )

@@ -1,0 +1,20 @@
+---
+bbl:
+ tag: "aus-bbl"
+ header:
+  title:    "2018-9 Big Bash League"
+  location: "Australia"
+  code:     "cricket-bbl"
+  date:     {from: "19 Dec 2019", to: "17 Feb 2020"}
+  url:      "http://www.bigbash.com.au/fixtures?gender=men"
+wbbl:
+  tag: "aus-wbbl"
+aflw-2020:
+  tag: "aus-aflw"
+  header:
+    title:    "2020 AFL Womens"
+    location: "Australia"
+    code:     "afl"
+    date:     {from: "7 Feb 2020", :to "18 Apr 2020"}
+    url:      ""
+  finals:   {}

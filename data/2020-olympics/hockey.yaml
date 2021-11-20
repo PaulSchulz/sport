@@ -1,0 +1,615 @@
+---
+sport: hockey
+days: [24,25,26,27,28,29,30,31,1,2,3,4,5,6,7]
+sessions:
+  # Sat, 24 Jul
+  - name: Session 1  9:30 - 13:15
+    day: 24
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool A
+        match: M01
+        team-a:￼JPN
+        team-b:￼AUS
+        description: Japan vs Australia
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M03
+        team-a:￼NED
+        team-b:￼BEL
+        description: Ntherlands vs Belgium
+  - name: Session 2  10:00 - 13:45
+    day: 24
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool A
+        match: M02
+        team-a:￼NZL
+        team-b:￼IND
+        description: New Zealand vs India
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool A
+        match: M04
+        team-a:￼ARG
+        team-b:￼ESP
+        description: Argentina vs Spain
+  - name: Session 3  18:30 - 22:15
+    day: 24
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M05
+        team-a:￼GBR
+        team-b:￼RSA
+        description: Great Britain vs South Africa
+      - time: 20:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W01
+        team-a:￼NED
+        team-b:￼IND
+        description: Netherlands vs India
+  - name: Session 4  19:00 - 22:45
+    day: 24
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool B
+        match: M06
+        team-a:￼CAN
+        team-b:￼GER
+        description: Canada vs Germany
+      - time: 21:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool A
+        match: W02
+        team-a:￼IRL
+        team-b:￼RSA
+        description: Ireland vs South Africa
+# Sun, 25 Jul
+  - name: Session 5  9:30 - 13:15
+    day: 25
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W03
+        team-a:￼GBR
+        team-b:￼GER
+        description: Great Britain vs Germany
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W05
+        team-a:￼JPN
+        team-b:￼CHN
+        description: Japan vs China
+  - name: Session 6  10:00 - 13:45
+    day: 25
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool B
+        match: W04
+        team-a:￼AUS
+        team-b:￼ESP
+        description: Australia vs Spain
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool B
+        match: W06
+        team-a:￼NZL
+        team-b:￼ARG
+        description: New Zealand vs Argentina
+  - name: Session 7  18:30 - 22:15
+    day: 25
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool A
+        match: M07
+        team-a:￼IND
+        team-b:￼AUS
+        description: India vs Australia
+      - time: 20:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool A
+        match: M09
+        team-a:￼ESP
+        team-b:￼NZL
+        description: Spain vs New Zealand
+  - name: Session 8  19:00 - 22:45
+    day: 25
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool A
+        match: M08
+        team-a:￼JPN
+        team-b:￼ARG
+        description: Japan vs Argentina
+      - time: 21:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool B
+        match: M10
+        team-a:￼RSA
+        team-b:￼NED
+        description: South Africa vs Netherlands
+# Mon, 26 Jul
+  - name: Session 9  9:30 - 13:15
+    day: 26
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M11
+        team-a:￼GER
+        team-b:￼BEL
+        description: Germany vs Belgium
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M12
+        team-a:￼GBR
+        team-b:￼CAN
+        description: Great Britain vs Canada
+  - name: Session 10  10:00 - 13:45
+    day: 26
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool A
+        match: W07
+        team-a:￼NED
+        team-b:￼IRL
+        description: Netherlands vs Ireland
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool B
+        match: W08
+        team-a:￼AUS
+        team-b:￼CHN
+        description: Australia vs China
+  - name: Session 11  18:30 - 22:15
+    day: 26
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W09
+        team-a:￼RSA
+        team-b:￼GBR
+        description: South Africa vs Great Britain
+      - time: 20:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W11
+        team-a:￼JPN
+        team-b:￼NZL
+        description: Japan vs New Zealand
+  - name: Session 12  19:00 - 22:45
+    day: 26
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool B
+        match: W10
+        team-a:￼ARG
+        team-b:￼ESP
+        description: Argentina vs Spain
+      - time: 21:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool A
+        match: W12
+        team-a:￼GER
+        team-b:￼IND
+        description: Germany vs India
+# Tue, 27 Jul
+  - name: Session 13  9:30 - 13:15
+    day: 27
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool A
+        match: M13
+        team-a:￼ARG
+        team-b:￼AUS
+        description: Argentina vs Australia
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool A
+        match: M15
+        team-a:￼JPN
+        team-b:￼NZL
+        description: Japan vs New Zealand
+  - name: Session 14  10:00 - 13:45
+    day: 27
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool A
+        match: M14
+        team-a:￼IND
+        team-b:￼ESP
+        description: India vs Spain
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool B
+        match: M16
+        team-a:￼GER
+        team-b:￼GBR
+        description: Germany vs Great Britain
+  - name: Session 15  18:30 - 22:15
+    day: 27
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M17
+        team-a:￼BEL
+        team-b:￼RSA
+        description: Belgium vs South Africa
+      - time: 20:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M18
+        team-a:￼NED
+        team-b:￼CAN
+        description: Netherlands vs Canada
+# Wed, 28 Jul
+  - name: Session 16  9:30 - 13:15
+    day: 28
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W13
+        team-a:￼NED
+        team-b:￼RSA
+        description: Netherlands vs South Africa
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W15
+        team-a:￼NZL
+        team-b:￼ESP
+        description: New Zealand vs Spain
+  - name: Session 17  10:00 - 13:45
+    day: 28
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool A
+        match: W14
+        team-a:￼GBR
+        team-b:￼IND
+        description: Great Britain vs India
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool A
+        match: W16
+        team-a:￼GER
+        team-b:￼IRL
+        description: Germany vs Ireland
+  - name: Session 18  18:30 - 22:15
+    day:28
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W17
+        team-a:￼JPN
+        team-b:￼AUS
+        description: Japan vs Australia
+        - time: 20:45
+          venue: Oi Hockey Stadium - North Pitch	
+          event: Men's Pool A
+          match: M19
+          team-a:￼JPN
+          team-b:￼ESP
+          description: Japan vs Spain
+  - name: Session 19  19:00 - 22:45
+    day: 28
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool B
+        match: W18
+        team-a:￼ARG
+        team-b:￼CHN
+        description: Argentina vs China
+      - time: 21:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool A
+        match: M20
+        team-a:￼AUS
+        team-b:￼NZL
+        description: Australia vs New Zealand
+# Thu, 29 Jul
+  - name: Session 20  9:30 - 13:15
+    day: 29
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool A
+        match: M21
+        team-a:￼IND
+        team-b:￼ARG
+        description: India vs Argentina
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M23
+        team-a:￼RSA
+        team-b:￼GER
+        description: South Africa vs Germany
+  - name: Session 21  10:00 - 13:45
+    day: 29
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool B
+        match: M22
+        team-a:￼BEL
+        team-b:￼CAN
+        description: Belgium vs Canada
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool B
+        match: M24
+        team-a:￼NED
+        team-b:￼GBR
+        description: Netherlands vs Great Britain
+  - name: Session 22  18:30 - 22:15
+    day: 29
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W19
+        team-a:￼ESP
+        team-b:￼CHN
+        description: Spain vs China
+      - time: 20:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W21
+        team-a:￼JPN
+        team-b:￼ARG
+        description: Japan vs Argentina
+  - name: Session 23  19:00 - 22:45
+    day: 29
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool A
+        match: W20
+        team-a:￼GBR
+        team-b:￼NED
+        description: Great Britain vs Netherlands
+      - time: 21:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool B
+        match: W22
+        team-a:￼NZL
+        team-b:￼AUS
+        description: New Zealand vs Australia
+  # Fri, 30 Jul
+  - name: Session 24  9:30 - 13:15
+    day: 30
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W23
+        team-a:￼RSA
+        team-b:￼GER
+        description: South Africa vs Germany
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W24
+        team-a:￼IRL
+        team-b:￼IND
+        description: Ireland vs India
+  - name: Session 25  10:00 - 13:45
+    day: 30
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool A
+        match: M25
+        team-a:￼AUS
+        team-b:￼ESP
+        description: Australia vs Spain
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool B
+        match: M26
+        team-a:￼CAN
+        team-b:￼RSA
+        description: Canada vs South Africa
+  - name: Session 26  18:30 - 22:15
+    day: 30
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool A
+        match: M27
+        team-a:￼JPN
+        team-b:￼IND
+        description: Japan vs India
+      - time: 20:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Pool B
+        match: M29
+        team-a:￼GER
+        team-b:￼NED
+        description: Germany vs Netherlands
+  - name: Session 27  19:00 - 22:45
+    day: 30
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool A
+        match: M28
+        team-a:￼ARG
+        team-b:￼NZL
+        description: Argentina vs New Zealand
+      - time: 21:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Men's Pool B
+        match: M30
+        team-a:￼BEL
+        team-b:￼GBR
+        description: Belgium vs Great Britain
+  # Sat, 31 Jul
+  - name: Session 28  9:30 - 13:15
+    day: 31
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W25
+        team-a:￼CHN
+        team-b:￼NZL
+        description: China vs New Zealand
+      - time: 11:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool B
+        match: W27
+        team-a:￼ARG
+        team-b:￼AUS
+        description: Argentina vs Australia
+  - name: Session 29  10:00 - 13:45
+    day: 31
+    events:
+      - time: 10:00
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool B
+        match: W26
+        team-a:￼JPN
+        team-b:￼ESP
+        description: Japan vs Spain
+      - time: 12:15
+        venue: Oi Hockey Stadium - South Pitch	
+        event: Women's Pool A
+        match: W28
+        team-a:￼IND
+        team-b:￼RSA
+        description: India vs South Africa
+  - name: Session 30  18:30 - 22:15
+    day: 31
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W29
+        team-a:￼GER
+        team-b:￼NED
+        description: Germany vs Netherlands
+      - time: 20:45
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Pool A
+        match: W30
+        team-a:￼IRL
+        team-b:￼GBR
+        description: Ireland vs Great Britain
+  # Sun, 1 Aug
+  - name: Session 31  9:30 - 13:45
+    day: 1
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Quarter-final
+      - time: 12:00
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Quarter-final
+  - name: Session 32  18:30 - 22:45
+    day: 1
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Quarter-final
+      - time: 21:00
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Quarter-final
+  # Mon, 2 Aug
+  - name: Session 33  9:30 - 13:45
+    day: 2
+    events:
+      - time: 9:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Quarter-final
+      - time: 12:00
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Quarter-final
+  - name: Session 34  18:30 - 22:45
+    day: 2
+    events:
+      - time: 18:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Quarter-final
+      - time: 21:00
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Quarter-final
+  # Tue, 3 Aug
+  - name: Session 35  10:30 - 12:15
+    day: 3
+    events:
+      - time: 10:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Semi-final
+  - name: Session 36  19:00 - 20:45
+    day: 3
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Semi-final
+  # Wed, 4 Aug
+  - name: Session 37  10:30 - 12:15
+    day: 4
+    events:
+      - time: 10:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Semi-final
+  - name: Session 38  19:00 - 20:45
+    day: 4
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Semi-final
+  # Thu, 5 Aug
+  - name: Session 39  10:30 - 12:15
+    day: 5
+    events:
+      - time: 10:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Bronze Medal Match
+        match: M37
+  - name: Session 40  19:00 - 21:10
+    day: 5
+    events:
+      - time: 19:00
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Men's Gold Medal Match
+        match: M38
+  # Fri, 6 Aug
+  - name: Session 41  10:30 - 12:15
+    day: 6
+    events:
+      - time: 10:30
+        venue: Oi Hockey Stadium - North Pitch	
+        event: Women's Bronze Medal Match
+        match: W37
+  - name: Session 42  19:00 - 21:10
+    day: 6
+    - time: 19:00
+      venue: Oi Hockey Stadium - North Pitch	￼
+      event: Women's Gold Medal Match
+      match: W38

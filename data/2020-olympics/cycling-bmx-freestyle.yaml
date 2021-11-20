@@ -1,0 +1,22 @@
+---
+sport: cycling-bmx-freestyle
+days: [31,1]
+events:
+  # Sat, 31 Jul
+  - time: 10:10
+    day: 31
+    venue: Ariake Urban Sports Park	
+    event: Women's Park Seeding
+  - time: 11:20
+    day: 31
+    venue: Ariake Urban Sports Park	
+    event: Men's Park Seeding
+  # Sun, 1 Aug
+  - time: 10:10
+    day: 1
+    venue: Ariake Urban Sports Park	
+    event: Women's Park Final
+  - time: 11:20
+    day: 1
+    venue: Ariake Urban Sports Park	
+    event: Men's Park Final

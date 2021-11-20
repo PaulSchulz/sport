@@ -1,7 +1,11 @@
 * sporting-fixtures
-Repository for Sporting fixture data. Used in other applications.
 
-Includes some example Clojure code for reading YAML data.
+Repository for Sporting fixture data. Used in other applications.
+and
+Reports and Statistics on Sporting Fixtures
+
+Includes some example Clojure code for reading YAML data, and very
+much a work in progress.
 
 ** Clojure Validation Scripts
 
@@ -18,11 +22,9 @@ Useful Commands
 (read-event "<filename>")    - Load event details
 (display-event "<filename>") - Display evenmt details
 (events-table)               - List events
-#+end_src
+#+end_src 
 
 ** Data Sources
 
 See: https://fixturedownload.com/
-
-
 
