@@ -33,6 +33,7 @@
      ""
      ";; From the command line"
      ";;   lein run -m sporting-fixtures.afl"
+     ";;   lein run -m sporting-fixtures.utils"
      ""
      ";; Event data (CSV) can be found at"
      ";;  https://fixturedownload.com/"
