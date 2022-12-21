@@ -1,0 +1,66 @@
+-------------------------------------------------------------------------------
+  1  1  2022-11-21 Mon 02:30am  G A  QAT:0 v ECU:2  
+  3  1  2022-11-21 Mon 11:30pm  G B  ENG:6 v IRN:2  
+  2  1  2022-11-22 Tue 02:30am  G A  SEN:0 v NED:2  
+  4  1  2022-11-22 Tue 05:30am  G B  USA:1 v WAL:1  
+  8  1  2022-11-22 Tue 08:30pm  G C  ARG:1 v KSA:2  
+  6  1  2022-11-22 Tue 11:30pm  G D  DEN:0 v TUN:0  
+  7  1  2022-11-23 Wed 02:30am  G C  MEX:0 v POL:0  
+  5  1  2022-11-23 Wed 05:30am  G D  FRA:4 v AUS:1  
+ 12  1  2022-11-23 Wed 08:30pm  G F  MAR:0 v CRO:0  
+ 11  1  2022-11-23 Wed 11:30pm  G E  GER:1 v JPN:2  
+ 10  1  2022-11-24 Thu 02:30am  G E  ESP:7 v CRC:0  
+  9  1  2022-11-24 Thu 05:30am  G F  BEL:1 v CAN:0  
+ 13  1  2022-11-24 Thu 08:30pm  G G  SUI v CMR  
+ 14  1  2022-11-24 Thu 11:30pm  G H  URU v KOR  
+ 15  1  2022-11-25 Fri 02:30am  G H  POR v GHA  
+ 16  1  2022-11-25 Fri 05:30am  G G  BRA v SRB  
+ 17  2  2022-11-25 Fri 08:30pm  G B  WAL v IRN  
+ 18  2  2022-11-25 Fri 11:30pm  G A  QAT v SEN  
+ 19  2  2022-11-26 Sat 02:30am  G A  NED v ECU  
+ 20  2  2022-11-26 Sat 05:30am  G B  ENG v USA  
+ 21  2  2022-11-26 Sat 08:30pm  G D  TUM v AUS  
+ 22  2  2022-11-26 Sat 11:30pm  G C  POL v KSA  
+ 23  2  2022-11-27 Sun 02:30am  G D  FRA v DEN  
+ 24  2  2022-11-27 Sun 05:30am  G C  ARG v MEX  
+ 25  2  2022-11-27 Sun 08:30pm  G B  JPN v CRC  
+ 26  2  2022-11-27 Sun 11:30pm  G F  BEL v MAR  
+ 27  2  2022-11-28 Mon 02:30am  G F  CRO v CAN  
+ 28  2  2022-11-28 Mon 05:30am  G E  ESP v GER  
+ 29  2  2022-11-28 Mon 08:30pm  G G  CMR v SRB  
+ 30  2  2022-11-28 Mon 11:30pm  G H  KOR v GHA  
+ 31  2  2022-11-29 Tue 02:30am  G G  BRA v SUI  
+ 32  2  2022-11-29 Tue 05:30am  G H  POR v URU  
+ 35  3  2022-11-30 Wed 01:30am  G A  ECU v SEN  
+ 36  3  2022-11-30 Wed 01:30am  G A  NED v QAT  
+ 33  3  2022-11-30 Wed 05:30am  G B  WAL v ENG  
+ 34  3  2022-11-30 Wed 05:30am  G B  IRN v USA  
+ 37  3  2022-12-01 Thu 01:30am  G D  AUS v DEN  
+ 38  3  2022-12-01 Thu 01:30am  G D  TUN v FRA  
+ 39  3  2022-12-01 Thu 05:30am  G C  POL v ARG  
+ 40  3  2022-12-01 Thu 05:30am  G C  RSA v MEX  
+ 41  3  2022-12-02 Fri 01:30am  G F  CRO v BEL  
+ 42  3  2022-12-02 Fri 01:30am  G F  CAN v MAR  
+ 43  3  2022-12-02 Fri 05:30am  G E  JPN v ESP  
+ 44  3  2022-12-02 Fri 05:30am  G E  CRC v GER  
+ 45  3  2022-12-03 Sat 01:30am  G H  GHA v URU  
+ 46  3  2022-12-03 Sat 01:30am  G H  KOR v POR  
+ 47  3  2022-12-03 Sat 05:30am  G G  SRB v SUI  
+ 48  3  2022-12-03 Sat 05:30am  G G  CMR v BRA  
+ 49  4  2022-12-04 Sun 01:30am  S 1  WINNER-A v RUNNER-UP-B  
+ 50  4  2022-12-04 Sun 05:30am  S 2  WINNER-C v RUNNER-UP-D  
+ 52  4  2022-12-05 Mon 01:30am  S 3  WINNER-E v RUNNER-UP-F  
+ 51  4  2022-12-05 Mon 05:30am  S 4  WINNER-G v RUNNER-UP-H  
+ 53  4  2022-12-06 Tue 01:30am  S 5  WINNER-B v RUNNER-UP-A  
+ 54  4  2022-12-06 Tue 05:30am  S 6  WINNER-D v RUNNER-UP-C  
+ 55  4  2022-12-07 Wed 01:30am  S 7  WINNER-F v RUNNER-UP-E  
+ 56  4  2022-12-07 Wed 05:30am  S 8  WINNER-H v RUNNER-UP-G  
+ 58  5  2022-12-10 Sat 01:30am  QF1  WINNER-S-1 v WINNER-S-2  
+ 57  5  2022-12-10 Sat 05:30am  QF2  WINNER-S-3 v WINNER-S-4  
+ 60  5  2022-12-11 Sun 01:30am  QF3  WINNER-S-5 v WINNER-S-6  
+ 59  5  2022-12-11 Sun 05:30am  QF4  WINNER-S-7 v WINNER-S-8  
+ 61  6  2022-12-14 Wed 05:30am  SF1  WINNER-QF-1 v WINNER-QF-2  
+ 62  6  2022-12-15 Thu 05:30am  SF2  WINNER-QF-3 v WINNER-QF-4  
+ 63  7  2022-12-18 Sun 01:30am  PO   LOSER-SF-1 v LOSER-SF-2  
+ 64  7  2022-12-19 Mon 01:30am  F    WINNER-SF-1 v WINNER-SF-2  
+-------------------------------------------------------------------------------
