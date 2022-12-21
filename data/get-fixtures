@@ -1,0 +1,56 @@
+#!/bin/bash
+# Download the JSPN data for the competition fixtures.
+
+if [ "x$1" == "x" ]
+then
+    echo "# Please supply a SPORTID argument"
+    exit
+fi
+cd ${0%/*}
+SPORTID=$1
+DATA_PATH="data/$SPORTID/data.clj"
+FIXTURE_PATH="data/$SPORTID/fixtures.json"
+
+function create_dir {
+    mkdir $SPORTID
+}
+
+# This needs to be called from within the sub-directory
+function download {
+    echo -n "# DOWNLOADING"
+    wget https://fixturedownload.com/feed/json/$SPORTID -O - 2>/dev/null | jq > fixtures.json
+    echo " (done)"
+    echo "# $SPORTID/fixtures.json"
+}
+
+function write_data {
+    cat<<EOF
+{:data "$DATA_PATH",
+ :details
+     {:title "",
+      :location "",
+      :code nil,
+      :date "",
+      :url ""
+      :fixtures "$FIXTURE_PATH",
+      :data "$DATA_PATH"}
+}
+EOF
+}
+
+echo "# SPORTID: $SPORTID"
+if [ -d "$SPORTID" ]
+then
+    echo "# Data directory exists, exiting"
+    exit
+fi
+
+create_dir
+cd $SPORTID
+download
+
+echo "# $SPORTID/data.clj"
+write_data
+write_data >"data.clj"
+
+echo "# FINISHED"

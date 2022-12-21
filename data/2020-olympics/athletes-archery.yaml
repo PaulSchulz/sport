@@ -1,0 +1,518 @@
+---
+sport: archery
+athletes:
+  # Women
+  - target: 1A	
+  ￼ noc:￼ITA
+    name: REBAGLIATI Chiara
+
+  - target: 2A	
+  ￼ noc:￼MEX
+    name: VALENCIA Alejandra
+
+  - target: 3A
+    noc: ITA
+    name: BOARI Lucilla
+
+  - target: 4A	
+    noc:￼MEX
+    name: ROMAN Aida
+
+  - target: 5A
+    noc:￼ITA
+    name: ANDREOLI Tatiana
+
+  - target: 6A	
+    noc:￼MEX
+    name: VAZQUEZ Ana
+
+  - target: 7A	
+    noc:￼UKR
+    name: MARCHENKO Veronika
+
+  - target: 8A	
+    noc:￼TPE
+    name: LIN Chia-En
+
+  - target: 9A	
+    noc:￼UKR
+    name: SICHENIKOVA Lidiia
+
+  - target: 10A	
+    noc:￼TPE
+    name: LEI Chien-Ying
+
+  - target: 11A	
+    noc:￼UKR
+    name: PAVLOVA Anastasiia
+
+  - target: 12A	
+    noc:￼TPE
+    name: TAN Ya-Ting
+
+  - target: 13A	
+    noc:￼INA
+    name: CHOIRUNISA Diananda
+
+  - target: 14A	
+    noc:￼CHN
+    name: LONG Xiaoqing
+
+  - target: 15A	
+    noc:￼SWE
+    name: BJERENDAL Christine
+
+  - target: 16A	
+    noc:￼CHN
+    name: WU Jiaxin
+
+  - target: 17A	
+    noc:￼TUR
+    name: ANAGOZ Yasemin
+
+  - target: 18A	
+    noc:￼CHN
+    name: YANG Xiaolei
+
+  - target: 19A	
+    noc:￼ROC
+    name: GOMBOEVA Svetlana
+
+  - target: 20A	
+    noc:￼GBR
+    name: FOLKARD Naomi
+
+  - target: 21A	
+    noc:￼ROC
+    name: OSIPOVA Elena
+
+  - target: 22A	
+    noc:￼GBR
+    name: BETTLES Sarah
+
+  - target: 23A	
+    noc:￼ROC
+    name: PEROVA Ksenia
+
+  - target: 24A	
+    noc:￼GBR
+    name: PITMAN Bryony
+
+  - target: 25A	
+    noc:￼GER
+    name: SCHWARZ Charline
+
+  - target: 26A	
+    noc:￼GRE
+    name: PSARRA Evangelia
+
+  - target: 27A	
+    noc:￼GER
+    name: UNRUH Lisa
+
+  - target: 28A	
+    noc:￼BAN
+    name: SIDDIQUE Diya
+    
+  - target: 29A	
+    noc:￼GER
+    name: KROPPEN Michelle
+
+  - target: 30A	
+    noc:￼BRA
+    name: dos SANTOS Ane Marcelle
+
+  - target: 31A	
+    noc:￼BHU
+    name: KARMA Karma
+
+  - target: 32A	
+    noc:￼BLR
+    name: KAZLOUSKAYA Karyna
+
+  - target: 33A	
+    noc:￼COL
+    name: ACOSTA GIRALDO Valentina
+
+  - target: 34A	
+    noc:￼BLR
+    name: MARUSAVA Hanna
+
+  - target: 35A	
+    noc:￼FRA
+    name: BARBELIN Lisa
+
+  - target: 36A	
+    noc:￼BLR
+    name: DZIOMINSKAYA Karyna
+
+  - target: 37A	
+    noc:￼EGY
+    name: ADAM Amal
+
+  - target: 38A	
+    noc:￼DEN
+    name: JAGER Maja
+
+  - target: 39A	
+    noc:￼ECU
+    name: ESPINOSA de los MONTEROS Adriana
+
+  - target: 40A	
+    noc:￼VIE
+    name: DO THI ANH Nguyet
+
+  - target: 41A	
+    noc:￼ESP
+    name: de VELASCO Ines
+
+  - target: 42A	
+    noc:￼EST
+    name: PARNAT Reena
+
+  - target: 43A	
+    noc:￼MGL
+    name: BISHINDEE Urantungalag
+
+  - target: 44A	
+    noc:￼AUS
+    name: INGLEY Alice
+
+  - target: 45A	
+    noc:￼NED
+    name: SCHLOESSER Gabriela
+
+  - target: 46A	
+    noc:￼CZE
+    name: HORACKOVA Marie
+
+  - target: 47A	
+    noc:￼IND
+    name: KUMARI Deepika
+
+  - target: 48A	
+    noc:￼CHA
+    name: HOURTOU Marlyse
+
+  - target: 49A	
+    noc:￼MDA
+    name: MIRCA Alexandra
+
+  - target: 50A	
+    noc:￼TUN
+    name: ELWALID Rihab
+
+  - target: 51A	
+    noc:￼ROU
+    name: AMAISTROAIE Madalina
+
+  - target: 52A	
+    noc:￼JPN
+    name: YAMAUCHI Azusa
+
+  - target: 53A	
+    noc:￼POL
+    name: ZYZANSKA Sylwia
+
+  - target: 54A	
+    noc:￼JPN
+    name: NAKAMURA Miki
+
+  - target: 55A	
+    noc:￼MAS
+    name: MASHAYIKH Syaqiera
+
+  - target: 56A	
+    noc:￼JPN
+    name: HAYAKAWA Ren
+
+  - target: 57A	
+    noc:￼USA
+    name: BROWN Mackenzie
+
+  - target: 58A	
+    noc:￼CAN
+    name: BARRETT Stephanie
+
+  - target: 59A	
+    noc:￼USA
+    name: MUCINO-FERNANDEZ Jennifer
+
+  - target: 60A	
+    noc:￼KOR
+    name: JANG Minhee
+
+  - target: 61A	
+    noc:￼USA
+    name: KAUFHOLD Casey
+
+  - target: 62A	
+    noc:￼KOR
+    name: KANG Chaeyoung
+
+  - target: 63A	
+    noc:￼SVK
+    name: BARANKOVA Denisa
+
+  - target: 64A	
+    noc:￼KOR
+    name: AN San
+
+  # Men
+  - target: 1A	
+  ￼ noc:￼NED
+    name: BROEKSMA Gijs
+
+  - target: 2A	
+    noc:￼CHN
+    name: LI Jialun
+
+  - target: 3A	
+    noc:￼NED
+    name: WIJLER Steve
+
+  - target: 4A	
+    noc:￼CHN
+    name: WANG Dapeng
+
+  - target: 5A	
+    noc:￼NED
+    name: van den BERG Sjef
+
+  - target: 6A	
+    noc:￼CHN
+    name: WEI Shaoxuan
+
+  - target: 7A	
+    noc:￼TPE
+    name: TANG Chih-Chun
+
+  - target: 8A	
+    noc:￼GBR
+    name: HUSTON Patrick
+
+  - target: 9A	
+    noc:￼TPE
+    name: DENG Yu-Cheng
+
+  - target: 10A	
+    noc:￼GBR
+    name: WOODGATE James
+
+  - target: 11A	
+    noc:￼TPE
+    name: WEI Chun-Heng
+
+  - target: 12A	
+    noc:￼GBR
+    name: HALL Tom
+
+  - target: 13A	
+    noc:￼KAZ
+    name: GANKIN Denis
+
+  - target: 14A	
+    noc:￼INA
+    name: PRASTYADI Alviyanto
+
+  - target: 15A	
+    noc:￼KAZ
+    name: MUSSAYEV Sanzhar
+
+  - target: 16A	
+    noc:￼INA
+    name: DWI PANGESTU Arif
+
+  - target: 17A	
+    noc:￼KAZ
+    name: ABDULLIN Ilfat
+
+  - target: 18A	
+    noc:￼INA
+    name: AGATHA Riau Ega
+
+  - target: 19A	
+    noc:￼GER
+    name: UNRUH Florian
+
+  - target: 20A	
+    noc:￼IND
+    name: DAS Atanu
+
+  - target: 21A	
+    noc:￼MAS
+    name: MOHAMAD Khairul Anuar
+
+  - target: 22A	
+    noc:￼IND
+    name: JADHAV Pravin
+
+  - target: 23A	
+    noc:￼BRA
+    name: D'ALMEIDA Marcus
+
+  - target: 24A	
+    noc:￼IND
+    name: RAI Tarundeep
+
+  - target: 25A	
+    noc:￼FRA
+    name: VALLADONT Jean-Charles
+
+  - target: 26A	
+    noc:￼LUX
+    name: HENCKELS Jeff
+
+  - target: 27A	
+    noc:￼FRA
+    name: CHIRAULT Thomas
+
+  - target: 28A	
+    noc:￼ISV
+    name: D'AMOUR Nicholas
+
+  - target: 29A	
+    noc:￼FRA
+    name: PLIHON Pierre
+
+  - target: 30A	
+    noc:￼VIE
+    name: NGUYEN Hoang Phi Vu
+
+  - target: 31A	
+    noc:￼USA
+    name: WILLIAMS Jack
+
+  - target: 32A	
+    noc:￼AUS
+    name: WORTH Taylor
+  
+  - target: 33A	
+    noc:￼USA
+    name: ELLISON Brady
+
+  - target: 34A	
+    noc:￼AUS
+    name: TYACK Ryan
+
+  - target: 35A	
+    noc:￼USA
+    name: WUKIE Jacob
+
+  - target: 36A	
+    noc:￼AUS
+    name: BARNES David
+
+  - target: 37A	
+    noc:￼COL
+    name: PINEDA Daniel Felipe
+
+  - target: 38A	
+    noc:￼CAN
+    name: DUENAS Crispin
+
+  - target: 39A	
+    noc:￼IRI
+    name: VAZIRI TEYMOORLOOEI Milad
+
+  - target: 40A	
+    noc:￼ROC
+    name: BAZARZHAPOV Galsan
+
+  - target: 41A	
+    noc:￼MAW
+    name: DAVID Areneo
+
+  - target: 42A	
+    noc:￼TUR
+    name: GAZOZ Mete
+
+  - target: 43A	
+    noc:￼HUN
+    name: BALOGH Matyas Laszlo
+
+  - target: 44A	
+    noc:￼MDA
+    name: OLARU Dan
+
+  - target: 45A	
+    noc:￼ISR
+    name: SHANNY Itay
+
+  - target: 46A	
+    noc:￼POL
+    name: NAPLOSZEK Slawomir
+
+  - target: 47A	
+    noc:￼ITA
+    name: NESPOLI Mauro
+
+  - target: 48A	
+    noc:￼EGY
+    name: TOLBA Youssof
+
+  - target: 49A	
+    noc:￼KOR
+    name: KIM Woojin
+
+  - target: 50A	
+    noc:￼FIN
+    name: VIKSTROM Antti
+
+  - target: 51A	
+    noc:￼KOR
+    name: OH Jinhyek
+
+  - target: 52A	
+    noc:￼CHI
+    name: AGUILAR Andres
+
+  - target: 53A	
+    noc:￼KOR
+    name: KIM Je Deok
+
+  - target: 54A	
+    noc:￼SLO
+    name: RAVNIKAR Ziga
+
+  - target: 55A	
+    noc:￼BEL
+    name: de SMEDT Jarno
+
+  - target: 56A	
+    noc:￼UKR
+    name: HUNBIN Oleksii
+
+  - target: 57A	
+    noc:￼JPN
+    name: KAWATA Yuki
+
+  - target: 58A	
+    noc:￼BAN
+    name: SHANA Md Ruman
+
+  - target: 59A	
+    noc:￼JPN
+    name: FURUKAWA Takaharu
+
+  - target: 60A	
+    noc:￼ESP
+    name: CASTRO Daniel
+
+  - target: 61A	
+    noc:￼JPN
+    name: MUTO Hiroki
+
+  - target: 62A	
+    noc:￼MGL
+    name: BAATARKHUYAG Otgonbold
+
+  - target: 63A	
+    noc:￼TUN
+    name: HAMMED Mohamed
+
+  - target: 64A	
+    noc:￼MEX
+    name: ALVAREZ Luis
+
+

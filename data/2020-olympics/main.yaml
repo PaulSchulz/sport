@@ -91,21 +91,21 @@ sports:
       - name: Handball women
   - name: Judo (15)
     url: https://en.wikipedia.org/wiki/Judo_at_the_2020_Summer_Olympics
-    discipine:
-      - Men 60 kg
-      - Men 66 kg
-      - Men 73 kg
-      - Men 81 kg
-      - Men 90 kg
-      - Men 100 kg
-      - Men +100 kg
-      - Women 48 kg
-      - Women 57 kg
-      - Women 63 kg
-      - Women 70 kg
-      - Women 78 kg
-      - Women +78 kg
-      - Mixed team
+    discipline:
+      - name: Men 60 kg
+      - name: Men 66 kg
+      - name: Men 73 kg
+      - name: Men 81 kg
+      - name: Men 90 kg
+      - name: Men 100 kg
+      - name: Men +100 kg
+      - name: Women 48 kg
+      - name: Women 57 kg
+      - name: Women 63 kg
+      - name: Women 70 kg
+      - name: Women 78 kg
+      - name: Women +78 kg
+      - name: Mixed team
   - name: Karate
     url: https://en.wikipedia.org/wiki/Karate_at_the_2020_Summer_Olympics
     discipline:
@@ -121,6 +121,22 @@ sports:
     url: https://en.wikipedia.org/wiki/Sailing_at_the_2020_Summer_Olympics
 ￼ - name: Shooting (15)
     url:  https://en.wikipedia.org/wiki/Shooting_at_the_2020_Summer_Olympics
+    discipline:
+      - name: Men 50m Rifle 3 Positions
+      - name: Women 50m Rifle 3 Positions
+      - name: Men 10m Air Rifle
+      - name: Women 10m Air Rifle
+      - name: Men 25m Rapid Fire Pistol
+      - name: Women 25m Pistol
+      - name: Men 10m Air Pistol
+      - name: Women 10m Air Pistol
+      - name: Men Trap
+      - name: Women Trap
+      - name: Men Skeet
+      - name: Women Skeet
+      - name: 10m Air Rifle Mixed Team
+      - name: 10m Air Pistol Mixed Team
+      - name: Trap Mixed Team
 ￼ - name: Skateboarding (4)
     url; https://en.wikipedia.org/wiki/Skateboarding_at_the_2020_Summer_Olympics
 ￼ - name: Sport climbing (2)
@@ -159,9 +175,8 @@ events:
     
   - name: Archery
     days: [23,24,25,26,27,28,29,30,31]
-    
-    
-  - name: Artistic Gymnastics
+
+    - name: Artistic Gymnastics
     days: [21,22,24,25,26,27,28,29,1,2,3]
     
   - name: Artistic Swimming
@@ -208,7 +223,6 @@ events:
     
   - name: Diving
     days: [25,26,27,28,30,31,1,2,3,4,5,6,7]
-    icon: 
       
   - name: Equestrian
     days: [23,24,25,27,28,29,30,31,1,2,3,4,5,6,7]

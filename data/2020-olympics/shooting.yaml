@@ -1,0 +1,344 @@
+---
+sport: shooting
+events:
+  # Thu, 22 Jul
+  - time: 9:00
+    day: 22
+    venue: Asaka Shooting Range - 10m Range
+    event: 10m Air Pistol Men's Official Training
+
+  - time: 10:30
+    day: 22
+    venue:Asaka Shooting Range - 10m Range
+    event: 10m Air Pistol Women's Official Training
+
+  - time: 12:20
+    day: 22
+    venue: Asaka Shooting Range - 10m Range
+    event: 10m Air Rifle Women's Official Training
+
+  - time: 13:50
+    day: 22
+    venue: Asaka Shooting Range - 10m Range
+    event: 10m Air Rifle Men's Official Training
+
+  # Fri, 23 Jul
+  - time: 8:30
+    day: 23
+    venue: Asaka Shooting Range - 10m Range
+    event: 10m Air Rifle Women's Pre-Event Training
+
+  - time: 10:00
+    day: 23
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Pistol Men's Pre-Event Training
+
+  # Sat, 24 Jul
+  - time: 8:30
+    day: 24
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Rifle Women's Qualification
+    
+  - time: 9:00
+    day: 24
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Skeet Women's Pre-Event Training
+    
+  - time: 9:30
+    day: 24
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Skeet Men's Pre-Event Training
+    
+  - time: 10:45
+    day: 24
+    venue: Asaka Shooting Range - Final Hall	
+    event: 10m Air Rifle Women's Final
+    
+  - time: 11:00
+    day: 24
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Pistol Women's Pre-Event Training
+    
+  - time: 13:00
+    day: 24
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Pistol Men's Qualification
+    
+  - time: 14:45
+    day: 24
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Rifle Men's Pre-Event Training
+    
+  - time: 15:30
+    day: 24
+    venue: Asaka Shooting Range - Final Hall	
+    event: 10m Air Pistol Men's Final
+
+  # Sun, 25 Jul
+  - time: 9:00
+    day: 25
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Pistol Women's Qualification
+    
+  - time: 9:00
+    day: 25
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Skeet Women's Qualification - Day 1
+    
+  - time: 10:00
+    day: 25
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Skeet Men's Qualification - Day 1
+    
+  - time: 11:15
+    day: 25
+    venue: Asaka Shooting Range - Final Hall	
+    event: 10m Air Pistol Women's Final
+    
+  - time: 13:00
+    day: 25
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Rifle Men's Qualification
+    
+  - time: 15:30
+    day: 25
+    venue: Asaka Shooting Range - Final Hall	￼
+    event: 10m Air Rifle Men's Final
+
+  # Mon, 26 Jul
+  - time: 8:45
+    day: 26
+    venue: Asaka Shooting Range	
+    event: Trap Women's Official Training
+    
+  - time: 9:00
+    day: 26
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Pistol Mixed Team Pre-Event Training
+    
+  - time: 9:00
+    day: 26
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Men's Official Training
+    
+  - time: 9:00
+    day: 26
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Skeet Women's Qualification - Day 2
+    
+  - time: 10:00
+    day: 26
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Skeet Men's Qualification - Day 2
+    
+  - time: 11:00
+    day: 26
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Rifle Mixed Team Pre-Event Training
+    
+  - time: 14:50
+    day: 26
+    venue: Asaka Shooting Range - Shotgun C - Final Range	
+    event: Skeet Women's Final
+    
+  - time: 15:50
+    day: 26
+    venue: Asaka Shooting Range - Shotgun C - Final Range	
+    event: Skeet Men's Final
+
+  # Tue, 27 Jul
+  - time: 9:00
+    day: 27
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Pistol Mixed Team Qualification Stage 1
+    
+  - time: 9:00
+    day: 27
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Women's Pre-Event Training
+    
+  - time: 9:45
+    day: 27
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Pistol Mixed Team Qualification Stage 2
+    
+  - time: 9:50
+    day: 27
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Men's Pre-Event Training
+    
+  - time: 11:00
+    day: 27
+    venue: Asaka Shooting Range - Final Hall	
+    event: 10m Air Pistol Mixed Team Bronze Medal Match
+    
+  - time: 11:37
+    day: 27
+    venue: Asaka Shooting Range - Final Hall	
+    event: 10m Air Pistol Mixed Team Gold Medal Match
+    
+  - time: 13:15
+    day: 27
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Rifle Mixed Team Qualification Stage 1
+    
+  - time: 14:00
+    day: 27
+    venue: Asaka Shooting Range - 10m Range	
+    event: 10m Air Rifle Mixed Team Qualification Stage 2
+    
+  - time: 15:15
+    day: 27
+    venue: Asaka Shooting Range - Final Hall	
+    event: 10m Air Rifle Mixed Team Bronze Medal Match
+    
+  - time: 15:52
+    day: 27
+    venue: Asaka Shooting Range - Final Hall	
+    event: 10m Air Rifle Mixed Team Gold Medal Match
+
+  # Wed, 28 Jul
+  - time: 9:00
+    day: 28
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Pistol Women's Pre-Event Training
+  
+  - time: 9:00
+    day: 28
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Women's Qualification - Day 1
+  
+  - time: 9:50
+    day: 28
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Men's Qualification - Day 1
+
+  # Thu, 29 Jul
+  - time: 9:00
+    day: 29
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Pistol Women's Qualification Precision
+    
+  - time: 9:00
+    day: 29
+    venue: Asaka Shooting Range - 50m Range	
+    event: 50m Rifle 3 Positions Women's Official Training
+    
+  - time: 9:00
+    day: 29
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Women's Qualification - Day 2
+    
+  - time: 9:50
+    day: 29
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Men's Qualification - Day 2
+    
+  - time: 13:30
+    day: 29
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Pistol Women's Official Training
+    
+  - time: 14:30
+    day: 29
+    venue: Asaka Shooting Range - Shotgun C - Final Range	
+    event: Trap Women's Final
+    
+  - time: 15:30
+    day: 29
+    venue: Asaka Shooting Range - Shotgun C - Final Range	￼
+    event: Trap Men's Final
+
+  # Fri, 30 Jul
+  - time: 9:00
+    day: 30
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Pistol Women's Qualification Rapid
+
+  - time: 9:00
+    day: 30
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Mixed Team Pre-Event Training
+
+  - time: 12:30
+    day: 30
+    venue: Asaka Shooting Range - 50m Range	
+    event: 50m Rifle 3 Positions Women's Pre-Event Training
+
+  - time: 14:00
+    day: 30
+    venue: Asaka Shooting Range - Final Hall	
+    event: 25m Pistol Women's Final
+
+  - time: 15:30
+    day: 30
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Rapid Fire Pistol Men's Official Training
+
+  # Sat, 31 Jul
+  - time: 9:00
+    day: 31
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Rapid Fire Pistol Men's Pre-Event Training
+    
+  - time: 9:00
+    day: 31
+    venue: Asaka Shooting Range - Shotgun Ranges	
+    event: Trap Mixed Team Qualification
+    
+  - time: 12:00
+    day: 31
+    venue: Asaka Shooting Range - 50m Range	
+    event: 50m Rifle 3 Positions Women's Qualification
+    
+  - time: 13:30
+    day: 31
+    venue: Asaka Shooting Range - Shotgun C - Final Range	
+    event: Trap Mixed Team Bronze Medal Match
+    
+  - time: 14:05
+    day: 31
+    venue: Asaka Shooting Range - Shotgun C - Final Range	
+    event: Trap Mixed Team Gold Medal Match
+    
+  - time: 15:00
+    day: 31
+    venue: Asaka Shooting Range - 50m Range	
+    event: 50m Rifle 3 Positions Men's Official Training
+    
+  - time: 16:00
+    day: 31
+    venue: Asaka Shooting Range - Final Hall	￼
+    event: 50m Rifle 3 Positions Women's Final
+
+  # Sun, 1 Aug
+  - time: 8:30
+    day: 1
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Rapid Fire Pistol Men's Qualification - Stage 1
+    
+  - time: 11:30
+    day: 1
+    venue: Asaka Shooting Range - 50m Range	
+    event: 50m Rifle 3 Positions Men's Pre-Event Training
+
+  # Mon, 2 Aug
+  - time: 8:30
+    day: 2
+    venue: Asaka Shooting Range - 25m Range	
+    event: 25m Rapid Fire Pistol Men's Qualification - Stage 2
+    
+  - time: 11:30
+    day: 2
+    venue: Asaka Shooting Range - 50m Range
+    event: 50m Rifle 3 Positions Men's Qualification
+      
+  - time: 14:30
+    day: 2
+    venue: Asaka Shooting Range - Final Hall	
+    event: 25m Rapid Fire Pistol Men's Final
+    
+  - time: 16:50
+    day: 2
+    venue: Asaka Shooting Range - Final Hall
+    event: 50m Rifle 3 Positions Men's Final

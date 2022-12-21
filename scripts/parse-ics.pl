@@ -17,16 +17,17 @@
 
 $debug = 0;
 
-$infile = "../data/download/afl-2021-UTC.ics";
+#
+$infile = "../data/download/afl-2022-UTC.ics";
 %header = (
-    "title" =>     "2021 AFL",
+    "title" =>     "2022 AFL",
     "location" => "Australia",
     "code" =>     "afl",
     "date" =>     "",
     "url" =>      "",
     "version" =>  "1.0",
-    "name" =>     "afl-2021",
-    "filename" => "data/2021-aus-afl"
+    "name" =>     "afl-2022",
+    "filename" => "data/2022-aus-afl"
     );
 
 my %teams;

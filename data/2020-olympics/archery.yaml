@@ -1,0 +1,1029 @@
+---
+sport: archery
+events:
+  # Fri, 23 Jul
+  - time: 9:00
+    day: 23
+    venue: Yumenoshima Ranking Field	
+    event: Women's Individual Ranking Round
+    
+  - time: 13:00
+    day: 23
+    venue: Yumenoshima Ranking Field	
+    event: Men's Individual Ranking Round
+  
+  # Sat, 24 Jul
+  - time: 9:30
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 1
+  
+  - time: 9:49
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 2
+
+  - time: 10:08
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 3
+  
+  - time: 10:27
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 4
+  
+  - time: 10:46
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 5
+  
+  - time: 11:05
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 6
+  
+  - time: 11:24
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 7
+  
+  - time: 11:43
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team 1/8 Eliminations
+    match: 8
+  
+  - time: 14:15
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Quarterfinal
+    match: 9
+  
+  - time: 14:34
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Quarterfinal
+    match: 10
+  
+  - time: 14:53
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Quarterfinal
+    match: 11
+
+  - time: 15:12
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Quarterfinal
+    match: 12
+  
+  - time: 15:31
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Semifinal
+    match: 13
+  
+  - time: 15:50
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Semifinal
+    match: 14
+  
+  - time: 16:25
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Bronze Medal Match
+    match: 15
+  
+  - time: 16:45
+    day: 24
+    venue: Yumenoshima Final Field	
+    event: Mixed Team Gold Medal Match
+    match: 16
+  
+  # Sun, 25 Jul
+  - time: 9:30
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team 1/8 Eliminations
+    match: 17
+
+  - time: 9:53
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team 1/8 Eliminations
+    match: 18
+
+  - time: 10:16
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team 1/8 Eliminations
+    match: 21
+
+  - time: 10:39
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team 1/8 Eliminations
+    match: 22
+
+  - time: 13:45
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Quarterfinal
+    match: 25
+
+  - time: 14:08
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Quarterfinal
+    match: 26
+
+  - time: 14:31
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Quarterfinal
+    match: 27
+
+  - time: 14:54
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Quarterfinal
+    match: 28
+
+  - time: 15:17
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Semifinal
+    match: 29
+
+  - time: 15:40
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Semifinal
+    match: 30
+
+  - time: 16:15
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Bronze Medal Match
+    match: 31
+
+  - time: 16:40
+    day: 25
+    venue: Yumenoshima Final Field	
+    event: Women's Team Gold Medal Match
+    match: 32
+
+  # Mon, 26 Jul
+  - time: 9:30
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team 1/8 Eliminations
+    match: 33
+
+  - time: 9:53
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team 1/8 Eliminations
+    match: 34
+
+  - time: 10:16
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team 1/8 Eliminations
+    match: 37
+
+  - time: 10:39
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team 1/8 Eliminations
+    match: 38
+
+  - time: 13:45
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Quarterfinal
+    match: 41
+
+  - time: 14:08
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Quarterfinal
+    match: 42
+
+  - time: 14:31
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Quarterfinal
+    match: 43
+
+  - time: 14:54
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Quarterfinal
+    match: 44
+
+  - time: 15:17
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Semifinal
+    match: 45
+
+  - time: 15:40
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Semifinal
+    match: 46
+
+  - time: 16:15
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Bronze Medal Match
+    match: 47
+
+  - time: 16:40
+    day: 26
+    venue: Yumenoshima Final Field	
+    event: Men's Team Gold Medal Match
+    match: 48
+  
+  # Tue, 27 Jul
+  - time: 9:30
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 49
+
+  - time: 9:43
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 50
+
+  - time: 9:56
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 51
+
+  - time: 10:09
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 52
+
+  - time: 10:22
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 53
+
+  - time: 10:35
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 54
+
+  - time: 10:48
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 55
+
+  - time: 11:01
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 56
+
+  - time: 11:14
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 57
+
+  - time: 11:27
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 58
+
+  - time: 11:40
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 59
+
+  - time: 11:53
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 60
+
+  - time: 12:06
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 61
+
+  - time: 12:19
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 62
+
+  - time: 12:32
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 63
+
+  - time: 12:45
+    day: 27
+    venue: Yumenoshima Final Field
+    event: Women's Individual 1/32 Eliminations
+    match: 64
+
+  - time: 12:58
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 65
+
+  - time: 13:11
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 66
+
+  - time: 16:00
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 67
+
+  - time: 16:13
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 68
+
+  - time: 16:26
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 69
+
+  - time: 16:39
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 70
+
+  - time: 16:52
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 71
+
+  - time: 17:05
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 72
+
+  - time: 17:18
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 73
+
+  - time: 17:31
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 74
+
+  - time: 17:44
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 75
+
+  - time: 17:57
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 76
+
+  - time: 18:10
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 77
+
+  - time: 18:23
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 78
+
+  - time: 18:36
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 79
+
+  - time: 18:49
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 80
+
+  - time: 19:02
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 81
+
+  - time: 19:15
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 82
+
+  - time: 19:28
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 83
+
+  - time: 19:41
+    day: 27
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 84
+
+  # Wed, 28 Jul
+  - time: 9:30
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 85
+
+  - time: 9:43
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 86
+
+  - time: 9:56
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 87
+
+  - time: 10:09
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 88
+
+  - time: 10:22
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 89
+
+  - time: 10:35
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 90
+
+  - time: 10:48
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 91
+
+  - time: 11:01
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 92
+
+  - time: 11:14
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 93
+
+  - time: 11:27
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 94
+
+  - time: 11:40
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 95
+
+  - time: 11:53
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 96
+
+  - time: 12:06
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 97
+
+  - time: 12:19
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 98
+
+  - time: 12:32
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 99
+
+  - time: 12:45
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 100
+
+  - time: 12:58
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 101
+
+  - time: 13:11
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 102
+
+  - time: 16:00
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 103
+
+  - time: 16:13
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 104
+
+  - time: 16:26
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 105
+
+  - time: 16:39
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 106
+
+  - time: 16:52
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 107
+
+  - time: 17:05
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 108
+
+  - time: 17:18
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 109
+
+  - time: 17:31
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 110
+
+  - time: 17:44
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 111
+
+  - time: 17:57
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 112
+
+  - time: 18:10
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 123
+
+  - time: 18:23
+    day: 28
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 114
+  
+  # Thu, 29 Jul
+  - time: 9:30
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 115
+
+  - time: 9:43
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 116
+
+  - time: 9:56
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 117
+
+  - time: 10:09
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 118
+
+  - time: 10:22
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 119
+
+  - time: 10:35
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 120
+
+  - time: 10:48
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 121
+
+  - time: 11:01
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 122
+
+  - time: 11:14
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 123
+
+  - time: 11:27
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 124
+
+  - time: 11:40
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 125
+
+  - time: 11:53
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 126
+
+  - time: 12:06
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 127
+
+  - time: 12:19
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 128
+
+  - time: 12:32
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 129
+
+  - time: 12:45
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 130
+
+  - time: 12:58
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 131
+
+  - time: 13:11
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 132
+
+  - time: 16:00
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 133
+
+  - time: 16:13
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 134
+
+  - time: 16:26
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 135
+
+  - time: 16:39
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 136
+
+  - time: 16:52
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 137
+
+  - time: 17:05
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 138
+
+  - time: 17:18
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 139
+
+  - time: 17:31
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/32 Eliminations
+    match: 140
+  
+  - time: 17:44
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 141
+
+  - time: 17:57
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/32 Eliminations
+    match: 142
+
+  - time: 18:10
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/16 Eliminations
+    match: 143
+
+  - time: 18:23
+    day: 29
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/16 Eliminations
+    match: 144
+
+  # Fri, 30 Jul
+  - time: 9:30
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 145
+
+  - time: 9:43
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 146
+
+  - time: 9:56
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 147
+  
+  - time: 10:09
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 148
+
+  - time: 10:22
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 149
+
+  - time: 10:35
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 150
+
+  - time: 10:48
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 151
+
+  - time: 11:01
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual 1/8 Eliminations
+    match: 152
+
+  - time: 14:45
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Quarterfinal
+    match: 153
+
+  - time: 15:00
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Quarterfinal
+    match: 154
+
+  - time: 15:15
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Quarterfinal
+    match: 155
+
+  - time: 15:30
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Quarterfinal
+    match: 156
+
+  - time: 15:45
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Semifinal
+    match: 157
+
+  - time: 16:00
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Semifinal
+    match: 158
+
+  - time: 16:30
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Bronze Medal Match
+    match: 159
+
+  - time: 16:45
+    day: 30
+    venue: Yumenoshima Final Field	
+    event: Women's Individual Gold Medal Match
+    match: 160
+  
+  # Sat, 31 Jul
+  - time: 9:30
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 161
+
+  - time: 9:43
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 162
+
+  - time: 9:56
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 163
+
+  - time: 10:09
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 164
+
+  - time: 10:22
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 165
+
+  - time: 10:35
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 166
+
+  - time: 10:48
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 167
+
+  - time: 11:01
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual 1/8 Eliminations
+    match: 168
+
+  - time: 14:45
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Quarterfinal
+    match: 169
+
+  - time: 15:00
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Quarterfinal
+    match: 170
+
+  - time: 15:15
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Quarterfinal
+    match: 171
+
+  - time: 15:30
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Quarterfinal
+    match: 172
+
+  - time: 15:45
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Semifinal
+    match: 173
+
+  - time: 16:00
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Semifinal
+    match: 174
+
+  - time: 16:30
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Bronze Medal Match
+    match: 175
+
+  - time: 16:45
+    day: 31
+    venue: Yumenoshima Final Field	
+    event: Men's Individual Gold Medal Match
+    match: 176

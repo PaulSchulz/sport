@@ -1,108 +1,173 @@
 ---
 noc:
---- A ---
+# A #
   - code: AFG
     name: Afghanistan
+    url:  https://en.wikipedia.org/wiki/Afghanistan_at_the_Olympics
+    flag: Flag_of_Afghanistan.svg
 
   - code: ALB
     name: Albania
+    url:  https://en.wikipedia.org/wiki/Albania_at_the_Olympics
+    flag: Flag_of_Albania.svg
 
   - code: ALG
     name: Algeria
+    url:  https://en.wikipedia.org/wiki/Albania_at_the_Olympics
+    flag: Flag_of_Algeria.svg
 
   - code: AND
-    name: Andora
+    name: Andorra
+    url:  https://en.wikipedia.org/wiki/Andorra_at_the_Olympics
+    flag: Flag_of_Andorra.svg
 
   - code: ANG
     name: Angola
+    url:  https://en.wikipedia.org/wiki/Angola_at_the_Olympics
+    flag: Flag_of_Angola.svg
 
   - code: ANT
     name: Antigua and Barbuda
+    url:  https://en.wikipedia.org/wiki/Antigua_and_Barbuda_at_the_Olympics
+    flag: Flag_of_Antigua_and_Barbuda.svg
 
   - code: ARG
     name: Argentina
+    url:  https://en.wikipedia.org/wiki/Argentina_at_the_Olympics
+    flag: Flag_of_Argentina.svg
 
   - code: ARM
     name: Armenia
+    url:  https://en.wikipedia.org/wiki/Armenia_at_the_Olympics
+    flag: Flag_of_Armenia.svg
 
   - code: ARU
     name: Aruba
+    url:  https://en.wikipedia.org/wiki/Aruba_at_the_Olympics
+    flag: Flag_of_Aruba.svg
 
   - code: ASA
     name: American Somoa
-      
+    url:  https://en.wikipedia.org/wiki/American_Samoa_at_the_Olympics
+    flag: Flag_of_American_Samoa.svg
+
   - code: AUS
     name: Australia
+    url:  https://en.wikipedia.org/wiki/Australia_at_the_Olympics
+    flag: Flag_of_Australia.svg
 
   - code: AUT
     name: Austria
+    url:  https://en.wikipedia.org/wiki/Austria_at_the_Olympics
+    flag: Flag_of_Austria.svg
 
   - code: AZE
     name: Azerbaijan
+    url:  https://en.wikipedia.org/wiki/Azerbaijan_at_the_Olympics
+    flag: Flag_of_Azerbaijan.svg
 
   - code: BAH
     name: Bahamas
+    url:  https://en.wikipedia.org/wiki/Bahamas_at_the_Olympics
+    flag: Flag_of_the_Bahamas.svg
 
   - code: BAN
     name: Bangladesh
+    url:  https://en.wikipedia.org/wiki/Bangladesh_at_the_Olympics
+    flag: Flag_of_Bangladesh.svg
 
   - code: BAR
     name: Barbados
+    url:  https://en.wikipedia.org/wiki/Barbados_at_the_Olympics
+    flag: Flag_of_Barbados.svg
 
   - code: BUL
     name: Bulgaria
+    url:  https://en.wikipedia.org/wiki/Bulgaria_at_the_Olympics
+    flag: Flag_of_Bulgaria.svg
 
   - code: BLR
     name: Belarus
+    url:  https://en.wikipedia.org/wiki/Belarus_at_the_Olympics
+    flag: Flag_of_Belarus.svg
 
   - code: BEL
-    name:￼Belgium
+    name: Belgium
+    url:  https://en.wikipedia.org/wiki/Belgium_at_the_Olympics
+    flag: Flag_of_Belgium_(civil).svg
 
   - code: BIZ
     name: Belize
+    url:  https://en.wikipedia.org/wiki/Belize_at_the_Olympics
+    flag: Flag_of_Belize.svg
 
-  - code: Benin
-    name: BEN
+  - code: BEN
+    name: Benin
+    url:  https://en.wikipedia.org/wiki/Benin_at_the_Olympics
+    flag: Flag_of_Benin.svg
 
   - code: BER
     name: Bermuda
+    url:  https://en.wikipedia.org/wiki/Bermuda_at_the_Olympics
+    flag: Flag_of_Bermuda.svg
 
   - code: BHU
     name: Bhutan
+    url:  https://en.wikipedia.org/wiki/Bhutan_at_the_Olympics
+    flag: Flag_of_Bhutan.svg
 
   - code: BOL
     name: Bolivia
+    url:  https://en.wikipedia.org/wiki/Bolivia_at_the_Olympics
+    flag: Flag_of_Bolivia.svg
 
   - code: BIH
     name: Bosnia and Herzegovina
+    url:  https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_at_the_Olympics
+    flag: Flag_of_Bosnia_and_Herzegovina.svg
 
   - code: BOT
     name: Botswana
+    url:  https://en.wikipedia.org/wiki/Botswana_at_the_Olympics
+    flag: Flag_of_Botswana.svg
 
   - code: BRA
     name: Brazil
+    url:  https://en.wikipedia.org/wiki/Brazil_at_the_Olympics
+    flag: Flag_of_Brazil.svg
 
   - code: IVB
     name: British Virgin Islands
+    url:  https://en.wikipedia.org/wiki/British_Virgin_Islands_at_the_Olympics
+    flag: Flag_of_the_British_Virgin_Islands.svg
 
   - code: BRU
     name: Brunei
+    url:  https://en.wikipedia.org/wiki/Brunei_at_the_Olympics
+    flag: Flag_of_Brunei.svg
 
   - code: BUL
     name: Bulgaria
-
+    url:  https://en.wikipedia.org/wiki/Bulgaria_at_the_Olympics
+    flag: Flag_of_Bulgaria.svg
+ 
   - code: BUR
     name: Burkina Faso
+    url:  https://en.wikipedia.org/wiki/Burkina_Faso_at_the_Olympics
+    flag: Flag_of_Burkina_Faso.svg
 
   - code: BDI
     name: Burundi
---- C ---
+    url:  https://en.wikipedia.org/wiki/Burundi_at_the_Olympics
+    flag: Flag_of_Burundi.svg
+
+# C #
   - code: CAM
     name: Cambodia
-      
+
   - code: CMR
     name: Cameroon
-      
+
   - code: CAN
     name: Canada
 
@@ -117,19 +182,19 @@ noc:
 
   - code: CHA
     name: Chad
-            
+
   - code: CHI 
     name: Chile
-      
+
   - code: CHN
     name: China
-      
+
   - code: TPE
     name: Chinese Taipei
     alias:
       - Taiwan (TWN)
       - Republic of China (ROC)
-        
+
   - code: COL
     name: Colombia
 
@@ -138,23 +203,23 @@ noc:
 
   - code: COK
     name: Cook Islands
-      
+
   - code: CRC
     name: Costa Rica
-      
+
   - code: CRO
     name: Croatia
-      
+
   - code: CUB
     name: Cuba
 
   - code: CYP
     name: Cyprus
-      
+
   - code: CZE
     name: Czech Republic
-      
---- D ---
+
+# D #
   - code: COD
     name: Democratic Republic of the Congo
 
@@ -169,14 +234,14 @@ noc:
 
   - code: DOM
     name: Dominican Republic
-    
---- E ---
+
+# E #
   - code: TLS
     name: East Timor
-        
+
   - code: ECU
     name: Ecuador
-      
+
   - code: EGY
     name: Egypt
 
@@ -188,20 +253,20 @@ noc:
 
   - code: ERI
     name: Eritrea
-      
+
   - code: EST
-    name:￼Estonia
+    name: Estonia
 
   - code: SWZ
     name: Eswatini
-      
+
   - code: ETH
     name: Ethiopia
-      
---- F ---
+
+# F #
   - code: FSM
     name: Federated States of Micronesia
-      
+
   - code: FIJ
     name: Fiji
 
@@ -211,25 +276,25 @@ noc:
   - code: FRA
     name: France
 
---- G ---
+# G #
   - code: GAB
     name: Gabon
 
   - code: GEO
     name: Georgia
-      
+
   - code: GER
     name: Germany
-      
+
   - code: GHA
     name: Ghana
 
   - code: GBR
     name: Great Britain
-      
+
   - code: GRE
     name: Greece
-      
+
   - code: GRN
     name: Grenada
 
@@ -247,8 +312,8 @@ noc:
 
   - code: GUY
     name: Guyana
-      
---- H ---
+
+# H #
   - code: HAI
     name: Haiti
 
@@ -260,8 +325,8 @@ noc:
 
   - code: HUN
     name: Hungary
-    
---- I ---
+
+# I #
   - code: ISL
     name: Iceland
 
@@ -273,7 +338,7 @@ noc:
 
   - code: IRI
     name: Iran
-    alias:    
+    alias:
       - Islamic Republic of Iran
 
   - code: IRQ
@@ -292,15 +357,15 @@ noc:
     name: Ivory Coast
     alias:
       - Côte d'Ivoire
-      
---- J ---
+
+# J #
   - code: JPN
     name: Japan
 
   - code: JOR
     name: Jordan
 
---- K ---
+# K #
   - code: KAZ
     name: Kazakhstan
 
@@ -318,13 +383,13 @@ noc:
 
   - code: KGZ
     name: Kyrgyzstan
-      
---- L ---
+
+# L #
   - code: LAO
     name: Laos
-  
+
   - code: LAT
-    name:￼Latvia
+    name: Latvia
 
   - code: LBN
     name: Lebanon
@@ -343,13 +408,13 @@ noc:
 
   - code: LTU
     name: Lithuania
-      
+
   - code: LUX
     name: Luxembourg
 
---- M ---
+# M #
   - code: MAD
-    name:Madagascar
+    name: Madagascar
 
   - code: MAW
     name: Malawi
@@ -399,7 +464,7 @@ noc:
   - code: MYA
     name: Myanmar
 
---- N ---
+# N #
   - code: NAM
     name: Nambia
 
@@ -423,11 +488,11 @@ noc:
 
   - code: NGR
     name: Nigeria
---- O ---
+# O #
   - code: OMA
     name: Oman
 
---- P --- 
+# P # 
   - code: PAK
     name: Pakistan
 
@@ -458,14 +523,14 @@ noc:
   - code: POR
     name: Portugal
 
-  - code: PUR 
-  - name: Puerto Rico
+  - code: PUR
+    name: Puerto Rico
 
---- Q ---
+# Q #
   - code: QAT
     name: Qatar
 
---- R ---
+# R #
   - code: CGO
     name: Republic of the Congo
 
@@ -478,7 +543,7 @@ noc:
   - code: RWA
     name: Rwanda
 
---- S ---
+# S #
   - code: SKN
     name: Saint Kitts and Nevis
 
@@ -560,7 +625,7 @@ noc:
     name: Syrian Arab Republic
     alias:
       - Syria
---- T ---
+# T #
   - code: TJK
     name: Tajikistan
 
@@ -596,7 +661,7 @@ noc:
   - code: TUV
     name: Tuvalu
 
---- U ---
+# U #
   - code: UGA
     name: Uganda
 
@@ -618,7 +683,7 @@ noc:
   - code: UZB
     name: Uzbekistan
 
---- V ---
+# V #
   - code: VAN
     name: Vanuatu
 
@@ -631,11 +696,11 @@ noc:
   - code: ISV
     name: Virgin Islands
 
---- Y ---
+# Y #
   - code: YEM
     name: Yemen
 
---- Z ---
+# Z #
   - code: ZAM
     name: Zambia
 

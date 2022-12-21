@@ -1,0 +1,2329 @@
+---
+url:     ""
+code:     "afl"
+version:     "1.0"
+name:     "afl-2022"
+location:     "Australia"
+date:     ""
+title:     "2022 AFL"
+filename:     "data/2022-aus-afl"
+
+games:
+  - game:        1
+    datetime:    "16/03/2022 08:10"
+    round:       1
+    home:        "Melbourne"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Western Bulldogs\nAFL 2022 Round 1\nMCG\n16/03/2022 08:10 UTC"
+    summary:     "Melbourne vs Western Bulldogs - AFL 2022 Round 1"
+
+  - game:        2
+    datetime:    "17/03/2022 08:25"
+    round:       1
+    home:        "Carlton"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Carlton vs Richmond\nAFL 2022 Round 1\nMCG\n17/03/2022 08:25 UTC"
+    summary:     "Carlton vs Richmond - AFL 2022 Round 1"
+
+  - game:        3
+    datetime:    "18/03/2022 08:50"
+    round:       1
+    home:        "St Kilda"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Collingwood\nAFL 2022 Round 1\nMarvel Stadium\n18/03/2022 08:50 UTC"
+    summary:     "St Kilda vs Collingwood - AFL 2022 Round 1"
+
+  - game:        4
+    datetime:    "19/03/2022 03:10"
+    round:       1
+    home:        "Geelong Cats"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Geelong Cats vs Essendon\nAFL 2022 Round 1\nMCG\n19/03/2022 03:10 UTC"
+    summary:     "Geelong Cats vs Essendon - AFL 2022 Round 1"
+
+  - game:        5
+    datetime:    "19/03/2022 06:10"
+    round:       1
+    home:        "GWS Giants"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Accor Stadium Australia"
+    description: "GWS Giants vs Sydney Swans\nAFL 2022 Round 1\nAccor Stadium Australia\n19/03/2022 06:10 UTC"
+    summary:     "GWS Giants vs Sydney Swans - AFL 2022 Round 1"
+
+  - game:        6
+    datetime:    "19/03/2022 09:10"
+    round:       1
+    home:        "Brisbane Lions"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs Port Adelaide\nAFL 2022 Round 1\nGabba\n19/03/2022 09:10 UTC"
+    summary:     "Brisbane Lions vs Port Adelaide - AFL 2022 Round 1"
+
+  - game:        7
+    datetime:    "20/03/2022 02:10"
+    round:       1
+    home:        "Hawthorn"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Hawthorn vs North Melbourne\nAFL 2022 Round 1\nMCG\n20/03/2022 02:10 UTC"
+    summary:     "Hawthorn vs North Melbourne - AFL 2022 Round 1"
+
+  - game:        8
+    datetime:    "20/03/2022 05:10"
+    round:       1
+    home:        "Adelaide Crows"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs Fremantle\nAFL 2022 Round 1\nAdelaide Oval\n20/03/2022 05:10 UTC"
+    summary:     "Adelaide Crows vs Fremantle - AFL 2022 Round 1"
+
+  - game:        9
+    datetime:    "20/03/2022 08:40"
+    round:       1
+    home:        "West Coast Eagles"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Gold Coast Suns\nAFL 2022 Round 1\nOptus Stadium\n20/03/2022 08:40 UTC"
+    summary:     "West Coast Eagles vs Gold Coast Suns - AFL 2022 Round 1"
+
+  - game:        10
+    datetime:    "24/03/2022 08:20"
+    round:       2
+    home:        "Western Bulldogs"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs Carlton\nAFL 2022 Round 2\nMarvel Stadium\n24/03/2022 08:20 UTC"
+    summary:     "Western Bulldogs vs Carlton - AFL 2022 Round 2"
+
+  - game:        11
+    datetime:    "25/03/2022 08:50"
+    round:       2
+    home:        "Sydney Swans"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Geelong Cats\nAFL 2022 Round 2\nSCG\n25/03/2022 08:50 UTC"
+    summary:     "Sydney Swans vs Geelong Cats - AFL 2022 Round 2"
+
+  - game:        12
+    datetime:    "26/03/2022 02:45"
+    round:       2
+    home:        "Collingwood"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs Adelaide Crows\nAFL 2022 Round 2\nMCG\n26/03/2022 02:45 UTC"
+    summary:     "Collingwood vs Adelaide Crows - AFL 2022 Round 2"
+
+  - game:        13
+    datetime:    "26/03/2022 05:35"
+    round:       2
+    home:        "Essendon"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Essendon vs Brisbane Lions\nAFL 2022 Round 2\nMarvel Stadium\n26/03/2022 05:35 UTC"
+    summary:     "Essendon vs Brisbane Lions - AFL 2022 Round 2"
+
+  - game:        14
+    datetime:    "26/03/2022 08:40"
+    round:       2
+    home:        "Port Adelaide"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Hawthorn\nAFL 2022 Round 2\nAdelaide Oval\n26/03/2022 08:40 UTC"
+    summary:     "Port Adelaide vs Hawthorn - AFL 2022 Round 2"
+
+  - game:        15
+    datetime:    "26/03/2022 09:00"
+    round:       2
+    home:        "Gold Coast Suns"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Melbourne\nAFL 2022 Round 2\nMetricon Stadium\n26/03/2022 09:00 UTC"
+    summary:     "Gold Coast Suns vs Melbourne - AFL 2022 Round 2"
+
+  - game:        16
+    datetime:    "27/03/2022 02:10"
+    round:       2
+    home:        "North Melbourne"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "North Melbourne vs West Coast Eagles\nAFL 2022 Round 2\nMarvel Stadium\n27/03/2022 02:10 UTC"
+    summary:     "North Melbourne vs West Coast Eagles - AFL 2022 Round 2"
+
+  - game:        17
+    datetime:    "27/03/2022 04:20"
+    round:       2
+    home:        "Richmond"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs GWS Giants\nAFL 2022 Round 2\nMCG\n27/03/2022 04:20 UTC"
+    summary:     "Richmond vs GWS Giants - AFL 2022 Round 2"
+
+  - game:        18
+    datetime:    "27/03/2022 07:20"
+    round:       2
+    home:        "Fremantle"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs St Kilda\nAFL 2022 Round 2\nOptus Stadium\n27/03/2022 07:20 UTC"
+    summary:     "Fremantle vs St Kilda - AFL 2022 Round 2"
+
+  - game:        19
+    datetime:    "31/03/2022 08:20"
+    round:       3
+    home:        "Western Bulldogs"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs Sydney Swans\nAFL 2022 Round 3\nMarvel Stadium\n31/03/2022 08:20 UTC"
+    summary:     "Western Bulldogs vs Sydney Swans - AFL 2022 Round 3"
+
+  - game:        20
+    datetime:    "01/04/2022 08:20"
+    round:       3
+    home:        "Melbourne"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Essendon\nAFL 2022 Round 3\nMCG\n01/04/2022 08:20 UTC"
+    summary:     "Melbourne vs Essendon - AFL 2022 Round 3"
+
+  - game:        21
+    datetime:    "01/04/2022 09:20"
+    round:       3
+    home:        "Adelaide Crows"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs Port Adelaide\nAFL 2022 Round 3\nAdelaide Oval\n01/04/2022 09:20 UTC"
+    summary:     "Adelaide Crows vs Port Adelaide - AFL 2022 Round 3"
+
+  - game:        22
+    datetime:    "02/04/2022 02:10"
+    round:       3
+    home:        "GWS Giants"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "GIANTS Stadium"
+    description: "GWS Giants vs Gold Coast Suns\nAFL 2022 Round 3\nGIANTS Stadium\n02/04/2022 02:10 UTC"
+    summary:     "GWS Giants vs Gold Coast Suns - AFL 2022 Round 3"
+
+  - game:        23
+    datetime:    "02/04/2022 08:25"
+    round:       3
+    home:        "Collingwood"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs Geelong Cats\nAFL 2022 Round 3\nMCG\n02/04/2022 08:25 UTC"
+    summary:     "Collingwood vs Geelong Cats - AFL 2022 Round 3"
+
+  - game:        24
+    datetime:    "02/04/2022 09:00"
+    round:       3
+    home:        "Brisbane Lions"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs North Melbourne\nAFL 2022 Round 3\nGabba\n02/04/2022 09:00 UTC"
+    summary:     "Brisbane Lions vs North Melbourne - AFL 2022 Round 3"
+
+  - game:        25
+    datetime:    "03/04/2022 03:10"
+    round:       3
+    home:        "Carlton"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Carlton vs Hawthorn\nAFL 2022 Round 3\nMCG\n03/04/2022 03:10 UTC"
+    summary:     "Carlton vs Hawthorn - AFL 2022 Round 3"
+
+  - game:        26
+    datetime:    "03/04/2022 05:20"
+    round:       3
+    home:        "St Kilda"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Richmond\nAFL 2022 Round 3\nMarvel Stadium\n03/04/2022 05:20 UTC"
+    summary:     "St Kilda vs Richmond - AFL 2022 Round 3"
+
+  - game:        27
+    datetime:    "03/04/2022 08:20"
+    round:       3
+    home:        "West Coast Eagles"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Fremantle\nAFL 2022 Round 3\nOptus Stadium\n03/04/2022 08:20 UTC"
+    summary:     "West Coast Eagles vs Fremantle - AFL 2022 Round 3"
+
+  - game:        28
+    datetime:    "07/04/2022 09:40"
+    round:       4
+    home:        "Port Adelaide"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Melbourne\nAFL 2022 Round 4\nAdelaide Oval\n07/04/2022 09:40 UTC"
+    summary:     "Port Adelaide vs Melbourne - AFL 2022 Round 4"
+
+  - game:        29
+    datetime:    "08/04/2022 09:50"
+    round:       4
+    home:        "Geelong Cats"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs Brisbane Lions\nAFL 2022 Round 4\nGMHBA Stadium\n08/04/2022 09:50 UTC"
+    summary:     "Geelong Cats vs Brisbane Lions - AFL 2022 Round 4"
+
+  - game:        30
+    datetime:    "09/04/2022 03:45"
+    round:       4
+    home:        "Sydney Swans"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs North Melbourne\nAFL 2022 Round 4\nSCG\n09/04/2022 03:45 UTC"
+    summary:     "Sydney Swans vs North Melbourne - AFL 2022 Round 4"
+
+  - game:        31
+    datetime:    "09/04/2022 06:35"
+    round:       4
+    home:        "Collingwood"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Collingwood vs West Coast Eagles\nAFL 2022 Round 4\nMarvel Stadium\n09/04/2022 06:35 UTC"
+    summary:     "Collingwood vs West Coast Eagles - AFL 2022 Round 4"
+
+  - game:        32
+    datetime:    "09/04/2022 09:25"
+    round:       4
+    home:        "Richmond"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Western Bulldogs\nAFL 2022 Round 4\nMCG\n09/04/2022 09:25 UTC"
+    summary:     "Richmond vs Western Bulldogs - AFL 2022 Round 4"
+
+  - game:        33
+    datetime:    "09/04/2022 09:25"
+    round:       4
+    home:        "Fremantle"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs GWS Giants\nAFL 2022 Round 4\nOptus Stadium\n09/04/2022 09:25 UTC"
+    summary:     "Fremantle vs GWS Giants - AFL 2022 Round 4"
+
+  - game:        34
+    datetime:    "10/04/2022 03:10"
+    round:       4
+    home:        "Essendon"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Essendon vs Adelaide Crows\nAFL 2022 Round 4\nMarvel Stadium\n10/04/2022 03:10 UTC"
+    summary:     "Essendon vs Adelaide Crows - AFL 2022 Round 4"
+
+  - game:        35
+    datetime:    "10/04/2022 05:20"
+    round:       4
+    home:        "Hawthorn"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Hawthorn vs St Kilda\nAFL 2022 Round 4\nMCG\n10/04/2022 05:20 UTC"
+    summary:     "Hawthorn vs St Kilda - AFL 2022 Round 4"
+
+  - game:        36
+    datetime:    "10/04/2022 06:10"
+    round:       4
+    home:        "Gold Coast Suns"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Carlton\nAFL 2022 Round 4\nMetricon Stadium\n10/04/2022 06:10 UTC"
+    summary:     "Gold Coast Suns vs Carlton - AFL 2022 Round 4"
+
+  - game:        37
+    datetime:    "14/04/2022 09:35"
+    round:       5
+    home:        "Brisbane Lions"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs Collingwood\nAFL 2022 Round 5\nGabba\n14/04/2022 09:35 UTC"
+    summary:     "Brisbane Lions vs Collingwood - AFL 2022 Round 5"
+
+  - game:        38
+    datetime:    "15/04/2022 06:20"
+    round:       5
+    home:        "North Melbourne"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "North Melbourne vs Western Bulldogs\nAFL 2022 Round 5\nMarvel Stadium\n15/04/2022 06:20 UTC"
+    summary:     "North Melbourne vs Western Bulldogs - AFL 2022 Round 5"
+
+  - game:        39
+    datetime:    "15/04/2022 09:40"
+    round:       5
+    home:        "West Coast Eagles"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Sydney Swans\nAFL 2022 Round 5\nOptus Stadium\n15/04/2022 09:40 UTC"
+    summary:     "West Coast Eagles vs Sydney Swans - AFL 2022 Round 5"
+
+  - game:        40
+    datetime:    "16/04/2022 03:45"
+    round:       5
+    home:        "St Kilda"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Gold Coast Suns\nAFL 2022 Round 5\nMarvel Stadium\n16/04/2022 03:45 UTC"
+    summary:     "St Kilda vs Gold Coast Suns - AFL 2022 Round 5"
+
+  - game:        41
+    datetime:    "16/04/2022 06:35"
+    round:       5
+    home:        "Adelaide Crows"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs Richmond\nAFL 2022 Round 5\nAdelaide Oval\n16/04/2022 06:35 UTC"
+    summary:     "Adelaide Crows vs Richmond - AFL 2022 Round 5"
+
+  - game:        42
+    datetime:    "16/04/2022 09:25"
+    round:       5
+    home:        "Melbourne"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs GWS Giants\nAFL 2022 Round 5\nMCG\n16/04/2022 09:25 UTC"
+    summary:     "Melbourne vs GWS Giants - AFL 2022 Round 5"
+
+  - game:        43
+    datetime:    "17/04/2022 03:40"
+    round:       5
+    home:        "Carlton"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Carlton vs Port Adelaide\nAFL 2022 Round 5\nMCG\n17/04/2022 03:40 UTC"
+    summary:     "Carlton vs Port Adelaide - AFL 2022 Round 5"
+
+  - game:        44
+    datetime:    "17/04/2022 06:40"
+    round:       5
+    home:        "Essendon"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Essendon vs Fremantle\nAFL 2022 Round 5\nMarvel Stadium\n17/04/2022 06:40 UTC"
+    summary:     "Essendon vs Fremantle - AFL 2022 Round 5"
+
+  - game:        45
+    datetime:    "18/04/2022 05:20"
+    round:       5
+    home:        "Hawthorn"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Hawthorn vs Geelong Cats\nAFL 2022 Round 5\nMCG\n18/04/2022 05:20 UTC"
+    summary:     "Hawthorn vs Geelong Cats - AFL 2022 Round 5"
+
+  - game:        46
+    datetime:    "22/04/2022 09:50"
+    round:       6
+    home:        "GWS Giants"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "Manuka Oval"
+    description: "GWS Giants vs St Kilda\nAFL 2022 Round 6\nManuka Oval\n22/04/2022 09:50 UTC"
+    summary:     "GWS Giants vs St Kilda - AFL 2022 Round 6"
+
+  - game:        47
+    datetime:    "23/04/2022 03:45"
+    round:       6
+    home:        "Western Bulldogs"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Mars Stadium"
+    description: "Western Bulldogs vs Adelaide Crows\nAFL 2022 Round 6\nMars Stadium\n23/04/2022 03:45 UTC"
+    summary:     "Western Bulldogs vs Adelaide Crows - AFL 2022 Round 6"
+
+  - game:        48
+    datetime:    "23/04/2022 06:35"
+    round:       6
+    home:        "Port Adelaide"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs West Coast Eagles\nAFL 2022 Round 6\nAdelaide Oval\n23/04/2022 06:35 UTC"
+    summary:     "Port Adelaide vs West Coast Eagles - AFL 2022 Round 6"
+
+  - game:        49
+    datetime:    "23/04/2022 09:40"
+    round:       6
+    home:        "Fremantle"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs Carlton\nAFL 2022 Round 6\nOptus Stadium\n23/04/2022 09:40 UTC"
+    summary:     "Fremantle vs Carlton - AFL 2022 Round 6"
+
+  - game:        50
+    datetime:    "24/04/2022 03:10"
+    round:       6
+    home:        "North Melbourne"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "Blundstone Arena"
+    description: "North Melbourne vs Geelong Cats\nAFL 2022 Round 6\nBlundstone Arena\n24/04/2022 03:10 UTC"
+    summary:     "North Melbourne vs Geelong Cats - AFL 2022 Round 6"
+
+  - game:        51
+    datetime:    "24/04/2022 06:10"
+    round:       6
+    home:        "Gold Coast Suns"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Brisbane Lions\nAFL 2022 Round 6\nMetricon Stadium\n24/04/2022 06:10 UTC"
+    summary:     "Gold Coast Suns vs Brisbane Lions - AFL 2022 Round 6"
+
+  - game:        52
+    datetime:    "24/04/2022 09:25"
+    round:       6
+    home:        "Richmond"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Melbourne\nAFL 2022 Round 6\nMCG\n24/04/2022 09:25 UTC"
+    summary:     "Richmond vs Melbourne - AFL 2022 Round 6"
+
+  - game:        53
+    datetime:    "25/04/2022 02:30"
+    round:       6
+    home:        "Hawthorn"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "University of Tasmania Stadium"
+    description: "Hawthorn vs Sydney Swans\nAFL 2022 Round 6\nUniversity of Tasmania Stadium\n25/04/2022 02:30 UTC"
+    summary:     "Hawthorn vs Sydney Swans - AFL 2022 Round 6"
+
+  - game:        54
+    datetime:    "25/04/2022 05:20"
+    round:       6
+    home:        "Essendon"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Essendon vs Collingwood\nAFL 2022 Round 6\nMCG\n25/04/2022 05:20 UTC"
+    summary:     "Essendon vs Collingwood - AFL 2022 Round 6"
+
+  - game:        55
+    datetime:    "29/04/2022 10:10"
+    round:       7
+    home:        "West Coast Eagles"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Richmond\nAFL 2022 Round 7\nOptus Stadium\n29/04/2022 10:10 UTC"
+    summary:     "West Coast Eagles vs Richmond - AFL 2022 Round 7"
+
+  - game:        56
+    datetime:    "30/04/2022 03:45"
+    round:       7
+    home:        "Geelong Cats"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs Fremantle\nAFL 2022 Round 7\nGMHBA Stadium\n30/04/2022 03:45 UTC"
+    summary:     "Geelong Cats vs Fremantle - AFL 2022 Round 7"
+
+  - game:        57
+    datetime:    "30/04/2022 04:10"
+    round:       7
+    home:        "Adelaide Crows"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs GWS Giants\nAFL 2022 Round 7\nAdelaide Oval\n30/04/2022 04:10 UTC"
+    summary:     "Adelaide Crows vs GWS Giants - AFL 2022 Round 7"
+
+  - game:        58
+    datetime:    "30/04/2022 06:35"
+    round:       7
+    home:        "Melbourne"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Hawthorn\nAFL 2022 Round 7\nMCG\n30/04/2022 06:35 UTC"
+    summary:     "Melbourne vs Hawthorn - AFL 2022 Round 7"
+
+  - game:        59
+    datetime:    "30/04/2022 09:25"
+    round:       7
+    home:        "St Kilda"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "Cazalys Stadium"
+    description: "St Kilda vs Port Adelaide\nAFL 2022 Round 7\nCazalys Stadium\n30/04/2022 09:25 UTC"
+    summary:     "St Kilda vs Port Adelaide - AFL 2022 Round 7"
+
+  - game:        60
+    datetime:    "30/04/2022 09:25"
+    round:       7
+    home:        "Carlton"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Carlton vs North Melbourne\nAFL 2022 Round 7\nMarvel Stadium\n30/04/2022 09:25 UTC"
+    summary:     "Carlton vs North Melbourne - AFL 2022 Round 7"
+
+  - game:        61
+    datetime:    "01/05/2022 03:10"
+    round:       7
+    home:        "Collingwood"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs Gold Coast Suns\nAFL 2022 Round 7\nMCG\n01/05/2022 03:10 UTC"
+    summary:     "Collingwood vs Gold Coast Suns - AFL 2022 Round 7"
+
+  - game:        62
+    datetime:    "01/05/2022 05:20"
+    round:       7
+    home:        "Western Bulldogs"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs Essendon\nAFL 2022 Round 7\nMarvel Stadium\n01/05/2022 05:20 UTC"
+    summary:     "Western Bulldogs vs Essendon - AFL 2022 Round 7"
+
+  - game:        63
+    datetime:    "01/05/2022 06:40"
+    round:       7
+    home:        "Sydney Swans"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Brisbane Lions\nAFL 2022 Round 7\nSCG\n01/05/2022 06:40 UTC"
+    summary:     "Sydney Swans vs Brisbane Lions - AFL 2022 Round 7"
+
+  - game:        64
+    datetime:    "06/05/2022 09:30"
+    round:       8
+    home:        "Port Adelaide"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Western Bulldogs\nAFL 2022 Round 8\nAdelaide Oval\n06/05/2022 09:30 UTC"
+    summary:     "Port Adelaide vs Western Bulldogs - AFL 2022 Round 8"
+
+  - game:        65
+    datetime:    "06/05/2022 10:40"
+    round:       8
+    home:        "Fremantle"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs North Melbourne\nAFL 2022 Round 8\nOptus Stadium\n06/05/2022 10:40 UTC"
+    summary:     "Fremantle vs North Melbourne - AFL 2022 Round 8"
+
+  - game:        66
+    datetime:    "07/05/2022 03:45"
+    round:       8
+    home:        "Richmond"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Collingwood\nAFL 2022 Round 8\nMCG\n07/05/2022 03:45 UTC"
+    summary:     "Richmond vs Collingwood - AFL 2022 Round 8"
+
+  - game:        67
+    datetime:    "07/05/2022 03:45"
+    round:       8
+    home:        "Sydney Swans"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Gold Coast Suns\nAFL 2022 Round 8\nSCG\n07/05/2022 03:45 UTC"
+    summary:     "Sydney Swans vs Gold Coast Suns - AFL 2022 Round 8"
+
+  - game:        68
+    datetime:    "07/05/2022 06:35"
+    round:       8
+    home:        "GWS Giants"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "Manuka Oval"
+    description: "GWS Giants vs Geelong Cats\nAFL 2022 Round 8\nManuka Oval\n07/05/2022 06:35 UTC"
+    summary:     "GWS Giants vs Geelong Cats - AFL 2022 Round 8"
+
+  - game:        69
+    datetime:    "07/05/2022 09:25"
+    round:       8
+    home:        "Essendon"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Essendon vs Hawthorn\nAFL 2022 Round 8\nMarvel Stadium\n07/05/2022 09:25 UTC"
+    summary:     "Essendon vs Hawthorn - AFL 2022 Round 8"
+
+  - game:        70
+    datetime:    "07/05/2022 09:25"
+    round:       8
+    home:        "Brisbane Lions"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs West Coast Eagles\nAFL 2022 Round 8\nGabba\n07/05/2022 09:25 UTC"
+    summary:     "Brisbane Lions vs West Coast Eagles - AFL 2022 Round 8"
+
+  - game:        71
+    datetime:    "08/05/2022 03:10"
+    round:       8
+    home:        "Melbourne"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs St Kilda\nAFL 2022 Round 8\nMCG\n08/05/2022 03:10 UTC"
+    summary:     "Melbourne vs St Kilda - AFL 2022 Round 8"
+
+  - game:        72
+    datetime:    "08/05/2022 06:40"
+    round:       8
+    home:        "Carlton"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Carlton vs Adelaide Crows\nAFL 2022 Round 8\nMarvel Stadium\n08/05/2022 06:40 UTC"
+    summary:     "Carlton vs Adelaide Crows - AFL 2022 Round 8"
+
+  - game:        73
+    datetime:    "13/05/2022 09:50"
+    round:       9
+    home:        "Collingwood"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Collingwood vs Western Bulldogs\nAFL 2022 Round 9\nMarvel Stadium\n13/05/2022 09:50 UTC"
+    summary:     "Collingwood vs Western Bulldogs - AFL 2022 Round 9"
+
+  - game:        74
+    datetime:    "14/05/2022 03:45"
+    round:       9
+    home:        "Hawthorn"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Hawthorn vs Richmond\nAFL 2022 Round 9\nMCG\n14/05/2022 03:45 UTC"
+    summary:     "Hawthorn vs Richmond - AFL 2022 Round 9"
+
+  - game:        75
+    datetime:    "14/05/2022 04:10"
+    round:       9
+    home:        "North Melbourne"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "Blundstone Arena"
+    description: "North Melbourne vs Port Adelaide\nAFL 2022 Round 9\nBlundstone Arena\n14/05/2022 04:10 UTC"
+    summary:     "North Melbourne vs Port Adelaide - AFL 2022 Round 9"
+
+  - game:        76
+    datetime:    "14/05/2022 06:35"
+    round:       9
+    home:        "St Kilda"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Geelong Cats\nAFL 2022 Round 9\nMarvel Stadium\n14/05/2022 06:35 UTC"
+    summary:     "St Kilda vs Geelong Cats - AFL 2022 Round 9"
+
+  - game:        77
+    datetime:    "14/05/2022 09:25"
+    round:       9
+    home:        "Sydney Swans"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Essendon\nAFL 2022 Round 9\nSCG\n14/05/2022 09:25 UTC"
+    summary:     "Sydney Swans vs Essendon - AFL 2022 Round 9"
+
+  - game:        78
+    datetime:    "14/05/2022 09:40"
+    round:       9
+    home:        "Adelaide Crows"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs Brisbane Lions\nAFL 2022 Round 9\nAdelaide Oval\n14/05/2022 09:40 UTC"
+    summary:     "Adelaide Crows vs Brisbane Lions - AFL 2022 Round 9"
+
+  - game:        79
+    datetime:    "15/05/2022 03:40"
+    round:       9
+    home:        "Gold Coast Suns"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Fremantle\nAFL 2022 Round 9\nMetricon Stadium\n15/05/2022 03:40 UTC"
+    summary:     "Gold Coast Suns vs Fremantle - AFL 2022 Round 9"
+
+  - game:        80
+    datetime:    "15/05/2022 05:20"
+    round:       9
+    home:        "GWS Giants"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "GIANTS Stadium"
+    description: "GWS Giants vs Carlton\nAFL 2022 Round 9\nGIANTS Stadium\n15/05/2022 05:20 UTC"
+    summary:     "GWS Giants vs Carlton - AFL 2022 Round 9"
+
+  - game:        81
+    datetime:    "15/05/2022 07:20"
+    round:       9
+    home:        "West Coast Eagles"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Melbourne\nAFL 2022 Round 9\nOptus Stadium\n15/05/2022 07:20 UTC"
+    summary:     "West Coast Eagles vs Melbourne - AFL 2022 Round 9"
+
+  - game:        82
+    datetime:    "20/05/2022 02:00"
+    round:       10
+    home:        "Carlton"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Carlton vs Sydney Swans\nAFL 2022 Round 10\nMarvel Stadium\n20/05/2022 02:00 UTC"
+    summary:     "Carlton vs Sydney Swans - AFL 2022 Round 10"
+
+  - game:        83
+    datetime:    "20/05/2022 02:00"
+    round:       10
+    home:        "Geelong Cats"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs Port Adelaide\nAFL 2022 Round 10\nGMHBA Stadium\n20/05/2022 02:00 UTC"
+    summary:     "Geelong Cats vs Port Adelaide - AFL 2022 Round 10"
+
+  - game:        84
+    datetime:    "20/05/2022 02:00"
+    round:       10
+    home:        "GWS Giants"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "GIANTS Stadium"
+    description: "GWS Giants vs West Coast Eagles\nAFL 2022 Round 10\nGIANTS Stadium\n20/05/2022 02:00 UTC"
+    summary:     "GWS Giants vs West Coast Eagles - AFL 2022 Round 10"
+
+  - game:        85
+    datetime:    "20/05/2022 02:00"
+    round:       10
+    home:        "Hawthorn"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "University of Tasmania Stadium"
+    description: "Hawthorn vs Brisbane Lions\nAFL 2022 Round 10\nUniversity of Tasmania Stadium\n20/05/2022 02:00 UTC"
+    summary:     "Hawthorn vs Brisbane Lions - AFL 2022 Round 10"
+
+  - game:        86
+    datetime:    "20/05/2022 02:00"
+    round:       10
+    home:        "North Melbourne"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "North Melbourne vs Melbourne\nAFL 2022 Round 10\nMarvel Stadium\n20/05/2022 02:00 UTC"
+    summary:     "North Melbourne vs Melbourne - AFL 2022 Round 10"
+
+  - game:        87
+    datetime:    "20/05/2022 02:00"
+    round:       10
+    home:        "Richmond"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Essendon\nAFL 2022 Round 10\nMCG\n20/05/2022 02:00 UTC"
+    summary:     "Richmond vs Essendon - AFL 2022 Round 10"
+
+  - game:        88
+    datetime:    "20/05/2022 02:00"
+    round:       10
+    home:        "Western Bulldogs"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "Mars Stadium"
+    description: "Western Bulldogs vs Gold Coast Suns\nAFL 2022 Round 10\nMars Stadium\n20/05/2022 02:00 UTC"
+    summary:     "Western Bulldogs vs Gold Coast Suns - AFL 2022 Round 10"
+
+  - game:        89
+    datetime:    "20/05/2022 02:30"
+    round:       10
+    home:        "Adelaide Crows"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs St Kilda\nAFL 2022 Round 10\nAdelaide Oval\n20/05/2022 02:30 UTC"
+    summary:     "Adelaide Crows vs St Kilda - AFL 2022 Round 10"
+
+  - game:        90
+    datetime:    "20/05/2022 04:00"
+    round:       10
+    home:        "Fremantle"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs Collingwood\nAFL 2022 Round 10\nOptus Stadium\n20/05/2022 04:00 UTC"
+    summary:     "Fremantle vs Collingwood - AFL 2022 Round 10"
+
+  - game:        91
+    datetime:    "27/05/2022 02:00"
+    round:       11
+    home:        "Brisbane Lions"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs GWS Giants\nAFL 2022 Round 11\nGabba\n27/05/2022 02:00 UTC"
+    summary:     "Brisbane Lions vs GWS Giants - AFL 2022 Round 11"
+
+  - game:        92
+    datetime:    "27/05/2022 02:00"
+    round:       11
+    home:        "Collingwood"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs Carlton\nAFL 2022 Round 11\nMCG\n27/05/2022 02:00 UTC"
+    summary:     "Collingwood vs Carlton - AFL 2022 Round 11"
+
+  - game:        93
+    datetime:    "27/05/2022 02:00"
+    round:       11
+    home:        "Geelong Cats"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs Adelaide Crows\nAFL 2022 Round 11\nGMHBA Stadium\n27/05/2022 02:00 UTC"
+    summary:     "Geelong Cats vs Adelaide Crows - AFL 2022 Round 11"
+
+  - game:        94
+    datetime:    "27/05/2022 02:00"
+    round:       11
+    home:        "Melbourne"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Fremantle\nAFL 2022 Round 11\nMCG\n27/05/2022 02:00 UTC"
+    summary:     "Melbourne vs Fremantle - AFL 2022 Round 11"
+
+  - game:        95
+    datetime:    "27/05/2022 02:00"
+    round:       11
+    home:        "St Kilda"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs North Melbourne\nAFL 2022 Round 11\nMarvel Stadium\n27/05/2022 02:00 UTC"
+    summary:     "St Kilda vs North Melbourne - AFL 2022 Round 11"
+
+  - game:        96
+    datetime:    "27/05/2022 02:00"
+    round:       11
+    home:        "Sydney Swans"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Richmond\nAFL 2022 Round 11\nSCG\n27/05/2022 02:00 UTC"
+    summary:     "Sydney Swans vs Richmond - AFL 2022 Round 11"
+
+  - game:        97
+    datetime:    "27/05/2022 02:30"
+    round:       11
+    home:        "Gold Coast Suns"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "TIO Stadium"
+    description: "Gold Coast Suns vs Hawthorn\nAFL 2022 Round 11\nTIO Stadium\n27/05/2022 02:30 UTC"
+    summary:     "Gold Coast Suns vs Hawthorn - AFL 2022 Round 11"
+
+  - game:        98
+    datetime:    "27/05/2022 02:30"
+    round:       11
+    home:        "Port Adelaide"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Essendon\nAFL 2022 Round 11\nAdelaide Oval\n27/05/2022 02:30 UTC"
+    summary:     "Port Adelaide vs Essendon - AFL 2022 Round 11"
+
+  - game:        99
+    datetime:    "27/05/2022 04:00"
+    round:       11
+    home:        "West Coast Eagles"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Western Bulldogs\nAFL 2022 Round 11\nOptus Stadium\n27/05/2022 04:00 UTC"
+    summary:     "West Coast Eagles vs Western Bulldogs - AFL 2022 Round 11"
+
+  - game:        100
+    datetime:    "03/06/2022 02:00"
+    round:       12
+    home:        "Hawthorn"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Hawthorn vs Collingwood\nAFL 2022 Round 12\nMCG\n03/06/2022 02:00 UTC"
+    summary:     "Hawthorn vs Collingwood - AFL 2022 Round 12"
+
+  - game:        101
+    datetime:    "03/06/2022 02:00"
+    round:       12
+    home:        "Melbourne"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Sydney Swans\nAFL 2022 Round 12\nMCG\n03/06/2022 02:00 UTC"
+    summary:     "Melbourne vs Sydney Swans - AFL 2022 Round 12"
+
+  - game:        102
+    datetime:    "03/06/2022 02:00"
+    round:       12
+    home:        "Western Bulldogs"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs Geelong Cats\nAFL 2022 Round 12\nMarvel Stadium\n03/06/2022 02:00 UTC"
+    summary:     "Western Bulldogs vs Geelong Cats - AFL 2022 Round 12"
+
+  - game:        103
+    datetime:    "03/06/2022 02:30"
+    round:       12
+    home:        "Adelaide Crows"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs West Coast Eagles\nAFL 2022 Round 12\nAdelaide Oval\n03/06/2022 02:30 UTC"
+    summary:     "Adelaide Crows vs West Coast Eagles - AFL 2022 Round 12"
+
+  - game:        104
+    datetime:    "03/06/2022 02:30"
+    round:       12
+    home:        "Gold Coast Suns"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "TIO Stadium"
+    description: "Gold Coast Suns vs North Melbourne\nAFL 2022 Round 12\nTIO Stadium\n03/06/2022 02:30 UTC"
+    summary:     "Gold Coast Suns vs North Melbourne - AFL 2022 Round 12"
+
+  - game:        105
+    datetime:    "03/06/2022 04:00"
+    round:       12
+    home:        "Fremantle"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs Brisbane Lions\nAFL 2022 Round 12\nOptus Stadium\n03/06/2022 04:00 UTC"
+    summary:     "Fremantle vs Brisbane Lions - AFL 2022 Round 12"
+
+  - game:        106
+    datetime:    "10/06/2022 02:00"
+    round:       13
+    home:        "Brisbane Lions"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs St Kilda\nAFL 2022 Round 13\nGabba\n10/06/2022 02:00 UTC"
+    summary:     "Brisbane Lions vs St Kilda - AFL 2022 Round 13"
+
+  - game:        107
+    datetime:    "10/06/2022 02:00"
+    round:       13
+    home:        "Collingwood"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs Melbourne\nAFL 2022 Round 13\nMCG\n10/06/2022 02:00 UTC"
+    summary:     "Collingwood vs Melbourne - AFL 2022 Round 13"
+
+  - game:        108
+    datetime:    "10/06/2022 02:00"
+    round:       13
+    home:        "Essendon"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Essendon vs Carlton\nAFL 2022 Round 13\nMCG\n10/06/2022 02:00 UTC"
+    summary:     "Essendon vs Carlton - AFL 2022 Round 13"
+
+  - game:        109
+    datetime:    "10/06/2022 02:00"
+    round:       13
+    home:        "North Melbourne"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "North Melbourne vs GWS Giants\nAFL 2022 Round 13\nMarvel Stadium\n10/06/2022 02:00 UTC"
+    summary:     "North Melbourne vs GWS Giants - AFL 2022 Round 13"
+
+  - game:        110
+    datetime:    "10/06/2022 02:00"
+    round:       13
+    home:        "Richmond"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Port Adelaide\nAFL 2022 Round 13\nMCG\n10/06/2022 02:00 UTC"
+    summary:     "Richmond vs Port Adelaide - AFL 2022 Round 13"
+
+  - game:        111
+    datetime:    "10/06/2022 04:00"
+    round:       13
+    home:        "Fremantle"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs Hawthorn\nAFL 2022 Round 13\nOptus Stadium\n10/06/2022 04:00 UTC"
+    summary:     "Fremantle vs Hawthorn - AFL 2022 Round 13"
+
+  - game:        112
+    datetime:    "17/06/2022 02:00"
+    round:       14
+    home:        "Gold Coast Suns"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Adelaide Crows\nAFL 2022 Round 14\nMetricon Stadium\n17/06/2022 02:00 UTC"
+    summary:     "Gold Coast Suns vs Adelaide Crows - AFL 2022 Round 14"
+
+  - game:        113
+    datetime:    "17/06/2022 02:00"
+    round:       14
+    home:        "GWS Giants"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "GIANTS Stadium"
+    description: "GWS Giants vs Western Bulldogs\nAFL 2022 Round 14\nGIANTS Stadium\n17/06/2022 02:00 UTC"
+    summary:     "GWS Giants vs Western Bulldogs - AFL 2022 Round 14"
+
+  - game:        114
+    datetime:    "17/06/2022 02:00"
+    round:       14
+    home:        "Richmond"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Carlton\nAFL 2022 Round 14\nMCG\n17/06/2022 02:00 UTC"
+    summary:     "Richmond vs Carlton - AFL 2022 Round 14"
+
+  - game:        115
+    datetime:    "17/06/2022 02:00"
+    round:       14
+    home:        "St Kilda"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Essendon\nAFL 2022 Round 14\nMarvel Stadium\n17/06/2022 02:00 UTC"
+    summary:     "St Kilda vs Essendon - AFL 2022 Round 14"
+
+  - game:        116
+    datetime:    "17/06/2022 02:30"
+    round:       14
+    home:        "Port Adelaide"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Sydney Swans\nAFL 2022 Round 14\nAdelaide Oval\n17/06/2022 02:30 UTC"
+    summary:     "Port Adelaide vs Sydney Swans - AFL 2022 Round 14"
+
+  - game:        117
+    datetime:    "17/06/2022 04:00"
+    round:       14
+    home:        "West Coast Eagles"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Geelong Cats\nAFL 2022 Round 14\nOptus Stadium\n17/06/2022 04:00 UTC"
+    summary:     "West Coast Eagles vs Geelong Cats - AFL 2022 Round 14"
+
+  - game:        118
+    datetime:    "24/06/2022 02:00"
+    round:       15
+    home:        "Carlton"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Carlton vs Fremantle\nAFL 2022 Round 15\nMarvel Stadium\n24/06/2022 02:00 UTC"
+    summary:     "Carlton vs Fremantle - AFL 2022 Round 15"
+
+  - game:        119
+    datetime:    "24/06/2022 02:00"
+    round:       15
+    home:        "Collingwood"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs GWS Giants\nAFL 2022 Round 15\nMCG\n24/06/2022 02:00 UTC"
+    summary:     "Collingwood vs GWS Giants - AFL 2022 Round 15"
+
+  - game:        120
+    datetime:    "24/06/2022 02:00"
+    round:       15
+    home:        "Geelong Cats"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Geelong Cats vs Richmond\nAFL 2022 Round 15\nMCG\n24/06/2022 02:00 UTC"
+    summary:     "Geelong Cats vs Richmond - AFL 2022 Round 15"
+
+  - game:        121
+    datetime:    "24/06/2022 02:00"
+    round:       15
+    home:        "Melbourne"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Brisbane Lions\nAFL 2022 Round 15\nMCG\n24/06/2022 02:00 UTC"
+    summary:     "Melbourne vs Brisbane Lions - AFL 2022 Round 15"
+
+  - game:        122
+    datetime:    "24/06/2022 02:00"
+    round:       15
+    home:        "North Melbourne"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Blundstone Arena"
+    description: "North Melbourne vs Adelaide Crows\nAFL 2022 Round 15\nBlundstone Arena\n24/06/2022 02:00 UTC"
+    summary:     "North Melbourne vs Adelaide Crows - AFL 2022 Round 15"
+
+  - game:        123
+    datetime:    "24/06/2022 02:00"
+    round:       15
+    home:        "Sydney Swans"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs St Kilda\nAFL 2022 Round 15\nSCG\n24/06/2022 02:00 UTC"
+    summary:     "Sydney Swans vs St Kilda - AFL 2022 Round 15"
+
+  - game:        124
+    datetime:    "24/06/2022 02:00"
+    round:       15
+    home:        "Western Bulldogs"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs Hawthorn\nAFL 2022 Round 15\nMarvel Stadium\n24/06/2022 02:00 UTC"
+    summary:     "Western Bulldogs vs Hawthorn - AFL 2022 Round 15"
+
+  - game:        125
+    datetime:    "24/06/2022 02:30"
+    round:       15
+    home:        "Port Adelaide"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Gold Coast Suns\nAFL 2022 Round 15\nAdelaide Oval\n24/06/2022 02:30 UTC"
+    summary:     "Port Adelaide vs Gold Coast Suns - AFL 2022 Round 15"
+
+  - game:        126
+    datetime:    "24/06/2022 04:00"
+    round:       15
+    home:        "West Coast Eagles"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Essendon\nAFL 2022 Round 15\nOptus Stadium\n24/06/2022 04:00 UTC"
+    summary:     "West Coast Eagles vs Essendon - AFL 2022 Round 15"
+
+  - game:        127
+    datetime:    "01/07/2022 02:00"
+    round:       16
+    home:        "Brisbane Lions"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs Western Bulldogs\nAFL 2022 Round 16\nGabba\n01/07/2022 02:00 UTC"
+    summary:     "Brisbane Lions vs Western Bulldogs - AFL 2022 Round 16"
+
+  - game:        128
+    datetime:    "01/07/2022 02:00"
+    round:       16
+    home:        "Carlton"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Carlton vs St Kilda\nAFL 2022 Round 16\nMarvel Stadium\n01/07/2022 02:00 UTC"
+    summary:     "Carlton vs St Kilda - AFL 2022 Round 16"
+
+  - game:        129
+    datetime:    "01/07/2022 02:00"
+    round:       16
+    home:        "Essendon"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Essendon vs Sydney Swans\nAFL 2022 Round 16\nMCG\n01/07/2022 02:00 UTC"
+    summary:     "Essendon vs Sydney Swans - AFL 2022 Round 16"
+
+  - game:        130
+    datetime:    "01/07/2022 02:00"
+    round:       16
+    home:        "Geelong Cats"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs North Melbourne\nAFL 2022 Round 16\nGMHBA Stadium\n01/07/2022 02:00 UTC"
+    summary:     "Geelong Cats vs North Melbourne - AFL 2022 Round 16"
+
+  - game:        131
+    datetime:    "01/07/2022 02:00"
+    round:       16
+    home:        "Gold Coast Suns"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Collingwood\nAFL 2022 Round 16\nMetricon Stadium\n01/07/2022 02:00 UTC"
+    summary:     "Gold Coast Suns vs Collingwood - AFL 2022 Round 16"
+
+  - game:        132
+    datetime:    "01/07/2022 02:00"
+    round:       16
+    home:        "GWS Giants"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "GIANTS Stadium"
+    description: "GWS Giants vs Hawthorn\nAFL 2022 Round 16\nGIANTS Stadium\n01/07/2022 02:00 UTC"
+    summary:     "GWS Giants vs Hawthorn - AFL 2022 Round 16"
+
+  - game:        133
+    datetime:    "01/07/2022 02:00"
+    round:       16
+    home:        "Richmond"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs West Coast Eagles\nAFL 2022 Round 16\nMCG\n01/07/2022 02:00 UTC"
+    summary:     "Richmond vs West Coast Eagles - AFL 2022 Round 16"
+
+  - game:        134
+    datetime:    "01/07/2022 02:30"
+    round:       16
+    home:        "Adelaide Crows"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs Melbourne\nAFL 2022 Round 16\nAdelaide Oval\n01/07/2022 02:30 UTC"
+    summary:     "Adelaide Crows vs Melbourne - AFL 2022 Round 16"
+
+  - game:        135
+    datetime:    "01/07/2022 04:00"
+    round:       16
+    home:        "Fremantle"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs Port Adelaide\nAFL 2022 Round 16\nOptus Stadium\n01/07/2022 04:00 UTC"
+    summary:     "Fremantle vs Port Adelaide - AFL 2022 Round 16"
+
+  - game:        136
+    datetime:    "08/07/2022 02:00"
+    round:       17
+    home:        "Brisbane Lions"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs Essendon\nAFL 2022 Round 17\nGabba\n08/07/2022 02:00 UTC"
+    summary:     "Brisbane Lions vs Essendon - AFL 2022 Round 17"
+
+  - game:        137
+    datetime:    "08/07/2022 02:00"
+    round:       17
+    home:        "Collingwood"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs North Melbourne\nAFL 2022 Round 17\nMCG\n08/07/2022 02:00 UTC"
+    summary:     "Collingwood vs North Melbourne - AFL 2022 Round 17"
+
+  - game:        138
+    datetime:    "08/07/2022 02:00"
+    round:       17
+    home:        "Geelong Cats"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs Melbourne\nAFL 2022 Round 17\nGMHBA Stadium\n08/07/2022 02:00 UTC"
+    summary:     "Geelong Cats vs Melbourne - AFL 2022 Round 17"
+
+  - game:        139
+    datetime:    "08/07/2022 02:00"
+    round:       17
+    home:        "Gold Coast Suns"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Richmond\nAFL 2022 Round 17\nMetricon Stadium\n08/07/2022 02:00 UTC"
+    summary:     "Gold Coast Suns vs Richmond - AFL 2022 Round 17"
+
+  - game:        140
+    datetime:    "08/07/2022 02:00"
+    round:       17
+    home:        "Hawthorn"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Hawthorn vs Adelaide Crows\nAFL 2022 Round 17\nMarvel Stadium\n08/07/2022 02:00 UTC"
+    summary:     "Hawthorn vs Adelaide Crows - AFL 2022 Round 17"
+
+  - game:        141
+    datetime:    "08/07/2022 02:00"
+    round:       17
+    home:        "St Kilda"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Fremantle\nAFL 2022 Round 17\nMarvel Stadium\n08/07/2022 02:00 UTC"
+    summary:     "St Kilda vs Fremantle - AFL 2022 Round 17"
+
+  - game:        142
+    datetime:    "08/07/2022 02:00"
+    round:       17
+    home:        "Sydney Swans"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Western Bulldogs\nAFL 2022 Round 17\nSCG\n08/07/2022 02:00 UTC"
+    summary:     "Sydney Swans vs Western Bulldogs - AFL 2022 Round 17"
+
+  - game:        143
+    datetime:    "08/07/2022 02:30"
+    round:       17
+    home:        "Port Adelaide"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs GWS Giants\nAFL 2022 Round 17\nAdelaide Oval\n08/07/2022 02:30 UTC"
+    summary:     "Port Adelaide vs GWS Giants - AFL 2022 Round 17"
+
+  - game:        144
+    datetime:    "08/07/2022 04:00"
+    round:       17
+    home:        "West Coast Eagles"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Carlton\nAFL 2022 Round 17\nOptus Stadium\n08/07/2022 04:00 UTC"
+    summary:     "West Coast Eagles vs Carlton - AFL 2022 Round 17"
+
+  - game:        145
+    datetime:    "15/07/2022 02:00"
+    round:       18
+    home:        "Carlton"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Carlton vs Geelong Cats\nAFL 2022 Round 18\nMCG\n15/07/2022 02:00 UTC"
+    summary:     "Carlton vs Geelong Cats - AFL 2022 Round 18"
+
+  - game:        146
+    datetime:    "15/07/2022 02:00"
+    round:       18
+    home:        "Essendon"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Essendon vs Gold Coast Suns\nAFL 2022 Round 18\nMarvel Stadium\n15/07/2022 02:00 UTC"
+    summary:     "Essendon vs Gold Coast Suns - AFL 2022 Round 18"
+
+  - game:        147
+    datetime:    "15/07/2022 02:00"
+    round:       18
+    home:        "GWS Giants"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "Manuka Oval"
+    description: "GWS Giants vs Brisbane Lions\nAFL 2022 Round 18\nManuka Oval\n15/07/2022 02:00 UTC"
+    summary:     "GWS Giants vs Brisbane Lions - AFL 2022 Round 18"
+
+  - game:        148
+    datetime:    "15/07/2022 02:00"
+    round:       18
+    home:        "Hawthorn"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Hawthorn vs West Coast Eagles\nAFL 2022 Round 18\nMCG\n15/07/2022 02:00 UTC"
+    summary:     "Hawthorn vs West Coast Eagles - AFL 2022 Round 18"
+
+  - game:        149
+    datetime:    "15/07/2022 02:00"
+    round:       18
+    home:        "North Melbourne"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "North Melbourne vs Richmond\nAFL 2022 Round 18\nMarvel Stadium\n15/07/2022 02:00 UTC"
+    summary:     "North Melbourne vs Richmond - AFL 2022 Round 18"
+
+  - game:        150
+    datetime:    "15/07/2022 02:00"
+    round:       18
+    home:        "Western Bulldogs"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs St Kilda\nAFL 2022 Round 18\nMarvel Stadium\n15/07/2022 02:00 UTC"
+    summary:     "Western Bulldogs vs St Kilda - AFL 2022 Round 18"
+
+  - game:        151
+    datetime:    "15/07/2022 02:30"
+    round:       18
+    home:        "Adelaide Crows"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs Collingwood\nAFL 2022 Round 18\nAdelaide Oval\n15/07/2022 02:30 UTC"
+    summary:     "Adelaide Crows vs Collingwood - AFL 2022 Round 18"
+
+  - game:        152
+    datetime:    "15/07/2022 02:30"
+    round:       18
+    home:        "Melbourne"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "TIO Traeger Park"
+    description: "Melbourne vs Port Adelaide\nAFL 2022 Round 18\nTIO Traeger Park\n15/07/2022 02:30 UTC"
+    summary:     "Melbourne vs Port Adelaide - AFL 2022 Round 18"
+
+  - game:        153
+    datetime:    "15/07/2022 04:00"
+    round:       18
+    home:        "Fremantle"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs Sydney Swans\nAFL 2022 Round 18\nOptus Stadium\n15/07/2022 04:00 UTC"
+    summary:     "Fremantle vs Sydney Swans - AFL 2022 Round 18"
+
+  - game:        154
+    datetime:    "22/07/2022 02:00"
+    round:       19
+    home:        "Brisbane Lions"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs Gold Coast Suns\nAFL 2022 Round 19\nGabba\n22/07/2022 02:00 UTC"
+    summary:     "Brisbane Lions vs Gold Coast Suns - AFL 2022 Round 19"
+
+  - game:        155
+    datetime:    "22/07/2022 02:00"
+    round:       19
+    home:        "Carlton"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Carlton vs GWS Giants\nAFL 2022 Round 19\nMarvel Stadium\n22/07/2022 02:00 UTC"
+    summary:     "Carlton vs GWS Giants - AFL 2022 Round 19"
+
+  - game:        156
+    datetime:    "22/07/2022 02:00"
+    round:       19
+    home:        "Collingwood"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs Essendon\nAFL 2022 Round 19\nMCG\n22/07/2022 02:00 UTC"
+    summary:     "Collingwood vs Essendon - AFL 2022 Round 19"
+
+  - game:        157
+    datetime:    "22/07/2022 02:00"
+    round:       19
+    home:        "North Melbourne"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "Blundstone Arena"
+    description: "North Melbourne vs Hawthorn\nAFL 2022 Round 19\nBlundstone Arena\n22/07/2022 02:00 UTC"
+    summary:     "North Melbourne vs Hawthorn - AFL 2022 Round 19"
+
+  - game:        158
+    datetime:    "22/07/2022 02:00"
+    round:       19
+    home:        "Richmond"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Richmond vs Fremantle\nAFL 2022 Round 19\nMarvel Stadium\n22/07/2022 02:00 UTC"
+    summary:     "Richmond vs Fremantle - AFL 2022 Round 19"
+
+  - game:        159
+    datetime:    "22/07/2022 02:00"
+    round:       19
+    home:        "Sydney Swans"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Adelaide Crows\nAFL 2022 Round 19\nSCG\n22/07/2022 02:00 UTC"
+    summary:     "Sydney Swans vs Adelaide Crows - AFL 2022 Round 19"
+
+  - game:        160
+    datetime:    "22/07/2022 02:00"
+    round:       19
+    home:        "Western Bulldogs"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs Melbourne\nAFL 2022 Round 19\nMarvel Stadium\n22/07/2022 02:00 UTC"
+    summary:     "Western Bulldogs vs Melbourne - AFL 2022 Round 19"
+
+  - game:        161
+    datetime:    "22/07/2022 02:30"
+    round:       19
+    home:        "Port Adelaide"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Geelong Cats\nAFL 2022 Round 19\nAdelaide Oval\n22/07/2022 02:30 UTC"
+    summary:     "Port Adelaide vs Geelong Cats - AFL 2022 Round 19"
+
+  - game:        162
+    datetime:    "22/07/2022 04:00"
+    round:       19
+    home:        "West Coast Eagles"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs St Kilda\nAFL 2022 Round 19\nOptus Stadium\n22/07/2022 04:00 UTC"
+    summary:     "West Coast Eagles vs St Kilda - AFL 2022 Round 19"
+
+  - game:        163
+    datetime:    "29/07/2022 02:00"
+    round:       20
+    home:        "Collingwood"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Collingwood vs Port Adelaide\nAFL 2022 Round 20\nMCG\n29/07/2022 02:00 UTC"
+    summary:     "Collingwood vs Port Adelaide - AFL 2022 Round 20"
+
+  - game:        164
+    datetime:    "29/07/2022 02:00"
+    round:       20
+    home:        "Essendon"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Essendon vs North Melbourne\nAFL 2022 Round 20\nMarvel Stadium\n29/07/2022 02:00 UTC"
+    summary:     "Essendon vs North Melbourne - AFL 2022 Round 20"
+
+  - game:        165
+    datetime:    "29/07/2022 02:00"
+    round:       20
+    home:        "Geelong Cats"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs Western Bulldogs\nAFL 2022 Round 20\nGMHBA Stadium\n29/07/2022 02:00 UTC"
+    summary:     "Geelong Cats vs Western Bulldogs - AFL 2022 Round 20"
+
+  - game:        166
+    datetime:    "29/07/2022 02:00"
+    round:       20
+    home:        "Gold Coast Suns"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs West Coast Eagles\nAFL 2022 Round 20\nMetricon Stadium\n29/07/2022 02:00 UTC"
+    summary:     "Gold Coast Suns vs West Coast Eagles - AFL 2022 Round 20"
+
+  - game:        167
+    datetime:    "29/07/2022 02:00"
+    round:       20
+    home:        "Richmond"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Brisbane Lions\nAFL 2022 Round 20\nMCG\n29/07/2022 02:00 UTC"
+    summary:     "Richmond vs Brisbane Lions - AFL 2022 Round 20"
+
+  - game:        168
+    datetime:    "29/07/2022 02:00"
+    round:       20
+    home:        "St Kilda"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Hawthorn\nAFL 2022 Round 20\nMarvel Stadium\n29/07/2022 02:00 UTC"
+    summary:     "St Kilda vs Hawthorn - AFL 2022 Round 20"
+
+  - game:        169
+    datetime:    "29/07/2022 02:00"
+    round:       20
+    home:        "Sydney Swans"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs GWS Giants\nAFL 2022 Round 20\nSCG\n29/07/2022 02:00 UTC"
+    summary:     "Sydney Swans vs GWS Giants - AFL 2022 Round 20"
+
+  - game:        170
+    datetime:    "29/07/2022 02:30"
+    round:       20
+    home:        "Adelaide Crows"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs Carlton\nAFL 2022 Round 20\nAdelaide Oval\n29/07/2022 02:30 UTC"
+    summary:     "Adelaide Crows vs Carlton - AFL 2022 Round 20"
+
+  - game:        171
+    datetime:    "29/07/2022 04:00"
+    round:       20
+    home:        "Fremantle"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs Melbourne\nAFL 2022 Round 20\nOptus Stadium\n29/07/2022 04:00 UTC"
+    summary:     "Fremantle vs Melbourne - AFL 2022 Round 20"
+
+  - game:        172
+    datetime:    "05/08/2022 02:00"
+    round:       21
+    home:        "Brisbane Lions"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs Carlton\nAFL 2022 Round 21\nGabba\n05/08/2022 02:00 UTC"
+    summary:     "Brisbane Lions vs Carlton - AFL 2022 Round 21"
+
+  - game:        173
+    datetime:    "05/08/2022 02:00"
+    round:       21
+    home:        "Geelong Cats"
+    away:        "St Kilda"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs St Kilda\nAFL 2022 Round 21\nGMHBA Stadium\n05/08/2022 02:00 UTC"
+    summary:     "Geelong Cats vs St Kilda - AFL 2022 Round 21"
+
+  - game:        174
+    datetime:    "05/08/2022 02:00"
+    round:       21
+    home:        "GWS Giants"
+    away:        "Essendon"
+    score:       {}
+    result:      {}
+    venue:       "GIANTS Stadium"
+    description: "GWS Giants vs Essendon\nAFL 2022 Round 21\nGIANTS Stadium\n05/08/2022 02:00 UTC"
+    summary:     "GWS Giants vs Essendon - AFL 2022 Round 21"
+
+  - game:        175
+    datetime:    "05/08/2022 02:00"
+    round:       21
+    home:        "Hawthorn"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "University of Tasmania Stadium"
+    description: "Hawthorn vs Gold Coast Suns\nAFL 2022 Round 21\nUniversity of Tasmania Stadium\n05/08/2022 02:00 UTC"
+    summary:     "Hawthorn vs Gold Coast Suns - AFL 2022 Round 21"
+
+  - game:        176
+    datetime:    "05/08/2022 02:00"
+    round:       21
+    home:        "Melbourne"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Collingwood\nAFL 2022 Round 21\nMCG\n05/08/2022 02:00 UTC"
+    summary:     "Melbourne vs Collingwood - AFL 2022 Round 21"
+
+  - game:        177
+    datetime:    "05/08/2022 02:00"
+    round:       21
+    home:        "North Melbourne"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "North Melbourne vs Sydney Swans\nAFL 2022 Round 21\nMarvel Stadium\n05/08/2022 02:00 UTC"
+    summary:     "North Melbourne vs Sydney Swans - AFL 2022 Round 21"
+
+  - game:        178
+    datetime:    "05/08/2022 02:00"
+    round:       21
+    home:        "Western Bulldogs"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs Fremantle\nAFL 2022 Round 21\nMarvel Stadium\n05/08/2022 02:00 UTC"
+    summary:     "Western Bulldogs vs Fremantle - AFL 2022 Round 21"
+
+  - game:        179
+    datetime:    "05/08/2022 02:30"
+    round:       21
+    home:        "Port Adelaide"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Richmond\nAFL 2022 Round 21\nAdelaide Oval\n05/08/2022 02:30 UTC"
+    summary:     "Port Adelaide vs Richmond - AFL 2022 Round 21"
+
+  - game:        180
+    datetime:    "05/08/2022 04:00"
+    round:       21
+    home:        "West Coast Eagles"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "West Coast Eagles vs Adelaide Crows\nAFL 2022 Round 21\nOptus Stadium\n05/08/2022 04:00 UTC"
+    summary:     "West Coast Eagles vs Adelaide Crows - AFL 2022 Round 21"
+
+  - game:        181
+    datetime:    "12/08/2022 02:00"
+    round:       22
+    home:        "Essendon"
+    away:        "Port Adelaide"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Essendon vs Port Adelaide\nAFL 2022 Round 22\nMarvel Stadium\n12/08/2022 02:00 UTC"
+    summary:     "Essendon vs Port Adelaide - AFL 2022 Round 22"
+
+  - game:        182
+    datetime:    "12/08/2022 02:00"
+    round:       22
+    home:        "Gold Coast Suns"
+    away:        "Geelong Cats"
+    score:       {}
+    result:      {}
+    venue:       "Metricon Stadium"
+    description: "Gold Coast Suns vs Geelong Cats\nAFL 2022 Round 22\nMetricon Stadium\n12/08/2022 02:00 UTC"
+    summary:     "Gold Coast Suns vs Geelong Cats - AFL 2022 Round 22"
+
+  - game:        183
+    datetime:    "12/08/2022 02:00"
+    round:       22
+    home:        "Melbourne"
+    away:        "Carlton"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Melbourne vs Carlton\nAFL 2022 Round 22\nMCG\n12/08/2022 02:00 UTC"
+    summary:     "Melbourne vs Carlton - AFL 2022 Round 22"
+
+  - game:        184
+    datetime:    "12/08/2022 02:00"
+    round:       22
+    home:        "Richmond"
+    away:        "Hawthorn"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Richmond vs Hawthorn\nAFL 2022 Round 22\nMCG\n12/08/2022 02:00 UTC"
+    summary:     "Richmond vs Hawthorn - AFL 2022 Round 22"
+
+  - game:        185
+    datetime:    "12/08/2022 02:00"
+    round:       22
+    home:        "St Kilda"
+    away:        "Brisbane Lions"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Brisbane Lions\nAFL 2022 Round 22\nMarvel Stadium\n12/08/2022 02:00 UTC"
+    summary:     "St Kilda vs Brisbane Lions - AFL 2022 Round 22"
+
+  - game:        186
+    datetime:    "12/08/2022 02:00"
+    round:       22
+    home:        "Sydney Swans"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "SCG"
+    description: "Sydney Swans vs Collingwood\nAFL 2022 Round 22\nSCG\n12/08/2022 02:00 UTC"
+    summary:     "Sydney Swans vs Collingwood - AFL 2022 Round 22"
+
+  - game:        187
+    datetime:    "12/08/2022 02:00"
+    round:       22
+    home:        "Western Bulldogs"
+    away:        "GWS Giants"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "Western Bulldogs vs GWS Giants\nAFL 2022 Round 22\nMarvel Stadium\n12/08/2022 02:00 UTC"
+    summary:     "Western Bulldogs vs GWS Giants - AFL 2022 Round 22"
+
+  - game:        188
+    datetime:    "12/08/2022 02:30"
+    round:       22
+    home:        "Adelaide Crows"
+    away:        "North Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Adelaide Crows vs North Melbourne\nAFL 2022 Round 22\nAdelaide Oval\n12/08/2022 02:30 UTC"
+    summary:     "Adelaide Crows vs North Melbourne - AFL 2022 Round 22"
+
+  - game:        189
+    datetime:    "12/08/2022 04:00"
+    round:       22
+    home:        "Fremantle"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "Optus Stadium"
+    description: "Fremantle vs West Coast Eagles\nAFL 2022 Round 22\nOptus Stadium\n12/08/2022 04:00 UTC"
+    summary:     "Fremantle vs West Coast Eagles - AFL 2022 Round 22"
+
+  - game:        190
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "Brisbane Lions"
+    away:        "Melbourne"
+    score:       {}
+    result:      {}
+    venue:       "Gabba"
+    description: "Brisbane Lions vs Melbourne\nAFL 2022 Round 23\nGabba\n19/08/2022 02:00 UTC"
+    summary:     "Brisbane Lions vs Melbourne - AFL 2022 Round 23"
+
+  - game:        191
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "Carlton"
+    away:        "Collingwood"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Carlton vs Collingwood\nAFL 2022 Round 23\nMCG\n19/08/2022 02:00 UTC"
+    summary:     "Carlton vs Collingwood - AFL 2022 Round 23"
+
+  - game:        192
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "Essendon"
+    away:        "Richmond"
+    score:       {}
+    result:      {}
+    venue:       "MCG"
+    description: "Essendon vs Richmond\nAFL 2022 Round 23\nMCG\n19/08/2022 02:00 UTC"
+    summary:     "Essendon vs Richmond - AFL 2022 Round 23"
+
+  - game:        193
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "Geelong Cats"
+    away:        "West Coast Eagles"
+    score:       {}
+    result:      {}
+    venue:       "GMHBA Stadium"
+    description: "Geelong Cats vs West Coast Eagles\nAFL 2022 Round 23\nGMHBA Stadium\n19/08/2022 02:00 UTC"
+    summary:     "Geelong Cats vs West Coast Eagles - AFL 2022 Round 23"
+
+  - game:        194
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "GWS Giants"
+    away:        "Fremantle"
+    score:       {}
+    result:      {}
+    venue:       "Manuka Oval"
+    description: "GWS Giants vs Fremantle\nAFL 2022 Round 23\nManuka Oval\n19/08/2022 02:00 UTC"
+    summary:     "GWS Giants vs Fremantle - AFL 2022 Round 23"
+
+  - game:        195
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "Hawthorn"
+    away:        "Western Bulldogs"
+    score:       {}
+    result:      {}
+    venue:       "University of Tasmania Stadium"
+    description: "Hawthorn vs Western Bulldogs\nAFL 2022 Round 23\nUniversity of Tasmania Stadium\n19/08/2022 02:00 UTC"
+    summary:     "Hawthorn vs Western Bulldogs - AFL 2022 Round 23"
+
+  - game:        196
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "North Melbourne"
+    away:        "Gold Coast Suns"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "North Melbourne vs Gold Coast Suns\nAFL 2022 Round 23\nMarvel Stadium\n19/08/2022 02:00 UTC"
+    summary:     "North Melbourne vs Gold Coast Suns - AFL 2022 Round 23"
+
+  - game:        197
+    datetime:    "19/08/2022 02:00"
+    round:       23
+    home:        "St Kilda"
+    away:        "Sydney Swans"
+    score:       {}
+    result:      {}
+    venue:       "Marvel Stadium"
+    description: "St Kilda vs Sydney Swans\nAFL 2022 Round 23\nMarvel Stadium\n19/08/2022 02:00 UTC"
+    summary:     "St Kilda vs Sydney Swans - AFL 2022 Round 23"
+
+  - game:        198
+    datetime:    "19/08/2022 02:30"
+    round:       23
+    home:        "Port Adelaide"
+    away:        "Adelaide Crows"
+    score:       {}
+    result:      {}
+    venue:       "Adelaide Oval"
+    description: "Port Adelaide vs Adelaide Crows\nAFL 2022 Round 23\nAdelaide Oval\n19/08/2022 02:30 UTC"
+    summary:     "Port Adelaide vs Adelaide Crows - AFL 2022 Round 23"
+
+  - game:        199
+    datetime:    "26/08/2022 00:00"
+    round:       24
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Finals W1\nTBA\n26/08/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Finals W1"
+
+  - game:        200
+    datetime:    "27/08/2022 00:00"
+    round:       24
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Finals W1\nTBA\n27/08/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Finals W1"
+
+  - game:        201
+    datetime:    "27/08/2022 00:00"
+    round:       24
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Finals W1\nTBA\n27/08/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Finals W1"
+
+  - game:        202
+    datetime:    "28/08/2022 00:00"
+    round:       24
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Finals W1\nTBA\n28/08/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Finals W1"
+
+  - game:        203
+    datetime:    "02/09/2022 00:00"
+    round:       25
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Semi Finals\nTBA\n02/09/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Semi Finals"
+
+  - game:        204
+    datetime:    "03/09/2022 00:00"
+    round:       25
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Semi Finals\nTBA\n03/09/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Semi Finals"
+
+  - game:        205
+    datetime:    "09/09/2022 00:00"
+    round:       26
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Prelim Finals\nTBA\n09/09/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Prelim Finals"
+
+  - game:        206
+    datetime:    "10/09/2022 00:00"
+    round:       26
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Prelim Finals\nTBA\n10/09/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Prelim Finals"
+
+  - game:        207
+    datetime:    "24/09/2022 00:00"
+    round:       27
+    home:        ""
+    away:        ""
+    score:       {}
+    result:      {}
+    venue:       "TBA"
+    description: "To be announced vs To be announced\nAFL 2022 Grand Final\nTBA\n24/09/2022 00:00 UTC"
+    summary:     "To be announced vs To be announced - AFL 2022 Grand Final"
+
+
+teams:
+  - { name: "Geelong Cats" }
+  - { name: "Sydney Swans" }
+  - { name: "Collingwood" }
+  - { name: "GWS Giants" }
+  - { name: "Fremantle" }
+  - { name: "Brisbane Lions" }
+  - { name: "Hawthorn" }
+  - { name: "North Melbourne" }
+  - { name: "Essendon" }
+  - { name: "Carlton" }
+  - { name: "Gold Coast Suns" }
+  - { name: "West Coast Eagles" }
+  - { name: "Melbourne" }
+  - { name: "Port Adelaide" }
+  - { name: "Richmond" }
+  - { name: "" }
+  - { name: "Western Bulldogs" }
+  - { name: "St Kilda" }
+  - { name: "Adelaide Crows" }
+
+venues:
+  - GIANTS Stadium
+  - TIO Stadium
+  - GMHBA Stadium
+  - University of Tasmania Stadium
+  - Optus Stadium
+  - Cazalys Stadium
+  - SCG
+  - Blundstone Arena
+  - Marvel Stadium
+  - Manuka Oval
+  - TBA
+  - Adelaide Oval
+  - MCG
+  - Gabba
+  - Mars Stadium
+  - TIO Traeger Park
+  - Accor Stadium Australia
+  - Metricon Stadium

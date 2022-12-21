@@ -10,7 +10,7 @@
             [clj-time.local  :as l]
             [clojure.pprint])
   ;; Used for coding Team names (and other things)
-  (:require [sporting-fixtures.utils :as utils]) 
+  (:require [sporting-fixtures.utils :as utils])
   (:gen-class)
   )
 
@@ -87,7 +87,7 @@
 
 ;; Read in event and parse data.
 (defn get-event []
-  (let [event (read-event (event-id-to-filename event-name))] 
+  (let [event (read-event (event-id-to-filename event-name))]
     (merge event {:games (modify-teamnames (:games event))})
     )
   )
@@ -107,7 +107,7 @@
                        (t/default-time-zone))
         ]
     (f/unparse my-formatter
-               (f/parse formatter datetime))             
+               (f/parse formatter datetime))
     ))
 
 (defn event-games-table-separator []
@@ -217,7 +217,7 @@
 (defn calculate-points [score]
   (cond
     ;; Different ways of calculating points from game score
-    ;; Soccer - score = goals 
+    ;; Soccer - score = goals
     :else (if (number? score)
             score
             nil)
@@ -436,9 +436,9 @@
 ;; Results chart
 
 (defn results-separator []
-  (str 
+  (str
    "------+-"
-   (str/join 
+   (str/join
     (for [i (range 1 148)]
       "-"
       ))
@@ -472,29 +472,29 @@
                        statistics (calculate-stats game)
                        ;; statistics nil
                        ]
-                    (if statistics
-                      (cond
-                        (or (= team home) (= team away))
-                        (cond
-                          (= (:won   (team statistics)) 1) "W"
-                          (= (:lost  (team statistics)) 1) "L"
-                          (= (:drawn (team statistics)) 1) "d"
-                          :else "o")
-                        :else  "-"            
-                        )
-                      (cond
-                        (or (= team home) (= team away))
-                        "o"
-                        :else  " "            
-                        )
+                   (if statistics
+                     (cond
+                       (or (= team home) (= team away))
+                       (cond
+                         (= (:won   (team statistics)) 1) "W"
+                         (= (:lost  (team statistics)) 1) "L"
+                         (= (:drawn (team statistics)) 1) "d"
+                         :else "o")
+                       :else  "-"
+                       )
+                     (cond
+                       (or (= team home) (= team away))
+                       "o"
+                       :else  " "
+                       )
+                     )
                    )
-                    )
                  ;;(cond
                  ;;  (= (mod index 7) 6) "|"
                  ;;  (= (inc index) 143) "|"
                  ;;  :else        ""
                  ;;  )
-                 
+
                  )
                 )
               games)
@@ -575,14 +575,14 @@
              )
      "\n"
 
-            )))
-    
+     )))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
   (println "Event: " event-name)
   (println)
-  
+
   (println "Games")
   (println (event-games-table (get-event)))
   (println)
@@ -595,14 +595,12 @@
   (println)
 
   ;; Testing
-  ;(clojure.pprint/pprint (-> (get-event) :teams))
-  
+                                        ;(clojure.pprint/pprint (-> (get-event) :teams))
+
   (println "Games")
   (println (event-results-table (get-event)))
   (println)
-  
-;  (println "Finals")
-;  (println (event-finals-chart (get-event)))
+
+                                        ;  (println "Finals")
+                                        ;  (println (event-finals-chart (get-event)))
   )
-
-
