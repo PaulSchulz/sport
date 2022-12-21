@@ -1,4 +1,7 @@
 * sporting-fixtures
+
+Repository for Sporting fixture data. Used in other applications.
+and
 Reports and Statistics on Sporting Fixtures
 
 Includes some example Clojure code for reading YAML data, and very
@@ -8,9 +11,9 @@ much a work in progress.
 
 The Leiningen tool for Clojure needs to be installed. Then:
 
-#+BEGIN_SRC 
+#+begin_src 
 (bash)$ lein repl
-...
+
 sporting-fixtures.core=> (help)
 ===============
 Useful Commands
@@ -19,9 +22,9 @@ Useful Commands
 (read-event "<filename>")    - Load event details
 (display-event "<filename>") - Display evenmt details
 (events-table)               - List events
-
-#+END_SRC
+#+end_src 
 
 ** Data Sources
 
 See: https://fixturedownload.com/
+

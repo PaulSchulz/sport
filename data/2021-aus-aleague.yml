@@ -1,0 +1,289 @@
+---
+title:    2021/22 Isuzu Ute A League
+location: Australia
+date:     {from: "19 Nov 2021", to: "10 Apr 2022"}
+url:      "https://keepup.com.au/fixtures"
+code:     football
+version:  1.0
+
+teams:
+  bri: {name: "Brisbane Roar FC"}
+  adl: {name: "Adelaide United"}
+  mv:  {name: "Melbourne Victory"}
+  ccm: {name: "Central Coast Mariners"}
+  mc:  {name: "Melbourne City FC"}
+  new: {name: "Newcastle Jets"}
+  per: {name: "Perth Glory"}
+  syd: {name: "Sydney FC"}
+  wel: {name: "Wellington Phoenix"}
+  wsw: {name: "Western Sydney Wanderers"}
+  wu:  {name: "Western United FC"}
+  mac: {name: "Macarthur FC"}
+
+venues:
+  pir:  {name: "Pirtek Stadium"}
+  adl:  {name: "Adelaide Oval", tz: "+1030"}
+  coop: {name: "Coopers Stadium"}
+  eti:  {name: "Etihad Stadium"}
+  sun:  {name: "Suncorp Stadium"}
+  cen:  {name: "Central Coast Stadium"}
+  hun:  {name: "Hunter Stadium"}
+  wes:  {name: "Westpac Stadium"}
+  all:  {name: "Allianz Stadium"}
+  aami: {name: "AAMI Park"}
+  nib:  {name: "NIB Stadium"}
+  comm: {name: "CommBank Stadium"}
+  gee:  {name: "GMHBA Staduim, Geelong"}
+  hbf:  {name: "HBF Park, Perth"}
+  new:  {name: "McDonalds Jones Staduim, Newcastle"}
+  camp: {name: "Campbelltown Stadium, Campbelltown"}
+  woo:  {name: "WIN Stadium, Woolongong"}
+  mor:  {name: "Moreton Daily Stadium, Redclife"}
+  net:  {name: "Netstrata Jubilee Stadium, Carlton, Sydney"}
+  ccs:  {name: "Central Coast Stadium, Gosford"}
+  lei:  {name: "Leichhardt Oval, Sydney"}
+  mar:  {name: "Mars Stadium, Ballarat"}
+  utas: {name: "UTAS Stadium, Launceston"}
+  syd:  {name: "Sydney Cricket Ground"}
+  tbc:  {name: "To be confirmed"}
+
+  games:
+  - {id: game-1-1, v: [mc,  bri], venue: aami, score: {mc: 2, bri:1}}
+  - {id: game-1-2, v: [wsw, syd], venue: comm}
+  - {id: game-1-3, v: [wu,  mv],  venue: gee}
+  - {id: game-1-4, v: [per, adl], venue: hbf}
+  - {id: game-1-5, v: [new, ccm], venue: new}
+  - {id: game-1-6, v: [mac, wel], venue: cam}
+
+  - {id: game-2-1, v: [wu,  per], venue: aami}
+  - {id: game-2-2, v: [wel, ccm], venue: win}
+  - {id: game-2-3, v: [adl, mc],  venue: coop}
+  - {id: game-2-4, v: [syd, mac], venue: net}
+  - {id: game-2-5, v: [mv,  bri], venue: aami}
+  - {id: game-2-6, v: [wsw, new], venue: comm}
+
+  - {id: game-3-1, v: [wel, wsw], venue: woo}
+  - {id: game-3-2, v: [bri, adl], venue: mor}
+  - {id: game-3-3, v: [mc,  wu],  venue: aami}
+  - {id: game-3-4, v: [syd, new], venue: net}
+  - {id: game-3-5, v: [mac, ccm], venue: camp}
+  - {id: game-3-6, v: [mv,  per], venue: aami}
+
+  - {id: game-4-1, v: [mc,  per], venue: aami}
+  - {id: game-4-2, v: [new, wel], venue: new}
+  - {id: game-4-3, v: [wu,  bri], venue: gee}
+  - {id: game-4-4, v: [adl, mv],  venue: coop}
+  - {id: game-4-5, v: [wsw, mac], venue: comm}
+  - {id: game-4-6, v: [ccm, syd], venue: ccs}
+
+  - {id: game-5-1, v: [wu,  adl], venue: aami}
+  - {id: game-5-2, v: [ccm, syd], venue: ccs}
+  - {id: game-5-3, v: [mc,  mv],  venue: aami}
+  - {id: game-5-4, v: [bri, per], venue: mor}
+  - {id: game-5-5, v: [mac, new], venue: camp}
+  - {id: game-5-6, v: [syd, wel], venue: net}
+
+  - {id: game-6-1, v: [mc,  wsw],  venue: aami}
+  - {id: game-6-2, v: [adl, per], venue: coop}
+  - {id: game-6-3, v: [new, wsw], venue: new}
+  - {id: game-6-4, v: [mv,  wu],  venue: aami}
+  - {id: game-6-5, v: [mac, syd], venue: camp}
+  - {id: game-6-6, v: [ccm, wel], venue: ccs}
+
+  - {id: game-7-1, v: [bri, mc],  venue: more}
+  - {id: game-7-2, v: [ccm, mac], venue: ccs}
+  - {id: game-7-3, v: [new, mc],  venue: new}
+  - {id: game-7-4, v: [wsw, wu],  venue: comm}
+  - {id: game-7-5, v: [adl, wel], venue: coop}
+  - {id: game-7-6, v: [syd, per], venue: net}
+  - {id: game-7-7, v: [mv,  bri], venue: aami}
+
+  - {id: game-8-1, v: [wel, bri], venue; woo}
+  - {id: game-8-2, v: [mac, per], venue: camp}
+  - {id: game-8-3, v: [new, wu],  venue: new}
+  - {id: game-8-4, v: [mc,  ccm], venue: aami}
+  - {id: game-8-5, v: [adl, wsw], venue: coop}
+  - {id: game-8-6, v: [mv,  syd], venue: aami}
+
+  - {id: game-9-1, v: [mc,  adl], venue: aami}
+  - {id: game-9-2, v: [wu,  syd], venue: aami}
+  - {id: game-9-3, v: [wel, new], venue: woo}
+  - {id: game-9-4, v: [mv,  adl], venue: aami}
+  - {id: game-9-5, v: [wsw, per], venue: comm}
+  - {id: game-9-6, v: [bri, ccm], venue: mor}
+  - {id: game-9-7, v: [mc,  mac], venue: aami}
+
+  - {id: game-10-1, v: [mac, wu],  venue: camp}
+  - {id: game-10-2, v: [ccm, new], venue: ccs}
+  - {id: game-10-3, v: [adl, mc],  venue: coop}
+  - {id: game-10-4, v: [syd, bri], venue: net}
+  - {id: game-10-5, v: [per, wel], venue: hbf}
+  - {id: game-10-6, v: [wsw, mv],  venue: comm}
+
+  - {id: game-11-1, v: [bri, adl], venue: mor}
+  - {id: game-11-2, v: [ccm, mv],  venue: ccs}
+  - {id: game-11-3, v: [mac, wsw], venue: camp}
+  - {id: game-11-4, v: [mc,  syd], venue: aami}
+  - {id: game-11-5, v: [per, new], venue: hbf}
+  - {id: game-11-6, v: [wu,  wel], venue: aami}
+
+  - {id: game-12-1, v: [per, mac], venue: hbf}
+  - {id: game-12-2, v: [wel, mv],  venue: tbc}
+  - {id: game-12-3, v: [bri, wsw], venue: mor}
+  - {id: game-12-4, v: [wu,  mc],  venue: aami}
+  - {id: game-12-5, v: [syd, ccm], venue: lei}
+  - {id: game-12-6, v: [new, adl], venue: new}
+
+  - {id: game-13-1, v: [adl, syd], venue: tbc}
+  - {id: game-13-2, v: [new, bri], venue: tbc}
+  - {id: game-13-3, v: [wsw, ccm], venue: comm}
+  - {id: game-13-4, v: [mv,  wu],  venue: aami}
+  - {id: game-13-5, v: [wel, mac], venue: tbc}
+  - {id: game-13-6, v: [mc,  per], venue: aami}
+
+  - {id: game-14-1, v: [wsw, mc],  venue: comm}
+  - {id: game-14-2, v: [wel, adl], venue: tbc}
+  - {id: game-14-3, v: [syd, wu],  venue: net}
+  - {id: game-14-4, v: [mv,  new], venue: aami}
+  - {id: game-14-5, v: [ccm, per], venue: ccs}
+  - {id: game-14-6, v: [bri, mac], venue: mor}
+
+  - {id: game-15-1, v: [mel, new], venue: aami}
+  - {id: game-15-2, v: [per, pri], venue: hbf}
+  - {id: game-15-3, v: [wel, syd], venue: tbc}
+  - {id: game-15-4, v: [mv,  ccm], venue: aami}
+  - {id: game-15-5, v: [mac, adl], venue: camp}
+  - {id: game-15-6, v: [wu,  wsw], venue: tbc}
+
+  - {id: game-16-1, v: [per, mc],  venue: hbf}
+  - {id: game-16-2, v: [bri, mv],  venue: mor}
+  - {id: game-16-3, v: [new, mac], venue: new}
+  - {id: game-16-4, v: [syd, mc],  venue: net}
+  - {id: game-16-5, v: [adl, ccm], venue: coop}
+  - {id: game-16-6, v: [per, wu],  venue: hbf}
+  - {id: game-16-7, v: [wsw, wel], venue: comm}
+
+  - {id: game-17-1, v: [mv,  mac], venue: aami}
+  - {id: game-17-2, v: [wu,  new], venue: mar}
+  - {id: game-17-3, v: [ccm, bri], venue: ccs}
+  - {id: game-17-4, v: [wsw, syd], venue: comm}
+  - {id: game-17-5, v: [per, adl], venue: hbf}
+  - {id: game-17-6, v: [wel, mc],  venue: tbc}
+
+  - {id: game-18-1, v: [adl, new], venue: coop}
+  - {id: game-18-2, v: [bri, wel], venue: mor}
+  - {id: game-18-3, v: [syd, wu],  venue: lei}
+  - {id: game-18-4, v: [mc,  mv],  venue: aami}
+  - {id: game-18-5, v: [per, ccm], venue: hbf}
+  - {id: game-18-6, v: [mac, wsw], venue: camp}
+
+  - {id: game-19-1, v: [new, wel], venue: new}
+  - {id: game-19-2, v: [ccm, mac], venue: tbc}
+  - {id: game-19-3, v: [syd, mv],  venue: net}
+  - {id: game-19-4, v: [wu,  mc],  venue: aami}
+  - {id: game-19-5, v: [per, bri], venue: hbf}
+  - {id: game-19-6, v: [wsw, adl], venue: comm}
+
+  - {id: game-20-1, v: [new, syd], venue: new}
+  - {id: game-20-2, v: [wel, per], venue: tbc}
+  - {id: game-20-3, v: [bri, wu],  venue: mor}
+  - {id: game-20-4, v: [mac, mc],  venue: camp}
+  - {id: game-20-5, v: [ccm, au],  venue: ccs}
+  - {id: game-20-6, v: [mv,  wsw], venue: aami}
+
+  - {id: game-21-1, v: [mc,  wel], venue: aami}
+  - {id: game-21-2, v: [wu,  ccm], venue: mar}
+  - {id: game-21-3, v: [adl, mv],  venue: coop}
+  - {id: game-21-4, v: [syd, mac], venue: net}
+  - {id: game-21-5, v: [per, wsw], venue: hbf}
+  - {id: game-21-6, v: [bri, new], venue: mor}
+  
+  - {id: game-22-1, v: [ccm, mc],  venue: ccs}
+  - {id: game-22-2, v: {bri, wel], venue: mor}
+  - {id: game-22-3, v: [per, mv],  venue: hbf}
+  - {id: game-22-4, v: [wu, mac],  venue: utas}
+  - {id: game-22-5, v: [syd, adl], venue: net}
+  - {id: game-22-6, v: [wsw, new], venue: comm}
+
+  - {id: game-23-1, v: [adl, mac], venue: coop}
+  - {id: game-23-2, v: [wel, wu],  venue: tbc}
+  - {id: game-23-3, v: [wsw, bri], venue: comm}
+  - {id: game-23-4, v: [mv, mc],   venue: aami}
+  - {id: game-23-5, v: [ccm, syd], venue: ccs}
+  - {id: game-23-6, v: [new, per], venue: new}
+
+  - {id: game-24-1, v: [mac, bri], venue: camp}
+  - {id: game-24-2, v: [wel, ccm], venue: tbc}
+  - {id: game-24-3, v: [wu,  per], venue: utas}
+  - {id: game-24-4, v: [syd, wsw], venue: syd}
+  - {id: game-24-5, v: [new, mv],  venue: new}
+
+  - {id: game-25-1, v: [mac, mv],  venue: camp}
+  - {id: game-25-2, v: [new, ccm], venue: new}
+  - {id: game-25-3, v: [adl, wu],  venue: coop}
+  - {id: game-25-4, v: [wel, wsw], venue: tbc}
+  - {id: game-25-5, v: [bri, syd], venue: mor}
+
+  - {id: game-26-1, v: [mv,  wel], venue: aami}
+
+BEGIN:VEVENT
+DTSTART:20220430T070500Z
+DTEND:20220430T090500Z
+DTSTAMP:20211120T010107Z
+UID:1305171@fixturedownload.com
+CREATED:20211104T120032Z
+DESCRIPTION:Central Coast Mariners vs Western United FC\nA-League 2021/22 Round 26\nCentral Coast Stadium\n30/04/2022 07:05 UTC
+LAST-MODIFIED:20211114T053411Z
+LOCATION:Central Coast Stadium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Central Coast Mariners vs Western United FC - A-League 2021/22 Round 26
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20220430T094500Z
+DTEND:20220430T114500Z
+DTSTAMP:20211120T010107Z
+UID:1305172@fixturedownload.com
+CREATED:20211104T120032Z
+DESCRIPTION:Adelaide United vs Brisbane Roar FC\nA-League 2021/22 Round 26\nCoopers Stadium\n30/04/2022 09:45 UTC
+LAST-MODIFIED:20211114T053411Z
+LOCATION:Coopers Stadium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Adelaide United vs Brisbane Roar FC - A-League 2021/22 Round 26
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20220430T094500Z
+DTEND:20220430T114500Z
+DTSTAMP:20211120T010107Z
+UID:1305173@fixturedownload.com
+CREATED:20211104T120032Z
+DESCRIPTION:Perth Glory vs Sydney FC\nA-League 2021/22 Round 26\nHBF Park\n30/04/2022 09:45 UTC
+LAST-MODIFIED:20211114T053411Z
+LOCATION:HBF Park
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Perth Glory vs Sydney FC - A-League 2021/22 Round 26
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART:20220501T060500Z
+DTEND:20220501T080500Z
+DTSTAMP:20211120T010107Z
+UID:1305174@fixturedownload.com
+CREATED:20211104T120032Z
+DESCRIPTION:Macarthur FC vs Newcastle Jets\nA-League 2021/22 Round 26\nCampbelltown Stadium\n01/05/2022 06:05 UTC
+LAST-MODIFIED:20211114T053411Z
+LOCATION:Campbelltown Stadium
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Macarthur FC vs Newcastle Jets - A-League 2021/22 Round 26
+TRANSP:OPAQUE
+END:VEVENT
+
+END:VCALENDAR

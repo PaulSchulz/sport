@@ -44,6 +44,28 @@
    :version   0.1
    })
 
+(def teams
+  {:adl {:name "Adelaide United"}
+   :sfc {:name "Sydney FC"}
+   :wsw {:name "Western Sydney Wanderers FC"}
+   :ccm {:name "Central Coast Mariners"}
+   :mbv {:name "Melbourne Victory"}
+   :mbc {:name "Melbourne City FC"}
+   :wel {:name "Wellington Phoenix"}
+   :wuf {:name "Western United FC"}
+   :per {:name "Perth Glory"}
+   :bri {:name "Brisbane Roar FC"}
+   }
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn create-lookup-team-id [teams]
+  (reduce conj {}
+          (map (fn [[k v]] [(:name v) k]) teams)
+          )
+  )
+
+(def lookup-team-id (create-lookup-team-id teams))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Change home and away team names to keywords.
 (defn modify-teamnames [games]
@@ -76,6 +98,59 @@
     (read-string s)
     s))
 
+;; FIXME - Change this to use headers from first line in file.
+(defn parse-record [record]
+  (reduce conj
+          {}
+          [[:round-number (if (integer? (parse-number (record 0)))
+                            (parse-number (record 0))
+                            (record 0))]
+           [:date         (record 1)]
+           (if (not= (record 2) "TBA")
+             [:location
+              (if (lookup-venue-id (record 2))
+                (lookup-venue-id (record 2))
+                (record 2))
+                ]
+             nil
+             )
+           ;; lookup-team-id returns 'nil' for 'To be determined'
+           (if (or (lookup-team-id (record 3))
+                   (lookup-team-id (record 4)))
+             [:teams [(lookup-team-id (record 3))
+                      (lookup-team-id (record 4))]]
+             nil)
+           (if (not= (record 5) "")
+             [:result       (convert-result (record 5))]
+             nil
+             )
+           ]))
+
+(defn parse-fixture-data [data]
+  (map parse-record data))
+
+(defn write-event-json [data]
+  (spit "data/2019-aus-afl-mens.json"
+        (generate-string
+         data
+         {:pretty true})
+        ))
+
+(defn file-write-yaml [data]
+  (spit "data/2019-aus-afl-mens.yml"
+        (str
+         "---\n"
+        (yaml/generate-string data)
+        )))
+
+(defn create-event-data [filename]
+  (conj preamble
+        ;; [:teams teams]
+        ;; [:venues venues]
+        [:games (parse-fixture-data (read-event-data filename))]))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 2019 A-League Mens
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Read event data from yaml file
 ;;
@@ -172,8 +247,14 @@
           (cond
             (= i 0)
             "-----+- Minor Rounds ---+------------+------------------\n"
-            (= i 143)
+            (= i 198)
             "-----+- Finals ---------+------------+------------------\n"
+            (= i 202)
+            "-----+- Semifinals -----+------------+------------------\n"
+            (= i 204)
+            "-----+- Preliminary Final -----------+------------------\n"
+            (= i 206)
+            "-----+- Grand Final ----+------------+------------------\n"
             :else "")
           (cond
             (contains? rounds i)
@@ -472,6 +553,7 @@
                        statistics (calculate-stats game)
                        ;; statistics nil
                        ]
+<<<<<<< HEAD
                    (if statistics
                      (cond
                        (or (= team home) (= team away))
@@ -488,6 +570,23 @@
                        :else  " "
                        )
                      )
+=======
+                    (if statistics
+                      (cond
+                        (or (= team home) (= team away))
+                        (cond
+                          (= (:won   (team statistics)) 1) "W"
+                          (= (:lost  (team statistics)) 1) "L"
+                          (= (:drawn (team statistics)) 1) "d"
+                          :else "o")
+                        :else  "-"
+                        )
+                      (cond
+                        (or (= team home) (= team away))
+                        "o"
+                        :else  " "
+                        )
+>>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
                    )
                  ;;(cond
                  ;;  (= (mod index 7) 6) "|"
@@ -575,7 +674,11 @@
              )
      "\n"
 
+<<<<<<< HEAD
      )))
+=======
+            )))
+>>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -595,12 +698,21 @@
   (println)
 
   ;; Testing
+<<<<<<< HEAD
                                         ;(clojure.pprint/pprint (-> (get-event) :teams))
+=======
+  ;(clojure.pprint/pprint (-> (get-event) :teams))
+>>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
 
   (println "Games")
   (println (event-results-table (get-event)))
   (println)
 
+<<<<<<< HEAD
                                         ;  (println "Finals")
                                         ;  (println (event-finals-chart (get-event)))
+=======
+;  (println "Finals")
+;  (println (event-finals-chart (get-event)))
+>>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
   )

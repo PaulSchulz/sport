@@ -1,5 +1,6 @@
 (ns sporting-fixtures.utils
-  (:require [clj-http.client :as client]
+  (:require [clojure.data.csv :as csv]
+            [clj-http.client :as client]
             [hickory.core]
             [hickory.select :as s]
             [clojure.data.csv :as csv]
@@ -15,6 +16,25 @@
             )
   (:gen-class)
   )
+
+;; Read/download data from website
+;;
+;; See: https://fixturedownload.com/
+;; URL's
+;; https://fixturedownload.com/download/csv/aleague-2019
+(def url
+  {:afl-2019     "https://fixturedownload.com/download/csv/afl-2019"
+   :aleague-2019 "https://fixturedownload.com/download/csv/aleague-2019"
+   :afl-2020     "https://fixturedownload.com/download/csv/afl-2020"
+   })
+
+(defn copy [uri file]
+  (with-open [in (io/input-stream uri)
+              out (io/output-stream file)]
+    (io/copy in out)))
+
+(defn -main []
+  (println "Utilities"))
 
 ;; Utilities
 ;; Download CSV file from website
@@ -119,5 +139,3 @@
   "Read event data from file"
   (yaml/parse-string (slurp filename))
   )
-
-
