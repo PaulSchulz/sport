@@ -1,5 +1,7 @@
 ;; Functions to setup data and check data..
 ;; See (help) for assumptions, usage examples and workflow explanation.
+;; Include in repl with
+;;   (require ['sporting-fixtures.setup :as 's])
 
 (ns sporting-fixtures.setup
   ;; (:gen-class)
@@ -27,27 +29,32 @@
   (println ";;   - data contains a skeleton clojure structure '{}'")
   (println)
   (println ";; Load data from event")
-  (println "(def data (s/data-read-event \"2022-fifa-world-cup\"))")
+  (println "(def data (s/data-read-event \"bbl-2022\"))")
   (println)
   (println ";; Check data structure")
   (println "(s/data-check data)")
   (println)
-  (println ";; Display data details")
-  (println "(clojure.pprint/pprint (:details data))")
-  (println ";; Display data section")
-  (println "(clojure.pprint/pprint (keys data))")
-  (println "")
-  (println ";; Write data to file")
-  (println "(c/data-write data)")
-  (println "")
-  (println ";; Update :venues (pre-populate or reset)")
-  (println "(def data (conj data {:venues (c/venues-init (:fixtures data))}))")
-  (println "")
-  (println ";; Update :venues (pre-populate or reset)")
-  (println "(def data (conj data {:venues (c/venues-init (:fixtures data))}))")
+  (println ";; Write/save data to file")
+  (println "(s/data-write data)")
   (println)
-  (println ";; Update :results (pre-populate or reset)")
-  (println "(def data (conj data {:results (c/results-init (:fixtures data))}))")
+  (println ";; Process ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
+  (println ";; 1. Merge fixture data. (:fixtures)")
+  (println "(def data (conj data {:fixtures (s/fixtures-init data)}))")
+  (println)
+  (println ";; 2. Setup results. (:results)")
+  (println "(def data (conj data {:results (s/results-init data)}))")
+  (println)
+  (println ";; 3. Extract and store team data. (:teams)")
+  (println "(def data (conj data {:teams (s/teams-init data)}))")
+  (println)
+  (println ";; 4. Extract and store venues. (:venues)")
+  (println "(def data (conj data {:venues (s/venues-init data)}))")
+  (println)
+  (println ";; 5. Transform data")
+  (println "(def data (conj data {:results (s/results-transform data)}))")
+  (println)
+  (println ";; 6. Save data")
+  (println "(s/data-write data)")
   (println))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -68,12 +75,20 @@
     (println ";; No data defined")
     (if (= data {})
       (println ";; Empty data structure")
-      (let [filename (:data     data)
+      (let [event    (:event    data)
+            filename (:data     data)
             details  (:details  data)
             fixtures (:fixtures data)
             teams    (:teams    data)
             venues   (:venues   data)
             results  (:results  data)]
+
+        (if event
+          (let [] (print ";; Event: ")
+               (if (string? event)
+                 (print event)
+                 (print "-not-a-string-"))
+               (println)))
 
         (if filename
           (let [] (print ";; Data file defined: ")
@@ -90,22 +105,22 @@
         (if fixtures
           (let []
             (println ";; Fixtures:" (count fixtures)))
-          (println ";; *** Not fixtures"))
-
-        (if teams
-          (let []
-            (println ";; Teams:   " (count teams)))
-          (println ";; *** Not teams"))
-
-        (if venues
-          (let []
-            (println ";; Venues:  " (count venues)))
-          (println ";; *** Not venues"))
+          (println ";; *** No fixtures"))
 
         (if results
           (let []
             (println ";; Results: " (count results)))
-          (println ";; *** Not results"))))))
+          (println ";; *** No results"))
+
+        (if teams
+          (let []
+            (println ";; Teams:   " (count teams)))
+          (println ";; *** No teams"))
+
+        (if venues
+          (let []
+            (println ";; Venues:  " (count venues)))
+          (println ";; *** No venues"))))))
 
 ;; Read data from file and create if it doesn't exist
 (defn data-read [filename]
@@ -125,52 +140,64 @@
         (clojure.pprint/write data
                               :stream nil)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Read in data, using event id.
+;; Helper function - Read in data, using event id.
 (defn data-read-event [event]
   (data-read (str "data/" event "/data.clj")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn fixtures-init [data]
-  (json/read-str (slurp (:fixtures data))
-                 :key-fn keyword))
-;; (def fixtures (fixtures-init))
+;; Customisation functions
+(defn custom-read [filename]
+  (eval (data-read filename)))
 
-(defn teams-init [] {})
-;; (def teams (teams-init))
-
-(defn venues-init [] {})
-;; (def venues (venues-init))
-
-(defn results-init [] {})
-;; (def results (results-init))
+;; Helper function - read in custom code using event id.
+(defn custom-read-event [event]
+  (custom-read (str "data/" event "/custom.clj")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Process games
-;; This is not needed if ":key-fn" is used when json file is read in.
-(defn convert-strings-to-keywords
-  "Convert a hash-map "
-  [hash]
-  (reduce conj {}
-          (map (fn [[k v]] [(keyword k) v])
-               (seq hash))))
+(defn fixtures-init [data]
+  (json/read-str (slurp (:fixtures (:details data)))
+                 :key-fn keyword))
 
-(defn convert-array-of-hash
-  "Convert all the array elements, where they are hash-maps with strings as
-  keys, to an array with hash-maps indexed by keywords."
-  [array]
-  (map convert-strings-to-keywords array))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Setup Results
+;; Assumes that fixtures have been loaded into data
+(defn results-init [data]
+  (let [games (:fixtures data)]
+    (reduce conj []
+            (map (fn [game]
+                   (conj game
+                         {:teams      []
+                          :scoreboard {}
+                          :score      {}
+                          :result     {}
+                          :summary    ""
+                          :comment    ""}))
+                 games))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Venues
+(defn get-venues [games]
+  (sort (vec (set (map (fn [x] (:Location x)) games)))))
+
+;; Assumes that 'results' has been populated
+(defn venues-init [data]
+  (let [games (:results data)]
+    (reduce conj {}
+            (map (fn [venue] [venue {:id venue
+                                     :name venue}])
+                 (get-venues games)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Get list of team names, from home teams.
 (defn get-home-teams [games]
   (sort (vec (set (map (fn [x] (:HomeTeam x)) games)))))
 
-(defn teams-init [games]
-  (reduce conj {}
-          (map (fn [team] [team {:id team
-                                 :name team}])
-               (get-home-teams games))))
+(defn teams-init [data]
+  (let [games (:results data)]
+    (reduce conj {}
+            (map (fn [team] [team {:id team
+                                   :name team}])
+                 (get-home-teams games)))))
 
 (defn map-team-name-init [teams]
   (reduce conj {}
@@ -181,36 +208,6 @@
   (let [map-teams-name (map-team-name-init teams)]
     (clojure.set/map-invert map-teams-name)))
 
-;; (def map-team-name (map-team-name-init (:teams data)))
-;; (def map-team-keyword (map-team-keyword-init (:teams data)))
-
-(def map-team-name {})
-(def map-team-keyword {})
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Venues
-(defn get-venues [games]
-  (sort (vec (set (map (fn [x] (:Location x)) games)))))
-
-(defn venues-init [games]
-  (reduce conj {}
-          (map (fn [venue] [venue {:id venue
-                                   :name venue}])
-               (get-venues games))))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Results
-(defn results-init [games]
-  (reduce conj []
-          (map (fn [game]
-                 (conj game
-                       {:teams      []
-                        :scoreboard {}
-                        :score      {}
-                        :result     {}
-                        :summary    {}}))
-               games)))
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; map keywords to standard values
 ;; :MatchNumber -> :game (int)
@@ -219,54 +216,18 @@
 ;; :HomeTeam :AwayTeam -> :teams []
 ;; . -> :score {}
 ;; . -> :result {}
-(defn fixtures-transform-data [fixture]
-  (let [home (map-team-name (fixture :HomeTeam))
-        away (map-team-name (fixture :AwayTeam))]
-    (conj fixture {:round (fixture :RoundNumber)
-                   :game  (fixture :MatchNumber)
-                   :teams [home away]
-                   :score {home ""
-                           away ""}
-                   :result {home {}
-                            away {}}})))
+(defn result-transform [event result]
+  (let [map-fn (custom-read-event event)
+        home (map-fn (result :HomeTeam) :home)
+        away (map-fn (result :AwayTeam) :away)]
 
-(defn filter-fixtures [fixture]
-  {:game   (:game fixture)
-   :round  (:round fixture)
-   :teams  (:teams fixture)
-   :score  (:score fixture)
-   :result (:result fixture)})
+    (conj result {:round      (result :RoundNumber)
+                  :game       (result :MatchNumber)
+                  :teams      [home away]
+                  :scoreboard {home "" away ""}
+                  :score      {home "" away ""}
+                  :result     {home {} away {}}})))
 
-(defn create-data-initial [fixtures]
-  (map filter-fixtures fixtures))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Load Data
-
-;;(def games        (-> data :rounds :data))
-;;(def games-fields (-> data :rounds :fields))
-;;(def teams        (-> data :teams  :data))
-
-;;(def games        (-> data :games))
-;;(def teams        (-> data :teams))
-;;(def venues       (-> data :venues))
-
-;; (defn results-by-round
-;;   [Games]
-;;   (Map-indexed (fn [i a]
-;;                  (sort-by sort-kEy-game
-;;                           >
-;;                           (map-id (reduce tally-up-round {} (subvec games 0 a)))))
-;;                (range 1 10)))
-
-;; (def ladder-by-round [])
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (defn write-data-out []
-;;   (let [data-new {:data    (:data data)
-;;                   :details details
-;;                   :games   games
-;;                   :teams   times
-;;                   :venues  venues
-;;                   :results results}]
-;;     (write-data data-new (:data data))))
+(defn results-transform [data]
+  (let [results (:results data)]
+    (map (partial result-transform (:event data)) results)))

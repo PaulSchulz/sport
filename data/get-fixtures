@@ -1,5 +1,6 @@
 #!/bin/bash
 # Download the JSPN data for the competition fixtures.
+# TODO: Change SPORTID to EVENT
 
 if [ "x$1" == "x" ]
 then
@@ -8,8 +9,9 @@ then
 fi
 cd ${0%/*}
 SPORTID=$1
-DATA_PATH="data/$SPORTID/data.clj"
 FIXTURE_PATH="data/$SPORTID/fixtures.json"
+DATA_PATH="data/$SPORTID/data.clj"
+CUSTOM_PATH="data/$SPORTID/custom.clj"
 
 function create_dir {
     mkdir $SPORTID
@@ -25,7 +27,8 @@ function download {
 
 function write_data {
     cat<<EOF
-{:data "$DATA_PATH",
+{:event $SPORTID
+ :data "$DATA_PATH",
  :details
      {:title "",
       :location "",
