@@ -8,16 +8,13 @@
             [clj-time.core   :as t]
             [clj-time.format :as f]
             [clj-time.local  :as l]
-            [clojure.pprint]
-            )
-  (:gen-class)
-  )
+            [clojure.pprint])
+  (:gen-class))
 
 (defn -help []
 ;; Process downloaded file
 ;; Use from command line with:
-  (println "lein run -m sporting-fixtures.afl")
-  )
+  (println "lein run -m sporting-fixtures.afl"))
 ;;
 ;; Development
 ;;   (ns sporting-fixtures.afl)
@@ -37,8 +34,7 @@
    :date      {:from "24 Mar 2016"
                :to "28 Aug 2016"}
    :format    "afl-mens-2019"
-   :version   0.1
-   })
+   :version   0.1})
 
 (def teams
   {:fre {:name "Fremantle"}
@@ -58,9 +54,7 @@
    :ess {:name "Essendon"}
    :gcs {:name "Gold Coast Suns"}
    :bri {:name "Brisbane Lions"}
-   :car {:name "Carlton"}
-   }
-)
+   :car {:name "Carlton"}})
 
 (def venues
   {:mcg {:name "MCG"}
@@ -79,40 +73,33 @@
    :jia {:name "Adelaide Arena at Jiangwan Stadium"}
    :riv {:name "Riverway Stadium"}
    :tra {:name "TIO Traeger Park"}
-   :tio {:name "TIO Stadium"}
-   })
+   :tio {:name "TIO Stadium"}})
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn create-lookup-team-id [teams]
   (reduce conj {}
-          (map (fn [[k v]] [(:name v) k]) teams)
-          )
-  )
+          (map (fn [[k v]] [(:name v) k]) teams)))
 
 (def lookup-team-id (create-lookup-team-id teams))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn create-lookup-venue-id [venues]
   (reduce conj {}
-          (map (fn [[k v]] [(:name v) k]) venues)
-          )
-  )
+          (map (fn [[k v]] [(:name v) k]) venues)))
 
 (def lookup-venue-id (create-lookup-venue-id venues))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn convert-result [result]
   (let [string-split  (str/split result #" ")]
     [(Integer/parseInt (string-split 0))
-     (Integer/parseInt (string-split 2))]
-    ))
+     (Integer/parseInt (string-split 2))]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn read-event-data [filename]
   ;;  (println (slurp filename))
   (reduce conj [] (rest
-   (with-open [reader (io/reader filename)]
-     (doall
-      (csv/read-csv reader)))))
-  )
+                   (with-open [reader (io/reader filename)]
+                     (doall
+                      (csv/read-csv reader))))))
 
 (defn parse-number
   "Reads an integer from a string. Returns string if not a number."
@@ -133,10 +120,8 @@
              [:location
               (if (lookup-venue-id (record 2))
                 (lookup-venue-id (record 2))
-                (record 2))
-                ]
-             nil
-             )
+                (record 2))]
+             nil)
            ;; lookup-team-id returns 'nil' for 'To be determined'
            (if (or (lookup-team-id (record 3))
                    (lookup-team-id (record 4)))
@@ -145,9 +130,7 @@
              nil)
            (if (not= (record 5) "")
              [:result       (convert-result (record 5))]
-             nil
-             )
-           ]))
+             nil)]))
 
 (defn parse-fixture-data [data]
   (map parse-record data))
@@ -156,15 +139,13 @@
   (spit "data/2019-aus-afl-mens.json"
         (generate-string
          data
-         {:pretty true})
-        ))
+         {:pretty true})))
 
 (defn file-write-yaml [data]
   (spit "data/2019-aus-afl-mens.yml"
         (str
          "---\n"
-        (yaml/generate-string data)
-        )))
+         (yaml/generate-string data))))
 
 (defn create-event-data [filename]
   (conj preamble
@@ -195,15 +176,12 @@
   (let [formatter (f/formatter :rfc822)
         my-formatter (f/with-zone
                        (f/formatter "dd/MM/yyyy hh:mm")
-                       (t/default-time-zone))
-        ]
+                       (t/default-time-zone))]
     (f/unparse my-formatter
-               (f/parse formatter datetime))             
-    ))
+               (f/parse formatter datetime))))
 
 (defn event-games-table-separator []
-  "-----+------------------+------------+------------------"
-  )
+  "-----+------------------+------------+------------------")
 
 ;; Create results table
 (defn event-games-table-header []
@@ -212,13 +190,10 @@
            "Id"
            "Time"
            "Teams"
-           "Score"
-           )
+           "Score")
    "\n"
    (event-games-table-separator)
-   "\n"
-   )
-  )
+   "\n"))
 
 (defn event-games-table [event]
   (let [games (:games event)
@@ -244,8 +219,7 @@
                 162 20
                 171 21
                 180 22
-                189 23}
-        ]
+                189 23}]
     (str
      (event-games-table-header)
      (str/join
@@ -290,14 +264,10 @@
                   (format "%3s"
                           (if (nth (:result x) 1)
                             (nth (:result x) 1)
-                            "-"))
-                  )))
-       games)
-      )
+                            "-")))))
+       games))
      "\n"
-     (event-games-table-separator)
-     )
-    ))
+     (event-games-table-separator))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Statistics
@@ -314,9 +284,7 @@
       (< a-points b-points) [[0 1 0 1 0 a-points b-points (- a-points b-points)]
                              [4 1 1 0 0 b-points a-points (- b-points a-points)]]
       :else                 [[2 1 0 0 1 a-points b-points (- a-points b-points)]
-                             [2 1 0 0 1 b-points a-points (- b-points a-points)]]
-      )
-    ))
+                             [2 1 0 0 1 b-points a-points (- b-points a-points)]])))
 
 ;; Calculate the statistics from the games of an event
 (defn calculate-statistics [games]
@@ -324,19 +292,16 @@
    (fn [i x]
      (let [team-a (nth (:teams x) 0)
            team-b (nth (:teams x) 1)
-           stats  (calculate-stats  (:result x))
-           ]
+           stats  (calculate-stats  (:result x))]
        (conj {}
              (if team-a
                {(keyword team-a) (nth stats 0)}
                nil)
              (if team-b
                {(keyword team-b) (nth stats 1)}
-               nil)
-             )
-      ))
-   games)
-  )
+               nil))))
+
+   games))
 
 ;; Double reduce as the statistics returned from
 ;; 'calculate-statistics' is a double array, returning the statistics
@@ -344,8 +309,7 @@
 (defn reduce-statistics [stats]
   (reduce (fn [val coll]
             (reduce conj val coll))
-          [] stats)
-  )
+          [] stats))
 
 ;; statistics - Map of team statistics
 ;; update     - Array with 'team id' and 'statistics update'
@@ -356,11 +320,9 @@
                        [0 0 0 0 0 0 0 0])
         stats-update (if (nth update 1)
                        (nth update 1)
-                       [0 0 0 0 0 0 0 0])
-        ]
+                       [0 0 0 0 0 0 0 0])]
     ;; Update old statstics with new values and add to data
-    (conj statistics {team (map + stats-old stats-update)}))
-  )
+    (conj statistics {team (map + stats-old stats-update)})))
 
 (defn event-statistics [games]
   (reduce update-statistics {}
@@ -370,8 +332,7 @@
 (defn calculate-percentage [stats]
   (let [for     (nth stats 5)
         against (nth stats 6)]
-  (* (/ (* 1.0 for) (* 1.0 against)) 100.0)
-  ))
+    (* (/ (* 1.0 for) (* 1.0 against)) 100.0)))
 
 (defn stats-header []
   " Pos | Team | P  | Pts      % |  P  W  L  D |   For    Ag  Diff")
@@ -420,13 +381,10 @@
                  (> (calculate-percentage (nth el1 1))
                     (calculate-percentage (nth el2 1)))      true
                  :else false))
-        (map (fn [x] x) statistics))
-       )
-      )
+             (map (fn [x] x) statistics))))
+
      "\n"
-     (stats-separator)
-    ))
-  )
+     (stats-separator))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Finals
@@ -442,15 +400,12 @@
                    (str/upper-case (nth teams 1))
                    "---")
         points-a (nth result 0)
-        points-b (nth result 1)
-          ]
+        points-b (nth result 1)]
     (str
      (cond
        result (str team-a "(" points-a ") vs " team-b "(" points-b ") [" game-number "]")
        teams  (str "    " team-a " vs " team-b " [" game-number "]")
-       :else  (str "    --- vs --- [" game-number "]")
-     ))
-    ))
+       :else  (str "    --- vs --- [" game-number "]")))))
 
 (defn event-finals-chart [event]
   (let [games (:games event)]
@@ -461,32 +416,25 @@
      (format "%-26s                            %-26s  %-26s\n"
              (format-game event 199)
              (format-game event 205)
-             (format-game event 207)
-             )
+             (format-game event 207))
      "\n"
      (format "%-26s  %-26s\n"
              (format-game event 200)
-             (format-game event 203)
-             )
+             (format-game event 203))
      "\n"
      (format "%-26s                            %-26s\n"
              (format-game event 201)
-             (format-game event 206)
-             )
+             (format-game event 206))
      "\n"
      (format "%-26s  %-26s\n"
              (format-game event 202)
-             (format-game event 204)
-             )
-     "\n"
-
-            )))
-    
+             (format-game event 204))
+     "\n")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
   (println "Event: " event-name)
-  
+
   ;; Create YAML data file from downloaded CSV
   ;; Only need to fo this once. Will erase any data added manually
   ;; (eg. game results)
@@ -496,7 +444,7 @@
       (println "  CSV:  " event-data-csv)
       (println "  YAML: " "data/2019-aus-afl-mens.yml")
       (file-write-yaml (create-event-data event-data-csv))))
-  
+
   (println "")
   (println "Games")
   (println (event-games-table (get-event)))
@@ -507,6 +455,4 @@
 
   (println "")
   (println "Finals")
-  (println (event-finals-chart (get-event)))
-  )
-
+  (println (event-finals-chart (get-event))))
