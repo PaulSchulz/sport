@@ -122,7 +122,8 @@
             (println ";; Venues:  " (count venues)))
           (println ";; *** No venues"))))))
 
-;; Read data from file and create if it doesn't exist
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Read data from file
 (defn data-read [filename]
   (read-string (slurp filename)))
 
@@ -132,8 +133,6 @@
     (if (and (some? filename) (.exists (io/file filename)))
       (data-read filename)
       (println ";; Error: Data file not found"))))
-
-;; (def data (data-init))
 
 (defn data-write [data]
   (spit (:data data)

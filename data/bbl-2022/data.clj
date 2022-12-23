@@ -7,6 +7,7 @@
   :date "13 Dec 2022",
   :url "https://www.cricket.com.au/big-bash",
   :fixtures "data/bbl-2022/fixtures.json",
+  :datadir "data/bbl-2022/",
   :data "data/bbl-2022/data.clj",
   :custom "data/bbl-2022/custom.clj"},
  :venues

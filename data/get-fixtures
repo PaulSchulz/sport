@@ -9,6 +9,7 @@ then
 fi
 cd ${0%/*}
 SPORTID=$1
+DATA_DIR="data/$SPORTID/"
 FIXTURE_PATH="data/$SPORTID/fixtures.json"
 DATA_PATH="data/$SPORTID/data.clj"
 CUSTOM_PATH="data/$SPORTID/custom.clj"

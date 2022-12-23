@@ -7,6 +7,7 @@
   :date "16 Mar 2023",
   :url "https://www.afl.com.au",
   :fixtures "data/afl-2023/fixtures.json",
+  :datadir "data/afl-2023/",
   :data "data/afl-2023/data.clj",
   :custom "data/afl-2023/custom.clj"},
  :fixtures
