@@ -1,0 +1,209 @@
+-------------------------------------------------------------------------------
+  1   1  2023-03-16 Thu 06:50pm  - -  RIC  CAR
+  2   1  2023-03-17 Fri 07:10pm  - -  GEE  COL
+  3   1  2023-03-18 Sat 01:15pm  - -  NM   WCE
+  4   1  2023-03-18 Sat 04:05pm  - -  PA   BRI
+  5   1  2023-03-18 Sat 06:55pm  - -  MEL  WB 
+  6   1  2023-03-18 Sat 07:30pm  - -  GCS  SYD
+  7   1  2023-03-19 Sun 12:40pm  - -  GWS  ADL
+  8   1  2023-03-19 Sun 02:50pm  - -  HAW  ESS
+  9   1  2023-03-19 Sun 04:10pm  - -  STK  FRE
+ 10   2  2023-03-23 Thu 06:50pm  - -  CAR  GEE
+ 11   2  2023-03-24 Fri 07:20pm  - -  BRI  MEL
+ 12   2  2023-03-25 Sat 01:15pm  - -  COL  PA 
+ 13   2  2023-03-25 Sat 04:05pm  - -  ADL  RIC
+ 14   2  2023-03-25 Sat 06:55pm  - -  WB   STK
+ 15   2  2023-03-25 Sat 07:00pm  - -  FRE  NM 
+ 16   2  2023-03-26 Sun 12:40pm  - -  SYD  HAW
+ 17   2  2023-03-26 Sun 02:50pm  - -  ESS  GCS
+ 18   2  2023-03-26 Sun 05:50pm  - -  WCE  GWS
+ 19   3  2023-03-30 Thu 06:50pm  - -  WB   BRI
+ 20   3  2023-03-31 Fri 07:20pm  - -  COL  RIC
+ 21   3  2023-04-01 Sat 01:15pm  - -  HAW  NM 
+ 22   3  2023-04-01 Sat 04:05pm  - -  GWS  CAR
+ 23   3  2023-04-01 Sat 06:55pm  - -  STK  ESS
+ 24   3  2023-04-01 Sat 07:00pm  - -  PA   ADL
+ 25   3  2023-04-02 Sun 01:40pm  - -  GCS  GEE
+ 26   3  2023-04-02 Sun 02:50pm  - -  MEL  SYD
+ 27   3  2023-04-02 Sun 04:50pm  - -  FRE  WCE
+ 28   4  2023-04-06 Thu 07:05pm  - -  BRI  COL
+ 29   4  2023-04-07 Fri 03:50pm  - -  NM   CAR
+ 30   4  2023-04-08 Sat 01:15pm  - -  ADL  FRE
+ 31   4  2023-04-08 Sat 04:05pm  - -  RIC  WB 
+ 32   4  2023-04-08 Sat 07:00pm  - -  STK  GCS
+ 33   4  2023-04-08 Sat 07:00pm  - -  SYD  PA 
+ 34   4  2023-04-09 Sun 01:40pm  - -  ESS  GWS
+ 35   4  2023-04-09 Sun 04:50pm  - -  WCE  MEL
+ 36   4  2023-04-10 Mon 02:50pm  - -  GEE  HAW
+ 37   5  2023-04-13 Thu 07:10pm  - -  ADL  CAR
+ 38   5  2023-04-14 Fri 04:40pm  - -  FRE  GCS
+ 39   5  2023-04-14 Fri 07:40pm  - -  RIC  SYD
+ 40   5  2023-04-15 Sat 12:40pm  - -  BRI  NM 
+ 41   5  2023-04-15 Sat 03:40pm  - -  ESS  MEL
+ 42   5  2023-04-15 Sat 07:20pm  - -  PA   WB 
+ 43   5  2023-04-16 Sun 12:40pm  - -  GEE  WCE
+ 44   5  2023-04-16 Sun 02:50pm  - -  GWS  HAW
+ 45   5  2023-04-16 Sun 04:20pm  - -  COL  STK
+ 46   6  2023-04-21 Fri 07:40pm  - -  FRE  WB 
+ 47   6  2023-04-22 Sat 01:15pm  - -  PA   WCE
+ 48   6  2023-04-22 Sat 04:05pm  - -  GWS  BRI
+ 49   6  2023-04-22 Sat 06:55pm  - -  GEE  SYD
+ 50   6  2023-04-23 Sun 12:40pm  - -  HAW  ADL
+ 51   6  2023-04-23 Sun 02:50pm  - -  CAR  STK
+ 52   6  2023-04-23 Sun 04:10pm  - -  GCS  NM 
+ 53   6  2023-04-24 Mon 06:50pm  - -  MEL  RIC
+ 54   6  2023-04-25 Tue 02:50pm  - -  COL  ESS
+ 55   7  2023-04-28 Fri 07:20pm  - -  STK  PA 
+ 56   7  2023-04-29 Sat 01:15pm  - -  BRI  FRE
+ 57   7  2023-04-29 Sat 01:40pm  - -  SYD  GWS
+ 58   7  2023-04-29 Sat 04:05pm  - -  WB   HAW
+ 59   7  2023-04-29 Sat 06:55pm  - -  MEL  NM 
+ 60   7  2023-04-29 Sat 07:00pm  - -  WCE  CAR
+ 61   7  2023-04-30 Sun 12:40pm  - -  ESS  GEE
+ 62   7  2023-04-30 Sun 02:50pm  - -  RIC  GCS
+ 63   7  2023-04-30 Sun 04:10pm  - -  ADL  COL
+ 64   8  2023-05-05 Fri 07:20pm  - -  CAR  BRI
+ 65   8  2023-05-06 Sat 01:15pm  - -  RIC  WCE
+ 66   8  2023-05-06 Sat 01:40pm  - -  GEE  ADL
+ 67   8  2023-05-06 Sat 04:05pm  - -  GCS  MEL
+ 68   8  2023-05-06 Sat 06:55pm  - -  GWS  WB 
+ 69   8  2023-05-06 Sat 07:00pm  - -  FRE  HAW
+ 70   8  2023-05-07 Sun 12:40pm  - -  PA   ESS
+ 71   8  2023-05-07 Sun 02:50pm  - -  COL  SYD
+ 72   8  2023-05-07 Sun 04:10pm  - -  NM   STK
+ 73   9  2023-05-12 Fri 06:50pm  - -  RIC  GEE
+ 74   9  2023-05-12 Fri 08:10pm  - -  WCE  GCS
+ 75   9  2023-05-13 Sat 01:15pm  - -  SYD  FRE
+ 76   9  2023-05-13 Sat 01:40pm  - -  NM   PA 
+ 77   9  2023-05-13 Sat 04:05pm  - -  HAW  MEL
+ 78   9  2023-05-13 Sat 06:55pm  - -  BRI  ESS
+ 79   9  2023-05-13 Sat 07:00pm  - -  CAR  WB 
+ 80   9  2023-05-14 Sun 12:40pm  - -  ADL  STK
+ 81   9  2023-05-14 Sun 04:10pm  - -  COL  GWS
+ 82  10  2023-05-19 Fri 07:20pm  - -  PA   MEL
+ 83  10  2023-05-20 Sat 01:15pm  - -  NM   SYD
+ 84  10  2023-05-20 Sat 01:40pm  - -  WB   ADL
+ 85  10  2023-05-20 Sat 04:05pm  - -  FRE  GEE
+ 86  10  2023-05-20 Sat 07:00pm  - -  BRI  GCS
+ 87  10  2023-05-20 Sat 07:10pm  - -  ESS  RIC
+ 88  10  2023-05-21 Sun 12:40pm  - -  HAW  WCE
+ 89  10  2023-05-21 Sun 02:50pm  - -  CAR  COL
+ 90  10  2023-05-21 Sun 04:10pm  - -  GWS  STK
+ 91  11  2023-05-26 Fri 07:20pm  - -  SYD  CAR
+ 92  11  2023-05-27 Sat 01:15pm  - -  STK  HAW
+ 93  11  2023-05-27 Sat 01:40pm  - -  MEL  FRE
+ 94  11  2023-05-27 Sat 04:05pm  - -  GEE  GWS
+ 95  11  2023-05-27 Sat 06:55pm  - -  GCS  WB 
+ 96  11  2023-05-27 Sat 07:00pm  - -  WCE  ESS
+ 97  11  2023-05-28 Sun 12:40pm  - -  RIC  PA 
+ 98  11  2023-05-28 Sun 02:50pm  - -  COL  NM 
+ 99  11  2023-05-28 Sun 04:10pm  - -  ADL  BRI
+100  12  2023-06-02 Fri 07:20pm  - -  MEL  CAR
+101  12  2023-06-03 Sat 01:15pm  - -  PA   HAW
+102  12  2023-06-03 Sat 04:05pm  - -  WCE  COL
+103  12  2023-06-03 Sat 06:55pm  - -  WB   GEE
+104  12  2023-06-03 Sat 07:00pm  - -  GCS  ADL
+105  12  2023-06-04 Sun 12:40pm  - -  GWS  RIC
+106  12  2023-06-04 Sun 04:10pm  - -  ESS  NM 
+107  13  2023-06-08 Thu 06:50pm  - -  SYD  STK
+108  13  2023-06-09 Fri 07:20pm  - -  WB   PA 
+109  13  2023-06-10 Sat 01:15pm  - -  HAW  BRI
+110  13  2023-06-10 Sat 04:05pm  - -  ADL  WCE
+111  13  2023-06-10 Sat 06:55pm  - -  FRE  RIC
+112  13  2023-06-11 Sun 02:50pm  - -  NM   GWS
+113  13  2023-06-11 Sun 06:45pm  - -  CAR  ESS
+114  13  2023-06-12 Mon 02:50pm  - -  MEL  COL
+115  14  2023-06-15 Thu 07:10pm  - -  PA   GEE
+116  14  2023-06-16 Fri 07:20pm  - -  BRI  SYD
+117  14  2023-06-17 Sat 04:05pm  - -  GWS  FRE
+118  14  2023-06-17 Sat 06:55pm  - -  RIC  STK
+119  14  2023-06-18 Sun 12:40pm  - -  CAR  GCS
+120  14  2023-06-18 Sun 04:10pm  - -  NM   WB 
+121  15  2023-06-22 Thu 06:50pm  - -  GEE  MEL
+122  15  2023-06-23 Fri 07:20pm  - -  STK  BRI
+123  15  2023-06-24 Sat 04:05pm  - -  SYD  WCE
+124  15  2023-06-24 Sat 06:55pm  - -  FRE  ESS
+125  15  2023-06-25 Sun 12:40pm  - -  COL  ADL
+126  15  2023-06-25 Sun 04:10pm  - -  GCS  HAW
+127  16  2023-06-29 Thu 11:30am  - -  BRI  RIC
+128  16  2023-06-29 Thu 11:30am  - -  ESS  PA 
+129  16  2023-06-29 Thu 11:30am  - -  GCS  COL
+130  16  2023-06-29 Thu 11:30am  - -  HAW  CAR
+131  16  2023-06-29 Thu 11:30am  - -  SYD  GEE
+132  16  2023-06-29 Thu 11:30am  - -  WB   FRE
+133  16  2023-06-29 Thu 12:00pm  - -  ADL  NM 
+134  16  2023-06-29 Thu 12:00pm  - -  MEL  GWS
+135  16  2023-06-29 Thu 01:30pm  - -  WCE  STK
+136  17  2023-07-06 Thu 11:30am  - -  BRI  WCE
+137  17  2023-07-06 Thu 11:30am  - -  ESS  ADL
+138  17  2023-07-06 Thu 11:30am  - -  GEE  NM 
+139  17  2023-07-06 Thu 11:30am  - -  GWS  HAW
+140  17  2023-07-06 Thu 11:30am  - -  RIC  SYD
+141  17  2023-07-06 Thu 11:30am  - -  STK  MEL
+142  17  2023-07-06 Thu 11:30am  - -  WB   COL
+143  17  2023-07-06 Thu 12:00pm  - -  PA   GCS
+144  17  2023-07-06 Thu 01:30pm  - -  FRE  CAR
+145  18  2023-07-13 Thu 11:30am  - -  CAR  PA 
+146  18  2023-07-13 Thu 11:30am  - -  COL  FRE
+147  18  2023-07-13 Thu 11:30am  - -  GEE  ESS
+148  18  2023-07-13 Thu 11:30am  - -  GCS  STK
+149  18  2023-07-13 Thu 11:30am  - -  MEL  BRI
+150  18  2023-07-13 Thu 11:30am  - -  NM   HAW
+151  18  2023-07-13 Thu 11:30am  - -  SYD  WB 
+152  18  2023-07-13 Thu 12:00pm  - -  ADL  GWS
+153  18  2023-07-13 Thu 01:30pm  - -  WCE  RIC
+154  19  2023-07-21 Fri 11:30am  - -  BRI  GEE
+155  19  2023-07-21 Fri 11:30am  - -  CAR  WCE
+156  19  2023-07-21 Fri 11:30am  - -  ESS  WB 
+157  19  2023-07-21 Fri 11:30am  - -  GWS  GCS
+158  19  2023-07-21 Fri 11:30am  - -  MEL  ADL
+159  19  2023-07-21 Fri 11:30am  - -  RIC  HAW
+160  19  2023-07-21 Fri 11:30am  - -  STK  NM 
+161  19  2023-07-21 Fri 12:00pm  - -  PA   COL
+162  19  2023-07-21 Fri 01:30pm  - -  FRE  SYD
+163  20  2023-07-28 Fri 11:30am  - -  COL  CAR
+164  20  2023-07-28 Fri 11:30am  - -  ESS  SYD
+165  20  2023-07-28 Fri 11:30am  - -  GEE  FRE
+166  20  2023-07-28 Fri 11:30am  - -  GCS  BRI
+167  20  2023-07-28 Fri 11:30am  - -  HAW  STK
+168  20  2023-07-28 Fri 11:30am  - -  RIC  MEL
+169  20  2023-07-28 Fri 11:30am  - -  WB   GWS
+170  20  2023-07-28 Fri 12:00pm  - -  ADL  PA 
+171  20  2023-07-28 Fri 01:30pm  - -  WCE  NM 
+172  21  2023-08-04 Fri 11:30am  - -  ESS  WCE
+173  21  2023-08-04 Fri 11:30am  - -  GEE  PA 
+174  21  2023-08-04 Fri 11:30am  - -  GWS  SYD
+175  21  2023-08-04 Fri 11:30am  - -  HAW  COL
+176  21  2023-08-04 Fri 11:30am  - -  NM   MEL
+177  21  2023-08-04 Fri 11:30am  - -  STK  CAR
+178  21  2023-08-04 Fri 11:30am  - -  WB   RIC
+179  21  2023-08-04 Fri 12:00pm  - -  ADL  GCS
+180  21  2023-08-04 Fri 01:30pm  - -  FRE  BRI
+181  22  2023-08-11 Fri 11:30am  - -  CAR  MEL
+182  22  2023-08-11 Fri 11:30am  - -  BRI  ADL
+183  22  2023-08-11 Fri 11:30am  - -  COL  GEE
+184  22  2023-08-11 Fri 11:30am  - -  HAW  WB 
+185  22  2023-08-11 Fri 11:30am  - -  NM   ESS
+186  22  2023-08-11 Fri 11:30am  - -  STK  RIC
+187  22  2023-08-11 Fri 11:30am  - -  SYD  GCS
+188  22  2023-08-11 Fri 12:00pm  - -  PA   GWS
+189  22  2023-08-11 Fri 01:30pm  - -  WCE  FRE
+190  23  2023-08-18 Fri 11:30am  - -  COL  BRI
+191  23  2023-08-18 Fri 11:30am  - -  GCS  CAR
+192  23  2023-08-18 Fri 11:30am  - -  GWS  ESS
+193  23  2023-08-18 Fri 11:30am  - -  MEL  HAW
+194  23  2023-08-18 Fri 11:30am  - -  RIC  NM 
+195  23  2023-08-18 Fri 11:30am  - -  STK  GEE
+196  23  2023-08-18 Fri 11:30am  - -  WB   WCE
+197  23  2023-08-18 Fri 12:00pm  - -  ADL  SYD
+198  23  2023-08-18 Fri 01:30pm  - -  FRE  PA 
+199  24  2023-08-25 Fri 11:30am  - -  BRI  STK
+200  24  2023-08-25 Fri 11:30am  - -  CAR  GWS
+201  24  2023-08-25 Fri 11:30am  - -  ESS  COL
+202  24  2023-08-25 Fri 11:30am  - -  GEE  WB 
+203  24  2023-08-25 Fri 11:30am  - -  HAW  FRE
+204  24  2023-08-25 Fri 11:30am  - -  NM   GCS
+205  24  2023-08-25 Fri 11:30am  - -  SYD  MEL
+206  24  2023-08-25 Fri 12:00pm  - -  PA   RIC
+207  24  2023-08-25 Fri 01:30pm  - -  WCE  ADL
+-------------------------------------------------------------------------------
