@@ -834,7 +834,7 @@
    :HomeTeamScore nil,
    :teams [:six :sta],
    :round 2,
-   :summary "SIX won by  wickets (5 balls left)",
+   :summary "SIX won by 7 wickets (5 balls left)",
    :AwayTeamScore nil,
    :result {:six {}, :sta {}},
    :score {:six "", :sta ""},
