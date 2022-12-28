@@ -790,7 +790,7 @@
    :comment "",
    :HomeTeam "Melbourne Stars",
    :DateUtc "2022-12-23 04:30:00Z",
-   :scoreboard {:sta "229/7(20)", :sco "168/8(20)"},
+   :scoreboard {:sco "229/7(20)", :sta "168/8(20)"},
    :AwayTeam "Perth Scorchers",
    :Location "CitiPower Centre",
    :MatchNumber 12}
