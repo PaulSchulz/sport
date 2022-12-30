@@ -1,0 +1,165 @@
+-------------------------------------------------------------------------------
+  1   1  2022-10-07 Fri 07:15pm  - -  MC   WU 
+  2   1  2022-10-08 Sat 04:30pm  - -  BRI  MFC
+  4   1  2022-10-08 Sat 07:15pm  - -  SFC  MV 
+  5   1  2022-10-09 Sun 12:30pm  - -  HOME  ADL
+  6   1  2022-10-09 Sun 02:30pm  - -  HOME  PER
+  3   1  2022-12-21 Wed 06:30pm  - -  CCM  NEW
+  7   2  2022-10-14 Fri 07:15pm  - -  BRI  MC 
+  8   2  2022-10-15 Sat 04:30pm  - -  NEW  PER
+  9   2  2022-10-15 Sat 07:15pm  - -  MV   AWAY
+ 10   2  2022-10-16 Sun 12:30pm  - -  HOME  CCM
+ 11   2  2022-10-16 Sun 02:30pm  - -  MFC  ADL
+ 12   2  2022-10-16 Sun 04:30pm  - -  WU   SFC
+ 13   3  2022-10-21 Fri 07:15pm  - -  WU   MFC
+ 14   3  2022-10-22 Sat 04:30pm  - -  HOME  BRI
+ 15   3  2022-10-22 Sat 04:30pm  - -  NEW  AWAY
+ 16   3  2022-10-22 Sat 07:15pm  - -  MV   MC 
+ 17   3  2022-10-23 Sun 02:30pm  - -  SFC  ADL
+101   3  2022-10-23 Sun 04:30pm  - -  CCM  PER
+ 19   4  2022-10-28 Fri 07:15pm  - -  HOME  NEW
+ 20   4  2022-10-29 Sat 02:30pm  - -  BRI  MV 
+ 21   4  2022-10-29 Sat 04:45pm  - -  CCM  WU 
+ 22   4  2022-10-29 Sat 07:15pm  - -  MFC  SFC
+ 23   4  2022-10-30 Sun 02:30pm  - -  ADL  PER
+ 24   4  2022-10-30 Sun 04:30pm  - -  MC   AWAY
+ 25   5  2022-11-04 Fri 07:15pm  - -  MV   NEW
+ 26   5  2022-11-05 Sat 04:30pm  - -  MC   PER
+ 27   5  2022-11-05 Sat 07:15pm  - -  HOME  CCM
+ 28   5  2022-11-06 Sun 12:30pm  - -  HOME  MFC
+ 29   5  2022-11-06 Sun 02:30pm  - -  BRI  SFC
+ 30   5  2022-11-06 Sun 04:30pm  - -  WU   ADL
+ 31   6  2022-11-11 Fri 07:15pm  - -  ADL  MV 
+ 32   6  2022-11-12 Sat 04:30pm  - -  NEW  MC 
+ 33   6  2022-11-12 Sat 07:15pm  - -  SFC  AWAY
+ 34   6  2022-11-13 Sun 12:30pm  - -  HOME  WU 
+ 35   6  2022-11-13 Sun 02:30pm  - -  CCM  MFC
+ 36   6  2023-01-10 Tue 10:00pm  - -  PER  BRI
+ 37   7  2022-12-09 Fri 07:15pm  - -  BRI  ADL
+ 39   7  2022-12-10 Sat 04:30pm  - -  HOME  AWAY
+ 40   7  2022-12-10 Sat 07:15pm  - -  SFC  MC 
+ 38   7  2022-12-10 Sat 10:00pm  - -  PER  WU 
+ 41   7  2022-12-11 Sun 02:30pm  - -  CCM  NEW
+ 42   7  2022-12-11 Sun 04:30pm  - -  MFC  MV 
+ 43   8  2022-12-16 Fri 07:15pm  - -  NEW  BRI
+ 44   8  2022-12-17 Sat 12:30pm  - -  HOME  ADL
+ 45   8  2022-12-17 Sat 04:30pm  - -  CCM  SFC
+ 46   8  2022-12-17 Sat 07:15pm  - -  MC   MV 
+ 47   8  2022-12-18 Sun 02:30pm  - -  WU   AWAY
+ 48   8  2022-12-18 Sun 04:30pm  - -  MFC  PER
+ 49   9  2022-12-23 Fri 07:15pm  - -  BRI  AWAY
+ 50   9  2022-12-23 Fri 10:00pm  - -  PER  AWAY
+ 51   9  2022-12-24 Sat 04:30pm  - -  SFC  MFC
+ 52   9  2022-12-26 Mon 05:30pm  - -  WU   MV 
+ 53   9  2022-12-27 Tue 05:00pm  - -  MC   CCM
+ 54   9  2022-12-27 Tue 07:45pm  - -  ADL  NEW
+ 55  10  2022-12-30 Fri 07:15pm  - -  WU   BRI
+ 56  10  2022-12-31 Sat 06:30pm  - -  CCM  MV 
+ 57  10  2023-01-01 Sun 02:30pm  - -  NEW  SFC
+ 58  10  2023-01-01 Sun 04:30pm  - -  HOME  MFC
+ 59  10  2023-01-02 Mon 12:30pm  - -  HOME  MC 
+ 60  10  2023-01-02 Mon 07:15pm  - -  ADL  PER
+ 61  11  2023-01-06 Fri 07:15pm  - -  MV   BRI
+ 62  11  2023-01-06 Fri 10:00pm  - -  PER  AWAY
+ 63  11  2023-01-07 Sat 04:30pm  - -  SFC  AWAY
+ 64  11  2023-01-07 Sat 04:30pm  - -  CCM  ADL
+ 65  11  2023-01-07 Sat 07:15pm  - -  MC   WU 
+ 66  11  2023-01-08 Sun 02:30pm  - -  MFC  NEW
+ 67  12  2023-01-13 Fri 07:15pm  - -  MFC  CCM
+ 68  12  2023-01-14 Sat 04:30pm  - -  BRI  AWAY
+ 69  12  2023-01-14 Sat 07:15pm  - -  ADL  MV 
+ 70  12  2023-01-14 Sat 10:00pm  - -  PER  SFC
+ 71  12  2023-01-15 Sun 02:30pm  - -  HOME  MC 
+ 72  12  2023-01-15 Sun 04:30pm  - -  WU   NEW
+ 73  13  2023-01-20 Fri 07:15pm  - -  ADL  MFC
+ 74  13  2023-01-21 Sat 04:30pm  - -  WU   SFC
+ 75  13  2023-01-21 Sat 07:15pm  - -  BRI  MC 
+ 76  13  2023-01-21 Sat 10:00pm  - -  PER  MV 
+ 77  13  2023-01-22 Sun 12:30pm  - -  HOME  CCM
+ 78  13  2023-01-22 Sun 02:30pm  - -  NEW  AWAY
+ 79  14  2023-01-26 Thu 06:15pm  - -  MV   SFC
+ 80  14  2023-01-27 Fri 07:15pm  - -  NEW  BRI
+ 81  14  2023-01-28 Sat 12:30pm  - -  HOME  PER
+ 82  14  2023-01-28 Sat 04:30pm  - -  MFC  WU 
+ 83  14  2023-01-28 Sat 07:15pm  - -  CCM  AWAY
+ 84  14  2023-01-29 Sun 02:30pm  - -  MC   ADL
+ 85  15  2023-02-03 Fri 07:15pm  - -  MV   AWAY
+ 86  15  2023-02-04 Sat 04:30pm  - -  MC   MFC
+ 87  15  2023-02-04 Sat 04:30pm  - -  SFC  CCM
+ 88  15  2023-02-04 Sat 07:15pm  - -  ADL  BRI
+ 89  15  2023-02-04 Sat 10:00pm  - -  PER  NEW
+ 90  15  2023-02-05 Sun 02:30pm  - -  HOME  WU 
+ 91  16  2023-02-10 Fri 07:15pm  - -  BRI  CCM
+ 92  16  2023-02-11 Sat 04:30pm  - -  WU   ADL
+ 93  16  2023-02-11 Sat 07:15pm  - -  HOME  SFC
+ 94  16  2023-02-11 Sat 10:00pm  - -  PER  MC 
+ 95  16  2023-02-12 Sun 02:30pm  - -  NEW  MV 
+ 96  16  2023-02-12 Sun 04:30pm  - -  MFC  AWAY
+ 97  17  2023-02-17 Fri 07:15pm  - -  WU   AWAY
+ 98  17  2023-02-18 Sat 04:30pm  - -  SFC  BRI
+ 99  17  2023-02-18 Sat 04:30pm  - -  MFC  NEW
+100  17  2023-02-18 Sat 07:15pm  - -  MV   MC 
+ 18  17  2023-02-18 Sat 09:30pm  - -  PER  CCM
+102  17  2023-02-19 Sun 02:30pm  - -  ADL  AWAY
+103  18  2023-02-24 Fri 07:15pm  - -  CCM  AWAY
+104  18  2023-02-25 Sat 04:30pm  - -  MC   SFC
+105  18  2023-02-25 Sat 04:30pm  - -  NEW  WU 
+106  18  2023-02-25 Sat 07:15pm  - -  HOME  MFC
+107  18  2023-02-26 Sun 02:30pm  - -  MV   ADL
+108  18  2023-02-26 Sun 04:30pm  - -  BRI  PER
+109  19  2023-03-03 Fri 07:15pm  - -  ADL  MC 
+110  19  2023-03-04 Sat 12:30pm  - -  HOME  NEW
+111  19  2023-03-04 Sat 04:30pm  - -  HOME  CCM
+112  19  2023-03-04 Sat 04:30pm  - -  WU   PER
+113  19  2023-03-04 Sat 07:15pm  - -  SFC  MV 
+114  19  2023-03-05 Sun 02:30pm  - -  MFC  BRI
+115  20  2023-03-10 Fri 07:15pm  - -  CCM  MFC
+116  20  2023-03-10 Fri 09:30pm  - -  PER  AWAY
+117  20  2023-03-11 Sat 07:15pm  - -  NEW  ADL
+118  20  2023-03-12 Sun 12:30pm  - -  HOME  SFC
+119  20  2023-03-12 Sun 02:30pm  - -  MC   BRI
+120  20  2023-03-13 Mon 05:30pm  - -  MV   WU 
+121  21  2023-03-17 Fri 07:15pm  - -  ADL  AWAY
+122  21  2023-03-18 Sat 04:30pm  - -  NEW  PER
+123  21  2023-03-18 Sat 04:30pm  - -  BRI  WU 
+124  21  2023-03-18 Sat 07:15pm  - -  SFC  AWAY
+125  21  2023-03-19 Sun 02:30pm  - -  MFC  MC 
+126  21  2023-03-19 Sun 04:30pm  - -  MV   CCM
+127  22  2023-03-31 Fri 07:15pm  - -  HOME  ADL
+128  22  2023-04-01 Sat 12:30pm  - -  HOME  MV 
+129  22  2023-04-01 Sat 04:30pm  - -  CCM  BRI
+130  22  2023-04-01 Sat 07:15pm  - -  SFC  WU 
+131  22  2023-04-01 Sat 08:30pm  - -  PER  MFC
+132  22  2023-04-02 Sun 02:30pm  - -  MC   NEW
+133  23  2023-04-07 Fri 02:30pm  - -  WU   CCM
+134  23  2023-04-07 Fri 04:30pm  - -  ADL  SFC
+135  23  2023-04-08 Sat 04:30pm  - -  BRI  NEW
+136  23  2023-04-08 Sat 07:15pm  - -  MFC  AWAY
+137  23  2023-04-09 Sun 02:30pm  - -  MV   PER
+138  23  2023-04-10 Mon 03:30pm  - -  MC   AWAY
+139  24  2023-04-14 Fri 07:15pm  - -  NEW  MFC
+140  24  2023-04-15 Sat 04:30pm  - -  CCM  MC 
+141  24  2023-04-15 Sat 07:15pm  - -  HOME  MV 
+142  24  2023-04-16 Sun 12:30pm  - -  HOME  BRI
+143  24  2023-04-16 Sun 02:30pm  - -  SFC  PER
+144  24  2023-04-16 Sun 04:30pm  - -  ADL  WU 
+145  25  2023-04-21 Fri 07:15pm  - -  HOME  AWAY
+146  25  2023-04-22 Sat 04:30pm  - -  NEW  CCM
+147  25  2023-04-22 Sat 07:15pm  - -  WU   MC 
+148  25  2023-04-23 Sun 02:30pm  - -  MV   MFC
+149  25  2023-04-23 Sun 05:30pm  - -  PER  ADL
+150  25  2023-04-24 Mon 06:30pm  - -  BRI  SFC
+151  26  2023-04-28 Fri 07:15pm  - -  MC   AWAY
+152  26  2023-04-29 Sat 04:30pm  - -  SFC  NEW
+153  26  2023-04-29 Sat 04:30pm  - -  ADL  CCM
+154  26  2023-04-29 Sat 07:15pm  - -  MV   BRI
+155  26  2023-04-29 Sat 09:30pm  - -  PER  WU 
+156  26  2023-04-30 Sun 04:30pm  - -  MFC  AWAY
+157  27  2023-05-06 Sat 09:30am  - -  HOME  AWAY
+158  27  2023-05-07 Sun 09:30am  - -  HOME  AWAY
+159  28  2023-05-13 Sat 09:30am  - -  HOME  AWAY
+160  28  2023-05-14 Sun 09:30am  - -  HOME  AWAY
+161  29  2023-05-20 Sat 09:30am  - -  HOME  AWAY
+162  29  2023-05-21 Sun 09:30am  - -  HOME  AWAY
+163  30  2023-05-28 Sun 09:30am  - -  HOME  AWAY
+-------------------------------------------------------------------------------
