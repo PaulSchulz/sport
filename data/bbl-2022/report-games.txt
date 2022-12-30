@@ -10,13 +10,13 @@
   9   1  2022-12-20 Tue 06:45pm  - -  STR 151/4(18.4)   THU 150/5(20)   STR won by 6 wickets (8 balls left)
  10   2  2022-12-21 Wed 06:45pm  - -  REN 137/8(19.2)   HEA 137/8(20)   REN won by 4 wickets (4 balls left)
  11   2  2022-12-22 Thu 06:45pm  - -  SIX 137/6(14)     HUR 131/7(14)   SIX won by 6 runs (target 138, reduced overs)
- 12   2  2022-12-23 Fri 03:00pm  - -  STA  SCO
- 13   2  2022-12-23 Fri 06:30pm  - -  HEA  STR
- 14   2  2022-12-24 Sat 03:00pm  - -  HUR  REN
- 15   2  2022-12-26 Mon 05:35pm  - -  SIX  STA
- 16   2  2022-12-26 Mon 08:45pm  - -  SCO  STR
- 17   2  2022-12-27 Tue 06:45pm  - -  THU  HEA
- 18   2  2022-12-28 Wed 06:45pm  - -  SIX  REN
+ 12   2  2022-12-23 Fri 03:00pm  - -  STA 168/8(20)     SCO 229/7(20)   SCO won by 61 runs
+ 13   2  2022-12-23 Fri 06:30pm  - -  HEA 166/9(20)     STR 168/9(20)   HEA won by 6 runs
+ 14   2  2022-12-24 Sat 03:00pm  - -  HUR 122(18)       REN 114(19.2)   HUR won by 8 runs
+ 15   2  2022-12-26 Mon 05:35pm  - -  SIX 151/3(19.1)   STA 150/5(20)   SIX won by 7 wickets (5 balls left)
+ 16   2  2022-12-26 Mon 08:45pm  - -  SCO 136/7(19.1)   STR 133/7(20)   SCO won by 3 wickets (5 balls left)
+ 17   2  2022-12-27 Tue 06:45pm  - -  THU 124/0(11.4)   HEA 121/6(20)   THU won by 10 wickets (50 balls left)
+ 18   2  2022-12-28 Wed 06:45pm  - -  SIX 149/8(20)     REN 115(19)     SIX won by 34 runs
  19   3  2022-12-29 Thu 05:35pm  - -  HEA  THU
  20   3  2022-12-29 Thu 08:45pm  - -  SCO  STA
  21   3  2022-12-30 Fri 06:00pm  - -  REN  SIX
