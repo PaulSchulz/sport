@@ -1,63 +1,63 @@
 -------------------------------------------------------------------------------
-  1   1  2022-12-13 Tue 06:45pm  - -  THU 123/9(20)     STA 122/8(20)   THU won by 1 wicket (0 balls left)
-  2   1  2022-12-14 Wed 06:45pm  - -  STR 184/6(20)     SIX 133/7(20)   STR won by 51 runs
-  3   1  2022-12-15 Thu 06:45pm  - -  HEA 144/6(20)     REN 166/7(20)   REN won by 22 runs
-  4   1  2022-12-16 Fri 04:35pm  - -  STA 183/5(20)     HUR 145/9(20)   STA won by 38 runs
-  5   1  2022-12-16 Fri 07:45pm  - -  THU 15(5.5)       STR 139/9(20)   STR won by 124 runs
-  6   1  2022-12-17 Sat 06:35pm  - -  SCO 155/9(20)     SIX 117(20)     SCO won by 38 runs
-  7   1  2022-12-18 Sun 06:45pm  - -  REN 175/6(19.5)   THU 174/6(20)   REN won by 4 wickets (1 ball left)
-  8   1  2022-12-19 Mon 06:45pm  - -  HUR 172/8(20)     SCO 164/8(20)   HUR won by 8 runs
-  9   1  2022-12-20 Tue 06:45pm  - -  STR 151/4(18.4)   THU 150/5(20)   STR won by 6 wickets (8 balls left)
- 10   2  2022-12-21 Wed 06:45pm  - -  REN 137/8(19.2)   HEA 137/8(20)   REN won by 4 wickets (4 balls left)
- 11   2  2022-12-22 Thu 06:45pm  - -  SIX 137/6(14)     HUR 131/7(14)   SIX won by 6 runs (target 138, reduced overs)
- 12   2  2022-12-23 Fri 03:00pm  - -  STA 168/8(20)     SCO 229/7(20)   SCO won by 61 runs
- 13   2  2022-12-23 Fri 06:30pm  - -  HEA 166/9(20)     STR 168/9(20)   HEA won by 6 runs
- 14   2  2022-12-24 Sat 03:00pm  - -  HUR 122(18)       REN 114(19.2)   HUR won by 8 runs
- 15   2  2022-12-26 Mon 05:35pm  - -  SIX 151/3(19.1)   STA 150/5(20)   SIX won by 7 wickets (5 balls left)
- 16   2  2022-12-26 Mon 08:45pm  - -  SCO 136/7(19.1)   STR 133/7(20)   SCO won by 3 wickets (5 balls left)
- 17   2  2022-12-27 Tue 06:45pm  - -  THU 124/0(11.4)   HEA 121/6(20)   THU won by 10 wickets (50 balls left)
- 18   2  2022-12-28 Wed 06:45pm  - -  SIX 149/8(20)     REN 115(19)     SIX won by 34 runs
- 19   3  2022-12-29 Thu 05:35pm  - -  HEA  THU
- 20   3  2022-12-29 Thu 08:45pm  - -  SCO  STA
- 21   3  2022-12-30 Fri 06:00pm  - -  REN  SIX
- 22   3  2022-12-31 Sat 03:00pm  - -  THU  HUR
- 23   3  2022-12-31 Sat 06:30pm  - -  STR  STA
- 24   3  2023-01-01 Sun 01:10pm  - -  REN  SCO
- 25   3  2023-01-01 Sun 06:45pm  - -  HEA  SIX
- 26   3  2023-01-02 Mon 06:45pm  - -  HUR  STR
- 27   3  2023-01-03 Tue 06:45pm  - -  STA  REN
- 28   3  2023-01-04 Wed 05:35pm  - -  SIX  HEA
- 29   3  2023-01-04 Wed 08:45pm  - -  SCO  THU
- 30   4  2023-01-05 Thu 06:45pm  - -  STR  HUR
- 31   4  2023-01-06 Fri 06:00pm  - -  STA  SIX
- 32   4  2023-01-07 Sat 05:35pm  - -  REN  HUR
- 33   4  2023-01-07 Sat 08:45pm  - -  SCO  HEA
- 34   4  2023-01-08 Sun 06:45pm  - -  THU  SIX
- 35   4  2023-01-09 Mon 06:45pm  - -  HUR  STA
- 36   4  2023-01-10 Tue 07:10pm  - -  STR  REN
- 37   4  2023-01-11 Wed 07:10pm  - -  HEA  SCO
- 38   5  2023-01-12 Thu 06:45pm  - -  STA  STR
- 39   5  2023-01-13 Fri 06:00pm  - -  THU  SCO
- 40   5  2023-01-14 Sat 03:30pm  - -  STR  HEA
- 41   5  2023-01-14 Sat 07:00pm  - -  REN  STA
- 42   5  2023-01-15 Sun 01:10pm  - -  HUR  THU
- 43   5  2023-01-15 Sun 06:45pm  - -  SIX  SCO
- 44   5  2023-01-16 Mon 06:45pm  - -  STA  HEA
- 45   5  2023-01-17 Tue 06:45pm  - -  SIX  STR
- 46   5  2023-01-18 Wed 07:10pm  - -  SCO  HUR
- 47   6  2023-01-19 Thu 06:45pm  - -  THU  REN
- 48   6  2023-01-20 Fri 04:00pm  - -  STR  SCO
- 49   6  2023-01-20 Fri 07:30pm  - -  HEA  HUR
- 50   6  2023-01-21 Sat 06:35pm  - -  SIX  THU
- 51   6  2023-01-22 Sun 01:10pm  - -  HEA  STA
- 52   6  2023-01-22 Sun 06:45pm  - -  SCO  REN
- 53   6  2023-01-23 Mon 06:45pm  - -  HUR  SIX
- 54   6  2023-01-24 Tue 06:45pm  - -  REN  STR
- 55   6  2023-01-25 Wed 01:10pm  - -  HUR  HEA
- 56   6  2023-01-25 Wed 06:45pm  - -  STA  THU
- 57   7  2023-01-27 Fri 06:45pm  - -  HOME  AWAY
- 58   8  2023-01-28 Sat 06:45pm  - -  HOME  AWAY
- 59   8  2023-01-29 Sun 06:45pm  - -  HOME  AWAY
- 60   9  2023-02-02 Thu 06:45pm  - -  HOME  AWAY
- 61  10  2023-02-04 Sat 06:45pm  - -  HOME  AWAY
+  1   1  2022-12-13 Tue 06:45pm  G -  THU 123/9(20)     STA 122/8(20)   THU won by 1 wicket (0 balls left)
+  2   1  2022-12-14 Wed 06:45pm  G -  STR 184/6(20)     SIX 133/7(20)   STR won by 51 runs
+  3   1  2022-12-15 Thu 06:45pm  G -  HEA 144/6(20)     REN 166/7(20)   REN won by 22 runs
+  4   1  2022-12-16 Fri 04:35pm  G -  STA 183/5(20)     HUR 145/9(20)   STA won by 38 runs
+  5   1  2022-12-16 Fri 07:45pm  G -  THU 15(5.5)       STR 139/9(20)   STR won by 124 runs
+  6   1  2022-12-17 Sat 06:35pm  G -  SCO 155/9(20)     SIX 117(20)     SCO won by 38 runs
+  7   1  2022-12-18 Sun 06:45pm  G -  REN 175/6(19.5)   THU 174/6(20)   REN won by 4 wickets (1 ball left)
+  8   1  2022-12-19 Mon 06:45pm  G -  HUR 172/8(20)     SCO 164/8(20)   HUR won by 8 runs
+  9   1  2022-12-20 Tue 06:45pm  G -  STR 151/4(18.4)   THU 150/5(20)   STR won by 6 wickets (8 balls left)
+ 10   2  2022-12-21 Wed 06:45pm  G -  REN 137/8(19.2)   HEA 137/8(20)   REN won by 4 wickets (4 balls left)
+ 11   2  2022-12-22 Thu 06:45pm  G -  SIX 137/6(14)     HUR 131/7(14)   SIX won by 6 runs (target 138, reduced overs)
+ 12   2  2022-12-23 Fri 03:00pm  G -  STA 168/8(20)     SCO 229/7(20)   SCO won by 61 runs
+ 13   2  2022-12-23 Fri 06:30pm  G -  HEA 166/9(20)     STR 168/9(20)   HEA won by 6 runs
+ 14   2  2022-12-24 Sat 03:00pm  G -  HUR 122(18)       REN 114(19.2)   HUR won by 8 runs
+ 15   2  2022-12-26 Mon 05:35pm  G -  SIX 151/3(19.1)   STA 150/5(20)   SIX won by 7 wickets (5 balls left)
+ 16   2  2022-12-26 Mon 08:45pm  G -  SCO 136/7(19.1)   STR 133/7(20)   SCO won by 3 wickets (5 balls left)
+ 17   2  2022-12-27 Tue 06:45pm  G -  THU 124/0(11.4)   HEA 121/6(20)   THU won by 10 wickets (50 balls left)
+ 18   2  2022-12-28 Wed 06:45pm  G -  SIX 149/8(20)     REN 115(19)     SIX won by 34 runs
+ 19   3  2022-12-29 Thu 05:35pm  G -  HEA 171/4(20)     THU 182/6(20)   THU won by 11 runs
+ 20   3  2022-12-29 Thu 08:45pm  G -  SCO 136/4(17.3)   STA 135(20)     SCO won by 6 wickets (15 balls left)
+ 21   3  2022-12-30 Fri 06:00pm  G -  REN 124/7(20)     SIX 126/4(17.5) SIX won by 6 wickets (13 balls left)
+ 22   3  2022-12-31 Sat 03:00pm  G -  THU  HUR
+ 23   3  2022-12-31 Sat 06:30pm  G -  STR  STA
+ 24   3  2023-01-01 Sun 01:10pm  G -  REN  SCO
+ 25   3  2023-01-01 Sun 06:45pm  G -  HEA  SIX
+ 26   3  2023-01-02 Mon 06:45pm  G -  HUR  STR
+ 27   3  2023-01-03 Tue 06:45pm  G -  STA  REN
+ 28   3  2023-01-04 Wed 05:35pm  G -  SIX  HEA
+ 29   3  2023-01-04 Wed 08:45pm  G -  SCO  THU
+ 30   4  2023-01-05 Thu 06:45pm  G -  STR  HUR
+ 31   4  2023-01-06 Fri 06:00pm  G -  STA  SIX
+ 32   4  2023-01-07 Sat 05:35pm  G -  REN  HUR
+ 33   4  2023-01-07 Sat 08:45pm  G -  SCO  HEA
+ 34   4  2023-01-08 Sun 06:45pm  G -  THU  SIX
+ 35   4  2023-01-09 Mon 06:45pm  G -  HUR  STA
+ 36   4  2023-01-10 Tue 07:10pm  G -  STR  REN
+ 37   4  2023-01-11 Wed 07:10pm  G -  HEA  SCO
+ 38   5  2023-01-12 Thu 06:45pm  G -  STA  STR
+ 39   5  2023-01-13 Fri 06:00pm  G -  THU  SCO
+ 40   5  2023-01-14 Sat 03:30pm  G -  STR  HEA
+ 41   5  2023-01-14 Sat 07:00pm  G -  REN  STA
+ 42   5  2023-01-15 Sun 01:10pm  G -  HUR  THU
+ 43   5  2023-01-15 Sun 06:45pm  G -  SIX  SCO
+ 44   5  2023-01-16 Mon 06:45pm  G -  STA  HEA
+ 45   5  2023-01-17 Tue 06:45pm  G -  SIX  STR
+ 46   5  2023-01-18 Wed 07:10pm  G -  SCO  HUR
+ 47   6  2023-01-19 Thu 06:45pm  G -  THU  REN
+ 48   6  2023-01-20 Fri 04:00pm  G -  STR  SCO
+ 49   6  2023-01-20 Fri 07:30pm  G -  HEA  HUR
+ 50   6  2023-01-21 Sat 06:35pm  G -  SIX  THU
+ 51   6  2023-01-22 Sun 01:10pm  G -  HEA  STA
+ 52   6  2023-01-22 Sun 06:45pm  G -  SCO  REN
+ 53   6  2023-01-23 Mon 06:45pm  G -  HUR  SIX
+ 54   6  2023-01-24 Tue 06:45pm  G -  REN  STR
+ 55   6  2023-01-25 Wed 01:10pm  G -  HUR  HEA
+ 56   6  2023-01-25 Wed 06:45pm  G -  STA  THU
+ 57   7  2023-01-27 Fri 06:45pm  G -  HOME  AWAY
+ 58   8  2023-01-28 Sat 06:45pm  G -  HOME  AWAY
+ 59   8  2023-01-29 Sun 06:45pm  G -  HOME  AWAY
+ 60   9  2023-02-02 Thu 06:45pm  G -  HOME  AWAY
+ 61  10  2023-02-04 Sat 06:45pm  G -  HOME  AWAY
 -------------------------------------------------------------------------------
