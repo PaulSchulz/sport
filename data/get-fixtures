@@ -5,6 +5,7 @@
 if [ "x$1" == "x" ]
 then
     echo "# Please supply a SPORTID argument"
+    echo "# Visit https://fixturedownload.com for available data sets"
     exit
 fi
 cd ${0%/*}
@@ -28,7 +29,7 @@ function download {
 
 function write_data {
     cat<<EOF
-{:event $SPORTID
+{:event "$SPORTID"
  :data "$DATA_PATH",
  :details
      {:title "",
@@ -36,9 +37,24 @@ function write_data {
       :code nil,
       :date "",
       :url ""
+      :datadir "$DATA_DIR"
       :fixtures "$FIXTURE_PATH",
-      :data "$DATA_PATH"}
+      :data "$DATA_PATH",
+      :custom "$CUSTOM_PATH"
+     }
 }
+EOF
+}
+
+function write_custom {
+    cat<<EOF
+;; Custom functions for manipulating data
+;; Needs to return 'unknown' (usually :home or :away) so that
+;; score and scoreboard maps can be built without duplicate keys
+(defn map-team-id [name unknown]
+  (case name
+    "To be announced"   unknown
+    unknown))
 EOF
 }
 
@@ -56,5 +72,9 @@ download
 echo "# $SPORTID/data.clj"
 write_data
 write_data >"data.clj"
+
+echo "# $SPORTID/custom.clj"
+write_custom
+write_custom >"custom.clj"
 
 echo "# FINISHED"
