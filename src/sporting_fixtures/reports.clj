@@ -7,9 +7,10 @@
   (:gen-class)
   (:require
    [clojure.java.io :as io]
+   [clojure.java.shell :as sh] ;; Printing reports
    [clojure.pprint :as pp]
    [clojure.string :as str]
-   [java-time :as time] ; Used for generating local-time.
+   [java-time :as time] ;; Used for generating local-time.
    ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -34,12 +35,13 @@
   (println)
   (println ";; To save the report to a text file")
   (println "(println (r/report-games-save data))")
-  (println ";; This can then be processed to pdf for printing with the following:")
-  (println ";;   enscript -r report-games.txt -o report-games.ps")
-  (println ";;   ps2pdf report-games.ps")
-  (println ";;   rm report-games.ps")
-  (println))
-
+  (println ";; This can then be printed from the terminal with the following:")
+  (println ";;   enscript -r report-games.txt")
+  (println)
+  (println ";; Or, once the report has been generated, send directly to default printer with:")
+  (println "(r/report-games-print data)")
+  (println) ;; -- add help here --
+  )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; TODO: Move data loading and saving to a separate shared module
 ;; Read data from file
@@ -72,9 +74,9 @@
               :quarter-final  "QF"
               :semi-final     "SF"
               :third-play-off "PO"
-              :final          "F"
+              :final          "GF"
               "")
-            "-")
+            "G")
           (if (some? group)
             (case group
               :group-a    "A"
@@ -99,6 +101,7 @@
               :qf-4       "4"
               :sf-1       "1"
               :sf-2       "2"
+              :gf         " "
               "")
             "-")))
 
@@ -132,7 +135,7 @@
                 (not (= (vals (:scoreboard game)) ["" ""])))
          (let [home-scoreboard (home (:scoreboard game))
                away-scoreboard (away (:scoreboard game))]
-           (format "%s %-12s  %s %-12s"
+           (format "%-3s %-12s  %-3s %-12s"
                    (str/upper-case (name home))
                    home-scoreboard
                    (str/upper-case (name away))
@@ -161,5 +164,10 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn report-games-save [data]
-  (spit (str (-> data :details :datadir) "report-games.txt")
-        (report-games data)))
+  (let [file (str (-> data :details :datadir) "report-games.txt")]
+    (spit file (report-games data))))
+
+(defn report-games-print [data]
+  (let [file (str (-> data :details :datadir) "report-games.txt")]
+    (println file)
+    (sh/sh "/usr/bin/enscript" "-r" file)))
