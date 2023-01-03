@@ -2427,7 +2427,7 @@
    :comment "",
    :HomeTeam "Central Coast Mariners",
    :DateUtc "2022-12-31 08:00:00Z",
-   :scoreboard {:ccm "", :mv ""},
+   :scoreboard {:ccm "2", :mv "1"},
    :AwayTeam "Melbourne Victory",
    :Location "Industree Group Stadium",
    :MatchNumber 56}
@@ -2444,7 +2444,7 @@
    :comment "",
    :HomeTeam "Newcastle Jets",
    :DateUtc "2023-01-01 04:00:00Z",
-   :scoreboard {:new "", :sfc ""},
+   :scoreboard {:new "0", :sfc "2"},
    :AwayTeam "Sydney FC",
    :Location "McDonald Jones Stadium",
    :MatchNumber 57}
@@ -2461,7 +2461,7 @@
    :comment "",
    :HomeTeam "Western Sydney Wanderers FC",
    :DateUtc "2023-01-01 06:00:00Z",
-   :scoreboard {:wsw "", :mfc ""},
+   :scoreboard {:wsw "4", :mfc "0"},
    :AwayTeam "Macarthur FC",
    :Location "CommBank Stadium",
    :MatchNumber 58}
@@ -2478,7 +2478,7 @@
    :comment "",
    :HomeTeam "Wellington Phoenix",
    :DateUtc "2023-01-02 02:00:00Z",
-   :scoreboard {:wel "", :mc ""},
+   :scoreboard {:wel "1", :mc "3"},
    :AwayTeam "Melbourne City FC",
    :Location "Sky Stadium",
    :MatchNumber 59}
@@ -2495,7 +2495,7 @@
    :comment "",
    :HomeTeam "Adelaide United",
    :DateUtc "2023-01-02 08:45:00Z",
-   :scoreboard {:adl "", :per ""},
+   :scoreboard {:adl "2", :per "0"},
    :AwayTeam "Perth Glory",
    :Location "Coopers Stadium",
    :MatchNumber 60}
