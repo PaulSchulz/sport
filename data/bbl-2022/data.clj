@@ -1055,7 +1055,7 @@
    :HomeTeamScore nil,
    :teams [:six :hea],
    :round 3,
-   :summary "",
+   :summary "No result (rain interupted)",
    :AwayTeamScore nil,
    :result {:six {}, :hea {}},
    :score {:six "", :hea ""},
