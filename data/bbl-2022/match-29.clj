@@ -1,8 +1,9 @@
 ;; Data format; bbl-2023-01-04
-
-[[:batting-team "Perth Scorchers"
+[[:format "bbl-2023-01-04"]
+ [:batting-team "Perth Scorchers"
   :bowling-team "Sydney Thunder"]
  [:batsmen "Lyth" "du Plessis"]
+
  [:bowler "Doggett" 1]
  [1 1 "<" "."]
  [1 2 "<" "."]
