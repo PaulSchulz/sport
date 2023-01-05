@@ -377,12 +377,11 @@
  [20 1 ">" "1 NB"]
  [20 2 "<" "2"]
  [20 3 "<" "4"]
- [20 4 "<" ""]
  [:needs 4 :from 4]
- [20 5 "<" "4"]
+ [20 4 "<" "4"]
  [:score [230 3]]
 
- [:result "STR won by 7 wickets (2 balls left)"]
+ [:result "STR won by 7 wickets (3 balls left)"]
  ;; [:batsmen "Matt Short" "de Grandhomme"]
 
  ;;
