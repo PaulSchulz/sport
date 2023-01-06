@@ -39,6 +39,11 @@
   (println "(s/data-write data)")
   (println)
   (println ";; Process ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
+  (println ";; 0. Get fixtures, and setup files")
+  (println ";;    In data directory: ./get-fixtures SPORTID")
+  (println "(def sport \"fifa-womens-world-cup-2023\")")
+  (println "(def data (s/data-read-event sport))")
+  (println)
   (println ";; 1. Merge fixture data. (:fixtures)")
   (println "(def data (conj data {:fixtures (s/fixtures-init data)}))")
   (println)
@@ -51,14 +56,15 @@
   (println ";; 4. Extract and store venues. (:venues)")
   (println "(def data (conj data {:venues (s/venues-init data)}))")
   (println)
-  (println ";; 5. Transform data")
-  (println ";;    Setup 'custom.clj' to map Team Names to short form (for reports)")
-  (println ";;    Reload custom functions")
-  (println ";; edit 'custom.clj'")
+  (println ";; 5. Setup transform data")
+  (println ";;    Create 'custom.clj' to map team names to short form (for reports)")
+  (println "(s/create-custom data)")
+  (println)
+  (println ";; 6. Edit 'custom.clj', then reload custom functions and map data.")
   (println "(s/reload)")
   (println "(def data (conj data {:results (s/results-transform data)}))")
   (println)
-  (println ";; 6. Save data")
+  (println ";; 7. Save data")
   (println "(s/data-write data)")
   (println))
 
@@ -211,6 +217,29 @@
 (defn map-team-keyword-init [teams]
   (let [map-teams-name (map-team-name-init teams)]
     (clojure.set/map-invert map-teams-name)))
+
+(defn create-custom [data]
+  (let [teams (:teams data)
+        filename (:custom (:details data))]
+    (spit
+     filename
+     (str ";; Custom functions for manipulating data\n"
+          ";; Needs to return 'unknown' (usually :home or :away) so that\n"
+          ";; score and scoreboard maps can be built without duplicate keys\n"
+          "(defn map-team-id [name unknown]\n"
+          "  (case name\n"
+          (apply str
+                 (sort
+                  (map (fn [team]
+                         (str
+                          "    "
+                          "\"" (:name team) "\""
+                          " "
+                          ":" (clojure.string/replace (clojure.string/lower-case (:id team))
+                                                      " " "-")
+                          "\n"))
+                       (vals teams))))
+          "    unknown))\n"))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; map keywords to standard values

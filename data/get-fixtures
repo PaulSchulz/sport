@@ -4,6 +4,8 @@
 
 if [ "x$1" == "x" ]
 then
+    echo "# Usage: $0 SPORTID"
+    echo "#"
     echo "# Please supply a SPORTID argument"
     echo "# Visit https://fixturedownload.com for available data sets"
     exit
