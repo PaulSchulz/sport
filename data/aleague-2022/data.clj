@@ -2512,7 +2512,7 @@
    :comment "",
    :HomeTeam "Melbourne Victory",
    :DateUtc "2023-01-06 08:45:00Z",
-   :scoreboard {:mv "", :bri ""},
+   :scoreboard {:mv "0", :bri "1"},
    :AwayTeam "Brisbane Roar FC",
    :Location "AAMI Park",
    :MatchNumber 61}
@@ -2529,7 +2529,7 @@
    :comment "",
    :HomeTeam "Perth Glory",
    :DateUtc "2023-01-06 11:30:00Z",
-   :scoreboard {:per "", :wsw ""},
+   :scoreboard {:per "1", :wsw "0"},
    :AwayTeam "Western Sydney Wanderers FC",
    :Location "Macedonia Park",
    :MatchNumber 62}
