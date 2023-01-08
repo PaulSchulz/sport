@@ -12,6 +12,11 @@
   :custom "data/adelaide-international-1-2023/custom.clj"},
  :players
  [
+  ;; Seed values:
+  ;;  number
+  ;;  :q "qualifier""
+  ;;  :sr "special ranking"
+  ;;  :pr "protected ranking"
   {:draw  1 :name "Novak Djokovic"        :seed 1}
   {:draw  2 :name "Constant Lestienne"}
   {:draw  3 :name "Jordan Thompson"       :seed :wc}
@@ -19,7 +24,7 @@
   {:draw  5 :name "Mikael Ymer"}
   {:draw  6 :name "Roman Safiullin"       :seed :q}
   {:draw  7 :name "Rinky Hijikata"        :seed :q}
-  {:draw  8:name "Denis Shapovalov"      :seed 7}
+  {:draw  8:name "Denis Shapovalov"       :seed 7}
 
   {:draw  9:name "Daniil Medvedev"       :seed 3}
   {:draw 10 :name "Lorenzo Sonego"}
