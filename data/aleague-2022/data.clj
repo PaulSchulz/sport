@@ -2546,7 +2546,7 @@
    :comment "",
    :HomeTeam "Sydney FC",
    :DateUtc "2023-01-07 06:00:00Z",
-   :scoreboard {:sfc "", :wel ""},
+   :scoreboard {:sfc "0", :wel "1 R"},
    :AwayTeam "Wellington Phoenix",
    :Location "Allianz Stadium",
    :MatchNumber 63}
@@ -2563,7 +2563,7 @@
    :comment "",
    :HomeTeam "Central Coast Mariners",
    :DateUtc "2023-01-07 06:00:00Z",
-   :scoreboard {:ccm "", :adl ""},
+   :scoreboard {:ccm "4", :adl "0 R"},
    :AwayTeam "Adelaide United",
    :Location "Industree Group Stadium",
    :MatchNumber 64}
@@ -2580,7 +2580,7 @@
    :comment "",
    :HomeTeam "Melbourne City FC",
    :DateUtc "2023-01-07 08:45:00Z",
-   :scoreboard {:mc "", :wu ""},
+   :scoreboard {:mc "4", :wu "0"},
    :AwayTeam "Western United FC",
    :Location "AAMI Park",
    :MatchNumber 65}
