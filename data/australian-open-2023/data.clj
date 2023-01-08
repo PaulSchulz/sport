@@ -159,7 +159,7 @@
     {:draw 128 :name "M. Guinard" :seed 31}]}
   ;;
   {:id :womens-qualifying-singles
-  :name "Women's Qualifying Singles"
+   :name "Women's Qualifying Singles"
    :draw
    [{:draw  1 :name "A. Parks" :seed 1}
     {:draw  2 :name "A. Bozovic" :seed :wc}
@@ -303,8 +303,27 @@
     {:draw 125 :name "A. Gasanova"}
     {:draw 126 :name "P. Kudermetova"}
     {:draw 127 :name "C. Dolehide"}
-    {:draw 128 :name "K. Boulter" :seed 30}
-
-    ]
+    {:draw 128 :name "K. Boulter" :seed 30}]
    ;;
-  ]}
+   }
+  {:id :mens-singles
+   :name "Men's Singles"
+   :draw-date "Thu, 12 Jan 2023"
+                                        ;players 128
+   }
+  {:id :womens-singles
+   :name "Womens's Singles"
+   :draw-date "Thu, 12 Jan 2023"}
+  ;;
+  {:id :mens-doubles
+   :name "Men's Doubles"}
+  ;;
+  {:id :womens-doubles
+   :name "Womens's Doubles"}
+  ;;
+  {:id :mixed-doubles
+   :name "Mixed Doubles"}
+  ;;
+  ]
+ ;;
+ }
