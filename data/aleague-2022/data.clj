@@ -2250,7 +2250,8 @@
    :HomeTeamScore nil,
    :teams [:mc :mv],
    :round 8,
-   :summary "Suspended - Pitch invasion after 21m",
+   :summary "Suspended - Pitch invasion after 21m
+",
    :AwayTeamScore nil,
    :result {:mc {}, :mv {}},
    :score {:mc "", :mv ""},
@@ -2665,7 +2666,7 @@
    :comment "",
    :HomeTeam "Perth Glory",
    :DateUtc "2023-01-14 11:30:00Z",
-   :scoreboard {:per "", :sfc ""},
+   :scoreboard {:per "2", :sfc "2"},
    :AwayTeam "Sydney FC",
    :Location "Macedonia Park",
    :MatchNumber 70}
@@ -2682,7 +2683,7 @@
    :comment "",
    :HomeTeam "Western Sydney Wanderers FC",
    :DateUtc "2023-01-15 04:00:00Z",
-   :scoreboard {:wsw "", :mc ""},
+   :scoreboard {:wsw "1", :mc "1"},
    :AwayTeam "Melbourne City FC",
    :Location "CommBank Stadium",
    :MatchNumber 71}
@@ -2699,7 +2700,7 @@
    :comment "",
    :HomeTeam "Western United FC",
    :DateUtc "2023-01-15 06:00:00Z",
-   :scoreboard {:wu "", :new ""},
+   :scoreboard {:wu "1 R", :new "1"},
    :AwayTeam "Newcastle Jets",
    :Location "Mars Stadium",
    :MatchNumber 72}
