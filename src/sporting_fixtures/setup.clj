@@ -264,3 +264,16 @@
 (defn results-transform [data]
   (let [results (:results data)]
     (map (partial result-transform (:event data)) results)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Functions to create tournament matches
+(defn knockout-matches
+  "Create a set of knockout tournament matches"
+  [players template]
+  (for [i (range 0 (/ players 2))]
+    (let [m (+ i 1)]
+      (template m))))
+
+;; Example
+;; => (s/knockout-matches 16 (fn [x] {:id x}))
+;; ;;  ({:id 1} {:id 2} {:id 3} {:id 4} {:id 5} {:id 6} {:id 7} {:id 8})
