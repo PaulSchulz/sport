@@ -2870,7 +2870,7 @@
    :comment "",
    :HomeTeam "Macarthur FC",
    :DateUtc "2023-01-28 06:00:00Z",
-   :scoreboard {:mfc "", :wu ""},
+   :scoreboard {:mfc "2 R", :wu "2"},
    :AwayTeam "Western United FC",
    :Location "Campbelltown Stadium",
    :MatchNumber 82}
@@ -2887,7 +2887,7 @@
    :comment "",
    :HomeTeam "Central Coast Mariners",
    :DateUtc "2023-01-28 08:45:00Z",
-   :scoreboard {:ccm "", :wsw ""},
+   :scoreboard {:ccm "2", :wsw "2"},
    :AwayTeam "Western Sydney Wanderers FC",
    :Location "Industree Group Stadium",
    :MatchNumber 83}
@@ -2900,7 +2900,7 @@
    :summary "",
    :AwayTeamScore nil,
    :result {:mc {}, :adl {}},
-   :score {:mc "", :adl ""},
+   :score {:mc "3", :adl "3"},
    :comment "",
    :HomeTeam "Melbourne City FC",
    :DateUtc "2023-01-29 04:00:00Z",
