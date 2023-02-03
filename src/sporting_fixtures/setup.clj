@@ -266,13 +266,19 @@
     (map (partial result-transform (:event data)) results)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Functions to create tournament matches
+;; TODO: Functions to create tournament matches
+
+(defn match-definition [arguments]
+  {:players []
+   :scoreboard {}})
+
 (defn knockout-matches
-  "Create a set of knockout tournament matches"
+  "Create a set of knockout tournament matches. The template is a function which
+  returns a match structure."
   [players template]
   (for [i (range 0 (/ players 2))]
     (let [m (+ i 1)]
-      (template m))))
+      (merge {:id m} (template m)))))
 
 ;; Example
 ;; => (s/knockout-matches 16 (fn [x] {:id x}))
