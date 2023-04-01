@@ -1,13 +1,26 @@
-* sporting-fixtures
+* Sporting Fixtures
+** Contents :TOC:
+- [[#sporting-fixtures][Sporting Fixtures]]
+  - [[#introduction][Introduction]]
+  - [[#clojure-validation-scripts][Clojure Validation Scripts]]
+  - [[#data-sources][Data Sources]]
+  - [[#modules][Modules]]
 
-Repository for Sporting fixture data. Used in other applications.
-and
-Reports and Statistics on Sporting Fixtures
+** Introduction
+This is a collection of Clojure scripts for collecting and collating Sporting
+event and fixture data.
 
-Includes some example Clojure code for reading YAML data, and very
+It includes some example Clojure code for reading YAML data, and very
 much a work in progress.
 
+**** Design Background
+Originally the data was stored and processed as YAML files.
+
+This was changed to use native Closure code files to remove the additional
+dependency. There is still a lot of legacy code and bit-rot hanging about.
+
 ** Clojure Validation Scripts
+*Note:* This has all changed.
 
 The Leiningen tool for Clojure needs to be installed. Then:
 
@@ -28,3 +41,18 @@ Useful Commands
 
 See: https://fixturedownload.com/
 
+** Modules
+
+*** Setup - sporting-fixtures.setup
+#+begin_src clojure
+  (require ['sporting-fixtures.setup :as 's])
+  (s/help)
+#+end_src
+
+This is a 'helper' module for setting up event data.
+
+It assumes that:
+- fixtures and data are stored under a 'sportid' subdirectory.
+- fixtures are stored im 'json' format as downloaded
+- data is stored as clojure data structure
+- data contains a skeleton clojure structure '{}'
