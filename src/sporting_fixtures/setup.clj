@@ -1,5 +1,6 @@
 ;; Functions to setup data and check data..
 ;; See (help) for assumptions, usage examples and workflow explanation.
+;;
 ;; Include in repl with
 ;;   (require ['sporting-fixtures.setup :as 's])
 
@@ -23,14 +24,15 @@
   (println ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
   (println ";; This is a 'helper' module for setting up event data.")
   (println ";; It assumes:")
-  (println ";;   - fixtures and data are stored under a 'sportid' subdirectory.")
+  (println ";;   - fixtures and data are stored under an 'event' subdirectory.")
   (println ";;   - fixtures are stored im 'json' format as downloaded")
-  (println ";;   - data is stored as clojure data structure")
-  (println ";;   - data contains a skeleton clojure structure '{}'")
+  (println ";;   - data template file exists containing a valid clojure data structure")
+  (println ";;   - customization file contains valid functions")
   (println)
+  (println ";; Import, Check and Export ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
   (println ";; Load data from event")
-  (println "(def sport \"aleague-2022\")")
-  (println "(def data (s/data-read-event sport))")
+  (println "(def event \"afl-2023\"")
+  (println "(def data (s/data-read-event event))")
   (println)
   (println ";; Check data structure")
   (println "(s/data-check data)")
@@ -38,7 +40,7 @@
   (println ";; Write/save data to file")
   (println "(s/data-write data)")
   (println)
-  (println ";; Process ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
+  (println ";; Process ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
   (println ";; 0. Get fixtures, and setup files")
   (println ";;    In data directory: ./get-fixtures SPORTID")
   (println "(def sport \"fifa-womens-world-cup-2023\")")
