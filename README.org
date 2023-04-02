@@ -112,23 +112,10 @@ At the end of the process:
   - Data file (data.clj)
 
 ** Development / New Features
-The following are features which will be worked on at some stage.
+See [[file:TODO.org][TODO.org]] file for specific TODO items. Comments in the code are also used to
+specify additional TODO items.
 
-*** Enhanced/streamline/optimize data setup
-Improve the setup process.
 
-*** Process Documentation
-Improve the documentation on how the process for updating of fixtures and
-results is done so that game results can be easily added with a minimal number
-of mistakes.
 
-*** Reports
-Add "Ladder by Round" graph to track ladder changes over the season.
 
-Standardize season fixture report for all competitions, including minor
-variations.
 
-*** TODO Tidy-up data/get-fixtures
-- Change SPORTID to EVENT
-- Fix Typos (JSPN)
-- [X] Create check for existing directory
