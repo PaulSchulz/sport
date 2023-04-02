@@ -1,39 +1,33 @@
-#+TITLE: Development TODO Items
+* Development TODO Items
 
 The following are features which will be worked on at some stage.
 
-* Contents :TOC:
-- [[#tidy-up-to-dataget-fixtures][Tidy-up to data/get-fixtures]]
-  - [[#change-sportid-to-event][Change SPORTID to EVENT]]
-  - [[#fix-typos-jspn][Fix Typos (JSPN)]]
-  - [[#create-check-for-existing-directory][Create check for existing directory]]
-- [[#enhancedstreamlineoptimize-data-setup][Enhanced/streamline/optimize data setup]]
-  - [[#doing-improve-the-setup-process-including-the-documentation][DOING Improve the setup process, including the documentation]]
-- [[#doing-process-documentation][DOING Process Documentation]]
-- [[#reports][Reports]]
-  - [[#ladder-position-by-round][Ladder position by Round]]
-  - [[#season-fixture-report][Season Fixture Report]]
+** Contents                                                               :TOC:
+- [[#development-todo-items][Development TODO Items]]
+  - [[#tidy-up-to-dataget-fixtures][Tidy-up to data/get-fixtures]]
+  - [[#enhancedstreamlineoptimize-data-setup][Enhanced/streamline/optimize data setup]]
+  - [[#doing-process-documentation][DOING Process Documentation]]
+  - [[#reports][Reports]]
 
-* Tidy-up to data/get-fixtures
-** TODO Change SPORTID to EVENT
-** TODO Fix Typos (JSPN)
-** DONE Create check for existing directory
+** Tidy-up to data/get-fixtures
+*** TODO Change SPORTID to EVENT
+*** TODO Fix Typos (JSPN)
+*** DONE Create check for existing directory
 
-* Enhanced/streamline/optimize data setup
-** DOING Improve the setup process, including the documentation
+** Enhanced/streamline/optimize data setup
+*** DOING Improve the setup process, including the documentation
 
-* DOING Process Documentation
+** DOING Process Documentation
 Improve the documentation on how the process for updating of fixtures and
 results is done so that game results can be easily added with a minimal number
 of mistakes.
 
-* Reports
-** Ladder position by Round
+** Reports
+*** Ladder position by Round
 - Add "Ladder by Round" graph to track ladder changes over the season.
 - Should be possible toupdate with results during the season.
 
-** Season Fixture Report
-
+*** Season Fixture Report
 Standardize season fixture report for all competitions, including possible minor
 variations depending on the sport.
 
