@@ -46,7 +46,7 @@ In the data directory, there is a bash script (get-fixtures) which will download
 the JSON fixtures file from the above website.
 
 #+begin_src shell
-Usage: ./get-fixtures EVENT"
+Usage: ./get-fixtures EVENT
 
   Please supply a SPORTID argument
   Visit https://fixturedownload.com for available data sets

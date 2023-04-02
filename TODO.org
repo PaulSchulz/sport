@@ -1,23 +1,28 @@
-* Development TODO Items
+* Development To-do Items
 
 The following are features which will be worked on at some stage.
 
 ** Contents                                                               :TOC:
-- [[#development-todo-items][Development TODO Items]]
+- [[#development-to-do-items][Development To-do Items]]
   - [[#tidy-up-to-dataget-fixtures][Tidy-up to data/get-fixtures]]
   - [[#enhancedstreamlineoptimize-data-setup][Enhanced/streamline/optimize data setup]]
-  - [[#doing-process-documentation][DOING Process Documentation]]
+  - [[#process-documentation][Process Documentation]]
   - [[#reports][Reports]]
 
 ** Tidy-up to data/get-fixtures
 *** TODO Change SPORTID to EVENT
+Fix up script.
+
 *** TODO Fix Typos (JSPN)
+Fix up script.
+
 *** DONE Create check for existing directory
+Make sure that data is not clobbered accidentally.
 
 ** Enhanced/streamline/optimize data setup
 *** DOING Improve the setup process, including the documentation
 
-** DOING Process Documentation
+** Process Documentation
 Improve the documentation on how the process for updating of fixtures and
 results is done so that game results can be easily added with a minimal number
 of mistakes.
