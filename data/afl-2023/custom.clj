@@ -1,6 +1,9 @@
 ;; Custom functions for manipulating data
-;; Needs to return 'unknown' (usually :home or :away) so that
-;; score and scoreboard maps can be built without duplicate keys
+
+;; Needs to return the value passes as 'unknown' (usually :home or :away) so
+;; that the 'score' and 'scoreboard' maps can be built without any duplicate
+;; keys.
+
 (defn map-team-id [name unknown]
   (case name
     "Adelaide Crows"    :adl

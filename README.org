@@ -5,6 +5,7 @@
   - [[#clojure-validation-scripts][Clojure Validation Scripts]]
   - [[#data-sources][Data Sources]]
   - [[#modules][Modules]]
+  - [[#development--new-features][Development / New Features]]
 
 ** Introduction
 This is a collection of Clojure scripts for collecting and collating Sporting
@@ -41,6 +42,52 @@ Useful Commands
 
 See: https://fixturedownload.com/
 
+In the data directory, there is a bash script (get-fixtures) which will download
+the JSON fixtures file from the above website.
+
+#+begin_src shell
+Usage: ./get-fixtures EVENT"
+
+  Please supply a SPORTID argument
+  Visit https://fixturedownload.com for available data sets
+#+end_src
+
+This script creates a data sub-directory which contains:
+  - YAML file with the downloaded fixture list (fixtures.json)
+  - Data file (data.clj)
+  - Data mapping file (custom.clj). Initially contains an empty mapping
+    structure for 'team names' to 'team-id's.
+
+The template data file has the following structure, where the variables have
+been replaced with their values:
+#+begin_src clojure
+  {:event "$EVENT"
+   :data "$DATA_PATH",
+   :details
+       {:title "",
+        :location "",
+        :code nil,
+        :date "",
+        :url ""
+        :datadir "$DATA_DIR"
+        :fixtures "$FIXTURE_PATH",
+        :data "$DATA_PATH",
+        :custom "$CUSTOM_PATH"
+       }
+  }
+#+end_src
+
+The template custom file looks like:
+#+begin_src clojure
+  ;; Custom functions for manipulating data
+  ;; Needs to return 'unknown' (usually :home or :away) so that
+  ;; score and scoreboard maps can be built without duplicate keys
+  (defn map-team-id [name unknown]
+    (case name
+      "To be announced"   unknown
+      unknown))
+#+end_src
+
 ** Modules
 
 *** Setup - sporting-fixtures.setup
@@ -48,11 +95,40 @@ See: https://fixturedownload.com/
   (require ['sporting-fixtures.setup :as 's])
   (s/help)
 #+end_src
+Help will display the step by step details for running the process.
 
 This is a 'helper' module for setting up event data.
 
 It assumes that:
 - fixtures and data are stored under a 'sportid' subdirectory.
-- fixtures are stored im 'json' format as downloaded
-- data is stored as clojure data structure
-- data contains a skeleton clojure structure '{}'
+- fixtures are stored in the 'json' format as downloaded;
+- the data is stored as clojure data structure;
+- the data contains a skeleton clojure structure, an empty map '{}'
+
+At the end of the process:
+- There will exist a directory under 'data' which contains:
+  - YAML file with the downloaded fixture list (fixtures.json)
+  - Team name mapping file (custom.clj)
+  - Data file (data.clj)
+
+** Development / New Features
+The following are features which will be worked on at some stage.
+
+*** Enhanced/streamline/optimize data setup
+Improve the setup process.
+
+*** Process Documentation
+Improve the documentation on how the process for updating of fixtures and
+results is done so that game results can be easily added with a minimal number
+of mistakes.
+
+*** Reports
+Add "Ladder by Round" graph to track ladder changes over the season.
+
+Standardize season fixture report for all competitions, including minor
+variations.
+
+*** TODO Tidy-up data/get-fixtures
+- Change SPORTID to EVENT
+- Fix Typos (JSPN)
+- [X] Create check for existing directory
