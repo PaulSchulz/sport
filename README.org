@@ -111,6 +111,40 @@ At the end of the process:
   - Team name mapping file (custom.clj)
   - Data file (data.clj)
 
+*** Process Results (pr)
+This module is used to add and update game results.
+#+begin_src clojure
+  (require ['sporting-fixtures.process-results :as 'p])
+  (p/help)
+#+end_src
+
+#+begin_src clojure
+  (def data (s/data-read "./data/afl-2023/data.clj"))
+  ;; Process data
+  (s/data-write)
+#+end_src
+
+Match results for updating dataare found in "./data/afl-2023/update-matches.clj"
+
+*** Process (p)
+
+*** Reports (r)
+#+begin_src clojure
+  (require ['sporting-fixtures.reports :as 'r])
+  (r/help)
+#+end_src
+
+Generate report with match results (to screen)
+#+begin_src clojure
+  (println (r/report-games data))
+#+end_src
+
+Save report to a file
+#+begin_src clojure
+  (println (r/report-games-save data))")
+#+end_src
+
+
 ** Development / New Features
 See [[file:TODO.org][TODO.org]] file for specific TODO items. Comments in the code are also used to
 specify additional TODO items.

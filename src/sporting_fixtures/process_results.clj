@@ -2,7 +2,7 @@
 ;; See (help) for assumptions, usage examples and workflow explanation.
 ;;
 ;; Include in repl with
-;;   (require ['sporting-fixtures.process-results :as 'p])
+;;   (require ['sporting-fixtures.process-results :as 'pr])
 
 (ns sporting-fixtures.process-results
   ;; (:gen-class)
@@ -12,7 +12,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Helper functions
 (defn reload []
-  (require ['sporting-fixtures.process-results :as 'p] :reload))
+  (require ['sporting-fixtures.process-results :as 'pr] :reload))
 
 (defn run-tests []
   (clojure.test/run-tests 'sporting-fixtures.process-results))
@@ -44,7 +44,6 @@
   )
 
 (defn read-actions [filename]
-  ;; [[:update-match-result 19  {:wb  "10.7(67)"  :bri "7.11(53)"}  "WB won by 14 points"]]
   (read-string (slurp filename))
   ;;
   )
