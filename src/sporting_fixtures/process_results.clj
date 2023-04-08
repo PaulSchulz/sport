@@ -32,7 +32,7 @@
   (println "               {:bri \"18.8(116)\", :col \"11.17(83)\"}")
   (println "               \"BRI won by 33 points\"]]")
   (println)
-  (println ""))
+  (println "(def data (pr/process-actions data actions))"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn match-number? [match match-number]
