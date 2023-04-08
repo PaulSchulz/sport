@@ -24,6 +24,13 @@
   (println ";; It assumes:")
   (println ";;   - data is loaded (data)")
   (println ";;   - round update data is available")
+  (println "")
+  (println ";; Load round results")
+  (println "(def actions (pr/read-actions \"./data/afl-2023/update-matches.clj\")")
+  (println ";; or (eg.)")
+  (println "(def actions [[:update-match-result 28")
+  (println "               {:bri \"18.8(116)\", :col \"11.17(83)\"}")
+  (println "               \"BRI won by 33 points\"]]")
   (println))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -93,7 +100,7 @@
       (let [scoreboard (nth update 2)
             summary (nth update 3)]
         (println "UPDATE")
-        ;; (action-match-update-result match match-number scoreboard summary)
+    ;; (action-match-update-result match match-number scoreboard summary)
         (if (match-number? match match-number)
           (println "MatchNumber Correct!")
           (println "MatchNumber Wrong!"))
@@ -104,12 +111,12 @@
         match)))
 
   (println "----")
-  ;; (apply)
-  ;;
+;; (apply)
+;;
   )
 
 (defn process-actions [data actions]
-  ;; Apply actions to data and return the updated data.
+;; Apply actions to data and return the updated data.
   (reduce (fn [d a] (update-data-with-action d a))
           data
           actions))
