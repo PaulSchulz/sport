@@ -2087,7 +2087,7 @@
    :comment "",
    :HomeTeam "Perth Glory",
    :DateUtc "2023-01-10 11:30:00Z",
-   :scoreboard {:per "", :bri ""},
+   :scoreboard {:per "2", :bri "1 R"},
    :AwayTeam "Brisbane Roar FC",
    :Location "Macedonia Park",
    :MatchNumber 36}
@@ -2250,8 +2250,7 @@
    :HomeTeamScore nil,
    :teams [:mc :mv],
    :round 8,
-   :summary "Suspended - Pitch invasion after 21m
-",
+   :summary "Suspended - Pitch invasion after 21 mins",
    :AwayTeamScore nil,
    :result {:mc {}, :mv {}},
    :score {:mc "", :mv ""},
@@ -2904,7 +2903,7 @@
    :comment "",
    :HomeTeam "Melbourne City FC",
    :DateUtc "2023-01-29 04:00:00Z",
-   :scoreboard {:mc "", :adl ""},
+   :scoreboard {:mc "3", :adl "3"},
    :AwayTeam "Adelaide United",
    :Location "AAMI Park",
    :MatchNumber 84}
@@ -3142,7 +3141,7 @@
    :comment "",
    :HomeTeam "Sydney FC",
    :DateUtc "2023-02-18 06:00:00Z",
-   :scoreboard {:sfc "", :bri ""},
+   :scoreboard {:sfc "1", :bri "1"},
    :AwayTeam "Brisbane Roar FC",
    :Location "Allianz Stadium",
    :MatchNumber 98}
@@ -4134,8 +4133,8 @@
    :MatchNumber 156}
   {:RoundNumber 27,
    :Group nil,
-   :stage :quarter-final
-   :group :qf-1
+   :group :qf-1,
+   :stage :quarter-final,
    :game 157,
    :HomeTeamScore nil,
    :teams [:home :away],
@@ -4153,8 +4152,8 @@
    :MatchNumber 157}
   {:RoundNumber 27,
    :Group nil,
-   :stage :quarter-final
-   :group :qf-2
+   :group :qf-2,
+   :stage :quarter-final,
    :game 158,
    :HomeTeamScore nil,
    :teams [:home :away],
@@ -4172,8 +4171,8 @@
    :MatchNumber 158}
   {:RoundNumber 28,
    :Group nil,
-   :stage :quarter-final
-   :group :qf-3
+   :group :qf-3,
+   :stage :quarter-final,
    :game 159,
    :HomeTeamScore nil,
    :teams [:home :away],
@@ -4191,8 +4190,8 @@
    :MatchNumber 159}
   {:RoundNumber 28,
    :Group nil,
-   :stage :quarter-final
-   :group :qf-3
+   :group :qf-3,
+   :stage :quarter-final,
    :game 160,
    :HomeTeamScore nil,
    :teams [:home :away],
@@ -4210,8 +4209,8 @@
    :MatchNumber 160}
   {:RoundNumber 29,
    :Group nil,
-   :stage :quarter-final
-   :group :qf-4
+   :group :qf-4,
+   :stage :quarter-final,
    :game 161,
    :HomeTeamScore nil,
    :teams [:home :away],
@@ -4229,8 +4228,8 @@
    :MatchNumber 161}
   {:RoundNumber 29,
    :Group nil,
-   :stage :semi-final
-   :group :sf-1
+   :group :sf-1,
+   :stage :semi-final,
    :game 162,
    :HomeTeamScore nil,
    :teams [:home :away],
@@ -4248,8 +4247,8 @@
    :MatchNumber 162}
   {:RoundNumber 30,
    :Group nil,
-   :stage :final
-   :group :gf
+   :group :gf,
+   :stage :final,
    :game 163,
    :HomeTeamScore nil,
    :teams [:home :away],
@@ -4269,16 +4268,17 @@
  {"Wellington Phoenix" {:id :wel, :name "Wellington Phoenix"},
   "Central Coast Mariners" {:id :scm, :name "Central Coast Mariners"},
   "Sydney FC" {:id :syd, :name "Sydney FC"},
-  "Western Sydney Wanderers FC" {:id :wsw :name "Western Sydney Wanderers FC"},
+  "To be announced" {:id :tba, :name "To be announced"},
+  "Western Sydney Wanderers FC"
+  {:id :wsw, :name "Western Sydney Wanderers FC"},
   "Macarthur FC" {:id :mfc, :name "Macarthur FC"},
-  "Adelaide United" {:id :adl :name "Adelaide United"},
+  "Adelaide United" {:id :adl, :name "Adelaide United"},
   "Melbourne City FC" {:id :mc, :name "Melbourne City FC"},
   "Melbourne Victory" {:id :mv, :name "Melbourne Victory"},
   "Western United FC" {:id :wu, :name "Western United FC"},
   "Newcastle Jets" {:id :new, :name "Newcastle Jets"},
   "Brisbane Roar FC" {:id :bri, :name "Brisbane Roar FC"},
-  "Perth Glory" {:id :per, :name "Perth Glory"}
-  "To be announced" {:id :tba, :name "To be announced"}},
+  "Perth Glory" {:id :per, :name "Perth Glory"}},
  :venues
  {"Suncorp Stadium" {:id "Suncorp Stadium", :name "Suncorp Stadium"},
   "CommBank Stadium"
