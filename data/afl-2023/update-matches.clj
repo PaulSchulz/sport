@@ -11,6 +11,9 @@
 ;;   :no-action - Do nothing
 [;;
  [:update-match-result 28 {:bri "18.8(116)" :col "11.17(83)"}  "BRI won by 33 points"]
+ [:update-match-result 29 {:nm  "11.18(84)" :car "16.11(107)"} "CAR won by 23 points"]
+ [:update-match-result 30 {:adl "17.9(111)" :fre "10.12(72)"}  "ADL won by 39 points"]
+
  ;; [:no-action]
  ;;
  ]
