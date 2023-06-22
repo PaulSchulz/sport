@@ -3819,7 +3819,7 @@
    :HomeTeamScore nil,
    :teams [:pa :gee],
    :round 14,
-   :summary "PA won by 38 ponts",
+   :summary "PA won by 38 points",
    :AwayTeamScore nil,
    :result {:pa {}, :gee {}},
    :score {:pa "", :gee ""},
