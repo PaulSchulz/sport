@@ -18,8 +18,8 @@
 (defn reload []
   (require ['sporting-fixtures.reports :as 'r] :reload))
 
-(defn run-tests []
-  (clojure.test/run-tests 'sporting-fixtures.reports))
+;;(defn run-tests []
+;;  (clojure.test/run-tests 'sporting-fixtures.reports))
 
 (defn help []
   (println ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
@@ -101,6 +101,7 @@
               :qf-4       "4"
               :sf-1       "1"
               :sf-2       "2"
+              :final      " "
               :gf         " "
               "")
             "-")))

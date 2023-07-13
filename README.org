@@ -1,3 +1,4 @@
+
 * Sporting Fixtures
 ** Contents :TOC:
 - [[#sporting-fixtures][Sporting Fixtures]]
@@ -45,9 +46,11 @@ See: https://fixturedownload.com/
 In the data directory, there is a bash script (get-fixtures) which will download
 the JSON fixtures file from the above website.
 
-#+begin_src shell
 Usage: ./get-fixtures EVENT
 
+#+begin_src shell
+  ./get-fixtures EVENT
+  
   Please supply a SPORTID argument
   Visit https://fixturedownload.com for available data sets
 #+end_src

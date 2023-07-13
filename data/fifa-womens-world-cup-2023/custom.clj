@@ -11,6 +11,14 @@
     "1F" :1f
     "1G" :1g
     "1H" :1h
+    "2A" :2a
+    "2B" :2b
+    "2C" :2c
+    "2D" :2d
+    "2E" :2e
+    "2F" :2f
+    "2G" :2g
+    "2H" :2h
     "Argentina" :arg
     "Australia" :aus
     "Brazil" :bra
@@ -22,9 +30,9 @@
     "England" :eng
     "France" :fra
     "Germany" :ger
-    "Group A Play-Off Winner" :group-a-play-off-winner
-    "Group B Play-Off Winner" :group-b-play-off-winner
-    "Group C Play-Off Winner" :group-c-play-off-winner
+    "Portugal" :por
+    "Haiti" :hai
+    "Panama" :pan
     "Italy" :ita
     "Jamaica" :jam
     "Japan" :jpn

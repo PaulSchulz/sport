@@ -80,7 +80,7 @@
    :AwayTeamScore nil,
    :HomeTeam "England",
    :DateUtc "2023-07-22 09:30:00Z",
-   :AwayTeam "Group B Play-Off Winner",
+   :AwayTeam "Haiti",
    :Location "Brisbane Stadium",
    :MatchNumber 7}
   {:RoundNumber 1,
@@ -107,7 +107,7 @@
    :AwayTeamScore nil,
    :HomeTeam "Netherlands",
    :DateUtc "2023-07-23 07:30:00Z",
-   :AwayTeam "Group A Play-Off Winner",
+   :AwayTeam "Portugal",
    :Location "Dunedin Stadium",
    :MatchNumber 10}
   {:RoundNumber 1,
@@ -143,7 +143,7 @@
    :AwayTeamScore nil,
    :HomeTeam "Brazil",
    :DateUtc "2023-07-24 11:00:00Z",
-   :AwayTeam "Group C Play-Off Winner",
+   :AwayTeam "Panama",
    :Location "Hindmarsh Stadium",
    :MatchNumber 13}
   {:RoundNumber 1,
@@ -213,7 +213,7 @@
    :Group "Group E",
    :HomeTeamScore nil,
    :AwayTeamScore nil,
-   :HomeTeam "Group A Play-Off Winner",
+   :HomeTeam "Portugal",
    :DateUtc "2023-07-27 07:30:00Z",
    :AwayTeam "Vietnam",
    :Location "Waikato Stadium",
@@ -251,7 +251,7 @@
    :AwayTeamScore nil,
    :HomeTeam "China PR",
    :DateUtc "2023-07-28 11:00:00Z",
-   :AwayTeam "Group B Play-Off Winner",
+   :AwayTeam "Haiti",
    :Location "Hindmarsh Stadium",
    :MatchNumber 26}
   {:RoundNumber 2,
@@ -276,7 +276,7 @@
    :Group "Group F",
    :HomeTeamScore nil,
    :AwayTeamScore nil,
-   :HomeTeam "Group C Play-Off Winner",
+   :HomeTeam "Panama",
    :DateUtc "2023-07-29 12:30:00Z",
    :AwayTeam "Jamaica",
    :Location "Perth Rectangular Stadium",
@@ -357,7 +357,7 @@
    :Group "Group E",
    :HomeTeamScore nil,
    :AwayTeamScore nil,
-   :HomeTeam "Group A Play-Off Winner",
+   :HomeTeam "Portugal",
    :DateUtc "2023-08-01 07:00:00Z",
    :AwayTeam "USA",
    :Location "Eden Park",
@@ -384,7 +384,7 @@
    :Group "Group D",
    :HomeTeamScore nil,
    :AwayTeamScore nil,
-   :HomeTeam "Group B Play-Off Winner",
+   :HomeTeam "Haiti",
    :DateUtc "2023-08-01 11:00:00Z",
    :AwayTeam "Denmark",
    :Location "Perth Rectangular Stadium",
@@ -411,7 +411,7 @@
    :Group "Group F",
    :HomeTeamScore nil,
    :AwayTeamScore nil,
-   :HomeTeam "Group C Play-Off Winner",
+   :HomeTeam "Panama",
    :DateUtc "2023-08-02 10:00:00Z",
    :AwayTeam "France",
    :Location "Sydney Football Stadium",
@@ -591,6 +591,8 @@
  ({:RoundNumber 1,
    :Group "Group A",
    :game 1,
+   :stage :group
+   :group :group-a
    :HomeTeamScore nil,
    :teams [:nzl :nor],
    :round 1,
@@ -608,6 +610,8 @@
   {:RoundNumber 1,
    :Group "Group B",
    :game 2,
+   :stage :group
+   :group :group-b
    :HomeTeamScore nil,
    :teams [:aus :irl],
    :round 1,
@@ -625,6 +629,8 @@
   {:RoundNumber 1,
    :Group "Group B",
    :game 4,
+   :stage :group
+   :group :group-b
    :HomeTeamScore nil,
    :teams [:nig :can],
    :round 1,
@@ -642,6 +648,8 @@
   {:RoundNumber 1,
    :Group "Group A",
    :game 3,
+   :stage :group
+   :group :group-a
    :HomeTeamScore nil,
    :teams [:phi :sui],
    :round 1,
@@ -659,6 +667,8 @@
   {:RoundNumber 1,
    :Group "Group C",
    :game 5,
+   :stage :group
+   :group :group-c
    :HomeTeamScore nil,
    :teams [:esp :cos],
    :round 1,
@@ -676,6 +686,8 @@
   {:RoundNumber 1,
    :Group "Group E",
    :game 9,
+   :stage :group
+   :group :group-e
    :HomeTeamScore nil,
    :teams [:usa :vie],
    :round 1,
@@ -693,6 +705,8 @@
   {:RoundNumber 1,
    :Group "Group C",
    :game 6,
+   :stage :group
+   :group :group-c
    :HomeTeamScore nil,
    :teams [:zam :jpn],
    :round 1,
@@ -710,23 +724,27 @@
   {:RoundNumber 1,
    :Group "Group D",
    :game 7,
+   :stage :group
+   :group :group-e
    :HomeTeamScore nil,
-   :teams [:eng :ptb],
+   :teams [:eng :hai],
    :round 1,
    :summary "",
    :AwayTeamScore nil,
-   :result {:eng {}, :ptb {}},
-   :score {:eng "", :ptb ""},
+   :result {:eng {}, :hai {}},
+   :score {:eng "", :hai ""},
    :comment "",
    :HomeTeam "England",
    :DateUtc "2023-07-22 09:30:00Z",
-   :scoreboard {:eng "", :ptb ""},
-   :AwayTeam "Group B Play-Off Winner",
+   :scoreboard {:eng "", :hai ""},
+   :AwayTeam "Haiti",
    :Location "Brisbane Stadium",
    :MatchNumber 7}
   {:RoundNumber 1,
    :Group "Group D",
    :game 8,
+   :stage :group
+   :group :group-d
    :HomeTeamScore nil,
    :teams [:den :chn],
    :round 1,
@@ -744,6 +762,8 @@
   {:RoundNumber 1,
    :Group "Group G",
    :game 12,
+   :stage :group
+   :group :group-g
    :HomeTeamScore nil,
    :teams [:swe :rsa],
    :round 1,
@@ -761,23 +781,27 @@
   {:RoundNumber 1,
    :Group "Group E",
    :game 10,
+   :stage :group
+   :group :group-e
    :HomeTeamScore nil,
-   :teams [:ned :pta],
+   :teams [:ned :por],
    :round 1,
    :summary "",
    :AwayTeamScore nil,
-   :result {:ned {}, :pta {}},
-   :score {:ned "", :pta ""},
+   :result {:ned {}, :por {}},
+   :score {:ned "", :por ""},
    :comment "",
    :HomeTeam "Netherlands",
    :DateUtc "2023-07-23 07:30:00Z",
-   :scoreboard {:ned "", :pta ""},
-   :AwayTeam "Group A Play-Off Winner",
+   :scoreboard {:ned "", :por ""},
+   :AwayTeam "Portugal",
    :Location "Dunedin Stadium",
    :MatchNumber 10}
   {:RoundNumber 1,
    :Group "Group F",
    :game 11,
+   :stage :group
+   :group :group-f
    :HomeTeamScore nil,
    :teams [:fra :jam],
    :round 1,
@@ -795,6 +819,8 @@
   {:RoundNumber 1,
    :Group "Group G",
    :game 14,
+   :stage :group
+   :group :group-g
    :HomeTeamScore nil,
    :teams [:ita :arg],
    :round 1,
@@ -812,6 +838,8 @@
   {:RoundNumber 1,
    :Group "Group H",
    :game 15,
+   :stage :group
+   :group :group-h
    :HomeTeamScore nil,
    :teams [:ger :mar],
    :round 1,
@@ -829,23 +857,27 @@
   {:RoundNumber 1,
    :Group "Group F",
    :game 13,
+   :stage :group
+   :group :group-f
    :HomeTeamScore nil,
-   :teams [:bra :ptc],
+   :teams [:bra :pan],
    :round 1,
    :summary "",
    :AwayTeamScore nil,
-   :result {:bra {}, :ptc {}},
-   :score {:bra "", :ptc ""},
+   :result {:bra {}, :pan {}},
+   :score {:bra "", :pan ""},
    :comment "",
    :HomeTeam "Brazil",
    :DateUtc "2023-07-24 11:00:00Z",
-   :scoreboard {:bra "", :ptc ""},
-   :AwayTeam "Group C Play-Off Winner",
+   :scoreboard {:bra "", :pan ""},
+   :AwayTeam "Panama",
    :Location "Hindmarsh Stadium",
    :MatchNumber 13}
   {:RoundNumber 1,
    :Group "Group H",
    :game 16,
+   :stage :group
+   :group :group-h
    :HomeTeamScore nil,
    :teams [:col :kor],
    :round 1,
@@ -863,6 +895,8 @@
   {:RoundNumber 2,
    :Group "Group A",
    :game 17,
+   :stage :group
+   :group :group-a
    :HomeTeamScore nil,
    :teams [:nzl :phi],
    :round 2,
@@ -880,6 +914,8 @@
   {:RoundNumber 2,
    :Group "Group A",
    :game 18,
+   :stage :group
+   :group :group-a
    :HomeTeamScore nil,
    :teams [:sui :nor],
    :round 2,
@@ -897,6 +933,8 @@
   {:RoundNumber 2,
    :Group "Group C",
    :game 21,
+   :stage :group
+   :group :group-c
    :HomeTeamScore nil,
    :teams [:jpn :cos],
    :round 2,
@@ -914,6 +952,8 @@
   {:RoundNumber 2,
    :Group "Group C",
    :game 20,
+   :stage :group
+   :group :group-c
    :HomeTeamScore nil,
    :teams [:esp :zam],
    :round 2,
@@ -931,6 +971,8 @@
   {:RoundNumber 2,
    :Group "Group B",
    :game 19,
+   :stage :group
+   :group :group-b
    :HomeTeamScore nil,
    :teams [:can :irl],
    :round 2,
@@ -948,6 +990,8 @@
   {:RoundNumber 2,
    :Group "Group E",
    :game 23,
+   :stage :group
+   :group :group-e
    :HomeTeamScore nil,
    :teams [:usa :ned],
    :round 2,
@@ -965,23 +1009,27 @@
   {:RoundNumber 2,
    :Group "Group E",
    :game 24,
+   :stage :group
+   :group :group-e
    :HomeTeamScore nil,
-   :teams [:pta :vie],
+   :teams [:por :vie],
    :round 2,
    :summary "",
    :AwayTeamScore nil,
-   :result {:pta {}, :vie {}},
-   :score {:pta "", :vie ""},
+   :result {:por {}, :vie {}},
+   :score {:por "", :vie ""},
    :comment "",
-   :HomeTeam "Group A Play-Off Winner",
+   :HomeTeam "Portugal",
    :DateUtc "2023-07-27 07:30:00Z",
-   :scoreboard {:pta "", :vie ""},
+   :scoreboard {:por "", :vie ""},
    :AwayTeam "Vietnam",
    :Location "Waikato Stadium",
    :MatchNumber 24}
   {:RoundNumber 2,
    :Group "Group B",
    :game 22,
+   :stage :group
+   :group :group-b
    :HomeTeamScore nil,
    :teams [:aus :nig],
    :round 2,
@@ -999,6 +1047,8 @@
   {:RoundNumber 2,
    :Group "Group G",
    :game 27,
+   :stage :group
+   :group :group-g
    :HomeTeamScore nil,
    :teams [:arg :rsa],
    :round 2,
@@ -1016,6 +1066,8 @@
   {:RoundNumber 2,
    :Group "Group D",
    :game 25,
+   :stage :group
+   :group :group-d
    :HomeTeamScore nil,
    :teams [:eng :den],
    :round 2,
@@ -1033,23 +1085,27 @@
   {:RoundNumber 2,
    :Group "Group D",
    :game 26,
+   :stage :group
+   :group :group-d
    :HomeTeamScore nil,
-   :teams [:chn :ptb],
+   :teams [:chn :hai],
    :round 2,
    :summary "",
    :AwayTeamScore nil,
-   :result {:chn {}, :ptb {}},
-   :score {:chn "", :ptb ""},
+   :result {:chn {}, :hai {}},
+   :score {:chn "", :hai ""},
    :comment "",
    :HomeTeam "China PR",
    :DateUtc "2023-07-28 11:00:00Z",
-   :scoreboard {:chn "", :ptb ""},
-   :AwayTeam "Group B Play-Off Winner",
+   :scoreboard {:chn "", :hai ""},
+   :AwayTeam "Haiti",
    :Location "Hindmarsh Stadium",
    :MatchNumber 26}
   {:RoundNumber 2,
    :Group "Group G",
    :game 30,
+   :stage :group
+   :group :group-g
    :HomeTeamScore nil,
    :teams [:swe :ita],
    :round 2,
@@ -1067,6 +1123,8 @@
   {:RoundNumber 2,
    :Group "Group F",
    :game 28,
+   :stage :group
+   :group :group-f
    :HomeTeamScore nil,
    :teams [:fra :bra],
    :round 2,
@@ -1084,23 +1142,27 @@
   {:RoundNumber 2,
    :Group "Group F",
    :game 29,
+   :stage :group
+   :group :group-f
    :HomeTeamScore nil,
-   :teams [:ptc :jam],
+   :teams [:pan :jam],
    :round 2,
    :summary "",
    :AwayTeamScore nil,
-   :result {:ptc {}, :jam {}},
-   :score {:ptc "", :jam ""},
+   :result {:pan {}, :jam {}},
+   :score {:pan "", :jam ""},
    :comment "",
-   :HomeTeam "Group C Play-Off Winner",
+   :HomeTeam "Panama",
    :DateUtc "2023-07-29 12:30:00Z",
-   :scoreboard {:ptc "", :jam ""},
+   :scoreboard {:pan "", :jam ""},
    :AwayTeam "Jamaica",
    :Location "Perth Rectangular Stadium",
    :MatchNumber 29}
   {:RoundNumber 2,
    :Group "Group H",
    :game 32,
+   :stage :group
+   :group :group-h
    :HomeTeamScore nil,
    :teams [:kor :mar],
    :round 2,
@@ -1118,6 +1180,8 @@
   {:RoundNumber 2,
    :Group "Group H",
    :game 31,
+   :stage :group
+   :group :group-h
    :HomeTeamScore nil,
    :teams [:ger :col],
    :round 2,
@@ -1135,6 +1199,8 @@
   {:RoundNumber 3,
    :Group "Group A",
    :game 33,
+   :stage :group
+   :group :group-a
    :HomeTeamScore nil,
    :teams [:sui :nzl],
    :round 3,
@@ -1152,6 +1218,8 @@
   {:RoundNumber 3,
    :Group "Group A",
    :game 34,
+   :stage :group
+   :group :group-a
    :HomeTeamScore nil,
    :teams [:nor :phi],
    :round 3,
@@ -1169,6 +1237,8 @@
   {:RoundNumber 3,
    :Group "Group C",
    :game 37,
+   :stage :group
+   :group :group-c
    :HomeTeamScore nil,
    :teams [:jpn :esp],
    :round 3,
@@ -1186,6 +1256,8 @@
   {:RoundNumber 3,
    :Group "Group C",
    :game 38,
+   :stage :group
+   :group :group-c
    :HomeTeamScore nil,
    :teams [:cos :zam],
    :round 3,
@@ -1203,6 +1275,8 @@
   {:RoundNumber 3,
    :Group "Group B",
    :game 35,
+   :stage :group
+   :group :group-b
    :HomeTeamScore nil,
    :teams [:can :aus],
    :round 3,
@@ -1220,6 +1294,8 @@
   {:RoundNumber 3,
    :Group "Group B",
    :game 36,
+   :stage :group
+   :group :group-b
    :HomeTeamScore nil,
    :teams [:irl :nig],
    :round 3,
@@ -1237,23 +1313,27 @@
   {:RoundNumber 3,
    :Group "Group E",
    :game 41,
+   :stage :group
+   :group :group-e
    :HomeTeamScore nil,
-   :teams [:pta :usa],
+   :teams [:por :usa],
    :round 3,
    :summary "",
    :AwayTeamScore nil,
-   :result {:pta {}, :usa {}},
-   :score {:pta "", :usa ""},
+   :result {:por {}, :usa {}},
+   :score {:por "", :usa ""},
    :comment "",
-   :HomeTeam "Group A Play-Off Winner",
+   :HomeTeam "Portugal",
    :DateUtc "2023-08-01 07:00:00Z",
-   :scoreboard {:pta "", :usa ""},
+   :scoreboard {:por "", :usa ""},
    :AwayTeam "USA",
    :Location "Eden Park",
    :MatchNumber 41}
   {:RoundNumber 3,
    :Group "Group E",
    :game 42,
+   :stage :group
+   :group :group-e
    :HomeTeamScore nil,
    :teams [:vie :ned],
    :round 3,
@@ -1271,6 +1351,8 @@
   {:RoundNumber 3,
    :Group "Group D",
    :game 39,
+   :stage :group
+   :group :group-d
    :HomeTeamScore nil,
    :teams [:chn :eng],
    :round 3,
@@ -1288,23 +1370,27 @@
   {:RoundNumber 3,
    :Group "Group D",
    :game 40,
+   :stage :group
+   :group :group-d
    :HomeTeamScore nil,
-   :teams [:ptb :den],
+   :teams [:hai :den],
    :round 3,
    :summary "",
    :AwayTeamScore nil,
-   :result {:ptb {}, :den {}},
-   :score {:ptb "", :den ""},
+   :result {:hai {}, :den {}},
+   :score {:hai "", :den ""},
    :comment "",
-   :HomeTeam "Group B Play-Off Winner",
+   :HomeTeam "Haiti",
    :DateUtc "2023-08-01 11:00:00Z",
-   :scoreboard {:ptb "", :den ""},
+   :scoreboard {:hai "", :den ""},
    :AwayTeam "Denmark",
    :Location "Perth Rectangular Stadium",
    :MatchNumber 40}
   {:RoundNumber 3,
    :Group "Group G",
    :game 45,
+   :stage :group
+   :group :group-g
    :HomeTeamScore nil,
    :teams [:arg :swe],
    :round 3,
@@ -1322,6 +1408,8 @@
   {:RoundNumber 3,
    :Group "Group G",
    :game 46,
+   :stage :group
+   :group :group-g
    :HomeTeamScore nil,
    :teams [:rsa :ita],
    :round 3,
@@ -1339,23 +1427,27 @@
   {:RoundNumber 3,
    :Group "Group F",
    :game 43,
+   :stage :group
+   :group :group-f
    :HomeTeamScore nil,
-   :teams [:ptc :fra],
+   :teams [:pan :fra],
    :round 3,
    :summary "",
    :AwayTeamScore nil,
-   :result {:ptc {}, :fra {}},
-   :score {:ptc "", :fra ""},
+   :result {:pan {}, :fra {}},
+   :score {:pan "", :fra ""},
    :comment "",
-   :HomeTeam "Group C Play-Off Winner",
+   :HomeTeam "Panama",
    :DateUtc "2023-08-02 10:00:00Z",
-   :scoreboard {:ptc "", :fra ""},
+   :scoreboard {:pan "", :fra ""},
    :AwayTeam "France",
    :Location "Sydney Football Stadium",
    :MatchNumber 43}
   {:RoundNumber 3,
    :Group "Group F",
    :game 44,
+   :stage :group
+   :group :group-f
    :HomeTeamScore nil,
    :teams [:jam :bra],
    :round 3,
@@ -1373,6 +1465,8 @@
   {:RoundNumber 3,
    :Group "Group H",
    :game 47,
+   :stage :group
+   :group :group-h
    :HomeTeamScore nil,
    :teams [:kor :ger],
    :round 3,
@@ -1390,6 +1484,8 @@
   {:RoundNumber 3,
    :Group "Group H",
    :game 48,
+   :stage :group
+   :group :group-h
    :HomeTeamScore nil,
    :teams [:mar :col],
    :round 3,
@@ -1407,142 +1503,160 @@
   {:RoundNumber 4,
    :Group nil,
    :game 49,
+   :stage :group-16
+   :group :group-16-1
    :HomeTeamScore nil,
-   :teams [:1a :away],
+   :teams [:1a :2c],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1a {}, :away {}},
-   :score {:1a "", :away ""},
+   :result {:1a {}, :2c {}},
+   :score {:1a "", :2c ""},
    :comment "",
    :HomeTeam "1A",
    :DateUtc "2023-08-05 05:00:00Z",
-   :scoreboard {:1a "", :away ""},
+   :scoreboard {:1a "", :2c ""},
    :AwayTeam "2C",
    :Location "Eden Park",
    :MatchNumber 49}
   {:RoundNumber 4,
    :Group nil,
    :game 50,
+   :stage :group-16
+   :group :group-16-2
    :HomeTeamScore nil,
-   :teams [:1c :away],
+   :teams [:1c :2a],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1c {}, :away {}},
-   :score {:1c "", :away ""},
+   :result {:1c {}, :2a {}},
+   :score {:1c "", :2a ""},
    :comment "",
    :HomeTeam "1C",
    :DateUtc "2023-08-05 08:00:00Z",
-   :scoreboard {:1c "", :away ""},
+   :scoreboard {:1c "", :2a ""},
    :AwayTeam "2A",
    :Location "Wellington Regional Stadium",
    :MatchNumber 50}
   {:RoundNumber 4,
    :Group nil,
    :game 51,
+   :stage :group-16
+   :group :group-16-3
    :HomeTeamScore nil,
-   :teams [:1e :away],
+   :teams [:1e :2g],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1e {}, :away {}},
-   :score {:1e "", :away ""},
+   :result {:1e {}, :2g {}},
+   :score {:1e "", :2g ""},
    :comment "",
    :HomeTeam "1E",
    :DateUtc "2023-08-06 02:00:00Z",
-   :scoreboard {:1e "", :away ""},
+   :scoreboard {:1e "", :2g ""},
    :AwayTeam "2G",
    :Location "Sydney Football Stadium",
    :MatchNumber 51}
   {:RoundNumber 4,
    :Group nil,
    :game 52,
+   :stage :group-16
+   :group :group-16-4
    :HomeTeamScore nil,
-   :teams [:1g :away],
+   :teams [:1g :2e],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1g {}, :away {}},
-   :score {:1g "", :away ""},
+   :result {:1g {}, :2e {}},
+   :score {:1g "", :2e ""},
    :comment "",
    :HomeTeam "1G",
    :DateUtc "2023-08-06 09:00:00Z",
-   :scoreboard {:1g "", :away ""},
+   :scoreboard {:1g "", :2e ""},
    :AwayTeam "2E",
    :Location "Melbourne Rectangular Stadium",
    :MatchNumber 52}
   {:RoundNumber 4,
    :Group nil,
    :game 54,
+   :stage :group-16
+   :group :group-16-5
    :HomeTeamScore nil,
-   :teams [:1d :away],
+   :teams [:1d :2b],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1d {}, :away {}},
-   :score {:1d "", :away ""},
+   :result {:1d {}, :2b {}},
+   :score {:1d "", :2b ""},
    :comment "",
    :HomeTeam "1D",
    :DateUtc "2023-08-07 07:30:00Z",
-   :scoreboard {:1d "", :away ""},
+   :scoreboard {:1d "", :2b ""},
    :AwayTeam "2B",
    :Location "Brisbane Stadium",
    :MatchNumber 54}
   {:RoundNumber 4,
    :Group nil,
    :game 53,
+   :stage :group-16
+   :group :group-16-6
    :HomeTeamScore nil,
-   :teams [:1b :away],
+   :teams [:1b :2d],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1b {}, :away {}},
-   :score {:1b "", :away ""},
+   :result {:1b {}, :2d {}},
+   :score {:1b "", :2d ""},
    :comment "",
    :HomeTeam "1B",
    :DateUtc "2023-08-07 10:30:00Z",
-   :scoreboard {:1b "", :away ""},
+   :scoreboard {:1b "", :2d ""},
    :AwayTeam "2D",
    :Location "Stadium Australia",
    :MatchNumber 53}
   {:RoundNumber 4,
    :Group nil,
    :game 56,
+   :stage :group-16
+   :group :group-16-7
    :HomeTeamScore nil,
-   :teams [:1h :away],
+   :teams [:1h :2f],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1h {}, :away {}},
-   :score {:1h "", :away ""},
+   :result {:1h {}, :2f {}},
+   :score {:1h "", :2f ""},
    :comment "",
    :HomeTeam "1H",
    :DateUtc "2023-08-08 08:00:00Z",
-   :scoreboard {:1h "", :away ""},
+   :scoreboard {:1h "", :2f ""},
    :AwayTeam "2F",
    :Location "Melbourne Rectangular Stadium",
    :MatchNumber 56}
   {:RoundNumber 4,
    :Group nil,
    :game 55,
+   :stage :group-16
+   :group :group-16-8
    :HomeTeamScore nil,
-   :teams [:1f :away],
+   :teams [:1f :2h],
    :round 4,
    :summary "",
    :AwayTeamScore nil,
-   :result {:1f {}, :away {}},
-   :score {:1f "", :away ""},
+   :result {:1f {}, :2h {}},
+   :score {:1f "", :2h ""},
    :comment "",
    :HomeTeam "1F",
    :DateUtc "2023-08-08 11:00:00Z",
-   :scoreboard {:1f "", :away ""},
+   :scoreboard {:1f "", :2h ""},
    :AwayTeam "2H",
    :Location "Hindmarsh Stadium",
    :MatchNumber 55}
   {:RoundNumber 5,
    :Group nil,
    :game 57,
+   :stage :quarter-final
+   :group :qf-1
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 5,
@@ -1560,6 +1674,8 @@
   {:RoundNumber 5,
    :Group nil,
    :game 58,
+   :stage :quarter-final
+   :group :qf-2
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 5,
@@ -1577,6 +1693,8 @@
   {:RoundNumber 5,
    :Group nil,
    :game 59,
+   :stage :quarter-final
+   :group :qf-3
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 5,
@@ -1594,6 +1712,8 @@
   {:RoundNumber 5,
    :Group nil,
    :game 60,
+   :stage :quarter-final
+   :group :qf-4
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 5,
@@ -1611,6 +1731,8 @@
   {:RoundNumber 6,
    :Group nil,
    :game 61,
+   :stage :semi-final,
+   :group :sf-1,
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 6,
@@ -1628,6 +1750,8 @@
   {:RoundNumber 6,
    :Group nil,
    :game 62,
+   :stage :semi-final,
+   :group :sf-2,
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 6,
@@ -1645,6 +1769,8 @@
   {:RoundNumber 7,
    :Group nil,
    :game 63,
+   :stage :third-play-off
+   :group :final
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 7,
@@ -1662,6 +1788,8 @@
   {:RoundNumber 7,
    :Group nil,
    :game 64,
+   :stage :final
+   :group :gf
    :HomeTeamScore nil,
    :teams [:home :away],
    :round 7,
