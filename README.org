@@ -21,6 +21,11 @@ Originally the data was stored and processed as YAML files.
 This was changed to use native Closure code files to remove the additional
 dependency. There is still a lot of legacy code and bit-rot hanging about.
 
+*** Example Reports
+#+begin_src shell
+  lein run -m sporting-fixtures.fifa-womens-world-cup-2023
+#+end_src
+
 ** Clojure Validation Scripts
 *Note:* This has all changed.
 
@@ -40,7 +45,6 @@ Useful Commands
 #+end_src 
 
 ** Data Sources
-
 See: https://fixturedownload.com/
 
 In the data directory, there is a bash script (get-fixtures) which will download
@@ -92,7 +96,6 @@ The template custom file looks like:
 #+end_src
 
 ** Modules
-
 *** Setup - sporting-fixtures.setup
 #+begin_src clojure
   (require ['sporting-fixtures.setup :as 's])

@@ -22,7 +22,7 @@
     [";;;;;;;;;;;;;;;;;;;"
      ";; Macros"
      ";;;;;;;;;;;;;;;;;;;"
-     "(setup)"
+     "(setup)  ;; Loads setup,process,process-results and reports modules"
      ""
      ";;;;;;;;;;;;;;;;;;;"
      ";; Modules"
@@ -49,9 +49,14 @@
      "  (println (event-stats-table (get-event)))"
      "  (println (event-group-table (get-event)))"
      ""
+     ";; FIFA 2023 Womens World Cup"
+     "  (require ['sporting-fixtures.fifa-womens-world-cup-2023 :as 'fifa])"
+     "  (fifa/report-print fifa/data)"
+     ""
      ";; From the command line - AFL "
      ";;"
      ";; From the command line"
+     ";;   lein run -m sporting-fixtures.fifa-womens-world-cup-2023"
      ";;   lein run -m sporting-fixtures.afl"
      ";;   lein run -m sporting-fixtures.bbl"
      ";;   lein run -m sporting-fixtures.aflw"
@@ -73,23 +78,38 @@
 (defn get-events []
   (str/split (:out (sh "bash" "-c" "ls data/20*.yml")) #"\n"))
 
+(defn get-events-new []
+  (str/split (:out (sh "bash" "-c" "ls data/*/data.clj")) #"\n"))
+
 (defn list-events []
-  (map #(println (format "* %s" %)) (get-events)))
+  (println "Old Style")
+  (println
+   (str/join "\n"
+             (map (fn [event] (format "* %s" event))
+                  (get-events))
+             ))
+
+  (println "New Style")
+  (println
+   (str/join "\n")
+   (map #(format "* %s" %) (get-events-new))
+   )
+  )
 
 (defn read-event [event]
-  (yaml/parse-string (slurp event)))
+(yaml/parse-string (slurp event)))
 
 (defn display-event [event]
-  (pprint (read-event event)))
+(pprint (read-event event)))
 
 (defn event-details [fmt event]
-  (let [data (read-event event)]
-    (format fmt
-            (str (:title data) " / " (:location data))
-            (:from (:date data))
-            (:to   (:date data))
-            (:code data)
-            (:version data))))
+(let [data (read-event event)]
+  (format fmt
+          (str (:title data) " / " (:location data))
+          (:from (:date data))
+          (:to   (:date data))
+          (:code data)
+          (:version data))))
 
 (defn events-table []
   (let [fmt "  #  %-56s  %-12s %-12s %16s %-6s"

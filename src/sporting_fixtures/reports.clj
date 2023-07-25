@@ -149,17 +149,57 @@
      (:summary game)
      "")))
 
+(defn format-game-result-football [game]
+  (let [home (nth (:teams game) 0)
+        away (nth (:teams game) 1)]
+    (str
+     (if (and (vector? (:teams game))
+              (= (count (:teams game)) 2))
+       (str
+        (format "%-3s  %-3s"
+                (str/upper-case (name home))
+                (str/upper-case (name away)))
+
+        (if (and (some? (:scoreboard game))
+                 (= (count (:scoreboard game)) 2)
+                 (not (= (vals (:scoreboard game)) ["" ""])))
+          (let [home-scoreboard (home (:scoreboard game))
+                away-scoreboard (away (:scoreboard game))]
+            (format "  /  %-3s %-4s  %-3s %-4s "
+                    (str/upper-case (name home))
+                    home-scoreboard
+                    (str/upper-case (name away))
+                    away-scoreboard))
+          )))
+     (if (and (some? (:summary game))
+              (string? (:summary game)))
+       (:summary game)
+       "")))
+  )
+
+
 (defn report-games [data]
+  ;; Conditional formatting
+  (if (= (:code (:details data)) :football)
+    (def report-format "%3s %3s  %s  %s  %s\n")
+    (def report-format "%3s %3s  %s  %s  %s\n")
+    )
+
   (str
    "-------------------------------------------------------------------------------\n"
    (apply str
           (map (fn [game]
-                 (format "%3s %3s  %s  %s  %s\n"
+                 (format report-format
                          (:MatchNumber game)
                          (:RoundNumber game)
                          (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
                          (convert-stage-group (:stage game) (:group game))
-                         (format-game-result game)))
+                         (if (= (:code (:details data)) :football)
+                           (format-game-result-football game)
+                           (format-game-result game)
+                           )
+
+                         ))
                (:results data)))
    "-------------------------------------------------------------------------------\n"))
 
@@ -172,3 +212,10 @@
   (let [file (str (-> data :details :datadir) "report-games.txt")]
     (println file)
     (sh/sh "/usr/bin/enscript" "-r" file)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn report-groups [data]
+  (let [groups (:groups data)]
+    (clojure.pprint/pprint groups)
+    )
+  )

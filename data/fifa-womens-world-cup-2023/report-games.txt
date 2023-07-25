@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
-  1   1  2023-07-20 Thu 04:30pm  G A  NZL  NOR
-  2   1  2023-07-20 Thu 07:30pm  G B  AUS  IRL
-  4   1  2023-07-21 Fri 12:00pm  G B  NIG  CAN
-  3   1  2023-07-21 Fri 02:30pm  G A  PHI  SUI
-  5   1  2023-07-21 Fri 05:00pm  G C  ESP  COS
-  9   1  2023-07-22 Sat 10:30am  G E  USA  VIE
-  6   1  2023-07-22 Sat 04:30pm  G C  ZAM  JPN
-  7   1  2023-07-22 Sat 07:00pm  G E  ENG  HAI
-  8   1  2023-07-22 Sat 09:30pm  G D  DEN  CHN
- 12   1  2023-07-23 Sun 02:30pm  G G  SWE  RSA
- 10   1  2023-07-23 Sun 05:00pm  G E  NED  POR
- 11   1  2023-07-23 Sun 07:30pm  G F  FRA  JAM
+  1   1  2023-07-20 Thu 04:30pm  G A  NZL  NOR  /  NZL 1     NOR 0    NZL won
+  2   1  2023-07-20 Thu 07:30pm  G B  AUS  IRL  /  AUS 1     IRL 0    AUS won
+  4   1  2023-07-21 Fri 12:00pm  G B  NIG  CAN  /  NIG 0 R   CAN 0    Draw
+  3   1  2023-07-21 Fri 02:30pm  G A  PHI  SUI  /  PHI 0     SUI 2    SUI won
+  5   1  2023-07-21 Fri 05:00pm  G C  ESP  COS  /  ESP 3     COS 0    ESP won
+  9   1  2023-07-22 Sat 10:30am  G E  USA  VIE  /  USA 3     VIE 0    USA won
+  6   1  2023-07-22 Sat 04:30pm  G C  ZAM  JPN  /  ZAM 0 R   JPN 5    JPN won
+  7   1  2023-07-22 Sat 07:00pm  G E  ENG  HAI  /  ENG 1     HAI 0    ENG won
+  8   1  2023-07-22 Sat 09:30pm  G D  DEN  CHN  /  DEN 1     CHN 0    DEN won
+ 12   1  2023-07-23 Sun 02:30pm  G G  SWE  RSA  /  SWE 2     RSA 1    SWE won
+ 10   1  2023-07-23 Sun 05:00pm  G E  NED  POR  /  NED 1     POR 0    NED won
+ 11   1  2023-07-23 Sun 07:30pm  G F  FRA  JAM  /  FRA 0     JAM 0 R  Draw
  14   1  2023-07-24 Mon 03:30pm  G G  ITA  ARG
  15   1  2023-07-24 Mon 06:00pm  G H  GER  MAR
  13   1  2023-07-24 Mon 08:30pm  G F  BRA  PAN
@@ -47,20 +47,20 @@
  44   3  2023-08-02 Wed 07:30pm  G F  JAM  BRA
  47   3  2023-08-03 Thu 07:30pm  G H  KOR  GER
  48   3  2023-08-03 Thu 07:30pm  G H  MAR  COL
- 49   4  2023-08-05 Sat 02:30pm  S 1  1A   2C 
- 50   4  2023-08-05 Sat 05:30pm  S 2  1C   2A 
- 51   4  2023-08-06 Sun 11:30am  S 3  1E   2G 
- 52   4  2023-08-06 Sun 06:30pm  S 4  1G   2E 
- 54   4  2023-08-07 Mon 05:00pm  S 5  1D   2B 
- 53   4  2023-08-07 Mon 08:00pm  S 6  1B   2D 
- 56   4  2023-08-08 Tue 05:30pm  S 7  1H   2F 
- 55   4  2023-08-08 Tue 08:30pm  S 8  1F   2H 
- 57   5  2023-08-11 Fri 10:30am  QF1  HOME  AWAY
- 58   5  2023-08-11 Fri 05:00pm  QF2  HOME  AWAY
- 59   5  2023-08-12 Sat 04:30pm  QF3  HOME  AWAY
- 60   5  2023-08-12 Sat 08:00pm  QF4  HOME  AWAY
- 61   6  2023-08-15 Tue 05:30pm  SF1  HOME  AWAY
- 62   6  2023-08-16 Wed 07:30pm  SF2  HOME  AWAY
- 63   7  2023-08-19 Sat 05:30pm  PO   HOME  AWAY
- 64   7  2023-08-20 Sun 07:30pm  GF   HOME  AWAY
+ 49   4  2023-08-05 Sat 02:30pm  S 1  GROUP-A-1  GROUP-C-2
+ 50   4  2023-08-05 Sat 05:30pm  S 2  GROUP-C-1  GROUP-A-2
+ 51   4  2023-08-06 Sun 11:30am  S 3  GROUP-E-1  GROUP-G-2
+ 52   4  2023-08-06 Sun 06:30pm  S 4  GROUP-G-1  GROUP-E-2
+ 54   4  2023-08-07 Mon 05:00pm  S 5  GROUP-D-1  GROUP-B-2
+ 53   4  2023-08-07 Mon 08:00pm  S 6  GROUP-B-1  GROUP-D-2
+ 56   4  2023-08-08 Tue 05:30pm  S 7  GROUP-H-1  GROUP-F-2
+ 55   4  2023-08-08 Tue 08:30pm  S 8  GROUP-F-1  GROUP-H-2
+ 57   5  2023-08-11 Fri 10:30am  QF1  GROUP-16-1  GROUP-16-3
+ 58   5  2023-08-11 Fri 05:00pm  QF2  GROUP-16-2  GROUP-16-4
+ 59   5  2023-08-12 Sat 04:30pm  QF3  GROUP-16-5  GROUP-16-7
+ 60   5  2023-08-12 Sat 08:00pm  QF4  GROUP-16-6  GROUP-16-8
+ 61   6  2023-08-15 Tue 05:30pm  SF1  QUARTER-FINAL-1  QUARTER-FINAL-2
+ 62   6  2023-08-16 Wed 07:30pm  SF2  QUARTER-FINAL-3  QUARTER-FINAL-4
+ 63   7  2023-08-19 Sat 05:30pm  PO   SEMI-FINAL-1-2  SEMI-FINAL-2-2
+ 64   7  2023-08-20 Sun 07:30pm  GF   SEMI-FINAL-1-1  SEMI-FINAL-2-1
 -------------------------------------------------------------------------------
