@@ -1,0 +1,60 @@
+Team   G W L D  F  A   D R P  Result    Path
+--------------------------------------------------------------------------------
+GROUP-A
+  SUI  2 1 0 1  2  0   2 0 4  GROUP      -  PHI  -  NOR NZL  - 
+  NZL  2 1 1 0  1  1   0 0 3  GROUP     NOR  -  PHI  -  SUI  - 
+  PHI  2 1 1 0  1  2  -1 0 3  GROUP      -  SUI NZL  -   -  NOR
+  NOR  2 0 1 1  0  1  -1 0 1  GROUP     NZL  -   -  SUI  -  PHI
+
+GROUP-B
+  CAN  2 1 0 1  2  1   1 0 4  GROUP      -  NGA IRL  -  AUS  - 
+  AUS  1 1 0 0  1  0   1 0 3  GROUP     IRL  -   -  NGR CAN  - 
+  NGA  1 0 0 1  0  0   0 1 1  GROUP      -  CAN  -  AUS  -  IRL
+  IRL  2 0 2 0  1  3  -2 0 0  GROUP     AUS  -  CAN  -   -  NGA
+
+GROUP-C
+  ESP  2 2 0 0  8  0   8 0 6  GROUP     CRC  -   -  ZAM JPN  - 
+  JPN  2 2 0 0  7  0   7 0 6  GROUP      -  ZAM CRC  -  ESP  - 
+  CRC  2 0 2 0  0  5  -5 0 0  GROUP     ESP  -  JPN  -   -  ZAM
+  ZAM  2 0 2 0  0 10 -10 1 0  GROUP      -  JPN  -  ESP  -  CRC
+
+GROUP-D
+  ENG  1 1 0 0  1  0   1 0 3  GROUP     HAI  -  DEN  -  CHN  - 
+  DEN  1 1 0 0  1  0   0 0 3  GROUP      -  CHN ENG  -   -  HAI
+  HAI  1 0 1 0  0  1  -1 0 0  GROUP     ENG  -   -  CHN  -  DEN
+  CHM  1 0 1 0  0  1  -1 0 0  GROUP      -  DEN  -  HAI ENG  - 
+
+GROUP-E
+  USA  1 1 0 0  3  0   3 0 3  GROUP     VIA  -  NED  -  POR  - 
+  NED  1 1 0 0  1  0   1 0 3  GROUP      -  POR USA  -   -  VIE
+  POR  1 0 1 0  0  1  -1 0 0  GROUP      -  NED  -  VIE USA  - 
+  VIE  1 0 1 0  0  3  -3 0 0  GROUP     USA  -   -  POR  -  NED
+
+GROUP-F
+  BRA  1 1 0 0  4  0   4 0 3  GROUP      -  PAN FRA  -   -  JAM
+  FRA  1 0 0 1  0  0   0 0 1  GROUP     JAM  -  BRA  -  PAN  - 
+  JAM  1 0 0 1  0  0   0 1 1  GROUP     FRA  -   -  PAN  -  BRA
+  PAN  1 0 1 0  0  4  -4 0 0  GROUP      -  BRA  -  JAM FRA  - 
+
+GROUP-G
+  SWE  1 1 0 0  2  1   1 0 3  GROUP     RSA  -   -  ITA ARG  - 
+  ITA  1 1 0 0  1  0   1 0 3  GROUP      -  ARG  -  SWE  -  RSA
+  RSA  1 0 1 0  1  2  -1 0 0  GROUP     SWE  -  ARG  -   -  ITA
+  ARG  1 0 1 0  0  1  -1 0 0  GROUP      -  ITA RSA  -  SWE  - 
+
+GROUP-H
+  GER  1 1 0 0  6  0   6 0 3  GROUP     MAR  -   -  COL KOR  - 
+  COL  1 1 0 0  2  0   2 0 3  GROUP      -  KOR  -  GER  -  MAR
+  KOR  1 0 1 0  0  2  -2 0 0  GROUP      -  COL MAR  -  GER  - 
+  MAR  1 0 1 0  0  6  -6 0 0  GROUP     GER  -  KOR  -   -  COL
+
+Key
+  G   - Games
+  W   - Wins
+  L   - Losses
+  D   - Draws
+  F   - Goals For
+  A   - Goals Against
+  D   - Goal Difference
+  R   - Red Cards
+  P   - Tournament Points

@@ -977,14 +977,14 @@
    :HomeTeamScore nil,
    :teams [:can :irl],
    :round 2,
-   :summary "",
+   :summary "CAN won",
    :AwayTeamScore nil,
    :result {:can {}, :irl {}},
    :score {:can "", :irl ""},
    :comment "",
    :HomeTeam "Canada",
    :DateUtc "2023-07-26 12:00:00Z",
-   :scoreboard {:can "", :irl ""},
+   :scoreboard {:can "2", :irl "1"},
    :AwayTeam "Republic of Ireland",
    :Location "Perth Rectangular Stadium",
    :MatchNumber 19}
@@ -1807,46 +1807,46 @@
    :MatchNumber 64}),
 
  :groups
- ;; Played, Won, Lost, Draw, For, Against, Diff, Red
- {:group-a {:nzl [2 1 1 0 1 1   0 0 3 :group [:nor nil  :phi nil  :sui nil]]
-            :nor [2 0 1 1 0 1  -1 0 1 :group [:nzl nil  nil  :sui nil  :phi]]
-            :phi [2 1 1 0 1 2  -1 0 3 :group [nil  :sui :nzl nil  nil  :nor]]
-            :sui [2 1 0 1 2 0   2 0 4 :group [nil  :phi nil  :nor :nzl nil]]
+ ;; Played, Won, Lost, Draw, For, Against, Diff, Red, Points, Result, Path
+ {:group-a {:nzl [2 1 1 0  1  1   0 0 3 :group [:nor nil  :phi nil  :sui nil]]
+            :nor [2 0 1 1  0  1  -1 0 1 :group [:nzl nil  nil  :sui nil  :phi]]
+            :phi [2 1 1 0  1  2  -1 0 3 :group [nil  :sui :nzl nil  nil  :nor]]
+            :sui [2 1 0 1  2  0   2 0 4 :group [nil  :phi nil  :nor :nzl nil]]
             }
-  :group-b {:aus [1 1 0 0 1 0   1 0 3 :group [:irl nil  nil  :ngr :can nil]]
-            :irl [1 0 1 0 0 1  -1 0 0 :group [:aus nil  :can nil  nil  :nga]]
-            :nga [1 0 0 1 0 0   0 1 1 :group [nil  :can nil  :aus nil  :irl]]
-            :can [1 0 0 1 0 0   0 0 1 :group [nil  :nga :irl nil  :aus nil]]
+  :group-b {:aus [1 1 0 0  1  0   1 0 3 :group [:irl nil  nil  :ngr :can nil]]
+            :irl [2 0 2 0  1  3  -2 0 0 :group [:aus nil  :can nil  nil  :nga]]
+            :nga [1 0 0 1  0  0   0 1 1 :group [nil  :can nil  :aus nil  :irl]]
+            :can [2 1 0 1  2  1   1 0 4 :group [nil  :nga :irl nil  :aus nil]]
             }
-  :group-c {:esp [1 1 0 0 3 0   3 0 3 :group [:crc nil  nil  :zam :jpn nil]]
-            :crc [1 0 1 0 0 3  -3 0 0 :group [:esp nil  :jpn nil  nil  :zam]]
-            :zam [1 0 1 0 0 5  -5 1 0 :group [nil  :jpn nil  :esp nil  :crc]]
-            :jpn [1 1 0 0 5 0   5 0 3 :group [nil  :zam :crc nil  :esp nil]]
+  :group-c {:esp [2 2 0 0  8  0   8 0 6 :group [:crc nil  nil  :zam :jpn nil]]
+            :crc [2 0 2 0  0  5  -5 0 0 :group [:esp nil  :jpn nil  nil  :zam]]
+            :zam [2 0 2 0  0 10 -10 1 0 :group [nil  :jpn nil  :esp nil  :crc]]
+            :jpn [2 2 0 0  7  0   7 0 6 :group [nil  :zam :crc nil  :esp nil]]
             }
-  :group-d {:eng [1 1 0 0 1 0   1 0 3 :group [:hai nil  :den nil  :chn nil]]
-            :hai [1 0 1 0 0 1  -1 0 0 :group [:eng nil  nil  :chn nil  :den]]
-            :den [1 1 0 0 1 0   0 0 3 :group [nil  :chn :eng nil  nil  :hai]]
-            :chm [1 0 1 0 0 1  -1 0 0 :group [nil  :den nil  :hai :eng nil]]
+  :group-d {:eng [1 1 0 0  1  0   1 0 3 :group [:hai nil  :den nil  :chn nil]]
+            :hai [1 0 1 0  0  1  -1 0 0 :group [:eng nil  nil  :chn nil  :den]]
+            :den [1 1 0 0  1  0   0 0 3 :group [nil  :chn :eng nil  nil  :hai]]
+            :chm [1 0 1 0  0  1  -1 0 0 :group [nil  :den nil  :hai :eng nil]]
             }
-  :group-e {:usa [1 1 0 0 3 0   3 0 3 :group [:via nil  :ned  nil  :por nil]]
-            :vie [1 0 1 0 0 3  -3 0 0 :group [:usa nil  nil   :por nil  :ned]]
-            :ned [1 1 0 0 1 0   1 0 3 :group [nil  :por :usa  nil  nil  :vie]]
-            :por [1 0 1 0 0 1  -1 0 0 :group [nil  :ned nil   :vie :usa nil]]
+  :group-e {:usa [1 1 0 0  3  0   3 0 3 :group [:via nil  :ned  nil  :por nil]]
+            :vie [1 0 1 0  0  3  -3 0 0 :group [:usa nil  nil   :por nil  :ned]]
+            :ned [1 1 0 0  1  0   1 0 3 :group [nil  :por :usa  nil  nil  :vie]]
+            :por [1 0 1 0  0  1  -1 0 0 :group [nil  :ned nil   :vie :usa nil]]
             }
-  :group-f {:fra [1 0 0 1 0 0   0 0 1 :group [:jam nil  :bra nil  :pan nil]]
-            :jam [1 0 0 1 0 0   0 1 1 :group [:fra nil  nil  :pan nil  :bra]]
-            :bra [1 1 0 0 4 0   4 0 3 :group [nil  :pan :fra nil  nil  :jam]]
-            :pan [1 0 1 0 0 4  -4 0 0 :group [nil  :bra nil  :jam :fra nil]]
+  :group-f {:fra [1 0 0 1  0  0   0 0 1 :group [:jam nil  :bra nil  :pan nil]]
+            :jam [1 0 0 1  0  0   0 1 1 :group [:fra nil  nil  :pan nil  :bra]]
+            :bra [1 1 0 0  4  0   4 0 3 :group [nil  :pan :fra nil  nil  :jam]]
+            :pan [1 0 1 0  0  4  -4 0 0 :group [nil  :bra nil  :jam :fra nil]]
             }
-  :group-g {:swe [1 1 0 0 2 1   1 0 3 :group [:rsa nil  nil  :ita :arg nil]]
-            :rsa [1 0 1 0 1 2  -1 0 0 :group [:swe nil  :arg nil  nil  :ita]]
-            :ita [1 1 0 0 1 0   1 0 3 :group [nil  :arg nil  :swe nil  :rsa]]
-            :arg [1 0 1 0 0 1  -1 0 0 :group [nil  :ita :rsa nil  :swe nil]]
+  :group-g {:swe [1 1 0 0  2  1   1 0 3 :group [:rsa nil  nil  :ita :arg nil]]
+            :rsa [1 0 1 0  1  2  -1 0 0 :group [:swe nil  :arg nil  nil  :ita]]
+            :ita [1 1 0 0  1  0   1 0 3 :group [nil  :arg nil  :swe nil  :rsa]]
+            :arg [1 0 1 0  0  1  -1 0 0 :group [nil  :ita :rsa nil  :swe nil]]
             }
-  :group-h {:ger [1 1 0 0 6 0   6 0 3 :group [:mar nil  nil  :col :kor nil]]
-            :mar [1 0 1 0 0 6  -6 0 0 :group [:ger nil  :kor nil  nil  :col]]
-            :col [1 1 0 0 2 0   2 0 3 :group [nil  :kor nil  :ger nil  :mar]]
-            :kor [1 0 1 0 0 2  -2 0 0 :group [nil  :col :mar nil  :ger nil]]
+  :group-h {:ger [1 1 0 0  6  0   6 0 3 :group [:mar nil  nil  :col :kor nil]]
+            :mar [1 0 1 0  0  6  -6 0 0 :group [:ger nil  :kor nil  nil  :col]]
+            :col [1 1 0 0  2  0   2 0 3 :group [nil  :kor nil  :ger nil  :mar]]
+            :kor [1 0 1 0  0  2  -2 0 0 :group [nil  :col :mar nil  :ger nil]]
             }
   }
 

@@ -80,8 +80,8 @@
   )
 
 (defn report-print [data]
-  (report-games-print data)
-  (report-teams-print data)
+  (println (report-games-print data))
+  (println (report-teams-print data))
   )
 
 (defn -main [& options]
