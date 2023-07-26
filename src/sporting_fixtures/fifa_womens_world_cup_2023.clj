@@ -34,32 +34,66 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (def event-name "fifa-womens-world-cup-2023")
+(def event-title "FIFA Womens's World Cup 2023")
 (def data (r/data-read-event event-name))
 
-(defn report [data]
-  (println event-name)
-  (println (r/report-games data))
+(defn report-games [data]
+  (println event-title)
+  (r/report-games data)
   )
 
-(defn report-save [data]
+(defn report-teams [data]
+  (println event-title)
+  (r/report-teams data)
+  )
+
+(defn report [data]
+  (println event-title)
+  (println (r/report-games data))
+  (println (r/report-teams data))
+  )
+
+(defn report-games-save [data]
   (let [file (str (-> data :details :datadir) "report-games.txt")]
-    (spit file (r/report-games data))))
+    (spit file (r/report-games data))
+    ))
+
+(defn report-teams-save [data]
+  (let [file (str (-> data :details :datadir) "report-teams.txt")]
+    (spit file (r/report-teams data))
+    ))
+
+(defn report-save [data]
+  (report-games-save data)
+  (report-teams-save data))
+
+(defn report-games-print [data]
+  (let [file (str (-> data :details :datadir) "report-games.txt")]
+    (println "Printing games report")
+    (sh/sh "/usr/bin/enscript" "-B" "-l" "--margins=0:0:0:0" file))
+  )
+
+(defn report-teams-print [data]
+  (let [file (str (-> data :details :datadir) "report-teams.txt")]
+    (println "Printing teams report")
+    (sh/sh "/usr/bin/enscript" "-B" "-l" "--margins=0:0:0:0" file))
+  )
 
 (defn report-print [data]
-  (let [file (str (-> data :details :datadir) "report-games.txt")]
-    (println file)
-    (sh/sh "/usr/bin/enscript" "-B" "-l" "--margins=0:0:0:0" file)))
+  (report-games-print data)
+  (report-teams-print data)
+  )
 
 (defn -main [& options]
-  (println "-" options "-")
-  (let [command (if options
-                  (first options)
-                  nil)]
-    (case command
-      "help"         (-help)
-      "report"       (report data)
-      "report-save"  (report-save data)
-      "report-print" (report-print data)
-      (-help)
-      )
-    ))
+(println "-" options "-")
+(let [command (if options
+                (first options)
+                nil)]
+  (case command
+    "help"         (-help)
+    "report"       (report data)
+    "report-save"  (report-save data)
+    "report-print" (report-print data)
+    (-help)
+    )
+  ))

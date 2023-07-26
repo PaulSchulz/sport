@@ -214,8 +214,97 @@
     (sh/sh "/usr/bin/enscript" "-r" file)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn report-groups [data]
-  (let [groups (:groups data)]
-    (clojure.pprint/pprint groups)
+;; Football Reports Note: Double array is used for decomposition of arguments
+;; when used with 'map'.
+
+(defn stats-header []
+  (str
+   "Team   G W L D  F  A   D R P  Result    Path\n"
+   "--------------------------------------------------------------------------------\n"
+   )
+  )
+
+(defn stats-key []
+  (str
+   (str/join "\n"
+             ["Key"
+              "  G   - Games"
+              "  W   - Wins"
+              "  L   - Losses"
+              "  D   - Draws"
+              "  F   - Goals For"
+              "  A   - Goals Against"
+              "  D   - Goal Difference"
+              "  R   - Red Cards"
+              "  P   - Tournament Points"])
+   )
+  )
+
+(defn path-string [path]
+  (str/join " "
+            (map (fn [match] (if match
+                              (str/upper-case (name match))
+                              " - "
+                              ))
+                 path)
+            )
+  )
+
+(defn stats-team [[team results]]
+  (str
+   (format "  %-5s"
+           (str/upper-case (name team)))
+   (format "%d %d %d %d %2d %2d %3d %d %d  "
+           (nth results 0)
+           (nth results 1)
+           (nth results 2)
+           (nth results 3)
+           (nth results 4)
+           (nth results 5)
+           (nth results 6)
+           (nth results 7)
+           (nth results 8)
+           )
+   (format "%-8s  "
+           (if (nth results 9)
+             (str/upper-case (name (nth results 9)))))
+   (format "%s"
+           (if (nth results 10)
+             (path-string (nth results 10))))
+   "\n"
+   )
+  )
+
+;; Used to sort teams in group list.
+(defn group-sort [[id team]]
+  (let [points (nth team 8)
+        diff   (nth team 6)
+        red    (nth team 7)]
+    ;; Use negative to sort by 'most' first.
+    [(- points) (- diff) red]
     )
+  )
+
+(defn stats-group [[group teams]]
+  (str
+   (format "%s\n" (str/upper-case (name group)))
+   (apply str (map stats-team (sort-by group-sort teams)))
+   "\n"
+   )
+  )
+
+(defn stats-groups [data]
+  (let [groups (:groups data)]
+    (str
+     (stats-header)
+     ;; (clojure.pprint/pprint groups)
+     (apply str
+            (map stats-group groups)
+            )
+     (stats-key)
+     ))
+  )
+
+(defn report-teams [data]
+  (stats-groups data)
   )
