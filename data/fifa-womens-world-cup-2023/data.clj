@@ -996,14 +996,14 @@
    :HomeTeamScore nil,
    :teams [:usa :ned],
    :round 2,
-   :summary "",
+   :summary "Draw",
    :AwayTeamScore nil,
    :result {:usa {}, :ned {}},
    :score {:usa "", :ned ""},
    :comment "",
    :HomeTeam "USA",
    :DateUtc "2023-07-27 01:00:00Z",
-   :scoreboard {:usa "", :ned ""},
+   :scoreboard {:usa "1", :ned "1"},
    :AwayTeam "Netherlands",
    :Location "Wellington Regional Stadium",
    :MatchNumber 23}
@@ -1015,14 +1015,14 @@
    :HomeTeamScore nil,
    :teams [:por :vie],
    :round 2,
-   :summary "",
+   :summary "Por won",
    :AwayTeamScore nil,
    :result {:por {}, :vie {}},
    :score {:por "", :vie ""},
    :comment "",
    :HomeTeam "Portugal",
    :DateUtc "2023-07-27 07:30:00Z",
-   :scoreboard {:por "", :vie ""},
+   :scoreboard {:por "2", :vie "0"},
    :AwayTeam "Vietnam",
    :Location "Waikato Stadium",
    :MatchNumber 24}
@@ -1034,14 +1034,14 @@
    :HomeTeamScore nil,
    :teams [:aus :ngr],
    :round 2,
-   :summary "",
+   :summary "NGR won",
    :AwayTeamScore nil,
    :result {:aus {}, :ngr {}},
    :score {:aus "", :ngr ""},
    :comment "",
    :HomeTeam "Australia",
    :DateUtc "2023-07-27 10:00:00Z",
-   :scoreboard {:aus "", :ngr ""},
+   :scoreboard {:aus "2", :ngr "3"},
    :AwayTeam "Nigeria",
    :Location "Brisbane Stadium",
    :MatchNumber 22}
@@ -1053,14 +1053,14 @@
    :HomeTeamScore nil,
    :teams [:arg :rsa],
    :round 2,
-   :summary "",
+   :summary "Draw",
    :AwayTeamScore nil,
    :result {:arg {}, :rsa {}},
    :score {:arg "", :rsa ""},
    :comment "",
    :HomeTeam "Argentina",
    :DateUtc "2023-07-28 00:00:00Z",
-   :scoreboard {:arg "", :rsa ""},
+   :scoreboard {:arg "2", :rsa "2"},
    :AwayTeam "South Africa",
    :Location "Dunedin Stadium",
    :MatchNumber 27}
@@ -1072,14 +1072,14 @@
    :HomeTeamScore nil,
    :teams [:eng :den],
    :round 2,
-   :summary "",
+   :summary "ENG won",
    :AwayTeamScore nil,
    :result {:eng {}, :den {}},
    :score {:eng "", :den ""},
    :comment "",
    :HomeTeam "England",
    :DateUtc "2023-07-28 08:30:00Z",
-   :scoreboard {:eng "", :den ""},
+   :scoreboard {:eng "1", :den "0"},
    :AwayTeam "Denmark",
    :Location "Sydney Football Stadium",
    :MatchNumber 25}
@@ -1091,14 +1091,14 @@
    :HomeTeamScore nil,
    :teams [:chn :hai],
    :round 2,
-   :summary "",
+   :summary "CHN won",
    :AwayTeamScore nil,
    :result {:chn {}, :hai {}},
    :score {:chn "", :hai ""},
    :comment "",
    :HomeTeam "China PR",
    :DateUtc "2023-07-28 11:00:00Z",
-   :scoreboard {:chn "", :hai ""},
+   :scoreboard {:chn "1 R", :hai "0"},
    :AwayTeam "Haiti",
    :Location "Hindmarsh Stadium",
    :MatchNumber 26}
@@ -1110,14 +1110,14 @@
    :HomeTeamScore nil,
    :teams [:swe :ita],
    :round 2,
-   :summary "",
+   :summary "SWE won",
    :AwayTeamScore nil,
    :result {:swe {}, :ita {}},
    :score {:swe "", :ita ""},
    :comment "",
    :HomeTeam "Sweden",
    :DateUtc "2023-07-29 07:30:00Z",
-   :scoreboard {:swe "", :ita ""},
+   :scoreboard {:swe "5", :ita "0"},
    :AwayTeam "Italy",
    :Location "Wellington Regional Stadium",
    :MatchNumber 30}
@@ -1129,14 +1129,14 @@
    :HomeTeamScore nil,
    :teams [:fra :bra],
    :round 2,
-   :summary "",
+   :summary "FRA won",
    :AwayTeamScore nil,
    :result {:fra {}, :bra {}},
    :score {:fra "", :bra ""},
    :comment "",
    :HomeTeam "France",
    :DateUtc "2023-07-29 10:00:00Z",
-   :scoreboard {:fra "", :bra ""},
+   :scoreboard {:fra "2", :bra "1"},
    :AwayTeam "Brazil",
    :Location "Brisbane Stadium",
    :MatchNumber 28}
@@ -1148,14 +1148,14 @@
    :HomeTeamScore nil,
    :teams [:pan :jam],
    :round 2,
-   :summary "",
+   :summary "JAM won",
    :AwayTeamScore nil,
    :result {:pan {}, :jam {}},
    :score {:pan "", :jam ""},
    :comment "",
    :HomeTeam "Panama",
    :DateUtc "2023-07-29 12:30:00Z",
-   :scoreboard {:pan "", :jam ""},
+   :scoreboard {:pan "0", :jam "1"},
    :AwayTeam "Jamaica",
    :Location "Perth Rectangular Stadium",
    :MatchNumber 29}
@@ -1167,14 +1167,14 @@
    :HomeTeamScore nil,
    :teams [:kor :mar],
    :round 2,
-   :summary "",
+   :summary "MOR won",
    :AwayTeamScore nil,
    :result {:kor {}, :mar {}},
    :score {:kor "", :mar ""},
    :comment "",
    :HomeTeam "Korea Republic",
    :DateUtc "2023-07-30 04:30:00Z",
-   :scoreboard {:kor "", :mar ""},
+   :scoreboard {:kor "0", :mar "1"},
    :AwayTeam "Morocco",
    :Location "Hindmarsh Stadium",
    :MatchNumber 32}
@@ -1186,14 +1186,14 @@
    :HomeTeamScore nil,
    :teams [:ger :col],
    :round 2,
-   :summary "",
+   :summary "COL won",
    :AwayTeamScore nil,
    :result {:ger {}, :col {}},
    :score {:ger "", :col ""},
    :comment "",
    :HomeTeam "Germany",
    :DateUtc "2023-07-30 09:30:00Z",
-   :scoreboard {:ger "", :col ""},
+   :scoreboard {:ger "1", :col "2"},
    :AwayTeam "Colombia",
    :Location "Sydney Football Stadium",
    :MatchNumber 31}
@@ -1205,14 +1205,14 @@
    :HomeTeamScore nil,
    :teams [:sui :nzl],
    :round 3,
-   :summary "",
+   :summary "Draw",
    :AwayTeamScore nil,
    :result {:sui {}, :nzl {}},
    :score {:sui "", :nzl ""},
    :comment "",
    :HomeTeam "Switzerland",
    :DateUtc "2023-07-30 07:00:00Z",
-   :scoreboard {:sui "", :nzl ""},
+   :scoreboard {:sui "0", :nzl "0"},
    :AwayTeam "New Zealand",
    :Location "Dunedin Stadium",
    :MatchNumber 33}
@@ -1224,14 +1224,14 @@
    :HomeTeamScore nil,
    :teams [:nor :phi],
    :round 3,
-   :summary "",
+   :summary "NOR won",
    :AwayTeamScore nil,
    :result {:nor {}, :phi {}},
    :score {:nor "", :phi ""},
    :comment "",
    :HomeTeam "Norway",
    :DateUtc "2023-07-30 07:00:00Z",
-   :scoreboard {:nor "", :phi ""},
+   :scoreboard {:nor "6", :phi "0 R"},
    :AwayTeam "Philippines",
    :Location "Eden Park",
    :MatchNumber 34}
@@ -1808,45 +1808,45 @@
 
  :groups
  ;; Played, Won, Lost, Draw, For, Against, Diff, Red, Points, Result, Path
- {:group-a {:nzl [2 1 1 0  1  1   0 0 3 :group [:nor nil  :phi nil  :sui nil]]
-            :nor [2 0 1 1  0  1  -1 0 1 :group [:nzl nil  nil  :sui nil  :phi]]
-            :phi [2 1 1 0  1  2  -1 0 3 :group [nil  :sui :nzl nil  nil  :nor]]
-            :sui [2 1 0 1  2  0   2 0 4 :group [nil  :phi nil  :nor :nzl nil]]
+ {:group-a {:nzl [3 1 1 1  1  1   0 0 4 :group [:*nor nil   :.phi nil   :+sui nil]]
+            :nor [3 1 1 1  6  1   5 0 4 :g16   [:.nzl nil   nil   :+sui nil  :*phi]]
+            :phi [3 1 2 0  1  8  -7 1 3 :group [nil   :.sui :*nzl nil   nil  :.nor]]
+            :sui [3 1 0 2  2  0   2 0 5 :g16   [nil   :*phi nil   :+nor :+nzl nil]]
             }
-  :group-b {:aus [1 1 0 0  1  0   1 0 3 :group [:irl nil  nil  :ngr :can nil]]
-            :irl [2 0 2 0  1  3  -2 0 0 :group [:aus nil  :can nil  nil  :nga]]
-            :nga [1 0 0 1  0  0   0 1 1 :group [nil  :can nil  :aus nil  :irl]]
-            :can [2 1 0 1  2  1   1 0 4 :group [nil  :nga :irl nil  :aus nil]]
+  :group-b {:aus [2 1 1 0  3  3   0 0 3 :group [:*irl nil  nil  :.ngr :_can nil]]
+            :irl [2 0 2 0  1  3  -2 0 0 :group [:.aus nil  :.can nil  nil  :_nga]]
+            :nga [2 1 0 1  3  2   1 1 4 :group [nil  :+can nil  :*aus nil  :_irl]]
+            :can [2 1 0 1  2  1   1 0 4 :group [nil  :+nga :*irl nil  :_aus nil]]
             }
-  :group-c {:esp [2 2 0 0  8  0   8 0 6 :group [:crc nil  nil  :zam :jpn nil]]
-            :crc [2 0 2 0  0  5  -5 0 0 :group [:esp nil  :jpn nil  nil  :zam]]
-            :zam [2 0 2 0  0 10 -10 1 0 :group [nil  :jpn nil  :esp nil  :crc]]
-            :jpn [2 2 0 0  7  0   7 0 6 :group [nil  :zam :crc nil  :esp nil]]
+  :group-c {:esp [2 2 0 0  8  0   8 0 6 :g16   [:*crc nil  nil  :*zam :_jpn nil]]
+            :crc [2 0 2 0  0  5  -5 0 0 :group [:.esp nil  :.jpn nil  nil  :_zam]]
+            :zam [2 0 2 0  0 10 -10 1 0 :group [nil  :.jpn nil  :.esp nil  :_crc]]
+            :jpn [2 2 0 0  7  0   7 0 6 :g16   [nil  :*zam :*crc nil  :_esp nil]]
             }
-  :group-d {:eng [1 1 0 0  1  0   1 0 3 :group [:hai nil  :den nil  :chn nil]]
-            :hai [1 0 1 0  0  1  -1 0 0 :group [:eng nil  nil  :chn nil  :den]]
-            :den [1 1 0 0  1  0   0 0 3 :group [nil  :chn :eng nil  nil  :hai]]
-            :chm [1 0 1 0  0  1  -1 0 0 :group [nil  :den nil  :hai :eng nil]]
+  :group-d {:eng [2 2 0 0  2  0   2 0 6 :g16   [:*hai nil  :*den nil  :_chn nil]]
+            :hai [2 0 2 0  0  2  -2 0 0 :group [:.eng nil  nil  :.chn nil  :_den]]
+            :den [2 1 1 0  1  1   0 0 3 :group [nil  :*chn :.eng nil  nil  :_hai]]
+            :chn [2 1 1 0  1  1   0 0 3 :group [nil  :.den nil  :*hai :_eng nil]]
             }
-  :group-e {:usa [1 1 0 0  3  0   3 0 3 :group [:via nil  :ned  nil  :por nil]]
-            :vie [1 0 1 0  0  3  -3 0 0 :group [:usa nil  nil   :por nil  :ned]]
-            :ned [1 1 0 0  1  0   1 0 3 :group [nil  :por :usa  nil  nil  :vie]]
-            :por [1 0 1 0  0  1  -1 0 0 :group [nil  :ned nil   :vie :usa nil]]
+  :group-e {:usa [2 1 0 1  4  1   3 0 4 :group [:*via nil  :.ned  nil  :_por nil]]
+            :vie [2 0 2 0  0  5  -5 0 0 :group [:.usa nil  nil   :.por nil  :_ned]]
+            :ned [2 1 0 1  2  1   1 0 4 :group [nil  :*por :*usa  nil  nil  :_vie]]
+            :por [2 1 1 0  2  1   1 0 3 :group [nil  :.ned nil   :*vie :_usa nil]]
             }
-  :group-f {:fra [1 0 0 1  0  0   0 0 1 :group [:jam nil  :bra nil  :pan nil]]
-            :jam [1 0 0 1  0  0   0 1 1 :group [:fra nil  nil  :pan nil  :bra]]
-            :bra [1 1 0 0  4  0   4 0 3 :group [nil  :pan :fra nil  nil  :jam]]
-            :pan [1 0 1 0  0  4  -4 0 0 :group [nil  :bra nil  :jam :fra nil]]
+  :group-f {:fra [2 1 0 1  2  1   1 0 4 :group [:+jam nil  :*bra nil  :_pan nil]]
+            :jam [2 1 0 1  1  0   1 1 4 :group [:+fra nil  nil  :*pan nil  :_bra]]
+            :bra [2 1 1 0  5  2   3 0 3 :group [nil  :*pan :.fra nil  nil  :_jam]]
+            :pan [2 0 2 0  0  5  -5 0 0 :group [nil  :.bra nil  :.jam :_fra nil]]
             }
-  :group-g {:swe [1 1 0 0  2  1   1 0 3 :group [:rsa nil  nil  :ita :arg nil]]
-            :rsa [1 0 1 0  1  2  -1 0 0 :group [:swe nil  :arg nil  nil  :ita]]
-            :ita [1 1 0 0  1  0   1 0 3 :group [nil  :arg nil  :swe nil  :rsa]]
-            :arg [1 0 1 0  0  1  -1 0 0 :group [nil  :ita :rsa nil  :swe nil]]
+  :group-g {:swe [2 2 0 0  7  1   6 0 6 :g16   [:*rsa nil  nil  :*ita :_arg nil]]
+            :rsa [2 0 1 1  3  4  -1 0 1 :group [:.swe nil  :+arg nil  nil  :_ita]]
+            :ita [2 1 1 0  3  4  -1 0 3 :group [nil  :*arg nil  :.swe nil  :_rsa]]
+            :arg [2 0 1 1  2  3  -1 0 1 :group [nil  :.ita :+rsa nil  :_swe nil]]
             }
-  :group-h {:ger [1 1 0 0  6  0   6 0 3 :group [:mar nil  nil  :col :kor nil]]
-            :mar [1 0 1 0  0  6  -6 0 0 :group [:ger nil  :kor nil  nil  :col]]
-            :col [1 1 0 0  2  0   2 0 3 :group [nil  :kor nil  :ger nil  :mar]]
-            :kor [1 0 1 0  0  2  -2 0 0 :group [nil  :col :mar nil  :ger nil]]
+  :group-h {:ger [2 1 1 0  7  2   5 0 3 :group [:*mar nil  nil  :.col :_kor nil]]
+            :mar [2 1 1 0  1  6  -5 0 3 :group [:.ger nil  :*kor nil  nil  :_col]]
+            :col [2 2 0 0  4  1   3 0 6 :g16   [nil  :*kor nil  :*ger nil  :_mar]]
+            :kor [2 0 2 0  0  3  -3 0 0 :group [nil  :.col :.mar nil  :_ger nil]]
             }
   }
 

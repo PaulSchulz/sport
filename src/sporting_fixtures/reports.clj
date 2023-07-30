@@ -278,10 +278,11 @@
 ;; Used to sort teams in group list.
 (defn group-sort [[id team]]
   (let [points (nth team 8)
+        goals-for (nth team 4)
         diff   (nth team 6)
         red    (nth team 7)]
     ;; Use negative to sort by 'most' first.
-    [(- points) (- diff) red]
+    [(- points) (- goals-for) (- diff) red]
     )
   )
 

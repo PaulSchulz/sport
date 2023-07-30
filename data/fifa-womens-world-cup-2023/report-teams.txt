@@ -1,52 +1,52 @@
 Team   G W L D  F  A   D R P  Result    Path
 --------------------------------------------------------------------------------
 GROUP-A
-  SUI  2 1 0 1  2  0   2 0 4  GROUP      -  PHI  -  NOR NZL  - 
-  NZL  2 1 1 0  1  1   0 0 3  GROUP     NOR  -  PHI  -  SUI  - 
-  PHI  2 1 1 0  1  2  -1 0 3  GROUP      -  SUI NZL  -   -  NOR
-  NOR  2 0 1 1  0  1  -1 0 1  GROUP     NZL  -   -  SUI  -  PHI
+  SUI  3 1 0 2  2  0   2 0 5  G16        -  *PHI  -  +NOR +NZL  - 
+  NOR  3 1 1 1  6  1   5 0 4  G16       .NZL  -   -  +SUI  -  *PHI
+  NZL  3 1 1 1  1  1   0 0 4  GROUP     *NOR  -  .PHI  -  +SUI  - 
+  PHI  3 1 2 0  1  8  -7 1 3  GROUP      -  .SUI *NZL  -   -  .NOR
 
 GROUP-B
-  CAN  2 1 0 1  2  1   1 0 4  GROUP      -  NGA IRL  -  AUS  - 
-  AUS  1 1 0 0  1  0   1 0 3  GROUP     IRL  -   -  NGR CAN  - 
-  NGA  1 0 0 1  0  0   0 1 1  GROUP      -  CAN  -  AUS  -  IRL
-  IRL  2 0 2 0  1  3  -2 0 0  GROUP     AUS  -  CAN  -   -  NGA
+  NGA  2 1 0 1  3  2   1 1 4  GROUP      -  +CAN  -  *AUS  -  _IRL
+  CAN  2 1 0 1  2  1   1 0 4  GROUP      -  +NGA *IRL  -  _AUS  - 
+  AUS  2 1 1 0  3  3   0 0 3  GROUP     *IRL  -   -  .NGR _CAN  - 
+  IRL  2 0 2 0  1  3  -2 0 0  GROUP     .AUS  -  .CAN  -   -  _NGA
 
 GROUP-C
-  ESP  2 2 0 0  8  0   8 0 6  GROUP     CRC  -   -  ZAM JPN  - 
-  JPN  2 2 0 0  7  0   7 0 6  GROUP      -  ZAM CRC  -  ESP  - 
-  CRC  2 0 2 0  0  5  -5 0 0  GROUP     ESP  -  JPN  -   -  ZAM
-  ZAM  2 0 2 0  0 10 -10 1 0  GROUP      -  JPN  -  ESP  -  CRC
+  ESP  2 2 0 0  8  0   8 0 6  G16       *CRC  -   -  *ZAM _JPN  - 
+  JPN  2 2 0 0  7  0   7 0 6  G16        -  *ZAM *CRC  -  _ESP  - 
+  CRC  2 0 2 0  0  5  -5 0 0  GROUP     .ESP  -  .JPN  -   -  _ZAM
+  ZAM  2 0 2 0  0 10 -10 1 0  GROUP      -  .JPN  -  .ESP  -  _CRC
 
 GROUP-D
-  ENG  1 1 0 0  1  0   1 0 3  GROUP     HAI  -  DEN  -  CHN  - 
-  DEN  1 1 0 0  1  0   0 0 3  GROUP      -  CHN ENG  -   -  HAI
-  HAI  1 0 1 0  0  1  -1 0 0  GROUP     ENG  -   -  CHN  -  DEN
-  CHM  1 0 1 0  0  1  -1 0 0  GROUP      -  DEN  -  HAI ENG  - 
+  ENG  2 2 0 0  2  0   2 0 6  G16       *HAI  -  *DEN  -  _CHN  - 
+  DEN  2 1 1 0  1  1   0 0 3  GROUP      -  *CHN .ENG  -   -  _HAI
+  CHN  2 1 1 0  1  1   0 0 3  GROUP      -  .DEN  -  *HAI _ENG  - 
+  HAI  2 0 2 0  0  2  -2 0 0  GROUP     .ENG  -   -  .CHN  -  _DEN
 
 GROUP-E
-  USA  1 1 0 0  3  0   3 0 3  GROUP     VIA  -  NED  -  POR  - 
-  NED  1 1 0 0  1  0   1 0 3  GROUP      -  POR USA  -   -  VIE
-  POR  1 0 1 0  0  1  -1 0 0  GROUP      -  NED  -  VIE USA  - 
-  VIE  1 0 1 0  0  3  -3 0 0  GROUP     USA  -   -  POR  -  NED
+  USA  2 1 0 1  4  1   3 0 4  GROUP     *VIA  -  .NED  -  _POR  - 
+  NED  2 1 0 1  2  1   1 0 4  GROUP      -  *POR *USA  -   -  _VIE
+  POR  2 1 1 0  2  1   1 0 3  GROUP      -  .NED  -  *VIE _USA  - 
+  VIE  2 0 2 0  0  5  -5 0 0  GROUP     .USA  -   -  .POR  -  _NED
 
 GROUP-F
-  BRA  1 1 0 0  4  0   4 0 3  GROUP      -  PAN FRA  -   -  JAM
-  FRA  1 0 0 1  0  0   0 0 1  GROUP     JAM  -  BRA  -  PAN  - 
-  JAM  1 0 0 1  0  0   0 1 1  GROUP     FRA  -   -  PAN  -  BRA
-  PAN  1 0 1 0  0  4  -4 0 0  GROUP      -  BRA  -  JAM FRA  - 
+  FRA  2 1 0 1  2  1   1 0 4  GROUP     +JAM  -  *BRA  -  _PAN  - 
+  JAM  2 1 0 1  1  0   1 1 4  GROUP     +FRA  -   -  *PAN  -  _BRA
+  BRA  2 1 1 0  5  2   3 0 3  GROUP      -  *PAN .FRA  -   -  _JAM
+  PAN  2 0 2 0  0  5  -5 0 0  GROUP      -  .BRA  -  .JAM _FRA  - 
 
 GROUP-G
-  SWE  1 1 0 0  2  1   1 0 3  GROUP     RSA  -   -  ITA ARG  - 
-  ITA  1 1 0 0  1  0   1 0 3  GROUP      -  ARG  -  SWE  -  RSA
-  RSA  1 0 1 0  1  2  -1 0 0  GROUP     SWE  -  ARG  -   -  ITA
-  ARG  1 0 1 0  0  1  -1 0 0  GROUP      -  ITA RSA  -  SWE  - 
+  SWE  2 2 0 0  7  1   6 0 6  G16       *RSA  -   -  *ITA _ARG  - 
+  ITA  2 1 1 0  3  4  -1 0 3  GROUP      -  *ARG  -  .SWE  -  _RSA
+  RSA  2 0 1 1  3  4  -1 0 1  GROUP     .SWE  -  +ARG  -   -  _ITA
+  ARG  2 0 1 1  2  3  -1 0 1  GROUP      -  .ITA +RSA  -  _SWE  - 
 
 GROUP-H
-  GER  1 1 0 0  6  0   6 0 3  GROUP     MAR  -   -  COL KOR  - 
-  COL  1 1 0 0  2  0   2 0 3  GROUP      -  KOR  -  GER  -  MAR
-  KOR  1 0 1 0  0  2  -2 0 0  GROUP      -  COL MAR  -  GER  - 
-  MAR  1 0 1 0  0  6  -6 0 0  GROUP     GER  -  KOR  -   -  COL
+  COL  2 2 0 0  4  1   3 0 6  G16        -  *KOR  -  *GER  -  _MAR
+  GER  2 1 1 0  7  2   5 0 3  GROUP     *MAR  -   -  .COL _KOR  - 
+  MAR  2 1 1 0  1  6  -5 0 3  GROUP     .GER  -  *KOR  -   -  _COL
+  KOR  2 0 2 0  0  3  -3 0 0  GROUP      -  .COL .MAR  -  _GER  - 
 
 Key
   G   - Games

@@ -20,19 +20,19 @@
  21   2  2023-07-26 Wed 02:30pm  G C  JPN  CRC  /  JPN 2     CRC 0    JPN won
  20   2  2023-07-26 Wed 05:00pm  G C  ESP  ZAM  /  ESP 5     ZAM 0    ESP won
  19   2  2023-07-26 Wed 09:30pm  G B  CAN  IRL  /  CAN 2     IRL 1    CAN won
- 23   2  2023-07-27 Thu 10:30am  G E  USA  NED
- 24   2  2023-07-27 Thu 05:00pm  G E  POR  VIE
- 22   2  2023-07-27 Thu 07:30pm  G B  AUS  NGR
- 27   2  2023-07-28 Fri 09:30am  G G  ARG  RSA
- 25   2  2023-07-28 Fri 06:00pm  G D  ENG  DEN
- 26   2  2023-07-28 Fri 08:30pm  G D  CHN  HAI
- 30   2  2023-07-29 Sat 05:00pm  G G  SWE  ITA
- 28   2  2023-07-29 Sat 07:30pm  G F  FRA  BRA
- 29   2  2023-07-29 Sat 10:00pm  G F  PAN  JAM
- 32   2  2023-07-30 Sun 02:00pm  G H  KOR  MAR
- 31   2  2023-07-30 Sun 07:00pm  G H  GER  COL
- 33   3  2023-07-30 Sun 04:30pm  G A  SUI  NZL
- 34   3  2023-07-30 Sun 04:30pm  G A  NOR  PHI
+ 23   2  2023-07-27 Thu 10:30am  G E  USA  NED  /  USA 1     NED 1    Draw
+ 24   2  2023-07-27 Thu 05:00pm  G E  POR  VIE  /  POR 2     VIE 0    Por won
+ 22   2  2023-07-27 Thu 07:30pm  G B  AUS  NGR  /  AUS 2     NGR 3    NGR won
+ 27   2  2023-07-28 Fri 09:30am  G G  ARG  RSA  /  ARG 2     RSA 2    Draw
+ 25   2  2023-07-28 Fri 06:00pm  G D  ENG  DEN  /  ENG 1     DEN 0    ENG won
+ 26   2  2023-07-28 Fri 08:30pm  G D  CHN  HAI  /  CHN 1 R   HAI 0    CHN won
+ 30   2  2023-07-29 Sat 05:00pm  G G  SWE  ITA  /  SWE 5     ITA 0    SWE won
+ 28   2  2023-07-29 Sat 07:30pm  G F  FRA  BRA  /  FRA 2     BRA 1    FRA won
+ 29   2  2023-07-29 Sat 10:00pm  G F  PAN  JAM  /  PAN 0     JAM 1    JAM won
+ 32   2  2023-07-30 Sun 02:00pm  G H  KOR  MAR  /  KOR 0     MAR 1    MOR won
+ 31   2  2023-07-30 Sun 07:00pm  G H  GER  COL  /  GER 1     COL 2    COL won
+ 33   3  2023-07-30 Sun 04:30pm  G A  SUI  NZL  /  SUI 0     NZL 0    Draw
+ 34   3  2023-07-30 Sun 04:30pm  G A  NOR  PHI  /  NOR 6     PHI 0 R  NOR won
  37   3  2023-07-31 Mon 04:30pm  G C  JPN  ESP
  38   3  2023-07-31 Mon 04:30pm  G C  CRC  ZAM
  35   3  2023-07-31 Mon 07:30pm  G B  CAN  AUS
