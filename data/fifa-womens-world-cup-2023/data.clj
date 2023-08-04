@@ -607,6 +607,7 @@
    :scoreboard {:nzl "1", :nor "0"},
    :AwayTeam "Norway",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 1}
   {:RoundNumber 1,
    :Group "Group B",
@@ -626,6 +627,7 @@
    :scoreboard {:aus "1", :irl "0"},
    :AwayTeam "Republic of Ireland",
    :Location "Sydney Football Stadium",
+   :location_id :syd
    :MatchNumber 2}
   {:RoundNumber 1,
    :Group "Group B",
@@ -645,6 +647,7 @@
    :scoreboard {:ngr "0 R", :can "0"},
    :AwayTeam "Canada",
    :Location "Melbourne Rectangular Stadium",
+   :location_id :mel
    :MatchNumber 4}
   {:RoundNumber 1,
    :Group "Group A",
@@ -664,6 +667,7 @@
    :scoreboard {:phi "0", :sui "2"},
    :AwayTeam "Switzerland",
    :Location "Dunedin Stadium",
+   :location_id :dun
    :MatchNumber 3}
   {:RoundNumber 1,
    :Group "Group C",
@@ -683,6 +687,7 @@
    :scoreboard {:esp "3", :crc "0"},
    :AwayTeam "Costa Rica",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 5}
   {:RoundNumber 1,
    :Group "Group E",
@@ -702,6 +707,7 @@
    :scoreboard {:usa "3", :vie "0"},
    :AwayTeam "Vietnam",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 9}
   {:RoundNumber 1,
    :Group "Group C",
@@ -721,6 +727,7 @@
    :scoreboard {:zam "0 R", :jpn "5"},
    :AwayTeam "Japan",
    :Location "Waikato Stadium",
+   :location_id :wai
    :MatchNumber 6}
   {:RoundNumber 1,
    :Group "Group D",
@@ -740,6 +747,7 @@
    :scoreboard {:eng "1", :hai "0"},
    :AwayTeam "Haiti",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 7}
   {:RoundNumber 1,
    :Group "Group D",
@@ -759,6 +767,7 @@
    :scoreboard {:den "1", :chn "0"},
    :AwayTeam "China PR",
    :Location "Perth Rectangular Stadium",
+   :location_id :per
    :MatchNumber 8}
   {:RoundNumber 1,
    :Group "Group G",
@@ -778,6 +787,7 @@
    :scoreboard {:swe "2", :rsa "1"},
    :AwayTeam "South Africa",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 12}
   {:RoundNumber 1,
    :Group "Group E",
@@ -797,6 +807,7 @@
    :scoreboard {:ned "1", :por "0"},
    :AwayTeam "Portugal",
    :Location "Dunedin Stadium",
+   :location_id :dun
    :MatchNumber 10}
   {:RoundNumber 1,
    :Group "Group F",
@@ -816,6 +827,7 @@
    :scoreboard {:fra "0", :jam "0 R"},
    :AwayTeam "Jamaica",
    :Location "Sydney Football Stadium",
+   :location_id :syd
    :MatchNumber 11}
   {:RoundNumber 1,
    :Group "Group G",
@@ -835,6 +847,7 @@
    :scoreboard {:ita "1", :arg "0"},
    :AwayTeam "Argentina",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 14}
   {:RoundNumber 1,
    :Group "Group H",
@@ -854,6 +867,7 @@
    :scoreboard {:ger "6", :mar "0"},
    :AwayTeam "Morocco",
    :Location "Melbourne Rectangular Stadium",
+   :location_id :mel
    :MatchNumber 15}
   {:RoundNumber 1,
    :Group "Group F",
@@ -873,6 +887,7 @@
    :scoreboard {:bra "4", :pan "0"},
    :AwayTeam "Panama",
    :Location "Hindmarsh Stadium",
+   :location_id :adl
    :MatchNumber 13}
   {:RoundNumber 1,
    :Group "Group H",
@@ -892,6 +907,7 @@
    :scoreboard {:col "2", :kor "0"},
    :AwayTeam "Korea Republic",
    :Location "Sydney Football Stadium",
+   :location_id :syd
    :MatchNumber 16}
   {:RoundNumber 2,
    :Group "Group A",
@@ -911,6 +927,7 @@
    :scoreboard {:nzl "0", :phi "1"},
    :AwayTeam "Philippines",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 17}
   {:RoundNumber 2,
    :Group "Group A",
@@ -930,6 +947,7 @@
    :scoreboard {:sui "0", :nor "0"},
    :AwayTeam "Norway",
    :Location "Waikato Stadium",
+   :location_id :wai
    :MatchNumber 18}
   {:RoundNumber 2,
    :Group "Group C",
@@ -949,6 +967,7 @@
    :scoreboard {:jpn "2", :crc "0"},
    :AwayTeam "Costa Rica",
    :Location "Dunedin Stadium",
+   :location_id :dun
    :MatchNumber 21}
   {:RoundNumber 2,
    :Group "Group C",
@@ -968,6 +987,7 @@
    :scoreboard {:esp "5", :zam "0"},
    :AwayTeam "Zambia",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 20}
   {:RoundNumber 2,
    :Group "Group B",
@@ -987,6 +1007,7 @@
    :scoreboard {:can "2", :irl "1"},
    :AwayTeam "Republic of Ireland",
    :Location "Perth Rectangular Stadium",
+   :location_id :per
    :MatchNumber 19}
   {:RoundNumber 2,
    :Group "Group E",
@@ -1006,6 +1027,7 @@
    :scoreboard {:usa "1", :ned "1"},
    :AwayTeam "Netherlands",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 23}
   {:RoundNumber 2,
    :Group "Group E",
@@ -1025,6 +1047,7 @@
    :scoreboard {:por "2", :vie "0"},
    :AwayTeam "Vietnam",
    :Location "Waikato Stadium",
+   :location_id :wai
    :MatchNumber 24}
   {:RoundNumber 2,
    :Group "Group B",
@@ -1044,6 +1067,7 @@
    :scoreboard {:aus "2", :ngr "3"},
    :AwayTeam "Nigeria",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 22}
   {:RoundNumber 2,
    :Group "Group G",
@@ -1063,6 +1087,7 @@
    :scoreboard {:arg "2", :rsa "2"},
    :AwayTeam "South Africa",
    :Location "Dunedin Stadium",
+   :location_id :dun
    :MatchNumber 27}
   {:RoundNumber 2,
    :Group "Group D",
@@ -1082,6 +1107,7 @@
    :scoreboard {:eng "1", :den "0"},
    :AwayTeam "Denmark",
    :Location "Sydney Football Stadium",
+   :location_id :syd
    :MatchNumber 25}
   {:RoundNumber 2,
    :Group "Group D",
@@ -1101,6 +1127,7 @@
    :scoreboard {:chn "1 R", :hai "0"},
    :AwayTeam "Haiti",
    :Location "Hindmarsh Stadium",
+   :location_id :adl
    :MatchNumber 26}
   {:RoundNumber 2,
    :Group "Group G",
@@ -1120,6 +1147,7 @@
    :scoreboard {:swe "5", :ita "0"},
    :AwayTeam "Italy",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 30}
   {:RoundNumber 2,
    :Group "Group F",
@@ -1139,6 +1167,7 @@
    :scoreboard {:fra "2", :bra "1"},
    :AwayTeam "Brazil",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 28}
   {:RoundNumber 2,
    :Group "Group F",
@@ -1158,6 +1187,7 @@
    :scoreboard {:pan "0", :jam "1"},
    :AwayTeam "Jamaica",
    :Location "Perth Rectangular Stadium",
+   :location_id :per
    :MatchNumber 29}
   {:RoundNumber 2,
    :Group "Group H",
@@ -1177,6 +1207,7 @@
    :scoreboard {:kor "0", :mar "1"},
    :AwayTeam "Morocco",
    :Location "Hindmarsh Stadium",
+   :location_id :adl
    :MatchNumber 32}
   {:RoundNumber 2,
    :Group "Group H",
@@ -1196,6 +1227,7 @@
    :scoreboard {:ger "1", :col "2"},
    :AwayTeam "Colombia",
    :Location "Sydney Football Stadium",
+   :location_id :syd
    :MatchNumber 31}
   {:RoundNumber 3,
    :Group "Group A",
@@ -1215,6 +1247,7 @@
    :scoreboard {:sui "0", :nzl "0"},
    :AwayTeam "New Zealand",
    :Location "Dunedin Stadium",
+   :location_id :dun
    :MatchNumber 33}
   {:RoundNumber 3,
    :Group "Group A",
@@ -1234,6 +1267,7 @@
    :scoreboard {:nor "6", :phi "0 R"},
    :AwayTeam "Philippines",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 34}
   {:RoundNumber 3,
    :Group "Group C",
@@ -1243,16 +1277,17 @@
    :HomeTeamScore nil,
    :teams [:jpn :esp],
    :round 3,
-   :summary "",
+   :summary "JPN won",
    :AwayTeamScore nil,
    :result {:jpn {}, :esp {}},
    :score {:jpn "", :esp ""},
    :comment "",
    :HomeTeam "Japan",
    :DateUtc "2023-07-31 07:00:00Z",
-   :scoreboard {:jpn "", :esp ""},
+   :scoreboard {:jpn "4", :esp "0"},
    :AwayTeam "Spain",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 37}
   {:RoundNumber 3,
    :Group "Group C",
@@ -1262,16 +1297,17 @@
    :HomeTeamScore nil,
    :teams [:crc :zam],
    :round 3,
-   :summary "",
+   :summary "ZAM won",
    :AwayTeamScore nil,
    :result {:crc {}, :zam {}},
    :score {:crc "", :zam ""},
    :comment "",
    :HomeTeam "Costa Rica",
    :DateUtc "2023-07-31 07:00:00Z",
-   :scoreboard {:crc "", :zam ""},
+   :scoreboard {:crc "1", :zam "3"},
    :AwayTeam "Zambia",
    :Location "Waikato Stadium",
+   :location_id :wai
    :MatchNumber 38}
   {:RoundNumber 3,
    :Group "Group B",
@@ -1281,16 +1317,17 @@
    :HomeTeamScore nil,
    :teams [:can :aus],
    :round 3,
-   :summary "",
+   :summary "AUS won",
    :AwayTeamScore nil,
    :result {:can {}, :aus {}},
    :score {:can "", :aus ""},
    :comment "",
    :HomeTeam "Canada",
    :DateUtc "2023-07-31 10:00:00Z",
-   :scoreboard {:can "", :aus ""},
+   :scoreboard {:can "0", :aus "4"},
    :AwayTeam "Australia",
    :Location "Melbourne Rectangular Stadium",
+   :location_id :mel
    :MatchNumber 35}
   {:RoundNumber 3,
    :Group "Group B",
@@ -1300,16 +1337,17 @@
    :HomeTeamScore nil,
    :teams [:irl :ngr],
    :round 3,
-   :summary "",
+   :summary "Draw",
    :AwayTeamScore nil,
    :result {:irl {}, :ngr {}},
    :score {:irl "", :ngr ""},
    :comment "",
    :HomeTeam "Republic of Ireland",
    :DateUtc "2023-07-31 10:00:00Z",
-   :scoreboard {:irl "", :ngr ""},
+   :scoreboard {:irl "0", :ngr "0"},
    :AwayTeam "Nigeria",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 36}
   {:RoundNumber 3,
    :Group "Group E",
@@ -1319,16 +1357,17 @@
    :HomeTeamScore nil,
    :teams [:por :usa],
    :round 3,
-   :summary "",
+   :summary "Draw",
    :AwayTeamScore nil,
    :result {:por {}, :usa {}},
    :score {:por "", :usa ""},
    :comment "",
    :HomeTeam "Portugal",
    :DateUtc "2023-08-01 07:00:00Z",
-   :scoreboard {:por "", :usa ""},
+   :scoreboard {:por "0", :usa "0"},
    :AwayTeam "USA",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 41}
   {:RoundNumber 3,
    :Group "Group E",
@@ -1338,16 +1377,17 @@
    :HomeTeamScore nil,
    :teams [:vie :ned],
    :round 3,
-   :summary "",
+   :summary "NED won",
    :AwayTeamScore nil,
    :result {:vie {}, :ned {}},
    :score {:vie "", :ned ""},
    :comment "",
    :HomeTeam "Vietnam",
    :DateUtc "2023-08-01 07:00:00Z",
-   :scoreboard {:vie "", :ned ""},
+   :scoreboard {:vie "0", :ned "7"},
    :AwayTeam "Netherlands",
    :Location "Dunedin Stadium",
+   :location_id :dun
    :MatchNumber 42}
   {:RoundNumber 3,
    :Group "Group D",
@@ -1357,16 +1397,17 @@
    :HomeTeamScore nil,
    :teams [:chn :eng],
    :round 3,
-   :summary "",
+   :summary "ENG won",
    :AwayTeamScore nil,
    :result {:chn {}, :eng {}},
    :score {:chn "", :eng ""},
    :comment "",
    :HomeTeam "China PR",
    :DateUtc "2023-08-01 11:00:00Z",
-   :scoreboard {:chn "", :eng ""},
+   :scoreboard {:chn "1", :eng "6"},
    :AwayTeam "England",
    :Location "Hindmarsh Stadium",
+   :location_id :adl
    :MatchNumber 39}
   {:RoundNumber 3,
    :Group "Group D",
@@ -1376,16 +1417,17 @@
    :HomeTeamScore nil,
    :teams [:hai :den],
    :round 3,
-   :summary "",
+   :summary "DEN won",
    :AwayTeamScore nil,
    :result {:hai {}, :den {}},
    :score {:hai "", :den ""},
    :comment "",
    :HomeTeam "Haiti",
    :DateUtc "2023-08-01 11:00:00Z",
-   :scoreboard {:hai "", :den ""},
+   :scoreboard {:hai "0", :den "2"},
    :AwayTeam "Denmark",
    :Location "Perth Rectangular Stadium",
+   :location_id :per
    :MatchNumber 40}
   {:RoundNumber 3,
    :Group "Group G",
@@ -1395,16 +1437,17 @@
    :HomeTeamScore nil,
    :teams [:arg :swe],
    :round 3,
-   :summary "",
+   :summary "SWE won",
    :AwayTeamScore nil,
    :result {:arg {}, :swe {}},
    :score {:arg "", :swe ""},
    :comment "",
    :HomeTeam "Argentina",
    :DateUtc "2023-08-02 07:00:00Z",
-   :scoreboard {:arg "", :swe ""},
+   :scoreboard {:arg "0", :swe "2"},
    :AwayTeam "Sweden",
    :Location "Waikato Stadium",
+   :location_id :wai
    :MatchNumber 45}
   {:RoundNumber 3,
    :Group "Group G",
@@ -1414,16 +1457,17 @@
    :HomeTeamScore nil,
    :teams [:rsa :ita],
    :round 3,
-   :summary "",
+   :summary "RSA won",
    :AwayTeamScore nil,
    :result {:rsa {}, :ita {}},
    :score {:rsa "", :ita ""},
    :comment "",
    :HomeTeam "South Africa",
    :DateUtc "2023-08-02 07:00:00Z",
-   :scoreboard {:rsa "", :ita ""},
+   :scoreboard {:rsa "3", :ita "2"},
    :AwayTeam "Italy",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 46}
   {:RoundNumber 3,
    :Group "Group F",
@@ -1433,16 +1477,17 @@
    :HomeTeamScore nil,
    :teams [:pan :fra],
    :round 3,
-   :summary "",
+   :summary "FRA won",
    :AwayTeamScore nil,
    :result {:pan {}, :fra {}},
    :score {:pan "", :fra ""},
    :comment "",
    :HomeTeam "Panama",
    :DateUtc "2023-08-02 10:00:00Z",
-   :scoreboard {:pan "", :fra ""},
+   :scoreboard {:pan "3", :fra "6"},
    :AwayTeam "France",
    :Location "Sydney Football Stadium",
+   :location_id :syd
    :MatchNumber 43}
   {:RoundNumber 3,
    :Group "Group F",
@@ -1452,16 +1497,17 @@
    :HomeTeamScore nil,
    :teams [:jam :bra],
    :round 3,
-   :summary "",
+   :summary "Draw",
    :AwayTeamScore nil,
    :result {:jam {}, :bra {}},
    :score {:jam "", :bra ""},
    :comment "",
    :HomeTeam "Jamaica",
    :DateUtc "2023-08-02 10:00:00Z",
-   :scoreboard {:jam "", :bra ""},
+   :scoreboard {:jam "0", :bra "0"},
    :AwayTeam "Brazil",
    :Location "Melbourne Rectangular Stadium",
+   :location_id :mel
    :MatchNumber 44}
   {:RoundNumber 3,
    :Group "Group H",
@@ -1481,6 +1527,7 @@
    :scoreboard {:kor "", :ger ""},
    :AwayTeam "Germany",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 47}
   {:RoundNumber 3,
    :Group "Group H",
@@ -1500,6 +1547,7 @@
    :scoreboard {:mar "", :col ""},
    :AwayTeam "Colombia",
    :Location "Perth Rectangular Stadium",
+   :location_id :per
    :MatchNumber 48}
   {:RoundNumber 4,
    :Group nil,
@@ -1519,6 +1567,7 @@
    :scoreboard {:group-a-1 "", :group-c-2 ""},
    :AwayTeam "Group C Second",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 49}
   {:RoundNumber 4,
    :Group nil,
@@ -1538,6 +1587,7 @@
    :scoreboard {:group-c-1 "", :group-a-2 ""},
    :AwayTeam "Group A Second",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 50}
   {:RoundNumber 4,
    :Group nil,
@@ -1557,6 +1607,7 @@
    :scoreboard {:group-e-1 "", :group-g-2 ""},
    :AwayTeam "Group G Second",
    :Location "Sydney Football Stadium",
+   :location_id :syd
    :MatchNumber 51}
   {:RoundNumber 4,
    :Group nil,
@@ -1576,6 +1627,7 @@
    :scoreboard {:group-g-1 "", :group-e-2 ""},
    :AwayTeam "Group E Second",
    :Location "Melbourne Rectangular Stadium",
+   :location_id :mel
    :MatchNumber 52}
   {:RoundNumber 4,
    :Group nil,
@@ -1595,6 +1647,7 @@
    :scoreboard {:group-d-1 "", :group-b-2 ""},
    :AwayTeam "Group B Second",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 54}
   {:RoundNumber 4,
    :Group nil,
@@ -1614,6 +1667,7 @@
    :scoreboard {:group-b-1 "", :group-d-2 ""},
    :AwayTeam "Group D Second",
    :Location "Stadium Australia",
+   :location_id :aus
    :MatchNumber 53}
   {:RoundNumber 4,
    :Group nil,
@@ -1633,6 +1687,7 @@
    :scoreboard {:group-h-1 "", :group-f-2 ""},
    :AwayTeam "Group F Second",
    :Location "Melbourne Rectangular Stadium",
+   :location_id :mel
    :MatchNumber 56}
   {:RoundNumber 4,
    :Group nil,
@@ -1652,6 +1707,7 @@
    :scoreboard {:group-f-1 "", :group-h-2 ""},
    :AwayTeam "Group H Second",
    :Location "Hindmarsh Stadium",
+   :location_id :adl
    :MatchNumber 55}
   {:RoundNumber 5,
    :Group nil,
@@ -1671,6 +1727,7 @@
    :scoreboard {:group-16-1 "" :group-16-3 ""},
    :AwayTeam "To be announced",
    :Location "Wellington Regional Stadium",
+   :location_id :wel
    :MatchNumber 57}
   {:RoundNumber 5,
    :Group nil,
@@ -1690,6 +1747,7 @@
    :scoreboard {:group-16-2 "", :group-16-4 ""},
    :AwayTeam "To be announced",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 58}
   {:RoundNumber 5,
    :Group nil,
@@ -1709,6 +1767,7 @@
    :scoreboard {:group-16-5 "", :group-16-7 ""},
    :AwayTeam "To be announced",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 59}
   {:RoundNumber 5,
    :Group nil,
@@ -1728,6 +1787,7 @@
    :scoreboard {:group-16-6 "", :group-16-8 ""},
    :AwayTeam "To be announced",
    :Location "Stadium Australia",
+   :location_id :aus
    :MatchNumber 60}
   {:RoundNumber 6,
    :Group nil,
@@ -1747,6 +1807,7 @@
    :scoreboard {:quarter-final-1 "", :quarter-final-2 ""},
    :AwayTeam "Quarter Final 2",
    :Location "Eden Park",
+   :location_id :auc
    :MatchNumber 61}
   {:RoundNumber 6,
    :Group nil,
@@ -1766,6 +1827,7 @@
    :scoreboard {:quarter-final-3 "", :quarter-final-4 ""},
    :AwayTeam "To be announced",
    :Location "Stadium Australia",
+   :location_id :aus
    :MatchNumber 62}
   {:RoundNumber 7,
    :Group nil,
@@ -1785,6 +1847,7 @@
    :scoreboard {:semi-final-1-2 "", :semi-fimal-2-2 ""},
    :AwayTeam "To be announced",
    :Location "Brisbane Stadium",
+   :location_id :bri
    :MatchNumber 63}
   {:RoundNumber 7,
    :Group nil,
@@ -1804,6 +1867,7 @@
    :scoreboard {:semi-final-1-1 "", :semi-final-2-1 ""},
    :AwayTeam "To be announced",
    :Location "Stadium Australia",
+   :location_id :aus
    :MatchNumber 64}),
 
  :groups
@@ -1813,41 +1877,88 @@
             :phi [3 1 2 0  1  8  -7 1 3 :group [nil   :.sui :*nzl nil   nil  :.nor]]
             :sui [3 1 0 2  2  0   2 0 5 :g16   [nil   :*phi nil   :+nor :+nzl nil]]
             }
-  :group-b {:aus [2 1 1 0  3  3   0 0 3 :group [:*irl nil  nil  :.ngr :_can nil]]
-            :irl [2 0 2 0  1  3  -2 0 0 :group [:.aus nil  :.can nil  nil  :_nga]]
-            :nga [2 1 0 1  3  2   1 1 4 :group [nil  :+can nil  :*aus nil  :_irl]]
-            :can [2 1 0 1  2  1   1 0 4 :group [nil  :+nga :*irl nil  :_aus nil]]
+  :group-b {:aus [3 2 1 0  7  3   4 0 6 :g16   [:*irl nil  nil  :.ngr :*can nil]]
+            :irl [3 0 2 1  1  3  -2 0 1 :group [:.aus nil  :.can nil  nil  :+nga]]
+            :nga [3 1 0 2  3  2   1 1 5 :g16   [nil  :+can nil  :*aus nil  :+irl]]
+            :can [3 1 1 1  2  5  -3 0 4 :group [nil  :+nga :*irl nil  :.aus nil]]
             }
-  :group-c {:esp [2 2 0 0  8  0   8 0 6 :g16   [:*crc nil  nil  :*zam :_jpn nil]]
-            :crc [2 0 2 0  0  5  -5 0 0 :group [:.esp nil  :.jpn nil  nil  :_zam]]
-            :zam [2 0 2 0  0 10 -10 1 0 :group [nil  :.jpn nil  :.esp nil  :_crc]]
-            :jpn [2 2 0 0  7  0   7 0 6 :g16   [nil  :*zam :*crc nil  :_esp nil]]
+  :group-c {:esp [3 2 1 0  8  4   4 0 6 :g16   [:*crc nil  nil  :*zam :.jpn nil]]
+            :crc [3 0 3 0  1  8  -7 0 0 :group [:.esp nil  :.jpn nil  nil  :.zam]]
+            :zam [3 1 2 0  3 11  -8 1 3 :group [nil  :.jpn nil  :.esp nil  :*crc]]
+            :jpn [3 3 0 0 11  0  11 0 9 :g16   [nil  :*zam :*crc nil  :*esp nil]]
             }
-  :group-d {:eng [2 2 0 0  2  0   2 0 6 :g16   [:*hai nil  :*den nil  :_chn nil]]
-            :hai [2 0 2 0  0  2  -2 0 0 :group [:.eng nil  nil  :.chn nil  :_den]]
-            :den [2 1 1 0  1  1   0 0 3 :group [nil  :*chn :.eng nil  nil  :_hai]]
-            :chn [2 1 1 0  1  1   0 0 3 :group [nil  :.den nil  :*hai :_eng nil]]
+  :group-d {:eng [3 3 0 0  8  1   7 0 9 :g16   [:*hai nil  :*den nil  :*chn nil]]
+            :hai [3 0 3 0  0  4  -4 0 0 :group [:.eng nil  nil  :.chn nil  :.den]]
+            :den [3 2 1 0  3  1   2 0 6 :g16   [nil  :*chn :.eng nil  nil  :*hai]]
+            :chn [3 1 2 0  2  7  -5 0 3 :group [nil  :.den nil  :*hai :.eng nil]]
             }
-  :group-e {:usa [2 1 0 1  4  1   3 0 4 :group [:*via nil  :.ned  nil  :_por nil]]
-            :vie [2 0 2 0  0  5  -5 0 0 :group [:.usa nil  nil   :.por nil  :_ned]]
-            :ned [2 1 0 1  2  1   1 0 4 :group [nil  :*por :*usa  nil  nil  :_vie]]
-            :por [2 1 1 0  2  1   1 0 3 :group [nil  :.ned nil   :*vie :_usa nil]]
+  :group-e {:usa [3 1 0 2  4  1   3 0 5 :g16   [:*via nil  :.ned  nil  :+por nil]]
+            :vie [3 0 3 0  0 12 -12 0 0 :group [:.usa nil  nil   :.por nil  :.ned]]
+            :ned [3 2 0 1  9  1   8 0 7 :g16   [nil  :*por :*usa  nil  nil  :*vie]]
+            :por [3 1 1 1  2  1   1 0 4 :group [nil  :.ned nil   :*vie :+usa nil]]
             }
-  :group-f {:fra [2 1 0 1  2  1   1 0 4 :group [:+jam nil  :*bra nil  :_pan nil]]
-            :jam [2 1 0 1  1  0   1 1 4 :group [:+fra nil  nil  :*pan nil  :_bra]]
-            :bra [2 1 1 0  5  2   3 0 3 :group [nil  :*pan :.fra nil  nil  :_jam]]
-            :pan [2 0 2 0  0  5  -5 0 0 :group [nil  :.bra nil  :.jam :_fra nil]]
+  :group-f {:fra [3 2 0 1  8  4   4 0 7 :g16   [:+jam nil  :*bra nil  :*pan nil]]
+            :jam [3 1 0 2  1  0   1 1 5 :g16   [:+fra nil  nil  :*pan nil  :+bra]]
+            :bra [3 1 1 1  5  2   3 0 4 :group [nil  :*pan :.fra nil  nil  :+jam]]
+            :pan [3 0 3 0  3 11  -8 0 0 :group [nil  :.bra nil  :.jam :.fra nil]]
             }
-  :group-g {:swe [2 2 0 0  7  1   6 0 6 :g16   [:*rsa nil  nil  :*ita :_arg nil]]
-            :rsa [2 0 1 1  3  4  -1 0 1 :group [:.swe nil  :+arg nil  nil  :_ita]]
-            :ita [2 1 1 0  3  4  -1 0 3 :group [nil  :*arg nil  :.swe nil  :_rsa]]
-            :arg [2 0 1 1  2  3  -1 0 1 :group [nil  :.ita :+rsa nil  :_swe nil]]
+  :group-g {:swe [3 3 0 0  9  1   8 0 9 :g16   [:*rsa nil  nil  :*ita :*arg nil]]
+            :rsa [3 1 1 1  6  6   0 0 4 :g16   [:.swe nil  :+arg nil  nil  :*ita]]
+            :ita [3 1 2 0  3  8  -5 0 3 :group [nil  :*arg nil  :.swe nil  :.rsa]]
+            :arg [3 0 2 1  2  5  -3 0 1 :group [nil  :.ita :+rsa nil  :.swe nil]]
             }
   :group-h {:ger [2 1 1 0  7  2   5 0 3 :group [:*mar nil  nil  :.col :_kor nil]]
             :mar [2 1 1 0  1  6  -5 0 3 :group [:.ger nil  :*kor nil  nil  :_col]]
             :col [2 2 0 0  4  1   3 0 6 :g16   [nil  :*kor nil  :*ger nil  :_mar]]
             :kor [2 0 2 0  0  3  -3 0 0 :group [nil  :.col :.mar nil  :_ger nil]]
             }
+  }
+
+ :finals
+ {:group-16-1 {:positions [:group-a-1 :group-c-2]
+               :teams [:sui :esp]
+               :summary ""
+               :scoreboard {:sui "" :esp ""}}
+  :group-16-2 {:positions [:group-c-1 :group-a-2]
+               :teams [:jpn :nor]
+               :summary ""
+               :scoreboard {:jpn "" :nor ""}}
+  :group-16-3 {:positions [:group-e-1 :group-g-2]
+               :teams [:ned :rsa]
+               :summary ""
+               :scoreboard {:ned "" :rsa ""}}
+  :group-16-4 {:positions [:group-g-1 :group-e-2]
+               :teams [:swe :usa]
+               :summary ""
+               :scoreboard {:swe "" :usa ""}}
+  :group-16-5 {:positions [:group-d-1 :group-b-2]
+               :teams [:eng :nga]
+               :summary ""
+               :scorebaord {:eng "" :nga ""}}
+  :group-16-6 {:positions {:group-b-1 :group-d-2}
+               :teams [:aus :den]
+               :summary ""
+               :scoreboard {:aus "" :den ""}}
+  :group-16-7 {:positions [:group-h-1 :group-f-2]
+               :teams [nil :jam]
+               :summary ""
+               :scoreboard {}}
+  :group-16-8 {:positions [:group-f-1 :group-h-2]
+               :teams [:fra nil]
+               :summary ""
+               :scorebaord {}}
+
+  :quarter-final-1 {:positions [:group-16-1 :group-16-3]}
+  :quarter-final-2 {:positions [:group-16-2 :group-16-4]}
+  :quarter-final-3 {:positions [:group-16-5 :group-16-7]}
+  :quarter-final-4 {:positions [:group-16-6 :group-16-8]}
+
+  :semi-final-1 {:positions [:quarter-final-1 :quarter-final-2]}
+  :semi-final-2 {:positions [:quarter-final-3 :quarter-final-4]}
+
+  :playoff {:positions [:semi-final-1-2 :semi-final-2-2]}
+  :grand-final {:positions [:semi-final-1-1 :semi-final-2-2]}
+
   }
 
  :teams
@@ -2022,15 +2133,15 @@
  :venues
  {"Stadium Australia"
   {:id :aus
-   :name "Stadium Australia"},
+   :name "Stadium Australia, Sydney"},
 
   "Dunedin Stadium"
   {:id :dun
    :name "Dunedin Stadium"},
 
   "Eden Park"
-  {:id :edn
-   :name "Eden Park"},
+  {:id :auc
+   :name "Eden Park, Auckland"},
 
   "Perth Rectangular Stadium"
   {:id :per

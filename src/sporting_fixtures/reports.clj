@@ -181,18 +181,19 @@
 (defn report-games [data]
   ;; Conditional formatting
   (if (= (:code (:details data)) :football)
-    (def report-format "%3s %3s  %s  %s  %s\n")
-    (def report-format "%3s %3s  %s  %s  %s\n")
+    (def report-format "%3s %3s  %s  %s  %s  %s\n")
+    (def report-format "%3s %3s  %s  %s  %s  %s\n")
     )
 
   (str
-   "-------------------------------------------------------------------------------\n"
+   "-------------------------------------------------------------------------------------\n"
    (apply str
           (map (fn [game]
                  (format report-format
                          (:MatchNumber game)
                          (:RoundNumber game)
                          (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
+                         (str/upper-case (name (:location_id game)))
                          (convert-stage-group (:stage game) (:group game))
                          (if (= (:code (:details data)) :football)
                            (format-game-result-football game)
@@ -201,7 +202,7 @@
 
                          ))
                (:results data)))
-   "-------------------------------------------------------------------------------\n"))
+   "-------------------------------------------------------------------------------------\n"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn report-games-save [data]
@@ -219,7 +220,7 @@
 
 (defn stats-header []
   (str
-   "Team   G W L D  F  A   D R P  Result    Path\n"
+   "Team   G W L D Gf Ga Gd R P  Result    Path\n"
    "--------------------------------------------------------------------------------\n"
    )
   )
@@ -232,9 +233,9 @@
               "  W   - Wins"
               "  L   - Losses"
               "  D   - Draws"
-              "  F   - Goals For"
-              "  A   - Goals Against"
-              "  D   - Goal Difference"
+              "  Gf  - Goals For"
+              "  Ga  - Goals Against"
+              "  Gd  - Goal Difference"
               "  R   - Red Cards"
               "  P   - Tournament Points"])
    )
