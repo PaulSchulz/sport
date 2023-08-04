@@ -220,8 +220,8 @@
 
 (defn stats-header []
   (str
-   "Team   G W L D Gf Ga Gd R P  Result    Path\n"
-   "--------------------------------------------------------------------------------\n"
+   "Team   G W L D  Gf Ga  Gd R Pts  Result    Path\n"
+   "------------------------------------------------------------------------------------\n"
    )
   )
 
@@ -237,7 +237,7 @@
               "  Ga  - Goals Against"
               "  Gd  - Goal Difference"
               "  R   - Red Cards"
-              "  P   - Tournament Points"])
+              "  Pts - Tournament Points"])
    )
   )
 
@@ -255,7 +255,7 @@
   (str
    (format "  %-5s"
            (str/upper-case (name team)))
-   (format "%d %d %d %d %2d %2d %3d %d %d  "
+   (format "%d %d %d %d  %2d %2d %3d %d %3d  "
            (nth results 0)
            (nth results 1)
            (nth results 2)

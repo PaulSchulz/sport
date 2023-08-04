@@ -45,8 +45,8 @@
  46   3  2023-08-02 Wed 04:30pm  WEL  G G  RSA  ITA  /  RSA 3     ITA 2    RSA won
  43   3  2023-08-02 Wed 07:30pm  SYD  G F  PAN  FRA  /  PAN 3     FRA 6    FRA won
  44   3  2023-08-02 Wed 07:30pm  MEL  G F  JAM  BRA  /  JAM 0     BRA 0    Draw
- 47   3  2023-08-03 Thu 07:30pm  BRI  G H  KOR  GER
- 48   3  2023-08-03 Thu 07:30pm  PER  G H  MAR  COL
+ 47   3  2023-08-03 Thu 07:30pm  BRI  G H  KOR  GER  /  KOR 1     GER 1    Draw
+ 48   3  2023-08-03 Thu 07:30pm  PER  G H  MAR  COL  /  MAR 1     COL 0    MAR won
  49   4  2023-08-05 Sat 02:30pm  AUC  S 1  GROUP-A-1  GROUP-C-2
  50   4  2023-08-05 Sat 05:30pm  WEL  S 2  GROUP-C-1  GROUP-A-2
  51   4  2023-08-06 Sun 11:30am  SYD  S 3  GROUP-E-1  GROUP-G-2
