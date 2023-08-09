@@ -70,7 +70,7 @@
           (if (some? stage)
             (case stage
               :group          "G"
-              :group-16       "S"
+              :group-16       "GS"
               :quarter-final  "QF"
               :semi-final     "SF"
               :third-play-off "PO"
@@ -243,12 +243,12 @@
 
 (defn path-string [path]
   (str/join " "
-            (map (fn [match] (if match
-                              (str/upper-case (name match))
-                              " - "
-                              ))
-                 path)
-            )
+            (remove nil?
+                    (map (fn [match] (if match
+                                      (str/upper-case (name match))
+                                      nil
+                                      ))
+                         path)))
   )
 
 (defn stats-team [[team results]]
@@ -309,4 +309,34 @@
 
 (defn report-teams [data]
   (stats-groups data)
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Finals
+(defn match-string [match]
+  (str
+   (let [team-a (-> match :teams first)
+         team-b (-> match :teams second)
+         scoreboard (:scoreboard match)]
+     (str
+      (str/upper-case (name team-a))
+      (if (team-a scoreboard)
+        (str " "
+             (team-a scoreboard)
+             )
+        )
+      )
+     )
+   " v "
+   (-> match :teams second name str/upper-case)
+   ))
+
+(defn report-finals [data]
+  (let [finals (:finals data)
+        report
+        [(-> finals :group-16-1 :teams first)
+         " v "
+         (-> finals :group-16-1 :teams second)
+         ]]
+    report)
   )

@@ -1555,16 +1555,17 @@
    :stage :group-16
    :group :group-16-1
    :HomeTeamScore nil,
-   :teams [:group-a-1 :group-c-2],
+   :positions [:group-a-1 :group-c-2],
+   :teams [:sui :esp]
    :round 4,
-   :summary "",
+   :summary "ESP won",
    :AwayTeamScore nil,
    :result {:group-a-1 {}, :group-c-2 {}},
    :score {:group-a-1 "", :group-c-2 ""},
    :comment "",
    :HomeTeam "Group A First",
    :DateUtc "2023-08-05 05:00:00Z",
-   :scoreboard {:group-a-1 "", :group-c-2 ""},
+   :scoreboard {:sui "1", :esp "5"},
    :AwayTeam "Group C Second",
    :Location "Eden Park",
    :location_id :auc
@@ -1575,16 +1576,17 @@
    :stage :group-16
    :group :group-16-2
    :HomeTeamScore nil,
-   :teams [:group-c-1 :group-a-2],
+   :positions [:group-c-1 :group-a-2],
+   :teams [:jpn :nor],
    :round 4,
-   :summary "",
+   :summary "JPN won",
    :AwayTeamScore nil,
    :result {:group-c-1 {}, :group-a-2 {}},
    :score {:group-c-1 "", :group-a-2 ""},
    :comment "",
    :HomeTeam "Group C First",
    :DateUtc "2023-08-05 08:00:00Z",
-   :scoreboard {:group-c-1 "", :group-a-2 ""},
+   :scoreboard {:jpn "3", :nor "1"},
    :AwayTeam "Group A Second",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1595,16 +1597,17 @@
    :stage :group-16
    :group :group-16-3
    :HomeTeamScore nil,
-   :teams [:group-e-1 :group-g-2],
+   :positions [:group-e-1 :group-g-2],
+   :teams [:ned :rsa],
    :round 4,
-   :summary "",
+   :summary "NED won",
    :AwayTeamScore nil,
    :result {:group-e-1 {}, :group-g-2 {}},
    :score {:group-e-1 "", :group-g-2 ""},
    :comment "",
    :HomeTeam "Group E First",
    :DateUtc "2023-08-06 02:00:00Z",
-   :scoreboard {:group-e-1 "", :group-g-2 ""},
+   :scoreboard {:ned "2", :rsa "0"},
    :AwayTeam "Group G Second",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -1615,16 +1618,17 @@
    :stage :group-16
    :group :group-16-4
    :HomeTeamScore nil,
-   :teams [:group-g-1 :group-e-2],
+   :position [:group-g-1 :group-e-2],
+   :teams [:swe :usa],
    :round 4,
-   :summary "",
+   :summary "SWE won",
    :AwayTeamScore nil,
    :result {:group-g-1 {}, :group-e-2 {}},
    :score {:group-g-1 "", :group-e-2 ""},
    :comment "",
    :HomeTeam "Group G First",
    :DateUtc "2023-08-06 09:00:00Z",
-   :scoreboard {:group-g-1 "", :group-e-2 ""},
+   :scoreboard {:swe "0(5)", :usa "0(4)"},
    :AwayTeam "Group E Second",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -1633,18 +1637,19 @@
    :Group nil,
    :game 54,
    :stage :group-16
-   :group :group-16-5
+   :group :group-16-6
    :HomeTeamScore nil,
-   :teams [:group-d-1 :group-b-2],
+   :positions [:group-d-1 :group-b-2],
+   :teams [:eng :nga],
    :round 4,
-   :summary "",
+   :summary "ENG won",
    :AwayTeamScore nil,
    :result {:group-d-1 {}, :group-b-2 {}},
    :score {:group-d-1 "", :group-b-2 ""},
    :comment "",
    :HomeTeam "Group D First",
    :DateUtc "2023-08-07 07:30:00Z",
-   :scoreboard {:group-d-1 "", :group-b-2 ""},
+   :scoreboard {:eng "0(4) R" :nga "0(2)"},
    :AwayTeam "Group B Second",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1653,18 +1658,19 @@
    :Group nil,
    :game 53,
    :stage :group-16
-   :group :group-16-6
+   :group :group-16-5
    :HomeTeamScore nil,
-   :teams [:group-b-1 :group-d-2],
+   :positions [:group-b-1 :group-d-2],
+   :teams [:aus :den],
    :round 4,
-   :summary "",
+   :summary "AUS won",
    :AwayTeamScore nil,
    :result {:group-b-1 {}, :group-d-2 {}},
    :score {:group-b-1 "", :group-d-2 ""},
    :comment "",
    :HomeTeam "Group B First",
    :DateUtc "2023-08-07 10:30:00Z",
-   :scoreboard {:group-b-1 "", :group-d-2 ""},
+   :scoreboard {:aus "2", :den "0"},
    :AwayTeam "Group D Second",
    :Location "Stadium Australia",
    :location_id :aus
@@ -1673,18 +1679,19 @@
    :Group nil,
    :game 56,
    :stage :group-16
-   :group :group-16-7
+   :group :group-16-8
    :HomeTeamScore nil,
-   :teams [:group-h-1 :group-f-2],
+   :positions [:group-h-1 :group-f-2],
+   :teams [:col :jam],
    :round 4,
-   :summary "",
+   :summary "COL won",
    :AwayTeamScore nil,
    :result {:group-h-1 {}, :group-f-2 {}},
    :score {:group-h-1 "", :group-f-2 ""},
    :comment "",
    :HomeTeam "Group H First",
    :DateUtc "2023-08-08 08:00:00Z",
-   :scoreboard {:group-h-1 "", :group-f-2 ""},
+   :scoreboard {:col "1", :jam "0"},
    :AwayTeam "Group F Second",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -1693,18 +1700,19 @@
    :Group nil,
    :game 55,
    :stage :group-16
-   :group :group-16-8
+   :group :group-16-7
    :HomeTeamScore nil,
-   :teams [:group-f-1 :group-h-2],
+   :poistions [:group-f-1 :group-h-2],
+   :teams [:fra :mar],
    :round 4,
-   :summary "",
+   :summary "FRA won",
    :AwayTeamScore nil,
    :result {:group-f-1 {}, :group-h-2 {}},
    :score {:group-f-1f "", :group-h-2 ""},
    :comment "",
    :HomeTeam "Group F First",
    :DateUtc "2023-08-08 11:00:00Z",
-   :scoreboard {:group-f-1 "", :group-h-2 ""},
+   :scoreboard {:fra "4", :mar "0"},
    :AwayTeam "Group H Second",
    :Location "Hindmarsh Stadium",
    :location_id :adl
@@ -1715,7 +1723,8 @@
    :stage :quarter-final
    :group :qf-1
    :HomeTeamScore nil,
-   :teams [:group-16-1 :group-16-3],
+   :positions [:group-16-1 :group-16-3],
+   :teams [:esp :ned]
    :round 5,
    :summary "",
    :AwayTeamScore nil,
@@ -1724,7 +1733,7 @@
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-11 01:00:00Z",
-   :scoreboard {:group-16-1 "" :group-16-3 ""},
+   :scoreboard {:esp "" :ned ""},
    :AwayTeam "To be announced",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1735,7 +1744,8 @@
    :stage :quarter-final
    :group :qf-2
    :HomeTeamScore nil,
-   :teams [:group-16-2 :group-16-4],
+   :position [:group-16-2 :group-16-4],
+   :teams [:jpn :swe]
    :round 5,
    :summary "",
    :AwayTeamScore nil,
@@ -1744,7 +1754,7 @@
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-11 07:30:00Z",
-   :scoreboard {:group-16-2 "", :group-16-4 ""},
+   :scoreboard {:jpn "", :swe ""},
    :AwayTeam "To be announced",
    :Location "Eden Park",
    :location_id :auc
@@ -1755,7 +1765,8 @@
    :stage :quarter-final
    :group :qf-3
    :HomeTeamScore nil,
-   :teams [:group-16-5 :group-16-7],
+   :positions [:group-16-5 :group-16-7],
+   :teams [:aus :fra],
    :round 5,
    :summary "",
    :AwayTeamScore nil,
@@ -1764,7 +1775,7 @@
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-12 07:00:00Z",
-   :scoreboard {:group-16-5 "", :group-16-7 ""},
+   :scoreboard {:aus "", :fra ""},
    :AwayTeam "To be announced",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1775,7 +1786,8 @@
    :stage :quarter-final
    :group :qf-4
    :HomeTeamScore nil,
-   :teams [:group-16-6 :group-16-8],
+   :postions [:group-16-6 :group-16-8],
+   :teams [:eng :col],
    :round 5,
    :summary "",
    :AwayTeamScore nil,
@@ -1784,7 +1796,7 @@
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-12 10:30:00Z",
-   :scoreboard {:group-16-6 "", :group-16-8 ""},
+   :scoreboard {:eng "", :col ""},
    :AwayTeam "To be announced",
    :Location "Stadium Australia",
    :location_id :aus
@@ -1873,91 +1885,115 @@
  :groups
  ;; Played, Won, Lost, Draw, For, Against, Diff, Red, Points, Result, Path
  {:group-a {:nzl [3 1 1 1  1  1   0 0 4 :group [:*nor nil   :.phi nil   :+sui nil]]
-            :nor [3 1 1 1  6  1   5 0 4 :g16   [:.nzl nil   nil   :+sui nil  :*phi :_jpn]]
+            :nor [3 1 1 1  6  1   5 0 4 :g16   [:.nzl nil   nil   :+sui nil  :*phi :.jpn]]
             :phi [3 1 2 0  1  8  -7 1 3 :group [nil   :.sui :*nzl nil   nil  :.nor]]
-            :sui [3 1 0 2  2  0   2 0 5 :g16   [nil   :*phi nil   :+nor :+nzl nil  :_esp]]
+            :sui [3 1 0 2  2  0   2 0 5 :g16   [nil   :*phi nil   :+nor :+nzl nil  :.esp]]
             }
-  :group-b {:aus [3 2 1 0  7  3   4 0 6 :g16   [:*irl nil  nil  :.ngr :*can nil    :_den]]
+  :group-b {:aus [3 2 1 0  7  3   4 0 6 :_qf   [:*irl nil  nil  :.ngr :*can nil    :*den   :_fra]]
             :irl [3 0 2 1  1  3  -2 0 1 :group [:.aus nil  :.can nil  nil  :+nga]]
-            :nga [3 1 0 2  3  2   1 1 5 :g16   [nil  :+can nil  :*aus nil  :+irl   :_eng]]
+            :nga [3 1 0 2  3  2   1 1 5 :g16   [nil  :+can nil  :*aus nil  :+irl   :.eng]]
             :can [3 1 1 1  2  5  -3 0 4 :group [nil  :+nga :*irl nil  :.aus nil]]
             }
-  :group-c {:esp [3 2 1 0  8  4   4 0 6 :g16   [:*crc nil  nil  :*zam :.jpn nil    :_sui]]
+  :group-c {:esp [3 2 1 0  8  4   4 0 6 :_qf    [:*crc nil  nil  :*zam :.jpn nil    :*sui :_ned]]
             :crc [3 0 3 0  1  8  -7 0 0 :group [:.esp nil  :.jpn nil  nil  :.zam]]
             :zam [3 1 2 0  3 11  -8 1 3 :group [nil  :.jpn nil  :.esp nil  :*crc]]
-            :jpn [3 3 0 0 11  0  11 0 9 :g16   [nil  :*zam :*crc nil  :*esp nil    :_nor]]
+            :jpn [3 3 0 0 11  0  11 0 9 :_qf    [nil  :*zam :*crc nil  :*esp nil    :*nor :_swe]]
             }
-  :group-d {:eng [3 3 0 0  8  1   7 0 9 :g16   [:*hai nil  :*den nil  :*chn nil    :_nga]]
+  :group-d {:eng [3 3 0 0  8  1   7 0 9 :_qf   [:*hai nil  :*den nil  :*chn nil    :*nga  :_col]]
             :hai [3 0 3 0  0  4  -4 0 0 :group [:.eng nil  nil  :.chn nil  :.den]]
-            :den [3 2 1 0  3  1   2 0 6 :g16   [nil  :*chn :.eng nil  nil  :*hai   :_aus]]
+            :den [3 2 1 0  3  1   2 0 6 :g16   [nil  :*chn :.eng nil  nil  :*hai   :.aus]]
             :chn [3 1 2 0  2  7  -5 0 3 :group [nil  :.den nil  :*hai :.eng nil]]
             }
-  :group-e {:usa [3 1 0 2  4  1   3 0 5 :g16   [:*via nil  :.ned  nil  :+por nil   :_swe]]
+  :group-e {:usa [3 1 0 2  4  1   3 0 5 :g16   [:*via nil  :+ned  nil  :+por nil   :.swe]]
             :vie [3 0 3 0  0 12 -12 0 0 :group [:.usa nil  nil   :.por nil  :.ned]]
-            :ned [3 2 0 1  9  1   8 0 7 :g16   [nil  :*por :*usa  nil  nil  :*vie  :_rsa]]
+            :ned [3 2 0 1  9  1   8 0 7 :_qf   [nil  :*por :+usa  nil  nil  :*vie  :*rsa :_esp]]
             :por [3 1 1 1  2  1   1 0 4 :group [nil  :.ned nil   :*vie :+usa nil]]
             }
-  :group-f {:fra [3 2 0 1  8  4   4 0 7 :g16   [:+jam nil  :*bra nil  :*pan nil   :_mar]]
-            :jam [3 1 0 2  1  0   1 1 5 :g16   [:+fra nil  nil  :*pan nil  :+bra  :_col]]
+  :group-f {:fra [3 2 0 1  8  4   4 0 7 :_qf   [:+jam nil  :*bra nil  :*pan nil   :*mar  :_aus]]
+            :jam [3 1 0 2  1  0   1 1 5 :g16   [:+fra nil  nil  :*pan nil  :+bra  :.col]]
             :bra [3 1 1 1  5  2   3 0 4 :group [nil  :*pan :.fra nil  nil  :+jam]]
             :pan [3 0 3 0  3 11  -8 0 0 :group [nil  :.bra nil  :.jam :.fra nil]]
             }
-  :group-g {:swe [3 3 0 0  9  1   8 0 9 :g16   [:*rsa nil  nil  :*ita :*arg nil   :_usa]]
-            :rsa [3 1 1 1  6  6   0 0 4 :g16   [:.swe nil  :+arg nil  nil  :*ita  :_ned]]
+  :group-g {:swe [3 3 0 0  9  1   8 0 9 :_qf    [:*rsa nil  nil  :*ita :*arg nil   :*usa :_jpn]]
+            :rsa [3 1 1 1  6  6   0 0 4 :g16   [:.swe nil  :+arg nil  nil  :*ita  :.ned]]
             :ita [3 1 2 0  3  8  -5 0 3 :group [nil  :*arg nil  :.swe nil  :.rsa]]
             :arg [3 0 2 1  2  5  -3 0 1 :group [nil  :.ita :+rsa nil  :.swe nil]]
             }
   :group-h {:ger [3 1 1 1  8  3   5 0 1 :group [:*mar nil  nil  :.col :+kor nil]]
-            :mar [3 2 1 0  2  6  -4 0 4 :g16   [:.ger nil  :*kor nil  nil  :*col  :_fra]]
-            :col [3 2 1 0  4  2   2 0 6 :g16   [nil  :*kor nil  :*ger nil  :.mar  :_jam]]
+            :mar [3 2 1 0  2  6  -4 0 4 :g16   [:.ger nil  :*kor nil  nil  :*col  :.fra]]
+            :col [3 2 1 0  4  2   2 0 6 :_qf   [nil  :*kor nil  :*ger nil  :.mar  :*jam  :_eng]]
             :kor [3 0 2 1  1  4  -3 0 1 :group [nil  :.col :.mar nil  :+ger nil]]
             }
   }
 
  :finals
- {:group-16-1 {:positions [:group-a-1 :group-c-2]
+ {:group-16-1 {:game 49
+               :positions [:group-a-1 :group-c-2]
                :teams [:sui :esp]
-               :summary ""
-               :scoreboard {:sui "" :esp ""}}
-  :group-16-2 {:positions [:group-c-1 :group-a-2]
+               :summary "ESP won"
+               :scoreboard {:sui "1" :esp "5"}}
+  :group-16-2 {:game 50
+               :positions [:group-c-1 :group-a-2]
                :teams [:jpn :nor]
-               :summary ""
-               :scoreboard {:jpn "" :nor ""}}
-  :group-16-3 {:positions [:group-e-1 :group-g-2]
+               :summary "JPN won"
+               :scoreboard {:jpn "3" :nor "1"}}
+  :group-16-3 {:game 51
+               :positions [:group-e-1 :group-g-2]
                :teams [:ned :rsa]
-               :summary ""
-               :scoreboard {:ned "" :rsa ""}}
-  :group-16-4 {:positions [:group-g-1 :group-e-2]
+               :summary "NED won"
+               :scoreboard {:ned "2" :rsa "0"}}
+  :group-16-4 {:game 52
+               :positions [:group-g-1 :group-e-2]
                :teams [:swe :usa]
-               :summary ""
-               :scoreboard {:swe "" :usa ""}}
-  :group-16-5 {:positions [:group-d-1 :group-b-2]
-               :teams [:eng :nga]
-               :summary ""
-               :scorebaord {:eng "" :nga ""}}
-  :group-16-6 {:positions {:group-b-1 :group-d-2}
+               :summary "SWE won"
+               :scoreboard {:swe "0(5)" :usa "0(4)"}}
+  :group-16-5 {:game 53
+               :positions {:group-b-1 :group-d-2}
                :teams [:aus :den]
-               :summary ""
-               :scoreboard {:aus "" :den ""}}
-  :group-16-7 {:positions [:group-h-1 :group-f-2]
-               :teams [:col :jam]
-               :summary ""
-               :scoreboard {:col "" :jam ""}}
-  :group-16-8 {:positions [:group-f-1 :group-h-2]
+               :summary "AUS won"
+               :scoreboard {:aus "2" :den "0"}}
+  :group-16-6 {:game 54
+               :positions [:group-d-1 :group-b-2]
+               :teams [:eng :nga]
+               :summary "ENG won"
+               :scorebaord {:eng "0(4) R" :nga "0(2)"}}
+  :group-16-7 {:game 55
+               :positions [:group-f-1 :group-h-2]
                :teams [:fra :mar]
                :summary ""
                :scorebaord {:fra "" :mar ""}}
+  :group-16-8 {:game 56
+               :positions [:group-h-1 :group-f-2]
+               :teams [:col :jam]
+               :summary ""
+               :scoreboard {:col "" :jam ""}}
 
-  :quarter-final-1 {:positions [:group-16-1 :group-16-3]}
-  :quarter-final-2 {:positions [:group-16-2 :group-16-4]}
-  :quarter-final-3 {:positions [:group-16-5 :group-16-7]}
-  :quarter-final-4 {:positions [:group-16-6 :group-16-8]}
+  :quarter-final-1 {:game 57
+                    :positions [:group-16-1 :group-16-3]
+                    :teams [:esp :ned]
+                    :scoreboard {:esp "" :ned ""}}
+  :quarter-final-2 {:game 58
+                    :positions [:group-16-2 :group-16-4]
+                    :teams [:jpn :swe]
+                    :scoreboard {:jpn "" :swe ""}}
+  :quarter-final-3 {:game 59
+                    :positions [:group-16-5 :group-16-7]
+                    :teams [:aus :fra]
+                    :scoreboard {:aus "" :fra ""}}
+  :quarter-final-4 {:game 60
+                    :positions [:group-16-6 :group-16-8]
+                    :teams [:eng :col]
+                    :scoreboard {:eng "" :fra ""}}
 
-  :semi-final-1 {:positions [:quarter-final-1 :quarter-final-2]}
-  :semi-final-2 {:positions [:quarter-final-3 :quarter-final-4]}
+  :semi-final-1 {:game 61
+                 :positions [:quarter-final-1 :quarter-final-2]}
+  :semi-final-2 {:game 62
+                 :positions [:quarter-final-3 :quarter-final-4]}
 
-  :playoff {:positions [:semi-final-1-2 :semi-final-2-2]}
-  :grand-final {:positions [:semi-final-1-1 :semi-final-2-2]}
+  :playoff {:game 63
+            :positions [:semi-final-1-2 :semi-final-2-2]}
+  :grand-final {:game 64
+                :positions [:semi-final-1-1 :semi-final-2-2]}
 
   }
 
