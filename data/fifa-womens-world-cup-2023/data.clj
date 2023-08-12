@@ -1726,14 +1726,14 @@
    :positions [:group-16-1 :group-16-3],
    :teams [:esp :ned]
    :round 5,
-   :summary "",
+   :summary "ESP won",
    :AwayTeamScore nil,
    :result {:group-16-1 {}, :group-16-3 {}},
    :score {:group-16-1 "", :group-16-3 ""},
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-11 01:00:00Z",
-   :scoreboard {:esp "" :ned ""},
+   :scoreboard {:esp "2" :ned "1"},
    :AwayTeam "To be announced",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1747,14 +1747,14 @@
    :position [:group-16-2 :group-16-4],
    :teams [:jpn :swe]
    :round 5,
-   :summary "",
+   :summary "SWE won",
    :AwayTeamScore nil,
    :result {:group-16-2 {}, :group-16-4 {}},
    :score {:group-16-2 "", :group-16-4 ""},
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-11 07:30:00Z",
-   :scoreboard {:jpn "", :swe ""},
+   :scoreboard {:jpn "1", :swe "2"},
    :AwayTeam "To be announced",
    :Location "Eden Park",
    :location_id :auc
@@ -1894,10 +1894,10 @@
             :nga [3 1 0 2  3  2   1 1 5 :g16   [nil  :+can nil  :*aus nil  :+irl   :.eng]]
             :can [3 1 1 1  2  5  -3 0 4 :group [nil  :+nga :*irl nil  :.aus nil]]
             }
-  :group-c {:esp [3 2 1 0  8  4   4 0 6 :_qf    [:*crc nil  nil  :*zam :.jpn nil    :*sui :_ned]]
+  :group-c {:esp [3 2 1 0  8  4   4 0 6 :_sf    [:*crc nil  nil  :*zam :.jpn nil    :*sui :*ned  nil]]
             :crc [3 0 3 0  1  8  -7 0 0 :group [:.esp nil  :.jpn nil  nil  :.zam]]
             :zam [3 1 2 0  3 11  -8 1 3 :group [nil  :.jpn nil  :.esp nil  :*crc]]
-            :jpn [3 3 0 0 11  0  11 0 9 :_qf    [nil  :*zam :*crc nil  :*esp nil    :*nor :_swe]]
+            :jpn [3 3 0 0 11  0  11 0 9 :qf    [nil  :*zam :*crc nil  :*esp nil    :*nor :.swe]]
             }
   :group-d {:eng [3 3 0 0  8  1   7 0 9 :_qf   [:*hai nil  :*den nil  :*chn nil    :*nga  :_col]]
             :hai [3 0 3 0  0  4  -4 0 0 :group [:.eng nil  nil  :.chn nil  :.den]]
@@ -1906,7 +1906,7 @@
             }
   :group-e {:usa [3 1 0 2  4  1   3 0 5 :g16   [:*via nil  :+ned  nil  :+por nil   :.swe]]
             :vie [3 0 3 0  0 12 -12 0 0 :group [:.usa nil  nil   :.por nil  :.ned]]
-            :ned [3 2 0 1  9  1   8 0 7 :_qf   [nil  :*por :+usa  nil  nil  :*vie  :*rsa :_esp]]
+            :ned [3 2 0 1  9  1   8 0 7 :qf   [nil  :*por :+usa  nil  nil  :*vie  :*rsa :.esp]]
             :por [3 1 1 1  2  1   1 0 4 :group [nil  :.ned nil   :*vie :+usa nil]]
             }
   :group-f {:fra [3 2 0 1  8  4   4 0 7 :_qf   [:+jam nil  :*bra nil  :*pan nil   :*mar  :_aus]]
@@ -1914,7 +1914,7 @@
             :bra [3 1 1 1  5  2   3 0 4 :group [nil  :*pan :.fra nil  nil  :+jam]]
             :pan [3 0 3 0  3 11  -8 0 0 :group [nil  :.bra nil  :.jam :.fra nil]]
             }
-  :group-g {:swe [3 3 0 0  9  1   8 0 9 :_qf    [:*rsa nil  nil  :*ita :*arg nil   :*usa :_jpn]]
+  :group-g {:swe [3 3 0 0  9  1   8 0 9 :_sf    [:*rsa nil  nil  :*ita :*arg nil   :*usa :*jpn nil]]
             :rsa [3 1 1 1  6  6   0 0 4 :g16   [:.swe nil  :+arg nil  nil  :*ita  :.ned]]
             :ita [3 1 2 0  3  8  -5 0 3 :group [nil  :*arg nil  :.swe nil  :.rsa]]
             :arg [3 0 2 1  2  5  -3 0 1 :group [nil  :.ita :+rsa nil  :.swe nil]]
@@ -1971,11 +1971,11 @@
   :quarter-final-1 {:game 57
                     :positions [:group-16-1 :group-16-3]
                     :teams [:esp :ned]
-                    :scoreboard {:esp "" :ned ""}}
+                    :scoreboard {:esp "2" :ned "1"}}
   :quarter-final-2 {:game 58
                     :positions [:group-16-2 :group-16-4]
                     :teams [:jpn :swe]
-                    :scoreboard {:jpn "" :swe ""}}
+                    :scoreboard {:jpn "1" :swe "2"}}
   :quarter-final-3 {:game 59
                     :positions [:group-16-5 :group-16-7]
                     :teams [:aus :fra]
@@ -1986,7 +1986,9 @@
                     :scoreboard {:eng "" :fra ""}}
 
   :semi-final-1 {:game 61
-                 :positions [:quarter-final-1 :quarter-final-2]}
+                 :positions [:quarter-final-1 :quarter-final-2]
+                 :teams [:esp :swe]
+                 :scoreboard {}}
   :semi-final-2 {:game 62
                  :positions [:quarter-final-3 :quarter-final-4]}
 
