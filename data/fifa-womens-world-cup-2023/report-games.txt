@@ -1,66 +1,66 @@
--------------------------------------------------------------------------------------
-  1   1  2023-07-20 Thu 04:30pm  AUC  G A  NZL  NOR  /  NZL 1     NOR 0    NZL won
-  2   1  2023-07-20 Thu 07:30pm  SYD  G B  AUS  IRL  /  AUS 1     IRL 0    AUS won
-  4   1  2023-07-21 Fri 12:00pm  MEL  G B  NGR  CAN  /  NGR 0 R   CAN 0    Draw
-  3   1  2023-07-21 Fri 02:30pm  DUN  G A  PHI  SUI  /  PHI 0     SUI 2    SUI won
-  5   1  2023-07-21 Fri 05:00pm  WEL  G C  ESP  CRC  /  ESP 3     CRC 0    ESP won
-  9   1  2023-07-22 Sat 10:30am  AUC  G E  USA  VIE  /  USA 3     VIE 0    USA won
-  6   1  2023-07-22 Sat 04:30pm  WAI  G C  ZAM  JPN  /  ZAM 0 R   JPN 5    JPN won
-  7   1  2023-07-22 Sat 07:00pm  BRI  G E  ENG  HAI  /  ENG 1     HAI 0    ENG won
-  8   1  2023-07-22 Sat 09:30pm  PER  G D  DEN  CHN  /  DEN 1     CHN 0    DEN won
- 12   1  2023-07-23 Sun 02:30pm  WEL  G G  SWE  RSA  /  SWE 2     RSA 1    SWE won
- 10   1  2023-07-23 Sun 05:00pm  DUN  G E  NED  POR  /  NED 1     POR 0    NED won
- 11   1  2023-07-23 Sun 07:30pm  SYD  G F  FRA  JAM  /  FRA 0     JAM 0 R  Draw
- 14   1  2023-07-24 Mon 03:30pm  AUC  G G  ITA  ARG  /  ITA 1     ARG 0    ITA won
- 15   1  2023-07-24 Mon 06:00pm  MEL  G H  GER  MAR  /  GER 6     MAR 0    GER won
- 13   1  2023-07-24 Mon 08:30pm  ADL  G F  BRA  PAN  /  BRA 4     PAN 0    BRA won
- 16   1  2023-07-25 Tue 11:30am  SYD  G H  COL  KOR  /  COL 2     KOR 0    COL won
- 17   2  2023-07-25 Tue 03:00pm  WEL  G A  NZL  PHI  /  NZL 0     PHI 1    PHI won
- 18   2  2023-07-25 Tue 05:30pm  WAI  G A  SUI  NOR  /  SUI 0     NOR 0    Draw
- 21   2  2023-07-26 Wed 02:30pm  DUN  G C  JPN  CRC  /  JPN 2     CRC 0    JPN won
- 20   2  2023-07-26 Wed 05:00pm  AUC  G C  ESP  ZAM  /  ESP 5     ZAM 0    ESP won
- 19   2  2023-07-26 Wed 09:30pm  PER  G B  CAN  IRL  /  CAN 2     IRL 1    CAN won
- 23   2  2023-07-27 Thu 10:30am  WEL  G E  USA  NED  /  USA 1     NED 1    Draw
- 24   2  2023-07-27 Thu 05:00pm  WAI  G E  POR  VIE  /  POR 2     VIE 0    Por won
- 22   2  2023-07-27 Thu 07:30pm  BRI  G B  AUS  NGR  /  AUS 2     NGR 3    NGR won
- 27   2  2023-07-28 Fri 09:30am  DUN  G G  ARG  RSA  /  ARG 2     RSA 2    Draw
- 25   2  2023-07-28 Fri 06:00pm  SYD  G D  ENG  DEN  /  ENG 1     DEN 0    ENG won
- 26   2  2023-07-28 Fri 08:30pm  ADL  G D  CHN  HAI  /  CHN 1 R   HAI 0    CHN won
- 30   2  2023-07-29 Sat 05:00pm  WEL  G G  SWE  ITA  /  SWE 5     ITA 0    SWE won
- 28   2  2023-07-29 Sat 07:30pm  BRI  G F  FRA  BRA  /  FRA 2     BRA 1    FRA won
- 29   2  2023-07-29 Sat 10:00pm  PER  G F  PAN  JAM  /  PAN 0     JAM 1    JAM won
- 32   2  2023-07-30 Sun 02:00pm  ADL  G H  KOR  MAR  /  KOR 0     MAR 1    MOR won
- 31   2  2023-07-30 Sun 07:00pm  SYD  G H  GER  COL  /  GER 1     COL 2    COL won
- 33   3  2023-07-30 Sun 04:30pm  DUN  G A  SUI  NZL  /  SUI 0     NZL 0    Draw
- 34   3  2023-07-30 Sun 04:30pm  AUC  G A  NOR  PHI  /  NOR 6     PHI 0 R  NOR won
- 37   3  2023-07-31 Mon 04:30pm  WEL  G C  JPN  ESP  /  JPN 4     ESP 0    JPN won
- 38   3  2023-07-31 Mon 04:30pm  WAI  G C  CRC  ZAM  /  CRC 1     ZAM 3    ZAM won
- 35   3  2023-07-31 Mon 07:30pm  MEL  G B  CAN  AUS  /  CAN 0     AUS 4    AUS won
- 36   3  2023-07-31 Mon 07:30pm  BRI  G B  IRL  NGR  /  IRL 0     NGR 0    Draw
- 41   3  2023-08-01 Tue 04:30pm  AUC  G E  POR  USA  /  POR 0     USA 0    Draw
- 42   3  2023-08-01 Tue 04:30pm  DUN  G E  VIE  NED  /  VIE 0     NED 7    NED won
- 39   3  2023-08-01 Tue 08:30pm  ADL  G D  CHN  ENG  /  CHN 1     ENG 6    ENG won
- 40   3  2023-08-01 Tue 08:30pm  PER  G D  HAI  DEN  /  HAI 0     DEN 2    DEN won
- 45   3  2023-08-02 Wed 04:30pm  WAI  G G  ARG  SWE  /  ARG 0     SWE 2    SWE won
- 46   3  2023-08-02 Wed 04:30pm  WEL  G G  RSA  ITA  /  RSA 3     ITA 2    RSA won
- 43   3  2023-08-02 Wed 07:30pm  SYD  G F  PAN  FRA  /  PAN 3     FRA 6    FRA won
- 44   3  2023-08-02 Wed 07:30pm  MEL  G F  JAM  BRA  /  JAM 0     BRA 0    Draw
- 47   3  2023-08-03 Thu 07:30pm  BRI  G H  KOR  GER  /  KOR 1     GER 1    Draw
- 48   3  2023-08-03 Thu 07:30pm  PER  G H  MAR  COL  /  MAR 1     COL 0    MAR won
- 49   4  2023-08-05 Sat 02:30pm  AUC  GS1  SUI  ESP  /  SUI 1     ESP 5    ESP won
- 50   4  2023-08-05 Sat 05:30pm  WEL  GS2  JPN  NOR  /  JPN 3     NOR 1    JPN won
- 51   4  2023-08-06 Sun 11:30am  SYD  GS3  NED  RSA  /  NED 2     RSA 0    NED won
- 52   4  2023-08-06 Sun 06:30pm  MEL  GS4  SWE  USA  /  SWE 0(5)  USA 0(4) SWE won
- 54   4  2023-08-07 Mon 05:00pm  BRI  GS6  ENG  NGA  /  ENG 0(4) R  NGA 0(2) ENG won
- 53   4  2023-08-07 Mon 08:00pm  AUS  GS5  AUS  DEN  /  AUS 2     DEN 0    AUS won
- 56   4  2023-08-08 Tue 05:30pm  MEL  GS8  COL  JAM  /  COL 1     JAM 0    COL won
- 55   4  2023-08-08 Tue 08:30pm  ADL  GS7  FRA  MAR  /  FRA 4     MAR 0    FRA won
- 57   5  2023-08-11 Fri 10:30am  WEL  QF1  ESP  NED
- 58   5  2023-08-11 Fri 05:00pm  AUC  QF2  JPN  SWE
- 59   5  2023-08-12 Sat 04:30pm  BRI  QF3  AUS  FRA
- 60   5  2023-08-12 Sat 08:00pm  AUS  QF4  ENG  COL
- 61   6  2023-08-15 Tue 05:30pm  AUC  SF1  QUARTER-FINAL-1  QUARTER-FINAL-2
- 62   6  2023-08-16 Wed 07:30pm  AUS  SF2  QUARTER-FINAL-3  QUARTER-FINAL-4
- 63   7  2023-08-19 Sat 05:30pm  BRI  PO   SEMI-FINAL-1-2  SEMI-FINAL-2-2
- 64   7  2023-08-20 Sun 07:30pm  AUS  GF   SEMI-FINAL-1-1  SEMI-FINAL-2-1
--------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+  1   1  2023-07-20 Thu 04:30pm  AUC  G A  NZL  NOR  /  NZL 1       NOR 0      NZL won
+  2   1  2023-07-20 Thu 07:30pm  SYD  G B  AUS  IRL  /  AUS 1       IRL 0      AUS won
+  4   1  2023-07-21 Fri 12:00pm  MEL  G B  NGR  CAN  /  NGR 0 R     CAN 0      Draw
+  3   1  2023-07-21 Fri 02:30pm  DUN  G A  PHI  SUI  /  PHI 0       SUI 2      SUI won
+  5   1  2023-07-21 Fri 05:00pm  WEL  G C  ESP  CRC  /  ESP 3       CRC 0      ESP won
+  9   1  2023-07-22 Sat 10:30am  AUC  G E  USA  VIE  /  USA 3       VIE 0      USA won
+  6   1  2023-07-22 Sat 04:30pm  WAI  G C  ZAM  JPN  /  ZAM 0 R     JPN 5      JPN won
+  7   1  2023-07-22 Sat 07:00pm  BRI  G E  ENG  HAI  /  ENG 1       HAI 0      ENG won
+  8   1  2023-07-22 Sat 09:30pm  PER  G D  DEN  CHN  /  DEN 1       CHN 0      DEN won
+ 12   1  2023-07-23 Sun 02:30pm  WEL  G G  SWE  RSA  /  SWE 2       RSA 1      SWE won
+ 10   1  2023-07-23 Sun 05:00pm  DUN  G E  NED  POR  /  NED 1       POR 0      NED won
+ 11   1  2023-07-23 Sun 07:30pm  SYD  G F  FRA  JAM  /  FRA 0       JAM 0 R    Draw
+ 14   1  2023-07-24 Mon 03:30pm  AUC  G G  ITA  ARG  /  ITA 1       ARG 0      ITA won
+ 15   1  2023-07-24 Mon 06:00pm  MEL  G H  GER  MAR  /  GER 6       MAR 0      GER won
+ 13   1  2023-07-24 Mon 08:30pm  ADL  G F  BRA  PAN  /  BRA 4       PAN 0      BRA won
+ 16   1  2023-07-25 Tue 11:30am  SYD  G H  COL  KOR  /  COL 2       KOR 0      COL won
+ 17   2  2023-07-25 Tue 03:00pm  WEL  G A  NZL  PHI  /  NZL 0       PHI 1      PHI won
+ 18   2  2023-07-25 Tue 05:30pm  WAI  G A  SUI  NOR  /  SUI 0       NOR 0      Draw
+ 21   2  2023-07-26 Wed 02:30pm  DUN  G C  JPN  CRC  /  JPN 2       CRC 0      JPN won
+ 20   2  2023-07-26 Wed 05:00pm  AUC  G C  ESP  ZAM  /  ESP 5       ZAM 0      ESP won
+ 19   2  2023-07-26 Wed 09:30pm  PER  G B  CAN  IRL  /  CAN 2       IRL 1      CAN won
+ 23   2  2023-07-27 Thu 10:30am  WEL  G E  USA  NED  /  USA 1       NED 1      Draw
+ 24   2  2023-07-27 Thu 05:00pm  WAI  G E  POR  VIE  /  POR 2       VIE 0      Por won
+ 22   2  2023-07-27 Thu 07:30pm  BRI  G B  AUS  NGR  /  AUS 2       NGR 3      NGR won
+ 27   2  2023-07-28 Fri 09:30am  DUN  G G  ARG  RSA  /  ARG 2       RSA 2      Draw
+ 25   2  2023-07-28 Fri 06:00pm  SYD  G D  ENG  DEN  /  ENG 1       DEN 0      ENG won
+ 26   2  2023-07-28 Fri 08:30pm  ADL  G D  CHN  HAI  /  CHN 1 R     HAI 0      CHN won
+ 30   2  2023-07-29 Sat 05:00pm  WEL  G G  SWE  ITA  /  SWE 5       ITA 0      SWE won
+ 28   2  2023-07-29 Sat 07:30pm  BRI  G F  FRA  BRA  /  FRA 2       BRA 1      FRA won
+ 29   2  2023-07-29 Sat 10:00pm  PER  G F  PAN  JAM  /  PAN 0       JAM 1      JAM won
+ 32   2  2023-07-30 Sun 02:00pm  ADL  G H  KOR  MAR  /  KOR 0       MAR 1      MOR won
+ 31   2  2023-07-30 Sun 07:00pm  SYD  G H  GER  COL  /  GER 1       COL 2      COL won
+ 33   3  2023-07-30 Sun 04:30pm  DUN  G A  SUI  NZL  /  SUI 0       NZL 0      Draw
+ 34   3  2023-07-30 Sun 04:30pm  AUC  G A  NOR  PHI  /  NOR 6       PHI 0 R    NOR won
+ 37   3  2023-07-31 Mon 04:30pm  WEL  G C  JPN  ESP  /  JPN 4       ESP 0      JPN won
+ 38   3  2023-07-31 Mon 04:30pm  WAI  G C  CRC  ZAM  /  CRC 1       ZAM 3      ZAM won
+ 35   3  2023-07-31 Mon 07:30pm  MEL  G B  CAN  AUS  /  CAN 0       AUS 4      AUS won
+ 36   3  2023-07-31 Mon 07:30pm  BRI  G B  IRL  NGR  /  IRL 0       NGR 0      Draw
+ 41   3  2023-08-01 Tue 04:30pm  AUC  G E  POR  USA  /  POR 0       USA 0      Draw
+ 42   3  2023-08-01 Tue 04:30pm  DUN  G E  VIE  NED  /  VIE 0       NED 7      NED won
+ 39   3  2023-08-01 Tue 08:30pm  ADL  G D  CHN  ENG  /  CHN 1       ENG 6      ENG won
+ 40   3  2023-08-01 Tue 08:30pm  PER  G D  HAI  DEN  /  HAI 0       DEN 2      DEN won
+ 45   3  2023-08-02 Wed 04:30pm  WAI  G G  ARG  SWE  /  ARG 0       SWE 2      SWE won
+ 46   3  2023-08-02 Wed 04:30pm  WEL  G G  RSA  ITA  /  RSA 3       ITA 2      RSA won
+ 43   3  2023-08-02 Wed 07:30pm  SYD  G F  PAN  FRA  /  PAN 3       FRA 6      FRA won
+ 44   3  2023-08-02 Wed 07:30pm  MEL  G F  JAM  BRA  /  JAM 0       BRA 0      Draw
+ 47   3  2023-08-03 Thu 07:30pm  BRI  G H  KOR  GER  /  KOR 1       GER 1      Draw
+ 48   3  2023-08-03 Thu 07:30pm  PER  G H  MAR  COL  /  MAR 1       COL 0      MAR won
+ 49   4  2023-08-05 Sat 02:30pm  AUC  GS1  SUI  ESP  /  SUI 1       ESP 5      ESP won
+ 50   4  2023-08-05 Sat 05:30pm  WEL  GS2  JPN  NOR  /  JPN 3       NOR 1      JPN won
+ 51   4  2023-08-06 Sun 11:30am  SYD  GS3  NED  RSA  /  NED 2       RSA 0      NED won
+ 52   4  2023-08-06 Sun 06:30pm  MEL  GS4  SWE  USA  /  SWE 0(5)    USA 0(4)   SWE won
+ 54   4  2023-08-07 Mon 05:00pm  BRI  GS6  ENG  NGA  /  ENG 0(4) R  NGA 0(2)   ENG won
+ 53   4  2023-08-07 Mon 08:00pm  AUS  GS5  AUS  DEN  /  AUS 2       DEN 0      AUS won
+ 56   4  2023-08-08 Tue 05:30pm  MEL  GS8  COL  JAM  /  COL 1       JAM 0      COL won
+ 55   4  2023-08-08 Tue 08:30pm  ADL  GS7  FRA  MAR  /  FRA 4       MAR 0      FRA won
+ 57   5  2023-08-11 Fri 10:30am  WEL  QF1  ESP  NED  /  ESP 2       NED 1      ESP won
+ 58   5  2023-08-11 Fri 05:00pm  AUC  QF2  JPN  SWE  /  JPN 1       SWE 2      SWE won
+ 59   5  2023-08-12 Sat 04:30pm  BRI  QF3  AUS  FRA  /  AUS 0(7)    FRA 0(6)   AUS won
+ 60   5  2023-08-12 Sat 08:00pm  AUS  QF4  ENG  COL  /  ENG 2       COL 1      ENG won
+ 61   6  2023-08-15 Tue 05:30pm  AUC  SF1  ESP  SWE  /  ESP 2       SWE 1      ESP won
+ 62   6  2023-08-16 Wed 07:30pm  AUS  SF2  AUS  ENG  /  AUS 1       ENG 3      ENG won
+ 63   7  2023-08-19 Sat 05:30pm  BRI  PO   SWE  AUS
+ 64   7  2023-08-20 Sun 07:30pm  AUS  GF   ESP  ENG
+----------------------------------------------------------------------------------------

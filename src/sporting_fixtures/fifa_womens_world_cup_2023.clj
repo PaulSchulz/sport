@@ -51,6 +51,7 @@
   (println event-title)
   (println (r/report-games data))
   (println (r/report-teams data))
+  (println (r/report-games-timeline data))
   )
 
 (defn report-games-save [data]

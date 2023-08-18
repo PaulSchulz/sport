@@ -165,7 +165,7 @@
                  (not (= (vals (:scoreboard game)) ["" ""])))
           (let [home-scoreboard (home (:scoreboard game))
                 away-scoreboard (away (:scoreboard game))]
-            (format "  /  %-3s %-4s  %-3s %-4s "
+            (format "  /  %-3s %-6s  %-3s %-6s "
                     (str/upper-case (name home))
                     home-scoreboard
                     (str/upper-case (name away))
@@ -186,7 +186,7 @@
     )
 
   (str
-   "-------------------------------------------------------------------------------------\n"
+   "----------------------------------------------------------------------------------------\n"
    (apply str
           (map (fn [game]
                  (format report-format
@@ -199,10 +199,10 @@
                            (format-game-result-football game)
                            (format-game-result game)
                            )
-
-                         ))
+                         )
+                 )
                (:results data)))
-   "-------------------------------------------------------------------------------------\n"))
+   "----------------------------------------------------------------------------------------\n"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn report-games-save [data]
@@ -225,21 +225,37 @@
    )
   )
 
+
+(def stats-key-string
+  ["Key"
+   "  G   - Games"
+   "  W   - Wins"
+   "  L   - Losses"
+   "  D   - Draws"
+   "  Gf  - Goals For"
+   "  Ga  - Goals Against"
+   "  Gd  - Goal Difference"
+   "  R   - Red Cards"
+   "  Pts - Tournament Points"]
+  )
+
+(def results-key-string
+  ["Path Key"
+   "  * - Won over"
+   "  . - Lost to"
+   "  + - Drew with"
+   "  _ - Game scheduled"])
+
 (defn stats-key []
   (str
    (str/join "\n"
-             ["Key"
-              "  G   - Games"
-              "  W   - Wins"
-              "  L   - Losses"
-              "  D   - Draws"
-              "  Gf  - Goals For"
-              "  Ga  - Goals Against"
-              "  Gd  - Goal Difference"
-              "  R   - Red Cards"
-              "  Pts - Tournament Points"])
-   )
-  )
+             (map (fn [a b]
+                    (format "%-30s %-30s" a b))
+                  stats-key-string
+                  (concat results-key-string (repeat ""))
+                  )
+             )
+   ))
 
 (defn path-string [path]
   (str/join " "
@@ -312,6 +328,55 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Football Game Results
+(defn report-games-timeline-header []
+  (str
+   "Game Reports\n"
+   "------------------------------------------------------------------------------------------\n"
+   )
+  )
+
+(defn report-games-timeline [data]
+  (str
+   (report-games-timeline-header)
+   (apply str
+          (map (fn [game]
+                 (str
+                  (format "%3s %3s  %s  %s  %s  %s\n"
+                          (:MatchNumber game)
+                          (:RoundNumber game)
+                          (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
+                          (str/upper-case (name (:location_id game)))
+                          (convert-stage-group (:stage game) (:group game))
+                          (if (= (:code (:details data)) :football)
+                            (format-game-result-football game)
+                            (format-game-result game)
+                            )
+                          )
+                  "-----------------------------------------------------------------------------------\n"
+                  (format "         %3s %s v %3s %s\n"
+                          (str/upper-case (name (-> game :teams first)))
+                          ((-> game :teams first) (-> game :scoreboard))
+                          (str/upper-case (name (-> game :teams second)))
+                          ((-> game :teams second) (-> game :scoreboard))
+                          )
+                  (if (-> game :summary)
+                    (format "         %s" (-> game :summary))
+                    "")
+                  "\n"
+                  (if (-> game :timeline)
+                    (apply str
+                           (map (fn [timeline] (format "         %s\n" timeline))
+                                (-> game :timeline)))
+                    "")
+                  "\n"
+                  "\n"
+                  )
+                 )
+               (:results data)))
+   ))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Finals
 (defn match-string [match]
   (str
@@ -332,11 +397,11 @@
    ))
 
 (defn report-finals [data]
-  (let [finals (:finals data)
-        report
-        [(-> finals :group-16-1 :teams first)
-         " v "
-         (-> finals :group-16-1 :teams second)
-         ]]
-    report)
-  )
+(let [finals (:finals data)
+report
+[(-> finals :group-16-1 :teams first)
+ " v "
+ (-> finals :group-16-1 :teams second)
+ ]]
+report)
+)

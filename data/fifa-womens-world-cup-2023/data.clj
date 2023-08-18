@@ -605,6 +605,7 @@
    :HomeTeam "New Zealand",
    :DateUtc "2023-07-20 07:00:00Z",
    :scoreboard {:nzl "1", :nor "0"},
+   :timeline [["48" :nzl "Goal: Hannah Wilkinson"]]
    :AwayTeam "Norway",
    :Location "Eden Park",
    :location_id :auc
@@ -625,6 +626,7 @@
    :HomeTeam "Australia",
    :DateUtc "2023-07-20 10:00:00Z",
    :scoreboard {:aus "1", :irl "0"},
+   :timeline [["52" :aus :goal-penalty "Stephanie Catley"]]
    :AwayTeam "Republic of Ireland",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -645,6 +647,7 @@
    :HomeTeam "Nigeria",
    :DateUtc "2023-07-21 02:30:00Z",
    :scoreboard {:ngr "0 R", :can "0"},
+   :timeline [["90+8" :ngr :red-card "Debora Abiodun"]]
    :AwayTeam "Canada",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -665,6 +668,8 @@
    :HomeTeam "Philippines",
    :DateUtc "2023-07-21 05:00:00Z",
    :scoreboard {:phi "0", :sui "2"},
+   :timeline [["45" :swi :goal-penalty "Romona Bachmann"]
+              ["64" :swi :goal "Seraina Piubel"]]
    :AwayTeam "Switzerland",
    :Location "Dunedin Stadium",
    :location_id :dun
@@ -685,6 +690,9 @@
    :HomeTeam "Spain",
    :DateUtc "2023-07-21 07:30:00Z",
    :scoreboard {:esp "3", :crc "0"},
+   :timeline [["21" :esp :goal-own "Valeria del Campo"]
+              ["23" :esp :goal "Aitana Bonmati"]
+              ["27" :esp :goal "Ester Gonzalez"]]
    :AwayTeam "Costa Rica",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -705,6 +713,9 @@
    :HomeTeam "USA",
    :DateUtc "2023-07-22 01:00:00Z",
    :scoreboard {:usa "3", :vie "0"},
+   :timeline [["14"   :usa :goal "Sophia Smith"]
+              ["45+7" :usa :goal "Sophia Smith"]
+              ["77"   :usa :goal "Lindsey Horan"]]
    :AwayTeam "Vietnam",
    :Location "Eden Park",
    :location_id :auc
@@ -725,6 +736,11 @@
    :HomeTeam "Zambia",
    :DateUtc "2023-07-22 07:00:00Z",
    :scoreboard {:zam "0 R", :jpn "5"},
+   :timeline [["43"    :jpn :goal "Hinata Miyazawa"]
+              ["55"    :jpn :goal "Mina Tanaka"]
+              ["62"    :jpn :goal "Hinata Miyazawa"]
+              ["71"    :jpn :goal "Riko Endo"]
+              ["90+11" :jpn :goal "Riki Ueki"]]
    :AwayTeam "Japan",
    :Location "Waikato Stadium",
    :location_id :wai
@@ -745,6 +761,7 @@
    :HomeTeam "England",
    :DateUtc "2023-07-22 09:30:00Z",
    :scoreboard {:eng "1", :hai "0"},
+   :timeline [["29" :eng :goal-penalty "Georgia Stanway"]]
    :AwayTeam "Haiti",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -765,6 +782,7 @@
    :HomeTeam "Denmark",
    :DateUtc "2023-07-22 12:00:00Z",
    :scoreboard {:den "1", :chn "0"},
+   :timeline [["89" :den :goal "Amalie Vangsgaard"]]
    :AwayTeam "China PR",
    :Location "Perth Rectangular Stadium",
    :location_id :per
@@ -785,6 +803,9 @@
    :HomeTeam "Sweden",
    :DateUtc "2023-07-23 05:00:00Z",
    :scoreboard {:swe "2", :rsa "1"},
+   :timeline [["48" :rsa :goal "Hildah Magaia"]
+              ["65" :swe :goal "Fridonlina Rolfo"]
+              ["90" :swe :goal "Amanda Ilestedt"]]
    :AwayTeam "South Africa",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -825,6 +846,7 @@
    :HomeTeam "France",
    :DateUtc "2023-07-23 10:00:00Z",
    :scoreboard {:fra "0", :jam "0 R"},
+   :timeline [[]]
    :AwayTeam "Jamaica",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -845,6 +867,7 @@
    :HomeTeam "Italy",
    :DateUtc "2023-07-24 06:00:00Z",
    :scoreboard {:ita "1", :arg "0"},
+   :timeline [["87" :ita "Goal Cristiana Girelli"]]
    :AwayTeam "Argentina",
    :Location "Eden Park",
    :location_id :auc
@@ -865,6 +888,12 @@
    :HomeTeam "Germany",
    :DateUtc "2023-07-24 08:30:00Z",
    :scoreboard {:ger "6", :mar "0"},
+   :timeline [["11" :ger "Goal Alexandra Popp"]
+              ["39" :ger "Goal Alexandra Popp"]
+              ["46" :ger "Goal Kiara Buhl"]
+              ["54" :ger "Goal(OG) Hanane Ait Elj"]
+              ["79" :ger "Goal(OG) Yasmin Mrabet"]
+              ["90" :ger "Goal Lea Schuller"]]
    :AwayTeam "Morocco",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -885,6 +914,10 @@
    :HomeTeam "Brazil",
    :DateUtc "2023-07-24 11:00:00Z",
    :scoreboard {:bra "4", :pan "0"},
+   :timeline [["19" :bra "Goal Ary Borges"]
+              ["39" :bra "Goal Ary Borges"]
+              ["48" :bra "Goal Beatriz Zaneratto Joao"]
+              ["70" :bra "Goal Ary Borgas"]]
    :AwayTeam "Panama",
    :Location "Hindmarsh Stadium",
    :location_id :adl
@@ -905,6 +938,8 @@
    :HomeTeam "Colombia",
    :DateUtc "2023-07-25 02:00:00Z",
    :scoreboard {:col "2", :kor "0"},
+   :timeline [["30" :col :goal-penalty "Catalina Usme"]
+              ["39" :col :goal         "Linda Caicedo"]]
    :AwayTeam "Korea Republic",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -925,6 +960,7 @@
    :HomeTeam "New Zealand",
    :DateUtc "2023-07-25 05:30:00Z",
    :scoreboard {:nzl "0", :phi "1"},
+   :timeline [["24" :phi :goal "Sarina Bolden"]]
    :AwayTeam "Philippines",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -945,6 +981,7 @@
    :HomeTeam "Switzerland",
    :DateUtc "2023-07-25 08:00:00Z",
    :scoreboard {:sui "0", :nor "0"},
+   :timeline [[]]
    :AwayTeam "Norway",
    :Location "Waikato Stadium",
    :location_id :wai
@@ -965,6 +1002,8 @@
    :HomeTeam "Japan",
    :DateUtc "2023-07-26 05:00:00Z",
    :scoreboard {:jpn "2", :crc "0"},
+   :timeline [["25" :jpn :goal "Hikaru Naomoto"]
+              ["27" :jpn :goal "Aoba Fujino"]]
    :AwayTeam "Costa Rica",
    :Location "Dunedin Stadium",
    :location_id :dun
@@ -985,6 +1024,11 @@
    :HomeTeam "Spain",
    :DateUtc "2023-07-26 07:30:00Z",
    :scoreboard {:esp "5", :zam "0"},
+   :timeline [[ "9" :esp :goal "Teresa Abelleira"]
+              ["13" :esp :goal "Jennifer Hermoso"]
+              ["69" :esp :goal "Alba Redondo"]
+              ["70" :esp :goal "Jennifer Hermoso"]
+              ["85" :esp :goal "Alba Redondo"]]
    :AwayTeam "Zambia",
    :Location "Eden Park",
    :location_id :auc
@@ -1005,6 +1049,9 @@
    :HomeTeam "Canada",
    :DateUtc "2023-07-26 12:00:00Z",
    :scoreboard {:can "2", :irl "1"},
+   :timeline [["4"    :irl :goal     "Katie McCabe"]
+              ["45+5" :can :goal-own "Megan Connolly"]
+              ["53"   :can :goal     "Adriana Leon"]]
    :AwayTeam "Republic of Ireland",
    :Location "Perth Rectangular Stadium",
    :location_id :per
@@ -1025,6 +1072,8 @@
    :HomeTeam "USA",
    :DateUtc "2023-07-27 01:00:00Z",
    :scoreboard {:usa "1", :ned "1"},
+   :timeline [["17" :ned :goal "Jill Roord"]
+              ["62" :usa :goal "Lindsey Horan"]]
    :AwayTeam "Netherlands",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1045,6 +1094,8 @@
    :HomeTeam "Portugal",
    :DateUtc "2023-07-27 07:30:00Z",
    :scoreboard {:por "2", :vie "0"},
+   :timeline [["7"  :por :goal "Telma Encarnacao"]
+              ["21" :por :goal "Francisca Ramos Ribeiro Nazareth Sousa"]]
    :AwayTeam "Vietnam",
    :Location "Waikato Stadium",
    :location_id :wai
@@ -1065,6 +1116,11 @@
    :HomeTeam "Australia",
    :DateUtc "2023-07-27 10:00:00Z",
    :scoreboard {:aus "2", :ngr "3"},
+   :timeline [["45+1"  :aus :goal "Emily van Egmond"]
+              ["45+6"  :nig :goal "Uchenna Kanu"]
+              ["65"    :nig :goal "Osinachi Ohale"]
+              ["72"    :nig :goal "Asisat Oshoala"]
+              ["90+10" :nig :goal "Alanna Kennedy"]]
    :AwayTeam "Nigeria",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1085,6 +1141,10 @@
    :HomeTeam "Argentina",
    :DateUtc "2023-07-28 00:00:00Z",
    :scoreboard {:arg "2", :rsa "2"},
+   :timeline [["30" :rsa :goal "Linda Mothalo"]
+              ["66" :rsa :goal "Thembi Kgatlana"]
+              ["74" :arg :goal "Sophia Braun"]
+              ["79" :arg :goal "Romina Nunez"]]
    :AwayTeam "South Africa",
    :Location "Dunedin Stadium",
    :location_id :dun
@@ -1105,6 +1165,7 @@
    :HomeTeam "England",
    :DateUtc "2023-07-28 08:30:00Z",
    :scoreboard {:eng "1", :den "0"},
+   :timeline [["6" :eng :goal "Lauren James"]]
    :AwayTeam "Denmark",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -1125,6 +1186,8 @@
    :HomeTeam "China PR",
    :DateUtc "2023-07-28 11:00:00Z",
    :scoreboard {:chn "1 R", :hai "0"},
+   :timeline [["29" :chn :red-card     "Zhang Rui"]
+              ["74" :chn :goal-penalty "Wang Shuang"]]
    :AwayTeam "Haiti",
    :Location "Hindmarsh Stadium",
    :location_id :adl
@@ -1145,6 +1208,11 @@
    :HomeTeam "Sweden",
    :DateUtc "2023-07-29 07:30:00Z",
    :scoreboard {:swe "5", :ita "0"},
+   :timeline [["39"   :swe :goal "Amanda Ilestedt"]
+              ["44"   :swe :goal "Fridonlina Rolfo"]
+              ["45+1" :swe :goal "Stina Blackstenius"]
+              ["50"   :swe :goal "Amanda Ilestedt"]
+              ["90+5" :swe :goal "Rebecka Blomqvist"]]
    :AwayTeam "Italy",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1165,6 +1233,9 @@
    :HomeTeam "France",
    :DateUtc "2023-07-29 10:00:00Z",
    :scoreboard {:fra "2", :bra "1"},
+   :timeline [["17" :fra :goal "Eugenie Le Sommer"]
+              ["58" :bra :goal "Debora Cristiane de Oliveira"]
+              ["83" :fra :goal "Wendie Renard"]]
    :AwayTeam "Brazil",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1185,6 +1256,7 @@
    :HomeTeam "Panama",
    :DateUtc "2023-07-29 12:30:00Z",
    :scoreboard {:pan "0", :jam "1"},
+   :timeline [["56" :jam :goal "Allyson Swaby"]]
    :AwayTeam "Jamaica",
    :Location "Perth Rectangular Stadium",
    :location_id :per
@@ -1205,6 +1277,7 @@
    :HomeTeam "Korea Republic",
    :DateUtc "2023-07-30 04:30:00Z",
    :scoreboard {:kor "0", :mar "1"},
+   :timeline [["6" :mor :goal "Ibbtissam Jraidi"]]
    :AwayTeam "Morocco",
    :Location "Hindmarsh Stadium",
    :location_id :adl
@@ -1225,6 +1298,9 @@
    :HomeTeam "Germany",
    :DateUtc "2023-07-30 09:30:00Z",
    :scoreboard {:ger "1", :col "2"},
+   :timeline [["52"   :col :goal         "Linda Caicedo"]
+              ["89"   :ger :goal-penalty "Alexandra Popp"]
+              ["90+7" :col :goal         "Manuela Vanegas"]]
    :AwayTeam "Colombia",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -1245,6 +1321,7 @@
    :HomeTeam "Switzerland",
    :DateUtc "2023-07-30 07:00:00Z",
    :scoreboard {:sui "0", :nzl "0"},
+   :timeline [[]]
    :AwayTeam "New Zealand",
    :Location "Dunedin Stadium",
    :location_id :dun
@@ -1265,6 +1342,12 @@
    :HomeTeam "Norway",
    :DateUtc "2023-07-30 07:00:00Z",
    :scoreboard {:nor "6", :phi "0 R"},
+   :timeline [["6"  :nor :goal         "Sophia Roman Haug"]
+              ["17" :nor :goal         "Sophia Roman Haug"]
+              ["31" :nor :goal         "Caroline Grahman Hansen"]
+              ["48" :nor :goal-own     "Alicia-Barker"]
+              ["53" :nor :goal-penalty "Guro Reiten"]
+              ["67" :phi :red-card     "Sophia Nicole Dador Harrison"]]
    :AwayTeam "Philippines",
    :Location "Eden Park",
    :location_id :auc
@@ -1285,6 +1368,10 @@
    :HomeTeam "Japan",
    :DateUtc "2023-07-31 07:00:00Z",
    :scoreboard {:jpn "4", :esp "0"},
+   :timeline [["12" :jpn :goal "Hinata Miyazawa"]
+              ["29" :jpn :goal "Riko Ueki"]
+              ["40" :jpn :goal "Hinata Miyazawa"]
+              ["82" :jpn :goal "Mina Tanaka"]]
    :AwayTeam "Spain",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1305,6 +1392,10 @@
    :HomeTeam "Costa Rica",
    :DateUtc "2023-07-31 07:00:00Z",
    :scoreboard {:crc "1", :zam "3"},
+   :timeline [[ "3"   :zam :goal         "Lushomo Mweemba"]
+              ["31"   :zam :goal-penalty "Barbra Banda"]
+              ["47"   :crc :goal         "Daphne Melissa Herrera Monge"]
+              ["90+3" :zam :goal         "Racheal Kundananji"]]
    :AwayTeam "Zambia",
    :Location "Waikato Stadium",
    :location_id :wai
@@ -1325,6 +1416,10 @@
    :HomeTeam "Canada",
    :DateUtc "2023-07-31 10:00:00Z",
    :scoreboard {:can "0", :aus "4"},
+   :timeline [[ "9"   :aus :goal         "Hayley Raso"]
+              ["39"   :aus :goal         "Hayley Raso"]
+              ["58"   :aus :goal         "Mary Fowler"]
+              ["90+4" :aus :goal-penalty "Stephanie Catley"]]
    :AwayTeam "Australia",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -1345,6 +1440,7 @@
    :HomeTeam "Republic of Ireland",
    :DateUtc "2023-07-31 10:00:00Z",
    :scoreboard {:irl "0", :ngr "0"},
+   :timeline [[]]
    :AwayTeam "Nigeria",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1365,6 +1461,7 @@
    :HomeTeam "Portugal",
    :DateUtc "2023-08-01 07:00:00Z",
    :scoreboard {:por "0", :usa "0"},
+   :timeline [[]]
    :AwayTeam "USA",
    :Location "Eden Park",
    :location_id :auc
@@ -1385,6 +1482,13 @@
    :HomeTeam "Vietnam",
    :DateUtc "2023-08-01 07:00:00Z",
    :scoreboard {:vie "0", :ned "7"},
+   :timeline [[ "8" :ned :goal "Lieke Martens"]
+              ["11" :ned :goal "Katja Snoeijs"]
+              ["18" :ned :goal "Esmee Brugts"]
+              ["23" :ned :goal "Jill Roord"]
+              ["45" :ned :goal "Danielle van de Donk"]
+              ["57" :ned :goal "Esmee Brugts"]
+              ["83" :ned :goal "Jill Roord"]]
    :AwayTeam "Netherlands",
    :Location "Dunedin Stadium",
    :location_id :dun
@@ -1405,6 +1509,13 @@
    :HomeTeam "China PR",
    :DateUtc "2023-08-01 11:00:00Z",
    :scoreboard {:chn "1", :eng "6"},
+   :timeline [[ "4" :eng :goal "Alessia Russo"]
+              ["26" :eng :goal "Lauren Hemp"]
+              ["41" :eng :goal "Lauren James"]
+              ["57" :chn :goal-penalty "Wang Shuang"]
+              ["65" :eng :goal         "Lauren James"]
+              ["77" :eng :goal         "Chloe Kelly"]
+              ["84" :eng :goal         "Rachel Daly"]]
    :AwayTeam "England",
    :Location "Hindmarsh Stadium",
    :location_id :adl
@@ -1425,6 +1536,8 @@
    :HomeTeam "Haiti",
    :DateUtc "2023-08-01 11:00:00Z",
    :scoreboard {:hai "0", :den "2"},
+   :timeline [["21"    :den :goal-penalty "Rernille Harder"]
+              ["90+10" :den :goal         "Sanne Troelsgaard  Neilsen"]]
    :AwayTeam "Denmark",
    :Location "Perth Rectangular Stadium",
    :location_id :per
@@ -1445,6 +1558,8 @@
    :HomeTeam "Argentina",
    :DateUtc "2023-08-02 07:00:00Z",
    :scoreboard {:arg "0", :swe "2"},
+   :timeline [["66" :swe :goal         "Rebecka Blomqvist"]
+              ["90" :swe :goal-penalty "Elin Rubensson"]]
    :AwayTeam "Sweden",
    :Location "Waikato Stadium",
    :location_id :wai
@@ -1465,6 +1580,11 @@
    :HomeTeam "South Africa",
    :DateUtc "2023-08-02 07:00:00Z",
    :scoreboard {:rsa "3", :ita "2"},
+   :timeline [["11"   :ita :goal-penalty "Arianna Caruso"]
+              ["32"   :rsa :goal-own     "Benedetta Orsi"]
+              ["67"   :rsa :goal         "Hildah Magaia"]
+              ["74"   :ita :goal         "Arianna Caruso"]
+              ["90+2" :ita :goal         "Thembi Kgatlana"]]
    :AwayTeam "Italy",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1485,6 +1605,15 @@
    :HomeTeam "Panama",
    :DateUtc "2023-08-02 10:00:00Z",
    :scoreboard {:pan "3", :fra "6"},
+   :timeline [[ "2"    :pan :goal         "Marta Cox"]
+              ["21"    :fra :goal         "Maelle Lakrar"]
+              ["28"    :fra :goal         "Kadidiatou Diani"]
+              ["37"    :fra :goal-penalty "Kadidiatou Diani"]
+              ["45+5"  :fra :goal          "Lea Le Garrec"]
+              ["52"    :fra :goal-penalty "Kadidiatou Diani"]
+              ["64"    :pan :goal-penalty "Yomira Pinzon"]
+              ["87"    :pan :goal         "Lineth Cedeno"]
+              ["90+10" :fra :goal         "Vicki Becho"]]
    :AwayTeam "France",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -1505,6 +1634,7 @@
    :HomeTeam "Jamaica",
    :DateUtc "2023-08-02 10:00:00Z",
    :scoreboard {:jam "0", :bra "0"},
+   :timeline []
    :AwayTeam "Brazil",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -1525,6 +1655,8 @@
    :HomeTeam "Korea Republic",
    :DateUtc "2023-08-03 10:00:00Z",
    :scoreboard {:kor "1", :ger "1"},
+   :timeline [[ "6" :kor :goal "Cho So-hyun"]
+              ["42" :ger :goal "Alexandra Popp"]]
    :AwayTeam "Germany",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1545,6 +1677,7 @@
    :HomeTeam "Morocco",
    :DateUtc "2023-08-03 10:00:00Z",
    :scoreboard {:mar "1", :col "0"},
+   :timeline [["45+4" :mor :goal "Anissa Lahmari"]]
    :AwayTeam "Colombia",
    :Location "Perth Rectangular Stadium",
    :location_id :per
@@ -1566,6 +1699,12 @@
    :HomeTeam "Group A First",
    :DateUtc "2023-08-05 05:00:00Z",
    :scoreboard {:sui "1", :esp "5"},
+   :timeline [[ "5" :esp :goal     "Aitana Bonmati"]
+              ["11" :swi :goal-own "Laia Codina"]
+              ["17" :esp :goal     "Alba Redondo"]
+              ["36" :esp :goal     "Aitana Bonmati"]
+              ["45" :esp :goal     "Laia Codina"]
+              ["70" :esp :goal     "Jennifer Hermoso"]]
    :AwayTeam "Group C Second",
    :Location "Eden Park",
    :location_id :auc
@@ -1587,6 +1726,10 @@
    :HomeTeam "Group C First",
    :DateUtc "2023-08-05 08:00:00Z",
    :scoreboard {:jpn "3", :nor "1"},
+   :timeline [["15" :jpn :goal-own "Ingrid Syrstad Engen"]
+              ["20" :nor :goal     "Guro Reiten"]
+              ["50" :jpn :goal     "Risa Shimizu"]
+              ["81" :jpn :goal     "Hinata Miyazawa"]]
    :AwayTeam "Group A Second",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1608,6 +1751,8 @@
    :HomeTeam "Group E First",
    :DateUtc "2023-08-06 02:00:00Z",
    :scoreboard {:ned "2", :rsa "0"},
+   :timeline [[ "9" :ned :goal "Jill Roord"]
+              ["68" :ned :goal "Lineth Beerensteyn"]]
    :AwayTeam "Group G Second",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -1629,6 +1774,20 @@
    :HomeTeam "Group G First",
    :DateUtc "2023-08-06 09:00:00Z",
    :scoreboard {:swe "0(5)", :usa "0(4)"},
+   :timeline [["120+P1"  :usa :goal "Andi Sullivan"]
+              ["120+P2"  :swe :goal "Fridolina Rolfo"]
+              ["120+P3"  :usa :goal "Lindsey Horan"]
+              ["120+P4"  :swe :goal "Elin Rubenssen"]
+              ["120+P5"  :usa :goal "Kristie Mewis"]
+              ["120+P6"  :swe :miss "Nathalie Bjorn"]
+              ["120+P7"  :usa :miss "Megan Rapinoe"]
+              ["120+P8"  :swe :miss "Rebecka Blomqvist"]
+              ["120+P9"  :usa :miss "Sophia Smith"]
+              ["120+P10" :swe :goal "Hanna Bennison"]
+              ["120+P11" :usa :goal "Alyssa Naeher"]
+              ["120+P12" :swe :goal "Magdalena Eriksson"]
+              ["120+P13" :usa :miss "Kelley O'Hara"]
+              ["120+P14" :swe :goal "Lina Hurtig"]]
    :AwayTeam "Group E Second",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -1650,6 +1809,16 @@
    :HomeTeam "Group D First",
    :DateUtc "2023-08-07 07:30:00Z",
    :scoreboard {:eng "0(4) R" :nga "0(2)"},
+   :timeline [["87" :eng :red-card "Lauren James"]
+              ["120+P1" :eng :miss "Georgia Stanway"]
+              ["120+P2" :nga :miss "Desire Oparanozie"]
+              ["120+P3" :eng :goal "Bethany England"]
+              ["120+P4" :nga :miss "Michelle Alozie"]
+              ["120+P5" :eng :goal "Rachel Daly"]
+              ["120+P6" :nga :goal "Rasheedat Ajibade"]
+              ["120+P7" :eng :goal "Alex Greenwood"]
+              ["120+P8" :nga :goal "Christy Ucheibe"]
+              ["120+P9" :eng :goal "Chloe Kelly"]]
    :AwayTeam "Group B Second",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1671,6 +1840,8 @@
    :HomeTeam "Group B First",
    :DateUtc "2023-08-07 10:30:00Z",
    :scoreboard {:aus "2", :den "0"},
+   :timeline [["29" :aus :goal "Caitlin Foord"]
+              ["70" :aus :goal "Hayley Raso"]]
    :AwayTeam "Group D Second",
    :Location "Stadium Australia",
    :location_id :aus
@@ -1692,6 +1863,7 @@
    :HomeTeam "Group H First",
    :DateUtc "2023-08-08 08:00:00Z",
    :scoreboard {:col "1", :jam "0"},
+   :timeline [["51" :col :goal "Catalina Usme"]]
    :AwayTeam "Group F Second",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -1713,6 +1885,10 @@
    :HomeTeam "Group F First",
    :DateUtc "2023-08-08 11:00:00Z",
    :scoreboard {:fra "4", :mar "0"},
+   :timeline [["15" :fra :goal "Kadidiatou Diani"]
+              ["20" :fra :goal "Kenza Dali"]
+              ["23" :fra :goal "Eugenie Le Sommer"]
+              ["70" :fra :goal "Eugenie Le Sommer"]]
    :AwayTeam "Group H Second",
    :Location "Hindmarsh Stadium",
    :location_id :adl
@@ -1734,6 +1910,9 @@
    :HomeTeam "To be announced",
    :DateUtc "2023-08-11 01:00:00Z",
    :scoreboard {:esp "2" :ned "1"},
+   :timeline [["81"   sy:esp :goal-penalty "Mariona Caldentey"]
+              ["90+1" :ned :goal         "Stephanie van der Gragt"]
+              ["111"  :ned :goal         "Salma Celeste Paralluelo Ayingono"]]
    :AwayTeam "To be announced",
    :Location "Wellington Regional Stadium",
    :location_id :wel
@@ -1755,6 +1934,9 @@
    :HomeTeam "To be announced",
    :DateUtc "2023-08-11 07:30:00Z",
    :scoreboard {:jpn "1", :swe "2"},
+   :timeline [["32" :swe :goal         "Amanda Ilestedt"]
+              ["51" :swe :goal-penalty "Filippa Angeldal"]
+              ["87" :jap :goal         "Honoka Hayashi"]]
    :AwayTeam "To be announced",
    :Location "Eden Park",
    :location_id :auc
@@ -1768,14 +1950,32 @@
    :positions [:group-16-5 :group-16-7],
    :teams [:aus :fra],
    :round 5,
-   :summary "",
+   :summary "AUS won",
    :AwayTeamScore nil,
    :result {:group-16-5 {}, :group-16-7 {}},
    :score {:group-16-5 "", :group-16-7 ""},
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-12 07:00:00Z",
-   :scoreboard {:aus "", :fra ""},
+   :scoreboard {:aus "0(7)", :fra "0(6)"},
+   :timeline [["120+P1"  :fra :miss "Selma Bacha"]
+              ["120+P2"  :aus :goal "Caitlin Foord"]
+              ["120+P3"  :fra :goal "Kadidiatou Diani"]
+              ["120+P4"  :aus :miss "Stephanie Catley"]
+              ["120+P5"  :fra :goal "Wendie Renard"]
+              ["120+P6"  :aus :goal "Sam Kerr"]
+              ["120+P7"  :fra :goal "Eugenie Le Sommer"]
+              ["120+P8"  :aus :goal "Mary Fowler"]
+              ["120+P9"  :fra :miss "Eve Perisset"]
+              ["120+P10" :aus :miss "Mackenzie Arnold"]
+              ["120+P11" :fra :goal "Grace Geyoro"]
+              ["120+P12" :aus :goal "Katrina Gorry"]
+              ["120+P13" :fra :goal "Maelle Lakrar"]
+              ["120+P14" :aus :goal "Ellie Carpenter"]
+              ["120+P15" :fra :miss "Kenza Dali"]
+              ["120+P16" :aus :miss "Claie Hunt"]
+              ["120+P17" :fra :miss "Vicki Bechi"]
+              ["120+P18" :aus :goal "Cortnee Vine"]]
    :AwayTeam "To be announced",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1789,14 +1989,17 @@
    :postions [:group-16-6 :group-16-8],
    :teams [:eng :col],
    :round 5,
-   :summary "",
+   :summary "ENG won",
    :AwayTeamScore nil,
    :result {:group-16-6 {}, :group-16-8 {}},
    :score {:group-16-6 "", :group-16-8 ""},
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-12 10:30:00Z",
-   :scoreboard {:eng "", :col ""},
+   :scoreboard {:eng "2", :col "1"},
+   :timeline [["44"   :col :goal "Leicy Santos"]
+              ["45+6" :eng :goal "Lauren Hemp"]
+              ["63"   :eng :goal "Alessia Russo"]]
    :AwayTeam "To be announced",
    :Location "Stadium Australia",
    :location_id :aus
@@ -1807,16 +2010,20 @@
    :stage :semi-final,
    :group :sf-1,
    :HomeTeamScore nil,
-   :teams [:quarter-final-1 :quarter-final-2],
+   :positions [:quarter-final-1 :quarter-final-2],
+   :teams [:esp :swe],
    :round 6,
-   :summary "",
+   :summary "ESP won",
    :AwayTeamScore nil,
    :result {:quarter-final-1 {}, :quarter-final-2 {}},
    :score {:quarter-final-1 "", :quarter-final-2 ""},
    :comment "",
    :HomeTeam "Quarter Final 1",
    :DateUtc "2023-08-15 08:00:00Z",
-   :scoreboard {:quarter-final-1 "", :quarter-final-2 ""},
+   :scoreboard {:esp "2" :swe "1"},
+   :timeline [["81" :esp :goal "Salma Celeste Paralluelo Ayingono"]
+              ["88" :swe :goal "Rebecka Blomqvist"]
+              ["89" :esp :goal "Olga Carmona"]]
    :AwayTeam "Quarter Final 2",
    :Location "Eden Park",
    :location_id :auc
@@ -1827,16 +2034,21 @@
    :stage :semi-final,
    :group :sf-2,
    :HomeTeamScore nil,
-   :teams [:quarter-final-3 :quarter-final-4],
+   :positions [:quarter-final-3 :quarter-final-4],
+   :teams [:aus :eng],
    :round 6,
-   :summary "",
+   :summary "ENG won",
    :AwayTeamScore nil,
    :result {:quarter-final-3 {}, :quarter-final-4 {}},
    :score {:quarter-final-3 "", :quarter-final-4 ""},
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-16 10:00:00Z",
-   :scoreboard {:quarter-final-3 "", :quarter-final-4 ""},
+   :scoreboard {:aus "1", :eng "3"},
+   :timeline [["36" :eng :goal "Ella Toone"]
+              ["63" :aus :goal "Sam Kerr"]
+              ["71" :eng :goal "Lauren Hemp"]
+              ["86" :eng :goal "Alessia Russo"]]
    :AwayTeam "To be announced",
    :Location "Stadium Australia",
    :location_id :aus
@@ -1847,7 +2059,8 @@
    :stage :third-play-off
    :group :final
    :HomeTeamScore nil,
-   :teams [:semi-final-1-2 :semi-final-2-2],
+   :positions [:semi-final-1-2 :semi-final-2-2],
+   :teams [:swe :aus],
    :round 7,
    :summary "",
    :AwayTeamScore nil,
@@ -1867,7 +2080,8 @@
    :stage :final
    :group :gf
    :HomeTeamScore nil,
-   :teams [:semi-final-1-1 :semi-final-2-1],
+   :positions [:semi-final-1-1 :semi-final-2-1],
+   :teams [:esp :eng],
    :round 7,
    :summary "",
    :AwayTeamScore nil,
@@ -1889,17 +2103,17 @@
             :phi [3 1 2 0  1  8  -7 1 3 :group [nil   :.sui :*nzl nil   nil  :.nor]]
             :sui [3 1 0 2  2  0   2 0 5 :g16   [nil   :*phi nil   :+nor :+nzl nil  :.esp]]
             }
-  :group-b {:aus [3 2 1 0  7  3   4 0 6 :_qf   [:*irl nil  nil  :.ngr :*can nil    :*den   :_fra]]
+  :group-b {:aus [3 2 1 0  7  3   4 0 6 :_po   [:*irl nil  nil  :.ngr :*can nil :*den  :*fra :.eng :_swe]]
             :irl [3 0 2 1  1  3  -2 0 1 :group [:.aus nil  :.can nil  nil  :+nga]]
             :nga [3 1 0 2  3  2   1 1 5 :g16   [nil  :+can nil  :*aus nil  :+irl   :.eng]]
             :can [3 1 1 1  2  5  -3 0 4 :group [nil  :+nga :*irl nil  :.aus nil]]
             }
-  :group-c {:esp [3 2 1 0  8  4   4 0 6 :_sf    [:*crc nil  nil  :*zam :.jpn nil    :*sui :*ned  nil]]
+  :group-c {:esp [3 2 1 0  8  4   4 0 6 :_gf   [:*crc nil  nil  :*zam :.jpn nil    :*sui :*ned :*swe :_eng]]
             :crc [3 0 3 0  1  8  -7 0 0 :group [:.esp nil  :.jpn nil  nil  :.zam]]
             :zam [3 1 2 0  3 11  -8 1 3 :group [nil  :.jpn nil  :.esp nil  :*crc]]
             :jpn [3 3 0 0 11  0  11 0 9 :qf    [nil  :*zam :*crc nil  :*esp nil    :*nor :.swe]]
             }
-  :group-d {:eng [3 3 0 0  8  1   7 0 9 :_qf   [:*hai nil  :*den nil  :*chn nil    :*nga  :_col]]
+  :group-d {:eng [3 3 0 0  8  1   7 0 9 :_gf   [:*hai nil  :*den nil  :*chn nil :*nga  :*col :*aus :_esp]]
             :hai [3 0 3 0  0  4  -4 0 0 :group [:.eng nil  nil  :.chn nil  :.den]]
             :den [3 2 1 0  3  1   2 0 6 :g16   [nil  :*chn :.eng nil  nil  :*hai   :.aus]]
             :chn [3 1 2 0  2  7  -5 0 3 :group [nil  :.den nil  :*hai :.eng nil]]
@@ -1909,19 +2123,19 @@
             :ned [3 2 0 1  9  1   8 0 7 :qf   [nil  :*por :+usa  nil  nil  :*vie  :*rsa :.esp]]
             :por [3 1 1 1  2  1   1 0 4 :group [nil  :.ned nil   :*vie :+usa nil]]
             }
-  :group-f {:fra [3 2 0 1  8  4   4 0 7 :_qf   [:+jam nil  :*bra nil  :*pan nil   :*mar  :_aus]]
+  :group-f {:fra [3 2 0 1  8  4   4 0 7 :qf    [:+jam nil  :*bra nil  :*pan nil   :*mar  :.aus]]
             :jam [3 1 0 2  1  0   1 1 5 :g16   [:+fra nil  nil  :*pan nil  :+bra  :.col]]
             :bra [3 1 1 1  5  2   3 0 4 :group [nil  :*pan :.fra nil  nil  :+jam]]
             :pan [3 0 3 0  3 11  -8 0 0 :group [nil  :.bra nil  :.jam :.fra nil]]
             }
-  :group-g {:swe [3 3 0 0  9  1   8 0 9 :_sf    [:*rsa nil  nil  :*ita :*arg nil   :*usa :*jpn nil]]
+  :group-g {:swe [3 3 0 0  9  1   8 0 9 :_po   [:*rsa nil  nil  :*ita :*arg nil   :*usa :*jpn :.esp :_aus]]
             :rsa [3 1 1 1  6  6   0 0 4 :g16   [:.swe nil  :+arg nil  nil  :*ita  :.ned]]
             :ita [3 1 2 0  3  8  -5 0 3 :group [nil  :*arg nil  :.swe nil  :.rsa]]
             :arg [3 0 2 1  2  5  -3 0 1 :group [nil  :.ita :+rsa nil  :.swe nil]]
             }
   :group-h {:ger [3 1 1 1  8  3   5 0 1 :group [:*mar nil  nil  :.col :+kor nil]]
             :mar [3 2 1 0  2  6  -4 0 4 :g16   [:.ger nil  :*kor nil  nil  :*col  :.fra]]
-            :col [3 2 1 0  4  2   2 0 6 :_qf   [nil  :*kor nil  :*ger nil  :.mar  :*jam  :_eng]]
+            :col [3 2 1 0  4  2   2 0 6 :qf    [nil  :*kor nil  :*ger nil  :.mar  :*jam  :.eng]]
             :kor [3 0 2 1  1  4  -3 0 1 :group [nil  :.col :.mar nil  :+ger nil]]
             }
   }
@@ -1979,24 +2193,29 @@
   :quarter-final-3 {:game 59
                     :positions [:group-16-5 :group-16-7]
                     :teams [:aus :fra]
-                    :scoreboard {:aus "" :fra ""}}
+                    :scoreboard {:aus "0(7)" :fra "0(6)"}}
   :quarter-final-4 {:game 60
                     :positions [:group-16-6 :group-16-8]
                     :teams [:eng :col]
-                    :scoreboard {:eng "" :fra ""}}
+                    :scoreboard {:eng "2" :col "1"}}
 
   :semi-final-1 {:game 61
                  :positions [:quarter-final-1 :quarter-final-2]
                  :teams [:esp :swe]
-                 :scoreboard {}}
+                 :scoreboard {:esp "2" :swe "1"}}
   :semi-final-2 {:game 62
-                 :positions [:quarter-final-3 :quarter-final-4]}
+                 :positions [:quarter-final-3 :quarter-final-4]
+                 :teams [:aus :eng]
+                 :scoreboard {:aus "1" :eng "3"}}
 
   :playoff {:game 63
-            :positions [:semi-final-1-2 :semi-final-2-2]}
+            :positions [:semi-final-1-2 :semi-final-2-2]
+            :teams [:swe :aus]
+            :scoreboard {:swe "" :aus ""}}
   :grand-final {:game 64
-                :positions [:semi-final-1-1 :semi-final-2-2]}
-
+                :positions [:semi-final-1-1 :semi-final-2-2]
+                :teams [:esp :eng]
+                :scoreboard {:esp "" :eng ""}}
   }
 
  :teams
