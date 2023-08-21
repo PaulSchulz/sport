@@ -4897,8 +4897,8 @@
    :score {:car "", :mel ""},
    :comment "",
    :HomeTeam "Carlton",
-   :DateUtc "2023-08-11 02:00:00Z",
-   :scoreboard {:car "", :mel ""},
+   :DateUtc "2023-08-12 19:00+09:30"
+   :scoreboard {:car "9.6(60)" :mel "8.8(56)"}
    :AwayTeam "Melbourne",
    :Location "MCG",
    :MatchNumber 181}
@@ -4914,8 +4914,8 @@
    :score {:bri "", :adl ""},
    :comment "",
    :HomeTeam "Brisbane Lions",
-   :DateUtc "2023-08-11 02:00:00Z",
-   :scoreboard {:bri "", :adl ""},
+   :DateUtc "2023-08-12 16:05+09:30"
+   :scoreboard {:bri "15.9(99)" :adl "13.15(93)"}
    :AwayTeam "Adelaide Crows",
    :Location "Gabba",
    :MatchNumber 182}
@@ -4931,8 +4931,8 @@
    :score {:col "", :gee ""},
    :comment "",
    :HomeTeam "Collingwood",
-   :DateUtc "2023-08-11 02:00:00Z",
-   :scoreboard {:col "", :gee ""},
+   :DateUtc "2023-08-13 19:20+09:30"
+   :scoreboard {:col "16.13(109)" :gee "15.11(101)"}
    :AwayTeam "Geelong Cats",
    :Location "MCG",
    :MatchNumber 183}
@@ -4948,8 +4948,8 @@
    :score {:haw "", :wb ""},
    :comment "",
    :HomeTeam "Hawthorn",
-   :DateUtc "2023-08-11 02:00:00Z",
-   :scoreboard {:haw "", :wb ""},
+   :DateUtc "2023-08-13 12:40+09:30"
+   :scoreboard {:haw "9.13(67)" :wb "9.10(64)"}
    :AwayTeam "Western Bulldogs",
    :Location "University of Tasmania Stadium",
    :MatchNumber 184}
@@ -4965,8 +4965,8 @@
    :score {:nm "", :ess ""},
    :comment "",
    :HomeTeam "North Melbourne",
-   :DateUtc "2023-08-11 02:00:00Z",
-   :scoreboard {:nm "", :ess ""},
+   :DateUtc "2023-08-12 13:15+09:30"
+   :scoreboard {:nm "12.5(77)" :ess "13.8(86)"}
    :AwayTeam "Essendon",
    :Location "Marvel Stadium",
    :MatchNumber 185}
@@ -4982,8 +4982,8 @@
    :score {:stk "", :ric ""},
    :comment "",
    :HomeTeam "St Kilda",
-   :DateUtc "2023-08-11 02:00:00Z",
-   :scoreboard {:stk "", :ric ""},
+   :DateUtc "2023-08-13 14:50+09:30"
+   :scoreboard {:stk "14.9(93)" :ric "8.9(57)"}
    :AwayTeam "Richmond",
    :Location "Marvel Stadium",
    :MatchNumber 186}
@@ -4999,8 +4999,8 @@
    :score {:syd "", :gcs ""},
    :comment "",
    :HomeTeam "Sydney Swans",
-   :DateUtc "2023-08-11 02:00:00Z",
-   :scoreboard {:syd "", :gcs ""},
+   :DateUtc "2023-08-12 13:15+09:30"
+   :scoreboard {:syd "18.6(114)" :gc "13.12(90)"}
    :AwayTeam "Gold Coast Suns",
    :Location "SCG",
    :MatchNumber 187}
@@ -5016,8 +5016,8 @@
    :score {:pa "", :gws ""},
    :comment "",
    :HomeTeam "Port Adelaide",
-   :DateUtc "2023-08-11 02:30:00Z",
-   :scoreboard {:pa "", :gws ""},
+   :DateUtc "2023-08-13 16:10+09:30"
+   :scoreboard {:pa "21.10(136)" :gws "13.7(85)"}
    :AwayTeam "GWS Giants",
    :Location "Adelaide Oval",
    :MatchNumber 188}
@@ -5033,8 +5033,8 @@
    :score {:wce "", :fre ""},
    :comment "",
    :HomeTeam "West Coast Eagles",
-   :DateUtc "2023-08-11 04:00:00Z",
-   :scoreboard {:wce "", :fre ""},
+   :DateUtc "2023-08-12 19:20+09:30"
+   :scoreboard {:wce "4.9(33)" :fre "20.14(134)"}
    :AwayTeam "Fremantle",
    :Location "Optus Stadium",
    :MatchNumber 189}
@@ -5050,8 +5050,8 @@
    :score {:col "", :bri ""},
    :comment "",
    :HomeTeam "Collingwood",
-   :DateUtc "2023-08-18 02:00:00Z",
-   :scoreboard {:col "", :bri ""},
+   :DateUtc "2023-08-18 19:20+09:30"
+   :scoreboard {:col "15.10(100)" :bri "19.10(124)"}
    :AwayTeam "Brisbane Lions",
    :Location "Marvel Stadium",
    :MatchNumber 190}
@@ -5067,8 +5067,8 @@
    :score {:gcs "", :car ""},
    :comment "",
    :HomeTeam "Gold Coast Suns",
-   :DateUtc "2023-08-18 02:00:00Z",
-   :scoreboard {:gcs "", :car ""},
+   :DateUtc "2023-08-19 13:40+09:30"
+   :scoreboard {:gcs "13.9(87)" :car "13.13(91)"}
    :AwayTeam "Carlton",
    :Location "Metricon Stadium",
    :MatchNumber 191}
@@ -5084,8 +5084,8 @@
    :score {:gws "", :ess ""},
    :comment "",
    :HomeTeam "GWS Giants",
-   :DateUtc "2023-08-18 02:00:00Z",
-   :scoreboard {:gws "", :ess ""},
+   :DateUtc "2023-08-19 16:05+09:30"
+   :scoreboard {:gws "25.12(162)" :ess "5.6(36)"}
    :AwayTeam "Essendon",
    :Location "GIANTS Stadium",
    :MatchNumber 192}
@@ -5101,8 +5101,8 @@
    :score {:mel "", :haw ""},
    :comment "",
    :HomeTeam "Melbourne",
-   :DateUtc "2023-08-18 02:00:00Z",
-   :scoreboard {:mel "", :haw ""},
+   :DateUtc "2023-08-20 14:50+09:30"
+   :scoreboard {:mel "13.9(87)" :haw "9.6(60)"}
    :AwayTeam "Hawthorn",
    :Location "MCG",
    :MatchNumber 193}
@@ -5118,8 +5118,8 @@
    :score {:ric "", :nm ""},
    :comment "",
    :HomeTeam "Richmond",
-   :DateUtc "2023-08-18 02:00:00Z",
-   :scoreboard {:ric "", :nm ""},
+   :DateUtc "2023-08-19 13:15+09:30"
+   :scoreboard {:ric "14.17(101)" :nm "10.12(72)"}
    :AwayTeam "North Melbourne",
    :Location "MCG",
    :MatchNumber 194}
@@ -5135,8 +5135,8 @@
    :score {:stk "", :gee ""},
    :comment "",
    :HomeTeam "St Kilda",
-   :DateUtc "2023-08-18 02:00:00Z",
-   :scoreboard {:stk "", :gee ""},
+   :DateUtc "2023-08-19 18:55+09:30"
+   :scoreboard {:stk "12.16(85)" :gee "8.7(55)"}
    :AwayTeam "Geelong Cats",
    :Location "Marvel Stadium",
    :MatchNumber 195}
@@ -5152,8 +5152,8 @@
    :score {:wb "", :wce ""},
    :comment "",
    :HomeTeam "Western Bulldogs",
-   :DateUtc "2023-08-18 02:00:00Z",
-   :scoreboard {:wb "", :wce ""},
+   :DateUtc "2023-08-20 12:40+09:30"
+   :scoreboard {:wb "12.13(85)" :wce "14.8(92)"}
    :AwayTeam "West Coast Eagles",
    :Location "Marvel Stadium",
    :MatchNumber 196}
@@ -5169,8 +5169,8 @@
    :score {:adl "", :syd ""},
    :comment "",
    :HomeTeam "Adelaide Crows",
-   :DateUtc "2023-08-18 02:30:00Z",
-   :scoreboard {:adl "", :syd ""},
+   :DateUtc "2023-08-19 19:10+09:30"
+   :scoreboard {:adl "10.13(87)" :syd "11.8(74)"}
    :AwayTeam "Sydney Swans",
    :Location "Adelaide Oval",
    :MatchNumber 197}
@@ -5186,8 +5186,8 @@
    :score {:fre "", :pa ""},
    :comment "",
    :HomeTeam "Fremantle",
-   :DateUtc "2023-08-18 04:00:00Z",
-   :scoreboard {:fre "", :pa ""},
+   :DateUtc "2023-08-20 16:10+09:30"
+   :scoreboard {:fre "8.10(58)" :pa "11.8(74)"}
    :AwayTeam "Port Adelaide",
    :Location "Optus Stadium",
    :MatchNumber 198}
