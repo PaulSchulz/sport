@@ -605,7 +605,7 @@
    :HomeTeam "New Zealand",
    :DateUtc "2023-07-20 07:00:00Z",
    :scoreboard {:nzl "1", :nor "0"},
-   :timeline [["48" :nzl "Goal: Hannah Wilkinson"]]
+   :timeline [["48" :nzl :goal "Hannah Wilkinson"]]
    :AwayTeam "Norway",
    :Location "Eden Park",
    :location_id :auc
@@ -846,7 +846,7 @@
    :HomeTeam "France",
    :DateUtc "2023-07-23 10:00:00Z",
    :scoreboard {:fra "0", :jam "0 R"},
-   :timeline [[]]
+   :timeline []
    :AwayTeam "Jamaica",
    :Location "Sydney Football Stadium",
    :location_id :syd
@@ -867,7 +867,7 @@
    :HomeTeam "Italy",
    :DateUtc "2023-07-24 06:00:00Z",
    :scoreboard {:ita "1", :arg "0"},
-   :timeline [["87" :ita "Goal Cristiana Girelli"]]
+   :timeline [["87" :ita :goal "Cristiana Girelli"]]
    :AwayTeam "Argentina",
    :Location "Eden Park",
    :location_id :auc
@@ -888,12 +888,12 @@
    :HomeTeam "Germany",
    :DateUtc "2023-07-24 08:30:00Z",
    :scoreboard {:ger "6", :mar "0"},
-   :timeline [["11" :ger "Goal Alexandra Popp"]
-              ["39" :ger "Goal Alexandra Popp"]
-              ["46" :ger "Goal Kiara Buhl"]
-              ["54" :ger "Goal(OG) Hanane Ait Elj"]
-              ["79" :ger "Goal(OG) Yasmin Mrabet"]
-              ["90" :ger "Goal Lea Schuller"]]
+   :timeline [["11" :ger :goal     "Alexandra Popp"]
+              ["39" :ger :goal     "Alexandra Popp"]
+              ["46" :ger :goal     "Kiara Buhl"]
+              ["54" :ger :goal-own "Hanane Ait Elj"]
+              ["79" :ger :goal-own "Yasmin Mrabet"]
+              ["90" :ger :goal     "Lea Schuller"]]
    :AwayTeam "Morocco",
    :Location "Melbourne Rectangular Stadium",
    :location_id :mel
@@ -914,10 +914,10 @@
    :HomeTeam "Brazil",
    :DateUtc "2023-07-24 11:00:00Z",
    :scoreboard {:bra "4", :pan "0"},
-   :timeline [["19" :bra "Goal Ary Borges"]
-              ["39" :bra "Goal Ary Borges"]
-              ["48" :bra "Goal Beatriz Zaneratto Joao"]
-              ["70" :bra "Goal Ary Borgas"]]
+   :timeline [["19" :bra :goal "Ary Borges"]
+              ["39" :bra :goal "Ary Borges"]
+              ["48" :bra :goal "Beatriz Zaneratto Joao"]
+              ["70" :bra :goal "Ary Borgas"]]
    :AwayTeam "Panama",
    :Location "Hindmarsh Stadium",
    :location_id :adl
@@ -981,7 +981,7 @@
    :HomeTeam "Switzerland",
    :DateUtc "2023-07-25 08:00:00Z",
    :scoreboard {:sui "0", :nor "0"},
-   :timeline [[]]
+   :timeline []
    :AwayTeam "Norway",
    :Location "Waikato Stadium",
    :location_id :wai
@@ -1321,7 +1321,7 @@
    :HomeTeam "Switzerland",
    :DateUtc "2023-07-30 07:00:00Z",
    :scoreboard {:sui "0", :nzl "0"},
-   :timeline [[]]
+   :timeline []
    :AwayTeam "New Zealand",
    :Location "Dunedin Stadium",
    :location_id :dun
@@ -1440,7 +1440,7 @@
    :HomeTeam "Republic of Ireland",
    :DateUtc "2023-07-31 10:00:00Z",
    :scoreboard {:irl "0", :ngr "0"},
-   :timeline [[]]
+   :timeline []
    :AwayTeam "Nigeria",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -1461,7 +1461,7 @@
    :HomeTeam "Portugal",
    :DateUtc "2023-08-01 07:00:00Z",
    :scoreboard {:por "0", :usa "0"},
-   :timeline [[]]
+   :timeline []
    :AwayTeam "USA",
    :Location "Eden Park",
    :location_id :auc
@@ -1910,7 +1910,7 @@
    :HomeTeam "To be announced",
    :DateUtc "2023-08-11 01:00:00Z",
    :scoreboard {:esp "2" :ned "1"},
-   :timeline [["81"   sy:esp :goal-penalty "Mariona Caldentey"]
+   :timeline [["81"   :esp :goal-penalty "Mariona Caldentey"]
               ["90+1" :ned :goal         "Stephanie van der Gragt"]
               ["111"  :ned :goal         "Salma Celeste Paralluelo Ayingono"]]
    :AwayTeam "To be announced",
@@ -2062,14 +2062,16 @@
    :positions [:semi-final-1-2 :semi-final-2-2],
    :teams [:swe :aus],
    :round 7,
-   :summary "",
+   :summary "SWE won",
    :AwayTeamScore nil,
    :result {:semi-final-1-2 {}, :semi-final-2-2 {}},
    :score {:semi-final-1-2 "", :semi-final-2-2 ""},
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-19 08:00:00Z",
-   :scoreboard {:semi-final-1-2 "", :semi-fimal-2-2 ""},
+   :timeline [["30" :swe :goal-penalty "Fridolina Rolfo"]
+              ["62" :swe :goal         "Kosovare Asllani"]]
+   :scoreboard {:swe "2", :aus "0"},
    :AwayTeam "To be announced",
    :Location "Brisbane Stadium",
    :location_id :bri
@@ -2083,14 +2085,15 @@
    :positions [:semi-final-1-1 :semi-final-2-1],
    :teams [:esp :eng],
    :round 7,
-   :summary "",
+   :summary "ESP won",
    :AwayTeamScore nil,
    :result {:semi-final-1-1 {}, :semi-final-2-1 {}},
    :score {:semi-final-1-1 "", :semi-final-2-1 ""},
    :comment "",
    :HomeTeam "To be announced",
    :DateUtc "2023-08-20 10:00:00Z",
-   :scoreboard {:semi-final-1-1 "", :semi-final-2-1 ""},
+   :timeline [["29" :esp :goal "Olga Carmona"]]
+   :scoreboard {:esp "1", :eng "0"},
    :AwayTeam "To be announced",
    :Location "Stadium Australia",
    :location_id :aus
@@ -2103,17 +2106,17 @@
             :phi [3 1 2 0  1  8  -7 1 3 :group [nil   :.sui :*nzl nil   nil  :.nor]]
             :sui [3 1 0 2  2  0   2 0 5 :g16   [nil   :*phi nil   :+nor :+nzl nil  :.esp]]
             }
-  :group-b {:aus [3 2 1 0  7  3   4 0 6 :_po   [:*irl nil  nil  :.ngr :*can nil :*den  :*fra :.eng :_swe]]
+  :group-b {:aus [3 2 1 0  7  3   4 0 6 :fourth [:*irl nil  nil  :.ngr :*can nil :*den  :*fra :.eng :.swe]]
             :irl [3 0 2 1  1  3  -2 0 1 :group [:.aus nil  :.can nil  nil  :+nga]]
             :nga [3 1 0 2  3  2   1 1 5 :g16   [nil  :+can nil  :*aus nil  :+irl   :.eng]]
             :can [3 1 1 1  2  5  -3 0 4 :group [nil  :+nga :*irl nil  :.aus nil]]
             }
-  :group-c {:esp [3 2 1 0  8  4   4 0 6 :_gf   [:*crc nil  nil  :*zam :.jpn nil    :*sui :*ned :*swe :_eng]]
+  :group-c {:esp [3 2 1 0  8  4   4 0 6 :*champ* [:*crc nil  nil  :*zam :.jpn nil    :*sui :*ned :*swe :*eng]]
             :crc [3 0 3 0  1  8  -7 0 0 :group [:.esp nil  :.jpn nil  nil  :.zam]]
             :zam [3 1 2 0  3 11  -8 1 3 :group [nil  :.jpn nil  :.esp nil  :*crc]]
             :jpn [3 3 0 0 11  0  11 0 9 :qf    [nil  :*zam :*crc nil  :*esp nil    :*nor :.swe]]
             }
-  :group-d {:eng [3 3 0 0  8  1   7 0 9 :_gf   [:*hai nil  :*den nil  :*chn nil :*nga  :*col :*aus :_esp]]
+  :group-d {:eng [3 3 0 0  8  1   7 0 9 :second [:*hai nil  :*den nil  :*chn nil :*nga  :*col :*aus :.esp]]
             :hai [3 0 3 0  0  4  -4 0 0 :group [:.eng nil  nil  :.chn nil  :.den]]
             :den [3 2 1 0  3  1   2 0 6 :g16   [nil  :*chn :.eng nil  nil  :*hai   :.aus]]
             :chn [3 1 2 0  2  7  -5 0 3 :group [nil  :.den nil  :*hai :.eng nil]]
@@ -2128,7 +2131,7 @@
             :bra [3 1 1 1  5  2   3 0 4 :group [nil  :*pan :.fra nil  nil  :+jam]]
             :pan [3 0 3 0  3 11  -8 0 0 :group [nil  :.bra nil  :.jam :.fra nil]]
             }
-  :group-g {:swe [3 3 0 0  9  1   8 0 9 :_po   [:*rsa nil  nil  :*ita :*arg nil   :*usa :*jpn :.esp :_aus]]
+  :group-g {:swe [3 3 0 0  9  1   8 0 9 :third [:*rsa nil  nil  :*ita :*arg nil   :*usa :*jpn :.esp :.aus]]
             :rsa [3 1 1 1  6  6   0 0 4 :g16   [:.swe nil  :+arg nil  nil  :*ita  :.ned]]
             :ita [3 1 2 0  3  8  -5 0 3 :group [nil  :*arg nil  :.swe nil  :.rsa]]
             :arg [3 0 2 1  2  5  -3 0 1 :group [nil  :.ita :+rsa nil  :.swe nil]]
@@ -2174,48 +2177,68 @@
   :group-16-7 {:game 55
                :positions [:group-f-1 :group-h-2]
                :teams [:fra :mar]
-               :summary ""
-               :scorebaord {:fra "" :mar ""}}
+               :summary "FRA won"
+               :scorebaord {:fra "4" :mar "0"}}
   :group-16-8 {:game 56
                :positions [:group-h-1 :group-f-2]
                :teams [:col :jam]
-               :summary ""
-               :scoreboard {:col "" :jam ""}}
+               :summary "COL won"
+               :scoreboard {:col "1" :jam "0"}}
 
   :quarter-final-1 {:game 57
                     :positions [:group-16-1 :group-16-3]
                     :teams [:esp :ned]
+                    :summary "ESP won"
                     :scoreboard {:esp "2" :ned "1"}}
   :quarter-final-2 {:game 58
                     :positions [:group-16-2 :group-16-4]
                     :teams [:jpn :swe]
+                    :summary "SWE won"
                     :scoreboard {:jpn "1" :swe "2"}}
   :quarter-final-3 {:game 59
                     :positions [:group-16-5 :group-16-7]
                     :teams [:aus :fra]
+                    :summary "AUS won"
                     :scoreboard {:aus "0(7)" :fra "0(6)"}}
   :quarter-final-4 {:game 60
                     :positions [:group-16-6 :group-16-8]
                     :teams [:eng :col]
+                    :summary "ENG won"
                     :scoreboard {:eng "2" :col "1"}}
 
   :semi-final-1 {:game 61
                  :positions [:quarter-final-1 :quarter-final-2]
                  :teams [:esp :swe]
+                 :summary "ESP won"
                  :scoreboard {:esp "2" :swe "1"}}
   :semi-final-2 {:game 62
                  :positions [:quarter-final-3 :quarter-final-4]
                  :teams [:aus :eng]
+                 :summary "ENG won"
                  :scoreboard {:aus "1" :eng "3"}}
 
   :playoff {:game 63
             :positions [:semi-final-1-2 :semi-final-2-2]
             :teams [:swe :aus]
-            :scoreboard {:swe "" :aus ""}}
+            :summary "SWE won"
+            :scoreboard {:swe "2" :aus "0"}}
   :grand-final {:game 64
                 :positions [:semi-final-1-1 :semi-final-2-2]
                 :teams [:esp :eng]
-                :scoreboard {:esp "" :eng ""}}
+                :summary "ESP won"
+                :scoreboard {:esp "1" :eng "0"}}
+  }
+
+ :results
+ {
+  :winner :swe
+  :second :eng
+  :third  :swe
+  :fourth :aus
+  :golden-boot   {:jpn "Hinata Miyazawa" 5}
+  :golden-gloves {:eng "Mary Earps"}
+  :golden-ball   {:esp "Aitana Bonmati"}
+  :young-player  {:esp "Salma Paralluelo"}
   }
 
  :teams

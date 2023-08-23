@@ -61,6 +61,6 @@
  60   5  2023-08-12 Sat 08:00pm  AUS  QF4  ENG  COL  /  ENG 2       COL 1      ENG won
  61   6  2023-08-15 Tue 05:30pm  AUC  SF1  ESP  SWE  /  ESP 2       SWE 1      ESP won
  62   6  2023-08-16 Wed 07:30pm  AUS  SF2  AUS  ENG  /  AUS 1       ENG 3      ENG won
- 63   7  2023-08-19 Sat 05:30pm  BRI  PO   SWE  AUS
- 64   7  2023-08-20 Sun 07:30pm  AUS  GF   ESP  ENG
+ 63   7  2023-08-19 Sat 05:30pm  BRI  PO   SWE  AUS  /  SWE 2       AUS 0      SWE won
+ 64   7  2023-08-20 Sun 07:30pm  AUS  GF   ESP  ENG  /  ESP 1       ENG 0      ESP won
 ----------------------------------------------------------------------------------------

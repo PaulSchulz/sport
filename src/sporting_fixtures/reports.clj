@@ -241,10 +241,10 @@
 
 (def results-key-string
   ["Path Key"
-   "  * - Won over"
-   "  . - Lost to"
-   "  + - Drew with"
-   "  _ - Game scheduled"])
+   "  * - Won over ..."
+   "  . - Lost to ..."
+   "  + - Drew with ..."
+   "  _ - Game scheduled with ..."])
 
 (defn stats-key []
   (str
@@ -354,7 +354,7 @@
                             )
                           )
                   "-----------------------------------------------------------------------------------\n"
-                  (format "         %3s %s v %3s %s\n"
+                  (format "         %3s %s v %3s %s"
                           (str/upper-case (name (-> game :teams first)))
                           ((-> game :teams first) (-> game :scoreboard))
                           (str/upper-case (name (-> game :teams second)))
@@ -364,10 +364,24 @@
                     (format "         %s" (-> game :summary))
                     "")
                   "\n"
-                  (if (-> game :timeline)
-                    (apply str
-                           (map (fn [timeline] (format "         %s\n" timeline))
-                                (-> game :timeline)))
+                  (if (and (-> game :timeline)
+                           (not (empty? (-> game :timeline))))
+                    (str
+                     "         Timeline\n"
+                     (apply str
+                            (map ;; (fn [timeline] (format "         %s\n" timeline))
+                             (fn [[e1 e2 e3 e4]] (format "           %8s  %3s %-4s %s\n"
+                                                        e1
+                                                        (str/upper-case (name e2))
+                                                        (case e3
+                                                          :goal         "G"
+                                                          :goal-penalty "G(P)"
+                                                          :goal-own     "G(O)"
+                                                          :miss         "M"
+                                                          :red-card     "RC"
+                                                          e3)
+                                                        e4))
+                             (-> game :timeline))))
                     "")
                   "\n"
                   "\n"
