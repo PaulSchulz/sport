@@ -1,0 +1,45 @@
+** Sport: Big Bash League 2024                            :bbl_2024:sport:
+
+#+begin_src yaml
+  event: 2024-aus-bbl
+  details:
+    location: "Australia"
+    code: t20
+    date: "15 Dec 2024"
+    url: "https://www.cricket.com.au/big-bash"
+    datadir: data/2024-aus-bbl
+  teams:
+    - {id: SCO, name: "Perth Scorchers"}
+    - {id: STA, name: "Melbourne Stars"}
+    - {id: STR, name: "Aelaide Strikers"}
+    - {id: HEA, name: "Brisbane Heat"}
+    - {id: HUR, name: "Hobart Hurricanes"}
+    - {id: REN, name: "Melbourne Renegades"}
+    - {id: SIX, name: "Sydney Sixer"}
+    - {id: THU, name: "Sydney Thunder"}
+  venues:
+    - {id: SCG, name: "Sydney Cricket Ground (SCG)"}
+    - {id: SYD, name: "Sydney Olympic Park (ENGIE Stadium)"}
+    - {id: MAN, name: "Manuka Oval"}
+    - {id: MCG, name: "Melbourne Cricket Ground (MCG)"}
+    - {id: GEE, name: "Kadinia Park, Geelong (GMHBA Stadium)"}
+    - {id: TAS, name: "Bellerive, Tasmania (Ninja Stadium)"}
+    - {id: ADL, name: "Adelaide Ovel"}
+#+end_src
+
+#+begin_src yaml :comments link :tangle "../sport/data/2024-aus-bbl/new.yaml"
+  - game: {}
+    round: {}
+    time: {}
+    teams:
+      home: {}
+      away: {}
+    venue: {}
+    score:
+      home: {}
+      away: {}
+    outcome: {}
+    result: []
+    comment: {}
+#+end_src
+** 

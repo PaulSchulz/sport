@@ -1,0 +1,29 @@
+# [[file:../../../ps-journal/20241221::*Sport: Big Bash League 2024][Sport: Big Bash League 2024:2]]
+- game: 7
+  round: 1
+  time: <2024-12-21 Sat 16:00>
+  teams:
+    home: HUR
+    away: SCO
+  venue: TAS
+  score:
+    home: "156/2(19.2)"
+    away: "155/10(20)"
+  outcome: "HUR won with 4 balls to spare"
+  result: [2,0]
+  comment: ""
+
+- game: 8
+  round: 1
+  time: <2024-12-21 Sat 19:15>
+  teams:
+    home: THU
+    away: SIX
+  venue: SYD
+  score:
+    home: "163/5(20)"
+    away: "164/5(20)"
+  outcome: "SIX won by 1 run (0 balls left)"
+  result: [0,2]
+  comment: ""
+# Sport: Big Bash League 2024:2 ends here
