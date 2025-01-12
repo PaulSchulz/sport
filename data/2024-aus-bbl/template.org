@@ -22,9 +22,13 @@
     - {id: SYD, name: "Sydney Olympic Park (ENGIE Stadium)"}
     - {id: MAN, name: "Manuka Oval"}
     - {id: MCG, name: "Melbourne Cricket Ground (MCG)"}
+    - {id: MAR, name: "Marvel Stadium, Docklands"}
     - {id: GEE, name: "Kadinia Park, Geelong (GMHBA Stadium)"}
     - {id: TAS, name: "Bellerive, Tasmania (Ninja Stadium)"}
-    - {id: ADL, name: "Adelaide Ovel"}
+    - {id: ADL, name: "Adelaide Oval"}
+    - {id: BRI, name: "Woolongabba, Brisbane (Gabba)"}
+    - {id: COF, name: "Coffs International Stadium, Coffs Harbour"}
+    - {id: PER, name: "Perth Stadium (Optus Stadium)"}
 #+end_src
 
 #+begin_src yaml :comments link :tangle "../sport/data/2024-aus-bbl/new.yaml"

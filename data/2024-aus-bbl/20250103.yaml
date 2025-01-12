@@ -1,0 +1,29 @@
+# [[file:../../../ps-journal/20250103::*Sport: Big Bash League 2024 - Game 21,22][Sport: Big Bash League 2024 - Game 21,22:2]]
+- game: 21
+  round: 1
+  time: <2025-01-03 Fri 18:15>
+  teams:
+    home: SIX
+    away: HEA
+  venue: COF
+  score:
+    home: {}
+    away: {}
+  outcome: [1,1]
+  result: []
+  comment: Game abandoned due to rain.
+
+- game: 22
+  round: 1
+  time: <2025-01-03 Fri 18:15>
+  teams:
+    home: SCO
+    away: THU
+  venue: PER
+  score:
+    home: 177/4(20)
+    away: 179/6(20)
+  outcome: THU won by 4 wickets (0 balls left)
+  result: [0,2]
+  comment: {}
+# Sport: Big Bash League 2024 - Game 21,22:2 ends here

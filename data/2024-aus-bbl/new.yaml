@@ -1,15 +1,29 @@
-# [[file:../../../ps-journal/20241229::*Sport: Big Bash League 2024 - Game 15][Sport: Big Bash League 2024 - Game 15:2]]
-- game: 15
+# [[file:../../../ps-journal/20250111::*Sport: Big Bash League 2024 - Games 30,31][Sport: Big Bash League 2024 - Games 30,31:2]]
+- game: 30
   round: 1
-  time: <2024-12-29 Sun 18:15>
+  time: <2025-01-11 Sat 16:45>
   teams:
-    home: HEA
-    away: SIX
-  venue: GAB
+    home: SIX
+    away: SCO
+  venue: SCG
   score:
-    home: 138/9(20)
-    away: 142/2(16.1)
-  outcome: SIX won by 8 wickets (23 balls left)
-  result: [0,2]
+    home: 220/3(20)
+    away: 206/7(20)
+  outcome: SIX won by 14 runs
+  result: [2,0]
   comment: {}
-# Sport: Big Bash League 2024 - Game 15:2 ends here
+
+- game: 31
+  round: 1
+  time: <2025-01-11 Sat 10:20>
+  teams:
+    home: STR
+    away: HEA
+  venue: ADL
+  score:
+    home: 251/5(20)
+    away: 195/10(20)
+  outcome: STR won by 56 runs
+  result: [2,0]
+  comment: {}
+# Sport: Big Bash League 2024 - Games 30,31:2 ends here
