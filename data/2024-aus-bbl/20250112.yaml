@@ -7,9 +7,9 @@
     away: STR
   venue: 
   score:
-    home: {}
-    away: {}
-  outcome: {}
-  result: []
+    home: 123/10(19.5)
+    away: 165/10(20)
+  outcome: STA won by 42 runs
+  result: [0,2]
   comment: {}
 # Sport: Big Bash League 2024:2 ends here
