@@ -28,7 +28,8 @@
   (println ";;   - data and results have been stored and are in the default format")
   (println)
   (println ";; Load data from event (example)")
-  (println "(def data (r/data-read-event \"bbl-2022\"))")
+  (println "(def sport \"afl-2025\")")
+  (println "(def data (r/data-read-event sport))")
   (println)
   (println ";; To display a report of game results")
   (println "(println (r/report-games data))")
@@ -125,6 +126,7 @@
      (time/with-zone-same-instant
        (time/zoned-date-time  year month day hour minute second 0 zone) timezone))))
 
+;; AFL Single line game Report
 (defn format-game-result [game]
   (str
    (if (and (vector? (:teams game))
@@ -146,7 +148,7 @@
                  (str/upper-case (name away))))))
    (if (and (some? (:summary game))
             (string? (:summary game)))
-     (:summary game)
+     (format "  %s" (:summary game))
      "")))
 
 (defn format-game-result-football [game]
@@ -193,7 +195,7 @@
                          (:MatchNumber game)
                          (:RoundNumber game)
                          (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
-                         (str/upper-case (name (:location_id game)))
+                         (str/upper-case (name (((data :venues) (:Location game)) :id)))
                          (convert-stage-group (:stage game) (:group game))
                          (if (= (:code (:details data)) :football)
                            (format-game-result-football game)

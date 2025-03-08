@@ -156,6 +156,11 @@
 (defn data-read-event [event]
   (data-read (str "data/" event "/data.clj")))
 
+;; Helper function - Read in data, using sport id.
+;; Moving from 'event' to 'sport' nomenclature.
+(defn data-read-sport [sport]
+  (data-read (str "data/" sport "/data.clj")))
+  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Customisation functions
 (defn custom-read [filename]

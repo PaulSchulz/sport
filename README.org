@@ -65,7 +65,7 @@ This script creates a data sub-directory which contains:
   - Data mapping file (custom.clj). Initially contains an empty mapping
     structure for 'team names' to 'team-id's.
 
-The template data file has the following structure, where the variables have
+The data file has the following structure, where the variables have
 been replaced with their values:
 #+begin_src clojure
   {:event "$EVENT"

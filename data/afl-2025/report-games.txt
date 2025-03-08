@@ -1,0 +1,194 @@
+----------------------------------------------------------------------------------------
+  1   0  2025-03-06 Thu 07:20PM  ***  G -  BRI  GEE
+  2   0  2025-03-07 Fri 07:10PM  ***  G -  SYD  HAW
+  3   0  2025-03-08 Sat 04:45PM  ***  G -  GCS  ESS
+  4   0  2025-03-09 Sun 02:50PM  ***  G -  GWS  COL
+  5   1  2025-03-13 Thu 07:00PM  ***  G -  RIC  CAR
+  6   1  2025-03-14 Fri 07:10PM  ***  G -  HAW  ESS
+  7   1  2025-03-15 Sat 12:50PM  ***  G -  GEE  FRE
+  8   1  2025-03-15 Sat 03:45PM  ***  G -  SYD  BRI
+  9   1  2025-03-15 Sat 07:05PM  ***  G -  WB   NM 
+ 10   1  2025-03-15 Sat 07:05PM  ***  G -  COL  PA 
+ 11   1  2025-03-16 Sun 12:05PM  ***  G -  ADL  STK
+ 12   1  2025-03-16 Sun 02:50PM  ***  G -  MEL  GWS
+ 13   1  2025-03-16 Sun 05:40PM  ***  G -  WCE  GCS
+ 14   2  2025-03-20 Thu 07:00PM  ***  G -  CAR  HAW
+ 15   2  2025-03-21 Fri 07:10PM  ***  G -  WB   COL
+ 16   2  2025-03-22 Sat 12:50PM  ***  G -  ESS  ADL
+ 17   2  2025-03-22 Sat 03:45PM  ***  G -  PA   RIC
+ 18   2  2025-03-22 Sat 07:05PM  ***  G -  STK  GEE
+ 19   2  2025-03-23 Sun 12:40PM  ***  G -  BRI  WCE
+ 20   2  2025-03-23 Sun 02:50PM  ***  G -  NM   MEL
+ 21   2  2025-03-23 Sun 05:40PM  ***  G -  FRE  SYD
+ 22   3  2025-03-27 Thu 07:00PM  ***  G -  ESS  PA 
+ 23   3  2025-03-28 Fri 07:10PM  ***  G -  CAR  WB 
+ 24   3  2025-03-29 Sat 12:50PM  ***  G -  MEL  GCS
+ 25   3  2025-03-29 Sat 03:45PM  ***  G -  STK  RIC
+ 26   3  2025-03-29 Sat 07:05PM  ***  G -  HAW  GWS
+ 27   3  2025-03-30 Sun 02:50PM  ***  G -  ADL  NM 
+ 28   3  2025-03-30 Sun 05:40PM  ***  G -  WCE  FRE
+ 29   4  2025-04-03 Thu 07:00PM  ***  G -  COL  CAR
+ 30   4  2025-04-04 Fri 07:10PM  ***  G -  GEE  MEL
+ 31   4  2025-04-05 Sat 12:50PM  ***  G -  GCS  ADL
+ 32   4  2025-04-05 Sat 03:45PM  ***  G -  RIC  BRI
+ 33   4  2025-04-05 Sat 07:05PM  ***  G -  NM   SYD
+ 34   4  2025-04-06 Sun 12:40PM  ***  G -  GWS  WCE
+ 35   4  2025-04-06 Sun 02:50PM  ***  G -  PA   STK
+ 36   4  2025-04-06 Sun 04:40PM  ***  G -  FRE  WB 
+ 37   5  2025-04-10 Thu 07:10PM  ***  G -  ADL  GEE
+ 38   5  2025-04-11 Fri 07:10PM  ***  G -  COL  SYD
+ 39   5  2025-04-12 Sat 12:05PM  ***  G -  NM   GCS
+ 40   5  2025-04-12 Sat 12:50PM  ***  G -  CAR  WCE
+ 41   5  2025-04-12 Sat 03:45PM  ***  G -  WB   BRI
+ 42   5  2025-04-12 Sat 07:05PM  ***  G -  MEL  ESS
+ 43   5  2025-04-13 Sun 12:05PM  ***  G -  RIC  FRE
+ 44   5  2025-04-13 Sun 02:50PM  ***  G -  STK  GWS
+ 45   5  2025-04-13 Sun 06:50PM  ***  G -  PA   HAW
+ 46   6  2025-04-17 Thu 07:00PM  ***  G -  BRI  COL
+ 47   6  2025-04-18 Fri 02:50PM  ***  G -  NM   CAR
+ 48   6  2025-04-18 Fri 05:40PM  ***  G -  WCE  ESS
+ 49   6  2025-04-19 Sat 12:50PM  ***  G -  MEL  FRE
+ 50   6  2025-04-19 Sat 03:45PM  ***  G -  ADL  GWS
+ 51   6  2025-04-19 Sat 07:05PM  ***  G -  RIC  GCS
+ 52   6  2025-04-20 Sun 02:50PM  ***  G -  SYD  PA 
+ 53   6  2025-04-20 Sun 06:50PM  ***  G -  WB   STK
+ 54   6  2025-04-21 Mon 02:50PM  ***  G -  GEE  HAW
+ 55   7  2025-04-24 Thu 07:00PM  ***  G -  MEL  RIC
+ 56   7  2025-04-25 Fri 02:50PM  ***  G -  COL  ESS
+ 57   7  2025-04-25 Fri 07:40PM  ***  G -  FRE  ADL
+ 58   7  2025-04-26 Sat 12:50PM  ***  G -  STK  BRI
+ 59   7  2025-04-26 Sat 03:45PM  ***  G -  PA   NM 
+ 60   7  2025-04-26 Sat 07:05PM  ***  G -  GWS  WB 
+ 61   7  2025-04-27 Sun 12:40PM  ***  G -  GCS  SYD
+ 62   7  2025-04-27 Sun 02:50PM  ***  G -  CAR  GEE
+ 63   7  2025-04-27 Sun 04:10PM  ***  G -  HAW  WCE
+ 64   8  2025-05-01 Thu 07:00PM  ***  G -  ESS  NM 
+ 65   8  2025-05-02 Fri 07:10PM  ***  G -  STK  FRE
+ 66   8  2025-05-03 Sat 12:50PM  ***  G -  WB   PA 
+ 67   8  2025-05-03 Sat 03:45PM  ***  G -  ADL  CAR
+ 68   8  2025-05-03 Sat 07:05PM  ***  G -  COL  GEE
+ 69   8  2025-05-03 Sat 07:05PM  ***  G -  WCE  MEL
+ 70   8  2025-05-04 Sun 12:40PM  ***  G -  SYD  GWS
+ 71   8  2025-05-04 Sun 02:50PM  ***  G -  HAW  RIC
+ 72   8  2025-05-04 Sun 06:50PM  ***  G -  BRI  GCS
+ 73   9  2025-05-08 Thu 07:40PM  ***  G -  FRE  COL
+ 74   9  2025-05-09 Fri 07:10PM  ***  G -  STK  CAR
+ 75   9  2025-05-10 Sat 12:50PM  ***  G -  MEL  HAW
+ 76   9  2025-05-10 Sat 03:45PM  ***  G -  ESS  SYD
+ 77   9  2025-05-10 Sat 07:05PM  ***  G -  GCS  WB 
+ 78   9  2025-05-10 Sat 07:40PM  ***  G -  PA   ADL
+ 79   9  2025-05-11 Sun 12:40PM  ***  G -  RIC  WCE
+ 80   9  2025-05-11 Sun 02:50PM  ***  G -  GEE  GWS
+ 81   9  2025-05-11 Sun 04:10PM  ***  G -  NM   BRI
+ 82  10  2025-05-15 Thu 07:00PM  ***  G -  GCS  HAW
+ 83  10  2025-05-16 Fri 07:10PM  ***  G -  SYD  CAR
+ 84  10  2025-05-17 Sat 12:50PM  ***  G -  COL  ADL
+ 85  10  2025-05-17 Sat 03:45PM  ***  G -  PA   GEE
+ 86  10  2025-05-17 Sat 03:45PM  ***  G -  GWS  FRE
+ 87  10  2025-05-17 Sat 07:05PM  ***  G -  WB   ESS
+ 88  10  2025-05-18 Sun 12:40PM  ***  G -  RIC  NM 
+ 89  10  2025-05-18 Sun 02:50PM  ***  G -  BRI  MEL
+ 90  10  2025-05-18 Sun 04:10PM  ***  G -  WCE  STK
+ 91  11  2025-05-22 Thu 07:00PM  ***  G -  GEE  WB 
+ 92  11  2025-05-23 Fri 07:10PM  ***  G -  ESS  RIC
+ 93  11  2025-05-24 Sat 12:05PM  ***  G -  CAR  GWS
+ 94  11  2025-05-24 Sat 03:45PM  ***  G -  HAW  BRI
+ 95  11  2025-05-24 Sat 07:05PM  ***  G -  NM   COL
+ 96  11  2025-05-24 Sat 07:40PM  ***  G -  FRE  PA 
+ 97  11  2025-05-25 Sun 12:40PM  ***  G -  ADL  WCE
+ 98  11  2025-05-25 Sun 02:50PM  ***  G -  MEL  SYD
+ 99  11  2025-05-25 Sun 04:10PM  ***  G -  STK  GCS
+100  12  2025-05-29 Thu 07:00PM  ***  G -  BRI  ESS
+101  12  2025-05-30 Fri 07:10PM  ***  G -  COL  HAW
+102  12  2025-05-31 Sat 12:50PM  ***  G -  GCS  FRE
+103  12  2025-05-31 Sat 03:45PM  ***  G -  GWS  RIC
+104  12  2025-05-31 Sat 07:05PM  ***  G -  SYD  ADL
+105  12  2025-06-01 Sun 02:50PM  ***  G -  MEL  STK
+106  12  2025-06-01 Sun 06:50PM  ***  G -  WCE  GEE
+107  13  2025-06-05 Thu 07:00PM  ***  G -  WB   HAW
+108  13  2025-06-06 Fri 07:10PM  ***  G -  ADL  BRI
+109  13  2025-06-07 Sat 12:50PM  ***  G -  RIC  SYD
+110  13  2025-06-07 Sat 03:45PM  ***  G -  GEE  GCS
+111  13  2025-06-07 Sat 07:05PM  ***  G -  GWS  PA 
+112  13  2025-06-08 Sun 02:50PM  ***  G -  NM   WCE
+113  13  2025-06-08 Sun 06:50PM  ***  G -  CAR  ESS
+114  13  2025-06-09 Mon 02:50PM  ***  G -  MEL  COL
+115  14  2025-06-12 Thu 07:00PM  ***  G -  STK  WB 
+116  14  2025-06-13 Fri 07:10PM  ***  G -  HAW  ADL
+117  14  2025-06-14 Sat 12:50PM  ***  G -  BRI  GWS
+118  14  2025-06-14 Sat 03:45PM  ***  G -  ESS  GEE
+119  14  2025-06-14 Sat 07:05PM  ***  G -  NM   FRE
+120  14  2025-06-15 Sun 02:50PM  ***  G -  PA   MEL
+121  14  2025-06-15 Sun 05:40PM  ***  G -  WCE  CAR
+122  15  2025-06-19 Thu 07:40PM  ***  G -  FRE  ESS
+123  15  2025-06-20 Fri 07:10PM  ***  G -  GEE  BRI
+124  15  2025-06-21 Sat 12:50PM  ***  G -  CAR  NM 
+125  15  2025-06-21 Sat 03:45PM  ***  G -  PA   SYD
+126  15  2025-06-21 Sat 07:05PM  ***  G -  COL  STK
+127  15  2025-06-22 Sun 12:40PM  ***  G -  GWS  GCS
+128  15  2025-06-22 Sun 02:50PM  ***  G -  WB   RIC
+129  16  2025-06-28 Sat 11:30PM  ***  G -  COL  WCE
+130  16  2025-06-28 Sat 11:30PM  ***  G -  RIC  ADL
+131  16  2025-06-28 Sat 11:30PM  ***  G -  GCS  MEL
+132  16  2025-06-28 Sat 11:30PM  ***  G -  SYD  WB 
+133  16  2025-06-28 Sat 11:30PM  ***  G -  HAW  NM 
+134  16  2025-06-29 Sun 12:00AM  ***  G -  PA   CAR
+135  16  2025-06-29 Sun 01:30AM  ***  G -  FRE  STK
+136  17  2025-07-04 Fri 11:30PM  ***  G -  GEE  RIC
+137  17  2025-07-04 Fri 11:30PM  ***  G -  STK  HAW
+138  17  2025-07-04 Fri 11:30PM  ***  G -  NM   WB 
+139  17  2025-07-04 Fri 11:30PM  ***  G -  ESS  GCS
+140  17  2025-07-04 Fri 11:30PM  ***  G -  CAR  COL
+141  17  2025-07-04 Fri 11:30PM  ***  G -  SYD  FRE
+142  17  2025-07-04 Fri 11:30PM  ***  G -  BRI  PA 
+143  17  2025-07-05 Sat 12:00AM  ***  G -  ADL  MEL
+144  17  2025-07-05 Sat 01:30AM  ***  G -  WCE  GWS
+145  18  2025-07-11 Fri 11:30PM  ***  G -  GWS  GEE
+146  18  2025-07-11 Fri 11:30PM  ***  G -  WB   ADL
+147  18  2025-07-11 Fri 11:30PM  ***  G -  STK  SYD
+148  18  2025-07-11 Fri 11:30PM  ***  G -  CAR  BRI
+149  18  2025-07-11 Fri 11:30PM  ***  G -  MEL  NM 
+150  18  2025-07-11 Fri 11:30PM  ***  G -  RIC  ESS
+151  18  2025-07-11 Fri 11:30PM  ***  G -  GCS  COL
+152  18  2025-07-12 Sat 12:00AM  ***  G -  PA   WCE
+153  18  2025-07-12 Sat 01:30AM  ***  G -  FRE  HAW
+154  19  2025-07-18 Fri 11:30PM  ***  G -  GEE  STK
+155  19  2025-07-18 Fri 11:30PM  ***  G -  ESS  GWS
+156  19  2025-07-18 Fri 11:30PM  ***  G -  CAR  MEL
+157  19  2025-07-18 Fri 11:30PM  ***  G -  COL  FRE
+158  19  2025-07-18 Fri 11:30PM  ***  G -  SYD  NM 
+159  19  2025-07-18 Fri 11:30PM  ***  G -  BRI  WB 
+160  19  2025-07-18 Fri 11:30PM  ***  G -  HAW  PA 
+161  19  2025-07-19 Sat 12:00AM  ***  G -  ADL  GCS
+162  19  2025-07-19 Sat 01:30AM  ***  G -  WCE  RIC
+163  20  2025-07-25 Fri 11:30PM  ***  G -  GWS  SYD
+164  20  2025-07-25 Fri 11:30PM  ***  G -  NM   GEE
+165  20  2025-07-25 Fri 11:30PM  ***  G -  STK  MEL
+166  20  2025-07-25 Fri 11:30PM  ***  G -  ESS  WB 
+167  20  2025-07-25 Fri 11:30PM  ***  G -  RIC  COL
+168  20  2025-07-25 Fri 11:30PM  ***  G -  HAW  CAR
+169  20  2025-07-25 Fri 11:30PM  ***  G -  GCS  BRI
+170  20  2025-07-26 Sat 12:00AM  ***  G -  ADL  PA 
+171  20  2025-07-26 Sat 01:30AM  ***  G -  FRE  WCE
+172  21  2025-08-01 Fri 11:30PM  ***  G -  GEE  PA 
+173  21  2025-08-01 Fri 11:30PM  ***  G -  STK  NM 
+174  21  2025-08-01 Fri 11:30PM  ***  G -  MEL  WCE
+175  21  2025-08-01 Fri 11:30PM  ***  G -  WB   GWS
+176  21  2025-08-01 Fri 11:30PM  ***  G -  COL  BRI
+177  21  2025-08-01 Fri 11:30PM  ***  G -  GCS  RIC
+178  21  2025-08-01 Fri 11:30PM  ***  G -  SYD  ESS
+179  21  2025-08-02 Sat 12:00AM  ***  G -  ADL  HAW
+180  21  2025-08-02 Sat 01:30AM  ***  G -  FRE  CAR
+181  22  2025-08-08 Fri 11:30PM  ***  G -  GEE  ESS
+182  22  2025-08-08 Fri 11:30PM  ***  G -  GWS  NM 
+183  22  2025-08-08 Fri 11:30PM  ***  G -  CAR  GCS
+184  22  2025-08-08 Fri 11:30PM  ***  G -  RIC  STK
+185  22  2025-08-08 Fri 11:30PM  ***  G -  MEL  WB 
+186  22  2025-08-08 Fri 11:30PM  ***  G -  HAW  COL
+187  22  2025-08-08 Fri 11:30PM  ***  G -  BRI  SYD
+188  22  2025-08-09 Sat 12:00AM  ***  G -  PA   FRE
+189  22  2025-08-09 Sat 01:30AM  ***  G -  WCE  ADL
+190  23  2025-08-15 Fri 11:30PM  ***  G -  NM   RIC
+191  23  2025-08-15 Fri 11:30PM  ***  G -  ESS  STK
+192  23  2025-08-15 Fri 11:30PM  ***  G -  WB   WCE
+----------------------------------------------------------------------------------------

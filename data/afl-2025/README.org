@@ -1,0 +1,99 @@
+#+TITLE: AFL 2025
+
+Data source:  https://fixturedownload.com/feed/json/afl-2025
+
+* Setup Process
+cd data
+./get-fixtures afl-2025
+
+cd afl-2025
+edit README.org
+edit data.yml
+
+cd ../..
+lein repl
+(require ['sporting-fixtures.setup :as 's])
+(s/help)
+
+(def event "afl-2025")
+(def data (s/data-read-event event))
+(s/data-check data)
+
+;; Event: afl-2025
+;; Data file defined: data/afl-2025/data.clj
+;; File details
+{:date "2025",
+ :custom "data/afl-2025/custom.clj",
+ :title "Australian Rules Football 2025",
+ :fixtures "data/afl-2025/fixtures.json",
+ :datadir "data/afl-2025/",
+ :url "https://www.afl.com.au",
+ :code afl,
+ :location "Australia",
+ :data "data/afl-2025/data.clj"}
+;; *** No fixtures
+;; *** No results
+;; *** No teams
+;; *** No venues
+nil
+sport
+
+(require ['sporting-fixtures.process-results :as 'p])
+(p/help)
+
+;; Process ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 0. Get fixtures, and setup files
+;;    In data directory: ./get-fixtures SPORTID
+(def sport "afl-2025")
+(def data (s/data-read-event sport))
+
+;; 1. Merge fixture data. (:fixtures)
+(def data (conj data {:fixtures (s/fixtures-init data)}))
+
+;; 2. Setup results. (:results)
+(def data (conj data {:results (s/results-init data)}))
+
+;; 3. Extract and store team data. (:teams)
+(def data (conj data {:teams (s/teams-init data)}))
+
+;; 4. Extract and store venues. (:venues)
+(def data (conj data {:venues (s/venues-init data)}))
+
+;; 5. Setup transform data
+;;    Create 'custom.clj' to map team names to short form (for reports)
+(s/create-custom data)
+
+;; 6. Edit 'custom.clj', then reload custom functions and map data.
+(s/reload)
+(def data (conj data {:results (s/results-transform data)}))
+
+;; 7. Save data
+(s/data-write data)
+
+;; Check 
+(s/data-check data)
+
+* Reports
+cd ~/Documents/git/sport
+lein repl
+(help) ;; <<< start here
+
+(require ['sporting-fixtures.setup :as 's])
+(require ['sporting-fixtures.process :as 'p])
+(require ['sporting-fixtures.process-results :as 'pr])
+(require ['sporting-fixtures.reports :as 'r])
+
+;; See
+(s/help)
+(p/help)
+(pr/help)
+(r/help)
+
+(def sport "afl-2025")
+
+(def data (s/data-read-event sport))
+(s/data-check data)
+
+(require ['sporting-fixtures.process-results :as 'p])
+(p/help)
+
