@@ -89,11 +89,14 @@ lein repl
 (pr/help)
 (r/help)
 
+*** Load Data
 (def sport "afl-2025")
 
 (def data (s/data-read-event sport))
 (s/data-check data)
 
-(require ['sporting-fixtures.process-results :as 'p])
-(p/help)
+*** Generate Fixture Report
+(println (r/report-games data))
+
+*** Generate Teams Report
 

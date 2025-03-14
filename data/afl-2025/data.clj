@@ -2002,7 +2002,7 @@
    :summary "",
    :AwayTeamScore nil,
    :result {:syd {}, :haw {}},
-   :score {:syd "", :haw ""},
+   :score {:syd 76, :haw 96},
    :comment "",
    :HomeTeam "Sydney Swans",
    :DateUtc "2025-03-07 08:40:00Z",
@@ -2040,7 +2040,7 @@
    :comment "",
    :HomeTeam "GWS GIANTS",
    :DateUtc "2025-03-09 04:20:00Z",
-   :scoreboard {:gws "", :col ""},
+   :scoreboard {:gws "15.14(104)", :col "6.16(52)"},
    :AwayTeam "Collingwood",
    :Location "ENGIE Stadium",
    :MatchNumber 4}
@@ -2057,7 +2057,7 @@
    :comment "",
    :HomeTeam "Richmond",
    :DateUtc "2025-03-13 08:30:00Z",
-   :scoreboard {:ric "", :car ""},
+   :scoreboard {:ric "13.4(82)", :car "9.15(69)"},
    :AwayTeam "Carlton",
    :Location "MCG",
    :MatchNumber 5}
@@ -5260,4 +5260,3 @@
   "TIO Stadium" {:id :dar, :name "TIO Stadium"},
   "ENGIE Stadium" {:id :syd, :name "ENGIE Stadium"},
   "Optus Stadium" {:id :per, :name "Optus Stadium"}}}
-  
