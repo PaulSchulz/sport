@@ -2074,7 +2074,7 @@
    :comment "",
    :HomeTeam "Hawthorn",
    :DateUtc "2025-03-14 08:40:00Z",
-   :scoreboard {:haw "", :ess ""},
+   :scoreboard {:haw "17.9(111)", :ess "12.13(85)"},
    :AwayTeam "Essendon",
    :Location "MCG",
    :MatchNumber 6}
@@ -2091,7 +2091,7 @@
    :comment "",
    :HomeTeam "Geelong Cats",
    :DateUtc "2025-03-15 02:20:00Z",
-   :scoreboard {:gee "", :fre ""},
+   :scoreboard {:gee "23.9(147)", :fre "10.9(69)"},
    :AwayTeam "Fremantle",
    :Location "GMHBA Stadium",
    :MatchNumber 7}
@@ -2108,7 +2108,7 @@
    :comment "",
    :HomeTeam "Sydney Swans",
    :DateUtc "2025-03-15 05:15:00Z",
-   :scoreboard {:syd "", :bri ""},
+   :scoreboard {:syd "12.10(82)", :bri "12.14(86)"},
    :AwayTeam "Brisbane Lions",
    :Location "SCG",
    :MatchNumber 8}
@@ -2125,7 +2125,7 @@
    :comment "",
    :HomeTeam "Western Bulldogs",
    :DateUtc "2025-03-15 08:35:00Z",
-   :scoreboard {:wb "", :nm ""},
+   :scoreboard {:wb "17.11(113)", :nm "14.13(97)"},
    :AwayTeam "North Melbourne",
    :Location "Marvel Stadium",
    :MatchNumber 9}
@@ -2142,7 +2142,7 @@
    :comment "",
    :HomeTeam "Collingwood",
    :DateUtc "2025-03-15 08:35:00Z",
-   :scoreboard {:col "", :pa ""},
+   :scoreboard {:col "21.10(136)", :pa "6.9(45)"},
    :AwayTeam "Port Adelaide",
    :Location "MCG",
    :MatchNumber 10}
@@ -2159,7 +2159,7 @@
    :comment "",
    :HomeTeam "Adelaide Crows",
    :DateUtc "2025-03-16 01:35:00Z",
-   :scoreboard {:adl "", :stk ""},
+   :scoreboard {:adl "21.9(135)", :stk "10.12(72)"},
    :AwayTeam "St Kilda",
    :Location "Adelaide Oval",
    :MatchNumber 11}
@@ -2176,7 +2176,7 @@
    :comment "",
    :HomeTeam "Melbourne",
    :DateUtc "2025-03-16 04:20:00Z",
-   :scoreboard {:mel "", :gws ""},
+   :scoreboard {:mel "10.8(74)", :gws "11.11(77)"},
    :AwayTeam "GWS GIANTS",
    :Location "MCG",
    :MatchNumber 12}
@@ -2193,7 +2193,7 @@
    :comment "",
    :HomeTeam "West Coast Eagles",
    :DateUtc "2025-03-16 07:10:00Z",
-   :scoreboard {:wce "", :gcs ""},
+   :scoreboard {:wce "7.7(49)", :gcs "20.16(136)"},
    :AwayTeam "Gold Coast SUNS",
    :Location "Optus Stadium",
    :MatchNumber 13}
