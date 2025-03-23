@@ -369,7 +369,7 @@
             :comment       "",
             :HomeTeam      "North Melbourne",
             :DateUtc       "2025-03-23 04:20:00Z",
-            :scoreboard    {:nm "", :mel ""},
+            :scoreboard    {:nm "19.11(125)", :mel "9.12(66)"},
             :AwayTeam      "Melbourne",
             :Location      "Marvel Stadium",
             :MatchNumber   20}
@@ -386,7 +386,7 @@
             :comment       "",
             :HomeTeam      "Fremantle",
             :DateUtc       "2025-03-23 07:10:00Z",
-            :scoreboard    {:fre "", :syd ""},
+            :scoreboard    {:fre "9.11(65)", :syd "9.14(68)"},
             :AwayTeam      "Sydney Swans",
             :Location      "Optus Stadium",
             :MatchNumber   21}
