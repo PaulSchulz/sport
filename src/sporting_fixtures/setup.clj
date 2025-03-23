@@ -31,7 +31,7 @@
   (println)
   (println ";; Import, Check and Export ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
   (println ";; Load data from event")
-  (println "(def event \"afl-2023\"")
+  (println "(def event \"afl-2025\")")
   (println "(def data (s/data-read-event event))")
   (println)
   (println ";; Check data structure")
@@ -160,7 +160,7 @@
 ;; Moving from 'event' to 'sport' nomenclature.
 (defn data-read-sport [sport]
   (data-read (str "data/" sport "/data.clj")))
-  
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Customisation functions
 (defn custom-read [filename]
