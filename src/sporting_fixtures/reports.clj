@@ -45,6 +45,17 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn report-team [team]
+
+
+  )
+
+(defn report-teams [data]
+
+  )
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Datetime Functions
 ;; Convert time-stamp to localtime
 (defn convert-to-localtime
@@ -67,6 +78,33 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Data conversion and mapping
+;; See: https://en.wikipedia.org/wiki/AFL_final_eight_system
+
+(defn convert-stage-group-afl [stage group]
+  (format "%-2s%s"
+          (if (some? stage)
+            (case stage
+              :group             "G"
+              :qualifying-final  "QF"
+              :elimination-final "EF"
+              :semi-final        "SF"
+              :preliminary-final "GF"
+              "")
+            "-")
+          (if (some? group)
+            (case group
+              :qf-1       "1"
+              :qf-2       "2"
+              :ef-1       "1"
+              :ef-2       "2"
+              :sf-1       "1"
+              :sf-2       "2"
+              :pf-1       "1"
+              :pf-2       "2"
+              :gf         " "
+              "")
+              "-")))
+
 (defn convert-stage-group [stage group]
   (format "%-2s%s"
           (if (some? stage)
