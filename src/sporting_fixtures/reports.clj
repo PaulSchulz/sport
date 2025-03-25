@@ -10,6 +10,8 @@
    [clojure.java.shell :as sh] ;; Printing reports
    [clojure.pprint :as pp]
    [clojure.string :as str]
+   [clojure.set :as set]
+
    [java-time :as time] ;; Used for generating local-time.
    ))
 
@@ -45,17 +47,6 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn report-team [team]
-
-
-  )
-
-(defn report-teams [data]
-
-  )
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Datetime Functions
 ;; Convert time-stamp to localtime
 (defn convert-to-localtime
@@ -75,6 +66,48 @@
      (time/formatter "yyyy-MM-dd EEE hh:mma")
      (time/with-zone-same-instant
        (time/zoned-date-time  year month day hour minute second 0 zone) timezone))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Team Reports
+(defn report-team [team]
+
+
+  )
+
+(defn report-teams [data]
+
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Round Reports
+(defn round-filter [games round]
+  (filter (fn [game]
+            (= (:RoundNumber game) round))
+          games)
+  )
+
+(defn round-all-teams [data]
+  (set (map :id (vals (:teams data))))
+  )
+
+(defn round-teams [games round]
+  "Returns a set of the teams that played in a particular round."
+  (apply set/union
+         (map set
+            (map :teams (round-filter games round))
+            )))
+
+(defn round-byes [data games round]
+  (set/difference
+   (round-all-teams data)
+   (round-teams games round)))
+
+;; Test
+;; (def sport "afl-2025")
+;; (def data (s/data-read-event sport))
+;; (def games (:results data))
+;; (r/round-byes data games 2)
+;; Output:  #{:gcs :gws}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Data conversion and mapping

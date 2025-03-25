@@ -30,7 +30,7 @@
            "Port Adelaide"     {:id :pa, :name "Port Adelaide"},
            "Collingwood"       {:id :col, :name "Collingwood"},
            "Carlton"           {:id :car, :name "Carlton"},
-           "To be announced"   {:id :tba, :name "To be announced"},
+           ;; "To be announced"   {:id :tba, :name "To be announced"},
            },
  :results [
            {:RoundNumber   0,
