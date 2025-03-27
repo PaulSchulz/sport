@@ -19,7 +19,6 @@
            {:id :wil :name "Williams"     :engine "Mercedes"   :country :uk}
            {:id :mer :name "Mercedes"     :engine "Mercedes"   :country :ger}
            ]
-
  :drivers [
            {:id :alb :name "Alex Albon"            :number 23 :team :wil :country :tha}
            {:id :alo :name "Fernando Alonso"       :number 14 :team :ast :country :esp}
@@ -47,87 +46,94 @@
             :name    "Australian Grand Prix"
             :circuit "Albert Park Circuit, Melbourne"
             :date    "16 March"
-            :result {
-                     :nor {:position  1 :time "1:42:06.304" :points 25}
-                     :ver {:position  2 :time "+0.895s"     :points 18}
-                     :rus {:position  3 :time "+8.481s"     :points 15}
-                     :ant {:position  4 :time "+10.135s"    :points 12}
-                     :alb {:position  5 :time "+12.773s"    :points 10}
-                     :str {:position  6 :time "+17.413s"    :points  8}
-                     :hul {:position  7 :time "+18.423s"    :points  6}
-                     :lec {:position  8 :time "+19.826s"    :points  4}
-                     :pia {:position  9 :time "+20.448s"    :points  2}
-                     :ham {:position 10 :time "+22.473s"    :points  1}
-                     :gas {:position 11 :time "+26.502s"    :points  0}
-                     :tsu {:position 12 :time "+29.884s"    :points  0}
-                     :oco {:position 13 :time "+33.161s"    :points  0}
-                     :bea {:position 14 :time "+40.351s"    :points  0}
-                     :law {:position 15 :time :dnf          :points  0}
-                     :bor {:position 16 :time :dnf          :points  0}
-                     :alo {:position 17 :time :dnf          :points  0}
-                     :sai {:position 18 :time :dnf          :points  0}
-                     :doo {:position 19 :time :dnf          :points  0}
-                     :had {:position 20 :time :dnf          :points  0}
-                     }
+            :dateutc "2025-03-16 11:00Z",
+            :results
+            {:race
+             {:nor {:position  1   :time "1:42:06.304" :grid  1   :points 25}
+              :ver {:position  2   :time "+0.895s"     :grid  3   :points 18}
+              :rus {:position  3   :time "+8.481s"     :grid  4   :points 15}
+              :ant {:position  4   :time "+10.135s"    :grid 16   :points 12}
+              :alb {:position  5   :time "+12.773s"    :grid  6   :points 10}
+              :str {:position  6   :time "+17.413s"    :grid 13   :points  8}
+              :hul {:position  7   :time "+18.423s"    :grid 17   :points  6}
+              :lec {:position  8   :time "+19.826s"    :grid 7    :points  4}
+              :pia {:position  9   :time "+20.448s"    :grid 2    :points  2}
+              :ham {:position 10   :time "+22.473s"    :grid 8    :points  1}
+              :gas {:position 11   :time "+26.502s"    :grid 9    :points  0}
+              :tsu {:position 12   :time "+29.884s"    :grid 5    :points  0}
+              :oco {:position 13   :time "+33.161s"    :grid 19   :points  0}
+              :bea {:position 14   :time "+40.351s"    :grid :pl  :points  0}
+              :law {:position 15   :time :dnf          :grid :pl  :points  0}
+              :bor {:position 16   :time :dnf          :grid 15   :points  0}
+              :alo {:position 17   :time :dnf          :grid 12   :points  0}
+              :sai {:position 18   :time :dnf          :grid 10   :points  0}
+              :doo {:position 19   :time :dnf          :grid 14   :points  0}
+              :had {:position :dns :time :dnf          :grid :dns :points  0}
+              }
+             }
             }
 
            {:round 2
             :name "Chinese Grand Prix"
             :circuit "Shanghai International Circuit, Shanghai"
             :date "23 March"
+            :dateutc "2025-03-23 07:00Z",
             :results
-            {
-             :sprint {
-                      :ham {:position  1 :time "30:39.965"   :grid  1  :points 8}
-                      :pia {:position  2 :time "+6.889s"     :grid  3  :points 7}
-                      :ver {:position  3 :time "+9.804s"     :grid  2  :points 6}
-                      :rus {:position  4 :time "+11.592s"    :grid  5  :points 5}
-                      :lec {:position  5 :time "+12.190s"    :grid  4  :points 4}
-                      :tsu {:position  6 :time "+22.288s"    :grid  8  :points 3}
-                      :ant {:position  7 :time "+23.038s"	 :grid  7  :points 2}
-                      :nor {:position  8 :time "+23.471s"    :grid  6  :points 1}
-                      :str {:position  9 :time "+24.916s"    :grid 10  :points 0}
-                      :alo {:position 10 :time "+38.218s"    :grid 11  :points 0}
-                      :alb {:position 11 :time "+39.292s"    :grid  9  :points 0}
-	                  :gas {:position 12 :time "+39.649s"    :grid 17  :points 0}
-                      :had {:position 13 :time "+42.400s"    :grid 15  :points 0}
-                      :law {:position 14 :time "+44.904s"    :grid 19  :points 0}
-                      :bea {:position 15 :time "+45.649s"    :grid 12  :points 0}
-                      :oco {:position 16 :time "+46.182s"    :grid 18  :points 0}
-                      :sai {:position 17 :time "+51.376s"    :grid 13  :points 0}
-                      :bor {:position 18 :time "+53.940s"    :grid 14  :points 0}
-                      :hul {:position 19 :time "+56.682s"    :grid :pl :points 0}
-                      :doo {:position 20 :time "+1:10.2121s" :grid 16  :points 0}
-                      }
+            {:sprint
+             {:ham {:position  1 :time "30:39.965"   :grid  1  :points 8}
+              :pia {:position  2 :time "+6.889s"     :grid  3  :points 7}
+              :ver {:position  3 :time "+9.804s"     :grid  2  :points 6}
+              :rus {:position  4 :time "+11.592s"    :grid  5  :points 5}
+              :lec {:position  5 :time "+12.190s"    :grid  4  :points 4}
+              :tsu {:position  6 :time "+22.288s"    :grid  8  :points 3}
+              :ant {:position  7 :time "+23.038s"	 :grid  7  :points 2}
+              :nor {:position  8 :time "+23.471s"    :grid  6  :points 1}
+              :str {:position  9 :time "+24.916s"    :grid 10  :points 0}
+              :alo {:position 10 :time "+38.218s"    :grid 11  :points 0}
+              :alb {:position 11 :time "+39.292s"    :grid  9  :points 0}
+	          :gas {:position 12 :time "+39.649s"    :grid 17  :points 0}
+              :had {:position 13 :time "+42.400s"    :grid 15  :points 0}
+              :law {:position 14 :time "+44.904s"    :grid 19  :points 0}
+              :bea {:position 15 :time "+45.649s"    :grid 12  :points 0}
+              :oco {:position 16 :time "+46.182s"    :grid 18  :points 0}
+              :sai {:position 17 :time "+51.376s"    :grid 13  :points 0}
+              :bor {:position 18 :time "+53.940s"    :grid 14  :points 0}
+              :hul {:position 19 :time "+56.682s"    :grid :pl :points 0}
+              :doo {:position 20 :time "+1:10.2121s" :grid 16  :points 0}
+              }
 
-             :race {
-                    :pia {:position  1 :time "1:30:55.026" :points 25}
-                    :nor {:position  2 :time "+9.748s"     :points 18}
-                    :rus {:position  3 :time "+11.097s"    :points 15}
-                    :ver {:position  4 :time "+16.656s"    :points 12}
-                    :lec {:position  5 :time "+23.211s"    :points 10}
-                    :ham {:position  6 :time "+25.381s"    :points  8}
-                    :oco {:position  7 :time "+49.969s"    :points  6}
-                    :ant {:position  8 :time "+53.748s"    :points  4}
-                    :alb {:position  9 :time "+56.321s"    :points  2}
-                    :bea {:position 10 :time "+61.303s"    :points  1}
-                    :gas {:position 11 :time "+67.195s"    :points  0}
-                    :str {:position 12 :time "+70.204s"    :points  0}
-                    :sai {:position 13 :time "+76.387s"    :points  0}
-                    :had {:position 14 :time "+78.875s"    :points  0}
-                    :law {:position 15 :time "+81.147s"    :points  0}
-                    :doo {:position 16 :time "+88.401s"    :points  0}
-                    :bor {:position 17 :time "+1 lap"      :points  0}
-                    :hul {:position 18 :time "+1 lap"      :points  0}
-                    :tsu {:position 19 :time "+1 lap"      :points  0}
-                    :alo {:position 20 :time :dnf          :points  0}
-                    }
+             :race
+             {:pia {:position  1 :time "1:30:55.026" :points 25}
+              :nor {:position  2 :time "+9.748s"     :points 18}
+              :rus {:position  3 :time "+11.097s"    :points 15}
+              :ver {:position  4 :time "+16.656s"    :points 12}
+              :lec {:position  5 :time "+23.211s"    :points 10}
+              :ham {:position  6 :time "+25.381s"    :points  8}
+              :oco {:position  7 :time "+49.969s"    :points  6}
+              :ant {:position  8 :time "+53.748s"    :points  4}
+              :alb {:position  9 :time "+56.321s"    :points  2}
+              :bea {:position 10 :time "+61.303s"    :points  1}
+              :gas {:position 11 :time "+67.195s"    :points  0}
+              :str {:position 12 :time "+70.204s"    :points  0}
+              :sai {:position 13 :time "+76.387s"    :points  0}
+              :had {:position 14 :time "+78.875s"    :points  0}
+              :law {:position 15 :time "+81.147s"    :points  0}
+              :doo {:position 16 :time "+88.401s"    :points  0}
+              :bor {:position 17 :time "+1 lap"      :points  0}
+              :hul {:position 18 :time "+1 lap"      :points  0}
+              :tsu {:position 19 :time "+1 lap"      :points  0}
+              :alo {:position 20 :time :dnf          :points  0}
+              }
              }
-
-
             }
 
-           {:round  3 :name "Japanese Grand Prix" ￼     :circuit "Suzuka International Racing Course, Suzuka" :date "6 April"}
+           {:round  3
+            :name "Japanese Grand Prix"
+            :circuit "Suzuka International Racing Course, Suzuka"
+            :date "6 April"
+            :dateutc "2025-04-06 05:00Z",
+            }
+
            {:round  4 :name "Bahrain Grand Prix" ￼      :circuit "Bahrain International Circuit, Sakhir"	   :date "13 April"}
            {:round  5 :name "Saudi Arabian Grand Prix"  :circuit "Jeddah Corniche Circuit, Jeddah"	           :date "20 April"}
            {:round  6 :name "Miami Grand Prix" ￼        :circuit "Miami International Autodrome, Miami Gardens, Florida" :date "4 May"}
