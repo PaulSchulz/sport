@@ -29,6 +29,9 @@
   (println ";; It assumes:")
   (println ";;   - data and results have been stored and are in the default format")
   (println)
+  (println ";; Short cut macro, does the all the steps to produce a report.")
+  (println "(r/reports)")
+  (println)
   (println ";; Use 'setup' module to load and check data")
   (println "(def sport \"afl-2025\")")
   (println "(def data (s/data-read-event sport))")
@@ -45,6 +48,16 @@
   (println "(r/report-games-print data)")
   (println) ;; -- add help here --
   )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defmacro report []
+  '(do
+     (def sport "afl-2025")
+     (def data (s/data-read-event sport))
+     (def games (:results data))
+     (println (r/report-games data))
+     (println)
+     ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Datetime Functions
@@ -68,15 +81,74 @@
        (time/zoned-date-time  year month day hour minute second 0 zone) timezone))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Team Reports
-(defn report-team [team]
+;; AFL Venues
+(defn get-venue-id [data venue-name]
+  "Return the venue id, given the venue name."
+  (let [venues (:venues data)]
+    (-> (venues venue-name) :id)
+    )
+  )
+;; Test
+(comment
+  (def data ())
+  (r/get-venue-id data "Gabba"))
 
-
+;; AFL Teams
+(defn get-team-id [data team-name]
+  "Return the team id, given the team name."
+  (let [teams (:teams data)]
+    (:id (teams team-name))
+    )
+  )
+;; Test
+(comment
+  (r/get-team-id data "Adelaide Crows")
   )
 
-(defn report-teams [data]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn afl-team-stats [data team]
+  (reduce
+   (fn [acc m] (merge-with + acc m))
+   (map team
+      (map afl-game-stats (:results data)))
+   ))
 
+(defn afl-format-stats-team [team]
+  (str
+   (format "  %-5s"
+           (str/upper-case (key team)))
+   ;;  (format "%d %d %d %d  %2d %2d %3d %d %3d  "
+   ;;          (nth results 0)
+   ;;          (nth results 1)
+   ;;          (nth results 2)
+   ;;          (nth results 3)
+   ;;          (nth results 4)
+   ;;          (nth results 5)
+   ;;          (nth results 6)
+   ;;          (nth results 7)
+   ;;          (nth results 8)
+   ;;          )
+   ;;  (format "%-8s  "
+   ;;          (if (nth results 9)
+   ;;            (str/upper-case (name (nth results 9)))))
+   ;;  (format "%s"
+   ;;          (if (nth results 10)
+   ;;            (path-string (nth results 10))))
+   "\n"
+   ))
+
+(defn afl-format-stats-minor [data]
+  (str
+   (format "%s\n" "Minor rounds")
+   (apply str (map afl-format-stats-team (:teams data)))
+   "\n"
+   )
   )
+
+(defn report-afl-teams [data]
+  (afl-format-stats-minor data))
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Round Reports
@@ -221,6 +293,10 @@
       :else {home [0 0 1] away [0 0 1]}
       )
     ))
+;;Test
+(comment
+  (r/afl-game-win-lose-draw game)
+  )
 
 ;; Championship points
 (defn afl-game-result [game]
@@ -239,6 +315,10 @@
       :else {home 2 away 2}
       )
     ))
+;; Test
+(comment
+  (r/afl-game-result game)
+  )
 
 (defn afl-game-stats [game]
   (let [teams (:teams game)
@@ -274,41 +354,79 @@
      }
     )
   )
-
 ;; Test
 (comment
-  (pprint (r/afl-game-stats (nth (data :results) 1)))
-
-  (def game
-    {:RoundNumber 0,
-     :game 2,
-     :teams [:syd :haw],
-     :round 0,
-     :summary "",
-     :result {:syd {}, :haw {}},
-     :score {:syd 76, :haw 96},
-     :HomeTeam "Sydney Swans",
-     :DateUtc "2025-03-07 08:40:00Z",
-     :scoreboard {:syd "11.10(76)", :haw "14.12(96)"},
-     :AwayTeam "Hawthorn",
-     :Location "SCG",
-     :MatchNumber 2})
+  (pprint (r/afl-game-stats game))
   )
 
-;; TODO: This neds to be fixed
 (defn afl-game-results-report [game]
-  (let [stats (afl-game-win-lose-draw game)
-        home-result (:home-result stats)
-        away-result (:away-result stats)
+  (let [home (nth (:teams game) 0)
+        away (nth (:teams game) 1)
+        stats (afl-game-win-lose-draw game)
+        home-result (home stats)
+        away-result (away stats)
         ]
     (if (nil? home-result)
       "-"
       (str
-       (format "%d %d %d" (nth home-result 0) (nth home-result 1) (nth home-result 2))
+       (format "%3s  %d %d %d"
+               (str/upper-case (name home))
+               (nth home-result 0)
+               (nth home-result 1)
+               (nth home-result 2))
        " | "
-       (format "%d %d %d" (nth away-result 0) (nth away-result 1) (nth away-result 2))
+       (format "%3s  %d %d %d"
+               (str/upper-case (name away))
+               (nth away-result 0)
+               (nth away-result 1)
+               (nth away-result 2))
        )
       )))
+;; Test
+(comment
+  (def game (nth (data :results) 1))
+  (r/afl-game-results-report game)
+
+  )
+
+(defn afl-game-stats-report [game]
+  (let [home (nth (:teams game) 0)
+        away (nth (:teams game) 1)
+        stats (afl-game-stats game)
+        home-result (:home-result stats)
+        away-result (:away-result stats)
+        home-stats (home stats)
+        away-stats (away stats)]
+    (if (nil? home-result)
+                       "-"
+      (str
+       (format "%3s  %d %d %d %d %d"
+               (str/upper-case (name home))
+               (:played home-stats)
+               (:result home-stats)
+               (nth (:score home-stats) 2)
+               (nth (:score away-stats) 2)
+               (- (nth (:score home-stats) 2)
+                  (nth (:score away-stats) 2))
+               )
+       " | "
+       (format "%3s  %d %d %d %d %d"
+               (str/upper-case (name away))
+               (:played away-stats)
+               (:result away-stats)
+               (nth (:score away-stats) 2)
+               (nth (:score home-stats) 2)
+               (- (nth (:score away-stats) 2)
+                  (nth (:score home-stats) 2))
+               )
+       )
+      )
+    ))
+;; Test
+(comment
+  (def game (nth (data :results) 1))
+  (r/afl-game-stats-report game)
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Align the scoreboard string on the 'total points' scored.
@@ -404,6 +522,29 @@
             (string? (:summary game)))
      (format "  %s" (:summary game))
      "")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn report-round [data games]
+  (let []
+    ;; General event details
+    ;; Number/Round/TIme/Venue/Stage - Result
+    (def report-format "%3s %3s  %s  %s  %s  %s\n")
+
+    (str
+     "----------------------------------------------------------------------------------------\n"
+     (apply str
+            (map (fn [game]
+                 (format report-format
+                         (:MatchNumber game)
+                         (:RoundNumber game)
+                         (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
+                         (str/upper-case (name (((data :venues) (:Location game)) :id)))
+                         (convert-stage-group (:stage game) (:group game))
+                         (format-game-result-afl game)
+                         )
+                 )
+               games))
+     "----------------------------------------------------------------------------------------\n")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn report-games [data]
@@ -561,49 +702,6 @@
 (defn report-teams [data]
   (stats-groups data)
   )
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn afl-team-stats [data team]
-  (reduce
-   (fn [acc m] (merge-with + acc m))
-   (map team
-      (map afl-game-stats (:results data)))
-   ))
-
-(defn afl-format-stats-team [team]
-  (str
-     (format "  %-5s"
-             (str/upper-case (key team)))
-     ;;  (format "%d %d %d %d  %2d %2d %3d %d %3d  "
-     ;;          (nth results 0)
-     ;;          (nth results 1)
-     ;;          (nth results 2)
-     ;;          (nth results 3)
-     ;;          (nth results 4)
-     ;;          (nth results 5)
-     ;;          (nth results 6)
-     ;;          (nth results 7)
-     ;;          (nth results 8)
-     ;;          )
-     ;;  (format "%-8s  "
-     ;;          (if (nth results 9)
-     ;;            (str/upper-case (name (nth results 9)))))
-     ;;  (format "%s"
-     ;;          (if (nth results 10)
-     ;;            (path-string (nth results 10))))
-     "\n"
-     ))
-
-(defn afl-format-stats-minor [data]
-  (str
-   (format "%s\n" "Minor rounds")
-   (apply str (map afl-format-stats-team (:teams data)))
-   "\n"
-   )
-  )
-
-(defn report-afl-teams [data]
-  (afl-format-stats-minor data))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Football Game Results

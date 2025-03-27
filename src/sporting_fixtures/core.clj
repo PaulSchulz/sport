@@ -22,7 +22,7 @@
     [";;;;;;;;;;;;;;;;;;;"
      ";; Macros"
      ";;;;;;;;;;;;;;;;;;;"
-     "(setup)  ;; Loads setup,process,process-results and reports modules"
+     "(setup)  ;; Loads setup, process, process-results and reports modules (see next)"
      ""
      ";;;;;;;;;;;;;;;;;;;"
      ";; Modules"
