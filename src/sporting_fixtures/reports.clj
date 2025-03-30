@@ -55,7 +55,7 @@
      (def sport "afl-2025")
      (def data (s/data-read-event sport))
      (def games (:results data))
-     (println (r/report-games data))
+     (println (r/report-games-afl data))
      (println)
      ))
 
@@ -369,13 +369,13 @@
     (if (nil? home-result)
       "-"
       (str
-       (format "%3s  %d %d %d"
+       (format "%-3s  %d %d %d"
                (str/upper-case (name home))
                (nth home-result 0)
                (nth home-result 1)
                (nth home-result 2))
        " | "
-       (format "%3s  %d %d %d"
+       (format "%-3s  %d %d %d"
                (str/upper-case (name away))
                (nth away-result 0)
                (nth away-result 1)
@@ -400,7 +400,9 @@
     (if (nil? home-result)
                        "-"
       (str
-       (format "%3s  %d %d %d %d %d"
+       "|"
+       (if (= (:result home-stats) 4) "*" " ")
+       (format "%-3s  %d %d %3d %3d %3d"
                (str/upper-case (name home))
                (:played home-stats)
                (:result home-stats)
@@ -409,8 +411,9 @@
                (- (nth (:score home-stats) 2)
                   (nth (:score away-stats) 2))
                )
-       " | "
-       (format "%3s  %d %d %d %d %d"
+       " |"
+       (if (= (:result away-stats) 4) "*" " ")
+       (format "%-3s  %d %d %3d %3d %3d"
                (str/upper-case (name away))
                (:played away-stats)
                (:result away-stats)
@@ -419,6 +422,7 @@
                (- (nth (:score away-stats) 2)
                   (nth (:score home-stats) 2))
                )
+       " |"
        )
       )
     ))
@@ -468,6 +472,7 @@
        "")))
   )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; AFL Single line game Report
 (defn format-game-result-afl [game]
   (str
@@ -486,7 +491,8 @@
                    (str/upper-case (name away))
                    (format-afl-scoreboard away-scoreboard)
 
-                   (afl-game-results-report game)
+                   ;; (afl-game-results-report game)
+                   (afl-game-stats-report game)
 
                    ))
          (format "%-3s  %-3s"
@@ -525,16 +531,55 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn report-round [data games]
-  (let []
+  ;; General event details
+  ;; Number/Round/TIme/Venue/Stage - Result
+
+  (str
+   "----------------------------------------------------------------------------------------\n"
+   (apply str
+          (map (fn [game]
+               (format report-format
+                       (:MatchNumber game)
+                       (:RoundNumber game)
+                       (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
+                       (str/upper-case (name (((data :venues) (:Location game)) :id)))
+                       (convert-stage-group (:stage game) (:group game))
+                       (format-game-result-afl game)
+                       )
+               )
+             games))
+   "----------------------------------------------------------------------------------------\n"))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn stats-header-afl []
+  (let [header
+        (str
+         (str/join "" (repeat 128 "-")) "\n"
+         "Gm# Rnd  Time                    Ven  Gp   Home               Away               "
+         "| Home   P   F   A   D "
+         "| Away   P   F   A   D "
+         "|\n"
+         (str/join "" (repeat 128 "-"))
+         "\n")
+        ]
+    header
+    ))
+
+(defn stats-tail-afl []
+  (str/join "" (repeat 128 "-")))
+
+(defn report-games-afl [data]
+  (let [code (:code (:details data))
+        title (:title (:details data))]
+
     ;; General event details
     ;; Number/Round/TIme/Venue/Stage - Result
-    (def report-format "%3s %3s  %s  %s  %s  %s\n")
-
     (str
-     "----------------------------------------------------------------------------------------\n"
+     title " : Games\n"
+     (stats-header-afl)
      (apply str
             (map (fn [game]
-                 (format report-format
+                 (format "%3s %3s  %s  %s  %s  %s\n"
                          (:MatchNumber game)
                          (:RoundNumber game)
                          (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
@@ -543,8 +588,9 @@
                          (format-game-result-afl game)
                          )
                  )
-               games))
-     "----------------------------------------------------------------------------------------\n")))
+               (:results data)))
+     (stats-tail-afl)
+     "\n")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn report-games [data]
@@ -575,12 +621,16 @@
                            (= code :afl)      (format-game-result-afl game)
                            :default           (format-game-result game)
                            )
-                                                                   )
+                         )
                  )
                (:results data)))
      "----------------------------------------------------------------------------------------\n")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn report-games-save-afl [data]
+  (let [file (str (-> data :details :datadir) "report-games.txt")]
+    (spit file (report-games-afl data))))
+
 (defn report-games-save [data]
   (let [file (str (-> data :details :datadir) "report-games.txt")]
     (spit file (report-games data))))
