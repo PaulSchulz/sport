@@ -56,6 +56,7 @@
      (def data (s/data-read-event sport))
      (def games (:results data))
      (println (r/report-games-afl data))
+     (r/report-games-save-afl data)
      (println)
      ))
 
@@ -103,6 +104,113 @@
 ;; Test
 (comment
   (r/get-team-id data "Adelaide Crows")
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; AFL Game Statistics
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; AFL Game Statistics
+(defn afl-parse-scoreboard [s]
+  (let [match (re-matches #"(\d+)\.(\d+)\((\d+)\)" s)]
+    (if match
+      [(Integer/parseInt (nth match 1))
+       (Integer/parseInt (nth match 2))
+       (Integer/parseInt (nth match 3))]
+      [])))
+
+(defn afl-check-score? [s]
+  (let [[a b c] s]
+    (= c (+ (* 6 a) b))))
+
+(defn afl-check-score [scoreboard]
+  (cond
+    (= (afl-check-score? scoreboard) false)
+    (println (format "WARNING: Total points does not match score. %s" scoreboard))
+    :default {}
+    ))
+
+;; Win/Lose/Draw Statistics
+(defn afl-game-win-lose-draw [game]
+  (let [home (nth (game :teams) 0)
+        away (nth (game :teams) 1)
+        home-scoreboard ((game :scoreboard) home)
+        away-scoreboard ((game :scoreboard) away)
+        home-score (afl-parse-scoreboard home-scoreboard)
+        away-score (afl-parse-scoreboard away-scoreboard)
+        ]
+    (cond
+      (= home-score []) {home [0 0 0] away [0 0 0]}
+      (= away-score []) {home [0 0 0] away [0 0 0]}
+      (> (nth home-score 2) (nth away-score 2)) {home [1 0 0] away [0 1 0]}
+      (< (nth home-score 2) (nth away-score 2)) {home [0 1 0] away [1 0 0]}
+      :else {home [0 0 1] away [0 0 1]}
+      )
+    ))
+;;Test
+(comment
+  (r/afl-game-win-lose-draw game)
+  )
+
+;; Championship points
+(defn afl-game-result [game]
+  (let [home (nth (game :teams) 0)
+        away (nth (game :teams) 1)
+        home-scoreboard ((game :scoreboard) home)
+        away-scoreboard ((game :scoreboard) away)
+        home-score (afl-parse-scoreboard home-scoreboard)
+        away-score (afl-parse-scoreboard away-scoreboard)
+        ]
+    (cond
+      (= home-score []) {home 0 away 0}
+      (= away-score []) {home 0 away 0}
+      (> (nth home-score 2) (nth away-score 2)) {home 4 away 0}
+      (< (nth home-score 2) (nth away-score 2)) {home 0 away 4}
+      :else {home 2 away 2}
+      )
+    ))
+;; Test
+(comment
+  (r/afl-game-result game)
+  )
+
+(defn afl-game-stats [game]
+  (let [teams (:teams game)
+        home (nth teams 0)
+        away (nth teams 1)
+        scoreboard (:scoreboard game)
+        home-scoreboard (scoreboard home)
+        away-scoreboard (scoreboard away)
+        home-score (afl-parse-scoreboard home-scoreboard)
+        away-score (afl-parse-scoreboard away-scoreboard)
+        result (afl-game-result game)
+        home-result (result home)
+        away-result (result away)
+        ]
+    {:teams (:teams game)
+     :home home
+     :away away
+     :score {home home-score
+             away away-score}
+     :home-score home-score
+     :away-score away-score
+     :result result
+     :home-result home-result
+     :away-result away-result
+     home {:played 1
+           :score home-score
+           :against away-score
+           :result home-result}
+     away {:played 1
+           :score away-score
+           :against home-score
+           :result away-result}
+     }
+    )
+  )
+;; Test
+(comment
+  (pprint (r/afl-game-stats game))
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -253,112 +361,8 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; AFL Game Statistics
-(defn afl-parse-scoreboard [s]
-  (let [match (re-matches #"(\d+)\.(\d+)\((\d+)\)" s)]
-    (if match
-      [(Integer/parseInt (nth match 1))
-       (Integer/parseInt (nth match 2))
-       (Integer/parseInt (nth match 3))]
-[])))
 
-(defn afl-check-score? [s]
-  (let [[a b c] s]
-    (= c (+ (* 6 a) b))))
-
-(defn afl-check-score [scoreboard]
-  (cond
-    (= (afl-check-score? scoreboard) false)
-    (println (format "WARNING: Total points does not match score. %s" scoreboard))
-    :default {}
-    ))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; AFL Game Statistics
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Win/Lose/Draw Statistics
-(defn afl-game-win-lose-draw [game]
-  (let [home (nth (game :teams) 0)
-        away (nth (game :teams) 1)
-        home-scoreboard ((game :scoreboard) home)
-        away-scoreboard ((game :scoreboard) away)
-        home-score (afl-parse-scoreboard home-scoreboard)
-        away-score (afl-parse-scoreboard away-scoreboard)
-        ]
-    (cond
-      (= home-score []) {home [0 0 0] away [0 0 0]}
-      (= away-score []) {home [0 0 0] away [0 0 0]}
-      (> (nth home-score 2) (nth away-score 2)) {home [1 0 0] away [0 1 0]}
-      (< (nth home-score 2) (nth away-score 2)) {home [0 1 0] away [1 0 0]}
-      :else {home [0 0 1] away [0 0 1]}
-      )
-    ))
-;;Test
-(comment
-  (r/afl-game-win-lose-draw game)
-  )
-
-;; Championship points
-(defn afl-game-result [game]
-  (let [home (nth (game :teams) 0)
-        away (nth (game :teams) 1)
-        home-scoreboard ((game :scoreboard) home)
-        away-scoreboard ((game :scoreboard) away)
-        home-score (afl-parse-scoreboard home-scoreboard)
-        away-score (afl-parse-scoreboard away-scoreboard)
-        ]
-    (cond
-      (= home-score []) {home 0 away 0}
-      (= away-score []) {home 0 away 0}
-      (> (nth home-score 2) (nth away-score 2)) {home 4 away 0}
-      (< (nth home-score 2) (nth away-score 2)) {home 0 away 4}
-      :else {home 2 away 2}
-      )
-    ))
-;; Test
-(comment
-  (r/afl-game-result game)
-  )
-
-(defn afl-game-stats [game]
-  (let [teams (:teams game)
-        home (nth teams 0)
-        away (nth teams 1)
-        scoreboard (:scoreboard game)
-        home-scoreboard (scoreboard home)
-        away-scoreboard (scoreboard away)
-        home-score (afl-parse-scoreboard home-scoreboard)
-        away-score (afl-parse-scoreboard away-scoreboard)
-        result (afl-game-result game)
-        home-result (result home)
-        away-result (result away)
-        ]
-    {:teams (:teams game)
-     :home home
-     :away away
-     :score {home home-score
-             away away-score}
-     :home-score home-score
-     :away-score away-score
-     :result result
-     :home-result home-result
-     :away-result away-result
-     home {:played 1
-           :score home-score
-           :against away-score
-           :result home-result}
-     away {:played 1
-           :score away-score
-           :against home-score
-           :result away-result}
-     }
-    )
-  )
-;; Test
-(comment
-  (pprint (r/afl-game-stats game))
-  )
-
+;;;
 (defn afl-game-results-report [game]
   (let [home (nth (:teams game) 0)
         away (nth (:teams game) 1)
@@ -402,7 +406,7 @@
       (str
        "|"
        (if (= (:result home-stats) 4) "*" " ")
-       (format "%-3s  %d %d %3d %3d %3d"
+       (format "%-3s %d %d %3d %3d %3d"
                (str/upper-case (name home))
                (:played home-stats)
                (:result home-stats)
@@ -413,7 +417,7 @@
                )
        " |"
        (if (= (:result away-stats) 4) "*" " ")
-       (format "%-3s  %d %d %3d %3d %3d"
+       (format "%-3s %d %d %3d %3d %3d"
                (str/upper-case (name away))
                (:played away-stats)
                (:result away-stats)
@@ -422,7 +426,6 @@
                (- (nth (:score away-stats) 2)
                   (nth (:score home-stats) 2))
                )
-       " |"
        )
       )
     ))
@@ -437,7 +440,7 @@
 (defn format-afl-scoreboard [scoreboard]
   (let [scoreboard-array (afl-parse-scoreboard scoreboard)]
     (str
-     (format "%7s%6s"
+     (format "%5s%6s"
              (format "%d.%d"
                      (nth scoreboard-array 0)
                      (nth scoreboard-array 1))
@@ -485,7 +488,7 @@
                 (not (= (vals (:scoreboard game)) ["" ""])))
          (let [home-scoreboard (home (:scoreboard game))
                away-scoreboard (away (:scoreboard game))]
-           (format "%-3s %-10s  %-3s %-10s  %s"
+           (format "%-3s %-8s  %-3s %-8s %s"
                    (str/upper-case (name home))
                    (format-afl-scoreboard home-scoreboard)
                    (str/upper-case (name away))
@@ -538,35 +541,42 @@
    "----------------------------------------------------------------------------------------\n"
    (apply str
           (map (fn [game]
-               (format report-format
-                       (:MatchNumber game)
-                       (:RoundNumber game)
-                       (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
-                       (str/upper-case (name (((data :venues) (:Location game)) :id)))
-                       (convert-stage-group (:stage game) (:group game))
-                       (format-game-result-afl game)
-                       )
+                 (format "%3s %3s  %s  %s  %s  %s\n"
+                         (:MatchNumber game)
+                         (:RoundNumber game)
+                         (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
+                         (str/upper-case (name (((data :venues) (:Location game)) :id)))
+                         (convert-stage-group (:stage game) (:group game))
+                         (format-game-result-afl game)
+                         )
                )
-             games))
+               games))
    "----------------------------------------------------------------------------------------\n"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn stats-hr []
+  (str
+   (str/join "" (repeat 119 "-"))
+   "\n")
+  )
+
 (defn stats-header-afl []
   (let [header
         (str
-         (str/join "" (repeat 128 "-")) "\n"
-         "Gm# Rnd  Time                    Ven  Gp   Home               Away               "
-         "| Home   P   F   A   D "
-         "| Away   P   F   A   D "
-         "|\n"
-         (str/join "" (repeat 128 "-"))
-         "\n")
+         (stats-hr)
+         "Gm# Rnd  Time                    Ven  Gp   Home             Away            "
+         "| "
+         "Home  P   F   A   D"
+         " | "
+         "Away  P   F   A   D"
+         "\n"
+         (stats-hr))
         ]
     header
     ))
 
 (defn stats-tail-afl []
-  (str/join "" (repeat 128 "-")))
+  (stats-hr))
 
 (defn report-games-afl [data]
   (let [code (:code (:details data))
