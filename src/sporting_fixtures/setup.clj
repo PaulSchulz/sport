@@ -137,8 +137,24 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Read data from file
+;; Debugging - reports line number
+(require '[clojure.edn :as edn])
+(import 'java.io.PushbackReader
+        'java.io.LineNumberReader
+        'java.io.FileReader)
+
+(defn data-read-with-lines [filename]
+  (with-open [rdr (LineNumberReader. (FileReader. filename))]
+    (try
+      (let [pb (PushbackReader. rdr)]
+        (edn/read {:eof nil} pb))
+      (catch Exception e
+        (println "Error on line:" (.getLineNumber rdr))
+        (throw e)))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn data-read [filename]
-  (read-string (slurp filename)))
+  ;;(read-string (slurp filename)))
+  (read-string (data-read-with-lines filename)))
 
 (defn data-init [data]
   (let [filename (:data data)]

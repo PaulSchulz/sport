@@ -13,6 +13,8 @@
    [clojure.set :as set]
 
    [java-time :as time] ;; Used for generating local-time.
+
+   [clojure.test :refer :all]
    ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -50,7 +52,7 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defmacro report []
+(defmacro afl-report []
   '(do
      (def sport "afl-2025")
      (def data (s/data-read-event sport))
@@ -220,6 +222,15 @@
    (map team
       (map afl-game-stats (:results data)))
    ))
+(deftest test-afl-team-stats []
+  (let [test-data {:results
+                   {:teams [:adl :stk]
+                    :scoreboard {:adl "10.10(70)" :stk "1.1(7)"}
+                    }}
+        result (afl-team-stats test-data :adl)]
+    (is (= result {})))
+  )
+
 
 (defn afl-format-stats-team [team]
   (str
@@ -253,10 +264,8 @@
    )
   )
 
-(defn report-afl-teams [data]
+(defn report-teams-afl [data]
   (afl-format-stats-minor data))
-
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Round Reports
@@ -301,7 +310,8 @@
               :qualifying-final  "QF"
               :elimination-final "EF"
               :semi-final        "SF"
-              :preliminary-final "GF"
+              :preliminary-final "PF"
+              :grand-final       "GF"
               "")
             "-")
           (if (some? group)

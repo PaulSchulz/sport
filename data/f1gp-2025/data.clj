@@ -132,28 +132,109 @@
             :circuit "Suzuka International Racing Course, Suzuka"
             :date "6 April"
             :dateutc "2025-04-06 05:00Z",
-            }
+            :results
+            {:race
+             {
+              :ver {:position  1 :time "1:22:06.983" :points 25 :grid  1}
+              :nor {:position  2 :time "+1.423s"     :points 18 :grid  2}
+              :pia {:position  3 :time "+2.129s"     :points 15 :grid  3}
+              :lec {:position  4 :time "+16.097s"    :points 12 :grid  4}
+              :rus {:position  5 :time "+17.362s"    :points 10 :grid  5}
+              :ant {:position  6 :time "+18.671s"    :points  8 :grid  6}
+              :ham {:position  7 :time "+29.182s"    :points  6 :grid  8}
+              :had {:position  8 :time "+37.134s"    :points  4 :grid  7}
+              :alb {:position  9 :time "+40.367s"    :points  2 :grid  9}
+              :bea {:position 10 :time "+54.529s"    :points  1 :grid 10}
+              :alo {:position 11 :time "+57.333s"    :points  0 :grid 12}
+              :tsu {:position 12 :time "+58.401s"    :points  0 :grid 14}
+              :gas {:position 13 :time "+62.122s"    :points  0 :grid 11}
+              :sai {:position 14 :time "+74.129s"    :points  0 :grid 15}
+              :doo {:position 15 :time "+81.314s"    :points  0 :grid 19}
+              :hul {:position 16 :time "+81.957s"    :points  0 :grid 16}
+              :law {:position 17 :time "+82.438s"    :points  0 :grid 13}
+              :oco {:position 18 :time "+83.897s"    :points  0 :grid 18}
+              :bor {:position 19 :time "+83.897s"    :points  0 :grid 17}
+              :str {:position 20 :time "+1 lap"      :points  0 :grid 20}
+              }
+             }
 
-           {:round  4 :name "Bahrain Grand Prix" ￼      :circuit "Bahrain International Circuit, Sakhir"	   :date "13 April"}
-           {:round  5 :name "Saudi Arabian Grand Prix"  :circuit "Jeddah Corniche Circuit, Jeddah"	           :date "20 April"}
-           {:round  6 :name "Miami Grand Prix" ￼        :circuit "Miami International Autodrome, Miami Gardens, Florida" :date "4 May"}
-           {:round  7 :name "Emilia Romagna Grand Prix" :circuit "Imola Circuit, Imola"                       :date "18 May"}
-           {:round  8 :name "Monaco Grand Prix"	￼    :circuit "Circuit de Monaco, Monaco"                  :date "25 May"}
-           {:round  9 :name "Spanish Grand Prix" ￼      :circuit "Circuit de Barcelona-Catalunya, Montmeló"   :date "1 June"}
-           {:round 10 :name "Canadian Grand Prix" ￼     :circuit "Circuit Gilles Villeneuve, Montreal"	       :date "15 June"}
-           {:round 11 :name "Austrian Grand Prix" ￼     :circuit "Red Bull Ring, Spielberg"                   :date "29 June"}
-           {:round 12 :name "British Grand Prix" ￼      :circuit "Silverstone Circuit, Silverstone"	       :date "6 July"}
-           {:round 13 :name "Belgian Grand Prix" ￼      :circuit "Circuit de Spa-Francorchamps, Stavelot"     :date "27 July"}
-           {:round 14 :name "Hungarian Grand Prix"	￼    :circuit "Hungaroring, Mogyoród"                      :date "3 August"}
-           {:round 15 :name "Dutch Grand Prix"	￼        :circuit "Circuit Zandvoort, Zandvoort"               :date "31 August"}
-           {:round 16 :name "Italian Grand Prix" ￼      :circuit "Monza Circuit, Monza"	                   :date "7 September"}
-           {:round 17 :name "Azerbaijan Grand Prix" ￼   :circuit "Baku City Circuit, Baku"                    :date "21 September"}
-           {:round 18 :name "Singapore Grand Prix"	￼    :circuit "Marina Bay Street Circuit, Singapore"       :date "5 October"}
-           {:round 19 :name "United States Grand Prix"	 :circuit "Circuit of the Americas, Austin, Texas"	   :date "19 October"}
-           {:round 20 :name "Mexico City Grand Prix" ￼  :circuit "Autódromo Hermanos Rodríguez, Mexico City"  :date "26 October"}
-           {:round 21 :name "São Paulo Grand Prix"	￼    :circuit "Interlagos Circuit, São Paulo"              :date "9 November"}
-           {:round 22 :name "Las Vegas Grand Prix"	￼    :circuit "Las Vegas Strip Circuit, Paradise, Nevada"  :date "22 November"}
-           {:round 23 :name "Qatar Grand Prix"	￼        :circuit "Lusail International Circuit, Lusail"       :date "30 November"}
-           {:round 24 :name "Abu Dhabi Grand Prix"	￼    :circuit "Yas Marina Circuit, Abu Dhabi"              :date "7 December"}
+            {:round   4
+             :name    "Bahrain Grand Prix" ￼
+             :circuit "Bahrain International Circuit, Sakhir"
+             :date    "13 April"
+             :dateutc "2025-04-13 15:00:00Z",
+             :result
+             {:race
+              :pia {:position  1 :time ""    :points 25 :grid  1}
+              :rus {:position  2 :time ""    :points 18 :grid  3}
+              :nor {:position  3 :time ""    :points 15 :grid  6}
+              :lec {:position  4 :time ""    :points 12 :grid  2}
+              :ham {:position  5 :time ""    :points 10 :grid  9}
+              :ver {:position  6 :time ""    :points  8 :grid  7}
+              :gas {:position  7 :time ""    :points  6 :grid  4}
+              :oco {:position  8 :time ""    :points  4 :grid 14}
+              :tsu {:position  9 :time ""    :points  2 :grid 10}
+              :bea {:position 10 :time ""    :points  1 :grid 20}
+              :ant {:position 11 :time ""    :points  0 :grid  5}
+              :alb {:position 12 :time ""    :points  0 :grid 15}
+              :hul {:position 13 :time ""    :points  0 :grid 16}
+              :had {:position 14 :time ""    :points  0 :grid 12}
+              :doo {:position 15 :time ""    :points  0 :grid 11}
+              :alo {:position 16 :time ""    :points  0 :grid 12}
+              :law {:position 17 :time ""    :points  0 :grid 17}
+              :str {:position 18 :time ""    :points  0 :grid 19}
+              :bor {:position 19 :time ""    :points  0 :grid 18}
+              :sai {:position 20 :time :dnf  :points  0 :grid  8}
+              }
+             }
+
+            {:round    5
+             :name    "Saudi Arabian Grand Prix"
+             :circuit "Jeddah Corniche Circuit, Jeddah"
+             :date    "20 April"
+             :result
+             {race:
+              :ver {:position  0 :time ""    :points  0 :grid  1}
+              :pia {:position  0 :time ""    :points  0 :grid  2}
+              :rus {:position  0 :time ""    :points  0 :grid  3}
+              :lec {:position  0 :time ""    :points  0 :grid  4}
+              :ant {:position  0 :time ""    :points  0 :grid  5}
+              :sai {:position  0 :time ""    :points  0 :grid  6}
+              :ham {:position  0 :time ""    :points  0 :grid  7}
+              :tsu {:position  0 :time ""    :points  0 :grid  8}
+              :gas {:position  0 :time ""    :points  0 :grid  9}
+              :nor {:position  0 :time ""    :points  0 :grid 10}
+              :alb {:position  0 :time ""    :points  0 :grid 11}
+              :law {:position  0 :time ""    :points  0 :grid 12}
+              :alo {:position  0 :time ""    :points  0 :grid 13}
+              :had {:position  0 :time ""    :points  0 :grid 14}
+              :bea {:position  0 :time ""    :points  0 :grid 15}
+              :str {:position  0 :time ""    :points  0 :grid 16}
+              :doo {:position  0 :time ""    :points  0 :grid 17}
+              :hul {:position  0 :time ""    :points  0 :grid 18}
+              :oco {:position  0 :time ""    :points  0 :grid 19}
+              :bor {:position  0 :time ""    :points  0 :grid 20}
+              }
+
+             }
+            {:round  6 :name "Miami Grand Prix" ￼        :circuit "Miami International Autodrome, Miami Gardens, Florida" :date "4 May"}
+            {:round  7 :name "Emilia Romagna Grand Prix" :circuit "Imola Circuit, Imola"                       :date "18 May"}
+            {:round  8 :name "Monaco Grand Prix"	￼    :circuit "Circuit de Monaco, Monaco"                  :date "25 May"}
+            {:round  9 :name "Spanish Grand Prix" ￼      :circuit "Circuit de Barcelona-Catalunya, Montmeló"   :date "1 June"}
+            {:round 10 :name "Canadian Grand Prix" ￼     :circuit "Circuit Gilles Villeneuve, Montreal"	       :date "15 June"}
+            {:round 11 :name "Austrian Grand Prix" ￼     :circuit "Red Bull Ring, Spielberg"                   :date "29 June"}
+            {:round 12 :name "British Grand Prix" ￼      :circuit "Silverstone Circuit, Silverstone"	       :date "6 July"}
+            {:round 13 :name "Belgian Grand Prix" ￼      :circuit "Circuit de Spa-Francorchamps, Stavelot"     :date "27 July"}
+            {:round 14 :name "Hungarian Grand Prix"	￼    :circuit "Hungaroring, Mogyoród"                      :date "3 August"}
+            {:round 15 :name "Dutch Grand Prix"	￼        :circuit "Circuit Zandvoort, Zandvoort"               :date "31 August"}
+            {:round 16 :name "Italian Grand Prix" ￼      :circuit "Monza Circuit, Monza"	                   :date "7 September"}
+            {:round 17 :name "Azerbaijan Grand Prix" ￼   :circuit "Baku City Circuit, Baku"                    :date "21 September"}
+            {:round 18 :name "Singapore Grand Prix"	￼    :circuit "Marina Bay Street Circuit, Singapore"       :date "5 October"}
+            {:round 19 :name "United States Grand Prix"	 :circuit "Circuit of the Americas, Austin, Texas"	   :date "19 October"}
+            {:round 20 :name "Mexico City Grand Prix" ￼  :circuit "Autódromo Hermanos Rodríguez, Mexico City"  :date "26 October"}
+            {:round 21 :name "São Paulo Grand Prix"	￼    :circuit "Interlagos Circuit, São Paulo"              :date "9 November"}
+            {:round 22 :name "Las Vegas Grand Prix"	￼    :circuit "Las Vegas Strip Circuit, Paradise, Nevada"  :date "22 November"}
+            {:round 23 :name "Qatar Grand Prix"	￼        :circuit "Lusail International Circuit, Lusail"       :date "30 November"}
+            {:round 24 :name "Abu Dhabi Grand Prix"	￼    :circuit "Yas Marina Circuit, Abu Dhabi"              :date "7 December"}
            ]
  }

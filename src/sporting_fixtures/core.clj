@@ -70,7 +70,20 @@
   (require ['sporting-fixtures.setup :as 's])
   (require ['sporting-fixtures.process :as 'p])
   (require ['sporting-fixtures.process-results :as 'pr])
-  (require ['sporting-fixtures.reports :as 'r]))
+  (require ['sporting-fixtures.reports :as 'r])
+  )
+
+(defmacro status []
+  (if (resolve 'sport)
+    (println "sport is:" (deref (resolve 'sport)))
+    (println "sport is not defined"))
+  (if (resolve 'data)
+    (do
+      (println "data is loaded")
+      (println (format "  event: %s"
+                       (:event (deref(resolve 'data))))))
+    (println "data is not defined"))
+  )
 
 (defn event-id-to-filename [id]
   (str "data/" id ".yml"))
