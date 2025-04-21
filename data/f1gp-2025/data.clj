@@ -194,29 +194,29 @@
              :date    "20 April"
              :result
              {race:
-              :ver {:position  0 :time ""    :points  0 :grid  1}
-              :pia {:position  0 :time ""    :points  0 :grid  2}
-              :rus {:position  0 :time ""    :points  0 :grid  3}
-              :lec {:position  0 :time ""    :points  0 :grid  4}
-              :ant {:position  0 :time ""    :points  0 :grid  5}
-              :sai {:position  0 :time ""    :points  0 :grid  6}
-              :ham {:position  0 :time ""    :points  0 :grid  7}
-              :tsu {:position  0 :time ""    :points  0 :grid  8}
-              :gas {:position  0 :time ""    :points  0 :grid  9}
-              :nor {:position  0 :time ""    :points  0 :grid 10}
-              :alb {:position  0 :time ""    :points  0 :grid 11}
-              :law {:position  0 :time ""    :points  0 :grid 12}
-              :alo {:position  0 :time ""    :points  0 :grid 13}
-              :had {:position  0 :time ""    :points  0 :grid 14}
-              :bea {:position  0 :time ""    :points  0 :grid 15}
-              :str {:position  0 :time ""    :points  0 :grid 16}
-              :doo {:position  0 :time ""    :points  0 :grid 17}
-              :hul {:position  0 :time ""    :points  0 :grid 18}
-              :oco {:position  0 :time ""    :points  0 :grid 19}
-              :bor {:position  0 :time ""    :points  0 :grid 20}
+              :pia {:position  1 :time "1:21:06.758" :points 25 :grid  2}
+              :ver {:position  2 :time "+2.843s"     :points 18 :grid  1}
+              :lec {:position  3 :time "+8.104s"     :points 15 :grid  4}
+              :nor {:position  4 :time "+9.196s"     :points 12 :grid 10}
+              :rus {:position  5 :time "+27.236s"    :points 10 :grid  3}
+              :ant {:position  6 :time "+34.688s"    :points  8 :grid  5}
+              :ham {:position  7 :time "+39.073s"    :points  6 :grid  7}
+              :sai {:position  8 :time "+64.630s"    :points  4 :grid  6}
+              :alb {:position  9 :time "+66.515s"    :points  2 :grid 11}
+              :had {:position 10 :time "+67.091s"    :points  1 :grid 14}
+              :alo {:position 11 :time "+75.917s"    :points  0 :grid 13}
+              :law {:position 12 :time "+78.451s"    :points  0 :grid 12}
+              :bea {:position 13 :time "+79.194s"    :points  0 :grid 15}
+              :oco {:position 14 :time "+99.723s"    :points  0 :grid 19}
+              :hul {:position 15 :time "+1 Lap"      :points  0 :grid 18}
+              :str {:position 16 :time "+1 Lap"      :points  0 :grid 16}
+              :doo {:position 17 :time "+1 Lap"      :points  0 :grid 17}
+              :bor {:position 18 :time "+1 Lap"      :points  0 :grid 20}
+              :tsu {:position 19 :time ""            :points  0 :grid  8}
+              :gas {:position 20 :time ""            :points  0 :grid  9}
               }
-
              }
+
             {:round  6 :name "Miami Grand Prix" ￼        :circuit "Miami International Autodrome, Miami Gardens, Florida" :date "4 May"}
             {:round  7 :name "Emilia Romagna Grand Prix" :circuit "Imola Circuit, Imola"                       :date "18 May"}
             {:round  8 :name "Monaco Grand Prix"	￼    :circuit "Circuit de Monaco, Monaco"                  :date "25 May"}
