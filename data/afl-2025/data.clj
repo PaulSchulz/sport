@@ -1170,7 +1170,7 @@
             :comment       "",
             :HomeTeam      "Essendon",
             :DateUtc       "2025-05-01 09:30:00Z",
-            :scoreboard    {:ess "", :nm ""},
+            :scoreboard    {:ess "9.11(65)", :nm "9.8(62)"},
             :AwayTeam      "North Melbourne",
             :Location      "Marvel Stadium",
             :MatchNumber   64
@@ -1188,7 +1188,7 @@
             :comment       "",
             :HomeTeam      "St Kilda",
             :DateUtc       "2025-05-02 09:40:00Z",
-            :scoreboard    {:stk "", :fre ""},
+            :scoreboard    {:stk "14.10(94)", :fre "5.3(33)"},
             :AwayTeam      "Fremantle",
             :Location      "Marvel Stadium",
             :MatchNumber   65
@@ -1206,7 +1206,7 @@
             :comment       "",
             :HomeTeam      "Western Bulldogs",
             :DateUtc       "2025-05-03 03:20:00Z",
-            :scoreboard    {:wb "", :pa ""},
+            :scoreboard    {:wb "20.11(131)", :pa "5.11(41)"},
             :AwayTeam      "Port Adelaide",
             :Location      "Mars Stadium",
             :MatchNumber   66
@@ -1224,7 +1224,7 @@
             :comment       "",
             :HomeTeam      "Adelaide Crows",
             :DateUtc       "2025-05-03 06:15:00Z",
-            :scoreboard    {:adl "", :car ""},
+            :scoreboard    {:adl "16.14(110)", :car "7.8(50)"},
             :AwayTeam      "Carlton",
             :Location      "Adelaide Oval",
             :MatchNumber   67}
@@ -1241,7 +1241,7 @@
             :comment       "",
             :HomeTeam      "Collingwood",
             :DateUtc       "2025-05-03 09:35:00Z",
-            :scoreboard    {:col "", :gee ""},
+            :scoreboard    {:col "12.15(87)", :gee "13.12(90)"},
             :AwayTeam      "Geelong Cats",
             :Location      "MCG",
             :MatchNumber   68}
@@ -1258,7 +1258,7 @@
             :comment       "",
             :HomeTeam      "West Coast Eagles",
             :DateUtc       "2025-05-03 09:35:00Z",
-            :scoreboard    {:wce "", :mel ""},
+            :scoreboard    {:wce "11.10(76)", :mel "16.12(108)"},
             :AwayTeam      "Melbourne",
             :Location      "Optus Stadium",
             :MatchNumber   69}

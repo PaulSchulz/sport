@@ -125,6 +125,7 @@
               :alo {:position 20 :time :dnf          :points  0}
               }
              }
+
             }
 
            {:round  3
@@ -217,7 +218,62 @@
               }
              }
 
-            {:round  6 :name "Miami Grand Prix" ￼        :circuit "Miami International Autodrome, Miami Gardens, Florida" :date "4 May"}
+            {:round  6
+             :name "Miami Grand Prix" ￼
+             :circuit "Miami International Autodrome, Miami Gardens, Florida"
+             :date "4 May"
+             :results
+             {:sprint
+              {
+               :nor {:position  1 :time "36:37.647" :grid  3  :points 8}
+               :pia {:position  2 :time "+0.672s"   :grid  2  :points 7}
+               :ham {:position  3 :time "+1.073s"   :grid  7  :points 6}
+               :rus {:position  4 :time "+3.127s"   :grid  5  :points 5}
+               :str {:position  5 :time "+3.412s"   :grid 16  :points 4}
+               :tsu {:position  6 :time "+5.153s"   :grid :pl :points 3}
+               :ant {:position  7 :time "+5.635s"   :grid  1  :points 2}
+               :gas {:position  8 :time "+5.973s"   :grid 13  :points 1}
+               :hul {:position  9 :time "+6.153s"   :grid 11  :points 0}
+               :had {:position 10 :time "+7.502s"   :grid  9  :points 0}
+               :alb {:position 11 :time "+7.522s"   :grid  8  :points 0}
+               :oco {:position 12 :time "+8,998s"   :grid 12  :points 0}
+               :law {:position 13 :time "+9.024s"   :grid 14  :points 0}
+               :bea {:position 14 :time "+9.218s"   :grid 19  :points 0}
+               :bor {:position 15 :time "+9.675s"   :grid 18  :points 0}
+               :doo {:position 16 :time "+9.909s"   :grid 17  :points 0}
+               :ver {:position 17 :time "+12.059s"  :grid  4  :points 0}
+               :alo {:position 18 :time :dnf :grid 10  :points 0}
+               :sai {:position 19 :time :dnf :grid 15  :points 0}
+               :lec {:position 20 :time :dnf :grid  6  :points 0}
+               }
+
+              :race
+              {
+               :ver {:position  1 :time "" :grid  1 :points  0}
+               :nor {:position  2 :time "" :grid  2 :points  0}
+               :ant {:position  3 :time "" :grid  3 :points  0}
+               :pia {:position  4 :time "" :grid  4 :points  0}
+               :rus {:position  5 :time "" :grid  5 :points  0}
+               :sai {:position  6 :time "" :grid  6 :points  0}
+               :alb {:position  7 :time "" :grid  7 :points  0}
+               :lec {:position  8 :time "" :grid  8 :points  0}
+               :oco {:position  9 :time "" :grid  9 :points  0}
+               :tsu {:position 10 :time "" :grid 10 :points  0}
+               :had {:position 11 :time "" :grid 11 :points  0}
+               :ham {:position 12 :time "" :grid 12 :points  0}
+               :bor {:position 13 :time "" :grid 13 :points  0}
+               :doo {:position 14 :time "" :grid 14 :points  0}
+               :law {:position 15 :time "" :grid 15 :points  0}
+               :hul {:position 16 :time "" :grid 16 :points  0}
+               :alo {:position 17 :time "" :grid 17 :points  0}
+               :gas {:position 18 :time "" :grid 18 :points  0}
+               :str {:position 19 :time "" :grid 19 :points  0}
+               :bea {:position 20 :time "" :grid 20 :points  0}
+               }
+              }
+
+             }
+
             {:round  7 :name "Emilia Romagna Grand Prix" :circuit "Imola Circuit, Imola"                       :date "18 May"}
             {:round  8 :name "Monaco Grand Prix"	￼    :circuit "Circuit de Monaco, Monaco"                  :date "25 May"}
             {:round  9 :name "Spanish Grand Prix" ￼      :circuit "Circuit de Barcelona-Catalunya, Montmeló"   :date "1 June"}
