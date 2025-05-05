@@ -249,26 +249,30 @@
 
               :race
               {
-               :ver {:position  1 :time "" :grid  1 :points  0}
-               :nor {:position  2 :time "" :grid  2 :points  0}
-               :ant {:position  3 :time "" :grid  3 :points  0}
-               :pia {:position  4 :time "" :grid  4 :points  0}
-               :rus {:position  5 :time "" :grid  5 :points  0}
-               :sai {:position  6 :time "" :grid  6 :points  0}
-               :alb {:position  7 :time "" :grid  7 :points  0}
-               :lec {:position  8 :time "" :grid  8 :points  0}
-               :oco {:position  9 :time "" :grid  9 :points  0}
-               :tsu {:position 10 :time "" :grid 10 :points  0}
-               :had {:position 11 :time "" :grid 11 :points  0}
-               :ham {:position 12 :time "" :grid 12 :points  0}
-               :bor {:position 13 :time "" :grid 13 :points  0}
-               :doo {:position 14 :time "" :grid 14 :points  0}
-               :law {:position 15 :time "" :grid 15 :points  0}
-               :hul {:position 16 :time "" :grid 16 :points  0}
-               :alo {:position 17 :time "" :grid 17 :points  0}
-               :gas {:position 18 :time "" :grid 18 :points  0}
-               :str {:position 19 :time "" :grid 19 :points  0}
-               :bea {:position 20 :time "" :grid 20 :points  0}
+               :pia {:position  1 :time "1:28:51.587" :grid  4 :points 25}
+               :nor {:position  2 :time "+4.630s"     :grid  2 :points 18}
+               :rus {:position  3 :time "+37.644s"    :grid  5 :points 15}
+               :ver {:position  4 :time "+39.956s"    :grid  1 :points 12}
+               :alb {:position  5 :time "+48.067s"    :grid  7 :points 10}
+               :ant {:position  6 :time "+55.502s"    :grid  3 :points  8}
+               :lec {:position  7 :time "+57.036s"    :grid  8 :points  6}
+               :ham {:position  8 :time "+60.186s"    :grid 12 :points  4}
+               :sai {:position  9 :time "+60.577s"    :grid  6 :points  2}
+               :tsu {:position 10 :time "+74.434s"    :grid 10 :points  1}
+               :had {:position 11 :time "+74.602s"    :grid 11 :points  0}
+               :oco {:position 12 :time "+82.006s"    :grid  9 :points  0}
+               :gas {:position 13 :time "+90.445s"    :grid 18 :points  0}
+               :hul {:position 14 :time "+1 Lap"      :grid 16 :points  0}
+               :alo {:position 15 :time "+1 Lap"      :grid 17 :points  0}
+               :str {:position 16 :time "+1 Lap"      :grid 19 :points  0}
+               :law {:position 17 :time :dnf          :grid 15 :points  0}
+               :bor {:position 18 :time :dnf          :grid 13 :points  0}
+               :bea {:position 19 :time :dnf          :grid 20 :points  0}
+               :doo {:position 20 :time :dnf          :grid 14 :points  0}
+
+
+
+
                }
               }
 
