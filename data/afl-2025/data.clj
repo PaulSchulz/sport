@@ -1275,7 +1275,7 @@
             :comment       "",
             :HomeTeam      "Sydney Swans",
             :DateUtc       "2025-05-04 03:10:00Z",
-            :scoreboard    {:syd "", :gws ""},
+            :scoreboard    {:syd "12.15(87)", :gws "10.13(73)"},
             :AwayTeam      "GWS GIANTS",
             :Location      "SCG",
             :MatchNumber   70
@@ -1293,7 +1293,7 @@
             :comment       "",
             :HomeTeam      "Hawthorn",
             :DateUtc       "2025-05-04 05:20:00Z",
-            :scoreboard    {:haw "", :ric ""},
+            :scoreboard    {:haw "16.13(109)", :ric "6.8(44)"},
             :AwayTeam      "Richmond",
             :Location      "MCG",
             :MatchNumber   71
@@ -1311,7 +1311,7 @@
             :comment       "",
             :HomeTeam      "Brisbane Lions",
             :DateUtc       "2025-05-04 09:20:00Z",
-            :scoreboard    {:bri "", :gcs ""},
+            :scoreboard    {:bri "9.12(66)", :gcs "7.7(49)"},
             :AwayTeam      "Gold Coast SUNS",
             :Location      "Gabba",
             :MatchNumber   72
