@@ -1329,7 +1329,7 @@
             :comment       "",
             :HomeTeam      "Fremantle",
             :DateUtc       "2025-05-08 10:10:00Z",
-            :scoreboard    {:fre "", :col ""},
+            :scoreboard    {:fre "12.11(83)", :col "15.7(97)"},
             :AwayTeam      "Collingwood",
             :Location      "Optus Stadium",
             :MatchNumber   73}
@@ -1346,7 +1346,7 @@
             :comment       "",
             :HomeTeam      "St Kilda",
             :DateUtc       "2025-05-09 09:40:00Z",
-            :scoreboard    {:stk "", :car ""},
+            :scoreboard    {:stk "9.8(62)", :car "11.1(77)"},
             :AwayTeam      "Carlton",
             :Location      "MCG",
             :MatchNumber   74}
@@ -1363,7 +1363,7 @@
             :comment       "",
             :HomeTeam      "Melbourne",
             :DateUtc       "2025-05-10 03:20:00Z",
-            :scoreboard    {:mel "", :haw ""},
+            :scoreboard    {:mel "7.14(56)", :haw "13.13(91)"},
             :AwayTeam      "Hawthorn",
             :Location      "MCG",
             :MatchNumber   75}
@@ -1380,7 +1380,7 @@
             :comment       "",
             :HomeTeam      "Essendon",
             :DateUtc       "2025-05-10 06:15:00Z",
-            :scoreboard    {:ess "", :syd ""},
+            :scoreboard    {:ess "11.5(71)", :syd "8.15(63)"},
             :AwayTeam      "Sydney Swans",
             :Location      "Marvel Stadium",
             :MatchNumber   76}
@@ -1397,7 +1397,7 @@
             :comment       "",
             :HomeTeam      "Gold Coast SUNS",
             :DateUtc       "2025-05-10 09:35:00Z",
-            :scoreboard    {:gcs "", :wb ""},
+            :scoreboard    {:gcs "15.16(106)", :wb "14.12(96)"},
             :AwayTeam      "Western Bulldogs",
             :Location      "TIO Stadium",
             :MatchNumber   77}
@@ -1414,7 +1414,7 @@
             :comment       "",
             :HomeTeam      "Port Adelaide",
             :DateUtc       "2025-05-10 10:10:00Z",
-            :scoreboard    {:pa "", :adl ""},
+            :scoreboard    {:pa "12.12(84)", :adl "13.11(89)"},
             :AwayTeam      "Adelaide Crows",
             :Location      "Adelaide Oval",
             :MatchNumber   78}
@@ -1431,7 +1431,7 @@
             :comment       "",
             :HomeTeam      "Richmond",
             :DateUtc       "2025-05-11 03:10:00Z",
-            :scoreboard    {:ric "", :wce ""},
+            :scoreboard    {:ric "11.15(81)", :wce "11.13(79)"},
             :AwayTeam      "West Coast Eagles",
             :Location      "MCG",
             :MatchNumber   79}
@@ -1448,7 +1448,7 @@
             :comment       "",
             :HomeTeam      "Geelong Cats",
             :DateUtc       "2025-05-11 05:20:00Z",
-            :scoreboard    {:gee "", :gws ""},
+            :scoreboard    {:gee "14.17(101)", :gws "16.9(105)"},
             :AwayTeam      "GWS GIANTS",
             :Location      "GMHBA Stadium",
             :MatchNumber   80}
@@ -1465,7 +1465,7 @@
             :comment       "",
             :HomeTeam      "North Melbourne",
             :DateUtc       "2025-05-11 06:40:00Z",
-            :scoreboard    {:nm "", :bri ""},
+            :scoreboard    {:nm "10.11(71)", :bri "10.11(71)"},
             :AwayTeam      "Brisbane Lions",
             :Location      "Blundstone Arena",
             :MatchNumber   81}

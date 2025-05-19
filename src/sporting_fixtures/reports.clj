@@ -37,6 +37,7 @@
   (println ";; Use 'setup' module to load and check data")
   (println "(def sport \"afl-2025\")")
   (println "(def data (s/data-read-event sport))")
+  (println "(def data (s/data-read-with-lines (str \"data/\" sport \"/data.clj\")))")
   (println)
   (println ";; To display a report of game results")
   (println "(println (r/report-games data))")
@@ -55,7 +56,8 @@
 (defmacro afl-report []
   '(do
      (def sport "afl-2025")
-     (def data (s/data-read-event sport))
+     ;; (def data (s/data-read sport))
+     (def data (s/data-read-with-lines (str "data/" sport "/data.clj")))
      (def games (:results data))
      (println (r/report-games-afl data))
      (r/report-games-save-afl data)
