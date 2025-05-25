@@ -601,17 +601,69 @@
      (stats-header-afl)
      (apply str
             (map (fn [game]
-                 (format "%3s %3s  %s  %s  %s  %s\n"
-                         (:MatchNumber game)
-                         (:RoundNumber game)
-                         (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
-                         (str/upper-case (name (((data :venues) (:Location game)) :id)))
-                         (convert-stage-group (:stage game) (:group game))
-                         (format-game-result-afl game)
-                         )
-                 )
-               (:results data)))
+                   (format "%3s %3s  %s  %s  %s  %s\n"
+                           (:MatchNumber game)
+                           (:RoundNumber game)
+                           (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
+                           (str/upper-case (name (((data :venues) (:Location game)) :id)))
+                           (convert-stage-group (:stage game) (:group game))
+                           (format-game-result-afl game)
+                           )
+                   )
+                 (:results data)))
      (stats-tail-afl)
+     "\n")))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+(defn format-game [game]
+  (let [home (nth (:teams game) 0)
+        away (nth (:teams game) 1)]
+    (format "%s v %s"
+            (str/upper-case (name home))
+            (str/upper-case (name away))
+            )
+    ))
+
+;;Convert time-stamp to localtime on org-mode
+(defn convert-to-localtime-orgmode
+  "timestamp - Timestamp string eg. 2022-11-13 08:00:00Z
+  timezone - eg. Australia/Adelaide"
+  [timestamp timezone]
+  (let [timestamp-array (re-matches #"^(....)-(..)-(..) (..):(..):(..)(.*)"
+                                    timestamp)
+        year   (Integer/parseInt (timestamp-array 1))
+        month  (Integer/parseInt (timestamp-array 2))
+        day    (Integer/parseInt (timestamp-array 3))
+        hour   (Integer/parseInt (timestamp-array 4))
+        minute (Integer/parseInt (timestamp-array 5))
+        second (Integer/parseInt (timestamp-array 6))
+        zone   (timestamp-array 7)]
+    (time/format
+     (time/formatter "<yyyy-MM-dd EEE HH:MM>")
+     (time/with-zone-same-instant
+       (time/zoned-date-time  year month day hour minute second 0 zone) timezone))))
+
+(defn report-games-afl-schedule [data]
+  (let [code (:code (:details data))
+        title (:title (:details data))]
+
+    ;; General event details
+    ;; Number/Round/TIme/Venue/Stage - Result
+    (str
+     "** TODO sport: afl-2025\n"
+     "[[file:wiki/sport-afl-2025.org]]\n"
+     "[[file:../sport/data/afl-2025/data.clj]]\n"
+
+     (apply str
+            (map (fn [game]
+                   (format "*** AFL %3s-%s %s\n%s\n"
+                           (:RoundNumber game)
+                           (:MatchNumber game)
+                           (format-game game)
+                           (convert-to-localtime-orgmode (:DateUtc game) "Australia/Adelaide")
+                           )
+                   )
+                 (:results data)))
      "\n")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -632,20 +684,20 @@
      "----------------------------------------------------------------------------------------\n"
      (apply str
             (map (fn [game]
-                 (format report-format
-                         (:MatchNumber game)
-                         (:RoundNumber game)
-                         (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
-                         (str/upper-case (name (((data :venues) (:Location game)) :id)))
-                         (convert-stage-group (:stage game) (:group game))
-                         (cond
-                           (= code :football) (format-game-result-football game)
-                           (= code :afl)      (format-game-result-afl game)
-                           :default           (format-game-result game)
+                   (format report-format
+                           (:MatchNumber game)
+                           (:RoundNumber game)
+                           (convert-to-localtime (:DateUtc game) "Australia/Adelaide")
+                           (str/upper-case (name (((data :venues) (:Location game)) :id)))
+                           (convert-stage-group (:stage game) (:group game))
+                           (cond
+                             (= code :football) (format-game-result-football game)
+                             (= code :afl)      (format-game-result-afl game)
+                             :default           (format-game-result game)
+                             )
                            )
-                         )
-                 )
-               (:results data)))
+                   )
+                 (:results data)))
      "----------------------------------------------------------------------------------------\n")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
