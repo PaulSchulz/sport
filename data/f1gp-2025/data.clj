@@ -309,26 +309,26 @@
              :date "25 May"
              :results
              {
-              :nor {:position  1 :time ""    :grid  1 :points 25}
-              :lec {:position  2 :time ""    :grid  2 :points 18}
-              :pia {:position  3 :time ""    :grid  3 :points 15}
-              :ver {:position  4 :time ""    :grid  4 :points 12}
-              :ham {:position  5 :time ""    :grid  7 :points 10}
-              :had {:position  6 :time ""    :grid  5 :points  8}
-              :oco {:position  7 :time ""    :grid  8 :points  6}
-              :law {:position  8 :time ""    :grid  9 :points  4}
-              :alb {:position  9 :time ""    :grid 10 :points  2}
-              :sai {:position 10 :time ""    :grid 11 :points  1}
-              :rus {:position 11 :time ""    :grid 14 :points  0}
-              :bea {:position 12 :time ""    :grid 20 :points  0}
-              :col {:pisition 13 :time ""    :grid 18 :points  0}
-              :bor {:position 14 :time ""    :grid 16 :points  0}
-              :str {:position 15 :time ""    :grid 19 :points  0}
-              :hul {:position 16 :time ""    :grid 13 :points  0}
-              :tsu {:position 17 :time ""    :grid 12 :points  0}
-              :ant {:position 18 :time ""    :grid 15 :points  0}
-              :alo {:position 19 :time ""    :grid  6 :points  0}
-              :gas {:position 20 :time ""    :grid 17 :points  0}
+              :nor {:position  1 :time "1:40:33.843" :grid  1 :points 25}
+              :lec {:position  2 :time "+3.131s"     :grid  2 :points 18}
+              :pia {:position  3 :time "+3.658s"     :grid  3 :points 15}
+              :ver {:position  4 :time "+20.572s"    :grid  4 :points 12}
+              :ham {:position  5 :time "+51.387s"    :grid  7 :points 10}
+              :had {:position  6 :time "+1 Lap"      :grid  5 :points  8}
+              :oco {:position  7 :time "+1 Lap"      :grid  8 :points  6}
+              :law {:position  8 :time "+1 Lap"      :grid  9 :points  4}
+              :alb {:position  9 :time "+2 Laps"     :grid 10 :points  2}
+              :sai {:position 10 :time "+2 Laps"     :grid 11 :points  1}
+              :rus {:position 11 :time "+2 Laps"     :grid 14 :points  0}
+              :bea {:position 12 :time "+2 Laps"     :grid 20 :points  0}
+              :col {:pisition 13 :time "+2 Laps"     :grid 18 :points  0}
+              :bor {:position 14 :time "+2 Laps"     :grid 16 :points  0}
+              :str {:position 15 :time "+2 Laps"     :grid 19 :points  0}
+              :hul {:position 16 :time "+2 Laps"     :grid 13 :points  0}
+              :tsu {:position 17 :time "+2 Laps"     :grid 12 :points  0}
+              :ant {:position 18 :time "+3 Laps"     :grid 15 :points  0}
+              :alo {:position 19 :time :dnf          :grid  6 :points  0}
+              :gas {:position 20 :time :dnf          :grid 17 :points  0}
              }
              }
 
