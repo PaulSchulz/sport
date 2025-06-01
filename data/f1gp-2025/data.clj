@@ -328,11 +328,43 @@
               :tsu {:position 17 :time "+2 Laps"     :grid 12 :points  0}
               :ant {:position 18 :time "+3 Laps"     :grid 15 :points  0}
               :alo {:position 19 :time :dnf          :grid  6 :points  0}
-              :gas {:position 20 :time :dnf          :grid 17 :points  0}
+             :gas {:position 20 :time :dnf          :grid 17 :points  0}
              }
+            }
+
+            {:round  9
+             :name "Spanish Grand Prix"
+             :circuit "Circuit de Barcelona-Catalunya, Montmeló"
+             :date "1 June"
+             :results
+             {
+              :pia {:position :nil :time "" :grid  1 :points :nil}
+              :nor {:position :nil :time "" :grid  2 :points :nil}
+              :ver {:position :nil :time "" :grid  3 :points :nil}
+              :rus {:position :nil :time "" :grid  4 :points :nil}
+              :ham {:position :nil :time "" :grid  5 :points :nil}
+              :ant {:position :nil :time "" :grid  6 :points :nil}
+              :lec {:position :nil :time "" :grid  7 :points :nil}
+              :gas {:position :nil :time "" :grid  8 :points :nil}
+              :had {:position :nil :time "" :grid  9 :points :nil}
+              :alo {:position :nil :time "" :grid 10 :points :nil}
+              :alb {:position :nil :time "" :grid 11 :points :nil}
+              :bor {:position :nil :time "" :grid 12 :points :nil}
+              :law {:position :nil :time "" :grid 13 :points :nil}
+              :bea {:position :nil :time "" :grid 14 :points :nil}
+              :hul {:position :nil :time "" :grid 15 :points :nil}
+              :oco {:position :nil :time "" :grid 16 :points :nil}
+              :sai {:position :nil :time "" :grid 17 :points :nil}
+              :col {:pisition :nil :time "" :grid 18 :points :nil}
+              :tsu {:position :nil :time "" :grid 19 :points :nil}
+              :str {:position :dns :time "" :grid :nil :points :nil}
+
+              }
+             :notes [
+                     "Lance Stroll qualified 14th but has withdrawn from the race due to injury."
+                     ]
              }
 
-           {:round  9 :name "Spanish Grand Prix" ￼      :circuit "Circuit de Barcelona-Catalunya, Montmeló"   :date "1 June"}
            {:round 10 :name "Canadian Grand Prix" ￼     :circuit "Circuit Gilles Villeneuve, Montreal"	       :date "15 June"}
            {:round 11 :name "Austrian Grand Prix" ￼     :circuit "Red Bull Ring, Spielberg"                   :date "29 June"}
            {:round 12 :name "British Grand Prix" ￼      :circuit "Silverstone Circuit, Silverstone"	       :date "6 July"}
