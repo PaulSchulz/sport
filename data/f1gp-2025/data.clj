@@ -338,26 +338,26 @@
              :date "1 June"
              :results
              {
-              :pia {:position :nil :time "" :grid  1 :points :nil}
-              :nor {:position :nil :time "" :grid  2 :points :nil}
-              :ver {:position :nil :time "" :grid  3 :points :nil}
-              :rus {:position :nil :time "" :grid  4 :points :nil}
-              :ham {:position :nil :time "" :grid  5 :points :nil}
-              :ant {:position :nil :time "" :grid  6 :points :nil}
-              :lec {:position :nil :time "" :grid  7 :points :nil}
-              :gas {:position :nil :time "" :grid  8 :points :nil}
-              :had {:position :nil :time "" :grid  9 :points :nil}
-              :alo {:position :nil :time "" :grid 10 :points :nil}
-              :alb {:position :nil :time "" :grid 11 :points :nil}
-              :bor {:position :nil :time "" :grid 12 :points :nil}
-              :law {:position :nil :time "" :grid 13 :points :nil}
-              :bea {:position :nil :time "" :grid 14 :points :nil}
-              :hul {:position :nil :time "" :grid 15 :points :nil}
-              :oco {:position :nil :time "" :grid 16 :points :nil}
-              :sai {:position :nil :time "" :grid 17 :points :nil}
-              :col {:pisition :nil :time "" :grid 18 :points :nil}
-              :tsu {:position :nil :time "" :grid 19 :points :nil}
-              :str {:position :dns :time "" :grid :nil :points :nil}
+              :pia {:position  1   :time "" :grid  1   :points 25}
+              :nor {:position  2   :time "" :grid  2   :points 18}
+              :lec {:position  3   :time "" :grid  7   :points 15}
+              :rus {:position  4   :time "" :grid  4   :points 12}
+              :hul {:position  5   :time "" :grid 15   :points 10}
+              :ham {:position  6   :time "" :grid  5   :points  8}
+              :had {:position  7   :time "" :grid  9   :points  6}
+              :gas {:position  8   :time "" :grid  8   :points  4}
+              :alo {:position  9   :time "" :grid 10   :points  2}
+              :ver {:position 10   :time "" :grid  3   :points  1}
+              :law {:position 11   :time "" :grid 13   :points  0}
+              :bor {:position 12   :time "" :grid 12   :points  0}
+              :tsu {:position 13   :time "" :grid 19   :points  0}
+              :sai {:position 14   :time "" :grid 17   :points  0}
+              :col {:pisition 15   :time "" :grid 18   :points  0}
+              :oco {:position 16   :time "" :grid 16   :points  0}
+              :bea {:position 17   :time "" :grid 14   :points  0}
+              :ant {:position :dnf :time "" :grid  6   :points  0}
+              :alb {:position :dnf :time "" :grid 11   :points  0}
+              :str {:position :dns :time "" :grid :nil :points  0}
 
               }
              :notes [
