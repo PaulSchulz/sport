@@ -639,7 +639,7 @@
         second (Integer/parseInt (timestamp-array 6))
         zone   (timestamp-array 7)]
     (time/format
-     (time/formatter "<yyyy-MM-dd EEE HH:MM>")
+     (time/formatter "<yyyy-MM-dd EEE HH:mm>")
      (time/with-zone-same-instant
        (time/zoned-date-time  year month day hour minute second 0 zone) timezone))))
 

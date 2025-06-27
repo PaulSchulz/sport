@@ -1,6 +1,7 @@
 (ns sporting-fixtures.core
   (:gen-class)
   (:require
+   [clojure.main]
    [clj-time.core   :as t]
    [clj-time.format :as f]
    [clj-yaml.core :as yaml]
@@ -23,48 +24,14 @@
      ";; Macros"
      ";;;;;;;;;;;;;;;;;;;"
      "(setup)  ;; Loads setup, process, process-results and reports modules (see next)"
-     ""
-     ";;;;;;;;;;;;;;;;;;;"
-     ";; Modules"
-     ";;;;;;;;;;;;;;;;;;;"
-     "(require ['sporting-fixtures.setup :as 's])"
-     "(require ['sporting-fixtures.process :as 'p])"
-     "(require ['sporting-fixtures.process-results :as 'pr])"
-     "(require ['sporting-fixtures.reports :as 'r])"
-     ""
-     ";;;;;;;;;;;;;;;;;;;"
-     ";; Useful Commands"
-     ";;;;;;;;;;;;;;;;;;;"
-     "(list-events)                - Show current event files"
-     "(read-event \"<filename>\")    - Load event details"
-     "(display-event \"<filename>\") - Display event details"
-     "(events-table)               - List events"
-     ""
-     ";; Examples"
-     "  (display-event (event-id-to-filename \"2019-fra-fifa-women-worldcup\"))"
-     ""
-     ";; FIFA 2019 Womens World Cup"
-     "  (event-games nil)"
-     "  (println (event-games-table (get-event)))"
-     "  (println (event-stats-table (get-event)))"
-     "  (println (event-group-table (get-event)))"
-     ""
-     ";; FIFA 2023 Womens World Cup"
-     "  (require ['sporting-fixtures.fifa-womens-world-cup-2023 :as 'fifa])"
-     "  (fifa/report-print fifa/data)"
-     ""
-     ";; From the command line - AFL "
-     ";;"
-     ";; From the command line"
-     ";;   lein run -m sporting-fixtures.fifa-womens-world-cup-2023"
-     ";;   lein run -m sporting-fixtures.afl"
-     ";;   lein run -m sporting-fixtures.bbl"
-     ";;   lein run -m sporting-fixtures.aflw"
-     ";;   lein run -m sporting-fixtures.aleague"
-     ";;   lein run -m sporting-fixtures.t20"
+     "(round-report-org rnd-number)"
      ""
      ";; Event data (CSV) can be found at"
-     ";;  https://fixturedownload.com/"])))
+     ";;  https://fixturedownload.com/"
+     ""
+     ";; To generate a report from the CLI you can also do:"
+     ";;   echo \"(round-report-org 16)\" | lein repl"
+     ])))
 
 (defmacro setup []
   (require ['sporting-fixtures.setup :as 's])
@@ -110,19 +77,19 @@
   )
 
 (defn read-event [event]
-(yaml/parse-string (slurp event)))
+  (yaml/parse-string (slurp event)))
 
 (defn display-event [event]
-(pprint (read-event event)))
+  (pprint (read-event event)))
 
 (defn event-details [fmt event]
-(let [data (read-event event)]
-  (format fmt
-          (str (:title data) " / " (:location data))
-          (:from (:date data))
-          (:to   (:date data))
-          (:code data)
-          (:version data))))
+  (let [data (read-event event)]
+    (format fmt
+            (str (:title data) " / " (:location data))
+            (:from (:date data))
+            (:to   (:date data))
+            (:code data)
+            (:version data))))
 
 (defn events-table []
   (let [fmt "  #  %-56s  %-12s %-12s %16s %-6s"
@@ -574,6 +541,35 @@
   (println))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Macros
+(def macros [])
+
+(defmacro add-macro
+  "Add user macro to available list"
+  [name]
+
+  (def macros (conj macros name))
+  )
+
+(defmacro list-macros
+  "List the available macros"
+  []
+  (println macros)
+  )
+(add-macro "list-macros")
+
+(defmacro round-report-org
+  "Produce a report of the games in a round in 'org' format."
+  [round]
+  (setup)
+  (def sport "afl-2025")
+  (def data (s/data-read-with-lines (str "data/" sport "/data.clj")))
+  (def games (:results data))
+  (println (r/report-games-afl-schedule
+            (conj data {:results (r/round-filter games round)})))
+  )
+(add-macro "round-report-org")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main-event-report
   [& args]
   (let [event (get-event)]
@@ -583,9 +579,9 @@
   [& args]
   (println "Sporting Fixtures and Events")
   (println "----------------------------")
-  (println "Past events")
-  (println "  2019-fra-fifa-women-worldcup   FIFA Women's World Cup, France, 2019")
-  (println "")
-  (println "Current events")
   (println)
-  (help))
+  (help)
+  (println "Running Setup")
+  (setup)
+  ;;  (clojure.main/repl)
+  )
