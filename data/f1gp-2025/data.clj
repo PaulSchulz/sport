@@ -41,7 +41,11 @@
            {:id :tsu :name "Yuki Tsunoda"          :number 22 :team :rb  :country :jap}
            {:id :ver :name "Max Verstappen"        :number  1 :team :red :country :ned}
            {:id :col :name "Franco Colapinto"      :number 43 :team :alp :country :arg
-            :notes "Replaced Jack Doohan from the Imola, Italiam GP"}
+            :notes "Replaced Jack Doohan from the Imola, Italiam GP"
+            }
+           {:id :dun :name "Alex Dunne"            :number 4 :team :mcl :country :irl
+            :notes "Was run in Norris's car during Practice 1 in Austrian GP"
+            }
            ]
  :results [
            {:round   1
@@ -328,9 +332,9 @@
               :tsu {:position 17 :time "+2 Laps"     :grid 12 :points  0}
               :ant {:position 18 :time "+3 Laps"     :grid 15 :points  0}
               :alo {:position 19 :time :dnf          :grid  6 :points  0}
-             :gas {:position 20 :time :dnf          :grid 17 :points  0}
+              :gas {:position 20 :time :dnf          :grid 17 :points  0}
+              }
              }
-            }
 
             {:round  9
              :name "Spanish Grand Prix"
@@ -355,9 +359,9 @@
               :col {:pisition 15   :time "" :grid 18   :points  0}
               :oco {:position 16   :time "" :grid 16   :points  0}
               :bea {:position 17   :time "" :grid 14   :points  0}
-              :ant {:position :dnf :time "" :grid  6   :points  0}
-              :alb {:position :dnf :time "" :grid 11   :points  0}
-              :str {:position :dns :time "" :grid :nil :points  0}
+              :ant {:position 18 :time :dnf :grid  6   :points  0}
+              :alb {:position 19 :time :dnf :grid 11   :points  0}
+              :str {:position 20 :time :dns :grid :nil :points  0}
 
               }
              :notes [
@@ -365,9 +369,96 @@
                      ]
              }
 
-           {:round 10 :name "Canadian Grand Prix" ￼     :circuit "Circuit Gilles Villeneuve, Montreal"	       :date "15 June"}
-           {:round 11 :name "Austrian Grand Prix" ￼     :circuit "Red Bull Ring, Spielberg"                   :date "29 June"}
-           {:round 12 :name "British Grand Prix" ￼      :circuit "Silverstone Circuit, Silverstone"	       :date "6 July"}
+            {:round 10
+             :name "Canadian Grand Prix"
+             :circuit "Circuit Gilles Villeneuve, Montreal"
+	         :date "15 June"
+             :results
+             {
+              :rus {:position  1   :time "1:31:52.688" :grid  1   :points 25}
+              :ver {:position  2   :time "+0.228s"     :grid  2   :points 18}
+              :ant {:position  3   :time "+1.014s"     :grid  4   :points 15}
+              :pia {:position  4   :time "+2.109s"     :grid  3   :points 12}
+              :lec {:position  5   :time "+3.442"      :grid  8   :points 10}
+              :ham {:position  6   :time "+10.713s"    :grid  5   :points  8}
+              :alo {:position  7   :time "+10.972s"    :grid  6   :points  6}
+              :hul {:position  8   :time "+15.364s"    :grid 11   :points  4}
+              :oco {:position  9   :time "+1 Lap"      :grid 14   :points  2}
+              :sai {:position 10   :time "+1 Lap"      :grid 16   :points  1}
+              :bea {:position 11   :time "+1 Lap"      :grid 13   :points  0}
+              :tsu {:position 12   :time "+1 Lap"      :grid 18   :points  0}
+              :col {:pisition 13   :time "+1 Lap"      :grid 10   :points  0}
+              :bor {:position 14   :time "+1 Lap"      :grid 15   :points  0}
+              :gas {:position 15   :time "+1 Lap"      :grid :pl  :points  0}
+              :had {:position 16   :time "+1 Lap"      :grid 12   :points  0}
+              :str {:position 17   :time "+1 Lap"      :grid 17   :points  0}
+              :nor {:position 18   :time :dnf          :grid  7   :points  0}
+              :law {:position 19   :time :dnf          :grid :pl  :points  0}
+              :alb {:position 20   :time :dnf          :grid  9   :points  0}
+              }
+             :notes []
+
+             }
+            {:round 11
+             :name "Austrian Grand Prix"
+             :circuit "Red Bull Ring, Spielberg"
+             :date "29 June"
+             :results
+             {
+              :nor {:position  1   :time "1:23:47.693" :grid  1   :points 25}
+              :pia {:position  2   :time "+2.695s"     :grid  3   :points 18}
+              :lec {:position  3   :time "+19.829s"    :grid  2   :points 15}
+              :ham {:position  4   :time "+29.020s"    :grid  4   :points 12}
+              :rus {:position  5   :time "+62.396s"    :grid  5   :points 10}
+              :law {:position  6   :time "+67.754s"    :grid  6   :points  8}
+              :alo {:position  7   :time "+1 Lap"      :grid 11   :points  6}
+              :bor {:position  8   :time "+1 Lap"      :grid  8   :points  4}
+              :hul {:position  9   :time "+1 Lap"      :grid 20   :points  2}
+              :oco {:position 10   :time "+1 Lap"      :grid 17   :points  1}
+              :bea {:position 11   :time "+1 Lap"      :grid 15   :points  0}
+              :had {:position 12   :time "+1 Lap"      :grid 13   :points  0}
+              :gas {:position 13   :time "+1 Lap"      :grid 10   :points  0}
+              :str {:position 14   :time "+1 Lap"      :grid 16   :points  0}
+              :col {:pisition 15   :time "+1 Lap"      :grid 14   :points  0}
+              :tsu {:position 16   :time "+2 Lap"      :grid 18   :points  0}
+              :alb {:position 17   :time :dnf          :grid 12   :points  0}
+              :ver {:position 18   :time :dnf          :grid  7   :points  0}
+              :ant {:position 19   :time :dnf          :grid  9   :points  0}
+              :sai {:position 20   :time :dnf          :grid :nil :points  0}
+              }
+             :notes []
+             }
+
+            {:round 12
+             :name "British Grand Prix"
+             :circuit "Silverstone Circuit, Silverstone"
+	         :date "6 July"
+             :results
+             {
+              :nor {:position  1   :time "" :grid  1   :points 25}
+              :pia {:position  2   :time "" :grid  3   :points 18}
+              :lec {:position  3   :time "" :grid  2   :points 15}
+              :ham {:position  4   :time "" :grid  4   :points 12}
+              :rus {:position  5   :time "" :grid  5   :points 10}
+              :law {:position  6   :time "" :grid  6   :points  8}
+              :alo {:position  7   :time "" :grid 11   :points  6}
+              :bor {:position  8   :time "" :grid  8   :points  4}
+              :hul {:position  9   :time "" :grid 20   :points  2}
+              :oco {:position 10   :time "" :grid 17   :points  1}
+              :bea {:position 11   :time "" :grid 15   :points  0}
+              :had {:position 12   :time "" :grid 13   :points  0}
+              :gas {:position 13   :time "" :grid 10   :points  0}
+              :str {:position 14   :time "" :grid 16   :points  0}
+              :col {:pisition 15   :time "" :grid 14   :points  0}
+              :tsu {:position 16   :time "" :grid 18   :points  0}
+              :alb {:position 17   :time :dnf :grid 12   :points  0}
+                :ver {:position 18   :time :dnf :grid  7   :points  0}
+                :ant {:position 19   :time :dnf :grid  9   :points  0}
+                :sai {:position 20   :time :dns :grid :nil :points  0}
+                }
+             :notes []
+            }
+
            {:round 13 :name "Belgian Grand Prix" ￼      :circuit "Circuit de Spa-Francorchamps, Stavelot"     :date "27 July"}
            {:round 14 :name "Hungarian Grand Prix"	￼    :circuit "Hungaroring, Mogyoród"                      :date "3 August"}
            {:round 15 :name "Dutch Grand Prix"	￼        :circuit "Circuit Zandvoort, Zandvoort"               :date "31 August"}
