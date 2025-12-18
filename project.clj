@@ -7,6 +7,7 @@
                  [org.clojure/data.csv "0.1.4"]
                  [org.clojure/data.xml "0.1.0-beta1"]
                  [org.clojure/data.json "2.4.0"]
+                 [fipp/fipp "0.6.29"]
                  [clojure.java-time "0.3.3"]
                  [clj-http "3.10.0"]
                  [clj-yaml "0.4.0"]
@@ -19,4 +20,6 @@
   :test-paths ["test/src"]
   :main ^:skip-aot sporting-fixtures.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :aliases {"test" ["test" "sporting-fixtures.bbl-2025-test"]}
+  )

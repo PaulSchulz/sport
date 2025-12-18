@@ -20,17 +20,24 @@
   (println
    (str/join
     "\n"
-    [";;;;;;;;;;;;;;;;;;;"
+    [(str/join (repeat 78 ";"))
      ";; Macros"
-     ";;;;;;;;;;;;;;;;;;;"
-     "(setup)  ;; Loads setup, process, process-results and reports modules (see next)"
+     (str/join (repeat 78 ";"))
+     ";; Loads setup, process, process-results and reports modules (see next)"
+     "(setup)"
      "(round-report-org rnd-number)"
-     ""
+     ";;"
      ";; Event data (CSV) can be found at"
      ";;  https://fixturedownload.com/"
-     ""
+     ";;"
      ";; To generate a report from the CLI you can also do:"
      ";;   echo \"(round-report-org 16)\" | lein repl"
+     ";;"
+     (str/join (repeat 78 ";"))
+     ";; bbl-2025"
+     ";; Development"
+     "(require '[sporting-fixtures.bbl-2025 :as bbl-2025])"
+     "(ns sporting-fixtures.bbl-2025)"
      ])))
 
 (defmacro setup []

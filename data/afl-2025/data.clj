@@ -2402,7 +2402,7 @@
             :comment       "",
             :HomeTeam      "North Melbourne",
             :DateUtc       "2025-07-03 09:30:00Z",
-            :scoreboard    {:nm "", :wb ""},
+            :scoreboard    {:nm "13.7(85)", :wb "20.14(134)"},
             :AwayTeam      "Western Bulldogs",
             :Location      "Marvel Stadium",
             :MatchNumber   138}
@@ -2419,7 +2419,7 @@
             :comment       "",
             :HomeTeam      "Carlton",
             :DateUtc       "2025-07-04 09:20:00Z",
-            :scoreboard    {:car "", :col ""},
+            :scoreboard    {:car "8.11(59)", :col "17.13(115)"},
             :AwayTeam      "Collingwood",
             :Location      "MCG",
             :MatchNumber   140}
@@ -2436,7 +2436,7 @@
             :comment       "",
             :HomeTeam      "West Coast Eagles",
             :DateUtc       "2025-07-04 10:20:00Z",
-            :scoreboard    {:wce "", :gws ""},
+            :scoreboard    {:wce "8.4(52)", :gws "16.15(111)"},
             :AwayTeam      "GWS GIANTS",
             :Location      "Optus Stadium",
             :MatchNumber   144}
@@ -2453,7 +2453,7 @@
             :comment       "",
             :HomeTeam      "Essendon",
             :DateUtc       "2025-07-05 02:35:00Z",
-            :scoreboard    {:ess "", :gcs ""},
+            :scoreboard    {:ess "11.8(74)", :gcs "18.7(115)"},
             :AwayTeam      "Gold Coast SUNS",
             :Location      "Marvel Stadium",
             :MatchNumber   139}
@@ -2470,7 +2470,7 @@
             :comment       "",
             :HomeTeam      "Geelong Cats",
             :DateUtc       "2025-07-05 16:15:00Z",
-            :scoreboard    {:gee "", :ric ""},
+            :scoreboard    {:gee "18.16(124)", :ric "7.10(52)"},
             :AwayTeam      "Richmond",
             :Location      "GMHBA Stadium",
             :MatchNumber   136}
@@ -2487,7 +2487,7 @@
             :comment       "",
             :HomeTeam      "Brisbane Lions",
             :DateUtc       "2025-07-05 09:35:00Z",
-            :scoreboard    {:bri "", :pa ""},
+            :scoreboard    {:bri "18.12(120)", :pa "14.8(92)"},
             :AwayTeam      "Port Adelaide",
             :Location      "Gabba",
             :MatchNumber   142}
@@ -2504,7 +2504,7 @@
             :comment       "",
             :HomeTeam      "St Kilda",
             :DateUtc       "2025-07-05 09:40:00Z",
-            :scoreboard    {:stk "", :haw ""},
+            :scoreboard    {:stk "10.14(74)", :haw "14.10(94)"},
             :AwayTeam      "Hawthorn",
             :Location      "Marvel Stadium",
             :MatchNumber   137}
@@ -2521,7 +2521,7 @@
             :comment       "",
             :HomeTeam      "Sydney Swans",
             :DateUtc       "2025-07-06 03:10:00Z",
-            :scoreboard    {:syd "", :fre ""},
+            :scoreboard    {:syd "14.10(94)", :fre "12.11(83)"},
             :AwayTeam      "Fremantle",
             :Location      "SCG",
             :MatchNumber   141}
@@ -2538,7 +2538,7 @@
             :comment       "",
             :HomeTeam      "Adelaide Crows",
             :DateUtc       "2025-07-06 05:15:00Z",
-            :scoreboard    {:adl "", :mel ""},
+            :scoreboard    {:adl "13.12(90)", :mel "11.11(77)"},
             :AwayTeam      "Melbourne",
             :Location      "Adelaide Oval",
             :MatchNumber   143}
@@ -2555,8 +2555,8 @@
             :score         {:gws "", :gee ""},
             :comment       "",
             :HomeTeam      "GWS GIANTS",
-            :DateUtc       "2025-07-11 14:00:00Z",
-            :scoreboard    {:gws "", :gee ""},
+            :DateUtc       "2025-07-12 06:15:00Z",
+            :scoreboard    {:gws "17.9(111)", :gee "13.7(85)"},
             :AwayTeam      "Geelong Cats",
             :Location      "ENGIE Stadium",
             :MatchNumber   145}
@@ -2572,8 +2572,8 @@
             :score         {:wb "", :adl ""},
             :comment       "",
             :HomeTeam      "Western Bulldogs",
-            :DateUtc       "2025-07-11 14:00:00Z",
-            :scoreboard    {:wb "", :adl ""},
+            :DateUtc       "2025-07-12 03:20:00Z",
+            :scoreboard    {:wb "15.8(98)", :adl "16.13(109)"},
             :AwayTeam      "Adelaide Crows",
             :Location      "Mars Stadium",
             :MatchNumber   146}
@@ -2589,8 +2589,8 @@
             :score         {:stk "", :syd ""},
             :comment       "",
             :HomeTeam      "St Kilda",
-            :DateUtc       "2025-07-11 14:00:00Z",
-            :scoreboard    {:stk "", :syd ""},
+            :DateUtc       "2025-07-13 05:15:00Z",
+            :scoreboard    {:stk "13.9(87)", :syd "14.8(92)"},
             :AwayTeam      "Sydney Swans",
             :Location      "Marvel Stadium",
             :MatchNumber   147}
@@ -2606,8 +2606,8 @@
             :score         {:car "", :bri ""},
             :comment       "",
             :HomeTeam      "Carlton",
-            :DateUtc       "2025-07-11 14:00:00Z",
-            :scoreboard    {:car "", :bri ""},
+            :DateUtc       "2025-07-10 09:30:00Z",
+            :scoreboard    {:car "9.12(66)", :bri "15.13(103)"},
             :AwayTeam      "Brisbane Lions",
             :Location      "Marvel Stadium",
             :MatchNumber   148}
@@ -2623,8 +2623,8 @@
             :score         {:mel "", :nm ""},
             :comment       "",
             :HomeTeam      "Melbourne",
-            :DateUtc       "2025-07-11 14:00:00Z",
-            :scoreboard    {:mel "", :nm ""},
+            :DateUtc       "2025-07-13 03:10:00Z",
+            :scoreboard    {:mel "18.11(119)", :nm "12.11(83)"},
             :AwayTeam      "North Melbourne",
             :Location      "MCG",
             :MatchNumber   149}
@@ -2640,8 +2640,8 @@
             :score         {:ric "", :ess ""},
             :comment       "",
             :HomeTeam      "Richmond",
-            :DateUtc       "2025-07-11 14:00:00Z",
-            :scoreboard    {:ric "", :ess ""},
+            :DateUtc       "2025-07-12 09:35:00Z",
+            :scoreboard    {:ric "6.10(46)", :ess "4.13(37)"},
             :AwayTeam      "Essendon",
             :Location      "MCG",
             :MatchNumber   150}
@@ -2658,7 +2658,7 @@
             :comment       "",
             :HomeTeam      "Gold Coast SUNS",
             :DateUtc       "2025-07-11 14:00:00Z",
-            :scoreboard    {:gcs "", :col ""},
+            :scoreboard    {:gcs "10.9(69)", :col "8.15(63)"},
             :AwayTeam      "Collingwood",
             :Location      "People First Stadium",
             :MatchNumber   151}
@@ -2675,7 +2675,7 @@
             :comment       "",
             :HomeTeam      "Port Adelaide",
             :DateUtc       "2025-07-11 14:30:00Z",
-            :scoreboard    {:pa "", :wce ""},
+            :scoreboard    {:pa "12.15(87)", :wce "9.7(61)"},
             :AwayTeam      "West Coast Eagles",
             :Location      "Adelaide Oval",
             :MatchNumber   152}
@@ -2692,10 +2692,11 @@
             :comment       "",
             :HomeTeam      "Fremantle",
             :DateUtc       "2025-07-11 16:00:00Z",
-            :scoreboard    {:fre "", :haw ""},
+            :scoreboard    {:fre "12.5(77)", :haw "9.10(64)"},
             :AwayTeam      "Hawthorn",
             :Location      "Optus Stadium",
             :MatchNumber   153}
+
            {:RoundNumber   19,
             :Group         nil,
             :game          154,
@@ -2709,7 +2710,7 @@
             :comment       "",
             :HomeTeam      "Geelong Cats",
             :DateUtc       "2025-07-18 14:00:00Z",
-            :scoreboard    {:gee "", :stk ""},
+            :scoreboard    {:gee "17.11(113)", :stk "12.10(82)"},
             :AwayTeam      "St Kilda",
             :Location      "GMHBA Stadium",
             :MatchNumber   154}
@@ -2726,7 +2727,7 @@
             :comment       "",
             :HomeTeam      "Essendon",
             :DateUtc       "2025-07-18 14:00:00Z",
-            :scoreboard    {:ess "", :gws ""},
+            :scoreboard    {:ess "7.14(56)", :gws "16.8(104)"},
             :AwayTeam      "GWS GIANTS",
             :Location      "Marvel Stadium",
             :MatchNumber   155}
@@ -2743,7 +2744,7 @@
             :comment       "",
             :HomeTeam      "Carlton",
             :DateUtc       "2025-07-18 14:00:00Z",
-            :scoreboard    {:car "", :mel ""},
+            :scoreboard    {:car "12.6(78)", :mel "10.10(70)"},
             :AwayTeam      "Melbourne",
             :Location      "MCG",
             :MatchNumber   156}
@@ -2760,7 +2761,7 @@
             :comment       "",
             :HomeTeam      "Collingwood",
             :DateUtc       "2025-07-18 14:00:00Z",
-            :scoreboard    {:col "", :fre ""},
+            :scoreboard    {:col "11.12(78)", :fre "12.7(79)"},
             :AwayTeam      "Fremantle",
             :Location      "MCG",
             :MatchNumber   157}
@@ -2777,7 +2778,7 @@
             :comment       "",
             :HomeTeam      "Sydney Swans",
             :DateUtc       "2025-07-18 14:00:00Z",
-            :scoreboard    {:syd "", :nm ""},
+            :scoreboard    {:syd "12.12(84)", :nm "7.11(53)"},
             :AwayTeam      "North Melbourne",
             :Location      "SCG",
             :MatchNumber   158}
@@ -2794,7 +2795,7 @@
             :comment       "",
             :HomeTeam      "Brisbane Lions",
             :DateUtc       "2025-07-18 14:00:00Z",
-            :scoreboard    {:bri "", :wb ""},
+            :scoreboard    {:bri "12.14(86)", :wb "12.4(76)"},
             :AwayTeam      "Western Bulldogs",
             :Location      "Gabba",
             :MatchNumber   159}
@@ -2811,7 +2812,7 @@
             :comment       "",
             :HomeTeam      "Hawthorn",
             :DateUtc       "2025-07-18 14:00:00Z",
-            :scoreboard    {:haw "", :pa ""},
+            :scoreboard    {:haw "13.9(87)", :pa "7.7(49)"},
             :AwayTeam      "Port Adelaide",
             :Location      "UTAS Stadium",
             :MatchNumber   160}
@@ -2828,7 +2829,7 @@
             :comment       "",
             :HomeTeam      "Adelaide Crows",
             :DateUtc       "2025-07-18 14:30:00Z",
-            :scoreboard    {:adl "", :gcs ""},
+            :scoreboard    {:adl "16.11(107)", :gcs "6.19(46)"},
             :AwayTeam      "Gold Coast SUNS",
             :Location      "Adelaide Oval",
             :MatchNumber   161}
@@ -2845,10 +2846,11 @@
             :comment       "",
             :HomeTeam      "West Coast Eagles",
             :DateUtc       "2025-07-18 16:00:00Z",
-            :scoreboard    {:wce "", :ric ""},
+            :scoreboard    {:wce "8.8(56)", :ric "16.9(105)"},
             :AwayTeam      "Richmond",
             :Location      "Optus Stadium",
             :MatchNumber   162}
+
            {:RoundNumber   20,
             :Group         nil,
             :game          163,
@@ -2862,7 +2864,7 @@
             :comment       "",
             :HomeTeam      "GWS GIANTS",
             :DateUtc       "2025-07-25 14:00:00Z",
-            :scoreboard    {:gws "", :syd ""},
+            :scoreboard    {:gws "15.12(102)", :syd "8.10(58)"},
             :AwayTeam      "Sydney Swans",
             :Location      "ENGIE Stadium",
             :MatchNumber   163}
@@ -2879,7 +2881,7 @@
             :comment       "",
             :HomeTeam      "North Melbourne",
             :DateUtc       "2025-07-25 14:00:00Z",
-            :scoreboard    {:nm "", :gee ""},
+            :scoreboard    {:nm "7.7(49)", :gee "22.18(150)"},
             :AwayTeam      "Geelong Cats",
             :Location      "Marvel Stadium",
             :MatchNumber   164}
@@ -2896,7 +2898,7 @@
             :comment       "",
             :HomeTeam      "St Kilda",
             :DateUtc       "2025-07-25 14:00:00Z",
-            :scoreboard    {:stk "", :mel ""},
+            :scoreboard    {:stk "15.6(96)", :mel "13.12(90)"},
             :AwayTeam      "Melbourne",
             :Location      "Marvel Stadium",
             :MatchNumber   165}
@@ -2913,7 +2915,7 @@
             :comment       "",
             :HomeTeam      "Essendon",
             :DateUtc       "2025-07-25 14:00:00Z",
-            :scoreboard    {:ess "", :wb ""},
+            :scoreboard    {:ess "7.8(50)", :wb "22.11(143)"},
             :AwayTeam      "Western Bulldogs",
             :Location      "Marvel Stadium",
             :MatchNumber   166}
@@ -2930,7 +2932,7 @@
             :comment       "",
             :HomeTeam      "Richmond",
             :DateUtc       "2025-07-25 14:00:00Z",
-            :scoreboard    {:ric "", :col ""},
+            :scoreboard    {:ric "8.9(57)", :col "13.15(93)"},
             :AwayTeam      "Collingwood",
             :Location      "MCG",
             :MatchNumber   167}
@@ -2947,7 +2949,7 @@
             :comment       "",
             :HomeTeam      "Hawthorn",
             :DateUtc       "2025-07-25 14:00:00Z",
-            :scoreboard    {:haw "", :car ""},
+            :scoreboard    {:haw "13.7(85)", :car "9.7(61)"},
             :AwayTeam      "Carlton",
             :Location      "MCG",
             :MatchNumber   168}
@@ -2964,7 +2966,7 @@
             :comment       "",
             :HomeTeam      "Gold Coast SUNS",
             :DateUtc       "2025-07-25 14:00:00Z",
-            :scoreboard    {:gcs "", :bri ""},
+            :scoreboard    {:gcs "20.10(130)", :bri "9.10(64)"},
             :AwayTeam      "Brisbane Lions",
             :Location      "People First Stadium",
             :MatchNumber   169}
@@ -2981,7 +2983,7 @@
             :comment       "",
             :HomeTeam      "Adelaide Crows",
             :DateUtc       "2025-07-25 14:30:00Z",
-            :scoreboard    {:adl "", :pa ""},
+            :scoreboard    {:adl "20.13(133)", :pa "5.5(35)"},
             :AwayTeam      "Port Adelaide",
             :Location      "Adelaide Oval",
             :MatchNumber   170}
@@ -2998,10 +3000,11 @@
             :comment       "",
             :HomeTeam      "Fremantle",
             :DateUtc       "2025-07-25 16:00:00Z",
-            :scoreboard    {:fre "", :wce ""},
+            :scoreboard    {:fre "18,18(126)", :wce "12.5(77)"},
             :AwayTeam      "West Coast Eagles",
             :Location      "Optus Stadium",
             :MatchNumber   171}
+
            {:RoundNumber   21,
             :Group         nil,
             :game          172,
@@ -3015,7 +3018,7 @@
             :comment       "",
             :HomeTeam      "Geelong Cats",
             :DateUtc       "2025-08-01 14:00:00Z",
-            :scoreboard    {:gee "", :pa ""},
+            :scoreboard    {:gee "23.15(153)", :pa "9.11(65)"},
             :AwayTeam      "Port Adelaide",
             :Location      "GMHBA Stadium",
             :MatchNumber   172}
@@ -3032,7 +3035,7 @@
             :comment       "",
             :HomeTeam      "St Kilda",
             :DateUtc       "2025-08-01 14:00:00Z",
-            :scoreboard    {:stk "", :nm ""},
+            :scoreboard    {:stk "11.12(78)", :nm "10.9(69)"},
             :AwayTeam      "North Melbourne",
             :Location      "Marvel Stadium",
             :MatchNumber   173}
@@ -3049,7 +3052,7 @@
             :comment       "",
             :HomeTeam      "Melbourne",
             :DateUtc       "2025-08-01 14:00:00Z",
-            :scoreboard    {:mel "", :wce ""},
+            :scoreboard    {:mel "21.13(139)", :wce "8.8(56)"},
             :AwayTeam      "West Coast Eagles",
             :Location      "Marvel Stadium",
             :MatchNumber   174}
@@ -3066,7 +3069,7 @@
             :comment       "",
             :HomeTeam      "Western Bulldogs",
             :DateUtc       "2025-08-01 14:00:00Z",
-            :scoreboard    {:wb "", :gws ""},
+            :scoreboard    {:wb "19.18(132)", :gws "6.8(44)"},
             :AwayTeam      "GWS GIANTS",
             :Location      "Marvel Stadium",
             :MatchNumber   175}
@@ -3083,7 +3086,7 @@
             :comment       "",
             :HomeTeam      "Collingwood",
             :DateUtc       "2025-08-01 14:00:00Z",
-            :scoreboard    {:col "", :bri ""},
+            :scoreboard    {:col "10.5(65)", :bri "14.8(92)"},
             :AwayTeam      "Brisbane Lions",
             :Location      "MCG",
             :MatchNumber   176}
@@ -3100,7 +3103,7 @@
             :comment       "",
             :HomeTeam      "Gold Coast SUNS",
             :DateUtc       "2025-08-01 14:00:00Z",
-            :scoreboard    {:gcs "", :ric ""},
+            :scoreboard    {:gcs "16.11(107)", :ric "2.11(23)"},
             :AwayTeam      "Richmond",
             :Location      "People First Stadium",
             :MatchNumber   177}
@@ -3117,7 +3120,7 @@
             :comment       "",
             :HomeTeam      "Sydney Swans",
             :DateUtc       "2025-08-01 14:00:00Z",
-            :scoreboard    {:syd "", :ess ""},
+            :scoreboard    {:syd "9.14(68)", :ess "7.12(54)"},
             :AwayTeam      "Essendon",
             :Location      "SCG",
             :MatchNumber   178}
@@ -3134,7 +3137,7 @@
             :comment       "",
             :HomeTeam      "Adelaide Crows",
             :DateUtc       "2025-08-01 14:30:00Z",
-            :scoreboard    {:adl "", :haw ""},
+            :scoreboard    {:adl "15.11(101)", :haw "13.9(87)"},
             :AwayTeam      "Hawthorn",
             :Location      "Adelaide Oval",
             :MatchNumber   179}
@@ -3151,95 +3154,11 @@
             :comment       "",
             :HomeTeam      "Fremantle",
             :DateUtc       "2025-08-01 16:00:00Z",
-            :scoreboard    {:fre "", :car ""},
+            :scoreboard    {:fre "15.4(94)", :car "10.7(67)"},
             :AwayTeam      "Carlton",
             :Location      "Optus Stadium",
             :MatchNumber   180}
-           {:RoundNumber   22,
-            :Group         nil,
-            :game          181,
-            :HomeTeamScore nil,
-            :teams         [:gee :ess],
-            :round         22,
-            :summary       "",
-            :AwayTeamScore nil,
-            :result        {:gee {}, :ess {}},
-            :score         {:gee "", :ess ""},
-            :comment       "",
-            :HomeTeam      "Geelong Cats",
-            :DateUtc       "2025-08-08 14:00:00Z",
-            :scoreboard    {:gee "", :ess ""},
-            :AwayTeam      "Essendon",
-            :Location      "GMHBA Stadium",
-            :MatchNumber   181}
-           {:RoundNumber   22,
-            :Group         nil,
-            :game          182,
-            :HomeTeamScore nil,
-            :teams         [:gws :nm],
-            :round         22,
-            :summary       "",
-            :AwayTeamScore nil,
-            :result        {:gws {}, :nm {}},
-            :score         {:gws "", :nm ""},
-            :comment       "",
-            :HomeTeam      "GWS GIANTS",
-            :DateUtc       "2025-08-08 14:00:00Z",
-            :scoreboard    {:gws "", :nm ""},
-            :AwayTeam      "North Melbourne",
-            :Location      "Manuka Oval",
-            :MatchNumber   182}
-           {:RoundNumber   22,
-            :Group         nil,
-            :game          183,
-            :HomeTeamScore nil,
-            :teams         [:car :gcs],
-            :round         22,
-            :summary       "",
-            :AwayTeamScore nil,
-            :result        {:car {}, :gcs {}},
-            :score         {:car "", :gcs ""},
-            :comment       "",
-            :HomeTeam      "Carlton",
-            :DateUtc       "2025-08-08 14:00:00Z",
-            :scoreboard    {:car "", :gcs ""},
-            :AwayTeam      "Gold Coast SUNS",
-            :Location      "Marvel Stadium",
-            :MatchNumber   183}
-           {:RoundNumber   22,
-            :Group         nil,
-            :game          184,
-            :HomeTeamScore nil,
-            :teams         [:ric :stk],
-            :round         22,
-            :summary       "",
-            :AwayTeamScore nil,
-            :result        {:ric {}, :stk {}},
-            :score         {:ric "", :stk ""},
-            :comment       "",
-            :HomeTeam      "Richmond",
-            :DateUtc       "2025-08-08 14:00:00Z",
-            :scoreboard    {:ric "", :stk ""},
-            :AwayTeam      "St Kilda",
-            :Location      "MCG",
-            :MatchNumber   184}
-           {:RoundNumber   22,
-            :Group         nil,
-            :game          185,
-            :HomeTeamScore nil,
-            :teams         [:mel :wb],
-            :round         22,
-            :summary       "",
-            :AwayTeamScore nil,
-            :result        {:mel {}, :wb {}},
-            :score         {:mel "", :wb ""},
-            :comment       "",
-            :HomeTeam      "Melbourne",
-            :DateUtc       "2025-08-08 14:00:00Z",
-            :scoreboard    {:mel "", :wb ""},
-            :AwayTeam      "Western Bulldogs",
-            :Location      "MCG",
-            :MatchNumber   185}
+
            {:RoundNumber   22,
             :Group         nil,
             :game          186,
@@ -3252,11 +3171,45 @@
             :score         {:haw "", :col ""},
             :comment       "",
             :HomeTeam      "Hawthorn",
-            :DateUtc       "2025-08-08 14:00:00Z",
-            :scoreboard    {:haw "", :col ""},
+            :DateUtc       "2025-08-07 09:30:00Z",
+            :scoreboard    {:haw "17.18(110)", :col "6.10(46)"},
             :AwayTeam      "Collingwood",
             :Location      "MCG",
             :MatchNumber   186}
+           {:RoundNumber   22,
+            :Group         nil,
+            :game          181,
+            :HomeTeamScore nil,
+            :teams         [:gee :ess],
+            :round         22,
+            :summary       "",
+            :AwayTeamScore nil,
+            :result        {:gee {}, :ess {}},
+            :score         {:gee "", :ess ""},
+            :comment       "",
+            :HomeTeam      "Geelong Cats",
+            :DateUtc       "2025-08-08 09:40:00Z",
+            :scoreboard    {:gee "15.19(109)", :ess "10.5(65)"},
+            :AwayTeam      "Essendon",
+            :Location      "GMHBA Stadium",
+            :MatchNumber   181}
+           {:RoundNumber   22,
+            :Group         nil,
+            :game          184,
+            :HomeTeamScore nil,
+            :teams         [:ric :stk],
+            :round         22,
+            :summary       "",
+            :AwayTeamScore nil,
+            :result        {:ric {}, :stk {}},
+            :score         {:ric "", :stk ""},
+            :comment       "",
+            :HomeTeam      "Richmond",
+            :DateUtc       "2025-08-09 03:20:00Z",
+            :scoreboard    {:ric "7.10(52)", :stk "8.8(56)"},
+            :AwayTeam      "St Kilda",
+            :Location      "MCG",
+            :MatchNumber   184}
            {:RoundNumber   22,
             :Group         nil,
             :game          187,
@@ -3269,11 +3222,28 @@
             :score         {:bri "", :syd ""},
             :comment       "",
             :HomeTeam      "Brisbane Lions",
-            :DateUtc       "2025-08-08 14:00:00Z",
-            :scoreboard    {:bri "", :syd ""},
+            :DateUtc       "2025-08-09 06:15:00Z",
+            :scoreboard    {:bri "13.12(90)", :syd "13.14(92)"},
             :AwayTeam      "Sydney Swans",
             :Location      "Gabba",
             :MatchNumber   187}
+           {:RoundNumber   22,
+            :Group         nil,
+            :game          183,
+            :HomeTeamScore nil,
+            :teams         [:car :gcs],
+            :round         22,
+            :summary       "",
+            :AwayTeamScore nil,
+            :result        {:car {}, :gcs {}},
+            :score         {:car "", :gcs ""},
+            :comment       "",
+            :HomeTeam      "Carlton",
+            :DateUtc       "2025-08-09 09:35:00Z",
+            :scoreboard    {:car "11.8(74)", :gcs "13.15(93)"},
+            :AwayTeam      "Gold Coast SUNS",
+            :Location      "Marvel Stadium",
+            :MatchNumber   183}
            {:RoundNumber   22,
             :Group         nil,
             :game          188,
@@ -3286,11 +3256,45 @@
             :score         {:pa "", :fre ""},
             :comment       "",
             :HomeTeam      "Port Adelaide",
-            :DateUtc       "2025-08-08 14:30:00Z",
-            :scoreboard    {:pa "", :fre ""},
+            :DateUtc       "2025-08-09 10:10:00Z",
+            :scoreboard    {:pa "13.8(86)", :fre "13.14(92)"},
             :AwayTeam      "Fremantle",
             :Location      "Adelaide Oval",
             :MatchNumber   188}
+           {:RoundNumber   22,
+            :Group         nil,
+            :game          182,
+            :HomeTeamScore nil,
+            :teams         [:gws :nm],
+            :round         22,
+            :summary       "",
+            :AwayTeamScore nil,
+            :result        {:gws {}, :nm {}},
+            :score         {:gws "", :nm ""},
+            :comment       "",
+            :HomeTeam      "GWS GIANTS",
+            :DateUtc       "2025-08-10 03:40:00Z",
+            :scoreboard    {:gws "20.13(133)", :nm "12.7(79)"},
+            :AwayTeam      "North Melbourne",
+            :Location      "Manuka Oval",
+            :MatchNumber   182}
+           {:RoundNumber   22,
+            :Group         nil,
+            :game          185,
+            :HomeTeamScore nil,
+            :teams         [:mel :wb],
+            :round         22,
+            :summary       "",
+            :AwayTeamScore nil,
+            :result        {:mel {}, :wb {}},
+            :score         {:mel "", :wb ""},
+            :comment       "",
+            :HomeTeam      "Melbourne",
+            :DateUtc       "2025-08-10 05:15:00Z",
+            :scoreboard    {:mel "15.9(99)", :wb "15.15(105)"},
+            :AwayTeam      "Western Bulldogs",
+            :Location      "MCG",
+            :MatchNumber   185}
            {:RoundNumber   22,
             :Group         nil,
             :game          189,
@@ -3303,171 +3307,118 @@
             :score         {:wce "", :adl ""},
             :comment       "",
             :HomeTeam      "West Coast Eagles",
-            :DateUtc       "2025-08-08 16:00:00Z",
-            :scoreboard    {:wce "", :adl ""},
+            :DateUtc       "2025-08-10 07:10:00Z",
+            :scoreboard    {:wce "12.6(78)", :adl "13.9(87)"},
             :AwayTeam      "Adelaide Crows",
             :Location      "Optus Stadium",
             :MatchNumber   189}
-           {:RoundNumber   23,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "North Melbourne",
-            :DateUtc       "2025-08-15 14:00:00Z",
-            :AwayTeam      "Richmond",
-            :Location      "Blundstone Arena",
-            :teams         [:nm :ric],
-            :scoreboard    {:nm "", :ric ""},
-            :MatchNumber   190}
+
            {:RoundNumber   23,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
             :HomeTeam      "Essendon",
-            :DateUtc       "2025-08-15 14:00:00Z",
+            :DateUtc       "2025-08-15 09:20:00Z",
             :AwayTeam      "St Kilda",
             :Location      "Marvel Stadium",
             :teams         [:ess :stk],
-            :scoreboard    {:ess "", :stk ""},
+            :scoreboard    {:ess "11.9(75)", :stk "11.11(77)"},
             :MatchNumber   191}
            {:RoundNumber   23,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
-            :HomeTeam      "Western Bulldogs",
-            :DateUtc       "2025-08-15 14:00:00Z",
-            :AwayTeam      "West Coast Eagles",
-            :Location      "Marvel Stadium",
-            :teams         [:wb :wce],
-            :scoreboard    {:wb "", :wce ""},
-            :MatchNumber   192}
+            :HomeTeam      "Fremantle",
+            :DateUtc       "2025-08-15 10:20:00Z",
+            :AwayTeam      "Brisbane Lions",
+            :Location      "Optus Stadium",
+            :teams         [:fre :bri],
+            :scoreboard    {:fre "5.14(44)", :bri "15.11(101)"},
+            :MatchNumber   198}
+           {:RoundNumber   23,
+            :Group         nil,
+            :HomeTeamScore nil,
+            :AwayTeamScore nil,
+            :HomeTeam      "Gold Coast SUNS",
+            :DateUtc       "2025-08-16 02:35:00Z",
+            :AwayTeam      "GWS GIANTS",
+            :Location      "People First Stadium",
+            :teams         [:gcs :gws],
+            :scoreboard    {:gcs "11.10(76)", :gws "17.9(111)"},
+            :MatchNumber   195}
            {:RoundNumber   23,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
             :HomeTeam      "Carlton",
-            :DateUtc       "2025-08-15 14:00:00Z",
+            :DateUtc       "2025-08-16 03:20:00Z",
             :AwayTeam      "Port Adelaide",
             :Location      "Marvel Stadium",
             :teams         [:car :pa],
-            :scoreboard    {:car "", :pa ""},
+            :scoreboard    {:car "18.10(118)", :pa "9.10(64)"},
             :MatchNumber   193}
            {:RoundNumber   23,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
             :HomeTeam      "Hawthorn",
-            :DateUtc       "2025-08-15 14:00:00Z",
+            :DateUtc       "2025-08-16 06:15:00Z",
             :AwayTeam      "Melbourne",
             :Location      "MCG",
             :teams         [:haw :mel],
-            :scoreboard    {:haw "", :mel ""},
+            :scoreboard    {:haw "13.14(92)", :mel "8.8(56)"},
             :MatchNumber   194}
            {:RoundNumber   23,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
-            :HomeTeam      "Gold Coast SUNS",
-            :DateUtc       "2025-08-15 14:00:00Z",
-            :AwayTeam      "GWS GIANTS",
-            :Location      "People First Stadium",
-            :teams         [:gcs :gws],
-            :scoreboard    {:gcs "", :gws ""},
-            :MatchNumber   195}
-           {:RoundNumber   23,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "Sydney Swans",
-            :DateUtc       "2025-08-15 14:00:00Z",
-            :AwayTeam      "Geelong Cats",
-            :Location      "SCG",
-            :teams         [:syd :gee],
-            :scoreboard    {:syd "", :gee ""},
-            :MatchNumber   196}
-           {:RoundNumber   23,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
             :HomeTeam      "Adelaide Crows",
-            :DateUtc       "2025-08-15 14:30:00Z",
+            :DateUtc       "2025-08-16 09:35:00Z",
             :AwayTeam      "Collingwood",
             :Location      "Adelaide Oval",
             :teams         [:adl :col],
-            :scoreboard    {:adl "", :col ""},
+            :scoreboard    {:adl "9.5(59)", :col "8.8(56)"},
             :MatchNumber   197}
            {:RoundNumber   23,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
-            :HomeTeam      "Fremantle",
-            :DateUtc       "2025-08-15 16:00:00Z",
-            :AwayTeam      "Brisbane Lions",
-            :Location      "Optus Stadium",
-            :teams         [:fre :bri],
-            :scoreboard    {:fre "", :bri ""},
-            :MatchNumber   198}
-           {:RoundNumber   24,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "GWS GIANTS",
-            :DateUtc       "2025-08-22 14:00:00Z",
-            :AwayTeam      "St Kilda",
-            :Location      "ENGIE Stadium",
-            :teams         [:gws :stk],
-            :scoreboard    {:gws "", :stk ""}
-            :MatchNumber   199}
-           {:RoundNumber   24,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
             :HomeTeam      "North Melbourne",
-            :DateUtc       "2025-08-22 14:00:00Z",
-            :AwayTeam      "Adelaide Crows",
-            :Location      "Marvel Stadium",
-            :teams         [:nm :adl],
-            :scoreboard    {:nm "", :adl ""},
-            :MatchNumber   200}
-           {:RoundNumber   24,
+            :DateUtc       "2025-08-17 03:10:00Z",
+            :AwayTeam      "Richmond",
+            :Location      "Blundstone Arena",
+            :teams         [:nm :ric],
+            :scoreboard    {:nm "20.15(135)", :ric "13.9(87)"},
+            :MatchNumber   190}
+           {:RoundNumber   23,
+            :Group         nil,
+            :HomeTeamScore nil,
+            :AwayTeamScore nil,
+            :HomeTeam      "Sydney Swans",
+            :DateUtc       "2025-08-17 05:15:00Z",
+            :AwayTeam      "Geelong Cats",
+            :Location      "SCG",
+            :teams         [:syd :gee],
+            :scoreboard    {:syd "10.8(68)", :gee "16.15(111)"},
+            :MatchNumber   196}
+           {:RoundNumber   23,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
             :HomeTeam      "Western Bulldogs",
-            :DateUtc       "2025-08-22 14:00:00Z",
-            :AwayTeam      "Fremantle",
+            :DateUtc       "2025-08-17 06:40:00Z",
+            :AwayTeam      "West Coast Eagles",
             :Location      "Marvel Stadium",
-            :teams         [:wb :fre],
-            :scoreboard    {:wb "", :fre ""},
-            :MatchNumber   201}
-           {:RoundNumber   24,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "Collingwood",
-            :DateUtc       "2025-08-22 14:00:00Z",
-            :AwayTeam      "Melbourne",
-            :Location      "MCG",
-            :teams         [:col :mel],
-            :scoreboard    {:col "", :mel ""},
-            :MatchNumber   202}
-           {:RoundNumber   24,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "Richmond",
-            :DateUtc       "2025-08-22 14:00:00Z",
-            :AwayTeam      "Geelong Cats",
-            :Location      "MCG",
-            :teams         [:ric :gee],
-            :scoreboard    {:ric "", :gee ""},
-            :MatchNumber   203}
+            :teams         [:wb :wce],
+            :scoreboard    {:wb "19.12(126)", :wce "4.8(32)"},
+            :MatchNumber   192}
+
            {:RoundNumber   24,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
             :HomeTeam      "Essendon",
-            :DateUtc       "2025-08-22 14:00:00Z",
+            :DateUtc       "2025-08-21 09:30:00Z",
             :AwayTeam      "Carlton",
             :Location      "MCG",
             :teams         [:ess :car],
@@ -3477,19 +3428,19 @@
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
-            :HomeTeam      "Brisbane Lions",
-            :DateUtc       "2025-08-22 14:00:00Z",
-            :AwayTeam      "Hawthorn",
-            :Location      "Gabba",
-            :teams         [:bri :haw],
-            :scoreboard    {:bri "", :haw ""},
-            :MatchNumber   205}
+            :HomeTeam      "Collingwood",
+            :DateUtc       "2025-08-22 09:10:00Z",
+            :AwayTeam      "Melbourne",
+            :Location      "MCG",
+            :teams         [:col :mel],
+            :scoreboard    {:col "", :mel ""},
+            :MatchNumber   202}
            {:RoundNumber   24,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
             :HomeTeam      "Port Adelaide",
-            :DateUtc       "2025-08-22 14:30:00Z",
+            :DateUtc       "2025-08-22 10:10:00Z",
             :AwayTeam      "Gold Coast SUNS",
             :Location      "Adelaide Oval",
             :teams         [:pa :gcs],
@@ -3499,52 +3450,118 @@
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
+            :HomeTeam      "North Melbourne",
+            :DateUtc       "2025-08-23 03:20:00Z",
+            :AwayTeam      "Adelaide Crows",
+            :Location      "Marvel Stadium",
+            :teams         [:nm :adl],
+            :scoreboard    {:nm "", :adl ""},
+            :MatchNumber   200}
+           {:RoundNumber   24,
+            :Group         nil,
+            :HomeTeamScore nil,
+            :AwayTeamScore nil,
+            :HomeTeam      "Richmond",
+            :DateUtc       "2025-08-23 06:15:00Z",
+            :AwayTeam      "Geelong Cats",
+            :Location      "MCG",
+            :teams         [:ric :gee],
+            :scoreboard    {:ric "", :gee ""},
+            :MatchNumber   203}
+           {:RoundNumber   24,
+            :Group         nil,
+            :HomeTeamScore nil,
+            :AwayTeamScore nil,
             :HomeTeam      "West Coast Eagles",
-            :DateUtc       "2025-08-22 16:00:00Z",
+            :DateUtc       "2025-08-23 09:35:00Z",
             :AwayTeam      "Sydney Swans",
             :Location      "Optus Stadium",
             :teams         [:wce :syd],
             :scoreboard    {:wce "", :syd ""},
             :MatchNumber   207}
-           {:RoundNumber   25,
+           {:RoundNumber   24,
             :Group         nil,
             :HomeTeamScore nil,
             :AwayTeamScore nil,
-            :HomeTeam      "To be announced",
-            :DateUtc       "2025-09-05 14:00:00Z",
-            :AwayTeam      "To be announced",
-            :Location      "TBA",
-            :MatchNumber   208}
-           {:RoundNumber   25,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "To be announced",
-            :DateUtc       "2025-09-05 14:00:00Z",
-            :AwayTeam      "To be announced",
-            :Location      "TBA",
-            :scoreboard    {},
-            :MatchNumber   209}
-           {:RoundNumber   25,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "To be announced",
-            :DateUtc       "2025-09-05 14:00:00Z",
-            :AwayTeam      "To be announced",
-            :Location      "TBA",
-            :scoreboard    {},
-            :MatchNumber   210}
-           {:RoundNumber   25,
-            :Group         nil,
-            :HomeTeamScore nil,
-            :AwayTeamScore nil,
-            :HomeTeam      "To be announced",
-            :DateUtc       "2025-09-05 14:00:00Z",
-            :AwayTeam      "To be announced",
-            :Location      "TBA",
-            :scoreboard    {},
-            :MatchNumber   211}
+            :HomeTeam      "GWS GIANTS",
+            :DateUtc       "2025-08-24 02:20:00Z",
+            :AwayTeam      "St Kilda",
+            :Location      "ENGIE Stadium",
+            :teams         [:gws :stk],
+            :scoreboard    {:gws "", :stk ""}
+            :MatchNumber   199}
+           {:RoundNumber   24
+            :Group         nil
+            :HomeTeamScore nil
+            :AwayTeamScore nil
+            :HomeTeam      "Western Bulldogs"
+            :DateUtc       "2025-08-24 05:15:00Z"
+            :AwayTeam      "Fremantle"
+            :Location      "Marvel Stadium"
+            :teams         [:wb :fre]
+            :scoreboard    {:wb "", :fre ""}
+            :MatchNumber   201}
+           {:RoundNumber   24
+            :Group         nil
+            :HomeTeamScore nil
+            :AwayTeamScore nil
+            :HomeTeam      "Brisbane Lions"
+            :DateUtc       "2025-08-24 09:20:00Z"
+            :AwayTeam      "Hawthorn",
+            :Location      "Gabba",
+            :teams         [:bri :haw],
+            :scoreboard    {:bri "", :haw ""}
+            :MatchNumber   205}
+
+           {:MatchNumber   208
+            :RoundNumber   25
+            :DateUtc       "2025-09-04 09:40:00Z"
+            :Location      "Adelaide Oval"
+            :HomeTeam      "Adelaide Crows"
+            :AwayTeam      "Collingwood"
+            :Group         nil
+            :HomeTeamScore nil
+            :AwayTeamScore nil
+            :teams         [:adl :col],
+            :scoreboard    {:adl "" :col ""}
+            }
+           {:MatchNumber   209
+            :RoundNumber   25
+            :DateUtc       "2025-09-05 09:40:00Z"
+            :Location      "MCG"
+            :HomeTeam      "Geelong Cats"
+            :AwayTeam      "Brisbane Lions"
+            :Group         nil
+            :HomeTeamScore nil
+            :AwayTeamScore nil
+            :teams         [:gee :bri]
+            :scoreboard    {:gee "" :bri ""}
+            }
+           {:MatchNumber   210
+            :RoundNumber   25
+            :DateUtc       "2025-09-06 05:15:00Z"
+            :Location      "ENGIE Stadium"
+            :HomeTeam      "GWS GIANTS"
+            :AwayTeam      "Hawthorn"
+            :Group         nil
+            :HomeTeamScore nil
+            :AwayTeamScore nil
+            :teams         [:gws :haw]
+            :scoreboard    {:gws "" :haw ""}
+            }
+           {:MatchNumber   211
+            :RoundNumber   25
+            :DateUtc       "2025-09-06 09:35:00Z"
+            :Location      "Optus Stadium"
+            :HomeTeam      "Fremantle"
+            :AwayTeam      "Gold Coast SUNS"
+            :Group         nil
+            :HomeTeamScore nil
+            :AwayTeamScore nil
+            :teams         [:fre :gcs]
+            :scoreboard    {:fre "" :gcs ""}
+            }
+
            {:RoundNumber   26,
             :Group         nil,
             :HomeTeamScore nil,
