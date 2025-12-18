@@ -33,17 +33,24 @@
       (is (= expected
              (bbl-2025/normalize-keys input))))))
 
+(deftest api->iso-utc-test
+  (testing "convert API time to iso format"
+    (let [input    "2026-01-01 05:00:00Z"
+          expected "2026-01-01T05:00:00Z"]
+      (is (= expected
+             (bbl-2025/api->iso-utc input))))))
+
 (deftest normalize-fixture-test
   (testing "produces a flat, domain fixture"
-    (let [raw {:match-id 42
+    (let [raw {:match-number 42
                :home-team "Adelaide Strikers"
                :away-team "Sydney Sixers"
-               :venue {:name "Gabba"}
-               :start-time nil}
+               :location "Gabba"
+               :date-utc "2026-01-01 05:00:00Z"}
           expected {:fixture-id 42
                     :home :str
                     :away :six
                     :venue "Gabba"
-                    :start-time nil}]
+                    :start-time "2026-01-01T05:00:00Z"}]
       (is (= expected
              (bbl-2025/normalize-fixture raw))))))

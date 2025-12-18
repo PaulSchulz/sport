@@ -12,6 +12,9 @@
             [clj-time.local   :as l]
             ;; [clojure.pprint 1  :as pprint]
             )
+  (:import
+   [java.time ZonedDateTime ZoneId]
+   [java.time.format DateTimeFormatter])
   (:gen-class)
   )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -56,14 +59,16 @@
 ;;   See: https://github.com/dm3/clojure.java-time
 ;; Time parsing an manipulation
 ;; Formatters can be listed with: (f/show-formatters)
-(defn localtime
-  [datetime]
-  (let [input-fmt  (f/formatter "yyyy-MM-dd HH:mm:ss'Z'")
-        output-fmt (f/with-zone
-                     (f/formatter "EEE dd hh:mm aa")
-                     (t/default-time-zone))]
-    (f/unparse output-fmt
-               (f/parse input-fmt datetime))))
+(defn api->iso-utc [s]
+  (clojure.string/replace s #" " "T"))
+
+(defn localtime [utc-string]
+  (let [utc-time (ZonedDateTime/parse utc-string)
+        local    (.withZoneSameInstant
+                  utc-time
+                  (ZoneId/systemDefault))
+        fmt      (DateTimeFormatter/ofPattern "EEE dd hh:mm a")]
+    (.format local fmt)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; From ChatGPT
@@ -115,17 +120,17 @@ keyword))
 data))
 
 (defn normalize-fixture [f]
-{:fixture-id (:match-number f)
-:home       (team-id (:home-team f))
-:away       (team-id (:away-team f))
-:start-time (localtime (:date-utc f))
-:venue      (:location f)})
+  {:fixture-id (:match-number f)
+   :home       (team-id (:home-team f))
+   :away       (team-id (:away-team f))
+   :start-time (api->iso-utc (:date-utc f))
+   :venue      (:location f)})
 
 (defn normalize-fixtures [raw]
-(->> raw
-normalize-keys
-(map normalize-fixture)
-vec))
+  (->> raw
+       normalize-keys
+       (map normalize-fixture)
+       vec))
 
 ;; Need to define fixtures first
 ;; (def fixtures-by-id
@@ -151,12 +156,12 @@ vec))
 (team-id teams))
 
 (defn render-fixture
-[{:keys [start-time home away venue]}]
-(format "%s  %-20s vs %-20s  (%s)"
-start-time
-(team-name home)
-(team-name away)
-venue))
+  [{:keys [start-time home away venue]}]
+  (format "%s  %-20s vs %-20s  (%s)"
+          (localtime start-time)
+          (team-name home)
+          (team-name away)
+          venue))
 
 (defn fixtures-report
   [fixtures]
