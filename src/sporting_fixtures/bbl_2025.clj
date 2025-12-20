@@ -160,12 +160,14 @@
 (defn empty-ladder [teams]
   (into {}
         (for [t (keys teams)]
-          [t {:team t :played 0 :won 0 :lost 0 :tied 0 :points 0 :for 0 :against 0}])))
+          [t {:team t :played 0 :won 0 :lost 0 :tied 0 :points 0 :for 0 :against 0 :nrr 0.0}])))
 
 (deftest ^:test empty-ladder-test
   (let [teams {:sco {} :str {}}
-        expected {:sco {:team :sco, :played 0, :won 0, :lost 0, :tied 0, :points 0, :for 0, :against 0}
-                  :str {:team :str, :played 0, :won 0, :lost 0, :tied 0, :points 0, :for 0, :against 0}}
+        expected {:sco {:team :sco,
+                        :played 0, :won 0, :lost 0, :tied 0, :points 0, :for 0, :against 0, :nrr 0.0}
+                  :str {:team :str,
+                        :played 0, :won 0, :lost 0, :tied 0, :points 0, :for 0, :against 0, :nrr 0.0}}
         ]
     (is (= (empty-ladder teams) expected))))
 
@@ -275,7 +277,8 @@
                           :tied 0,
                           :points 0,
                           :for 113,
-                          :against 117},
+                          :against 117,
+                          :nrr 0.0},
                     :sco {:team :sco,
                           :played 1,
                           :won 1,
@@ -283,7 +286,8 @@
                           :tied 0,
                           :points 2,
                           :for 117,
-                          :against 113}}]
+                          :against 113,
+                          :nrr 0.0}}]
       (is (= (apply-deltas ladder deltas)
              expected)))))
 
@@ -305,7 +309,8 @@
                           :tied 0,
                           :points 0,
                           :for 113,
-                          :against 117},
+                          :against 117,
+                          :nrr 0.0},
                     :sco {:team :sco,
                           :played 1,
                           :won 1,
@@ -313,13 +318,13 @@
                           :tied 0,
                           :points 2,
                           :for 117,
-                          :against 113}}]
+                          :against 113,
+                          :nrr 0.0}}]
       (is (= (build-ladder fixtures results teams)
              expected)))))
 
 ;; Sort ladder for reporting
-(defn ladder-rows
-  [ladder]
+(defn ladder-rows [ladder]
   (->> ladder
        vals
        (sort-by (juxt
