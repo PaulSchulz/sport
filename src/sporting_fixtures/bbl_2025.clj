@@ -11,6 +11,7 @@
             [clj-time.format  :as f]
             [clj-time.local   :as l]
             ;; [clojure.pprint 1  :as pprint]
+            [clojure.test :refer :all]
             )
   (:import
    [java.time ZonedDateTime ZoneId]
@@ -77,47 +78,48 @@
 
 ;; The following uses 'pprint', but could also use 'fipp.edn'
 (defn save-data []
-(spit "data/bbl-2025/fixtures.edn"
-(with-out-str
-  (fipp (read-json "data/bbl-2025/fixtures.json")))))
+  (spit "data/bbl-2025/fixtures.edn"
+        (with-out-str
+          (fipp (read-json "data/bbl-2025/fixtures.json")))))
 
 (defn read-data []
-(read-string (slurp "data/bbl-2025/fixtures.edn")))
+  (read-string (slurp "data/bbl-2025/fixtures.edn")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Teams
 (def teams
-(read-string (slurp "data/bbl-2025/teams.edn")))
+  (read-string (slurp "data/bbl-2025/teams.edn")))
 
 (def team-name->id
-(into {}
-(for [[id name] teams]
-  [name id])))
+  (into {}
+        (for [[id name] teams]
+          [name id])))
 
 (defn team-id
-[team-name]
-(or (get team-name->id team-name)
-(throw (ex-info "Unknown team"
-                {:team team-name}))))
+  [team-name]
+  (or (get team-name->id team-name)
+      (throw (ex-info "Unknown team"
+                      {:team team-name}))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Normalize data
 (defn ->kebab-keyword [k]
-(-> k
-name
-(str/replace #"([a-z])([A-Z])" "$1-$2") ; camelCase
-(str/replace "_" "-")                   ; snake_case
-str/lower-case
-keyword))
+  (-> k
+      name
+      (str/replace #"([a-z])([A-Z])" "$1-$2") ; camelCase
+      (str/replace "_" "-")                   ; snake_case
+      str/lower-case
+      keyword))
 
 (defn normalize-keys [data]
-(walk/postwalk
-(fn [x]
-  (if (map? x)
-    (into {}
-          (for [[k v] x]
-            [(->kebab-keyword k) v]))
-    x))
-data))
+  (walk/postwalk
+   (fn [x]
+     (if (map? x)
+       (into {}
+             (for [[k v] x]
+               [(->kebab-keyword k) v]))
+       x))
+   data))
 
 (defn normalize-fixture [f]
   {:fixture-id (:match-number f)
@@ -137,82 +139,314 @@ data))
 ;;   (into {} (map (juxt :fixture-id identity) fixtures)))
 
 (def data
-(normalize-fixtures (read-data)))
+  (normalize-fixtures (read-data)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; NOTE: Not currently being used
-(defn read-event-data [filename]
-"Read data from file"
-(yaml/parse-string (slurp filename))
-)
+;; Results
+(def results
+  (read-string (slurp "data/bbl-2025/results.edn")))
+
+(defn runs-from-score [s]
+  ;; "117/5(10.1/11)" → 117
+  (when s
+    (Long/parseLong
+     (re-find #"\d+" s))))
+
+(deftest ^:test runs-from-score-test
+  (is (= 117 (runs-from-score "117/5(10.1/11)")))
+  (is (= 0   (runs-from-score "0/0(0)"))))
+
+;; Initialise Ladder data
+(defn empty-ladder [teams]
+  (into {}
+        (for [t (keys teams)]
+          [t {:team t :played 0 :won 0 :lost 0 :tied 0 :points 0 :for 0 :against 0}])))
+
+(deftest ^:test empty-ladder-test
+  (let [teams {:sco {} :str {}}
+        expected {:sco {:team :sco, :played 0, :won 0, :lost 0, :tied 0, :points 0, :for 0, :against 0}
+                  :str {:team :str, :played 0, :won 0, :lost 0, :tied 0, :points 0, :for 0, :against 0}}
+        ]
+    (is (= (empty-ladder teams) expected))))
+
+;; Create ladder-dalta record from rules
+(defn ladder-delta
+  [{:keys [home away home-runs away-runs]}]
+  (let [home-win? (> home-runs away-runs)
+        away-win? (> away-runs home-runs)
+        home-base {:team home
+                   :played 1
+                   :for home-runs
+                   :against away-runs}
+        away-base {:team away
+                   :played 1
+                   :for away-runs
+                   :against home-runs}]
+    [(merge home-base
+            (cond
+              home-win? {:won 1 :points 2}
+              away-win? {:lost 1}
+              :else     {:tied 1 :points 1}))
+     (merge away-base
+            (cond
+              away-win? {:won 1 :points 2}
+              home-win? {:lost 1}
+              :else     {:tied 1 :points 1}))]))
+
+(deftest ladder-delta-test
+  (testing "Calculate ladder delta from game result rules"
+    (let [input      {:home :sco
+                      :away :str
+                      :home-runs 120
+                      :away-runs 121}
+          expected   [{:team :sco, :played 1, :for 120, :against 121, :lost 1}
+                      {:team :str, :played 1, :for 121, :against 120, :won 1, :points 2}]]
+      (is (= (ladder-delta input)
+             expected)))))
+
+;; Creates data deltas
+(defn delta-from-game [{:keys [scoreboard]}]
+(let [[[home home-score]
+       [away away-score]] (seq scoreboard)
+      home-runs (runs-from-score home-score)
+      away-runs (runs-from-score away-score)]
+  (ladder-delta
+   {:home home
+    :away away
+    :home-runs home-runs
+    :away-runs away-runs})))
+
+(deftest delta-from-game-test
+(testing "Extract ladder delta details from game result"
+  (let [input     {:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"}}
+        expected  [{:team :six, :played 1, :for 113, :against 117, :lost 1}
+                   {:team :sco, :played 1, :for 117, :against 113, :won 1, :points 2}]]
+    (is (= (delta-from-game input)
+           expected)))))
+
+;; Apply a single delta
+(defn apply-delta [ladder {:keys [team] :as delta}]
+  (reduce-kv
+   (fn [l k v]
+     (if (= k :team)
+       l
+       (update-in l [team k] (fnil + 0) v)))
+   ladder
+   delta))
+
+(deftest apply-delta-test
+(testing "Apply ladder delta to ladder record"
+  (let [ladder   {:str {:team :str,
+                        :played 0,
+                        :for 0,
+                        :against 0,
+                        :won 0,
+                        :lost 0,
+                        :points 0}}
+        delta    {:team :str,
+                  :played 1,
+                  :for 121,
+                  :against 120,
+                  :won 1,
+                  :points 2}
+        expected {:str {:team :str,
+                        :played 1,
+                        :for 121,
+                        :against 120,
+                        :won 1,
+                        :lost 0,
+                        :points 2}} ]
+    (is (= (apply-delta ladder delta)
+           expected)))))
+
+;; Apply all deltas in an array to the ladder data
+(defn apply-deltas
+  [ladder deltas]
+  (reduce apply-delta ladder deltas))
+
+(deftest apply-deltas-test
+  (testing "Apply multiple deltas to ladder data"
+    (let [ladder   (empty-ladder {:six {} :sco {}})
+          deltas   (delta-from-game {:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"}})
+          expected {:six {:team :six,
+                          :played 1,
+                          :won 0,
+                          :lost 1,
+                          :tied 0,
+                          :points 0,
+                          :for 113,
+                          :against 117},
+                    :sco {:team :sco,
+                          :played 1,
+                          :won 1,
+                          :lost 0,
+                          :tied 0,
+                          :points 2,
+                          :for 117,
+                          :against 113}}]
+      (is (= (apply-deltas ladder deltas)
+             expected)))))
+
+;; Build ladder information from results
+(defn build-ladder [fixtures results teams]
+  (let [ladder (empty-ladder teams)
+        deltas (mapcat delta-from-game results)]
+    (reduce apply-delta ladder deltas)))
+
+(deftest ^:test build-ladder-test
+  (testing "Build ladder information from results"
+    (let [fixtures []
+          teams    {:six {} :sco {}}
+          results  [{:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"}}]
+          expected {:six {:team :six,
+                          :played 1,
+                          :won 0,
+                          :lost 1,
+                          :tied 0,
+                          :points 0,
+                          :for 113,
+                          :against 117},
+                    :sco {:team :sco,
+                          :played 1,
+                          :won 1,
+                          :lost 0,
+                          :tied 0,
+                          :points 2,
+                          :for 117,
+                          :against 113}}]
+      (is (= (build-ladder fixtures results teams)
+             expected)))))
+
+;; Sort ladder for reporting
+(defn ladder-rows
+  [ladder]
+  (->> ladder
+       vals
+       (sort-by (juxt
+                 (comp - :points)))))
+
+(comment
+  (defn ladder-rows
+    [ladder]
+    (->> ladder
+         vals
+         (sort-by (juxt
+                   (comp - :points)
+                   (comp - :nrr)))))
+  )
+
+(defn render-ladder-row [{:keys [team played won lost tied points nrr]}]
+  (format "%-20s %2d %2d %2d %2d %3d %6.2f"
+          (teams team)
+          played won lost tied points nrr))
+
+(defn ladder-report [fixtures results teams]
+  (let [ladder (build-ladder fixtures results teams)]
+    (str
+     "Team                  P  W  L  T Pts   NRR\n"
+     "------------------------------------------\n"
+     (->> ladder
+          ladder-rows
+          (map render-ladder-row)
+          (clojure.string/join "\n")))))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Query Layer
+;; Query and Report Layer
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn fixtures-by-date
-[fixtures]
-(sort-by :start-time fixtures))
+  [fixtures]
+  (sort-by :start-time fixtures))
 
 (defn team-name
 [team-id]
 (team-id teams))
 
 (defn render-fixture
-  [{:keys [start-time home away venue]}]
-  (format "%s  %-20s vs %-20s  (%s)"
-          (localtime start-time)
-          (team-name home)
-          (team-name away)
-          venue))
+[{:keys [start-time home away venue]}]
+(format "%s  %-20s vs %-20s  (%s)"
+(localtime start-time)
+(team-name home)
+(team-name away)
+venue))
 
 (defn fixtures-report
-  [fixtures]
-  (str
-   "BBL 2025 Fixtures\n"
-   "=================\n\n"
-   (->> fixtures
-        fixtures-by-date
-        (map render-fixture)
-        (clojure.string/join "\n"))))
-
+[fixtures]
+(str
+"BBL 2025 Fixtures\n"
+"=================\n\n"
+(->> fixtures
+fixtures-by-date
+(map render-fixture)
+(clojure.string/join "\n"))))
 
 (defn save-fixtures-report []
-  (spit "data/bbl-2025/fixtures.txt"
-        (fixtures-report data)))
+(spit "data/bbl-2025/fixtures.txt"
+(fixtures-report data)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Working with results
+(comment
+;; Fixture record
+{:fixture-id 1
+:home :sco
+:away :six
+:start-time "2025-12-14T08:15:00Z"
+:venue "Perth Stadium"
+:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+:summary "SCO won by 5 wickets (5 balls left)"
+:outcome {:six {:runs 113, :points 0},
+:sco {:runs 117, :points 2},
+:outcome :sco}}
+
+;; Ladder Record
+{:bri
+{:team   :bri
+:played  0
+:won     0
+:lost    0
+:tied    0
+:points  0
+:for     0
+:against 0
+:nrr     0.0}
+}
+)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Create results table
 (defn event-games-table-header []
-  (str
-   (format " %2s | %-16s | %-10s | %-26s | %s"
-           "Id"
-           "Time"
-           "Teams"
-           "Score"
-           "Result")
-   "\n"
-   (str/join (repeat 78 "-"))
-   "\n"
-   )
-  )
+(str
+(format " %2s | %-16s | %-10s | %-26s | %s"
+"Id"
+"Time"
+"Teams"
+"Score"
+"Result")
+"\n"
+(str/join (repeat 78 "-"))
+"\n"
+)
+)
 
 ;; Assumes 'result' contains points
 (defn calculate-game-statistics [game]
-  (let [home   (:home   game)
-        away   (:away   game)
-        result (:result game)]
+(let [home   (:home   game)
+away   (:away   game)
+result (:result game)]
 
-    (if (and home away result)
-      (let [home-points (home result)
-            away-points (away result)]
-        (if (and home-points away-points)
-          (cond
-            (> home-points away-points) {home {:w 1 :l 0 :d 0 :pf home-points :pa away-points}
-                                         away {:w 0 :l 1 :d 0 :pf away-points :pa home-points}}
-            (< home-points away-points) {home {:w 0 :l 1 :d 0 :pf home-points :pa away-points}
-                                         away {:w 1 :l 0 :d 0 :pf away-points :pa home-points}}
-            :else {home {:w 0 :l 0 :d 1 :pf home-points :pa away-points}
-                   away {:w 0 :l 0 :d 1 :pf away-points :pa home-points}}
-            )
-          nil))
-      nil)))
+(if (and home away result)
+(let [home-points (home result)
+      away-points (away result)]
+(if (and home-points away-points)
+  (cond
+    (> home-points away-points) {home {:w 1 :l 0 :d 0 :pf home-points :pa away-points}
+                                 away {:w 0 :l 1 :d 0 :pf away-points :pa home-points}}
+    (< home-points away-points) {home {:w 0 :l 1 :d 0 :pf home-points :pa away-points}
+                                 away {:w 1 :l 0 :d 0 :pf away-points :pa home-points}}
+    :else {home {:w 0 :l 0 :d 1 :pf home-points :pa away-points}
+           away {:w 0 :l 0 :d 1 :pf away-points :pa home-points}}
+    )
+  nil))
+nil)))
 
 ;;
 (defn event-games-table [event]
@@ -228,47 +462,47 @@ data))
       (map-indexed
        (fn [i x]
          (let [id   (inc i)
-               home (:home x)
-               away (:away x)
-               ]
-           (str
-            (if (= id 1)  (str "----- Rounds ----------" (str/join (repeat 55 "-")) "\n") "")
-            (if (= id 57) (str "----- Finals ----------" (str/join (repeat 55 "-")) "\n") "")
-            ;; (format " %2d | %s | %-10s | %-12s  %-12s | %s %s"
-            (format " %2d | %s | %-10s | %-20s  %-20s | %s %s"
-                    id
-                    ;;(:id x)
-                    ;;(localtime (:time x))
-                    (:time x)
-                    (str (if home
-                           (str/upper-case (name home)) "---")
-                         " vs "
-                         (if away
-                           (str/upper-case (name away)) "---"))
+                 home (:home x)
+                 away (:away x)
+                 ]
+             (str
+          (if (= id 1)  (str "----- Rounds ----------" (str/join (repeat 55 "-")) "\n") "")
+          (if (= id 57) (str "----- Finals ----------" (str/join (repeat 55 "-")) "\n") "")
+          ;; (format " %2d | %s | %-10s | %-12s  %-12s | %s %s"
+          (format " %2d | %s | %-10s | %-20s  %-20s | %s %s"
+                  id
+                  ;;(:id x)
+                  ;;(localtime (:time x))
+                  (:time x)
+                  (str (if home
+                         (str/upper-case (name home)) "---")
+                       " vs "
+                       (if away
+                         (str/upper-case (name away)) "---"))
 
-                    (if (and (:score x)
-                             (not= (:score x) {}))
-                      (home (:score x))
-                      "_-___/__._")
+                  (if (and (:score x)
+                           (not= (:score x) {}))
+                    (home (:score x))
+                    "_-___/__._")
 
-                    (if (and (:score x)
-                             (not= (:score x) {}))
-                      (away (:score x))
-                      "_-___/__._")
+                  (if (and (:score x)
+                           (not= (:score x) {}))
+                    (away (:score x))
+                    "_-___/__._")
 
-                    (if (and (:result x)
-                             (not= (:result x) {}))
-                      (home (:result x))
-                      "-")
-                    (if (and (:result x)
-                             (not= (:result x) {}))
-                      (away (:result x))
-                      "-")
-                    ;;(conj x {:home home-id} {:away away-id})
+                  (if (and (:result x)
+                           (not= (:result x) {}))
+                    (home (:result x))
+                    "-")
+                  (if (and (:result x)
+                           (not= (:result x) {}))
+                    (away (:result x))
+                    "-")
+                  ;;(conj x {:home home-id} {:away away-id})
                                         ; (calculate-game-statistics x)
 
-                    ))))
-       games)
+                  ))))
+         games)
       )
      "\n"
      (str (str/join "" (repeat 78 "-")) "\n")
@@ -558,9 +792,8 @@ data))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
   (help)
-  (let [event (read-event-data filename)
-        games (:games event)
-        teams (:teams event)]
-    (println (create-event-report event)))
-
+  ;;  (let [event (read-event-data filename)
+  ;;        games (:games event)
+  ;;        teams (:teams event)]
+  ;;  (println (create-event-report event)))
   )

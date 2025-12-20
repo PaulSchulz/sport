@@ -21,5 +21,5 @@
   :main ^:skip-aot sporting-fixtures.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :aliases {"test" ["test" "sporting-fixtures.bbl-2025-test"]}
+  :aliases {"test" ["test" "sporting-fixtures.bbl-2025" "sporting-fixtures.bbl-2025-test"]}
   )

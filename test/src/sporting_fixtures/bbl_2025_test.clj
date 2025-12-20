@@ -54,3 +54,55 @@
                     :start-time "2026-01-01T05:00:00Z"}]
       (is (= expected
              (bbl-2025/normalize-fixture raw))))))
+
+(deftest runs-from-score-test
+  (testing "Test parsing scoreboard string for runs"
+    (let [input    "158/9(20)"
+          expected 158]
+      (is (= expected
+             (bbl-2025/runs-from-score input)))))
+  (testing "Test parsing scoreboard string for runs(2)"
+    (let [input    "117/5(10.1/11)"
+          expected 117]
+      (is (= expected
+             (bbl-2025/runs-from-score input)))))
+  )
+
+(comment
+  (deftest result-from-scoreboard-test
+    (testing "Calculate winner from scoreboard"
+      (let [input   {:six "159/9(20)", :str "160/7(19.2)"}
+            expected {:home :six :away :str :home-runs 159 :away-runs 160 :outcome :away-win}]
+        (is (= expected
+               (bbl-2025/result-from-scoreboard input)))))
+    )
+  )
+
+(comment
+  (deftest merge-result-test
+    (testing "Merge game result into data"
+      (let [fixture {:fixture-id 1
+                     :home :sco
+                     :away :six
+                     :start-time "2025-12-14T08:15:00Z"
+                     :venue "Perth Stadium"}
+
+            result {:game 1
+                    :scoreboard {:six "113/5(11)" :sco "117/5(10.1/11)"}
+                    :summary "SCO won by 5 wickets (5 balls left)"}
+
+            expected {:fixture-id 1,
+                      :home :sco,
+                      :away :six,
+                      :start-time "2025-12-14T08:15:00Z",
+                      :venue "Perth Stadium",
+                      :scoreboard {:six "113/5(11)" :sco "117/5(10.1/11)"},
+                      :summary "SCO won by 5 wickets (5 balls left)",
+                      :outcome {:six {:runs 113, :points 0},
+                                :sco {:runs 117, :points 2},
+                                :outcome :sco}}
+            ]
+        (is (= (bbl-2025/merge-result fixture result)
+               expected))))
+    )
+  )
