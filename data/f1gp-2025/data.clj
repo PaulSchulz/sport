@@ -44,9 +44,18 @@
             :notes "Replaced Jack Doohan from the Imola, Italiam GP"
             }
            {:id :dun :name "Alex Dunne"            :number 4 :team :mcl :country :irl
-            :notes "Was run in Norris's car during Practice 1 in Austrian GP"
+            :notes "Was run in Norris's car during Practice 1 at Austrian GP"
+            :wiki "https://en.wikipedia.org/wiki/Alex_Dunne"
             }
-           ]
+           {:id :aro :name "Paul Aron"             :number 17 :team :nil :country :est
+            :notes ""
+            :wiki "https://en.wikipedia.org/wiki/Paul_Aron"
+           }
+           {:id :lin :name "Arvid Lindblad"        :number 27 :team :kic :country :gpr
+            :notes "Was in Tsunoda;s care during Practice 1 at British GP"
+            :wiki "https://en.wikipedia.org/wiki/Arvid_Lindblad"
+           }
+ ]
  :results [
            {:round   1
             :name    "Australian Grand Prix"
@@ -435,31 +444,59 @@
 	         :date "6 July"
              :results
              {
-              :nor {:position  1   :time "" :grid  1   :points 25}
-              :pia {:position  2   :time "" :grid  3   :points 18}
-              :lec {:position  3   :time "" :grid  2   :points 15}
-              :ham {:position  4   :time "" :grid  4   :points 12}
-              :rus {:position  5   :time "" :grid  5   :points 10}
-              :law {:position  6   :time "" :grid  6   :points  8}
-              :alo {:position  7   :time "" :grid 11   :points  6}
-              :bor {:position  8   :time "" :grid  8   :points  4}
-              :hul {:position  9   :time "" :grid 20   :points  2}
-              :oco {:position 10   :time "" :grid 17   :points  1}
-              :bea {:position 11   :time "" :grid 15   :points  0}
-              :had {:position 12   :time "" :grid 13   :points  0}
-              :gas {:position 13   :time "" :grid 10   :points  0}
-              :str {:position 14   :time "" :grid 16   :points  0}
-              :col {:pisition 15   :time "" :grid 14   :points  0}
-              :tsu {:position 16   :time "" :grid 18   :points  0}
-              :alb {:position 17   :time :dnf :grid 12   :points  0}
-                :ver {:position 18   :time :dnf :grid  7   :points  0}
-                :ant {:position 19   :time :dnf :grid  9   :points  0}
-                :sai {:position 20   :time :dns :grid :nil :points  0}
-                }
+              :nor {:position  1   :time "" :grid  3   :points 25}
+              :pia {:position  2   :time "" :grid  2   :points 18}
+              :hul {:position  3   :time "" :grid 19   :points 15}
+              :ham {:position  4   :time "" :grid  5   :points 12}
+              :ver {:position  5   :time "" :grid  1   :points 10}
+              :gas {:position  6   :time "" :grid  8   :points  8}
+              :str {:position  7   :time "" :grid 17   :points  6}
+              :alb {:position  8   :time "" :grid 13   :points  4}
+              :alo {:position  9   :time "" :grid  7   :points  2}
+              :rus {:position 10   :time "" :grid  4   :points  1}
+              :bea {:position 11   :time "" :grid 18   :points  0}
+              :sai {:position 12   :time "" :grid  9   :points  0}
+              :oco {:position 13   :time "" :grid 14   :points  0}
+              :lec {:position 14   :time "" :grid  6   :points  0}
+              :tsu {:position 15   :time "" :grid 11   :points  0}
+              :ant {:position 16   :time :dnf :grid 10   :points  0}
+              :had {:position 17   :time :dnf :grid 12   :points  0}
+              :bor {:position 18   :time :dnf :grid 16   :points  0}
+              :law {:position 19   :time :dnf :grid 15   :points  0}
+              :col {:pisition 20   :time :dnf :grid 20   :points  0}
+              }
              :notes []
-            }
+             }
 
-           {:round 13 :name "Belgian Grand Prix" ￼      :circuit "Circuit de Spa-Francorchamps, Stavelot"     :date "27 July"}
+            {:round 13
+             :name "Belgian Grand Prix"
+             :circuit "Circuit de Spa-Francorchamps, Stavelot"
+             :date "27 July"
+             :results
+             {
+              :nor {:position  1   :time "" :grid  3   :points 25}
+              :pia {:position  2   :time "" :grid  2   :points 18}
+              :hul {:position  3   :time "" :grid 19   :points 15}
+              :ham {:position  4   :time "" :grid  5   :points 12}
+              :ver {:position  5   :time "" :grid  1   :points 10}
+              :gas {:position  6   :time "" :grid  8   :points  8}
+              :str {:position  7   :time "" :grid 17   :points  6}
+              :alb {:position  8   :time "" :grid 13   :points  4}
+              :alo {:position  9   :time "" :grid  7   :points  2}
+              :rus {:position 10   :time "" :grid  4   :points  1}
+              :bea {:position 11   :time "" :grid 18   :points  0}
+              :sai {:position 12   :time "" :grid  9   :points  0}
+              :oco {:position 13   :time "" :grid 14   :points  0}
+              :lec {:position 14   :time "" :grid  6   :points  0}
+              :tsu {:position 15   :time "" :grid 11   :points  0}
+              :ant {:position 16   :time :dnf :grid 10   :points  0}
+              :had {:position 17   :time :dnf :grid 12   :points  0}
+              :bor {:position 18   :time :dnf :grid 16   :points  0}
+              :law {:position 19   :time :dnf :grid 15   :points  0}
+              :col {:pisition 20   :time :dnf :grid 20   :points  0}
+              }
+             }
+
            {:round 14 :name "Hungarian Grand Prix"	￼    :circuit "Hungaroring, Mogyoród"                      :date "3 August"}
            {:round 15 :name "Dutch Grand Prix"	￼        :circuit "Circuit Zandvoort, Zandvoort"               :date "31 August"}
            {:round 16 :name "Italian Grand Prix" ￼      :circuit "Monza Circuit, Monza"	                   :date "7 September"}
