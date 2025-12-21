@@ -1,0 +1,11 @@
+{:sco {:name "Perth Scorchers"}
+ :six {:name "Sydney Sixers"}
+ :str {:name "Adelaide Strikers"}
+ :hea {:name "Brisbane Heat"}
+ :hur {:name "Hobart Hurricanes"}
+ :ren {:name "Melbourne Renegades"}
+ :sta {:name "Melbourne Stars"}
+ :thu {:name "Sydney Thunder"}
+ :tba {:name "To be announced"
+       :placeholder? true}
+ }

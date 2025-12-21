@@ -1,0 +1,51 @@
+;; Game results
+;; Teams
+;; :sco - Perth Scorchers
+;; :six - Sydney Sixers
+;; :str - Adelaide Strikers
+;; :hea - Brisbane Heat
+;; :hur - Hobart Hurracanes
+;; :ren - Melbourne Renegades
+;; :sta - Melbourne Stars
+;; :thu - Sydney Thunder
+
+(
+ {:game 1
+  :scoreboard {:six "113/5(11)" :sco "117/5(10.1/11)"}
+  :summary "SCO won by 5 wickets (5 balls left)"
+  }
+ {:game 2
+  :scoreboard {:ren "212/5(20)" :hea "198/8(20)"}
+  :summary "REN won by 14 runs"
+  }
+ {:game 3
+  :scoreboard {:thu "180/6(20)" :hur "181/6(19.5)"}
+  :summary "HUR won by 4 wickets (1 ball left)"
+  }
+ {:game 4
+  :scoreboard {:six "159/9(20)" :str "160/7(19.2)"}
+  :summary "STR won by 3 wickets (4 balls left)"
+  }
+ {:game 5
+  :scoreboard {:hur "158/9(20)" :sta "159/2(16)"}
+  :summary "STA won by 8 wickets (24 balls left)"
+  }
+ {:game 6
+  :scoreboard {:sco "257/6(20)" :hea "258/2(19.5)"}
+  :summary "HEA won by 8 wickets (1 ball left)"
+  }
+ {:game 7
+  :scoreboard {:six "198/5(20)" :thu "151(19.1)"}
+  :summary "SIX won by 47 run"
+  }
+ {:game 8
+  :scoreboard {:ren "145/9(20)" :hur "149/3(13.5)"}
+  :summary "HUR won by 7 wickets (37 balls left)"
+  }
+ ;; (comment
+ ;;   {:game n
+ ;;    :scoreboard {:six "" :sco ""}
+ ;;    :summary ""
+ ;;    }
+ )
+ )
