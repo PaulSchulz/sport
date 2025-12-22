@@ -494,13 +494,22 @@
 (defn ladder-report [fixtures results teams]
   (let [ladder (build-ladder fixtures results teams)]
     (str
-     "Team                  P  W  L  T Pts     NRR\n"
-     "--------------------------------------------\n"
+     "Team                     P  W  L  T Pts     NRR\n"
+     "-----------------------------------------------\n"
      (->> ladder
           with-nrr
           ladder-rows
-          (map render-ladder-row)
+          (map-indexed
+           (fn [i row]
+             (format "%2s %s"
+                     (inc i)
+                     (render-ladder-row row)
+                     )))
           (clojure.string/join "\n")))))
+
+(defn save-ladder-report []
+  (spit "data/bbl-2025/ladder.txt"
+        (ladder-report data results teams)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Query and Report Layer
@@ -528,11 +537,11 @@
         fixtures-by-date
         (map render-fixture)
         (clojure.string/join "\n"))))
-
+                                        ;
 (defn save-fixtures-report []
   (spit "data/bbl-2025/fixtures.txt"
         (fixtures-report data)))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Working with results
 (comment
   ;; Fixture record
@@ -940,10 +949,13 @@
     )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  (defn -main []
-    (help)
-    ;;  (let [event (read-event-data filename)
-    ;;        games (:games event)
-    ;;        teams (:teams event)]
-    ;;  (println (create-event-report event)))
-    )
+(defn -main []
+  (help)
+  ;;  (let [event (read-event-data filename)
+  ;;        games (:games event)
+  ;;        teams (:teams event)]
+  ;;  (println (create-event-report event)))
+  (println (fixtures-report data))
+  (println)
+  (println (ladder-report data results teams))
+  )
