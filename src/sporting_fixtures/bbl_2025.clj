@@ -27,10 +27,23 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn help []
   (println
-   (str/join "\n" [
-                   "--- Well done, you got here. ---"
-                   ]
-             ))
+   (str/join
+    "\n" [
+          ";; --- Well done, you got here. ---"
+          ";; To display a game fixture report"
+          "(println (fixtures-report data))"
+          ""
+          ";; To save this report to a file"
+          "(save-fixtures-report)"
+          ""
+          ";; To display a ladder report"
+          "(println (ladder-report data results teams))"
+          ""
+          ";; To save this report to a file"
+          "(save-ladder-report)"
+          ""
+          ]
+    ))
   ;; Process downloaded file
   ;; Use from command line with:
   (println "lein run -m sporting-fixtures.bbl-2025")
