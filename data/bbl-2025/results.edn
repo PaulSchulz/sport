@@ -42,6 +42,14 @@
   :scoreboard {:ren "145/9(20)" :hur "149/3(13.5)"}
   :summary "HUR won by 7 wickets (37 balls left)"
   }
+ {:game 9
+  :scoreboard {:thu "193/4(20)" :hea "159/6(20)"}
+  :summary "THU won by 24 runs"
+  }
+ {:game 10
+  :scoreboard {:str "155/8(20)" :sta "161/4(18.1)"}
+  :summary "STA won by 6 wickets (11 balls left)"
+  }
  ;; (comment
  ;;   {:game n
  ;;    :scoreboard {:six "" :sco ""}
