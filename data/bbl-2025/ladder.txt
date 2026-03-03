@@ -1,0 +1,10 @@
+Team                  P  W  L  T Pts     NRR
+--------------------------------------------
+Hobart Hurricanes     3  2  1  0   4  +0.450
+Melbourne Stars       1  1  0  0   2  +2.037
+Sydney Sixers         3  1  2  0   2  +0.421
+Perth Scorchers       2  1  1  0   2  +0.365
+Adelaide Strikers     1  1  0  0   2  +0.326
+Brisbane Heat         2  1  1  0   2  -0.277
+Melbourne Renegades   2  1  1  0   2  -1.331
+Sydney Thunder        2  0  2  0   0  -1.064

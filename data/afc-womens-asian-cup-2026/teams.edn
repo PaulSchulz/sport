@@ -1,0 +1,15 @@
+{:aus {:name "Australia"}
+ :kor {:name "Korea Republic"}
+ :irn {:name "Islamic Republic of Iran"}
+ :phi {:name "Philippines"}
+
+ :prk {:name "DPR Korea"}
+ :chn {:name "China"}
+ :ban {:name "Bangladesh"}
+ :uzb {:name "Uzbekistan"}
+
+ :jpn {:name "Japan"}
+ :vie {:name "Vietnam"}
+ :ind {:name "India"}
+ :tpe {:name "Chinese Taipei"}
+ }

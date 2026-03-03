@@ -15,6 +15,7 @@
             )
   (:import
    [java.time ZonedDateTime ZoneId]
+   [java.time Instant]
    [java.time.format DateTimeFormatter])
   (:gen-class)
   )
@@ -46,21 +47,16 @@
     ))
   ;; Process downloaded file
   ;; Use from command line with:
-  (println "lein run -m sporting-fixtures.bbl-2025")
-  )
-;;
-;; Development
-;;   (require '[sporting-fixtures.bbl-2025 :as 'bbl])
-;;   (ns sporting-fixtures.bbl)
-;;
-;; or
-;;   (ns sporting-fixtures.bbl)
-;;   (load "bbl")
-;;   (use 'sporting-fixtures.afl)
-;;   (use 'clojure.core)
-;;   (clojure.pprint/pprint (read-event-data filename))
-;;   (clojure.pprint/pprint (rest (reduce conj [] (read-event-data filename)) ))
-;;
+  (println
+   (str/join
+    "\n" [
+          ";; From the command line"
+          "lein run -m sporting-fixtures.bbl-2025"
+          ""
+          ";; Printing"
+          "lein run -m sporting-fixtures.bbl-2025 | enscript -B -f Courier9 | lp"
+          ]
+    )))
 
 (def event-name   "bbl-2025")
 (def event-data   "data/")
@@ -83,6 +79,9 @@
                   (ZoneId/systemDefault))
         fmt      (DateTimeFormatter/ofPattern "EEE dd hh:mm a")]
     (.format local fmt)))
+
+(defn ->instant [iso]
+  (Instant/parse iso))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; From ChatGPT
@@ -154,11 +153,12 @@
 (def data
   (normalize-fixtures (read-data)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Results
 (def results
   (read-string (slurp "data/bbl-2025/results.edn")))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Query Layer
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Extract runs from scoreboard string
 (defn runs-from-score [s]
   (when s
@@ -179,6 +179,343 @@
 (deftest ^:test balls-from-score-test
   (is (= 61 (balls-from-score "117/5(10.1/11)")))
   (is (= 0   (balls-from-score "0/0(0)"))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Report Layer
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Results chart
+(defn ruler [n]
+  (str
+   (apply str (map #(quot % 10) (range 1 (inc n))))
+   ;; "\n"
+   ;; (apply str (map #(mod % 10) (range 1 (inc n))))
+   ))
+
+(deftest ^:test ruler-test
+  (testing "Debugging ruler"
+    (let [input 20
+          result "00000000011111111112"]
+      (is (= (ruler input)
+             result)))))
+
+(defn results-by-game
+  [results]
+  (into {}
+        (map (juxt :game identity))
+        results))
+
+(deftest ^:test results-by-game-test
+  (testing "Index results by game number in a map"
+    (let [input [{:game 1,
+                  :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+                  :summary "SCO won by 5 wickets (5 balls left)"}
+                 {:game 2,
+                  :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
+                  :summary "REN won by 14 runs"}]
+          result  {1 {:game 1,
+                      :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+                      :summary "SCO won by 5 wickets (5 balls left)"},
+                   2 {:game 2,
+                      :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
+                      :summary "REN won by 14 runs"}}]
+      (is (= (results-by-game input)
+             result)))))
+
+;; Pull out game statistics from scoreboard
+;; Needs to be given home and away teams as result data is stored in an unordered
+;; map.
+;; This could probably be merged/used in 'delta-from-game' (first step)
+(defn stats-from-game [home away {:keys [scoreboard]}]
+  (cond
+    (nil? scoreboard) {:home home :away away}
+    :else
+    (let [teams (keys scoreboard)]
+      (when-not (some #{:tbd} teams)
+        (let [[[home home-score]
+               [away away-score]] (seq scoreboard)
+              home-runs (runs-from-score home-score)
+              away-runs (runs-from-score away-score)
+              home-balls (balls-from-score home-score)
+              away-balls (balls-from-score away-score)
+              winner (cond (> home-runs away-runs) home
+                           (< home-runs away-runs) away
+                           :else nil)
+              ]
+          {:home home
+           :away away
+           :home-runs home-runs
+           :away-runs away-runs
+           :home-balls home-balls
+           :away-balls away-balls
+           :winner winner}))
+      )))
+
+(deftest ^:test stats-from-game-test
+  (testing "Pull out game statistics from scoreboard"
+    (let [home :six
+          away :sco
+          result {:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"}}
+          output {:home :six, :away :sco,
+                  :home-runs 113, :away-runs 117,
+                  :home-balls 66, :away-balls 61
+                  :winner :sco}]
+      (is (= (stats-from-game home away result)
+             output)))))
+
+;; Use fixture details to lookup home and away teams
+(defn get-stats-from-fixture-result [fixture result]
+  (let [home (:home fixture)
+        away (:away fixture)]
+    (stats-from-game home away result)))
+
+(deftest ^:test get-stats-from-fixture-result-test
+  (testing "get statistics from fixture"
+    (let [fixture {:home :six :away :sco}
+          results {:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"}}
+          result {:home :six, :away :sco,
+                  :home-runs 113, :away-runs 117,
+                  :home-balls 66, :away-balls 61
+                  :winner :sco}
+          ]
+      (is (= (get-stats-from-fixture-result fixture results)
+             result)))))
+
+(defn lookup-fixture-result [fixture results]
+  (let [fixture-id (:fixture-id fixture)
+        results-by-id (results-by-game results)
+        result (get results-by-id fixture-id)]
+
+    result
+    ))
+
+(deftest ^:test lookup-fixture-result-test
+  (testing "Lookup result from a fixture"
+    (let [fixture {:fixture-id 1,
+                   :home :sco, :away :six,
+                   :start-time "2025-12-14T08:15:00Z", :venue "Perth Stadium"}
+          results [{:game 1,
+                    :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+                    :summary "SCO won by 5 wickets (5 balls left)"}]
+          result (first results)
+          ]
+      (is (= (lookup-fixture-result fixture results)
+             result)))))
+
+;; Width of game table cell
+(def game-width 1)
+
+;; Create results report header
+(defn results-header [games]
+  (let [label-width game-width
+        total-width (* game-width (count games))]
+    (str
+     (format "%-6s|" "")
+     (apply str
+            (map-indexed
+             (fn [i _]
+               ;; (format (str "%" game-width "d") (inc i))
+               (if (= 0 (quot (inc i) 10))
+                 " "
+                 (format "%1d" (quot (inc i) 10) )))
+             games))
+     "\n"
+     (format "%-6s|" "")
+     (apply str
+            (map-indexed
+             (fn [i _]
+               (format (str "%" game-width "d") (mod (inc i) 10)))
+             games))
+     "\n"
+     (format "%-6s|" "Team")
+     (apply str
+            (repeat total-width "-"))
+     "\n")))
+
+(deftest ^:test results-header-test
+  (testing "Result report header format"
+    (let [input [{:game 1,
+                  :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+                  :summary "SCO won by 5 wickets (5 balls left)"}
+                 {:game 2,
+                  :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
+                  :summary "REN won by 14 runs"}]
+          result "      |  1  2\nTeam  |--\n"]
+      (is (= (results-header input)
+             result)))))
+
+;; Generate result string to display in cell
+;; Update
+(defn result-cell [team stats]
+  (cond
+    (or (= team (:home stats)) (= team (:away stats)))
+    (if (not (nil? (:winner stats)))
+      (if (= team (:winner stats)) "X" "+" )
+      "=")
+
+    :else "-"
+    )
+  )
+
+(deftest ^:test result-cell-test
+  (testing "Generate result string to display in cell 1"
+    (let [team :sco
+          stats (stats-from-game :six :sco {:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"}})
+          output "--*"]
+      (is (= (result-cell team stats)
+             output))))
+  (testing "Generate result string to display in cell 2"
+    (let [team :six
+          stats (stats-from-game :six :sco {:scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"}})
+          output "--+"]
+      (is (= (result-cell team stats)
+             output)))))
+
+(defn team-results-row [team fixtures results]
+  (let [results-by-id (results-by-game results)]
+    (str
+     (format "%-6s|" (str/upper-case (name team)))
+     (apply str
+            (map #(let [fixture %
+                        result (lookup-fixture-result fixture results)
+                        stats (get-stats-from-fixture-result fixture result)]
+                    (result-cell team stats)
+                    )
+                 fixtures)))))
+
+(deftest ^:test team-results-row-test
+  (testing "Row of game results"
+    (let [team    :sco
+          fixtures [{:fixture-id 1,
+                     :home :sco, :away :six,
+                     :start-time "2025-12-14T08:15:00Z", :venue "Perth Stadium"}
+                    {:fixture-id 2,
+                     :home :ren, :away :hea,
+                     :start-time "2025-12-15T08:15:00Z", :venue "GMHBA Stadium"}]
+          results [{:game 1,
+                    :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+                    :summary "SCO won by 5 wickets (5 balls left)"}]
+          output  "SCO   |--*---"
+          ]
+      (is (= (team-results-row team fixtures results)
+             output)))))
+
+(defn results-report [fixtures results teams]
+  (let [fixtures (sort-by :start-time fixtures)]
+    (str
+     (results-header fixtures)
+     (apply str
+            (for [[team {:keys [placeholder?]}] teams
+                  :when (not placeholder?)]
+              (str (team-results-row team fixtures results) "\n")
+              ;;(println team)
+              )))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Games Report
+(defn fixtures-by-date [fixtures]
+  (sort-by :start-time fixtures))
+
+(defn unplayed? [fixture]
+  (nil? (:home-score fixture)))
+
+(defn team-name [team-id]
+  (get-in teams [team-id :name] (name team-id)))
+
+(defn involves-team?
+  [team {:keys [home away]}]
+  (or (= team home)
+      (= team away)))
+
+;; External: Uses 'results' data loaded above
+(defn render-fixture
+  [{:keys [fixture-id start-time home away venue]}]
+  (let [result ((results-by-game results) fixture-id)]
+    (format " %2s%1s %s  %-20s vs %-20s  %s"
+            fixture-id
+            (if result "-" " ")
+            (localtime start-time)
+            (team-name home)
+            (team-name away)
+            venue)))
+
+(defn fixtures-report [fixtures]
+  (str
+   "BBL 2025 Fixtures\n"
+   "=================\n\n"
+   (->> fixtures
+        fixtures-by-date
+        (map render-fixture)
+        (clojure.string/join "\n"))))
+                                        ;
+(defn save-fixtures-report []
+  (spit "data/bbl-2025/fixtures.txt"
+        (fixtures-report data)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Find next game to be played
+(defn next-fixture [fixtures]
+  (let [now (Instant/now)]
+    (->> fixtures
+         (filter unplayed?)
+         (filter #(-> (:start-time %)
+                      ->instant
+                      (.isAfter now)))
+         (sort-by #(->instant (:start-time %)))
+         first)))
+
+(deftest ^:test next-fixture-test
+  (let [fixtures [{:fixture-id 1
+                   :start-time "2099-01-01T00:00:00Z"
+                   :home :six
+                   :away :sco}
+                  {:fixture-id 2
+                   :start-time "2099-01-02T00:00:00Z"
+                   :home :heat
+                   :away :stars}]]
+    (is (= 1 (:fixture-id (next-fixture fixtures))))))
+
+(defn render-next-fixture [{:keys [start-time home away venue]}]
+  (format "Next game:\n\n%s\n%s vs %s\n%s"
+          (localtime start-time)
+          (team-name home)
+          (team-name away)
+          venue))
+
+(defn next-game-report [games]
+  (if-let [game (next-fixture games)]
+    (render-next-fixture game)
+    "No upcoming games."))
+
+;; fixture for next team
+(defn next-fixture-for-team [fixtures team]
+  (let [now (java.time.Instant/now)]
+    (->> fixtures
+         (filter unplayed?)
+         (filter #(involves-team? team %))
+         (filter #(-> (:start-time %)
+                      ->instant
+                      (.isAfter now)))
+         (sort-by #(->instant (:start-time %)))
+         first)))
+
+(defn render-next-fixture-for-team [fixture team]
+  (let [{:keys [start-time home away venue]} fixture
+        opponent (if (= team home) away home)]
+    (format "Next match for %s:\n\n%s\n%s vs %s\n%s"
+            (team-name team)
+            (localtime start-time)
+            (team-name home)
+            (team-name away)
+            venue)))
+
+(defn next-match-for-team-report [fixtures team]
+  (if-let [fixture (next-fixture-for-team fixtures team)]
+    (render-next-fixture-for-team fixture team)
+    (format "No upcoming matches for %s."
+            (team-name team))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Results / Ladder Report
 
 ;; Initialise Ladder data
 (defn empty-ladder [teams]
@@ -321,16 +658,15 @@
 
 ;; Apply a single delta
 (defn apply-delta [ladder {:keys [team] :as delta}]
-(if (contains? ladder team)
-  (reduce-kv
-   (fn [l k v]
-     (if (= k :team)
-       l
-       (update-in l [team k] (fnil + 0) v)))
-   ladder
-   delta)
-  ladder))  ;; silently ignore placeholder / unknown teams
-
+  (if (contains? ladder team)
+    (reduce-kv
+     (fn [l k v]
+       (if (= k :team)
+         l
+         (update-in l [team k] (fnil + 0) v)))
+     ladder
+     delta)
+    ladder))  ;; silently ignore placeholder / unknown teams
 
 (deftest apply-delta-test
   (testing "Apply ladder delta to ladder record"
@@ -365,8 +701,8 @@
 
 ;; Apply all deltas in an array to the ladder data
 (defn apply-deltas
-[ladder deltas]
-(reduce apply-delta ladder deltas))
+  [ladder deltas]
+  (reduce apply-delta ladder deltas))
 
 (deftest apply-deltas-test
   (testing "Apply multiple deltas to ladder data"
@@ -511,36 +847,6 @@
   (spit "data/bbl-2025/ladder.txt"
         (ladder-report data results teams)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Query and Report Layer
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn fixtures-by-date
-  [fixtures]
-  (sort-by :start-time fixtures))
-
-(defn team-name [team-id]
-  (get-in teams [team-id :name] (name team-id)))
-
-(defn render-fixture
-  [{:keys [start-time home away venue]}]
-  (format "%s  %-20s vs %-20s  (%s)"
-          (localtime start-time)
-          (team-name home)
-          (team-name away)
-          venue))
-
-(defn fixtures-report [fixtures]
-  (str
-   "BBL 2025 Fixtures\n"
-   "=================\n\n"
-   (->> fixtures
-        fixtures-by-date
-        (map render-fixture)
-        (clojure.string/join "\n"))))
-                                        ;
-(defn save-fixtures-report []
-  (spit "data/bbl-2025/fixtures.txt"
-        (fixtures-report data)))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Working with results
 (comment
@@ -571,108 +877,108 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ;; Create results table
-  (defn event-games-table-header []
+;; Create results table
+(defn event-games-table-header []
+  (str
+   (format " %2s | %-16s | %-10s | %-26s | %s"
+           "Id"
+           "Time"
+           "Teams"
+           "Score"
+           "Result")
+   "\n"
+   (str/join (repeat 78 "-"))
+   "\n"
+   )
+  )
+
+;; Assumes 'result' contains points
+(defn calculate-game-statistics [game]
+  (let [home   (:home   game)
+        away   (:away   game)
+        result (:result game)]
+
+    (if (and home away result)
+      (let [home-points (home result)
+            away-points (away result)]
+        (if (and home-points away-points)
+          (cond
+            (> home-points away-points) {home {:w 1 :l 0 :d 0 :pf home-points :pa away-points}
+                                         away {:w 0 :l 1 :d 0 :pf away-points :pa home-points}}
+            (< home-points away-points) {home {:w 0 :l 1 :d 0 :pf home-points :pa away-points}
+                                         away {:w 1 :l 0 :d 0 :pf away-points :pa home-points}}
+            :else {home {:w 0 :l 0 :d 1 :pf home-points :pa away-points}
+                   away {:w 0 :l 0 :d 1 :pf away-points :pa home-points}}
+            )
+          nil))
+      nil)))
+
+;;
+(defn event-games-table [event]
+  (let [games (:games event)
+        teams (:teams event)
+        ;;        team-by-id    (into {} (for [[k v] teams] [k (:name v)]))
+        ;;        team-by-name  (clojure.set/map-invert team-by-id)]
+        ]
     (str
-     (format " %2s | %-16s | %-10s | %-26s | %s"
-             "Id"
-             "Time"
-             "Teams"
-             "Score"
-             "Result")
-     "\n"
-     (str/join (repeat 78 "-"))
-     "\n"
-     )
-    )
+     (event-games-table-header)
+     (str/join
+      "\n"
+      (map-indexed
+       (fn [i x]
+         (let [id   (inc i)
+               home (:home x)
+               away (:away x)
+               ]
+           (str
+            (if (= id 1)  (str "----- Rounds ----------" (str/join (repeat 55 "-")) "\n") "")
+            (if (= id 57) (str "----- Finals ----------" (str/join (repeat 55 "-")) "\n") "")
+            ;; (format " %2d | %s | %-10s | %-12s  %-12s | %s %s"
+            (format " %2d | %s | %-10s | %-20s  %-20s | %s %s"
+                    id
+                    ;;(:id x)
+                    ;;(localtime (:time x))
+                    (:time x)
+                    (str (if home
+                           (str/upper-case (name home)) "---")
+                         " vs "
+                         (if away
+                           (str/upper-case (name away)) "---"))
 
-  ;; Assumes 'result' contains points
-  (defn calculate-game-statistics [game]
-    (let [home   (:home   game)
-          away   (:away   game)
-          result (:result game)]
+                    (if (and (:score x)
+                             (not= (:score x) {}))
+                      (home (:score x))
+                      "_-___/__._")
 
-      (if (and home away result)
-        (let [home-points (home result)
-              away-points (away result)]
-          (if (and home-points away-points)
-            (cond
-              (> home-points away-points) {home {:w 1 :l 0 :d 0 :pf home-points :pa away-points}
-                                           away {:w 0 :l 1 :d 0 :pf away-points :pa home-points}}
-              (< home-points away-points) {home {:w 0 :l 1 :d 0 :pf home-points :pa away-points}
-                                           away {:w 1 :l 0 :d 0 :pf away-points :pa home-points}}
-              :else {home {:w 0 :l 0 :d 1 :pf home-points :pa away-points}
-                     away {:w 0 :l 0 :d 1 :pf away-points :pa home-points}}
-              )
-            nil))
-        nil)))
+                    (if (and (:score x)
+                             (not= (:score x) {}))
+                      (away (:score x))
+                      "_-___/__._")
 
-  ;;
-  (defn event-games-table [event]
-    (let [games (:games event)
-          teams (:teams event)
-          ;;        team-by-id    (into {} (for [[k v] teams] [k (:name v)]))
-          ;;        team-by-name  (clojure.set/map-invert team-by-id)]
-          ]
-      (str
-       (event-games-table-header)
-       (str/join
-        "\n"
-        (map-indexed
-         (fn [i x]
-           (let [id   (inc i)
-                 home (:home x)
-                 away (:away x)
-                 ]
-             (str
-              (if (= id 1)  (str "----- Rounds ----------" (str/join (repeat 55 "-")) "\n") "")
-              (if (= id 57) (str "----- Finals ----------" (str/join (repeat 55 "-")) "\n") "")
-              ;; (format " %2d | %s | %-10s | %-12s  %-12s | %s %s"
-              (format " %2d | %s | %-10s | %-20s  %-20s | %s %s"
-                      id
-                      ;;(:id x)
-                      ;;(localtime (:time x))
-                      (:time x)
-                      (str (if home
-                             (str/upper-case (name home)) "---")
-                           " vs "
-                           (if away
-                             (str/upper-case (name away)) "---"))
-
-                      (if (and (:score x)
-                               (not= (:score x) {}))
-                        (home (:score x))
-                        "_-___/__._")
-
-                      (if (and (:score x)
-                               (not= (:score x) {}))
-                        (away (:score x))
-                        "_-___/__._")
-
-                      (if (and (:result x)
-                               (not= (:result x) {}))
-                        (home (:result x))
-                        "-")
-                      (if (and (:result x)
-                               (not= (:result x) {}))
-                        (away (:result x))
-                        "-")
-                      ;;(conj x {:home home-id} {:away away-id})
+                    (if (and (:result x)
+                             (not= (:result x) {}))
+                      (home (:result x))
+                      "-")
+                    (if (and (:result x)
+                             (not= (:result x) {}))
+                      (away (:result x))
+                      "-")
+                    ;;(conj x {:home home-id} {:away away-id})
                                         ; (calculate-game-statistics x)
 
-                      ))))
-         games)
-        )
-       "\n"
-       (str (str/join "" (repeat 78 "-")) "\n")
-       )))
+                    ))))
+       games)
+      )
+     "\n"
+     (str (str/join "" (repeat 78 "-")) "\n")
+     )))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  (defn event-games-table-statistics [event]
-    (let [games (:games event)
-          teams (:teams event)]
-      (str
-       (str/join
+(defn event-games-table-statistics [event]
+  (let [games (:games event)
+        teams (:teams event)]
+    (str
+     (str/join
       "\n"
       (map-indexed
        (fn [i x]
@@ -693,115 +999,115 @@
       ))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ;; statistics - Map of team statistics
-  ;; update     - Array with 'team id' and 'statistics update'
-  ;; Calculate the statistics from the games of an event
+;; statistics - Map of team statistics
+;; update     - Array with 'team id' and 'statistics update'
+;; Calculate the statistics from the games of an event
 
-  ;; Return statistical data for each game.
-  ;; Format of a vecter with one entry per game, with a map of home and
-  ;; away team points.
-  (defn calculate-statistics [games]
-    (map calculate-game-statistics games))
+;; Return statistical data for each game.
+;; Format of a vecter with one entry per game, with a map of home and
+;; away team points.
+(defn calculate-statistics [games]
+  (map calculate-game-statistics games))
 
-  ;;
-  (defn reduce-statistics [stats]
-    (reduce (fn [val coll] (reduce conj val coll))
-            [] stats)
-    )
+;;
+(defn reduce-statistics [stats]
+  (reduce (fn [val coll] (reduce conj val coll))
+          [] stats)
+  )
 
-  ;; merge
-  ;; merge-with
-  ;;(reduce into [] stats)
+;; merge
+;; merge-with
+;;(reduce into [] stats)
 
-  ;;(defn create-statistics-updates [games]
-  ;;  (apply merge-with + games)
-  ;;  )
+;;(defn create-statistics-updates [games]
+;;  (apply merge-with + games)
+;;  )
 
-  ;; TODO - Need to fix this to use new statistics format (map)
-  ;; Apply update to statistics
-  ;;   statistics - is a mapped by team name
-  ;;   update - eg. (teamid
-  (defn update-statistics [statistics update]
-    (let [team         (nth update 0)
-          stats-update (if (nth update 1)
-                         (nth update 1)
-                         {})
-          stats-old    (if (team statistics)
-                         (team statistics)
-                         {})]
+;; TODO - Need to fix this to use new statistics format (map)
+;; Apply update to statistics
+;;   statistics - is a mapped by team name
+;;   update - eg. (teamid
+(defn update-statistics [statistics update]
+  (let [team         (nth update 0)
+        stats-update (if (nth update 1)
+                       (nth update 1)
+                       {})
+        stats-old    (if (team statistics)
+                       (team statistics)
+                       {})]
 
-      (conj statistics {team (map + stats-old stats-update)}))
-    )
+    (conj statistics {team (map + stats-old stats-update)}))
+  )
 
-  (defn event-statistics [games]
-    (reduce update-statistics {}
-            (reduce-statistics (calculate-statistics games))))
+(defn event-statistics [games]
+  (reduce update-statistics {}
+          (reduce-statistics (calculate-statistics games))))
 
-  (defn stats-separator []
-    "------+----+---------+------------+---------------------------\n"
-    )
+(defn stats-separator []
+  "------+----+---------+------------+---------------------------\n"
+  )
 
-  (defn stats-header []
+(defn stats-header []
+  (str
+   "      |    | Games   | Goals      | Group     Knockout Result\n"
+   " Team | Pt | P/W/L/D | Fr/Ag/Diff | Result    Qual 16  8  4  2\n"
+   (stats-separator)
+   )
+  )
+
+(defn stats-string [team stats results]
+  (format " %3s  | %2d | %1d %1d %1d %1d | %2d %2d %4d | %s"
+          (str/upper-case (name team))
+          (nth stats 0)
+          (nth stats 1)
+          (nth stats 2)
+          (nth stats 3)
+          (nth stats 4)
+          (nth stats 5)
+          (nth stats 6)
+          (nth stats 7)
+          (format "%9s   %s%s%s%s%s"
+                  (if (:group-stage results)
+                    (:group-stage results)
+                    "")
+                  (if (:group results)
+                    (if (= (:group results) "qualified")
+                      " *-"
+                      " +-"
+                      )
+                    " x ")
+                  (if (:qual16 results)
+                    (if (= (:qual16 results) "win")
+                      "-+-"
+                      "-x ")
+                    " . ")
+                  (if (:quarter results)
+                    (if (= (:quarter results) "win")
+                      "-+-"
+                      "-x ")
+                    " . ")
+                  (if (:semi results)
+                    (if (= (:semi results) "win")
+                      "-+-"
+                      "-x ")
+                    " . ")
+                  (if (:final results)
+                    (cond
+                      (= (:final results) "champion")  "-W "
+                      (= (:final results) "runnerup" ) "-o "
+                      (= (:final results) "third" )    "-3 "
+                      (= (:final results) "fourth" )   "-4 "
+                      :else " . "
+                      )
+                    " . ")
+                  )
+          ))
+
+(defn event-stats-table [event]
+  (let [statistics (event-statistics (:games event))
+        results    (:results event)]
     (str
-     "      |    | Games   | Goals      | Group     Knockout Result\n"
-     " Team | Pt | P/W/L/D | Fr/Ag/Diff | Result    Qual 16  8  4  2\n"
-     (stats-separator)
-     )
-    )
-
-  (defn stats-string [team stats results]
-    (format " %3s  | %2d | %1d %1d %1d %1d | %2d %2d %4d | %s"
-            (str/upper-case (name team))
-            (nth stats 0)
-            (nth stats 1)
-            (nth stats 2)
-            (nth stats 3)
-            (nth stats 4)
-            (nth stats 5)
-            (nth stats 6)
-            (nth stats 7)
-            (format "%9s   %s%s%s%s%s"
-                    (if (:group-stage results)
-                      (:group-stage results)
-                      "")
-                    (if (:group results)
-                      (if (= (:group results) "qualified")
-                        " *-"
-                        " +-"
-                        )
-                      " x ")
-                    (if (:qual16 results)
-                      (if (= (:qual16 results) "win")
-                        "-+-"
-                        "-x ")
-                      " . ")
-                    (if (:quarter results)
-                      (if (= (:quarter results) "win")
-                        "-+-"
-                        "-x ")
-                      " . ")
-                    (if (:semi results)
-                      (if (= (:semi results) "win")
-                        "-+-"
-                        "-x ")
-                      " . ")
-                    (if (:final results)
-                      (cond
-                        (= (:final results) "champion")  "-W "
-                        (= (:final results) "runnerup" ) "-o "
-                        (= (:final results) "third" )    "-3 "
-                        (= (:final results) "fourth" )   "-4 "
-                        :else " . "
-                        )
-                      " . ")
-                    )
-            ))
-
-  (defn event-stats-table [event]
-    (let [statistics (event-statistics (:games event))
-          results    (:results event)]
-      (str
-       (stats-header)
+     (stats-header)
      (str/join
       "\n"
       ;;      (map
@@ -816,11 +1122,10 @@
 
       )
      ))
-    )
+  )
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ;; Results chart
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(comment
   (defn results-separator []
     "------+---------------------------------------------------------+-----\n"
     )
@@ -905,57 +1210,62 @@
      )
       )
     )
+  )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ;; The following is required to map the team names to keywords.
-  ;; Need to carry through all elements of the event data structure.
-  (defn remap-event [event]
-    (let [games (:games event)
-          teams (:teams event)
-          team-by-id    (into {} (for [[k v] teams] [k (:name v)]))
-          team-by-name  (clojure.set/map-invert team-by-id)
-          ]
-      {:teams teams
-       :games
-       (map (fn [game]
+;; The following is required to map the team names to keywords.
+;; Need to carry through all elements of the event data structure.
+(defn remap-event [event]
+  (let [games (:games event)
+        teams (:teams event)
+        team-by-id    (into {} (for [[k v] teams] [k (:name v)]))
+        team-by-name  (clojure.set/map-invert team-by-id)
+        ]
+    {:teams teams
+     :games
+     (map (fn [game]
             (let [home-id (team-by-name (:home game))
                   away-id (team-by-name (:away game))]
               (conj game {:home home-id} {:away away-id})))
           games)
-       }
-      ))
+     }
+    ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  (defn create-event-report [event]
-    (println (:title event))
-    (println "From: " (:from (:date event)))
-    (println "To:   " (:to   (:date event)))
-    (println)
-    (println "Games")
-    (println (event-games-table (remap-event event)))
-    (println)
-    ;; Used for debugging
-    ;;  (println "Games Statistics")
-    ;;  (println (event-games-table-statistics (remap-event event)))
-    ;;  (println)
-    (println "Results")
-    (println (event-results-table (remap-event event)))
-    (println)
+(defn create-event-report [event]
+  (println (:title event))
+  (println "From: " (:from (:date event)))
+  (println "To:   " (:to   (:date event)))
+  (println)
+  (println "Games")
+  (println (event-games-table (remap-event event)))
+  (println)
+  ;; Used for debugging
+  ;;  (println "Games Statistics")
+  ;;  (println (event-games-table-statistics (remap-event event)))
+  ;;  (println)
+  (println "Results")
+  ;; (println (event-results-table (remap-event event)))
+  (println)
                                         ;  (println "Statistics")
                                         ;  (println (event-stats-table event))
                                         ;  (println)
                                         ;  (println "Finals")
                                         ;  (println (event-finals-chart event))
-    (println)
-    )
+  (println)
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
-  (help)
+  ;; (help)
   ;;  (let [event (read-event-data filename)
   ;;        games (:games event)
   ;;        teams (:teams event)]
   ;;  (println (create-event-report event)))
-  (println (fixtures-report data))
+  (-> (fixtures-report data) println)
   (println)
-  (println (ladder-report data results teams))
+  (-> (ladder-report data results teams) println)
+  (println)
+  (-> (next-game-report data) println)
+  (println)
+  (-> (next-match-for-team-report data :str) println)
   )

@@ -1,0 +1,13 @@
+({:match 1
+  :scoreboard {:aus 1 :phi 0}
+  }
+ {:match 2
+  :scoreboard {:kor 3 :irn 0}
+  }
+ {:match 3
+  :scoreboard {:prk 3 :uzb 0}
+  }
+ {:match 4
+  :scoreboard {:chn 2 :ban 0}
+  }
+ )

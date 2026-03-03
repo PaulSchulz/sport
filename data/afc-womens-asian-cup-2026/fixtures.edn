@@ -1,0 +1,158 @@
+({:match 1
+  :round 1
+  :group :a
+  :home  :aus
+  :away  :phi
+  :venue :per
+  :time  "Sun  1 Mar 2026 19:30"
+  }
+ {:match 2
+  :round 1
+  :group :a
+  :home  :kor
+  :away  :irn
+  :venue :gcs
+  :time  "Mon  2 Mar 2026 19:30"
+  }
+ {:match 3
+  :round 1
+  :group :b
+  :home :prk
+  :away :uzb
+  :venue :syd
+  :time "Tue  3 Mar 2026 12:30"
+  }
+ {:match 4
+  :round 1
+  :group :b
+  :home  :chn
+  :away  :ban
+  :venue :syd
+  :time  "Tue  3 Mar 2026 18:30"
+  }
+ {:match 5
+  :round 1
+  :group :c
+  :home  :jpn
+  :away  :tpe
+  :venue :prs
+  :time  "Wed  4 Mar 2026 15:30"
+  }
+ {:match 6
+  :round 1
+  :group :c
+  :home  :vie
+  :away  :ind
+  :venue :prs
+  :time  "Wed  4 Mar 2026 21:30"
+  }
+
+ {:match 7
+  :round 2
+  :group :a
+  :home  :phi
+  :away  :kor
+  :venue :gcs
+  :time  "Thu  5 Mar 2026 13:30"
+  }
+ {:match 8
+  :round 2
+  :group :a
+  :home  :irn
+  :away  :aus
+  :venue :gcs
+  :time  "Thu  5 Mar 2026 19:30"
+  }
+ {:match 9
+  :round 2
+  :group :b
+  :home  :ban
+  :away  :prk
+  :venue :syd
+  :time  "Fri  6 Mar 2026 12:30"
+  }
+ {:match 10
+  :round 2
+  :group :b
+  :home  :uzb
+  :away  :chn
+  :venue :syd
+  :time  "Fri  6 Mar 2026 18:30"
+  }
+ {:match 11
+  :round 2
+  :group :c
+  :home  :tpe
+  :away  :vie
+  :venue :prs
+  :time  "Sat  7 Mar 2026 15:30"
+  }
+ {:match 12
+  :round 2
+  :group :c
+  :home  :ind
+  :away  :jpn
+  :venue :prs
+  :time  "Sat  7 Mar 2026 21:30"
+  }
+
+ {:match 13
+  :round 3
+  :group :a
+  :home  :irn
+  :away  :phi
+  :venue :gcs
+  :time  "Sun  8 Mar 2026 19:30"
+  }
+ {:match 14
+  :round 3
+  :group :a
+  :home  :aus
+  :away  :kor
+  :venue :sta
+  :time  "Sun  8 Mar 2026 19:30"
+  }
+ {:match 15
+  :round 3
+  :group :b
+  :home  :ban
+  :away  :uzb
+  :venue :prs
+  :time  "Mon  9 Mar 2026 19:30"
+  }
+ {:match 16
+  :round 3
+  :group :b
+  :home  :prk
+  :away  :chn
+  :venue :syd
+  :time  "Mon  9 Mar 2026 19:30"
+  }
+ {:match 17
+  :round 3
+  :group :c
+  :home  :jpn
+  :away  :vie
+  :venue :prs
+  :time  "Mon 10 Mar 2026 19:30"
+  }
+ {:match 18
+  :round 3
+  :group :c
+  :home  :ind
+  :away  :tpe
+  :venue :syd
+  :time  "Mon 10 Mar 2026 19:30"
+  }
+
+ {:match 19}
+ {:match 20}
+ {:match 21}
+ {:match 22}
+ {:match 23}
+ {:match 24}
+ {:match 25}
+ {:match 26}
+ {:match 27}
+
+ )

@@ -50,10 +50,131 @@
   :scoreboard {:str "155/8(20)" :sta "161/4(18.1)"}
   :summary "STA won by 6 wickets (11 balls left)"
   }
+ {:game 11
+  :scoreboard {:six "144(20)" :sta "145/3(17.3)"}
+  :summary "STA won by 7 wickets (15 balls left)"
+  }
+ {:game 12
+  :scoreboard {:sco "150/8(20)" :hur "153/6(19.3)"}
+  :summary "HUR won by 4 wickets (3 balls left)"
+  }
+ {:game 13
+  :scoreboard {:hea "179/9(20)" :str "172(19.5)"}
+  :summary "HEA won by 7 runs"
+  }
+ {:game 14
+  :scoreboard {:thu "128(20)" :sta "132/1(14)"}
+  :summary "STA won by 9 wickets(36 balls left)"
+  }
+ {:game 15
+  :scoreboard {:ren "162/9(20)" :hur "163/6(19)"}
+  :summary "HUR won by 4 wickets (6 balls left)"
+  }
+ {:game 16
+  :scoreboard {:sco "202/8(20)" :thu "131(17.3)"}
+  :summary "SCO won by 71 runs"
+  }
+ {:game 17
+  :scoreboard {:hea "121(19.4)" :str "125/3(14.1)"}
+  :summary "STR won by 7 wickets (35 balls left)"
+  }
+ {:game 18
+  :scoreboard {:ren "164/9(20)" :six "168/4(19.1)"}
+  :summary "SIX won by 6 wickets (5 balls left)"
+  }
+ {:game 19
+  :scoreboard {:sco "229/3(20)" :hur "189/9(20)"}
+  :summary "SCO won by 40 runs"
+  }
+ {:game 20
+  :scoreboard {:sta "195/6(20)" :hea "199/6(19.4)"}
+  :summary "HEA won by 4 wickets (2 balls left)"
+  }
+ {:game 21
+  :scoreboard {:thu "205/4(20)" :hur "207/4(17.5)"}
+  :summary "HUR won by 6 wickets (13 balls left)"
+  }
+ {:game 22
+  :scoreboard {:sta "173/9(20)" :ren "177/6(19.5)"}
+  :summary "REN won by 4 wickets (1 ball left)"
+  }
+ {:game 23
+  :scoreboard {:sco "153/8(20)" :str "120(18.1)"}
+  :summary "SCO won by 33 runs"
+  }
+ {:game 24
+  :scoreboard {:hea "114/9(20)" :six "118/7(18.4)"}
+  :summary "SIX won by 3 wickets (8 balls left)"
+  }
+ {:game 25
+  :scoreboard {:str "165/8(20)" :thu "159/7(20)"}
+  :summary "STR won by 6 runs"
+  }
+ {:game 26
+  :scoreboard {:sco "127(19.2)" :ren "130/6(20)"}
+  :summary "REN won by 4 wickets (0 balls left)"
+  }
+ {:game 27
+  :scoreboard {:sta "128(19.5)" :six "129/4(17.1)"}
+  :summary "SIX won by 6 wickets (17 balls left)"
+  }
+ {:game 28
+  :scoreboard {:hur "178/6(20)" :str "141/9(20)"}
+  :summary "HUR won by 37 runs"
+  }
+ {:game 29
+  :scoreboard {:thu "180/6(20)" :hea "183/3(16.2)"}
+  :summary "HEA won by 7 wickets (22 balls left)"
+  }
+ {:game 30
+  :scoreboard {:ren "166/7(20)" :sta "170/2(15.5)"}
+  :summary "STA won by 8 wickets (25 balls left)"
+  }
+ {:game 31
+  :scoreboard {:six "0/0(0)" :hur "0/0(0)"}
+  :summary "No result"
+  }
+ {:game 32
+  :scoreboard {:sco "232/4(20)" :str "200/8(20)"}
+  :summary "SCO won by 32 runs"
+  }
+ {:game 33
+  :scoreboard {:ren "170/8(20)" :thu "140/6(15.2/16) Target 140"}
+  :summary "THU won by 4 wickets (4 balls left) (DLS method)"
+  }
+ {:game 34
+  :scoreboard {:str "83(19.3)" :sta "86/4(15.1)"}
+  :summary "STA won by 6 wickets (29 balls left)"
+  }
+ {:game 35
+  :scoreboard {:hur "157/9(20)" :hea "160/8(20)"}
+  :summary "HEA won by 3 runs"
+  }
+ {:game 36
+  :scoreboard {:sco "217/7(20)" :ren "169/7(20)"}
+  :summary "SCO won by 50 runs"
+  }
+ {:game 37
+  :scoreboard {:thu "189/6(20)" :six "191/5(17.2)"}
+  :summary "SIX won by 5 wickets (16 balls left)"
+  }
+ {:game 38
+  :scoreboard {:ren "99(16.5)" :str "100/2(11.5)"}
+  :summary "STR won by 8 wickets (49 balls left)"
+  }
+ {:game 39
+  :scoreboard {:sta "130(18.2)" :sco "134/4(16.5)"}
+  :summary "SCO won by 6 wickets (19 balls left)"
+  }
+ {:game 40
+  :scoreboard {:hea "171/9(20)" :six "177/5(18.4)"}
+  :summary "SIX won by 5 wickets (8 balls left)"
+  }
+
  ;; (comment
- ;;   {:game n
- ;;    :scoreboard {:six "" :sco ""}
+ ;;   {:game na
+ ;;    :scoreboard {}
  ;;    :summary ""
  ;;    }
  )
- )
+)
