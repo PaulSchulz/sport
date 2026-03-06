@@ -10,4 +10,16 @@
  {:match 4
   :scoreboard {:chn 2 :ban 0}
   }
+ {:match 5
+  :scoreboard {:jpn 2 :tpe 0}
+  }
+ {:match 6
+  :scoreboard {:vie 2 :ind 1}
+  }
+ {:match 7
+  :scoreboard {:phi 0 :kor 3}
+  }
+ {:match 8
+  :scoreboard {:irn 0 :aus 4}
+  }
  )

@@ -34,10 +34,9 @@
      ";;   echo \"(round-report-org 16)\" | lein repl"
      ";;"
      (str/join (repeat 78 ";"))
-     ";; bbl-2025"
-     ";; Development"
-     "(require '[sporting-fixtures.bbl-2025 :as bbl-2025])"
-     "(ns sporting-fixtures.bbl-2025)"
+     ";; Current competition: afl-2026"
+     "(require '[sporting-fixtures.afl-2026 :as afl-2026])"
+     "(ns sporting-fixtures.afl-2026)"
      ])))
 
 (defmacro setup []
