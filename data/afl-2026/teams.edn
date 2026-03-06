@@ -1,0 +1,22 @@
+{
+ :adl {:id :adl, :name "Adelaide Crows"},
+ :gee {:id :gee, :name "Geelong Cats"},
+ :wce {:id :wce, :name "West Coast Eagles"},
+ :fre {:id :fre, :name "Fremantle"},
+ :mel {:id :mel, :name "Melbourne"},
+ :nm  {:id :nm, :name "North Melbourne"},
+ :ric {:id :ric, :name "Richmond"},
+ :haw {:id :haw, :name "Hawthorn"},
+ :syd {:id :syd, :name "Sydney Swans"},
+ :gcs {:id :gcs, :name "Gold Coast SUNS"},
+ :stk {:id :stk, :name "St Kilda"},
+ :ess {:id :ess, :name "Essendon"},
+ :wb  {:id :wb, :name "Western Bulldogs"},
+ :bri {:id :bri, :name "Brisbane Lions"},
+ :gws {:id :gws, :name "GWS GIANTS"},
+ :pa  {:id :pa, :name "Port Adelaide"},
+ :col {:id :col, :name "Collingwood"},
+ :car {:id :car, :name "Carlton"},
+ :tba {:id :tba, :name "To be announced",
+       :placeholder? true}
+ }

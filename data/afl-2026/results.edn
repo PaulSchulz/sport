@@ -1,0 +1,8 @@
+;; Result format
+;;
+;;({:game 1
+;;  :scoreboard {:adl "10 6 (66)"  :pa "8 11 (59)"}
+;;  :summary "ADL won by 7 points"
+;; })
+
+()
