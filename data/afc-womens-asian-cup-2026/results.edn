@@ -22,4 +22,34 @@
  {:match 8
   :scoreboard {:irn 0 :aus 4}
   }
+ {:match 9
+  :scoreboard {:ban 0 :prk 5}
+  }
+ {:match 10
+  :scoreboard {:uzb 0 :chn 3}
+  }
+ {:match 11
+  :scoreboard {:tpe 1 :vie 0}
+  }
+ {:match 12
+  :scoreboard {:ind 1 :jpn 11}
+  }
+ {:match 13
+  :scoreboard {:irn 0 :phi 2}
+  }
+ {:match 14
+  :scoreboard {:aus 6 :kor 6}
+  }
+ {:match 15
+  :scoreboard {:ban 0 : uzb 4}
+  }
+ {:match 16
+  :scoreboard {:prk 1 :chn 2}
+  }
+ {:match 17
+  :scoreboard {:jpn 4 :vie 0}
+  }
+ {:match 18
+  :scoreboard {:ind 1 :tpe 3}
+  }
  )

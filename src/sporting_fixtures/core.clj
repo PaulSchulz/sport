@@ -35,6 +35,7 @@
      ";;"
      (str/join (repeat 78 ";"))
      ";; Current competition: afl-2026"
+
      "(require '[sporting-fixtures.afl-2026 :as afl-2026])"
      "(ns sporting-fixtures.afl-2026)"
      ])))
