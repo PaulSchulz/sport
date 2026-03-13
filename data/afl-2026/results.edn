@@ -10,5 +10,7 @@
  {:game 2 :scoreboard {:gcs "19.11(125)" :gee "10.9(69)"}}
  {:game 3 :scoreboard {:gws "19.8(122)"  :haw "14.11(95)"}}
  {:game 4 :scoreboard {:bri "15.16(106)" :wb  "16.15(111)"}}
- {:game 5 :scorebaord {:stk "9.12(61)"   :col "11.12(78)"}}
+ {:game 5 :scoreboard {:stk "9.12(61)"   :col "11.12(78)"}}
+ {:game 6 :scoreboard {:car "10.15{75}"  :ric "9.17(71)"} :stars 5}
+ {:game 7 :scoreboard {:ess "13.5(83)"   :haw "21.19(145)"}}
  )
