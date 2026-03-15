@@ -1,55 +1,22 @@
-({:match 1
-  :scoreboard {:aus 1 :phi 0}
-  }
- {:match 2
-  :scoreboard {:kor 3 :irn 0}
-  }
- {:match 3
-  :scoreboard {:prk 3 :uzb 0}
-  }
- {:match 4
-  :scoreboard {:chn 2 :ban 0}
-  }
- {:match 5
-  :scoreboard {:jpn 2 :tpe 0}
-  }
- {:match 6
-  :scoreboard {:vie 2 :ind 1}
-  }
- {:match 7
-  :scoreboard {:phi 0 :kor 3}
-  }
- {:match 8
-  :scoreboard {:irn 0 :aus 4}
-  }
- {:match 9
-  :scoreboard {:ban 0 :prk 5}
-  }
- {:match 10
-  :scoreboard {:uzb 0 :chn 3}
-  }
- {:match 11
-  :scoreboard {:tpe 1 :vie 0}
-  }
- {:match 12
-  :scoreboard {:ind 1 :jpn 11}
-  }
- {:match 13
-  :scoreboard {:irn 0 :phi 2}
-  }
- {:match 14
-  :scoreboard {:aus 6 :kor 6}
-  }
- {:match 15
-  :scoreboard {:ban 0 : uzb 4}
-  }
- {:match 16
-  :scoreboard {:prk 1 :chn 2}
-  }
- {:match 17
-  :scoreboard {:jpn 4 :vie 0}
-  }
- {:match 18
-  :scoreboard {:ind 1 :tpe 3}
-  }
+({:match  1 :scoreboard {:aus 1 :phi 0}}
+ {:match  2 :scoreboard {:kor 3 :irn 0}}
+ {:match  3 :scoreboard {:prk 3 :uzb 0}}
+ {:match  4 :scoreboard {:chn 2 :ban 0}}
+ {:match  5 :scoreboard {:jpn 2 :tpe 0}}
+ {:match  6 :scoreboard {:vie 2 :ind 1}}
+ {:match  7 :scoreboard {:phi 0 :kor 3}}
+ {:match  8 :scoreboard {:irn 0 :aus 4}}
+ {:match  9 :scoreboard {:ban 0 :prk 5}}
+ {:match 10 :scoreboard {:uzb 0 :chn 3}}
+ {:match 11 :scoreboard {:tpe 1 :vie 0}}
+ {:match 12 :scoreboard {:ind 1 :jpn 11}}
+ {:match 13 :scoreboard {:irn 0 :phi 2}}
+ {:match 14 :scoreboard {:aus 6 :kor 6}}
+ {:match 15 :scoreboard {:ban 0 :uzb 4}}
+ {:match 16 :scoreboard {:prk 1 :chn 2}}
+ {:match 17 :scoreboard {:jpn 4 :vie 0}}
+ {:match 18 :scoreboard {:ind 1 :tpe 3}}
+ {:match 19 :scoreboard {:aus 2 :prk 1}}
+ {:match 20 :scoreboard {:chn 2 :tpe 0}}
+ {:match 21 :scoreboard {:kor 2 :uzb 0}}
  )
