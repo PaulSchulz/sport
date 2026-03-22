@@ -21,4 +21,8 @@
  {:match 21 :scoreboard {:kor 2 :uzb 0}}
  {:match 22 :scoreboard {:jpn 7 :phi 0}}
  {:match 23 :scoreboard {:chn 1 :aus 2}}
+ {:match 24 :scoreboard {:kor 1 :jpn 4}}
+ {:match 25 :scoreboard {:uzb 0 :phi 2}}
+ {:match 26 :scorebaord {:tpe 0 :prk 4}}
+ {:match 27 :scorebaord {:aus 0 :jpn 1}}
  )
