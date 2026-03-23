@@ -6,18 +6,31 @@
 ;; })
 ;; Calculation: (- 125 69) ;; 56
 
-({:game  1 :scoreboard {:syd "20.12(132)" :car "10.9(69)"}}
+(
+ ;; Round 0
+ {:game  1 :scoreboard {:syd "20.12(132)" :car "10.9(69)"}}
  {:game  2 :scoreboard {:gcs "19.11(125)" :gee "10.9(69)"}}
  {:game  3 :scoreboard {:gws "19.8(122)"  :haw "14.11(95)"}}
  {:game  4 :scoreboard {:bri "15.16(106)" :wb  "16.15(111)"}}
  {:game  5 :scoreboard {:stk "9.12(61)"   :col "11.12(78)"}}
+
+ ;; Round 1
  {:game  6 :scoreboard {:car "10.15{75}"  :ric "9.17(71)"} :stars 5}
  {:game  7 :scoreboard {:ess "13.5(83)"   :haw "21.19(145)"}}
  {:game  8 :scoreboard {:wb  "21.8(134)"  :gws "7.11(53)"}}
- {:game  9 :scoreboard {:gee "16.14(110)" :fre "14.16(100)"}}
+ {:game  9 :scoreboard {:gee "16.14(110)" :fre "14.16(100)"} :stars 4}
  {:game 10 :scoreboard {:syd "15.14(104)" :bri "8.12(60)"}}
  {:game 11 :scoreboard {:col "11.13(79)"  :adl "13.15(93)"}}
  {:game 12 :scoreboard {:nm  "17.11.113"  :pa  "9.13(67)"}}
  {:game 13 :scoreboard {:mel "18.12(120)" :stk "15.17(10)"}}
  {:game 14 :scoreboard {:gcs "20.11(131)" :wce "10.12(72)"}}
+
+ ;; Round 2
+ {:game 15 :scoreboard {:haw "14.15(99)"  :syd "13.4(82)"}}
+ {:game 16 :scoreboard {:adl "13.10(88)"  :wb  "14.10(94)"} :stars 4}
+ {:game 17 :scoreboard {:ric "9.6(60)"    :syd "19.14(128)"}}
+ {:game 18 :scoreboard {:gws "10.14(94)"  :stk "11.12(78)"}}
+ {:game 19 :scoreboard {:fre "17.16(118)" :mel "10.10(60)"}}
+ {:game 20 :scoreboard {:pa  "20.13(133)" :ess "10.10(70)"}}
+ {:game 21 :scoreboard {:wce "17.9(111)"  :nm  "15.4(94)"}}
  )
