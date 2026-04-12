@@ -12,25 +12,55 @@
  {:game  2 :scoreboard {:gcs "19.11(125)" :gee "10.9(69)"}}
  {:game  3 :scoreboard {:gws "19.8(122)"  :haw "14.11(95)"}}
  {:game  4 :scoreboard {:bri "15.16(106)" :wb  "16.15(111)"}}
- {:game  5 :scoreboard {:stk "9.12(61)"   :col "11.12(78)"}}
+ {:game  5 :scoreboard {:stk  "9.12(61)"  :col "11.12(78)"}}
 
  ;; Round 1
- {:game  6 :scoreboard {:car "10.15{75}"  :ric "9.17(71)"} :stars 5}
+ {:game  6 :scoreboard {:car "10.15{75}"  :ric  "9.17(71)"}   :stars 5}
  {:game  7 :scoreboard {:ess "13.5(83)"   :haw "21.19(145)"}}
- {:game  8 :scoreboard {:wb  "21.8(134)"  :gws "7.11(53)"}}
+ {:game  8 :scoreboard {:wb  "21.8(134)"  :gws  "7.11(53)"}}
  {:game  9 :scoreboard {:gee "16.14(110)" :fre "14.16(100)"} :stars 4}
- {:game 10 :scoreboard {:syd "15.14(104)" :bri "8.12(60)"}}
+ {:game 10 :scoreboard {:syd "15.14(104)" :bri  "8.12(60)"}}
  {:game 11 :scoreboard {:col "11.13(79)"  :adl "13.15(93)"}}
- {:game 12 :scoreboard {:nm  "17.11.113"  :pa  "9.13(67)"}}
+ {:game 12 :scoreboard {:nm  "17.11.113"  :pa   "9.13(67)"}}
  {:game 13 :scoreboard {:mel "18.12(120)" :stk "15.17(10)"}}
  {:game 14 :scoreboard {:gcs "20.11(131)" :wce "10.12(72)"}}
 
  ;; Round 2
  {:game 15 :scoreboard {:haw "14.15(99)"  :syd "13.4(82)"}}
- {:game 16 :scoreboard {:adl "13.10(88)"  :wb  "14.10(94)"} :stars 4}
- {:game 17 :scoreboard {:ric "9.6(60)"    :syd "19.14(128)"}}
+ {:game 16 :scoreboard {:adl "13.10(88)"  :wb  "14.10(94)"}  :stars 4}
+ {:game 17 :scoreboard {:ric  "9.6(60)"   :syd "19.14(128)"}}
  {:game 18 :scoreboard {:gws "10.14(94)"  :stk "11.12(78)"}}
  {:game 19 :scoreboard {:fre "17.16(118)" :mel "10.10(60)"}}
  {:game 20 :scoreboard {:pa  "20.13(133)" :ess "10.10(70)"}}
  {:game 21 :scoreboard {:wce "17.9(111)"  :nm  "15.4(94)"}}
+
+ ;; Round 3
+ {:game 22 :scoreboard {:gee  "9.14(68)"  :adl  "9.6(60)"}}
+ {:game 23 :scoreboard {:col "13.9(87)"   :gws  "7.12(54)"}}
+ {:game 24 :scorebaord {:stk "11.14(80)"  :bri "17.11(113)"}}
+ {:game 25 :scorebaord {:fre "13.25(103)" :ric  "6.7(43)"}}
+ {:game 26 :scoreboard {:ess  "9.15(69)"  :nm  "12.9(81)"}}
+ {:game 27 :scoreboard {:pa  "13.12(90)"  :wce "13.14(92)"}}
+ {:game 28 :scoreboard {:car "11.11(77)"  :mel "15.10(100)"} :stars 4}
+
+ ;; Round 4 - Easter
+ {:game 29 :scoreboard {:bri "17.17(119)" :col "10.5(65)"}}
+ {:game 30 :scoreboard {:nm  "14.12(96)"  :car "13.8(86)"}}
+ {:game 31 :scoreboard {:adl "11.10(76)"  :fre "11.12(78)"}  :stars 5}
+ {:game 32 :scoreboard {:ric  "6.12(48)"  :pa  "13.12(90)"}}
+ {:game 33 :scoreboard {:wce  "4.11(35)"  :syd "24.19(163)"}}
+ {:game 34 :scoreboard {:mel "16.13(109)" :gcs "14.6(89)"}}
+ {:game 35 :scoreboard {:wb  "14.15(99)"  :ess  "9.11(65)"}}
+ {:game 36 :scoreboard {:haw "13.14(92)"  :gee "14.7(91)"}}
+
+ ;; Round 5 - Gather Round
+ {:game 37 :scoreboard {:adl "17.12(114)" :car "12.14(86)"}}
+ {:game 38 :scoreboard {:col  "5.9(39)"   :fre  "7.3(45)"}}
+ {:game 39 :scoreboard {:nm   "9.12(66)"  :bri "13.14(92)"}}
+ {:game 40 :scoreboard {:ess "17.11(113)" :mel "10.8(68)"}}
+ {:game 41 :scoreboard {:syd "14.16(100)" :gcs  "9.14(68)"}}
+ {:game 42 :scoreboard {:haw "15.14(104)" :wb   "8.16(64)"}}
+ {:game 43 :scoreboard {:gee "17.20(122)" :wce "11.10(76)"}}
+ {:game 44 :scoreboard {:gws "21.11(131)" :ric "11.9(75)"}}
+ {:game 45 :scoreboard {:pa   "9.13(67)"  :stk "12.9(81)"}}
  )
