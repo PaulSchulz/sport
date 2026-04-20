@@ -63,4 +63,17 @@
  {:game 43 :scoreboard {:gee "17.20(122)" :wce "11.10(76)"}}
  {:game 44 :scoreboard {:gws "21.11(131)" :ric "11.9(75)"}}
  {:game 45 :scoreboard {:pa   "9.13(67)"  :stk "12.9(81)"}}
+
+ ;; Round 6
+ {:game 46 :scoreboard {:car "12.11(83)"  :col "13.10(88)"}}
+ {:game 47 :scoreboard {:gee "19.17(131)" :wb   "8.8(56)"}}
+ {:game 48 :scoreboard {:syd "17.5(107)"  :gws  "8.18(66)"}}
+ {:game 49 :scoreboard {:gcs "17.17(119)" :ess "17.8(110)"}}
+ {:game 50 :scoreboard {:haw "13.11(89)"  :pa  "13.8(86)"}}
+ {:game 51 :scoreboard {:adl "15.13(103)" :stk "15.12(102)"}}
+ {:game 52 :scoreboard {:nm  "20.10(130)" :ric  "7.13(55)"}}
+ {:game 53 :scoreboard {:mel "16.8(104)"  :bri "15.12(102)"}}
+ {:game 54 :scoreboard {:wce  "5.11(41)"  :fre "14.13(97)"}}
+
+ ;; Round 7
  )
