@@ -76,4 +76,15 @@
  {:game 54 :scoreboard {:wce  "5.11(41)"  :fre "14.13(97)"}}
 
  ;; Round 7
+ {:game 55 :scoreboard {:wb   "9.6(60)"   :syd "18.18(126)"}}
+ {:game 56 :scoreboard {:ric "11.6(72)"   :mel "19.12(126)"}}
+ {:game 57 :scoreboard {:haw "16.16(112)" :gcs  "9.9(93)"}}
+ {:game 58 :scoreboard {:ess  "9.6(60)"   :col "20.17(137)"}}
+ {:game 59 :scoreboard {:pa  "13.17(95)"  :gee "10.5(65)"}}
+ {:game 60 :scoreboard {:fre "16.7(103)"  :car "13.11(89)"}}
+ {:game 61 :scoreboard {:stk "22.11(143)" :wc   "5.12(42)"}}
+ {:game 62 :scoreboard {:bri "19.13(127)" :adl "11.9(75)"}}
+ {:game 63 :scoreboard {:gws "15.15(105)" :nm  "14.14(98)"}}
+
+ ;; Round 8
  )

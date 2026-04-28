@@ -15,7 +15,7 @@
             )
   (:import
    [java.time ZonedDateTime ZoneId]
-   [java.time Instant]
+   [java.time Instant Duration]
    [java.time.format DateTimeFormatter])
   (:gen-class)
   )
@@ -47,6 +47,9 @@
           ""
           ";; To save this report to a file"
           "(save-ladder-report)"
+          ""
+          ";; To display the next week's fixtures"
+          "(println (report-next-week-games (next-week-games data)))"
           ""
           ]
     ))
@@ -80,6 +83,14 @@
                   utc-time
                   (ZoneId/systemDefault))
         fmt      (DateTimeFormatter/ofPattern "EEE dd MMM pph:mm a")]
+    (.format local fmt)))
+
+(defn localtime-org [utc-string]
+  (let [utc-time (ZonedDateTime/parse utc-string)
+        local    (.withZoneSameInstant
+                  utc-time
+                  (ZoneId/systemDefault))
+        fmt      (DateTimeFormatter/ofPattern "yyyy-MM-dd EEE HH:mm")]
     (.format local fmt)))
 
 (defn ->instant [iso]
@@ -168,89 +179,89 @@
      (re-find #"\d+" s))))
 
 (deftest ^:test runs-from-score-test
-(is (= 117 (runs-from-score "117/5(10.1/11)")))
-(is (= 0   (runs-from-score "0/0(0)"))))
+  (is (= 117 (runs-from-score "117/5(10.1/11)")))
+  (is (= 0   (runs-from-score "0/0(0)"))))
 
 ;; Extract balls from scoreboard string
 (defn balls-from-score [s]
-(when-let [[_ overs balls] (or (re-find #"\((\d+)\.(\d+)" s)
-                               (re-find #"\((\d+)\)" s))]
-  (+ (* 6 (Long/parseLong overs))
-     (Long/parseLong (or balls "0")))))
+  (when-let [[_ overs balls] (or (re-find #"\((\d+)\.(\d+)" s)
+                                 (re-find #"\((\d+)\)" s))]
+    (+ (* 6 (Long/parseLong overs))
+       (Long/parseLong (or balls "0")))))
 
 (deftest ^:test balls-from-score-test
-(is (= 61 (balls-from-score "117/5(10.1/11)")))
-(is (= 0   (balls-from-score "0/0(0)"))))
+  (is (= 61 (balls-from-score "117/5(10.1/11)")))
+  (is (= 0   (balls-from-score "0/0(0)"))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Report Layer
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Results chart
 (defn ruler [n]
-(str
- (apply str (map #(quot % 10) (range 1 (inc n))))
- ;; "\n"
- ;; (apply str (map #(mod % 10) (range 1 (inc n))))
- ))
+  (str
+   (apply str (map #(quot % 10) (range 1 (inc n))))
+   ;; "\n"
+   ;; (apply str (map #(mod % 10) (range 1 (inc n))))
+   ))
 
 (deftest ^:test ruler-test
-(testing "Debugging ruler"
-  (let [input 20
-        result "00000000011111111112"]
-    (is (= (ruler input)
-           result)))))
+  (testing "Debugging ruler"
+    (let [input 20
+          result "00000000011111111112"]
+      (is (= (ruler input)
+             result)))))
 
 (defn results-by-game
-[results]
-(into {}
-      (map (juxt :game identity))
-      results))
+  [results]
+  (into {}
+        (map (juxt :game identity))
+        results))
 
 (deftest ^:test results-by-game-test
-(testing "Index results by game number in a map"
-  (let [input [{:game 1,
-                :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
-                :summary "SCO won by 5 wickets (5 balls left)"}
-               {:game 2,
-                :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
-                :summary "REN won by 14 runs"}]
-        result  {1 {:game 1,
-                    :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
-                    :summary "SCO won by 5 wickets (5 balls left)"},
-                 2 {:game 2,
+  (testing "Index results by game number in a map"
+    (let [input [{:game 1,
+                  :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+                  :summary "SCO won by 5 wickets (5 balls left)"}
+                 {:game 2,
+                  :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
+                  :summary "REN won by 14 runs"}]
+          result  {1 {:game 1,
+                      :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
+                      :summary "SCO won by 5 wickets (5 balls left)"},
+                   2 {:game 2,
                     :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
                     :summary "REN won by 14 runs"}}]
-    (is (= (results-by-game input)
-           result)))))
+      (is (= (results-by-game input)
+             result)))))
 
 ;; Pull out game statistics from scoreboard
 ;; Needs to be given home and away teams as result data is stored in an unordered
 ;; map.
 ;; This could probably be merged/used in 'delta-from-game' (first step)
 (defn stats-from-game [home away {:keys [scoreboard]}]
-(cond
-  (nil? scoreboard) {:home home :away away}
-  :else
-  (let [teams (keys scoreboard)]
-    (when-not (some #{:tbd} teams)
-      (let [[[home home-score]
-             [away away-score]] (seq scoreboard)
-            home-runs (runs-from-score home-score)
-            away-runs (runs-from-score away-score)
-            home-balls (balls-from-score home-score)
-            away-balls (balls-from-score away-score)
-            winner (cond (> home-runs away-runs) home
-                         (< home-runs away-runs) away
+  (cond
+    (nil? scoreboard) {:home home :away away}
+    :else
+    (let [teams (keys scoreboard)]
+      (when-not (some #{:tbd} teams)
+        (let [[[home home-score]
+               [away away-score]] (seq scoreboard)
+              home-runs (runs-from-score home-score)
+              away-runs (runs-from-score away-score)
+              home-balls (balls-from-score home-score)
+              away-balls (balls-from-score away-score)
+              winner (cond (> home-runs away-runs) home
+                           (< home-runs away-runs) away
                          :else nil)
-            ]
-        {:home home
-         :away away
-         :home-runs home-runs
-         :away-runs away-runs
-         :home-balls home-balls
-         :away-balls away-balls
-         :winner winner}))
-    )))
+              ]
+          {:home home
+           :away away
+           :home-runs home-runs
+           :away-runs away-runs
+           :home-balls home-balls
+           :away-balls away-balls
+           :winner winner}))
+      )))
 
 (deftest ^:test stats-from-game-test
   (testing "Pull out game statistics from scoreboard"
@@ -423,6 +434,11 @@
 (defn team-name [team-id]
   (get-in teams [team-id :name] (name team-id)))
 
+(defn team-string [team-id]
+  (-> team-id
+      name
+      clojure.string/upper-case))
+
 (defn involves-team?
   [team {:keys [home away]}]
   (or (= team home)
@@ -454,6 +470,42 @@
         (fixtures-report data)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Next Round Report
+(defn next-week-games [fixtures]
+(let [now (Instant/now)
+week-from-now (.plus now (Duration/ofDays 7))]
+(->> fixtures
+(filter unplayed?)
+(filter #(let [start (->instant (:start-time %))]
+           (and (.isAfter start now)
+                (.isBefore start week-from-now))))
+(sort-by #(->instant (:start-time %))))))
+
+(defn render-game-org
+  [{:keys [fixture-id start-time home away venue]}]
+  (let [result ((results-by-game results) fixture-id)]
+    (format "**** AFL: Game %2s - %-3s v %-3s\n<%s>"
+            fixture-id
+            ;; (if result "-" " ")
+            (team-string home)
+            (team-string away)
+            (localtime-org start-time)
+            ;;            venue)))
+            )))
+
+(defn report-next-week-games [fixtures]
+  (str
+   "\n"
+   "*** Round\n"
+   (->> fixtures
+        fixtures-by-date
+        (map render-game-org)
+        (clojure.string/join "\n"))
+   "\n"
+   ))
+                                        ;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Find next game to be played
 (defn next-fixture [fixtures]
   (let [now (Instant/now)]
@@ -466,15 +518,15 @@
          first)))
 
 (deftest ^:test next-fixture-test
-  (let [fixtures [{:fixture-id 1
-                   :start-time "2099-01-01T00:00:00Z"
-                   :home :six
-                   :away :sco}
-                  {:fixture-id 2
-                   :start-time "2099-01-02T00:00:00Z"
-                   :home :heat
-                   :away :stars}]]
-    (is (= 1 (:fixture-id (next-fixture fixtures))))))
+(let [fixtures [{:fixture-id 1
+                 :start-time "2099-01-01T00:00:00Z"
+                 :home :six
+                 :away :sco}
+                {:fixture-id 2
+                 :start-time "2099-01-02T00:00:00Z"
+                 :home :heat
+                 :away :stars}]]
+(is (= 1 (:fixture-id (next-fixture fixtures))))))
 
 (defn render-next-fixture [{:keys [start-time home away venue]}]
   (format "Next game:\n\n%s\n%s vs %s\n%s"
@@ -614,14 +666,14 @@
 (comment
   (defn delta-from-game [{:keys [scoreboard]}]
     (let [[[home home-score]
-           [away away-score]] (seq scoreboard)
+                           [away away-score]] (seq scoreboard)
           home-runs (runs-from-score home-score)
           away-runs (runs-from-score away-score)]
       (ladder-delta
-       {:home home
-        :away away
-        :home-runs home-runs
-        :away-runs away-runs})))
+                       {:home home
+      :away away
+      :home-runs home-runs
+      :away-runs away-runs})))
   )
 
 ;; Create ladder delta from scoreboard
@@ -1265,9 +1317,9 @@
   ;;  (println (create-event-report event)))
   (-> (fixtures-report data) println)
   (println)
-;;  (-> (ladder-report data results teams) println)
-;;  (println)
-;;  (-> (next-game-report data) println)
-;;  (println)
-;;  (-> (next-match-for-team-report data :adl) println)
+  ;;  (-> (ladder-report data results teams) println)
+  ;;  (println)
+  ;;  (-> (next-game-report data) println)
+  ;;  (println)
+  ;;  (-> (next-match-for-team-report data :adl) println)
   )
