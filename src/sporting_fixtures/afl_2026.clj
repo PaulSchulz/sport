@@ -570,6 +570,7 @@ week-from-now (.plus now (Duration/ofDays 7))]
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Results / Ladder Report
+;; TODO Convert bbl to afl
 
 ;; Initialise Ladder data
 (defn empty-ladder [teams]

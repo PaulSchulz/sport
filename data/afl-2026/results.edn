@@ -82,9 +82,20 @@
  {:game 58 :scoreboard {:ess  "9.6(60)"   :col "20.17(137)"}}
  {:game 59 :scoreboard {:pa  "13.17(95)"  :gee "10.5(65)"}}
  {:game 60 :scoreboard {:fre "16.7(103)"  :car "13.11(89)"}}
- {:game 61 :scoreboard {:stk "22.11(143)" :wc   "5.12(42)"}}
+ {:game 61 :scoreboard {:stk "22.11(143)" :wce  "5.12(42)"}}
  {:game 62 :scoreboard {:bri "19.13(127)" :adl "11.9(75)"}}
  {:game 63 :scoreboard {:gws "15.15(105)" :nm  "14.14(98)"}}
 
  ;; Round 8
+ {:game 64 :scoreboard {:col "15.3(93)"   :haw "13.15(93)"}}
+ {:game 65 :scoreboard {:wb  "15.12(102)" :fre "17.12(114)"}}
+ {:game 66 :scoreboard {:adl "11.10(76)"  :pa  "11.9(75)"}   :stars 5}
+ {:game 67 :scoreboard {:ess "11.13(79)"  :bri "22.11(143)"}}
+ {:game 68 :scoreboard {:wce "13.10(88)"  :ric "15.9(99)"}}
+ {:game 69 :scoreboard {:gee "21.9(135)"  :nm  "13.8(86)"}}
+ {:game 70 :scoreboard {:car  "9.15(69)"  :stk "16.12(108)"}}
+ {:game 71 :scoreboard {:syd "19.17(131)" :mel "17.12(114)"}}
+ {:game 72 :scoreboard {:gcs "11.17(73)"  :gws  "8.15(63)"}}
+
+ ;; Round 9
  )
