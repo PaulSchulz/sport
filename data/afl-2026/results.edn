@@ -98,4 +98,25 @@
  {:game 72 :scoreboard {:gcs "11.17(73)"  :gws  "8.15(63)"}}
 
  ;; Round 9
+ {:game 73 :scoreboard {:fre "12.16(86)"  :haw "11.7(73)"}   :stars 4}
+ {:game 74 :scoreboard {:bri "14.16(100)" :car "13.11(89)"}}
+ {:game 75 :scoreboard {:pa  "10.12(72)"  :wb  "10.14(74)"}  :stars 5}
+ {:game 76 :scoreboard {:nm  "14.13(97)"  :syd "16.9(105)"}}
+ {:game 77 :scoreboard {:gws "16.7(103)"  :ess "13.11(89)"}}
+ {:game 78 :scoreboard {:gcs "13.11(89)"  :stk  "8.12(60)"}}
+ {:game 79 :scoreboard {:gee "18.14(122)" :col  "9.14(68)"}}
+ {:game 80 :scoreboard {:mel "15.19(99)"  :wce  "9.13(67)"}}
+ {:game 81 :scoreboard {:ric  "9.7(61)"   :adl "14.14(98)"}}
+
+ ;; Round 10
+ {:game 82 :scoreboard {:bri "11.10(76)"  :gee "17.15(117)"}}
+ {:game 83 :scoreboard {:syd "11.15(81)"  :col "10.15(75)"}}
+ {:game 84 :scoreboard {:gcs "15.18(98)"  :pa  "10.13(73)"}}
+ {:game 85 :scoreboard {:adl "20.13(133)" :nm   "9.11(65)"}}
+ {:game 86 :scoreboard {:mel "18.12(120)" :haw "12.9(81)"}}
+ {:game 87 :scoreboard {:car "10.14(74)"  :wb   "9.8(62)"}}
+ {:game 88 :scoreboard {:ess  "8.13(61)"  :fre "16.8(104)"}}
+ {:game 89 :scoreboard {:stk "16.13(109)" :ric "11.7(73)"}}
+ {:game 89 :scoreboard {:wce "13.10(88)"  :gws "10.11(71)"}}
+
  )
