@@ -49,7 +49,10 @@
           "(save-ladder-report)"
           ""
           ";; To display the next week's fixtures"
-          "(println (report-next-week-games (next-week-games data)))"
+          "(println"
+          "  (report-next-week-games (next-week-games data))"
+          "  (report-next-week-results (next-week-games data))"
+          ")"
           ""
           ]
     ))
@@ -472,14 +475,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Next Round Report
 (defn next-week-games [fixtures]
-(let [now (Instant/now)
-week-from-now (.plus now (Duration/ofDays 7))]
-(->> fixtures
-(filter unplayed?)
-(filter #(let [start (->instant (:start-time %))]
-           (and (.isAfter start now)
-                (.isBefore start week-from-now))))
-(sort-by #(->instant (:start-time %))))))
+  (let [now (Instant/now)
+        week-from-now (.plus now (Duration/ofDays 7))]
+    (->> fixtures
+         (filter unplayed?)
+         (filter #(let [start (->instant (:start-time %))]
+                    (and (.isAfter start now)
+                         (.isBefore start week-from-now))))
+         (sort-by #(->instant (:start-time %))))))
 
 (defn render-game-org
   [{:keys [fixture-id start-time home away venue]}]
@@ -493,6 +496,16 @@ week-from-now (.plus now (Duration/ofDays 7))]
             ;;            venue)))
             )))
 
+(defn render-game-result-template
+  [{:keys [fixture-id start-time home away venue]}]
+  (let [result ((results-by-game results) fixture-id)]
+    (format "{:game %2s :scoreboard {:%s \"\" :%s \"\"}}"
+            fixture-id
+            ;; (if result "-" " ")
+            (name home)
+            (name away)
+            )))
+
 (defn report-next-week-games [fixtures]
   (str
    "\n"
@@ -503,19 +516,30 @@ week-from-now (.plus now (Duration/ofDays 7))]
         (clojure.string/join "\n"))
    "\n"
    ))
+
+(defn report-next-week-results [fixtures]
+  (str
+   "\n"
+   ";; Round\n"
+   (->> fixtures
+        fixtures-by-date
+        (map render-game-result-template)
+        (clojure.string/join "\n"))
+   "\n"
+   ))
                                         ;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Find next game to be played
 (defn next-fixture [fixtures]
-  (let [now (Instant/now)]
-    (->> fixtures
-         (filter unplayed?)
-         (filter #(-> (:start-time %)
-                      ->instant
-                      (.isAfter now)))
-         (sort-by #(->instant (:start-time %)))
-         first)))
+(let [now (Instant/now)]
+(->> fixtures
+(filter unplayed?)
+(filter #(-> (:start-time %)
+             ->instant
+             (.isAfter now)))
+(sort-by #(->instant (:start-time %)))
+first)))
 
 (deftest ^:test next-fixture-test
 (let [fixtures [{:fixture-id 1
@@ -529,44 +553,44 @@ week-from-now (.plus now (Duration/ofDays 7))]
 (is (= 1 (:fixture-id (next-fixture fixtures))))))
 
 (defn render-next-fixture [{:keys [start-time home away venue]}]
-  (format "Next game:\n\n%s\n%s vs %s\n%s"
-          (localtime start-time)
-          (team-name home)
-          (team-name away)
-          venue))
+(format "Next game:\n\n%s\n%s vs %s\n%s"
+(localtime start-time)
+(team-name home)
+(team-name away)
+venue))
 
 (defn next-game-report [games]
-  (if-let [game (next-fixture games)]
-    (render-next-fixture game)
-    "No upcoming games."))
+(if-let [game (next-fixture games)]
+(render-next-fixture game)
+"No upcoming games."))
 
 ;; fixture for next team
 (defn next-fixture-for-team [fixtures team]
-  (let [now (java.time.Instant/now)]
-    (->> fixtures
-         (filter unplayed?)
-         (filter #(involves-team? team %))
-         (filter #(-> (:start-time %)
-                      ->instant
-                      (.isAfter now)))
-         (sort-by #(->instant (:start-time %)))
-         first)))
+(let [now (java.time.Instant/now)]
+(->> fixtures
+(filter unplayed?)
+(filter #(involves-team? team %))
+(filter #(-> (:start-time %)
+             ->instant
+             (.isAfter now)))
+(sort-by #(->instant (:start-time %)))
+first)))
 
 (defn render-next-fixture-for-team [fixture team]
-  (let [{:keys [start-time home away venue]} fixture
-        opponent (if (= team home) away home)]
-    (format "Next match for %s:\n\n%s\n%s vs %s\n%s"
-            (team-name team)
-            (localtime start-time)
-            (team-name home)
-            (team-name away)
-            venue)))
+(let [{:keys [start-time home away venue]} fixture
+opponent (if (= team home) away home)]
+(format "Next match for %s:\n\n%s\n%s vs %s\n%s"
+(team-name team)
+(localtime start-time)
+(team-name home)
+(team-name away)
+venue)))
 
 (defn next-match-for-team-report [fixtures team]
-  (if-let [fixture (next-fixture-for-team fixtures team)]
-    (render-next-fixture-for-team fixture team)
-    (format "No upcoming matches for %s."
-            (team-name team))))
+(if-let [fixture (next-fixture-for-team fixtures team)]
+(render-next-fixture-for-team fixture team)
+(format "No upcoming matches for %s."
+(team-name team))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Results / Ladder Report
@@ -574,107 +598,107 @@ week-from-now (.plus now (Duration/ofDays 7))]
 
 ;; Initialise Ladder data
 (defn empty-ladder [teams]
-  (into {}
-        (for [[team {:keys [placeholder?]}] teams
-              :when (not placeholder?)]
-          [team {:team team
-                 :played 0 :won 0 :lost 0 :tied 0 :points 0
-                 :runs-for 0 :runs-against 0
-                 :balls-faced 0 :balls-bowled 0
-                 :nrr 0.0}])))
+(into {}
+(for [[team {:keys [placeholder?]}] teams
+      :when (not placeholder?)]
+[team {:team team
+       :played 0 :won 0 :lost 0 :tied 0 :points 0
+       :runs-for 0 :runs-against 0
+       :balls-faced 0 :balls-bowled 0
+       :nrr 0.0}])))
 
 (deftest ^:test empty-ladder-test
-  (let [teams {:sco {} :str {}}
-        expected2 {:sco {:team :sco,
-                         :played 0,
-                         :won 0,
-                         :lost 0,
-                         :tied 0,
-                         :points 0,
-                         :runs-for 0,
-                         :runs-against 0,
-                         :balls-faced 0,
-                         :balls-bowled 0,
-                         :nrr 0.0,
-                         },
-                   :str {:team :str,
-                         :played 0,
-                         :won 0,
-                         :lost 0,
-                         :tied 0,
-                         :points 0,
-                         :runs-for 0,
-                         :runs-against 0
-                         :balls-faced 0,
-                         :balls-bowled 0,
-                         :nrr 0.0,
-                         }}
-        ]
-    (is (= (empty-ladder teams) expected2))))
+(let [teams {:sco {} :str {}}
+expected2 {:sco {:team :sco,
+                 :played 0,
+                 :won 0,
+                 :lost 0,
+                 :tied 0,
+                 :points 0,
+                 :runs-for 0,
+                 :runs-against 0,
+                 :balls-faced 0,
+                 :balls-bowled 0,
+                 :nrr 0.0,
+                 },
+           :str {:team :str,
+                 :played 0,
+                 :won 0,
+                 :lost 0,
+                 :tied 0,
+                 :points 0,
+                 :runs-for 0,
+                 :runs-against 0
+                 :balls-faced 0,
+                 :balls-bowled 0,
+                 :nrr 0.0,
+                 }}
+]
+(is (= (empty-ladder teams) expected2))))
 
 (deftest ^:test tbd-not-in-ladder-test
-  (is (not (contains?
-            (empty-ladder teams)
-            :tbd))))
+(is (not (contains?
+          (empty-ladder teams)
+          :tbd))))
 
 ;; Create ladder-dalta record from rules
 (defn ladder-delta [{:keys [home away home-runs away-runs home-balls away-balls]}]
-  (let [home-win? (> home-runs away-runs)
-        away-win? (> away-runs home-runs)
-        home-base {:team home
-                   :played 1
-                   :runs-for home-runs
-                   :runs-against away-runs
-                   :balls-faced home-balls
-                   :balls-bowled away-balls}
-        away-base {:team away
-                   :played 1
-                   :runs-for away-runs
-                   :runs-against home-runs
-                   :balls-faced away-balls
-                   :balls-bowled home-balls}]
-    [(merge home-base
-            (cond
-              home-win? {:won 1 :points 2}
-              away-win? {:lost 1}
-              :else     {:tied 1 :points 1}))
-     (merge away-base
-            (cond
-              away-win? {:won 1 :points 2}
-              home-win? {:lost 1}
-              :else     {:tied 1 :points 1}))]))
+(let [home-win? (> home-runs away-runs)
+away-win? (> away-runs home-runs)
+home-base {:team home
+           :played 1
+           :runs-for home-runs
+           :runs-against away-runs
+           :balls-faced home-balls
+           :balls-bowled away-balls}
+away-base {:team away
+           :played 1
+           :runs-for away-runs
+           :runs-against home-runs
+           :balls-faced away-balls
+           :balls-bowled home-balls}]
+[(merge home-base
+        (cond
+          home-win? {:won 1 :points 2}
+          away-win? {:lost 1}
+          :else     {:tied 1 :points 1}))
+(merge away-base
+       (cond
+         away-win? {:won 1 :points 2}
+         home-win? {:lost 1}
+         :else     {:tied 1 :points 1}))]))
 
 (deftest ladder-delta-test
-  (testing "Calculate ladder delta from game result rules"
-    (let [input      {:home :sco
-                      :away :str
-                      :home-runs 120
-                      :away-runs 121
-                      :home-balls 60
-                      :away-balls 55}
-          expected   [{:team :sco, :played 1,
-                       :runs-for 120, :runs-against 121,
-                       :balls-faced 60 :balls-bowled 55,
-                       :lost 1}
-                      {:team :str, :played 1,
-                       :runs-for 121, :runs-against 120,
-                       :balls-faced 55, :balls-bowled 60,
-                       :won 1, :points 2}]]
-      (is (= (ladder-delta input)
-             expected)))))
+(testing "Calculate ladder delta from game result rules"
+(let [input      {:home :sco
+                  :away :str
+                  :home-runs 120
+                  :away-runs 121
+                  :home-balls 60
+                  :away-balls 55}
+      expected   [{:team :sco, :played 1,
+                   :runs-for 120, :runs-against 121,
+                   :balls-faced 60 :balls-bowled 55,
+                   :lost 1}
+                  {:team :str, :played 1,
+                   :runs-for 121, :runs-against 120,
+                   :balls-faced 55, :balls-bowled 60,
+                   :won 1, :points 2}]]
+  (is (= (ladder-delta input)
+         expected)))))
 
 ;; Creates data deltas
 (comment
   (defn delta-from-game [{:keys [scoreboard]}]
     (let [[[home home-score]
-                           [away away-score]] (seq scoreboard)
+           [away away-score]] (seq scoreboard)
           home-runs (runs-from-score home-score)
           away-runs (runs-from-score away-score)]
       (ladder-delta
-                       {:home home
-      :away away
-      :home-runs home-runs
-      :away-runs away-runs})))
+       {:home home
+        :away away
+        :home-runs home-runs
+        :away-runs away-runs})))
   )
 
 ;; Create ladder delta from scoreboard
