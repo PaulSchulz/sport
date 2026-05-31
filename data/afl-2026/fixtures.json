@@ -7,8 +7,8 @@
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Carlton",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 132,
+    "AwayTeamScore": 69
   },
   {
     "MatchNumber": 2,
@@ -18,8 +18,8 @@
     "HomeTeam": "Gold Coast SUNS",
     "AwayTeam": "Geelong Cats",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 125,
+    "AwayTeamScore": 69
   },
   {
     "MatchNumber": 3,
@@ -29,8 +29,8 @@
     "HomeTeam": "GWS GIANTS",
     "AwayTeam": "Hawthorn",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 122,
+    "AwayTeamScore": 95
   },
   {
     "MatchNumber": 4,
@@ -40,8 +40,8 @@
     "HomeTeam": "Brisbane Lions",
     "AwayTeam": "Western Bulldogs",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 106,
+    "AwayTeamScore": 111
   },
   {
     "MatchNumber": 5,
@@ -51,8 +51,8 @@
     "HomeTeam": "St Kilda",
     "AwayTeam": "Collingwood",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 66,
+    "AwayTeamScore": 78
   },
   {
     "MatchNumber": 6,
@@ -62,8 +62,8 @@
     "HomeTeam": "Carlton",
     "AwayTeam": "Richmond",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 75,
+    "AwayTeamScore": 71
   },
   {
     "MatchNumber": 7,
@@ -73,8 +73,8 @@
     "HomeTeam": "Essendon",
     "AwayTeam": "Hawthorn",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 83,
+    "AwayTeamScore": 145
   },
   {
     "MatchNumber": 8,
@@ -84,8 +84,8 @@
     "HomeTeam": "Western Bulldogs",
     "AwayTeam": "GWS GIANTS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 134,
+    "AwayTeamScore": 53
   },
   {
     "MatchNumber": 9,
@@ -95,8 +95,8 @@
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "Fremantle",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 110,
+    "AwayTeamScore": 100
   },
   {
     "MatchNumber": 10,
@@ -106,8 +106,8 @@
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Brisbane Lions",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 104,
+    "AwayTeamScore": 60
   },
   {
     "MatchNumber": 11,
@@ -117,8 +117,8 @@
     "HomeTeam": "Collingwood",
     "AwayTeam": "Adelaide Crows",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 79,
+    "AwayTeamScore": 93
   },
   {
     "MatchNumber": 12,
@@ -128,8 +128,8 @@
     "HomeTeam": "North Melbourne",
     "AwayTeam": "Port Adelaide",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 113,
+    "AwayTeamScore": 67
   },
   {
     "MatchNumber": 13,
@@ -139,8 +139,8 @@
     "HomeTeam": "Melbourne",
     "AwayTeam": "St Kilda",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 120,
+    "AwayTeamScore": 107
   },
   {
     "MatchNumber": 14,
@@ -150,8 +150,8 @@
     "HomeTeam": "Gold Coast SUNS",
     "AwayTeam": "West Coast Eagles",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 131,
+    "AwayTeamScore": 72
   },
   {
     "MatchNumber": 15,
@@ -161,8 +161,8 @@
     "HomeTeam": "Hawthorn",
     "AwayTeam": "Sydney Swans",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 99,
+    "AwayTeamScore": 82
   },
   {
     "MatchNumber": 16,
@@ -172,8 +172,8 @@
     "HomeTeam": "Adelaide Crows",
     "AwayTeam": "Western Bulldogs",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 88,
+    "AwayTeamScore": 94
   },
   {
     "MatchNumber": 17,
@@ -183,8 +183,8 @@
     "HomeTeam": "Richmond",
     "AwayTeam": "Gold Coast SUNS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 60,
+    "AwayTeamScore": 128
   },
   {
     "MatchNumber": 18,
@@ -194,8 +194,8 @@
     "HomeTeam": "GWS GIANTS",
     "AwayTeam": "St Kilda",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 74,
+    "AwayTeamScore": 78
   },
   {
     "MatchNumber": 19,
@@ -205,8 +205,8 @@
     "HomeTeam": "Fremantle",
     "AwayTeam": "Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 118,
+    "AwayTeamScore": 70
   },
   {
     "MatchNumber": 20,
@@ -216,8 +216,8 @@
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "Essendon",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 133,
+    "AwayTeamScore": 70
   },
   {
     "MatchNumber": 21,
@@ -227,8 +227,8 @@
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "North Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 111,
+    "AwayTeamScore": 94
   },
   {
     "MatchNumber": 22,
@@ -238,8 +238,8 @@
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "Adelaide Crows",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 68,
+    "AwayTeamScore": 60
   },
   {
     "MatchNumber": 23,
@@ -249,8 +249,8 @@
     "HomeTeam": "Collingwood",
     "AwayTeam": "GWS GIANTS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 87,
+    "AwayTeamScore": 54
   },
   {
     "MatchNumber": 24,
@@ -260,8 +260,8 @@
     "HomeTeam": "St Kilda",
     "AwayTeam": "Brisbane Lions",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 80,
+    "AwayTeamScore": 113
   },
   {
     "MatchNumber": 25,
@@ -271,8 +271,8 @@
     "HomeTeam": "Fremantle",
     "AwayTeam": "Richmond",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 103,
+    "AwayTeamScore": 43
   },
   {
     "MatchNumber": 26,
@@ -282,8 +282,8 @@
     "HomeTeam": "Essendon",
     "AwayTeam": "North Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 69,
+    "AwayTeamScore": 81
   },
   {
     "MatchNumber": 27,
@@ -293,8 +293,8 @@
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "West Coast Eagles",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 90,
+    "AwayTeamScore": 92
   },
   {
     "MatchNumber": 28,
@@ -304,8 +304,8 @@
     "HomeTeam": "Carlton",
     "AwayTeam": "Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 77,
+    "AwayTeamScore": 100
   },
   {
     "MatchNumber": 29,
@@ -315,8 +315,8 @@
     "HomeTeam": "Brisbane Lions",
     "AwayTeam": "Collingwood",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 119,
+    "AwayTeamScore": 65
   },
   {
     "MatchNumber": 30,
@@ -326,8 +326,8 @@
     "HomeTeam": "North Melbourne",
     "AwayTeam": "Carlton",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 96,
+    "AwayTeamScore": 86
   },
   {
     "MatchNumber": 31,
@@ -337,8 +337,8 @@
     "HomeTeam": "Adelaide Crows",
     "AwayTeam": "Fremantle",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 76,
+    "AwayTeamScore": 78
   },
   {
     "MatchNumber": 32,
@@ -348,8 +348,8 @@
     "HomeTeam": "Richmond",
     "AwayTeam": "Port Adelaide",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 48,
+    "AwayTeamScore": 90
   },
   {
     "MatchNumber": 33,
@@ -359,8 +359,8 @@
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "Sydney Swans",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 35,
+    "AwayTeamScore": 163
   },
   {
     "MatchNumber": 34,
@@ -370,8 +370,8 @@
     "HomeTeam": "Melbourne",
     "AwayTeam": "Gold Coast SUNS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 109,
+    "AwayTeamScore": 89
   },
   {
     "MatchNumber": 35,
@@ -381,8 +381,8 @@
     "HomeTeam": "Western Bulldogs",
     "AwayTeam": "Essendon",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 99,
+    "AwayTeamScore": 65
   },
   {
     "MatchNumber": 36,
@@ -392,8 +392,8 @@
     "HomeTeam": "Hawthorn",
     "AwayTeam": "Geelong Cats",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 92,
+    "AwayTeamScore": 91
   },
   {
     "MatchNumber": 37,
@@ -403,8 +403,8 @@
     "HomeTeam": "Adelaide Crows",
     "AwayTeam": "Carlton",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 114,
+    "AwayTeamScore": 86
   },
   {
     "MatchNumber": 38,
@@ -414,8 +414,8 @@
     "HomeTeam": "Collingwood",
     "AwayTeam": "Fremantle",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 39,
+    "AwayTeamScore": 45
   },
   {
     "MatchNumber": 39,
@@ -425,8 +425,8 @@
     "HomeTeam": "North Melbourne",
     "AwayTeam": "Brisbane Lions",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 66,
+    "AwayTeamScore": 92
   },
   {
     "MatchNumber": 40,
@@ -436,8 +436,8 @@
     "HomeTeam": "Essendon",
     "AwayTeam": "Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 113,
+    "AwayTeamScore": 68
   },
   {
     "MatchNumber": 41,
@@ -447,8 +447,8 @@
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Gold Coast SUNS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 100,
+    "AwayTeamScore": 68
   },
   {
     "MatchNumber": 42,
@@ -458,8 +458,8 @@
     "HomeTeam": "Hawthorn",
     "AwayTeam": "Western Bulldogs",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 104,
+    "AwayTeamScore": 64
   },
   {
     "MatchNumber": 43,
@@ -469,8 +469,8 @@
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "West Coast Eagles",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 122,
+    "AwayTeamScore": 76
   },
   {
     "MatchNumber": 44,
@@ -480,8 +480,8 @@
     "HomeTeam": "GWS GIANTS",
     "AwayTeam": "Richmond",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 131,
+    "AwayTeamScore": 75
   },
   {
     "MatchNumber": 45,
@@ -491,8 +491,8 @@
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "St Kilda",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 67,
+    "AwayTeamScore": 81
   },
   {
     "MatchNumber": 46,
@@ -502,8 +502,8 @@
     "HomeTeam": "Carlton",
     "AwayTeam": "Collingwood",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 83,
+    "AwayTeamScore": 88
   },
   {
     "MatchNumber": 47,
@@ -513,8 +513,8 @@
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "Western Bulldogs",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 131,
+    "AwayTeamScore": 56
   },
   {
     "MatchNumber": 48,
@@ -524,8 +524,8 @@
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "GWS GIANTS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 107,
+    "AwayTeamScore": 66
   },
   {
     "MatchNumber": 49,
@@ -535,8 +535,8 @@
     "HomeTeam": "Gold Coast SUNS",
     "AwayTeam": "Essendon",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 119,
+    "AwayTeamScore": 110
   },
   {
     "MatchNumber": 50,
@@ -546,8 +546,8 @@
     "HomeTeam": "Hawthorn",
     "AwayTeam": "Port Adelaide",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 89,
+    "AwayTeamScore": 86
   },
   {
     "MatchNumber": 51,
@@ -557,8 +557,8 @@
     "HomeTeam": "Adelaide Crows",
     "AwayTeam": "St Kilda",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 103,
+    "AwayTeamScore": 102
   },
   {
     "MatchNumber": 52,
@@ -568,8 +568,8 @@
     "HomeTeam": "North Melbourne",
     "AwayTeam": "Richmond",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 130,
+    "AwayTeamScore": 55
   },
   {
     "MatchNumber": 53,
@@ -579,8 +579,8 @@
     "HomeTeam": "Melbourne",
     "AwayTeam": "Brisbane Lions",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 104,
+    "AwayTeamScore": 102
   },
   {
     "MatchNumber": 54,
@@ -590,8 +590,8 @@
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "Fremantle",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 41,
+    "AwayTeamScore": 97
   },
   {
     "MatchNumber": 55,
@@ -601,8 +601,8 @@
     "HomeTeam": "Western Bulldogs",
     "AwayTeam": "Sydney Swans",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 60,
+    "AwayTeamScore": 126
   },
   {
     "MatchNumber": 56,
@@ -612,30 +612,30 @@
     "HomeTeam": "Richmond",
     "AwayTeam": "Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 72,
+    "AwayTeamScore": 126
   },
   {
     "MatchNumber": 57,
     "RoundNumber": 7,
-    "DateUtc": "2026-04-25 02:15:00Z",
+    "DateUtc": "2026-04-25 02:30:00Z",
     "Location": "UTAS Stadium",
     "HomeTeam": "Hawthorn",
     "AwayTeam": "Gold Coast SUNS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 112,
+    "AwayTeamScore": 63
   },
   {
     "MatchNumber": 58,
     "RoundNumber": 7,
-    "DateUtc": "2026-04-25 05:15:00Z",
+    "DateUtc": "2026-04-25 05:20:00Z",
     "Location": "MCG",
     "HomeTeam": "Essendon",
     "AwayTeam": "Collingwood",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 60,
+    "AwayTeamScore": 137
   },
   {
     "MatchNumber": 59,
@@ -645,8 +645,8 @@
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "Geelong Cats",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 95,
+    "AwayTeamScore": 65
   },
   {
     "MatchNumber": 60,
@@ -656,8 +656,8 @@
     "HomeTeam": "Fremantle",
     "AwayTeam": "Carlton",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 103,
+    "AwayTeamScore": 89
   },
   {
     "MatchNumber": 61,
@@ -667,8 +667,8 @@
     "HomeTeam": "St Kilda",
     "AwayTeam": "West Coast Eagles",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 143,
+    "AwayTeamScore": 42
   },
   {
     "MatchNumber": 62,
@@ -678,8 +678,8 @@
     "HomeTeam": "Brisbane Lions",
     "AwayTeam": "Adelaide Crows",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 127,
+    "AwayTeamScore": 75
   },
   {
     "MatchNumber": 63,
@@ -689,8 +689,8 @@
     "HomeTeam": "GWS GIANTS",
     "AwayTeam": "North Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 105,
+    "AwayTeamScore": 98
   },
   {
     "MatchNumber": 64,
@@ -700,8 +700,8 @@
     "HomeTeam": "Collingwood",
     "AwayTeam": "Hawthorn",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 93,
+    "AwayTeamScore": 93
   },
   {
     "MatchNumber": 65,
@@ -711,8 +711,8 @@
     "HomeTeam": "Western Bulldogs",
     "AwayTeam": "Fremantle",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 102,
+    "AwayTeamScore": 114
   },
   {
     "MatchNumber": 66,
@@ -722,8 +722,8 @@
     "HomeTeam": "Adelaide Crows",
     "AwayTeam": "Port Adelaide",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 76,
+    "AwayTeamScore": 75
   },
   {
     "MatchNumber": 67,
@@ -733,8 +733,8 @@
     "HomeTeam": "Essendon",
     "AwayTeam": "Brisbane Lions",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 79,
+    "AwayTeamScore": 143
   },
   {
     "MatchNumber": 68,
@@ -744,8 +744,8 @@
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "Richmond",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 88,
+    "AwayTeamScore": 99
   },
   {
     "MatchNumber": 69,
@@ -755,8 +755,8 @@
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "North Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 135,
+    "AwayTeamScore": 86
   },
   {
     "MatchNumber": 70,
@@ -766,8 +766,8 @@
     "HomeTeam": "Carlton",
     "AwayTeam": "St Kilda",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 69,
+    "AwayTeamScore": 108
   },
   {
     "MatchNumber": 71,
@@ -777,8 +777,8 @@
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 131,
+    "AwayTeamScore": 114
   },
   {
     "MatchNumber": 72,
@@ -788,8 +788,8 @@
     "HomeTeam": "Gold Coast SUNS",
     "AwayTeam": "GWS GIANTS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 83,
+    "AwayTeamScore": 63
   },
   {
     "MatchNumber": 73,
@@ -799,8 +799,8 @@
     "HomeTeam": "Fremantle",
     "AwayTeam": "Hawthorn",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 88,
+    "AwayTeamScore": 73
   },
   {
     "MatchNumber": 74,
@@ -810,8 +810,8 @@
     "HomeTeam": "Brisbane Lions",
     "AwayTeam": "Carlton",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 100,
+    "AwayTeamScore": 89
   },
   {
     "MatchNumber": 75,
@@ -821,8 +821,8 @@
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "Western Bulldogs",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 72,
+    "AwayTeamScore": 74
   },
   {
     "MatchNumber": 76,
@@ -832,8 +832,8 @@
     "HomeTeam": "North Melbourne",
     "AwayTeam": "Sydney Swans",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 97,
+    "AwayTeamScore": 105
   },
   {
     "MatchNumber": 77,
@@ -843,8 +843,8 @@
     "HomeTeam": "GWS GIANTS",
     "AwayTeam": "Essendon",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 103,
+    "AwayTeamScore": 89
   },
   {
     "MatchNumber": 78,
@@ -854,8 +854,8 @@
     "HomeTeam": "Gold Coast SUNS",
     "AwayTeam": "St Kilda",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 89,
+    "AwayTeamScore": 60
   },
   {
     "MatchNumber": 79,
@@ -865,8 +865,8 @@
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "Collingwood",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 122,
+    "AwayTeamScore": 68
   },
   {
     "MatchNumber": 80,
@@ -876,8 +876,8 @@
     "HomeTeam": "Melbourne",
     "AwayTeam": "West Coast Eagles",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 99,
+    "AwayTeamScore": 67
   },
   {
     "MatchNumber": 81,
@@ -887,8 +887,8 @@
     "HomeTeam": "Richmond",
     "AwayTeam": "Adelaide Crows",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 61,
+    "AwayTeamScore": 98
   },
   {
     "MatchNumber": 82,
@@ -898,8 +898,8 @@
     "HomeTeam": "Brisbane Lions",
     "AwayTeam": "Geelong Cats",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 76,
+    "AwayTeamScore": 117
   },
   {
     "MatchNumber": 83,
@@ -909,8 +909,8 @@
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Collingwood",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 81,
+    "AwayTeamScore": 75
   },
   {
     "MatchNumber": 84,
@@ -920,8 +920,8 @@
     "HomeTeam": "Gold Coast SUNS",
     "AwayTeam": "Port Adelaide",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 98,
+    "AwayTeamScore": 73
   },
   {
     "MatchNumber": 85,
@@ -931,8 +931,8 @@
     "HomeTeam": "Adelaide Crows",
     "AwayTeam": "North Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 133,
+    "AwayTeamScore": 65
   },
   {
     "MatchNumber": 86,
@@ -942,8 +942,8 @@
     "HomeTeam": "Melbourne",
     "AwayTeam": "Hawthorn",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 120,
+    "AwayTeamScore": 81
   },
   {
     "MatchNumber": 87,
@@ -953,8 +953,8 @@
     "HomeTeam": "Carlton",
     "AwayTeam": "Western Bulldogs",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 74,
+    "AwayTeamScore": 62
   },
   {
     "MatchNumber": 88,
@@ -964,8 +964,8 @@
     "HomeTeam": "Essendon",
     "AwayTeam": "Fremantle",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 61,
+    "AwayTeamScore": 104
   },
   {
     "MatchNumber": 89,
@@ -975,8 +975,8 @@
     "HomeTeam": "St Kilda",
     "AwayTeam": "Richmond",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 109,
+    "AwayTeamScore": 73
   },
   {
     "MatchNumber": 90,
@@ -986,8 +986,8 @@
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "GWS GIANTS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 88,
+    "AwayTeamScore": 71
   },
   {
     "MatchNumber": 91,
@@ -997,19 +997,19 @@
     "HomeTeam": "Hawthorn",
     "AwayTeam": "Adelaide Crows",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 75,
+    "AwayTeamScore": 66
   },
   {
     "MatchNumber": 92,
     "RoundNumber": 11,
-    "DateUtc": "2026-05-22 09:40:00Z",
+    "DateUtc": "2026-05-22 09:45:00Z",
     "Location": "MCG",
     "HomeTeam": "Richmond",
     "AwayTeam": "Essendon",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 74,
+    "AwayTeamScore": 56
   },
   {
     "MatchNumber": 93,
@@ -1019,8 +1019,8 @@
     "HomeTeam": "Fremantle",
     "AwayTeam": "St Kilda",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 104,
+    "AwayTeamScore": 74
   },
   {
     "MatchNumber": 94,
@@ -1030,8 +1030,8 @@
     "HomeTeam": "North Melbourne",
     "AwayTeam": "Gold Coast SUNS",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 111,
+    "AwayTeamScore": 105
   },
   {
     "MatchNumber": 95,
@@ -1041,8 +1041,8 @@
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "Sydney Swans",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 107,
+    "AwayTeamScore": 80
   },
   {
     "MatchNumber": 96,
@@ -1052,8 +1052,8 @@
     "HomeTeam": "Collingwood",
     "AwayTeam": "West Coast Eagles",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 92,
+    "AwayTeamScore": 82
   },
   {
     "MatchNumber": 97,
@@ -1063,8 +1063,8 @@
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "Carlton",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 58,
+    "AwayTeamScore": 92
   },
   {
     "MatchNumber": 98,
@@ -1074,8 +1074,8 @@
     "HomeTeam": "GWS GIANTS",
     "AwayTeam": "Brisbane Lions",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 166,
+    "AwayTeamScore": 88
   },
   {
     "MatchNumber": 99,
@@ -1085,8 +1085,8 @@
     "HomeTeam": "Western Bulldogs",
     "AwayTeam": "Melbourne",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 93,
+    "AwayTeamScore": 90
   },
   {
     "MatchNumber": 100,
@@ -1096,8 +1096,8 @@
     "HomeTeam": "St Kilda",
     "AwayTeam": "Hawthorn",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 67,
+    "AwayTeamScore": 119
   },
   {
     "MatchNumber": 101,
@@ -1107,8 +1107,8 @@
     "HomeTeam": "Carlton",
     "AwayTeam": "Geelong Cats",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 88,
+    "AwayTeamScore": 84
   },
   {
     "MatchNumber": 102,
@@ -1118,8 +1118,8 @@
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Richmond",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 170,
+    "AwayTeamScore": 56
   },
   {
     "MatchNumber": 103,
@@ -1129,8 +1129,8 @@
     "HomeTeam": "Brisbane Lions",
     "AwayTeam": "Fremantle",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 78,
+    "AwayTeamScore": 103
   },
   {
     "MatchNumber": 104,
@@ -1140,8 +1140,8 @@
     "HomeTeam": "Western Bulldogs",
     "AwayTeam": "Collingwood",
     "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 97,
+    "AwayTeamScore": 93
   },
   {
     "MatchNumber": 105,
@@ -1410,7 +1410,7 @@
   {
     "MatchNumber": 129,
     "RoundNumber": 16,
-    "DateUtc": "2026-06-27 02:00:00Z",
+    "DateUtc": "2026-06-25 09:30:00Z",
     "Location": "Gabba",
     "HomeTeam": "Brisbane Lions",
     "AwayTeam": "Sydney Swans",
@@ -1419,9 +1419,20 @@
     "AwayTeamScore": null
   },
   {
+    "MatchNumber": 132,
+    "RoundNumber": 16,
+    "DateUtc": "2026-06-26 09:40:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Hawthorn",
+    "AwayTeam": "GWS GIANTS",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
     "MatchNumber": 130,
     "RoundNumber": 16,
-    "DateUtc": "2026-06-27 02:00:00Z",
+    "DateUtc": "2026-06-27 03:15:00Z",
     "Location": "Marvel Stadium",
     "HomeTeam": "Carlton",
     "AwayTeam": "West Coast Eagles",
@@ -1432,7 +1443,7 @@
   {
     "MatchNumber": 131,
     "RoundNumber": 16,
-    "DateUtc": "2026-06-27 02:00:00Z",
+    "DateUtc": "2026-06-27 06:15:00Z",
     "Location": "MCG",
     "HomeTeam": "Collingwood",
     "AwayTeam": "Richmond",
@@ -1441,31 +1452,9 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 132,
-    "RoundNumber": 16,
-    "DateUtc": "2026-06-27 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Hawthorn",
-    "AwayTeam": "GWS GIANTS",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 133,
-    "RoundNumber": 16,
-    "DateUtc": "2026-06-27 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "North Melbourne",
-    "AwayTeam": "Essendon",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
     "MatchNumber": 134,
     "RoundNumber": 16,
-    "DateUtc": "2026-06-27 02:30:00Z",
+    "DateUtc": "2026-06-27 09:35:00Z",
     "Location": "Adelaide Oval",
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "Adelaide Crows",
@@ -1474,9 +1463,20 @@
     "AwayTeamScore": null
   },
   {
+    "MatchNumber": 133,
+    "RoundNumber": 16,
+    "DateUtc": "2026-06-28 05:15:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "North Melbourne",
+    "AwayTeam": "Essendon",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
     "MatchNumber": 135,
     "RoundNumber": 16,
-    "DateUtc": "2026-06-27 04:00:00Z",
+    "DateUtc": "2026-06-28 07:10:00Z",
     "Location": "Optus Stadium",
     "HomeTeam": "Fremantle",
     "AwayTeam": "Gold Coast SUNS",
@@ -1485,20 +1485,9 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 136,
-    "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "Essendon",
-    "AwayTeam": "St Kilda",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
     "MatchNumber": 137,
     "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:00:00Z",
+    "DateUtc": "2026-07-02 09:30:00Z",
     "Location": "GMHBA Stadium",
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "Brisbane Lions",
@@ -1507,53 +1496,9 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 138,
-    "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:00:00Z",
-    "Location": "People First Stadium",
-    "HomeTeam": "Gold Coast SUNS",
-    "AwayTeam": "Collingwood",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 139,
-    "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:00:00Z",
-    "Location": "Corroboree Group Oval Manuka",
-    "HomeTeam": "GWS GIANTS",
-    "AwayTeam": "Fremantle",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 140,
-    "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:00:00Z",
-    "Location": "UTAS Stadium",
-    "HomeTeam": "Hawthorn",
-    "AwayTeam": "Melbourne",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 141,
-    "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Richmond",
-    "AwayTeam": "Carlton",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
     "MatchNumber": 142,
     "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:00:00Z",
+    "DateUtc": "2026-07-03 09:40:00Z",
     "Location": "SCG",
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Western Bulldogs",
@@ -1562,20 +1507,9 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 143,
-    "RoundNumber": 17,
-    "DateUtc": "2026-07-04 02:30:00Z",
-    "Location": "Adelaide Oval",
-    "HomeTeam": "Port Adelaide",
-    "AwayTeam": "North Melbourne",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
     "MatchNumber": 144,
     "RoundNumber": 17,
-    "DateUtc": "2026-07-04 04:00:00Z",
+    "DateUtc": "2026-07-03 10:10:00Z",
     "Location": "Optus Stadium",
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "Adelaide Crows",
@@ -1584,89 +1518,67 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 145,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:00:00Z",
-    "Location": "Gabba",
-    "HomeTeam": "Brisbane Lions",
-    "AwayTeam": "Essendon",
+    "MatchNumber": 140,
+    "RoundNumber": 17,
+    "DateUtc": "2026-07-04 03:15:00Z",
+    "Location": "UTAS Stadium",
+    "HomeTeam": "Hawthorn",
+    "AwayTeam": "Melbourne",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 146,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Carlton",
-    "AwayTeam": "Hawthorn",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 147,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "Collingwood",
-    "AwayTeam": "North Melbourne",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 148,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:00:00Z",
-    "Location": "ENGIE Stadium",
+    "MatchNumber": 139,
+    "RoundNumber": 17,
+    "DateUtc": "2026-07-04 03:35:00Z",
+    "Location": "Corroboree Group Oval Manuka",
     "HomeTeam": "GWS GIANTS",
-    "AwayTeam": "Geelong Cats",
+    "AwayTeam": "Fremantle",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 149,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:00:00Z",
+    "MatchNumber": 138,
+    "RoundNumber": 17,
+    "DateUtc": "2026-07-04 06:15:00Z",
+    "Location": "People First Stadium",
+    "HomeTeam": "Gold Coast SUNS",
+    "AwayTeam": "Collingwood",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 141,
+    "RoundNumber": 17,
+    "DateUtc": "2026-07-04 09:35:00Z",
     "Location": "MCG",
-    "HomeTeam": "Melbourne",
-    "AwayTeam": "Richmond",
+    "HomeTeam": "Richmond",
+    "AwayTeam": "Carlton",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 150,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:00:00Z",
+    "MatchNumber": 136,
+    "RoundNumber": 17,
+    "DateUtc": "2026-07-05 05:15:00Z",
     "Location": "Marvel Stadium",
-    "HomeTeam": "St Kilda",
-    "AwayTeam": "Port Adelaide",
+    "HomeTeam": "Essendon",
+    "AwayTeam": "St Kilda",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 151,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "Western Bulldogs",
-    "AwayTeam": "West Coast Eagles",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 152,
-    "RoundNumber": 18,
-    "DateUtc": "2026-07-11 02:30:00Z",
+    "MatchNumber": 143,
+    "RoundNumber": 17,
+    "DateUtc": "2026-07-05 06:40:00Z",
     "Location": "Adelaide Oval",
-    "HomeTeam": "Adelaide Crows",
-    "AwayTeam": "Gold Coast SUNS",
+    "HomeTeam": "Port Adelaide",
+    "AwayTeam": "North Melbourne",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -1674,7 +1586,7 @@
   {
     "MatchNumber": 153,
     "RoundNumber": 18,
-    "DateUtc": "2026-07-11 04:00:00Z",
+    "DateUtc": "2026-07-09 10:10:00Z",
     "Location": "Optus Stadium",
     "HomeTeam": "Fremantle",
     "AwayTeam": "Sydney Swans",
@@ -1683,23 +1595,89 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 154,
-    "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:00:00Z",
-    "Location": "MCG",
+    "MatchNumber": 147,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-10 09:40:00Z",
+    "Location": "Marvel Stadium",
     "HomeTeam": "Collingwood",
-    "AwayTeam": "Carlton",
+    "AwayTeam": "North Melbourne",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 155,
-    "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:00:00Z",
+    "MatchNumber": 150,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-11 03:15:00Z",
     "Location": "Marvel Stadium",
-    "HomeTeam": "Essendon",
-    "AwayTeam": "GWS GIANTS",
+    "HomeTeam": "St Kilda",
+    "AwayTeam": "Port Adelaide",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 148,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-11 06:15:00Z",
+    "Location": "ENGIE Stadium",
+    "HomeTeam": "GWS GIANTS",
+    "AwayTeam": "Geelong Cats",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 146,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-11 09:35:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Carlton",
+    "AwayTeam": "Hawthorn",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 152,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-11 10:10:00Z",
+    "Location": "Adelaide Oval",
+    "HomeTeam": "Adelaide Crows",
+    "AwayTeam": "Gold Coast SUNS",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 151,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-12 03:10:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "Western Bulldogs",
+    "AwayTeam": "West Coast Eagles",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 149,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-12 05:15:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Melbourne",
+    "AwayTeam": "Richmond",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 145,
+    "RoundNumber": 18,
+    "DateUtc": "2026-07-12 06:40:00Z",
+    "Location": "Gabba",
+    "HomeTeam": "Brisbane Lions",
+    "AwayTeam": "Essendon",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -1707,7 +1685,7 @@
   {
     "MatchNumber": 156,
     "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:00:00Z",
+    "DateUtc": "2026-07-16 09:30:00Z",
     "Location": "GMHBA Stadium",
     "HomeTeam": "Geelong Cats",
     "AwayTeam": "St Kilda",
@@ -1716,42 +1694,9 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 157,
-    "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:00:00Z",
-    "Location": "People First Stadium",
-    "HomeTeam": "Gold Coast SUNS",
-    "AwayTeam": "Western Bulldogs",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 158,
-    "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "North Melbourne",
-    "AwayTeam": "Melbourne",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 159,
-    "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Richmond",
-    "AwayTeam": "Hawthorn",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
     "MatchNumber": 160,
     "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:00:00Z",
+    "DateUtc": "2026-07-17 09:40:00Z",
     "Location": "SCG",
     "HomeTeam": "Sydney Swans",
     "AwayTeam": "Adelaide Crows",
@@ -1762,7 +1707,7 @@
   {
     "MatchNumber": 161,
     "RoundNumber": 19,
-    "DateUtc": "2026-07-18 02:30:00Z",
+    "DateUtc": "2026-07-18 03:15:00Z",
     "Location": "Adelaide Oval",
     "HomeTeam": "Port Adelaide",
     "AwayTeam": "Fremantle",
@@ -1771,9 +1716,31 @@
     "AwayTeamScore": null
   },
   {
+    "MatchNumber": 158,
+    "RoundNumber": 19,
+    "DateUtc": "2026-07-18 06:15:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "North Melbourne",
+    "AwayTeam": "Melbourne",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 154,
+    "RoundNumber": 19,
+    "DateUtc": "2026-07-18 09:35:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Collingwood",
+    "AwayTeam": "Carlton",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
     "MatchNumber": 162,
     "RoundNumber": 19,
-    "DateUtc": "2026-07-18 04:00:00Z",
+    "DateUtc": "2026-07-18 10:10:00Z",
     "Location": "Optus Stadium",
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "Brisbane Lions",
@@ -1782,12 +1749,67 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 163,
+    "MatchNumber": 159,
+    "RoundNumber": 19,
+    "DateUtc": "2026-07-19 03:10:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Richmond",
+    "AwayTeam": "Hawthorn",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 157,
+    "RoundNumber": 19,
+    "DateUtc": "2026-07-19 05:15:00Z",
+    "Location": "People First Stadium",
+    "HomeTeam": "Gold Coast SUNS",
+    "AwayTeam": "Western Bulldogs",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 155,
+    "RoundNumber": 19,
+    "DateUtc": "2026-07-19 06:40:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "Essendon",
+    "AwayTeam": "GWS GIANTS",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 170,
     "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:00:00Z",
-    "Location": "Gabba",
-    "HomeTeam": "Brisbane Lions",
-    "AwayTeam": "Port Adelaide",
+    "DateUtc": "2026-07-23 09:30:00Z",
+    "Location": "Adelaide Oval",
+    "HomeTeam": "Adelaide Crows",
+    "AwayTeam": "Collingwood",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 168,
+    "RoundNumber": 20,
+    "DateUtc": "2026-07-24 09:40:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Melbourne",
+    "AwayTeam": "Geelong Cats",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 171,
+    "RoundNumber": 20,
+    "DateUtc": "2026-07-24 10:10:00Z",
+    "Location": "Optus Stadium",
+    "HomeTeam": "Fremantle",
+    "AwayTeam": "West Coast Eagles",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -1795,7 +1817,7 @@
   {
     "MatchNumber": 164,
     "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:00:00Z",
+    "DateUtc": "2026-07-25 03:05:00Z",
     "Location": "Marvel Stadium",
     "HomeTeam": "Carlton",
     "AwayTeam": "Gold Coast SUNS",
@@ -1804,9 +1826,20 @@
     "AwayTeamScore": null
   },
   {
+    "MatchNumber": 166,
+    "RoundNumber": 20,
+    "DateUtc": "2026-07-25 06:15:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Hawthorn",
+    "AwayTeam": "Essendon",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
     "MatchNumber": 165,
     "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:00:00Z",
+    "DateUtc": "2026-07-25 06:35:00Z",
     "Location": "ENGIE Stadium",
     "HomeTeam": "GWS GIANTS",
     "AwayTeam": "Sydney Swans",
@@ -1815,12 +1848,23 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 166,
+    "MatchNumber": 169,
     "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Hawthorn",
-    "AwayTeam": "Essendon",
+    "DateUtc": "2026-07-25 09:40:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "Western Bulldogs",
+    "AwayTeam": "Richmond",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 163,
+    "RoundNumber": 20,
+    "DateUtc": "2026-07-26 03:10:00Z",
+    "Location": "Gabba",
+    "HomeTeam": "Brisbane Lions",
+    "AwayTeam": "Port Adelaide",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -1828,7 +1872,7 @@
   {
     "MatchNumber": 167,
     "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:00:00Z",
+    "DateUtc": "2026-07-26 05:15:00Z",
     "Location": "Marvel Stadium",
     "HomeTeam": "North Melbourne",
     "AwayTeam": "St Kilda",
@@ -1837,64 +1881,9 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 168,
-    "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Melbourne",
-    "AwayTeam": "Geelong Cats",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 169,
-    "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "Western Bulldogs",
-    "AwayTeam": "Richmond",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 170,
-    "RoundNumber": 20,
-    "DateUtc": "2026-07-25 02:30:00Z",
-    "Location": "Adelaide Oval",
-    "HomeTeam": "Adelaide Crows",
-    "AwayTeam": "Collingwood",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 171,
-    "RoundNumber": 20,
-    "DateUtc": "2026-07-25 04:00:00Z",
-    "Location": "Optus Stadium",
-    "HomeTeam": "Fremantle",
-    "AwayTeam": "West Coast Eagles",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 172,
-    "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "Carlton",
-    "AwayTeam": "Brisbane Lions",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
     "MatchNumber": 173,
     "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:00:00Z",
+    "DateUtc": "2026-07-30 09:30:00Z",
     "Location": "MCG",
     "HomeTeam": "Collingwood",
     "AwayTeam": "Geelong Cats",
@@ -1903,75 +1892,9 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 174,
-    "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "Essendon",
-    "AwayTeam": "Adelaide Crows",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 175,
-    "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:00:00Z",
-    "Location": "People First Stadium",
-    "HomeTeam": "Gold Coast SUNS",
-    "AwayTeam": "Melbourne",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 176,
-    "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:00:00Z",
-    "Location": "UTAS Stadium",
-    "HomeTeam": "Hawthorn",
-    "AwayTeam": "North Melbourne",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 177,
-    "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Richmond",
-    "AwayTeam": "West Coast Eagles",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 178,
-    "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:00:00Z",
-    "Location": "Marvel Stadium",
-    "HomeTeam": "St Kilda",
-    "AwayTeam": "Sydney Swans",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 179,
-    "RoundNumber": 21,
-    "DateUtc": "2026-08-01 02:30:00Z",
-    "Location": "Adelaide Oval",
-    "HomeTeam": "Port Adelaide",
-    "AwayTeam": "GWS GIANTS",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
     "MatchNumber": 180,
     "RoundNumber": 21,
-    "DateUtc": "2026-08-01 04:00:00Z",
+    "DateUtc": "2026-07-31 10:10:00Z",
     "Location": "Optus Stadium",
     "HomeTeam": "Fremantle",
     "AwayTeam": "Western Bulldogs",
@@ -1980,67 +1903,78 @@
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 181,
-    "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:00:00Z",
-    "Location": "Gabba",
-    "HomeTeam": "Brisbane Lions",
-    "AwayTeam": "Hawthorn",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 182,
-    "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:00:00Z",
-    "Location": "GMHBA Stadium",
-    "HomeTeam": "Geelong Cats",
-    "AwayTeam": "Essendon",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 183,
-    "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:00:00Z",
-    "Location": "Corroboree Group Oval Manuka",
-    "HomeTeam": "GWS GIANTS",
-    "AwayTeam": "Gold Coast SUNS",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 184,
-    "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:00:00Z",
-    "Location": "MCG",
-    "HomeTeam": "Melbourne",
-    "AwayTeam": "Fremantle",
-    "Group": null,
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  },
-  {
-    "MatchNumber": 185,
-    "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:00:00Z",
+    "MatchNumber": 178,
+    "RoundNumber": 21,
+    "DateUtc": "2026-08-01 03:05:00Z",
     "Location": "Marvel Stadium",
     "HomeTeam": "St Kilda",
-    "AwayTeam": "Carlton",
+    "AwayTeam": "Sydney Swans",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 186,
-    "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:00:00Z",
-    "Location": "SCG",
-    "HomeTeam": "Sydney Swans",
-    "AwayTeam": "Port Adelaide",
+    "MatchNumber": 176,
+    "RoundNumber": 21,
+    "DateUtc": "2026-08-01 03:35:00Z",
+    "Location": "UTAS Stadium",
+    "HomeTeam": "Hawthorn",
+    "AwayTeam": "North Melbourne",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 179,
+    "RoundNumber": 21,
+    "DateUtc": "2026-08-01 08:35:00Z",
+    "Location": "Adelaide Oval",
+    "HomeTeam": "Port Adelaide",
+    "AwayTeam": "GWS GIANTS",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 172,
+    "RoundNumber": 21,
+    "DateUtc": "2026-08-01 09:40:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "Carlton",
+    "AwayTeam": "Brisbane Lions",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 177,
+    "RoundNumber": 21,
+    "DateUtc": "2026-08-02 03:10:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Richmond",
+    "AwayTeam": "West Coast Eagles",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 175,
+    "RoundNumber": 21,
+    "DateUtc": "2026-08-02 05:15:00Z",
+    "Location": "People First Stadium",
+    "HomeTeam": "Gold Coast SUNS",
+    "AwayTeam": "Melbourne",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 174,
+    "RoundNumber": 21,
+    "DateUtc": "2026-08-02 06:40:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "Essendon",
+    "AwayTeam": "Adelaide Crows",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -2048,7 +1982,7 @@
   {
     "MatchNumber": 187,
     "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:00:00Z",
+    "DateUtc": "2026-08-06 09:30:00Z",
     "Location": "Marvel Stadium",
     "HomeTeam": "Western Bulldogs",
     "AwayTeam": "North Melbourne",
@@ -2057,9 +1991,53 @@
     "AwayTeamScore": null
   },
   {
+    "MatchNumber": 181,
+    "RoundNumber": 22,
+    "DateUtc": "2026-08-07 09:40:00Z",
+    "Location": "Gabba",
+    "HomeTeam": "Brisbane Lions",
+    "AwayTeam": "Hawthorn",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 184,
+    "RoundNumber": 22,
+    "DateUtc": "2026-08-08 03:15:00Z",
+    "Location": "MCG",
+    "HomeTeam": "Melbourne",
+    "AwayTeam": "Fremantle",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 186,
+    "RoundNumber": 22,
+    "DateUtc": "2026-08-08 06:15:00Z",
+    "Location": "SCG",
+    "HomeTeam": "Sydney Swans",
+    "AwayTeam": "Port Adelaide",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 182,
+    "RoundNumber": 22,
+    "DateUtc": "2026-08-08 06:35:00Z",
+    "Location": "GMHBA Stadium",
+    "HomeTeam": "Geelong Cats",
+    "AwayTeam": "Essendon",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
     "MatchNumber": 188,
     "RoundNumber": 22,
-    "DateUtc": "2026-08-08 02:30:00Z",
+    "DateUtc": "2026-08-08 09:35:00Z",
     "Location": "Adelaide Oval",
     "HomeTeam": "Adelaide Crows",
     "AwayTeam": "Richmond",
@@ -2068,12 +2046,34 @@
     "AwayTeamScore": null
   },
   {
+    "MatchNumber": 183,
+    "RoundNumber": 22,
+    "DateUtc": "2026-08-09 03:10:00Z",
+    "Location": "Corroboree Group Oval Manuka",
+    "HomeTeam": "GWS GIANTS",
+    "AwayTeam": "Gold Coast SUNS",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
     "MatchNumber": 189,
     "RoundNumber": 22,
-    "DateUtc": "2026-08-08 04:00:00Z",
+    "DateUtc": "2026-08-09 06:10:00Z",
     "Location": "Optus Stadium",
     "HomeTeam": "West Coast Eagles",
     "AwayTeam": "Collingwood",
+    "Group": null,
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 185,
+    "RoundNumber": 22,
+    "DateUtc": "2026-08-09 09:20:00Z",
+    "Location": "Marvel Stadium",
+    "HomeTeam": "St Kilda",
+    "AwayTeam": "Carlton",
     "Group": null,
     "HomeTeamScore": null,
     "AwayTeamScore": null
