@@ -131,12 +131,12 @@
  {:game 99 :scoreboard {:wb  "14.9(93)"   :mel "13.12(90)"}}
 
  ;; Round 12
- {:game 100 :scoreboard {:stk "" :haw ""}}
- {:game 101 :scoreboard {:car "" :gee ""}}
- {:game 102 :scoreboard {:syd "" :ric ""}}
- {:game 103 :scoreboard {:bri "" :fre ""}}
- {:game 104 :scoreboard {:wb "" :col ""}}
- {:game 105 :scoreboard {:mel "" :gws ""}}
+ {:game 100 :scoreboard {:stk  "9.13(67)"  :haw "19.11(125)"}}
+ {:game 101 :scoreboard {:car "12.16(88)"  :gee "12.12(84)"}}
+ {:game 102 :scoreboard {:syd "25.20(170)" :ric  "8.8(56)"}}
+ {:game 103 :scoreboard {:bri "10.18(78)"  :fre "15.13(103)"}}
+ {:game 104 :scoreboard {:wb  "14.13(97)"  :col "13.15(93)"}}
+ {:game 105 :scoreboard {:mel  "9.16(70)"  :gws "19.5(119)"}}
  {:game 106 :scoreboard {:wce "" :ess ""}}
 
  )
