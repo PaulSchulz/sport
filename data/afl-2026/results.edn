@@ -139,4 +139,25 @@
  {:game 105 :scoreboard {:mel  "9.16(70)"  :gws "19.5(119)"}}
  {:game 106 :scoreboard {:wce "12.13(85)"  :ess  "8.7(55)"}}
 
+ ;; Round 13
+ {:game 107 :scoreboard {:adl "11.9(75)"   :gee "10.14(74)" :stars 5}}
+ {:game 108 :scoreboard {:haw  "9.17(71)"  :wb  "12.5(77)"}}
+ {:game 109 :scoreboard {:nm   "4.7(31)"   :fre "24.11(155)"}}
+ {:game 110 :scoreboard {:gcs "11.9(75)"   :bri "15.16(106)"}}
+ {:game 111 :scoreboard {:wce "10.11(71)"  :pa  "11.11(77)"}}
+ {:game 112 :scoreboard {:syd "15,14(104)" :stk "15.12(102)"}}
+ {:game 113 :scoreboard {:ess "10.7(67)"   :car "10.12(72)"}}
+ {:game 114 :scoreboard {:col "11.9(75)"   :mel "12.11(83)"}}
+
+ ;; Round 14
+ {:game 115 :scoreboard {:wb "" :adl ""}}
+ {:game 116 :scoreboard {:gee "" :gcs ""}}
+ {:game 117 :scoreboard {:mel "" :ess ""}}
+ {:game 118 :scoreboard {:nm "" :wce ""}}
+ {:game 119 :scoreboard {:pa "" :syd ""}}
+ {:game 120 :scoreboard {:ric "" :bri ""}}
+ {:game 121 :scoreboard {:stk "" :gws ""}}
+
+
+
  )
