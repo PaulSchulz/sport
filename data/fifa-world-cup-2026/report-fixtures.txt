@@ -1,0 +1,107 @@
+FIFA World Cup 2026 Fixtures
+============================
+
+   1  Fri 12 Jun  4:30 AM  MEX     vs  RSA     Mexico City Stadium
+   2  Fri 12 Jun 11:30 AM  KOR     vs  CZE     Guadalajara Stadium
+   3  Sat 13 Jun  4:30 AM  CAN     vs  BIH     Toronto Stadium
+   4  Sat 13 Jun 10:30 AM  USA     vs  PAR     Los Angeles Stadium
+   8  Sun 14 Jun  4:30 AM  QAT     vs  SUI     San Francisco Bay Area Stadium
+   7  Sun 14 Jun  7:30 AM  BRA     vs  MAR     New York/New Jersey Stadium
+   5  Sun 14 Jun 10:30 AM  HAI     vs  SCO     Boston Stadium
+   6  Sun 14 Jun  1:30 PM  AUS     vs  TUK     BC Place Vancouver
+  10  Mon 15 Jun  2:30 AM  GER     vs  CUW     Houston Stadium
+  11  Mon 15 Jun  5:30 AM  NED     vs  JPN     Dallas Stadium
+   9  Mon 15 Jun  8:30 AM  CIV     vs  ECU     Philadelphia Stadium
+  12  Mon 15 Jun 11:30 AM  SWE     vs  TUN     Monterrey Stadium
+  14  Tue 16 Jun  1:30 AM  ESP     vs  CPV     Atlanta Stadium
+  16  Tue 16 Jun  4:30 AM  BEL     vs  EGY     Seattle Stadium
+  13  Tue 16 Jun  7:30 AM  KSA     vs  URU     Miami Stadium
+  15  Tue 16 Jun 10:30 AM  IRN     vs  NZL     Los Angeles Stadium
+  17  Wed 17 Jun  4:30 AM  FRA     vs  SEN     New York/New Jersey Stadium
+  18  Wed 17 Jun  7:30 AM  IRQ     vs  NOR     Boston Stadium
+  19  Wed 17 Jun 10:30 AM  ARG     vs  ALG     Kansas City Stadium
+  20  Wed 17 Jun  1:30 PM  AUT     vs  JOR     San Francisco Bay Area Stadium
+  23  Thu 18 Jun  2:30 AM  POR     vs  COD     Houston Stadium
+  22  Thu 18 Jun  5:30 AM  ENG     vs  CRO     Dallas Stadium
+  21  Thu 18 Jun  8:30 AM  GHA     vs  PAN     Toronto Stadium
+  24  Thu 18 Jun 11:30 AM  UZB     vs  COL     Mexico City Stadium
+  25  Fri 19 Jun  1:30 AM  CZE     vs  RSA     Atlanta Stadium
+  26  Fri 19 Jun  4:30 AM  SUI     vs  BIH     Los Angeles Stadium
+  27  Fri 19 Jun  7:30 AM  CAN     vs  QAT     BC Place Vancouver
+  28  Fri 19 Jun 10:30 AM  MEX     vs  KOR     Guadalajara Stadium
+  32  Sat 20 Jun  4:30 AM  USA     vs  AUS     Seattle Stadium
+  30  Sat 20 Jun  7:30 AM  SCO     vs  MAR     Boston Stadium
+  29  Sat 20 Jun 10:30 AM  BRA     vs  HAI     Philadelphia Stadium
+  31  Sat 20 Jun  1:30 PM  TUK     vs  PAR     San Francisco Bay Area Stadium
+  35  Sun 21 Jun  2:30 AM  NED     vs  SWE     Houston Stadium
+  33  Sun 21 Jun  5:30 AM  GER     vs  CIV     Toronto Stadium
+  34  Sun 21 Jun  9:30 AM  ECU     vs  CUW     Kansas City Stadium
+  36  Sun 21 Jun  1:30 PM  TUN     vs  JPN     Monterrey Stadium
+  38  Mon 22 Jun  1:30 AM  ESP     vs  KSA     Atlanta Stadium
+  39  Mon 22 Jun  4:30 AM  BEL     vs  IRN     Los Angeles Stadium
+  37  Mon 22 Jun  7:30 AM  URU     vs  CPV     Miami Stadium
+  40  Mon 22 Jun 10:30 AM  NZL     vs  EGY     BC Place Vancouver
+  43  Tue 23 Jun  2:30 AM  ARG     vs  AUT     Dallas Stadium
+  42  Tue 23 Jun  6:30 AM  FRA     vs  IRQ     Philadelphia Stadium
+  41  Tue 23 Jun  9:30 AM  NOR     vs  SEN     New York/New Jersey Stadium
+  44  Tue 23 Jun 12:30 PM  JOR     vs  ALG     San Francisco Bay Area Stadium
+  47  Wed 24 Jun  2:30 AM  POR     vs  UZB     Houston Stadium
+  45  Wed 24 Jun  5:30 AM  ENG     vs  GHA     Boston Stadium
+  46  Wed 24 Jun  8:30 AM  PAN     vs  CRO     Toronto Stadium
+  48  Wed 24 Jun 11:30 AM  COL     vs  COD     Guadalajara Stadium
+  51  Thu 25 Jun  4:30 AM  SUI     vs  CAN     BC Place Vancouver
+  52  Thu 25 Jun  4:30 AM  BIH     vs  QAT     Seattle Stadium
+  49  Thu 25 Jun  7:30 AM  SCO     vs  BRA     Miami Stadium
+  50  Thu 25 Jun  7:30 AM  MAR     vs  HAI     Atlanta Stadium
+  53  Thu 25 Jun 10:30 AM  CZE     vs  MEX     Mexico City Stadium
+  54  Thu 25 Jun 10:30 AM  RSA     vs  KOR     Monterrey Stadium
+  55  Fri 26 Jun  5:30 AM  CUW     vs  CIV     Philadelphia Stadium
+  56  Fri 26 Jun  5:30 AM  ECU     vs  GER     New York/New Jersey Stadium
+  57  Fri 26 Jun  8:30 AM  JPN     vs  SWE     Dallas Stadium
+  58  Fri 26 Jun  8:30 AM  TUN     vs  NED     Kansas City Stadium
+  59  Fri 26 Jun 11:30 AM  TUK     vs  USA     Los Angeles Stadium
+  60  Fri 26 Jun 11:30 AM  PAR     vs  AUS     San Francisco Bay Area Stadium
+  61  Sat 27 Jun  4:30 AM  NOR     vs  FRA     Boston Stadium
+  62  Sat 27 Jun  4:30 AM  SEN     vs  IRQ     Toronto Stadium
+  65  Sat 27 Jun  9:30 AM  CPV     vs  KSA     Houston Stadium
+  66  Sat 27 Jun  9:30 AM  URU     vs  ESP     Guadalajara Stadium
+  63  Sat 27 Jun 12:30 PM  EGY     vs  IRN     Seattle Stadium
+  64  Sat 27 Jun 12:30 PM  NZL     vs  BEL     BC Place Vancouver
+  67  Sun 28 Jun  6:30 AM  PAN     vs  ENG     New York/New Jersey Stadium
+  68  Sun 28 Jun  6:30 AM  CRO     vs  GHA     Philadelphia Stadium
+  71  Sun 28 Jun  9:00 AM  COL     vs  POR     Miami Stadium
+  72  Sun 28 Jun  9:00 AM  COD     vs  UZB     Atlanta Stadium
+  69  Sun 28 Jun 11:30 AM  ALG     vs  AUT     Kansas City Stadium
+  70  Sun 28 Jun 11:30 AM  JOR     vs  ARG     Dallas Stadium
+  73  Mon 29 Jun  4:30 AM  2A      vs  2B      Los Angeles Stadium
+  76  Tue 30 Jun  2:30 AM  1C      vs  2F      Houston Stadium
+  74  Tue 30 Jun  6:00 AM  1E      vs  3ABCDF  Boston Stadium
+  75  Tue 30 Jun 10:30 AM  1F      vs  2C      Monterrey Stadium
+  78  Wed 01 Jul  2:30 AM  2E      vs  2I      Dallas Stadium
+  77  Wed 01 Jul  6:30 AM  1I      vs  3CDFGH  New York/New Jersey Stadium
+  79  Wed 01 Jul 10:30 AM  1A      vs  3CEFHI  Mexico City Stadium
+  80  Thu 02 Jul  1:30 AM  1L      vs  3EHIJK  Atlanta Stadium
+  82  Thu 02 Jul  5:30 AM  1G      vs  3AEHIJ  Seattle Stadium
+  81  Thu 02 Jul  9:30 AM  1D      vs  3BEFIJ  San Francisco Bay Area Stadium
+  84  Fri 03 Jul  4:30 AM  1H      vs  2J      Los Angeles Stadium
+  83  Fri 03 Jul  8:30 AM  2K      vs  2L      Toronto Stadium
+  85  Fri 03 Jul 12:30 PM  1B      vs  3EFGIJ  BC Place Vancouver
+  88  Sat 04 Jul  3:30 AM  2D      vs  2G      Dallas Stadium
+  86  Sat 04 Jul  7:30 AM  1J      vs  2H      Miami Stadium
+  87  Sat 04 Jul 11:00 AM  1K      vs  3DEIJL  Kansas City Stadium
+  90  Sun 05 Jul  2:30 AM  TBA     vs  TBA     Houston Stadium
+  89  Sun 05 Jul  6:30 AM  TBA     vs  TBA     Philadelphia Stadium
+  91  Mon 06 Jul  5:30 AM  TBA     vs  TBA     New York/New Jersey Stadium
+  92  Mon 06 Jul  9:30 AM  TBA     vs  TBA     Mexico City Stadium
+  93  Tue 07 Jul  4:30 AM  TBA     vs  TBA     Dallas Stadium
+  94  Tue 07 Jul  9:30 AM  TBA     vs  TBA     Seattle Stadium
+  95  Wed 08 Jul  1:30 AM  TBA     vs  TBA     Atlanta Stadium
+  96  Wed 08 Jul  5:30 AM  TBA     vs  TBA     BC Place Vancouver
+  97  Fri 10 Jul  5:30 AM  TBA     vs  TBA     Boston Stadium
+  98  Sat 11 Jul  4:30 AM  TBA     vs  TBA     Los Angeles Stadium
+  99  Sun 12 Jul  6:30 AM  TBA     vs  TBA     Miami Stadium
+ 100  Sun 12 Jul 10:30 AM  TBA     vs  TBA     Kansas City Stadium
+ 101  Wed 15 Jul  4:30 AM  TBA     vs  TBA     Dallas Stadium
+ 102  Thu 16 Jul  4:30 AM  TBA     vs  TBA     Atlanta Stadium
+ 103  Sun 19 Jul  6:30 AM  TBA     vs  TBA     Miami Stadium
+ 104  Mon 20 Jul  4:30 AM  TBA     vs  TBA     New York/New Jersey Stadium

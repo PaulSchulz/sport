@@ -1,0 +1,6 @@
+* Development Notes
+
+** Testing
+In name space using 'clojure.test'
+
+(run-tests)

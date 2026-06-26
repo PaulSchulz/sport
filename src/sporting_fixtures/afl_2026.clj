@@ -232,8 +232,8 @@
                       :scoreboard {:six "113/5(11)", :sco "117/5(10.1/11)"},
                       :summary "SCO won by 5 wickets (5 balls left)"},
                    2 {:game 2,
-                    :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
-                    :summary "REN won by 14 runs"}}]
+                      :scoreboard {:ren "212/5(20)", :hea "198/8(20)"},
+                      :summary "REN won by 14 runs"}}]
       (is (= (results-by-game input)
              result)))))
 
@@ -598,14 +598,14 @@ venue)))
 
 ;; Initialise Ladder data
 (defn empty-ladder [teams]
-(into {}
-(for [[team {:keys [placeholder?]}] teams
-      :when (not placeholder?)]
-[team {:team team
-       :played 0 :won 0 :lost 0 :tied 0 :points 0
-       :runs-for 0 :runs-against 0
-       :balls-faced 0 :balls-bowled 0
-       :nrr 0.0}])))
+  (into {}
+        (for [[team {:keys [placeholder?]}] teams
+              :when (not placeholder?)]
+          [team {:team team
+                 :played 0 :won 0 :lost 0 :tied 0 :points 0
+                 :runs-for 0 :runs-against 0
+                 :balls-faced 0 :balls-bowled 0
+                 :nrr 0.0}])))
 
 (deftest ^:test empty-ladder-test
 (let [teams {:sco {} :str {}}

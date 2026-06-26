@@ -1,0 +1,73 @@
+FIFA World Cup 2026 Groups
+========================== 
+Group A
+  KOR Korea Republic
+  RSA South Africa
+  CZE Czechia
+  MEX Mexico
+
+Group B
+  QAT Qatar
+  CAN Canada
+  BIH Bosnia and Herzegovina
+  SUI Switzerland
+
+Group C
+  HAI Haiti
+  BRA Brazil
+  SCO Scotland
+  MAR Morocco
+
+Group D
+  USA USA
+  PAR Paraguay
+  AUS Australia
+  TUK Türkiye
+
+Group E
+  GER Germany
+  CUW Curaçao
+  ECU Ecuador
+  CIV Côte d'Ivoire
+
+Group F
+  NED Netherlands
+  JPN Japan
+  TUN Tunisia
+  SWE Sweden
+
+Group G
+  EGY Egypt
+  BEL Belgium
+  IRN IR Iran
+
+Group H
+  ESP Spain
+  CPV Cabo Verde
+  URU Uruguay
+  KSA Saudi Arabia
+
+Group I
+  SEN Senegal
+  NOR Norway
+  FRA France
+  IRQ Iraq
+
+Group J
+  ALG Algeria
+  AUT Austria
+  ARG Argentina
+  JOR Jordan
+
+Group K
+  POR Portugal
+  COD Congo DR
+  UZB Uzbekistan
+  COL Colombia
+
+Group L
+  PAN Panama
+  ENG England
+  CRO Croatia
+  GHA Ghana
+

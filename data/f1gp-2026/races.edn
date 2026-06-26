@@ -1,0 +1,24 @@
+[
+ {:round  1  :name "Australia"           :circuit "Albert Park Circuit, Melbourne"              :date "6 March"}
+ {:round  2  :name "China"               :circuit "Shanghai International Circuit, Shanghai"    :date "13 March"}
+ {:round  3  :name "Japan"               :circuit "Suzuka International Racing Course, Suzuka"  :date "27 April"}
+ {:round  4  :name "Miami" ￼             :circuit "Miami International Autodrome, Miami Gardens, Florida"  :date "1 May"}
+ {:round  5  :name "Canadian"            :circuit ""                                            :date "22 May"}
+ {:round  6  :name "Monaco"              :circuit ""                                            :date "5 June"}
+ {:round  7  :name "Barcelona-Catalunya" :circuit ""                                            :date "12 June"}
+ {:round  8  :name "Austria"             :circuit "Red Bull Ring, Spielberg"                    :date "29 June"  }
+ {:round  9  :name "British"             :circuit "Silverstone Circuit, Silverstone"            :date "3 July"  }
+ {:round 10  :name "Belgian"             :circuit "Circuit de Spa-Francorchamps, Stavelot"      :date "17 July"  }
+ {:round 11  :name "Hungary"	￼        :circuit "Hungaroring, Mogyoród"                       :date "24 July"}
+ {:round 12  :name "Netherlands"	￼    :circuit "Circuit Zandvoort, Zandvoort"                :date "21 August"}
+ {:round 13  :name "Italy" ￼             :circuit "Monza Circuit, Monza"	                    :date "4 September"}
+ {:round 14  :name "Spain"               :circuit ""                                            :date "11 September"}
+ {:round 17  :name "Azerbaijan" ￼        :circuit "Baku City Circuit, Baku"                     :date "24 September"}
+ {:round 18  :name "Singapore"	￼        :circuit "Marina Bay Street Circuit, Singapore"        :date "5 October"}
+ {:round 19  :name "United States"       :circuit "Circuit of the Americas, Austin, Texas"	    :date "23 October"}
+ {:round 20  :name "Mexico" ￼            :circuit "Autódromo Hermanos Rodríguez, Mexico City"   :date "30 October"}
+ {:round 21  :name "Brazil"	￼            :circuit ""                                            :date "6 November"}
+ {:round 22  :name "Las Vegas"	￼        :circuit "Las Vegas Strip Circuit, Paradise, Nevada"   :date "19 November"}
+ {:round 23  :name "Qatar"	￼            :circuit "Lusail International Circuit, Lusail"        :date "29 November"}
+ {:round 24  :name "Abu Dhabi"	￼        :circuit "Yas Marina Circuit, Abu Dhabi"               :date "4 December"}
+ ]

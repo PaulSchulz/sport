@@ -1,0 +1,99 @@
+;; Country codes: https://simple.wikipedia.org/wiki/List_of_IOC_country_codes
+{
+ ;; Africa (CAF)
+ :alg {:name "Algeria"        :confederation :africa  :group :j  :ranking 28}
+ :cpv {:name "Cabo Verde"     :confederation :africa  :group :h  :ranking 67}
+ :cod {:name "Congo DR",      :confederation :africa  :group :k  :ranking 46}
+ :civ {:name "Côte d'Ivoire"  :confederation :africa  :group :e  :ranking 33}
+ :egy {:name "Egypt"          :confederation :africa  :group :g  :ranking 29}
+ :gha {:name "Ghana"          :confederation :africa  :group :l  :ranking 73}
+ :mar {:name "Morocco"        :confederation :africa  :group :c  :ranking  7}
+ :sen {:name "Senegal"        :confederation :africa  :group :i  :ranking 15}
+ :rsa {:name "South Africa"   :confederation :africa  :group :a  :ranking 60}
+ :tun {:name "Tunisia"        :confederation :africa  :group :f  :ranking 45}
+
+ ;; Asia (AFC)
+ :aus {:name "Australia"      :confederation :asia  :group :d  :ranking 27}
+ :irn {:name "IR Iran"        :confederation :asia  :group :g  :ranking 20}
+ :irq {:name "Iraq"           :confederation :asia  :group :i  :ranking 57}
+ :jpn {:name "Japan"          :confederation :asia  :group :f  :ranking 18}
+ :jor {:name "Jordan"         :confederation :asia  :group :j  :ranking 63}
+ :kor {:name "Korea Republic" :confederation :asia  :group :a  :ranking 25}
+ :qat {:name "Qatar"          :confederation :asia  :group :b  :ranking 56}
+ :ksa {:name "Saudi Arabia"   :confederation :asia  :group :h  :ranking 61}
+ :uzb {:name "Uzbekistan"     :confederation :asia  :group :k  :ranking 50}
+
+ ;; Europe
+ :aut {:name "Austria"                 :confederation :europe  :group :j  :ranking 24}
+ :bel {:name "Belgium"                 :confederation :europe  :group :g  :ranking  9}
+ :bih {:name "Bosnia and Herzegovina"  :confederation :europe  :group :b  :ranking 64}
+ :cro {:name "Croatia"                 :confederation :europe  :group :l  :ranking 11}
+ :cze {:name "Czechia"                 :confederation :europe  :group :a  :ranking 40}
+ :eng {:name "England"                 :confederation :europe  :group :l  :ranking  4}
+ :fra {:name "France"                  :confederation :europe  :group :i  :ranking  3}
+ :ger {:name "Germany"                 :confederation :europe  :group :e  :ranking 10}
+ :ned {:name "Netherlands"             :confederation :europe  :group :f  :ranking  8}
+ :nor {:name "Norway"                  :confederation :europe  :group :i  :ranking 31}
+ :por {:name "Portugal"                :confederation :europe  :group :k  :ranking  5}
+ :sco {:name "Scotland"                :confederation :europe  :group :c  :ranking 42}
+ :esp {:name "Spain"                   :confederation :europe  :group :h  :ranking  2}
+ :swe {:name "Sweden"                  :confederation :europe  :group :f  :ranking 38}
+ :sui {:name "Switzerland"             :confederation :europe  :group :b  :ranking 19}
+ :tuk {:name "Türkiye"                 :confederation :europe  :group :d  :ranking 22}
+
+ ;; North America, Central America and Caribbean (CONCACAF)
+ :can {:name "Canada"  :confederation :north-americas  :group :b  :ranking 30}
+ :mex {:name "Mexico"  :confederation :north-americas  :group :a  :ranking 14}
+ :usa {:name "USA"     :confederation :north-americas  :group :d  :ranking 17}
+ :cuw {:name "Curaçao" :confederation :north-americas  :group :e  :ranking 82}
+ :hai {:name "Haiti"   :confederation :north-americas  :group :c  :ranking 83}
+ :pan {:name "Panama"  :confederation :north-americas  :group :l  :ranking 34}
+
+ ;; South America (CONMEBOL)
+ :arg {:name "Argentina"  :confederation :south-america  :group :j  :ranking  1}
+ :bra {:name "Brazil"     :confederation :south-america  :group :c  :ranking  6}
+ :col {:name "Colombia"   :confederation :south-america  :group :k  :ranking 13}
+ :ecu {:name "Ecuador"    :confederation :south-america  :group :e  :ranking 23}
+ :par {:name "Paraguay"   :confederation :south-america  :group :d  :ranking 41}
+ :uru {:name "Uruguay"    :confederation :south-america  :group :h  :ranking 16}
+
+ ;; Oceania (OFC)
+ :nzl {:name "New Zealand" :confederation :oceania  :group :g :ranking 85}
+
+ :tba {:id :tba, :name "To be announced",
+       :placeholder? true}
+
+ :2A      {:name "2A"     :placeholder? true}
+ :2B      {:name "2B"     :placeholder? true}
+ :1C      {:name "1C"     :placeholder? true}
+ :2F      {:name "2F"     :placeholder? true}
+ :1E      {:name "1E"     :placeholder? true}
+ :3ABCDF  {:name "3ABCDF" :placeholder? true}
+ :1F      {:name "1F"     :placeholder? true}
+ :2C      {:name "2C"     :placeholder? true}
+ :2E      {:name "2E"     :placeholder? true}
+ :2I      {:name "2I"     :placeholder? true}
+ :1I      {:name "1I"     :placeholder? true}
+ :3CDFGH  {:name "3CDFGH" :placeholder? true}
+ :1A      {:name "1A"     :placeholder? true}
+ :3CEFHI  {:name "3CEFHI" :placeholder? true}
+ :1L      {:name "1L"     :placeholder? true}
+ :3EHIJK  {:name "3EHIJK" :placeholder? true}
+ :1G      {:name "1G"     :placeholder? true}
+ :3AEHIJ  {:name "3AEHIJ" :placeholder? true}
+ :1D      {:name "1D"     :placeholder? true}
+ :3BEFIJ  {:name "3BEFIJ" :placeholder? true}
+ :1H      {:name "1H"     :placeholder? true}
+ :2J      {:name "2J"     :placeholder? true}
+ :2K      {:name "2K"     :placeholder? true}
+ :2L      {:name "2L"     :placeholder? true}
+ :1B      {:name "1B"     :placeholder? true}
+ :3EFGIJ  {:name "3EFGIJ" :placeholder? true}
+ :2D      {:name "2D"     :placeholder? true}
+ :2G      {:name "2G"     :placeholder? true}
+ :1J      {:name "1J"     :placeholder? true}
+ :2H      {:name "2H"     :placeholder? true}
+ :1K      {:name "1K"     :placeholder? true}
+ :3DEIJL  {:name "3DEIJL" :placeholder? true}
+
+ }

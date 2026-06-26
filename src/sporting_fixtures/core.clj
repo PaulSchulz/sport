@@ -35,10 +35,24 @@
      ";;"
      (str/join (repeat 78 ";"))
      ";; Current competition: afl-2026"
-
      "(require '[sporting-fixtures.afl-2026 :as afl-2026])"
      "(ns sporting-fixtures.afl-2026)"
+     ""
+     ";; Macros"
+     "(afl26)  ; Setup for AFL 2026 Season"
+     "(fifa26) ; Setup for FIFA World Cup 2026"
+
      ])))
+
+(defmacro afl26 []
+  (require '[sporting-fixtures.afl-2026 :as afl26])
+  (ns sporting-fixtures.afl-2026)
+  )
+
+(defmacro fifa26 []
+  (require '[sporting-fixtures.fifa-world-cup-2026 :as fifa26])
+  (ns sporting-fixtures.fifa-world-cup-2026)
+  )
 
 (defmacro setup []
   (require ['sporting-fixtures.setup :as 's])

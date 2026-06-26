@@ -1,0 +1,77 @@
+[
+ ;; Thu 11
+ {:game   1 :scoreboard {:mex "2R"  :rsa "0RR"}}
+ {:game   2 :scoreboard {:kor "2"   :cze "1"}}
+ ;; Fri 12
+ {:game   3 :scoreboard {:can "1"   :bih "1"}}
+ {:game   4 :scoreboard {:usa "4"   :par "1"}}
+ ;; Sat 13
+ {:game   8 :scoreboard {:qat "1"   :sui "1"}}
+ {:game   7 :scoreboard {:bra "1"   :mar "1"}}
+ {:game   5 :scoreboard {:hai "0"   :sco "1"}}
+ {:game   6 :scoreboard {:aus "2"   :tuk "0"}}
+ ;; Sun 14
+ {:game  10 :scoreboard {:ger "7"   :cuw "1"}}
+ {:game  11 :scoreboard {:ned "2"   :jpn "2"}}
+ {:game   9 :scoreboard {:civ "1"   :ecu "0"}}
+ {:game  12 :scoreboard {:swe "5"   :tun "1"}}
+ ;; Mon 15
+ {:game  14 :scoreboard {:esp "0"   :cpv "0"}}
+ {:game  16 :scoreboard {:bel "1"   :egy "1"}}
+ {:game  13 :scoreboard {:ksa "1"   :uru "1"}}
+ {:game  15 :scoreboard {:irn "2"   :nzl "2"}}
+ ;; Tue 16
+ {:game  17 :scoreboard {:fra "3"   :sen "1"}}
+ {:game  18 :scoreboard {:irq "1"   :nor "4"}}
+ {:game  19 :scoreboard {:arg "3"   :alg "0"}}
+ {:game  20 :scoreboard {:por "3"   :cod "1"}}
+ ;; Wed 17
+ {:game  23 :scoreboard {:por "1"   :cod "1"}}
+ {:game  22 :scoreboard {:eng "4"   :cro "2"}}
+ {:game  21 :scoreboard {:gha "1"   :pan "0"}}
+ {:game  24 :scoreboard {:uzb "1"   :col "3"}}
+ ;; Thu 18
+ {:game  25 :scoreboard {:cze "1"   :rsa "1"}}
+ {:game  26 :scoreboard {:sui "4"   :bih "1"}}
+ {:game  27 :scoreboard {:can "6"   :qat "0RR"}}
+ {:game  28 :scoreboard {:mex "1"   :kor "0"}}
+ ;; Fri 19
+ {:game  32 :scoreboard {:usa "2"   :aus "0"}}
+ {:game  30 :scoreboard {:sco "0"   :mar "1"}}
+ {:game  29 :scoreboard {:bra "3"   :hai "0"}}
+ {:game  31 :scoreboard {:tuk "0"   :par "1R"}}
+ ;; Sat 20
+ {:game  35 :scoreboard {:ned "5"   :swe "1"}}
+ {:game  33 :scoreboard {:ger "2"   :civ "1"}}
+ {:game  34 :scoreboard {:ecu "0"   :cuw "0"}}
+ {:game  36 :scoreboard {:tun "0"   :jpn "4"}}
+ ;; Sun 21
+ {:game  38 :scoreboard {:esp "4 "  :ksa "0"}}
+ {:game  39 :scoreboard {:bel "0R"  :irn "0"}}
+ {:game  37 :scoreboard {:uru "2"   :cpv "2"}}
+ {:game  40 :scoreboard {:nzl "1"   :egy "3"}}
+ ;; Mon 22
+ {:game  43 :scoreboard {:arg "2"   :aut "1"}}
+ {:game  42 :scoreboard {:fra "3"   :irq "0"}}
+ {:game  41 :scoreboard {:nor "3"   :sen "2"}}
+ {:game  44 :scoreboard {:jor "1"   :alg "2"}}
+ ;; Tue 23
+ {:game  47 :scoreboard {:por "5"   :uzb "0"}}
+ {:game  45 :scoreboard {:eng "0"   :gha "0"}}
+ {:game  46 :scoreboard {:pan "0"   :cro "1"}}
+ {:game  48 :scoreboard {:col "1"   :cod "0"}}
+ ;; Wed 24
+ {:game  51 :scoreboard {:sui "2"   :can "1"}}
+ {:game  52 :scoreboard {:bih "3"   :qat "1"}}
+ {:game  49 :scoreboard {:sco "3"   :bra "0"}}
+ {:game  50 :scoreboard {:mar "4"   :hai "2"}}
+ {:game  53 :scoreboard {:cze "0"   :mex "3"}}
+ {:game  54 :scoreboard {:rsa "1"   :kor "0"}}
+ ;; Thu 25
+ {:game  55 :scoreboard {:cuw "0"   :civ "2"}}
+ {:game  56 :scoreboard {:ecu "2"   :ger "1"}}
+ {:game  57 :scoreboard {:jpn "1"   :swe "1"}}
+ {:game  58 :scoreboard {:tun "1"   :ned "3"}}
+ {:game  59 :scoreboard {:tuk "3"   :usa "2"}}
+ {:game  60 :scoreboard {:par "0"   :aus "0"}}
+ ]

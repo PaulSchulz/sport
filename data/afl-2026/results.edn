@@ -150,14 +150,30 @@
  {:game 114 :scoreboard {:col "11.9(75)"   :mel "12.11(83)"}}
 
  ;; Round 14
- {:game 115 :scoreboard {:wb "" :adl ""}}
- {:game 116 :scoreboard {:gee "" :gcs ""}}
- {:game 117 :scoreboard {:mel "" :ess ""}}
- {:game 118 :scoreboard {:nm "" :wce ""}}
- {:game 119 :scoreboard {:pa "" :syd ""}}
- {:game 120 :scoreboard {:ric "" :bri ""}}
- {:game 121 :scoreboard {:stk "" :gws ""}}
+ {:game 115 :scoreboard {:wb   "9.10(64)"  :adl "19.7(121)"}}
+ {:game 116 :scoreboard {:gee "15.15(105)" :gcs  "8.12(60)"}}
+ {:game 117 :scoreboard {:mel "13.17(95)"  :ess  "6.14(50)"}}
+ {:game 118 :scoreboard {:nm  "10.14(74)"  :wce "10.13(73)"}}
+ {:game 119 :scoreboard {:pa  "13.12(90)"  :syd "14.9(93)"}}
+ {:game 120 :scoreboard {:ric "12.8(80)"   :bri "17.13(115)"}}
+ {:game 121 :scoreboard {:stk "14.12(96)"  :gws "13.10(88)"}}
 
+ ;; Round 15
+ {:game 122 :scoreboard {:fre "14.15(99)"  :gee "14.6(90)"}}
+ {:game 123 :scoreboard {:gcs "14.13(97)"  :haw "17.11(113)"}}
+ {:game 124 :scoreboard {:adl "11.13(79)"  :mel  "9.8(62)"}}
+ {:game 125 :scoreboard {:gws  "9.11(65)"  :car "12.16(88)"}}
+ {:game 126 :scoreboard {:col "11.12(78)"  :pa   "6.15(51)"}}
+ {:game 127 :scoreboard {:ric  "6.12(48)"  :nm  "10.13(73)"}}
+ {:game 128 :scoreboard {:stk  "8.13(61)"  :wb  "12.11(83)"}}
 
+ ;; Round 16
+ {:game 129 :scoreboard {:bri "19.12(126)" :syd "12.11(83)"}}
+ {:game 132 :scoreboard {:haw "" :gws ""}}
+ {:game 130 :scoreboard {:car "" :wce ""}}
+ {:game 131 :scoreboard {:col "" :ric ""}}
+ {:game 134 :scoreboard {:pa "" :adl ""}}
+ {:game 133 :scoreboard {:nm "" :ess ""}}
+ {:game 135 :scoreboard {:fre "" :gcs ""}}
 
  )

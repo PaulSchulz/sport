@@ -9,6 +9,9 @@
   - [[#development--new-features][Development / New Features]]
 
 ** Introduction
+
+*Npte: This documentation is out of date.*
+
 This is a collection of Clojure scripts for collecting and collating Sporting
 event and fixture data.
 
