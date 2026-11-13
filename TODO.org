@@ -1,14 +1,16 @@
 * Development To-do Items
-
-The following are features which will be worked on at some stage.
-
 ** Contents                                                               :TOC:
 - [[#development-to-do-items][Development To-do Items]]
+  - [[#introduction][Introduction]]
   - [[#tidy-up-to-dataget-fixtures][Tidy-up to data/get-fixtures]]
   - [[#enhancedstreamlineoptimize-data-setup][Enhanced/streamline/optimize data setup]]
   - [[#process-documentation][Process Documentation]]
   - [[#reports][Reports]]
+  - [[#for-cursor][For Cursor]]
 
+** Introduction
+The following are features which will be worked on at some stage.
+    
 ** Tidy-up to data/get-fixtures
 *** TODO Change SPORTID to EVENT
 Fix up script.
@@ -35,5 +37,27 @@ of mistakes.
 *** Season Fixture Report
 Standardize season fixture report for all competitions, including possible minor
 variations depending on the sport.
+
+** For Cursor
+*** Fixture line and name files
+Noted for the BBL 2026/27 report, and likely the other season reports.
+
+Work on these changes in the aleague-men-2026 reports.
+
+**** DONE Configurable fixture line
+- The format of a fixture line should be configurable.
+- The default should print nicely in most cases.
+- Include home team, away team, and venue, with space to add scores.
+- Truncate a team name when required.
+- The line must fit in 80 columns.
+
+**** DONE Extract team names
+- Extract the team names from the fixtures into a file.
+- Create a short team name.
+- Create team features, for example a team colour.
+
+**** DONE Extract venue names
+- Extract the venue and stadium names from the fixtures.
+- Create a short name for each venue.
 
 

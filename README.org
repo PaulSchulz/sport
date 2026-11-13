@@ -10,7 +10,7 @@
 
 ** Introduction
 
-*Npte: This documentation is out of date.*
+*Note: This documentation is out of date.*
 
 This is a collection of Clojure scripts for collecting and collating Sporting
 event and fixture data.
@@ -152,7 +152,6 @@ Save report to a file
 #+begin_src clojure
   (println (r/report-games-save data))")
 #+end_src
-
 
 ** Development / New Features
 See [[file:TODO.org][TODO.org]] file for specific TODO items. Comments in the code are also used to

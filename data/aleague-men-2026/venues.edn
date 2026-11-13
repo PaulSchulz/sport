@@ -1,0 +1,28 @@
+{
+ "AAMI Park" {:name "AAMI Park"
+  :short "AAMI Park"}
+ "Allianz Stadium" {:name "Allianz Stadium"
+  :short "Allianz Stadium"}
+ "Campbelltown Sports Stadium" {:name "Campbelltown Sports Stadium"
+  :short "Campbelltown"}
+ "CommBank Stadium" {:name "CommBank Stadium"
+  :short "CommBank Stad."}
+ "Coopers Stadium" {:name "Coopers Stadium"
+  :short "Coopers Stadium"}
+ "Go Media Stadium" {:name "Go Media Stadium"
+  :short "Go Media Stad."}
+ "HBF Park" {:name "HBF Park"
+  :short "HBF Park"}
+ "Hnry Stadium" {:name "Hnry Stadium"
+  :short "Hnry Stadium"}
+ "Kayo Stadium" {:name "Kayo Stadium"
+  :short "Kayo Stadium"}
+ "McDonald Jones Stadium" {:name "McDonald Jones Stadium"
+  :short "McDonald Jones"}
+ "One New Zealand Stadium" {:name "One New Zealand Stadium"
+  :short "One NZ Stadium"}
+ "Suncorp Stadium" {:name "Suncorp Stadium"
+  :short "Suncorp Stadium"}
+ "polytec Stadium" {:name "polytec Stadium"
+  :short "polytec Stadium"}
+}

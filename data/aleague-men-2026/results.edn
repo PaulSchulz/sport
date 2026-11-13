@@ -1,0 +1,216 @@
+;; A-League Men 2026 results, indexed by match number.
+;; :home and :away are the goals scored, or a string with red cards: "1R", "0RR".
+;; Leave nil until the match is played.
+{
+;; Round 1
+ 1 {:home "0"  :away "0"} ;; Sydney vs Western Sydney Wanderers
+ 2 {:home "3"  :away "1"} ;; Auckland vs Melbourne City
+ 3 {:home "2"  :away "1"} ;; Macarthur vs Perth Glory
+ 4 {:home "2"  :away "2"} ;; Central Coast Mariners vs Newcastle Jets
+ 5 {:home "2"  :away "2"} ;; Wellington Phoenix vs Melbourne Victory
+
+ ;; Round 2
+ 7 {:home "2"  :away "1"} ;; Brisbane Roar vs Perth Glory
+ 8 {:home "1"  :away "1"} ;; Newcastle Jets vs Macarthur
+ 9 {:home "5"  :away "2"} ;; Western Sydney Wanderers vs Auckland
+ 10 {:home "1" :away "1"} ;; Melbourne Victory vs Melbourne City
+ 11 {:home "2" :away "0"} ;; Wellington Phoenix vs Central Coast Mariners
+ 12 {:home "2" :away "1"} ;; Sydney vs Adelaide United
+
+;; Round 3 
+ 13 {:home "1"  :away "1"} ;; Brisbane Roar vs Auckland
+ 14 {:home "0"  :away "3"} ;; Newcastle Jets vs Wellington Phoenix
+ 15 {:home "2"  :away "1"} ;; Melbourne City vs Sydney
+ 16 {:home "0"  :away "0"} ;; Macarthur vs Western Sydney Wanderers
+ 17 {:home "1R" :away "1"} ;; Melbourne Victory vs Central Coast Mariners
+ 18 {:home "4"  :away "0"} ;; Perth Glory vs Adelaide United
+ 
+ ;; Round 4
+ 19 {:home "4"  :away "1"} ;; Sydney vs Central Coast Mariners
+ 20 {:home "0"  :away "0"} ;; Auckland vs Wellington Phoenix
+ 21 {:home "2R" :away "1"} ;; Melbourne City vs Western Sydney Wanderers
+ 22 {:home "2"  :away "1"} ;; Perth Glory vs Newcastle Jets
+ 23 {:home "1"  :away "2"} ;; Macarthur vs Brisbane Roar
+ 24 {:home "2"  :away "2R"} ;; Adelaide United vs Melbourne Victory
+ 
+ ;; Round 5
+ 25 {:home nil :away nil} ;; Western Sydney Wanderers vs Adelaide United
+ 26 {:home nil :away nil} ;; Auckland vs Melbourne Victory
+ 27 {:home nil :away nil} ;; Central Coast Mariners vs Perth Glory
+ 28 {:home nil :away nil} ;; Brisbane Roar vs Sydney
+ 29 {:home nil :away nil} ;; Wellington Phoenix vs Macarthur
+ 
+ ;; Round 6
+ 30 {:home nil :away nil} ;; Macarthur vs Melbourne City
+ 31 {:home nil :away nil} ;; Central Coast Mariners vs Auckland
+ 
+ ;; Round 7
+ 33 {:home nil :away nil} ;; Western Sydney Wanderers vs Perth Glory
+ 32 {:home nil :away nil} ;; Wellington Phoenix vs Adelaide United
+ 34 {:home nil :away nil} ;; Sydney vs Melbourne Victory
+
+ ;; Round 8
+ 35 {:home nil :away nil} ;; Adelaide United vs Macarthur
+ 36 {:home nil :away nil} ;; Perth Glory vs Melbourne City
+ 37 {:home nil :away nil} ;; Auckland vs Sydney
+ 38 {:home nil :away nil} ;; Central Coast Mariners vs Brisbane Roar
+ 39 {:home nil :away nil} ;; Melbourne Victory vs Newcastle Jets
+ 40 {:home nil :away nil} ;; Western Sydney Wanderers vs Wellington Phoenix
+ 
+ ;; Round 9
+ 6 {:home nil :away nil} ;; Adelaide United vs Brisbane Roar
+ 41 {:home nil :away nil} ;; Sydney vs Perth Glory
+ 42 {:home nil :away nil} ;; Wellington Phoenix vs Auckland
+ 43 {:home nil :away nil} ;; Brisbane Roar vs Western Sydney Wanderers
+ 44 {:home nil :away nil} ;; Melbourne City vs Melbourne Victory
+ 45 {:home nil :away nil} ;; Adelaide United vs Newcastle Jets
+ 46 {:home nil :away nil} ;; Macarthur vs Central Coast Mariners
+ 
+ ;; Round 10
+ 47 {:home nil :away nil} ;; Western Sydney Wanderers vs Newcastle Jets
+ 48 {:home nil :away nil} ;; Melbourne City vs Auckland
+ 49 {:home nil :away nil} ;; Adelaide United vs Central Coast Mariners
+ 50 {:home nil :away nil} ;; Sydney vs Macarthur
+ 51 {:home nil :away nil} ;; Melbourne Victory vs Wellington Phoenix
+ 52 {:home nil :away nil} ;; Brisbane Roar vs Perth Glory
+ 
+ ;; Round 11
+ 53 {:home nil :away nil} ;; Central Coast Mariners vs Melbourne City
+ 54 {:home nil :away nil} ;; Auckland vs Adelaide United
+ 55 {:home nil :away nil} ;; Western Sydney Wanderers vs Macarthur
+ 56 {:home nil :away nil} ;; Wellington Phoenix vs Newcastle Jets
+ 57 {:home nil :away nil} ;; Sydney vs Brisbane Roar
+ 58 {:home nil :away nil} ;; Melbourne Victory vs Perth Glory
+ 
+ ;; Round 12
+ 59 {:home nil :away nil} ;; Central Coast Mariners vs Western Sydney Wanderers
+ 60 {:home nil :away nil} ;; Perth Glory vs Macarthur
+ 61 {:home nil :away nil} ;; Newcastle Jets vs Auckland
+ 62 {:home nil :away nil} ;; Brisbane Roar vs Melbourne Victory
+ 63 {:home nil :away nil} ;; Adelaide United vs Sydney
+ 64 {:home nil :away nil} ;; Melbourne City vs Wellington Phoenix
+
+ ;; Round 13
+ 65 {:home nil :away nil} ;; Macarthur vs Wellington Phoenix
+ 66 {:home nil :away nil} ;; Melbourne Victory vs Auckland
+ 67 {:home nil :away nil} ;; Melbourne City vs Brisbane Roar
+ 68 {:home nil :away nil} ;; Sydney vs Newcastle Jets
+ 69 {:home nil :away nil} ;; Perth Glory vs Central Coast Mariners
+ 70 {:home nil :away nil} ;; Adelaide United vs Western Sydney Wanderers
+ 71 {:home nil :away nil} ;; Newcastle Jets vs Melbourne City
+ 
+ ;; Round 14
+ 72 {:home nil :away nil} ;; Western Sydney Wanderers vs Melbourne City
+ 73 {:home nil :away nil} ;; Brisbane Roar vs Wellington Phoenix
+ 74 {:home nil :away nil} ;; Newcastle Jets vs Central Coast Mariners
+ 75 {:home nil :away nil} ;; Auckland vs Perth Glory
+ 76 {:home nil :away nil} ;; Macarthur vs Adelaide United
+ 77 {:home nil :away nil} ;; Melbourne Victory vs Sydney
+ 
+ ;; Round 15
+ 78 {:home nil :away nil} ;; Adelaide United vs Melbourne City
+ 79 {:home nil :away nil} ;; Wellington Phoenix vs Perth Glory
+ 80 {:home nil :away nil} ;; Newcastle Jets vs Melbourne Victory
+ 81 {:home nil :away nil} ;; Western Sydney Wanderers vs Sydney
+ 82 {:home nil :away nil} ;; Auckland vs Brisbane Roar
+ 83 {:home nil :away nil} ;; Central Coast Mariners vs Macarthur
+
+ ;; Round 16
+ 84 {:home nil :away nil} ;; Newcastle Jets vs Perth Glory
+ 85 {:home nil :away nil} ;; Wellington Phoenix vs Western Sydney Wanderers
+ 86 {:home nil :away nil} ;; Macarthur vs Auckland
+ 87 {:home nil :away nil} ;; Adelaide United vs Melbourne Victory
+ 88 {:home nil :away nil} ;; Sydney vs Melbourne City
+ 89 {:home nil :away nil} ;; Brisbane Roar vs Central Coast Mariners
+
+ ;; Round 17 
+ 90 {:home nil :away nil} ;; Auckland vs Wellington Phoenix
+ 91 {:home nil :away nil} ;; Newcastle Jets vs Brisbane Roar
+ 92 {:home nil :away nil} ;; Melbourne City vs Central Coast Mariners
+ 93 {:home nil :away nil} ;; Melbourne Victory vs Western Sydney Wanderers
+ 
+ ;; Round 18
+ 94 {:home nil :away nil} ;; Brisbane Roar vs Macarthur
+ 95 {:home nil :away nil} ;; Perth Glory vs Sydney
+ 96 {:home nil :away nil} ;; Newcastle Jets vs Adelaide United
+
+ ;; Round 19
+ 97 {:home nil :away nil} ;; Newcastle Jets vs Western Sydney Wanderers
+ 98 {:home nil :away nil} ;; Sydney vs Auckland
+ 99 {:home nil :away nil} ;; Melbourne Victory vs Macarthur
+ 100 {:home nil :away nil} ;; Perth Glory vs Brisbane Roar
+ 101 {:home nil :away nil} ;; Central Coast Mariners vs Adelaide United
+ 102 {:home nil :away nil} ;; Melbourne City vs Wellington Phoenix
+ 
+ ;; Round 20
+ 103 {:home nil :away nil} ;; Adelaide United vs Perth Glory
+ 104 {:home nil :away nil} ;; Wellington Phoenix vs Sydney
+ 105 {:home nil :away nil} ;; Macarthur vs Newcastle Jets
+ 106 {:home nil :away nil} ;; Melbourne Victory vs Melbourne City
+ 107 {:home nil :away nil} ;; Auckland vs Central Coast Mariners
+ 108 {:home nil :away nil} ;; Western Sydney Wanderers vs Brisbane Roar
+ 109 {:home nil :away nil} ;; Western Sydney Wanderers vs Melbourne City
+ 
+ ;; Round 21 
+ 110 {:home nil :away nil} ;; Auckland vs Newcastle Jets
+ 111 {:home nil :away nil} ;; Central Coast Mariners vs Wellington Phoenix
+ 112 {:home nil :away nil} ;; Macarthur vs Sydney
+ 113 {:home nil :away nil} ;; Brisbane Roar vs Adelaide United
+ 114 {:home nil :away nil} ;; Perth Glory vs Melbourne Victory
+ 
+ ;; Round 22
+ 115 {:home nil :away nil} ;; Central Coast Mariners vs Perth Glory
+ 116 {:home nil :away nil} ;; Wellington Phoenix vs Macarthur
+ 117 {:home nil :away nil} ;; Western Sydney Wanderers vs Auckland
+ 118 {:home nil :away nil} ;; Newcastle Jets vs Sydney
+ 119 {:home nil :away nil} ;; Melbourne City vs Adelaide United
+ 120 {:home nil :away nil} ;; Brisbane Roar vs Melbourne Victory
+ 
+ ;; Round 23
+ 121 {:home nil :away nil} ;; Adelaide United vs Wellington Phoenix
+ 122 {:home nil :away nil} ;; Brisbane Roar vs Melbourne City
+ 123 {:home nil :away nil} ;; Sydney vs Western Sydney Wanderers
+ 124 {:home nil :away nil} ;; Perth Glory vs Newcastle Jets
+ 125 {:home nil :away nil} ;; Auckland vs Macarthur
+ 126 {:home nil :away nil} ;; Central Coast Mariners vs Melbourne Victory
+ 
+ ;; Round 24
+ 127 {:home nil :away nil} ;; Wellington Phoenix vs Brisbane Roar
+ 128 {:home nil :away nil} ;; Melbourne City vs Macarthur
+ 129 {:home nil :away nil} ;; Newcastle Jets vs Adelaide United
+ 130 {:home nil :away nil} ;; Melbourne Victory vs Sydney
+ 131 {:home nil :away nil} ;; Perth Glory vs Auckland
+ 132 {:home nil :away nil} ;; Western Sydney Wanderers vs Central Coast Mariners
+ 
+ ;; Round 25
+ 133 {:home nil :away nil} ;; Melbourne City vs Perth Glory
+ 134 {:home nil :away nil} ;; Wellington Phoenix vs Newcastle Jets
+ 135 {:home nil :away nil} ;; Central Coast Mariners vs Sydney
+ 136 {:home nil :away nil} ;; Melbourne Victory vs Adelaide United
+ 137 {:home nil :away nil} ;; Auckland vs Brisbane Roar
+ 138 {:home nil :away nil} ;; Macarthur vs Western Sydney Wanderers
+ 
+ ;; Round 26
+ 139 {:home nil :away nil} ;; Sydney vs Auckland
+ 140 {:home nil :away nil} ;; Wellington Phoenix vs Melbourne City
+ 141 {:home nil :away nil} ;; Adelaide United vs Brisbane Roar
+ 142 {:home nil :away nil} ;; Perth Glory vs Western Sydney Wanderers
+ 143 {:home nil :away nil} ;; Newcastle Jets vs Central Coast Mariners
+ 144 {:home nil :away nil} ;; Macarthur vs Melbourne Victory
+ 
+ ;; Round 27
+ 145 {:home nil :away nil} ;; Brisbane Roar vs Newcastle Jets
+ 146 {:home nil :away nil} ;; Perth Glory vs Wellington Phoenix
+ 147 {:home nil :away nil} ;; Melbourne City vs Central Coast Mariners
+ 148 {:home nil :away nil} ;; Adelaide United vs Auckland
+ 149 {:home nil :away nil} ;; Macarthur vs Sydney
+ 150 {:home nil :away nil} ;; Western Sydney Wanderers vs Melbourne Victory
+ 
+ ;; Round 28
+ 151 {:home nil :away nil} ;; Sydney vs Wellington Phoenix
+ 152 {:home nil :away nil} ;; Perth Glory vs Adelaide United
+ 153 {:home nil :away nil} ;; Auckland vs Western Sydney Wanderers
+ 154 {:home nil :away nil} ;; Melbourne City vs Newcastle Jets
+ 155 {:home nil :away nil} ;; Central Coast Mariners vs Macarthur
+ 156 {:home nil :away nil} ;; Melbourne Victory vs Brisbane Roar
+}

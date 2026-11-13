@@ -1,721 +1,365 @@
-(ns sporting-fixtures.aleague-mens-2026
-  (:require [clojure.data.csv :as csv]
+(ns sporting-fixtures.aleague-men-2026
+  (:require [cheshire.core :as json]
+            [clojure.edn :as edn]
             [clojure.java.io :as io]
-            [clojure.string :as str]
-            [cheshire.core :refer :all] ;; Pretty print JSON
-            [clj-yaml.core :as yaml]    ;; YAML output
-            ;; Time manipulation
-            [clj-time.core   :as t]
-            [clj-time.format :as f]
-            [clj-time.local  :as l]
-            [clojure.pprint])
-  ;; Used for coding Team names (and other things)
-  (:require [sporting-fixtures.utils :as utils])
-  (:gen-class)
-  )
+            [clojure.string :as str])
+  (:import
+   [java.time ZoneId ZonedDateTime]
+   [java.time.format DateTimeFormatter])
+  (:gen-class))
 
-;; To use this file
-;; => (require 'sporting-fixtures.aleague)
-;; => (ns sporting-fixtures.aleague)
+(def event-name "aleague-men-2026")
+(def event-title "A-League Men 2026")
 
-;; To reload namespace
-;; => (use 'sporting-fixtures.aleague :reload)
+;; A fixture line is 80 columns. Team names and scores have fixed widths.
+;; The home name and home score are right justified, so they sit against "vs".
+;; 3 + " " + 19 + " " + 12 + " " + 5 + " vs " + 5 + " " + 12 + " " + 15.
+(def default-fixture-format
+  {:width 80
+   :home-width 12
+   :away-width 12
+   :score-width 5
+   :venue-width 15})
 
-(defn -help []
-;; Process downloaded file
-;; Use from command line with:
-  (println "lein run -m sporting-fixtures.aflw")
-  )
-;;
-;; Development
-;;   (clojure.pprint/pprint (read-event-data filename))
-;;   (clojure.pprint/pprint (rest (reduce conj [] (read-event-data filename)) ))
+(def known-teams
+  {"Adelaide United" {:id :adl :short "Adel United" :colour "red"}
+   "Auckland" {:id :akl :short "Auckland" :colour "navy"}
+   "Brisbane Roar" {:id :bri :short "Brisbane" :colour "orange"}
+   "Central Coast Mariners" {:id :ccm :short "Mariners" :colour "yellow"}
+   "Macarthur" {:id :mac :short "Macarthur" :colour "black"}
+   "Melbourne City" {:id :mbc :short "Melb City" :colour "sky-blue"}
+   "Melbourne Victory" {:id :mbv :short "Melb Victory" :colour "navy"}
+   "Newcastle Jets" {:id :new :short "Newcastle" :colour "gold"}
+   "Perth Glory" {:id :per :short "Perth Glory" :colour "purple"}
+   "Sydney" {:id :syd :short "Sydney" :colour "sky-blue"}
+   "Wellington Phoenix" {:id :wel :short "Wellington" :colour "yellow"}
+   "Western Sydney Wanderers" {:id :wsw :short "Wanderers" :colour "red"}})
 
-(def event-name     "aleague-men-2026")
-(def event-data-json (string "data/" aleague-man-2026 "/fixtures.json"))
+(def known-venues
+  {"AAMI Park" "AAMI Park"
+   "Allianz Stadium" "Allianz Stadium"
+   "Campbelltown Sports Stadium" "Campbelltown"
+   "CommBank Stadium" "CommBank Stad."
+   "Coopers Stadium" "Coopers Stadium"
+   "Go Media Stadium" "Go Media Stad."
+   "HBF Park" "HBF Park"
+   "Hnry Stadium" "Hnry Stadium"
+   "Kayo Stadium" "Kayo Stadium"
+   "McDonald Jones Stadium" "McDonald Jones"
+   "One New Zealand Stadium" "One NZ Stadium"
+   "Suncorp Stadium" "Suncorp Stadium"
+   "polytec Stadium" "polytec Stadium"})
 
-(def preamble
-  {:title    "2019 A League Draw and Fixtures"
-   :location "Australia"
-   :code      "soccer"
-   :date      {:from "11 Oct 2019"
-               :to "16 May 2020"}
-   :format    "aleague-mens-2019"
-   :version   0.1
-   })
+(defn help []
+  (println "lein run -m sporting-fixtures.aleague-men-2026")
+  (println "From the top-level REPL: (alm26)")
+  (println "(extract-teams)   ; write data/aleague-men-2026/teams.edn")
+  (println "(extract-venues)  ; write data/aleague-men-2026/venues.edn")
+  (println "(print-report)    ; print the fixture and ladder report")
+  (println "(save-report)     ; write data/aleague-men-2026/report.txt"))
 
-(def teams
-  {:adl {:name "Adelaide United"}
-   :sfc {:name "Sydney FC"}
-   :wsw {:name "Western Sydney Wanderers FC"}
-   :ccm {:name "Central Coast Mariners"}
-   :mbv {:name "Melbourne Victory"}
-   :mbc {:name "Melbourne City FC"}
-   :wel {:name "Wellington Phoenix"}
-   :wuf {:name "Western United FC"}
-   :per {:name "Perth Glory"}
-   :bri {:name "Brisbane Roar FC"}
-   }
-)
+(defn reload []
+  (require 'sporting-fixtures.aleague-men-2026 :reload-all))
 
+(defn api->iso-utc [s]
+  (str/replace s #" " "T"))
 
+(defn localtime [utc-string]
+  (let [utc-time (ZonedDateTime/parse utc-string)
+        local (.withZoneSameInstant utc-time (ZoneId/systemDefault))
+        fmt (DateTimeFormatter/ofPattern "EEE dd MMM hh:mm a")]
+    (.format local fmt)))
 
+(defn read-json [filename]
+  (json/parse-string (slurp filename) true))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn create-lookup-team-id [teams]
-  (reduce conj {}
-          (map (fn [[k v]] [(:name v) k]) teams)
-          )
-  )
+(defn data-file [name]
+  (str "data/" event-name "/" name))
 
-(def lookup-team-id (create-lookup-team-id teams))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Change home and away team names to keywords.
-(defn modify-teamnames [games]
-  (map (fn [x]
-         (merge x {:home (utils/keyword-team (:home x))
-                   :away (utils/keyword-team (:away x))}))
-       games
-  ))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn read-edn [filename]
+  (when (.exists (io/file filename))
+    (edn/read-string (slurp filename))))
 
-(defn convert-result [result]
-  (let [string-split  (str/split result #" ")]
-    [(Integer/parseInt (string-split 0))
-     (Integer/parseInt (string-split 2))]
-    ))
+(defn load-teams []
+  (or (read-edn (data-file "teams.edn"))
+      (into {} (for [[name {:keys [id short colour]}] known-teams]
+                 [id {:name name :short short :colour colour}]))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn read-event-data [filename]
-  ;;  (println (slurp filename))
-  (reduce conj [] (rest
-   (with-open [reader (io/reader filename)]
-     (doall
-      (csv/read-csv reader)))))
-  )
+(defn load-venues []
+  (or (read-edn (data-file "venues.edn")) {}))
 
-(defn parse-number
-  "Reads an integer from a string. Returns string if not a number."
-  [s]
-  (if (re-find #"^-?\d+\.?\d*$" s)
-    (read-string s)
-    s))
+(defn team-name->id [teams]
+  (into {} (for [[id team] teams] [(:name team) id])))
 
-;; FIXME - Change this to use headers from first line in file.
-(defn parse-record [record]
-  (reduce conj
-          {}
-          [[:round-number (if (integer? (parse-number (record 0)))
-                            (parse-number (record 0))
-                            (record 0))]
-           [:date         (record 1)]
-           (if (not= (record 2) "TBA")
-             [:location
-              (if (lookup-venue-id (record 2))
-                (lookup-venue-id (record 2))
-                (record 2))
-                ]
-             nil
-             )
-           ;; lookup-team-id returns 'nil' for 'To be determined'
-           (if (or (lookup-team-id (record 3))
-                   (lookup-team-id (record 4)))
-             [:teams [(lookup-team-id (record 3))
-                      (lookup-team-id (record 4))]]
-             nil)
-           (if (not= (record 5) "")
-             [:result       (convert-result (record 5))]
-             nil
-             )
-           ]))
+(defn team-id [teams team-name]
+  (or (get (team-name->id teams) team-name)
+      (throw (ex-info "Unknown team" {:team team-name}))))
 
-(defn parse-fixture-data [data]
-  (map parse-record data))
+(defn team-name [teams team-id]
+  (get-in teams [team-id :name] (name team-id)))
 
-(defn write-event-json [data]
-  (spit "data/2019-aus-afl-mens.json"
-        (generate-string
-         data
-         {:pretty true})
-        ))
+(defn team-short [teams team-id]
+  (or (get-in teams [team-id :short])
+      (team-name teams team-id)))
 
-(defn file-write-yaml [data]
-  (spit "data/2019-aus-afl-mens.yml"
-        (str
-         "---\n"
-        (yaml/generate-string data)
-        )))
+(defn team-string [team-id]
+  (str/upper-case (name team-id)))
 
-(defn create-event-data [filename]
-  (conj preamble
-        ;; [:teams teams]
-        ;; [:venues venues]
-        [:games (parse-fixture-data (read-event-data filename))]))
+(defn ladder-teams []
+  (load-teams))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 2019 A-League Mens
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Read event data from yaml file
-;;
-(defn event-id-to-filename [id]
-  (str "data/" id ".yml"))
+(defn normalize-fixture [teams f]
+  {:fixture-id (:MatchNumber f)
+   :round (:RoundNumber f)
+   :home (team-id teams (:HomeTeam f))
+   :away (team-id teams (:AwayTeam f))
+   :start-time (api->iso-utc (:DateUtc f))
+   :venue (:Location f)
+   :home-score (:HomeTeamScore f)
+   :away-score (:AwayTeamScore f)})
 
-(defn read-event [event]
-  (yaml/parse-string (slurp event)))
+(defn load-fixtures []
+  (let [teams (load-teams)]
+    (->> (read-json (data-file "fixtures.json"))
+         (map #(normalize-fixture teams %))
+         (sort-by (juxt :round :fixture-id))
+         vec)))
 
-;; Read in event and parse data.
-(defn get-event []
-  (let [event (read-event (event-id-to-filename event-name))]
-    (merge event {:games (modify-teamnames (:games event))})
-    )
-  )
+(defn pad [s width]
+  (format (str "%-" width "s") (or s "")))
 
-;;(defn event-games [] (:games (get-event)))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Consider changing to 'clojure-java-time'
-;;   See: https://github.com/dm3/clojure.java-time
-;; Time parsing an manipulation
-;; Formatters can be listed with: (f/show-formatters)
-;;
-;; Not currently used
-(defn localtime [datetime]
-  (let [formatter (f/formatter :rfc822)
-        my-formatter (f/with-zone
-                       (f/formatter "dd/MM/yyyy hh:mm")
-                       (t/default-time-zone))
-        ]
-    (f/unparse my-formatter
-               (f/parse formatter datetime))
-    ))
+(defn truncate [s width]
+  (let [s (or s "")]
+    (cond
+      (<= (count s) width) s
+      (<= width 1) (subs s 0 width)
+      :else (str (subs s 0 (dec width)) "."))))
 
-(defn event-games-table-separator []
-  "-----+------------------+------------+------------------"
-  )
+(defn fit [s width]
+  (pad (truncate s width) width))
 
-;; Create results table
-(defn event-games-table-header []
-  (str
-   (format " %3s | %-16s | %-10s | %s"
-           "Id"
-           "Time"
-           "Teams"
-           "Score"
-           )
-   "\n"
-   (event-games-table-separator)
-   "\n"
-   )
-  )
+(defn fit-right [s width]
+  (let [s (truncate s width)]
+    (format (str "%" width "s") s)))
 
-(defn event-games-table [event]
-  (let [games (:games event)
-        rounds {  0  1
-                  5  2
-                 10  3
-                 15  4
-                 20  5
-                 25  6
-                 29  7
-                 34  8
-                 39  9
-                 44 10
-                 49 11
-                 54 12
-                 59 13
-                 64 14
-                 69 15
-                 74 16
-                 79 17
-                 84 18
-                 89 19
-                 93 20
-                 98 21
-                103 22
-                108 23
-                113 24
-                118 25
-                123 26
-                128 27
-                133 28
-                138 29
-                }
-        ]
-    (str
-     (event-games-table-header)
-     (str/join
-      "\n"
-      (map-indexed
-       (fn [i x]
-         (str
-          (cond
-            (= i 0)
-            "-----+- Minor Rounds ---+------------+------------------\n"
-            (= i 198)
-            "-----+- Finals ---------+------------+------------------\n"
-            (= i 202)
-            "-----+- Semifinals -----+------------+------------------\n"
-            (= i 204)
-            "-----+- Preliminary Final -----------+------------------\n"
-            (= i 206)
-            "-----+- Grand Final ----+------------+------------------\n"
-            :else "")
-          (cond
-            (contains? rounds i)
-            (format
-             "-----+- Round %2d -------+------------+------------------\n"
-             (rounds i))
-            :else "")
-          (format " %3d | %s | %-10s |  %4s %4s"
-                  (inc i)
-                  ;; (:round-number x)
-                  ;;(localtime (:date x))
-                  (:time x)
-                  (str (if (:home x)
-                         (str/upper-case (name (:home x)))
-                         "---")
-                       " vs "
-                       (if (:away x)
-                         (str/upper-case (name (:away x)))
-                         "---"))
-                  (format "%3s"
-                          (if ((:home x) (:result x))
-                            ((:home x) (:result x))
-                            "-"))
-                  (format "%3s"
-                          (if ((:away x) (:result x))
-                            ((:away x) (:result x))
-                            "-"))
-                  )))
-       games)
-      )
-     "\n"
-     (event-games-table-separator)
-     )
-    ))
+(defn shorten-name [s width]
+  (truncate s width))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Statistics
-;; map [:points :played :won :lost :drawn :for :against :diff]
+(defn fresh-team-id [name used]
+  (let [initials (->> (re-seq #"[A-Za-z]+" name)
+                      (map #(subs % 0 1))
+                      (apply str)
+                      str/lower-case)
+        base (if (seq initials) (keyword initials) :team)]
+    (loop [n 1
+           candidate base]
+      (if (contains? used candidate)
+        (recur (inc n) (keyword (str (name base) n)))
+        candidate))))
 
-;; Calculate the teams event points/goals from game
-(defn calculate-points [score]
+(defn extract-teams
+  "Write teams.edn from the fixture list. Existing short names and colours are kept."
+  []
+  (let [width (:home-width default-fixture-format)
+        existing (or (read-edn (data-file "teams.edn")) {})
+        by-name (into {} (for [[id team] existing] [(:name team) (assoc team :id id)]))
+        names (->> (read-json (data-file "fixtures.json"))
+                   (mapcat (juxt :HomeTeam :AwayTeam))
+                   distinct
+                   sort)
+        teams (reduce (fn [acc name]
+                        (let [prior (get by-name name)
+                              known (get known-teams name)
+                              id (or (:id prior) (:id known) (fresh-team-id name (set (keys acc))))]
+                          (assoc acc id
+                                 {:name name
+                                  :short (or (:short prior)
+                                             (:short known)
+                                             (shorten-name name width))
+                                  :colour (or (:colour prior) (:colour known))})))
+                      {}
+                      names)]
+    (spit (data-file "teams.edn")
+          (str "{\n"
+               (str/join "\n"
+                         (for [[id team] (sort-by (comp :name second) teams)]
+                           (format " %s {:name %s\n      :short %s\n      :colour %s}"
+                                   id
+                                   (pr-str (:name team))
+                                   (pr-str (:short team))
+                                   (pr-str (:colour team)))))
+               "\n}\n"))
+    teams))
+
+(defn extract-venues
+  "Write venues.edn from the fixture list. Existing short names are kept."
+  []
+  (let [width (:venue-width default-fixture-format)
+        existing (or (read-edn (data-file "venues.edn")) {})
+        names (->> (read-json (data-file "fixtures.json"))
+                   (map :Location)
+                   distinct
+                   sort)
+        venues (into {}
+                     (for [name names]
+                       [name {:name name
+                              :short (or (get-in existing [name :short])
+                                         (get known-venues name)
+                                         (shorten-name name width))}]))]
+    (spit (data-file "venues.edn")
+          (str "{\n"
+               (str/join "\n"
+                         (for [[name venue] (sort venues)]
+                           (format " %s {:name %s\n  :short %s}"
+                                   (pr-str name)
+                                   (pr-str (:name venue))
+                                   (pr-str (:short venue)))))
+               "\n}\n"))
+    venues))
+
+(defn load-results []
+  (let [path (str "data/" event-name "/results.edn")]
+    (if (.exists (io/file path))
+      (edn/read-string (slurp path))
+      {})))
+
+(defn apply-result [fixture results]
+  (if-let [{:keys [home away]} (get results (:fixture-id fixture))]
+    (assoc fixture :home-score home :away-score away)
+    fixture))
+
+(defn with-results [fixtures results]
+  (mapv #(apply-result % results) fixtures))
+
+;; A score is nil, a goal count, or a string with trailing red cards: "1R", "0RR".
+(def score-re #"(\d+)(R*)")
+
+(defn parse-score [score]
   (cond
-    ;; Different ways of calculating points from game score
-    ;; Soccer - score = goals
-    :else (if (number? score)
-            score
-            nil)
-    )
-  )
+    (nil? score) nil
+    (number? score) {:goals score :reds 0}
+    (string? score)
+    (when-let [[_ goals reds] (re-matches score-re score)]
+      {:goals (parse-long goals)
+       :reds (count reds)})))
 
-(defn calculate-stats [game]
-  (let [home        (:home  game)
-        away        (:away  game)
-        score       (:score game)
-        home-points (calculate-points (home score))
-        away-points (calculate-points (away score))]
-    (cond
-      (not home-points)       nil
-      (not away-points)       nil
-      (> home-points away-points)
-      {home {:points 4
-             :played 1
-             :won    1
-             :lost   0
-             :drawn  0
-             :points-for     home-points
-             :points-against away-points
-             :points-diff    (- home-points away-points)}
-       away {:points 0
-             :played 1
-             :won    0
-             :lost   1
-             :drawn  0
-             :points-for     away-points
-             :points-against home-points
-             :points-diff    (- away-points home-points)}}
-      (< home-points away-points)
-      {home {:points 0
-             :played 1
-             :won    0
-             :lost   1
-             :drawn  0
-             :points-for     home-points
-             :points-against away-points
-             :points-diff    (- home-points away-points)}
-       away {:points 4
-             :played 1
-             :won    1
-             :lost   0
-             :drawn  0
-             :points-for     away-points
-             :points-against home-points
-             :points-diff    (- away-points home-points)}}
-      :else
-      {home {:points 2
-             :played 1
-             :won    0
-             :lost   0
-             :drawn  1
-             :points-for     home-points
-             :points-against away-points
-             :points-diff    (- home-points away-points)}
-       away {:points 2
-             :played 1
-             :won    0
-             :lost   0
-             :drawn  1
-             :points-for     away-points
-             :points-against home-points
-             :points-diff    (- away-points home-points)}}
-      )))
+(defn goals [score]
+  (:goals (parse-score score)))
 
-(defn event-games-statistics-table [event]
-  (str/join
-   "\n"
-   (map-indexed
-    (fn [i x]
-      (let [home (:home x)
-            away (:away x)
-            score (:score x)]
-        (format " %3d | %-10s | %s"
-                (inc i)
-                (str (if (:home x)
-                       (str/upper-case (name (:home x)))
-                       "---")
-                     " vs "
-                     (if (:away x)
-                       (str/upper-case (name (:away x)))
-                       "---"))
-                ;;(calculate-stats home away score)
-                (if (or (= (home score) "-") (= (away score) "-"))
-                  "-"
-                  (str home " " away " " score " "
-                       (calculate-stats x))
-                  )
-                )))
-    (:games event)
-    ))
-  )
+(defn played? [{:keys [home-score away-score]}]
+  (boolean (and (some? (goals home-score))
+                (some? (goals away-score)))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Calculate the statistics from the games of an event
-(defn calculate-statistics [games]
-  (map-indexed
-   (fn [i x]
-     (let [home  (:home x)
-           away  (:away x)
-           score (:score x)
-           stats (calculate-stats x)
-           ]
-       (conj {}
-             (if home
-               {home (home stats)}
-               nil)
-             (if away
-               {away (away stats)}
-               nil)
-             )
-      ))
-   games)
-  )
+(defn score-text [score]
+  (when-let [{:keys [goals reds]} (parse-score score)]
+    (str goals (apply str (repeat reds "R")))))
 
-;; Split the double statistics record per game into two records, one
-;; for each team.
-(defn split-statistics [stats]
-  (reduce (fn [val coll]
-            (reduce conj val coll))
-          [] stats)
-  )
+(defn score-box [score]
+  (or (score-text score) ""))
 
-;; statistics - Map of team statistics
-;; updates     - Array with 'team id' and 'statistics update' (map)
-(defn update-statistics [statistics updates]
-   (reduce (fn [stats update]
-             (let [team   (nth update 0)
-                   update (nth update 1)]
-               (conj stats {team (merge-with + (team stats) update)})))
-           statistics
-           updates)
-  )
+(defn venue-short [venues venue]
+  (or (get-in venues [venue :short]) venue))
 
-(defn event-statistics [games]
-  (update-statistics {}
-                     (-> games
-                         calculate-statistics
-                         split-statistics))
-  )
+(defn render-fixture
+  ([fixture]
+   (render-fixture fixture (load-teams) (load-venues) default-fixture-format))
+  ([fixture teams venues fmt]
+   (let [{:keys [home-width away-width score-width venue-width]} fmt
+         {:keys [fixture-id start-time home away venue home-score away-score]} fixture]
+     (str (format "%3d" fixture-id) " "
+          (localtime start-time) " "
+          (fit-right (team-short teams home) home-width) " "
+          (fit-right (score-box home-score) score-width) " vs "
+          (fit (score-box away-score) score-width) " "
+          (fit (team-short teams away) away-width) " "
+          (fit (venue-short venues venue) venue-width)))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; TODO: Check for nil
-(defn calculate-percentage [stats]
-  (let [for     (:points-for stats)
-        against (:points-against stats)]
-  (* (/ (* 1.0 for) (* 1.0 against)) 100.0)
-  ))
+(defn fixtures-report
+  ([fixtures]
+   (fixtures-report fixtures (load-teams) (load-venues) default-fixture-format))
+  ([fixtures teams venues fmt]
+   (let [by-round (group-by :round fixtures)
+         heading (str event-title " Fixtures")]
+     (str heading "\n"
+          (apply str (repeat (count heading) "="))
+          "\n"
+          (str/join
+           "\n"
+           (for [round (sort (keys by-round))]
+             (str "\nRound " round "\n"
+                  (str/join "\n"
+                            (map #(render-fixture % teams venues fmt)
+                                 (sort-by (juxt :start-time :fixture-id)
+                                          (get by-round round)))))))))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn stats-header []
-  " Pos | Team | P  | Pts      % |  P  W  L  D |   For    Ag  Diff")
+(defn empty-row []
+  {:played 0 :won 0 :drawn 0 :lost 0 :goals-for 0 :goals-against 0 :points 0})
 
-(defn stats-separator []
-  "-----+------+----+------------+-------------+----------------------")
+(defn record-result [table team goals-for goals-against]
+  (let [result (cond
+                 (> goals-for goals-against) {:won 1 :points 3}
+                 (< goals-for goals-against) {:lost 1}
+                 :else {:drawn 1 :points 1})]
+    (assoc table team
+           (merge-with +
+                       (get table team (empty-row))
+                       (merge result
+                              {:played 1
+                               :goals-for goals-for
+                               :goals-against goals-against})))))
 
-(defn stats-string [i team stats]
-  (format " %3d | %-4s | %2d | %2d %7.2f | %2d %2d %2d %2d | %5d %5d %5d"
-          i
-          (str/upper-case (name team))
+(defn build-ladder [fixtures]
+  (reduce (fn [table {:keys [home away home-score away-score] :as fixture}]
+            (if-not (played? fixture)
+              table
+              (-> table
+                  (record-result home (goals home-score) (goals away-score))
+                  (record-result away (goals away-score) (goals home-score)))))
+          (into {} (map (fn [id] [id (empty-row)]) (keys (ladder-teams))))
+          fixtures))
+
+(defn ladder-sort [[_ a] [_ b]]
+  (let [diff #(- (:goals-for %) (:goals-against %))]
+    (compare [(:points b) (diff b) (:goals-for b)]
+             [(:points a) (diff a) (:goals-for a)])))
+
+(defn render-ladder-row [position [team stats]]
+  (format " %2d  %-4s  %2d %2d %2d %2d  %3d %3d %4d  %2d"
+          position
+          (team-string team)
           (:played stats)
-          (:points stats)
-          ;; Calculate percentage
-          0.0 ; (calculate-percentage stats)
-          (:played stats)
-          (:won    stats)
-          (:lost   stats)
-          (:drawn  stats)
-          (:points-for     stats)
-          (:points-against stats)
-          (:points-diff    stats)
-          ))
+          (:won stats)
+          (:drawn stats)
+          (:lost stats)
+          (:goals-for stats)
+          (:goals-against stats)
+          (- (:goals-for stats) (:goals-against stats))
+          (:points stats)))
 
-(defn event-table-sort-fn [team-a team-b]
-  (let [points-a (:points (nth team-a 1))
-        points-b (:points (nth team-b 1))
-        percent-a 0.0
-        percent-b 0.0]
-    (cond
-      (> points-a points-b) true
-      (< points-a points-b) false
-      (> percent-a percent-b) true
-      :else false)
-    )
-  )
+(defn ladder-report [fixtures]
+  (let [heading (str event-title " Ladder")]
+    (str heading "\n"
+         (apply str (repeat (count heading) "="))
+         "\n"
+         (format " %2s  %-4s  %2s %2s %2s %2s  %3s %3s %4s  %2s\n"
+                 "#" "Team" "P" "W" "D" "L" "GF" "GA" "GD" "Pt")
+         (str/join "\n"
+                   (map-indexed (fn [i row] (render-ladder-row (inc i) row))
+                                (sort ladder-sort (build-ladder fixtures)))))))
 
-(defn event-stats-table [statistics]
-  (let []
-    (str
-     (stats-header)
-     "\n"
-     (stats-separator)
-     "\n"
-     (str/join
-      "\n"
-      (map-indexed
-       (fn [i [k v]]
-         ; (str
-         ; (if (= i 8)
-         ;   (str (stats-separator) "\n")
-         ;   "")
-          (stats-string (inc i) k v)
-         )
-       statistics
-       )
-      )
-     "\n"
-     (stats-separator)
-    ))
-  )
+(defn report-text []
+  (let [fixtures (with-results (load-fixtures) (load-results))]
+    (str (fixtures-report fixtures) "\n\n" (ladder-report fixtures) "\n")))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Results chart
+(defn save-report
+  "Write the fixture and ladder report to data/aleague-men-2026/report.txt."
+  []
+  (let [path (data-file "report.txt")]
+    (spit path (report-text))
+    path))
 
-(defn results-separator []
-  (str
-   "------+-"
-   (str/join
-    (for [i (range 1 148)]
-      "-"
-      ))
-   "\n"
-   ))
+(defn print-report []
+  (print (report-text)))
 
-(defn results-header []
-  (str
-   "      | "
-   (str/join (for [i (range 1 148)] (mod (quot i 10) 10)))
-   "\n"
-   " Team | "
-   (str/join (for [i (range 1 148)] (mod i 10)))
-   "\n"
-   )
-  )
-
-(defn results-string [event team]
-  (let [games (:games event)
-        teams (:teams event)
-        ]
-    (format "  %3s | %s"
-            (str/upper-case (name team))
-            (str/join
-             ""
-             (map-indexed
-              (fn [index game]
-                (str
-                 (let [home (:home game)
-                       away (:away game)
-                       statistics (calculate-stats game)
-                       ;; statistics nil
-                       ]
-<<<<<<< HEAD
-                   (if statistics
-                     (cond
-                       (or (= team home) (= team away))
-                       (cond
-                         (= (:won   (team statistics)) 1) "W"
-                         (= (:lost  (team statistics)) 1) "L"
-                         (= (:drawn (team statistics)) 1) "d"
-                         :else "o")
-                       :else  "-"
-                       )
-                     (cond
-                       (or (= team home) (= team away))
-                       "o"
-                       :else  " "
-                       )
-                     )
-=======
-                    (if statistics
-                      (cond
-                        (or (= team home) (= team away))
-                        (cond
-                          (= (:won   (team statistics)) 1) "W"
-                          (= (:lost  (team statistics)) 1) "L"
-                          (= (:drawn (team statistics)) 1) "d"
-                          :else "o")
-                        :else  "-"
-                        )
-                      (cond
-                        (or (= team home) (= team away))
-                        "o"
-                        :else  " "
-                        )
->>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
-                   )
-                 ;;(cond
-                 ;;  (= (mod index 7) 6) "|"
-                 ;;  (= (inc index) 143) "|"
-                 ;;  :else        ""
-                 ;;  )
-
-                 )
-                )
-              games)
-             )
-            )
-    )
-  )
-
-(defn event-results-table [event]
-  (let [games      (:games event)
-        teams      (:teams event)
-        results    (:results event)]
-    (str
-     (results-header)
-     (results-separator)
-     (str/join
-      "\n"
-      (map
-        (fn [[key value]] (results-string event key))
-        teams
-        )
-      )
-     "\n"
-      (results-separator)
-    )
-  )
-)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Finals
-
-(defn format-game [event game-number]
-  (let [game   (nth (:games event) (dec game-number))
-        teams  (:teams  game)
-        result (:result game)
-        team-a (if (nth teams 0)
-                 (str/upper-case (nth teams 0))
-                 "---")
-        team-b   (if (nth teams 1)
-                   (str/upper-case (nth teams 1))
-                   "---")
-        points-a (nth result 0)
-        points-b (nth result 1)
-          ]
-    (str
-     (cond
-       result (str team-a "(" points-a ") vs " team-b "(" points-b ") [" game-number "]")
-       teams  (str "    " team-a " vs " team-b " [" game-number "]")
-       :else  (str "    --- vs --- [" game-number "]")
-     ))
-    ))
-
-(defn event-finals-chart [event]
-  (let [games (:games event)]
-    (str
-     "Knockout                    Semifinal                 Preliminary                 Grand Final\n"
-     "--------                    ---------                 -----------                 -----------\n"
-     "\n"
-     (format "%-26s                            %-26s  %-26s\n"
-             (format-game event 199)
-             (format-game event 205)
-             (format-game event 207)
-             )
-     "\n"
-     (format "%-26s  %-26s\n"
-             (format-game event 200)
-             (format-game event 203)
-             )
-     "\n"
-     (format "%-26s                            %-26s\n"
-             (format-game event 201)
-             (format-game event 206)
-             )
-     "\n"
-     (format "%-26s  %-26s\n"
-             (format-game event 202)
-             (format-game event 204)
-             )
-     "\n"
-
-<<<<<<< HEAD
-     )))
-=======
-            )))
->>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main []
-  (println "Event: " event-name)
-  (println)
-
-  (println "Games")
-  (println (event-games-table (get-event)))
-  (println)
-
-  (println "Statistics / Ladder")
-  (println (event-stats-table
-            (sort event-table-sort-fn
-                  (filter (fn [x] (not= (first x) :tob))
-                          (event-statistics (:games (get-event)))))))
-  (println)
-
-  ;; Testing
-<<<<<<< HEAD
-                                        ;(clojure.pprint/pprint (-> (get-event) :teams))
-=======
-  ;(clojure.pprint/pprint (-> (get-event) :teams))
->>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
-
-  (println "Games")
-  (println (event-results-table (get-event)))
-  (println)
-
-<<<<<<< HEAD
-                                        ;  (println "Finals")
-                                        ;  (println (event-finals-chart (get-event)))
-=======
-;  (println "Finals")
-;  (println (event-finals-chart (get-event)))
->>>>>>> f6b2b64404c3670d5abd56c3e70f200938cec820
-  )
+  (print-report))

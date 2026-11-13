@@ -1,0 +1,38 @@
+{
+ :adl {:name "Adelaide United"
+      :short "Adel United"
+      :colour "red"}
+ :akl {:name "Auckland"
+      :short "Auckland"
+      :colour "navy"}
+ :bri {:name "Brisbane Roar"
+      :short "Brisbane"
+      :colour "orange"}
+ :ccm {:name "Central Coast Mariners"
+      :short "Mariners"
+      :colour "yellow"}
+ :mac {:name "Macarthur"
+      :short "Macarthur"
+      :colour "black"}
+ :mbc {:name "Melbourne City"
+      :short "Melb City"
+      :colour "sky-blue"}
+ :mbv {:name "Melbourne Victory"
+      :short "Melb Victory"
+      :colour "navy"}
+ :new {:name "Newcastle Jets"
+      :short "Newcastle"
+      :colour "gold"}
+ :per {:name "Perth Glory"
+      :short "Perth Glory"
+      :colour "purple"}
+ :syd {:name "Sydney"
+      :short "Sydney"
+      :colour "sky-blue"}
+ :wel {:name "Wellington Phoenix"
+      :short "Wellington"
+      :colour "yellow"}
+ :wsw {:name "Western Sydney Wanderers"
+      :short "Wanderers"
+      :colour "red"}
+}

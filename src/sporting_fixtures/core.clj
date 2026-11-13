@@ -41,7 +41,7 @@
      ";; Macros"
      "(afl26)  ; Setup for AFL 2026 Season"
      "(fifa26) ; Setup for FIFA World Cup 2026"
-     "(aleague-men-2026) ; Setup for Aleague Men 2026"
+     "(alm26)  ; Setup for Aleague Men 2026"
 
      ])))
 
@@ -55,8 +55,8 @@
   (ns sporting-fixtures.fifa-world-cup-2026)
   )
 
-(defmacro aleague-men-2026 []
-  (require '[sporting-fixtures.aleague-men-2026 :as aleague-men-2026])
+(defmacro alm26 []
+  (require '[sporting-fixtures.aleague-men-2026 :as alm26])
   (ns sporting-fixtures.aleague-men-2026)
   )
 
