@@ -17,33 +17,11 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn help []
-  (println
-   (str/join
-    "\n"
-    [(str/join (repeat 78 ";"))
-     ";; Macros"
-     (str/join (repeat 78 ";"))
-     ";; Loads setup, process, process-results and reports modules (see next)"
-     "(setup)"
-     "(round-report-org rnd-number)"
-     ";;"
-     ";; Event data (CSV) can be found at"
-     ";;  https://fixturedownload.com/"
-     ";;"
-     ";; To generate a report from the CLI you can also do:"
-     ";;   echo \"(round-report-org 16)\" | lein repl"
-     ";;"
-     (str/join (repeat 78 ";"))
-     ";; Current competition: afl-2026"
-     "(require '[sporting-fixtures.afl-2026 :as afl-2026])"
-     "(ns sporting-fixtures.afl-2026)"
-     ""
-     ";; Macros"
-     "(afl26)  ; Setup for AFL 2026 Season"
-     "(fifa26) ; Setup for FIFA World Cup 2026"
-     "(alm26)  ; Setup for Aleague Men 2026"
-
-     ])))
+  (println "(afl26)                 ; setup for AFL 2026")
+  (println "(fifa26)                ; setup for FIFA World Cup 2026")
+  (println "(alm26)                 ; setup for A-League Men 2026")
+  (println "(bbl26)                 ; setup for BBL 2026/27")
+  (println "(reload)                ; reload this namespace"))
 
 (defmacro afl26 []
   (require '[sporting-fixtures.afl-2026 :as afl26])
@@ -60,15 +38,13 @@
   (ns sporting-fixtures.aleague-men-2026)
   )
 
-
-
-
-(defmacro setup []
-  (require ['sporting-fixtures.setup :as 's])
-  (require ['sporting-fixtures.process :as 'p])
-  (require ['sporting-fixtures.process-results :as 'pr])
-  (require ['sporting-fixtures.reports :as 'r])
+(defmacro bbl26 []
+  (require '[sporting-fixtures.bbl-2026 :as bbl26])
+  (ns sporting-fixtures.bbl-2026)
   )
+
+
+
 
 (defmacro status []
   (if (resolve 'sport)
@@ -587,18 +563,6 @@
   (println macros)
   )
 (add-macro "list-macros")
-
-(defmacro round-report-org
-  "Produce a report of the games in a round in 'org' format."
-  [round]
-  (setup)
-  (def sport "afl-2025")
-  (def data (s/data-read-with-lines (str "data/" sport "/data.clj")))
-  (def games (:results data))
-  (println (r/report-games-afl-schedule
-            (conj data {:results (r/round-filter games round)})))
-  )
-(add-macro "round-report-org")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn -main-event-report
   [& args]
@@ -611,7 +575,5 @@
   (println "----------------------------")
   (println)
   (help)
-  (println "Running Setup")
-  (setup)
   ;;  (clojure.main/repl)
   )

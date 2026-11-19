@@ -50,12 +50,17 @@
    "Suncorp Stadium" "Suncorp Stadium"
    "polytec Stadium" "polytec Stadium"})
 
+(defmacro back []
+  (ns sporting-fixtures.core))
+
 (defn help []
   (println "lein run -m sporting-fixtures.aleague-men-2026")
   (println "From the top-level REPL: (alm26)")
+  (println "(back)            ; return to the top-level REPL")
+  (println "(reload)          ; reload this namespace")
   (println "(extract-teams)   ; write data/aleague-men-2026/teams.edn")
   (println "(extract-venues)  ; write data/aleague-men-2026/venues.edn")
-  (println "(print-report)    ; print the fixture and ladder report")
+  (println "(print-report)    ; fixtures, results chart, and ladder")
   (println "(save-report)     ; write data/aleague-men-2026/report.txt"))
 
 (defn reload []
@@ -336,20 +341,143 @@
           (- (:goals-for stats) (:goals-against stats))
           (:points stats)))
 
+(defn render-ladder [fixtures heading]
+  (str heading "\n"
+       (apply str (repeat (count heading) "="))
+       "\n"
+       (format " %2s  %-4s  %2s %2s %2s %2s  %3s %3s %4s  %2s\n"
+               "#" "Team" "P" "W" "D" "L" "GF" "GA" "GD" "Pt")
+       (str/join "\n"
+                 (map-indexed (fn [i row] (render-ladder-row (inc i) row))
+                              (sort ladder-sort (build-ladder fixtures))))))
+
 (defn ladder-report [fixtures]
-  (let [heading (str event-title " Ladder")]
+  (render-ladder fixtures (str event-title " Ladder")))
+
+;; One column per match, in kickoff order. Upper case is a home result.
+;; W/w win, L/l loss, d draw, o still to play.
+;; A dash is a match this team is not in. A space is an unplayed match
+;; this team is not in. A vertical bar separates rounds.
+(defn result-mark [team fixture]
+  (let [home? (= team (:home fixture))
+        involved? (or home? (= team (:away fixture)))]
+    (if (played? fixture)
+      (if involved?
+        (let [for-goals (goals (if home? (:home-score fixture) (:away-score fixture)))
+              against (goals (if home? (:away-score fixture) (:home-score fixture)))]
+          (cond
+            (> for-goals against) (if home? "W" "w")
+            (< for-goals against) (if home? "L" "l")
+            :else "d"))
+        "-")
+      (if involved? "o" " "))))
+
+(defn round-groups [fixtures]
+  (->> fixtures
+       (sort-by (juxt :start-time :fixture-id))
+       (partition-by :round)))
+
+(defn pack-rounds
+  "Keep each chart on a round boundary, near 60 matches wide."
+  [groups]
+  (loop [remaining groups
+         blocks []]
+    (if (seq remaining)
+      (let [packed (reduce (fn [acc group]
+                             (let [games (apply + (map count acc))]
+                               (if (and (seq acc) (> (+ games (count group)) 60))
+                                 (reduced acc)
+                                 (conj acc group))))
+                           []
+                           remaining)]
+        (recur (drop (count packed) remaining)
+               (conj blocks packed)))
+      blocks)))
+
+(defn block-columns [groups]
+  (->> groups
+       (map (fn [group]
+              (map (fn [fixture] {:kind :game :fixture fixture}) group)))
+       (interpose [{:kind :sep}])
+       (apply concat)))
+
+(defn column-text [columns game-text]
+  (apply str
+         (for [column columns]
+           (if (= (:kind column) :sep)
+             "|"
+             (game-text (:fixture column))))))
+
+(defn results-chart-separator [columns]
+  (str "------+"
+       "-"
+       (apply str (for [column columns]
+                    (if (= (:kind column) :sep) "+" "-")))))
+
+(defn fixture-digit [fixture place]
+  (let [i (:fixture-id fixture)]
+    (case place
+      :hundreds (let [hundreds (quot i 100)]
+                  (if (zero? hundreds) " " (str hundreds)))
+      :tens (if (< i 10) " " (str (mod (quot i 10) 10)))
+      :units (str (mod i 10)))))
+
+(defn results-chart-header [columns]
+  (str "      | " (column-text columns #(fixture-digit % :hundreds)) "\n"
+       "      | " (column-text columns #(fixture-digit % :tens)) "\n"
+       " Team | " (column-text columns #(fixture-digit % :units)) "\n"
+       (results-chart-separator columns)))
+
+(defn results-chart-section [fixtures groups]
+  (let [columns (block-columns groups)
+        first-round (:round (first (first groups)))
+        last-round (:round (last (last groups)))
+        ladder-fixtures (filter #(<= (:round %) last-round) fixtures)
+        teams (->> (build-ladder ladder-fixtures)
+                   (sort ladder-sort)
+                   (map first))
+        heading (format "%s Results  Rounds %d-%d" event-title first-round last-round)]
     (str heading "\n"
-         (apply str (repeat (count heading) "="))
-         "\n"
-         (format " %2s  %-4s  %2s %2s %2s %2s  %3s %3s %4s  %2s\n"
-                 "#" "Team" "P" "W" "D" "L" "GF" "GA" "GD" "Pt")
+         (apply str (repeat (count heading) "=")) "\n"
+         (results-chart-header columns) "\n"
          (str/join "\n"
-                   (map-indexed (fn [i row] (render-ladder-row (inc i) row))
-                                (sort ladder-sort (build-ladder fixtures)))))))
+                   (for [team teams]
+                     (format "  %3s | %s"
+                             (team-string team)
+                             (column-text columns #(result-mark team %)))))
+         "\n"
+         (results-chart-separator columns)
+         "\n\n"
+         (render-ladder ladder-fixtures
+                        (str event-title " Ladder after Round " last-round)))))
+
+(defn results-chart [fixtures]
+  (str "W/w home/away win   L/l home/away loss   d draw   o to play   - other match   | round\n\n"
+       (str/join "\n\n"
+                 (for [groups (pack-rounds (round-groups fixtures))]
+                   (results-chart-section fixtures groups)))))
+
+(defn played-rounds [fixtures]
+  (->> fixtures
+       (filter played?)
+       (map :round)
+       distinct
+       sort))
+
+(defn ladders-by-round-report [fixtures]
+  (str/join
+   "\n\n"
+   (for [round (played-rounds fixtures)]
+     (render-ladder (filter #(<= (:round %) round) fixtures)
+                    (str event-title " Ladder after Round " round)))))
 
 (defn report-text []
   (let [fixtures (with-results (load-fixtures) (load-results))]
-    (str (fixtures-report fixtures) "\n\n" (ladder-report fixtures) "\n")))
+    (str (fixtures-report fixtures) "\n\n"
+         (results-chart fixtures) "\n\n"
+         (ladder-report fixtures) "\n\n"
+         ;; (ladders-by-round-report fixtures)
+         "\n")))
 
 (defn save-report
   "Write the fixture and ladder report to data/aleague-men-2026/report.txt."
