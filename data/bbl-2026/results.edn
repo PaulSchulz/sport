@@ -1,0 +1,61 @@
+;; BBL 2026/27 results, indexed by match number.
+;; :home and :away are innings scores, for example "159/9(20)" or "117/5(10.1/11)".
+;; Leave nil until the match is played.
+;; A finished match has a winner. If the scores are level, name the Super Over
+;; winner with :winner :home or :winner :away. That does not change the net run rate.
+;; A match washed out with no result is {:home "NR" :away "NR"}: one point each,
+;; and the net run rate is unchanged.
+{
+ ;; Round 1
+ 1 {:home nil :away nil} ;; Melbourne Renegades vs Perth Scorchers
+ 2 {:home nil :away nil} ;; Brisbane Heat vs Sydney Sixers
+ 3 {:home nil :away nil} ;; Sydney Thunder vs Adelaide Strikers
+ 4 {:home nil :away nil} ;; Hobart Hurricanes vs Brisbane Heat
+ 5 {:home nil :away nil} ;; Melbourne Stars vs Adelaide Strikers
+ 6 {:home nil :away nil} ;; Sydney Thunder vs Sydney Sixers
+ 7 {:home nil :away nil} ;; Perth Scorchers vs Hobart Hurricanes
+ 8 {:home nil :away nil} ;; Melbourne Stars vs Brisbane Heat
+ ;; Round 2
+ 9 {:home nil :away nil} ;; Sydney Sixers vs Melbourne Renegades
+ 10 {:home nil :away nil} ;; Adelaide Strikers vs Sydney Thunder
+ 11 {:home nil :away nil} ;; Melbourne Renegades vs Hobart Hurricanes
+ 12 {:home nil :away nil} ;; Sydney Sixers vs Brisbane Heat
+ 13 {:home nil :away nil} ;; Perth Scorchers vs Melbourne Stars
+ 14 {:home nil :away nil} ;; Sydney Thunder vs Melbourne Renegades
+ 15 {:home nil :away nil} ;; Brisbane Heat vs Adelaide Strikers
+ 16 {:home nil :away nil} ;; Hobart Hurricanes vs Melbourne Stars
+ ;; Round 3
+ 17 {:home nil :away nil} ;; Perth Scorchers vs Sydney Thunder
+ 18 {:home nil :away nil} ;; Adelaide Strikers vs Melbourne Stars
+ 19 {:home nil :away nil} ;; Melbourne Renegades vs Sydney Sixers
+ 20 {:home nil :away nil} ;; Brisbane Heat vs Hobart Hurricanes
+ 21 {:home nil :away nil} ;; Sydney Thunder vs Perth Scorchers
+ 22 {:home nil :away nil} ;; Sydney Sixers vs Adelaide Strikers
+ 23 {:home nil :away nil} ;; Melbourne Stars vs Melbourne Renegades
+ 24 {:home nil :away nil} ;; Perth Scorchers vs Brisbane Heat
+ ;; Round 4
+ 25 {:home nil :away nil} ;; Hobart Hurricanes vs Sydney Thunder
+ 26 {:home nil :away nil} ;; Adelaide Strikers vs Melbourne Renegades
+ 27 {:home nil :away nil} ;; Melbourne Stars vs Sydney Sixers
+ 28 {:home nil :away nil} ;; Brisbane Heat vs Perth Scorchers
+ 29 {:home nil :away nil} ;; Hobart Hurricanes vs Adelaide Strikers
+ 30 {:home nil :away nil} ;; Sydney Sixers vs Perth Scorchers
+ 31 {:home nil :away nil} ;; Melbourne Renegades vs Brisbane Heat
+ 32 {:home nil :away nil} ;; Sydney Thunder vs Melbourne Stars
+ ;; Round 5
+ 33 {:home nil :away nil} ;; Adelaide Strikers vs Hobart Hurricanes
+ 34 {:home nil :away nil} ;; Perth Scorchers vs Melbourne Renegades
+ 35 {:home nil :away nil} ;; Melbourne Stars vs Hobart Hurricanes
+ 36 {:home nil :away nil} ;; Sydney Sixers vs Sydney Thunder
+ 37 {:home nil :away nil} ;; Adelaide Strikers vs Perth Scorchers
+ 38 {:home nil :away nil} ;; Melbourne Renegades vs Melbourne Stars
+ 39 {:home nil :away nil} ;; Hobart Hurricanes vs Sydney Sixers
+ 40 {:home nil :away nil} ;; Brisbane Heat vs Sydney Thunder
+ ;; Round 6
+ 41 {:home nil :away nil} ;; To be announced vs To be announced
+ 42 {:home nil :away nil} ;; To be announced vs To be announced
+ ;; Round 7
+ 43 {:home nil :away nil} ;; To be announced vs To be announced
+ ;; Round 8
+ 44 {:home nil :away nil} ;; To be announced vs To be announced
+}
