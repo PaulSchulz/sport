@@ -169,11 +169,98 @@
 
  ;; Round 16
  {:game 129 :scoreboard {:bri "19.12(126)" :syd "12.11(83)"}}
- {:game 132 :scoreboard {:haw "" :gws ""}}
- {:game 130 :scoreboard {:car "" :wce ""}}
- {:game 131 :scoreboard {:col "" :ric ""}}
- {:game 134 :scoreboard {:pa "" :adl ""}}
- {:game 133 :scoreboard {:nm "" :ess ""}}
- {:game 135 :scoreboard {:fre "" :gcs ""}}
+ {:game 132 :scoreboard {:haw "14.12(96)"  :gws "12.10(82)"}}
+ {:game 130 :scoreboard {:car "17.15(117)" :wce  "9.10(64)"}}
+ {:game 131 :scoreboard {:col "15.16(106)" :ric "11.6(72)"}}
+ {:game 134 :scoreboard {:pa  "13.19(97)"  :adl "11.5(71)"}}
+ {:game 133 :scoreboard {:nm  "10.19(79)"  :ess  "9.11(65)"}}
+ {:game 135 :scoreboard {:fre "11.14(80)"  :gcs  "3.11(29)"}}
 
+ ;; Round 17
+ {:game 137 :scoreboard {:gee "14.17(101)" :bri "19.9(123)"}}
+ {:game 142 :scoreboard {:syd "13.12(90)"  :wb   "7.13(55)"}}
+ {:game 144 :scoreboard {:wce "11.8(74)"   :adl "15.9(99)"}}
+ {:game 140 :scoreboard {:haw "14.6(90)"   :mel "19.11(125)"}}
+ {:game 139 :scoreboard {:gws "16.13(109)" :fre "13.10(88)"}}
+ {:game 138 :scoreboard {:gcs "15.8(98)"   :col "15.14(104)"}}
+ {:game 141 :scoreboard {:ric "10.12(72)"  :car "10.14(74)"}}
+ {:game 136 :scoreboard {:ess  "7.8(50)"   :stk "17.15(117)"}}
+ {:game 143 :scoreboard {:pa   "10.13(73)" :nm   "7.10(52)"}}
+
+ ;; Round 18
+ {:game 153 :scoreboard {:fre "15.21(111)" :syd "10.13(73)"}}
+ {:game 147 :scoreboard {:col "13.11(89)"  :nm  "12.13(85)"}}
+ {:game 150 :scoreboard {:stk "13.9(87)"   :pa  "10.13(73)"}}
+ {:game 148 :scoreboard {:gws "12.14(86)"  :gee "11.7(73)"}}
+ {:game 146 :scoreboard {:car  "6.3(39)"   :haw "15.13(103)"}}
+ {:game 152 :scoreboard {:adl "19.14(128)" :gcs  "7.7(49)"}}
+ {:game 151 :scoreboard {:wb  "13.8(86)"   :wce  "9.16(70)"}}
+ {:game 149 :scoreboard {:mel "16.15(111)" :ric  "9.11(65)"}}
+ {:game 145 :scoreboard {:bri "22.17(149)" :ess  "8.11(59)"}}
+
+ ;; Round 19
+ {:game 156 :scoreboard {:gee "15.12(102)" :stk "11.9(75)"}}
+ {:game 160 :scoreboard {:syd "10.11(75)"  :adl "13.9(87)"}}
+ {:game 161 :scoreboard {:pa  "11.9(75)"   :fre "15.13(103)"}}
+ {:game 158 :scoreboard {:nm  "11.10(76)"  :mel "13.14(92)"}}
+ {:game 154 :scoreboard {:col "14.6(90)"   :car "10.9(69)"}}
+ {:game 162 :scoreboard {:wce "10.9(69)"   :bri "13.15(93)"}}
+ {:game 159 :scoreboard {:ric  "6.16(52)"  :haw "18.14(122)"}}
+ {:game 157 :scoreboard {:gcs  "9.14(68)"  :wb  "11.11(77)"}}
+ {:game 155 :scoreboard {:ess "10.7(67)"   :gws "8.16(64)"}}
+
+ ;; Round 20
+ {:game 170 :scoreboard {:adl "11.8(74)"   :col "16.12(108)"}}
+ {:game 168 :scoreboard {:mel "14.13(97)"  :gee "18.9(117)"}}
+ {:game 171 :scoreboard {:fre "16.16(112)" :wce  "6.6(42)"}}
+ {:game 164 :scoreboard {:car "16.14(110)" :gcs "15.7(97)"}}
+ {:game 166 :scoreboard {:haw "19.18(132)" :ess  "5.9(39)"}}
+ {:game 165 :scoreboard {:gws "13.10(88)"  :syd "21.13(139)"}}
+ {:game 169 :scoreboard {:wb  "15.15(105)" :ric  "7.6(48)"}}
+ {:game 163 :scoreboard {:bri "19.12(126)" :pa   "9.13(67)"}}
+ {:game 167 :scoreboard {:nm  "8.14(62)"   :stk "13.15(93)"}}
+
+ ;; Round 21
+ {:game 173 :scoreboard {:col "10.12(72)"  :gee "15.7(97)"}}
+ {:game 180 :scoreboard {:fre "11.12(78)"  :wb  "5.11(41)"}}
+ {:game 178 :scoreboard {:stk "13.10(88)"  :syd "16.11(107)"}}
+ {:game 176 :scoreboard {:haw "14.15(99)"  :nm  "12.11(83)"}}
+ {:game 179 :scoreboard {:pa   "9.9(63)"   :gws "10.15(75)"}}
+ {:game 172 :scoreboard {:car "24.10(154)" :bri "11.12(78)"}}
+ {:game 177 :scoreboard {:ric "12.12(84)"  :wce  "9.19(73)"}}
+ {:game 175 :scoreboard {:gcs "16.9(105)"  :mel "18.6(114)"}}
+ {:game 174 :scoreboard {:ess "11.7(72)"   :adl "23.7(145)"}}
+
+ ;; Round 22
+ {:game 187 :scoreboard {:wb  "11.11(77)"  :nm  "15.10(100)"}}
+ {:game 181 :scoreboard {:bri "18.17(125)" :haw  "8.10(58)"}}
+ {:game 184 :scoreboard {:mel "17.11(113)" :fre "17.7(109)"}}
+ {:game 186 :scoreboard {:syd "26.11(167)" :pa  "10.10(70)"}}
+ {:game 182 :scoreboard {:gee "17.15(117)" :ess  "7.8(50)"}}
+ {:game 188 :scoreboard {:adl  "9.9(63)"   :ric  "7.12(54)"}}
+ {:game 183 :scoreboard {:gws "11.11(77)"  :gcs "11.13(79)"}}
+ {:game 189 :scoreboard {:wce "15.8(98)"   :col "17.15(117)"}}
+ {:game 185 :scoreboard {:stk  "8.14(62)"  :car "16.10(106)"}}
+
+ ;; Round 23
+ {:game 198 :scoreboard {:fre "16.16(112)" :adl "13.10(88)"}}
+ {:game 195 :scoreboard {:ric  "6.9(45)"   :stk "14.10(94)"}}
+ {:game 194 :scoreboard {:nm  "17.18(110)" :gee "19.11(125)"}}
+ {:game 190 :scoreboard {:bri "14.11(95)"  :gcs  "6.17(55)"}}
+ {:game 193 :scoreboard {:haw "13.14(92)"  :col "13.14(92)"}}
+ {:game 197 :scoreboard {:pa   "8.8(56)"   :mel "20.12(132)"}}
+ {:game 192 :scoreboard {:gws "16.15(111)" :wce  "7.15(57)"}}
+ {:game 196 :scoreboard {:wb  "12.10(76)"  :car "12.10(82)"}}
+ {:game 191 :scoreboard {:ess "11.10(76)"  :syd "17.10(112)"}}
+
+ ;; Round 24
+ {:game 204 :scoreboard {:stk "12.8(80)"   :gcs "14.19(103)"}}
+ {:game 199 :scoreboard {:col "15.6(96)"   :bri "25.9(159)"}}
+ {:game 200 :scoreboard {:car "18.11(119)" :fre "12.10(82)"}}
+ {:game 203 :scoreboard {:mel "12.15(87)"  :wb  "16.12(108)"}}
+ {:game 202 :scoreboard {:gee "20.13(133)" :ric "11.10(76)"}}
+ {:game 206 :scoreboard {:adl "24.13(157)" :gws "15.11(101)"}}
+ {:game 201 :scoreboard {:ess "14.11(95)"  :pa  "16.9(105)"}}
+ {:game 205 :scoreboard {:syd "17.21(123)" :nm  "10.10(70)"}}
+ {:game 207 :scoreboard {:wce  "6.9(45)"   :haw "16.11(107)"}}
  )
