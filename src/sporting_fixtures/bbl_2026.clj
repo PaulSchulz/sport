@@ -2,7 +2,8 @@
   (:require [cheshire.core :as json]
             [clojure.edn :as edn]
             [clojure.java.io :as io]
-            [clojure.string :as str])
+            [clojure.string :as str]
+            [sporting-fixtures.utils :as utils])
   (:import
    [java.time ZoneId ZonedDateTime]
    [java.time.format DateTimeFormatter])
@@ -59,9 +60,12 @@
   (println "From the top-level REPL: (bbl26)")
   (println "(back)            ; return to the top-level REPL")
   (println "(reload)          ; reload this namespace")
-  (println "(print-report)      ; fixtures, results chart, and ladder")
-  (println "(test-print-report) ; the same report with sample results")
-  (println "(save-report)       ; write data/bbl-2026/report.txt"))
+  (println "(print-report)    ; fixtures, results chart, and ladder")
+  (println "(save-report)     ; write data/bbl-2026/report.txt")
+  (println "(lpr)             ; print the report, portrait, double sided")
+  (println)
+  (println "Test")
+  (println "(test-print-report) ; the same report with sample results"))
 
 (defn reload []
   (require 'sporting-fixtures.bbl-2026 :reload-all))
@@ -442,6 +446,19 @@
 
 (defn print-report []
   (print (report-text)))
+
+(defn printer-text
+  "The results.edn report, with a page break after the fixture list."
+  []
+  (let [fixtures (with-results (load-fixtures) (load-results))]
+    (str (fixtures-report fixtures) "\n\f"
+         (results-chart fixtures) "\n\n"
+         (ladder-report fixtures) "\n")))
+
+(defn lpr
+  "Print the results.edn report in portrait, on both sides of A4."
+  []
+  (utils/lpr (printer-text)))
 
 (defn test-print-report []
   (print (report-text sample-results)))

@@ -21,6 +21,7 @@
   (println "(fifa26)                ; setup for FIFA World Cup 2026")
   (println "(alm26)                 ; setup for A-League Men 2026")
   (println "(bbl26)                 ; setup for BBL 2026/27")
+  (println "(utils)                 ; utilities, including the printer")
   (println "(reload)                ; reload this namespace"))
 
 (defmacro afl26 []
@@ -41,6 +42,11 @@
 (defmacro bbl26 []
   (require '[sporting-fixtures.bbl-2026 :as bbl26])
   (ns sporting-fixtures.bbl-2026)
+  )
+
+(defmacro utils []
+  (require '[sporting-fixtures.utils :as utils])
+  (ns sporting-fixtures.utils)
   )
 
 

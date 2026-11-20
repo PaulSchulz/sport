@@ -1,0 +1,4 @@
+# System packages used by sporting-fixtures.
+# Install with: sudo apt install $(grep -v '^#' apt-packages)
+paps
+ghostscript

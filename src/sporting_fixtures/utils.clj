@@ -1,121 +1,25 @@
 (ns sporting-fixtures.utils
-  (:require [clojure.data.csv :as csv]
-            [clj-http.client :as client]
-            [hickory.core]
-            [hickory.select :as s]
-            [clojure.data.csv :as csv]
-            [clojure.java.io :as io]
+  (:require [clojure.java.shell :as sh]
             [clojure.string :as str]
-            [cheshire.core :refer :all] ;; Pretty print JSON
-            [clj-yaml.core :as yaml]    ;; YAML output
-            ;; Time manipulation
-            [clj-time.core   :as t]
-            [clj-time.format :as f]
-            [clj-time.local  :as l]
-            [clojure.pprint]
-            )
-  (:gen-class)
-  )
+            [clj-yaml.core :as yaml])
+  (:gen-class))
 
-;; Read/download data from website
-;;
-;; See: https://fixturedownload.com/
-;; URL's
-;; https://fixturedownload.com/download/csv/aleague-2019
-(def url
-  {:afl-2019     "https://fixturedownload.com/download/csv/afl-2019"
-   :aleague-2019 "https://fixturedownload.com/download/csv/aleague-2019"
-   :afl-2020     "https://fixturedownload.com/download/csv/afl-2020"
-   })
+(defmacro back []
+  (ns sporting-fixtures.core))
 
-(defn copy [uri file]
-  (with-open [in (io/input-stream uri)
-              out (io/output-stream file)]
-    (io/copy in out)))
+(defn reload []
+  (require 'sporting-fixtures.utils :reload-all))
 
-(defn -main []
-  (println "Utilities"))
+(defn help []
+  (println "From the top-level REPL: (utils)")
+  (println "(back)                 ; return to the top-level REPL")
+  (println "(reload)               ; reload this namespace")
+  (println "(lpr text)             ; print report text, portrait, double sided")
+  (println "(set-default-printer)  ; set the default printer when none is set")
+  (println "(current-printer)      ; the CUPS default printer")
+  (println "(keyword-team name)    ; short keyword for a team name")
+  (println "(get-event filename)   ; read a YAML event file"))
 
-;; Utilities
-;; Download CSV file from website
-;; https://fixturedownload.com/download/csv/afl-2020
-;; Format "https://fixturedownload.com/download/csv/" comp
-
-;; Download index page
-(defn get-index-page []
-  (-> (client/get "https://fixturedownload.com")
-      :body hickory.core/parse hickory.core/as-hickory))
-
-;; Extract competitions list
-(defn get-comp-list []
-  (map (fn [path] (clojure.string/replace path #"^/results/" ""))
-       (map :href
-            (map :attrs
-                 (-> (s/select (s/child (s/class "fixture")
-                                        s/first-child
-                                        s/first-child
-                                        (s/nth-child 2)
-                                        (s/attr :href)
-                                        )
-                               (get-index-page)))))))
-
-(defn download-competition-index []
-  (spit "data/download/00-index-competitions.txt"
-        (str/join "\n" (get-comp-list))))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Down load competition fixture list
-(defn form-filename [competition]
-  (str competition "-UTC.csv"))
-
-(defn form-path [competition]
-  "Produce data path from competition details."
-  (str "data/download/"
-       (form-filename competition)
-       )
-  )
-
-(defn download-fixtures-enable [competition]
-  ;; WIP - Individial fixtures files are created on demand. Therefore
-  ;; before the download can be done, the creation of the data file
-  ;; needs to be triggered.
-  ;;
-  ;; Work in progress. Need to do a POST request and have timezome set
-  ;; to UTC via 'timezone' cookie.
-  (let [url (str "https://fixturedownload.com/download/" competition)]
-  (println url)
-  (spit (form-path competition)
-        (:body (client/post
-                url
-                {:form-params {:timezome "UTC" :cookie {:timezone "UTC"}}}
-                ))))
-  )
-
-(defn form-url [competition]
-  "Produce data URL from competition details."
-  (str "https://fixturedownload.com/download/"
-       (form-filename competition)
-       )
-  )
-
-(defn download-fixtures [comp]
-  (println (form-url comp))
-  (spit (form-path comp)
-        (:body (client/get (form-url comp))))
-  )
-
-;; (require '[sporting-fixtures.utils])
-;; (ns sporting-fixtures.utils)
-;; Download the index file: data/download/00-index-competitions.txt
-;; (download-competition-index)
-
-;; Download the fixtures from a competition
-;; - Need to get dat generated on site first by visiting data page.
-;; (download-fixtures "wbbl-2019")
-;; (download-fixtures "aleague-2019")
-;; (download-fixtures "wleague-2019")
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn keyword-team [team]
   "Convert team name (string) to short keyword."
   (case team
@@ -127,15 +31,54 @@
     "Melbourne City FC"           :mbc
     "Western Sydney Wanderers FC" :wsw
     "Western United FC"           :wes
-    (keyword (clojure.string/lower-case
+    (keyword (str/lower-case
               (subs
-               (clojure.string/replace team #" " "") ; Remove whitespace
-               0 3)))
-    )
-  )
+               (str/replace team #" " "") ; Remove whitespace
+               0 3)))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn get-event [filename]
   "Read event data from file"
-  (yaml/parse-string (slurp filename))
-  )
+  (yaml/parse-string (slurp filename)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Queue used when no default printer is set.
+;; Change this string to another queue from `lpstat -a`.
+;; The Epson ET-4750 found by cups-browsed is named "EPSON_ET_4750_Series".
+(def preferred-printer "EPSON_ET_4750_Series")
+
+(defn current-printer
+  "The CUPS default printer, or nil when Ubuntu has dropped the setting."
+  []
+  (let [{:keys [out]} (sh/sh "lpstat" "-d")
+        [_ printer] (re-find #"destination:\s+(\S+)" out)]
+    printer))
+
+(defn set-default-printer
+  "Set the default printer when none is set, and return the printer in use.
+   Call this once if `(current-printer)` is nil. An existing default is left
+   as it is. To choose a different printer, change `preferred-printer` above
+   to a name listed by `lpstat -a`."
+  []
+  (if-let [current (current-printer)]
+    current
+    (let [{:keys [exit err]} (sh/sh "lpoptions" "-d" preferred-printer)]
+      (if (zero? exit)
+        (or (current-printer) preferred-printer)
+        (str "lpoptions failed (" exit "): " err)))))
+
+(defn lpr
+  "Send report text to the default printer, portrait, double sided, on A4.
+   A form feed in the text starts a new page.
+   paps emits a page one point short of A4, which the Epson ET-4750 rejects
+   when it turns the sheet. Ghostscript rewrites it as A4."
+  [text]
+  (let [{:keys [exit err]}
+        (sh/sh "bash" "-c"
+               (str "paps --font 'Liberation Mono 9' --paper a4"
+                    " | gs -q -sDEVICE=pdfwrite -sPAPERSIZE=a4"
+                    " -dFIXEDMEDIA -dPDFFitPage -o - -"
+                    " | lpr -o media=A4 -o sides=two-sided-long-edge")
+               :in text)]
+    (if (zero? exit)
+      "Sent the report to the default printer."
+      (str "lpr failed (" exit "): " err))))
